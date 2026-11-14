@@ -1,0 +1,55 @@
+name: The Birth-Cap
+type: spawner
+img: systems/hellpiercers/assets/icons/portal.svg
+system:
+  biography: >-
+    <p>Low to the ground and meters wide in diameter, this enormous fungal outgrowth always smells
+    of blood-soaked soil and sounds of wailing pain. Tags: Spawner, Immobile</p><p>Codename: Teknon
+    Mýkńs</p>
+  faction: HENOSIS
+  tags:
+    - Spawner
+    - Immobile
+  health:
+    value: 50
+    max: 50
+    temp: 0
+  scale: 1
+  speed: 0
+  spawn:
+    spawn: >-
+      <p><strong>Spawning</strong> - At the end of the round, The Birth-Cap gains a
+      <strong>Charge</strong>. On the GM’s turn, they may spend<strong> 1 Charge</strong> to spawn a
+      Henosis minion, or <strong>5 Charges</strong> to spawn a miniboss.</p>
+    special: >-
+      <p><strong>Heinous Stench:</strong> When the Birth-Cap Spawns, all units within 4 squares gain
+      Poison:3.</p>
+    name: Special
+    charge: 0
+prototypeToken:
+  name: The Birth-Cap
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/portal.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: H0n1mEqWTBCKPrC9
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: D36kvujnxzSggbZX
+_key: '!actors!D36kvujnxzSggbZX'

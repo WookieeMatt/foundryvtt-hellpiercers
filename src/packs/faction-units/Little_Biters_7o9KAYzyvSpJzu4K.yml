@@ -1,0 +1,65 @@
+name: Little Biters
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Their flesh still holds the Monad’s scent, their bodies passing through his in their flawed
+    ascension. A common ground that begs the question; what if their passage had ended him there and
+    then? And what of our own ascension, had we failed to slay the beast?</p><p>Codename: Nosos ·
+    Sprawl: 2</p>
+  faction: MIXIS
+  tags:
+    - Minion
+    - Swarm
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p>Deal 2 damage to an adjacent target.</p>
+  special:
+    name: Special
+    description: >-
+      <p>When creating a Swarm by Swarming with other Nosos units, units add their sprawl together
+      rather than using the traditional movement and Swarm rules I.E. Two Nosos units swarming
+      creates a Nosos Swarm with <strong>Sprawl:4</strong>. Otherwise use existing rules for HP and
+      damage calculations or discuss with the table.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Little Biters
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KiERE0EuRRjFBbV4
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: 7o9KAYzyvSpJzu4K
+_key: '!actors!7o9KAYzyvSpJzu4K'

@@ -1,0 +1,61 @@
+name: The Muses
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Beezlebub brought music to Hell. For a brief moment, the eternal screams formed something
+    that resembled rhapsody. They killed him for it, and now his muses sing only
+    requiems</p><p>Codename: Symphonia</p>
+  faction: EKKLESIA
+  tags:
+    - Minion
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 1
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p>Burst:5 Damage:0. Allied units in the burst deal +2 Damage on their next attack.</p>
+  special:
+    name: Special
+    description: >-
+      <p>When this unit dies, Prime the space it was occupying. The next allied unit to move onto
+      this space gains <strong>Haste:1</strong>.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: The Muses
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: v9Izj4qogDXOpAKr
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: UN0L2laNFC76Navy
+_key: '!actors!UN0L2laNFC76Navy'

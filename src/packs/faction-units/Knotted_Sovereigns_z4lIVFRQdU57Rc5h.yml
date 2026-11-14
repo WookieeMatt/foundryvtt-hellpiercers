@@ -1,0 +1,67 @@
+name: Knotted Sovereigns
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>The Polyp retreated into their usurped sanctum, and touched the silver thread bundle at the
+    heart of it and vanished from the Earth.</p><p>Codename: Syllogos</p>
+  faction: MIXIS
+  tags:
+    - Miniboss
+  health:
+    value: 120
+    max: 120
+    temp: 0
+  scale: 1
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Charge:4</strong>, <strong>Damage:3</strong>. During Charge, this unit may move
+      through its own allies. This unit may consume one such ally to gain 1 Charge.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Arc:3</strong>, <strong>Damage:3</strong>. For each unoccupied space in the Arc
+      pattern, place 1 Egg.</p><p>At the start of this unit's turn, it may spend Charge to gain 1
+      Scale and -1 Speed for each Charge spent. This temporary buff is lost at the start of their
+      next turn.</p>
+  agnosia:
+    value: 30
+    effect: >-
+      <p>Deal 5 damage in <strong>Burst</strong> equal to units current Scale, then immediately
+      remove this unit from play, replacing it with a Swarm, with enough units to fill Syllogos’s
+      current scale.</p>
+    triggered: false
+prototypeToken:
+  name: Knotted Sovereigns
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KiERE0EuRRjFBbV4
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: z4lIVFRQdU57Rc5h
+_key: '!actors!z4lIVFRQdU57Rc5h'

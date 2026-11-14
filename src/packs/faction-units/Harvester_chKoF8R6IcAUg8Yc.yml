@@ -1,0 +1,73 @@
+name: Harvester
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>This millipede-like creature is a common sight on battlefields and graveyards in AUTOPHYES
+    territory. No two of its uncountable limbs are alike, yet all operate in concert to pluck and
+    rip out more arms, legs, tails, and other parts from corpses to hastily attach to its wiggling
+    body.</p><p>Codename: GEORGOS · HP is shared by the whole Swarm (HP Total) · Crown cost: 3</p>
+  faction: AUTOPHYES
+  tags:
+    - Miniboss
+  health:
+    value: 120
+    max: 120
+    temp: 0
+  scale: 2
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Charge:6</strong>, <strong>Damage:6</strong>, deal 3 damage to any units adjacent
+      to the charge path.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Target:X</strong>, <strong>Range:1</strong>, <strong>Damage:3</strong>. This attack
+      can be used up to 5 times, selecting a different target each time if possible.</p><p>When the
+      Harvester unit becomes active in a battle, any defeated unit leaves behind a <strong>Corpse
+      token</strong>. If the Harvester runs over a <strong>Corpse</strong> in the course of its
+      turn, remove the <strong>Corpse</strong> and add 1 damage to the Harvesters next attack. After
+      the attack, the damage returns to base level. Players can attack these corpses to remove
+      them.</p>
+  agnosia:
+    value: 30
+    effect: >-
+      <p>The Harvester splits in half like a flatworm, creating two <strong>Scale:1</strong>
+      Harvesters with otherwise identical attacks and <strong>Speed</strong>, with the remaining HP
+      split between both. Both Harvester halves need to be killed for this enemy to be considered
+      dead.</p>
+    triggered: false
+prototypeToken:
+  name: Harvester
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: gixCjdjMInQALHhj
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: chKoF8R6IcAUg8Yc
+_key: '!actors!chKoF8R6IcAUg8Yc'

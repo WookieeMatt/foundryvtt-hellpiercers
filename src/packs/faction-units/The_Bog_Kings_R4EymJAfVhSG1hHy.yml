@@ -1,0 +1,71 @@
+name: The Bog Kings
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Mocked even at their supremacy, a gaggle of pretenders and would-have-beens. Brought low by
+    Beezlebub's revolution, and lower still by its tragic ruination. They believe they crawl on
+    their bellies through some cosmic alignment of misjustice, and so they're always surrounded by
+    lackeys, ready to be sacrificed on the altars of their egos.</p><p>Codename: Vasileios · HP is
+    shared by the whole Swarm (HP Total)</p>
+  faction: EKKLESIA
+  tags:
+    - Minion
+    - Swarm
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 4
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Range:4</strong>, <strong>Blast:2</strong>, <strong>Damage:1</strong>. If any
+      primed tiles are within the blast of this unit’s attack, the tile unprimes and all tiles in
+      <strong>Burst:1</strong> of the primed tile become uneasy terrain as a fountain of liquid gold
+      swamp erupts on the spot. Any units occupying these tiles when they become uneasy take 2
+      damage and gain <strong>Blazing:1</strong>.</p>
+  special:
+    name: Special
+    description: >-
+      <p>Instead of attacking, this Swarm may spend one unit to cause a swamp of liquid gold to
+      burst forth from the ground in <strong>Burst:1</strong> of the spent unit’s location. These
+      tiles are uneasy terrain. Any enemy units in the burst take 2 damage and gain
+      <strong>Blazing:1</strong>.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: The Bog Kings
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: v9Izj4qogDXOpAKr
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: R4EymJAfVhSG1hHy
+_key: '!actors!R4EymJAfVhSG1hHy'

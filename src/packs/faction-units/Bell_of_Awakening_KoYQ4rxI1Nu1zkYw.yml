@@ -1,0 +1,68 @@
+name: Bell of Awakening
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>An enormous brass bell cold forged and pressed to shape by the monastic scientists of the
+    Clangorous Abbey. Reliefs on the bell's surface depict the breaking of the first light of dawn
+    on a gathering crowd. Grooves and scratches from repeated, violent ringings have obscured the
+    faces of the congregation.</p>
+  faction: THELETUS
+  tags:
+    - Fortification
+  health:
+    value: 80
+    max: 80
+    temp: 0
+  scale: 1
+  speed: 0
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: ''
+  special:
+    name: Special
+    description: >-
+      <p>Atavistic Toll: After taking damage from any unit, the Bell of Awakening rings out. All
+      THELETUS units capable of hearing it immediately gain <strong>Haste:1. Bell of Awakening
+      </strong>gains<strong> Countdown:2, </strong>and may only trigger Atavistic Toll after the
+      Countdown ends.</p><p>This faction cannot be chosen as one of the three at the start of the
+      game. Instead, this faction acts as a collection of units that any existing faction can draw
+      from. They lack many of the special upgrades and map-based mechanics of the other factions,
+      but by teaming up with their more prestigious cousins they can create complex, surprising
+      combat encounters.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Bell of Awakening
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: hsXh5sb6AljquH3A
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: KoYQ4rxI1Nu1zkYw
+_key: '!actors!KoYQ4rxI1Nu1zkYw'

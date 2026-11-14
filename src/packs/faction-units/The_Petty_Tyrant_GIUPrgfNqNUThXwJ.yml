@@ -1,0 +1,66 @@
+name: The Petty Tyrant
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>The knotted protuberances on its brow compel its followers to do its bidding. Soldiers who
+    resist are made a violent example to other would-be dissidents.</p><p>Codename:
+    Allotriopragmó</p>
+  faction: HENOSIS
+  tags:
+    - Miniboss
+  health:
+    value: 100
+    max: 100
+    temp: 0
+  scale: 1
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p>Range:8 <strong>Damage:5</strong>. If this attack’s target is enclosed on all sides by a
+      single swarm, the Swarm may make an immediate free attack against the same target.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>3 Damage</strong>. If a Swarm or minion is within 3 squares, this unit may command
+      them to immediately move 4 spaces or their <strong>Speed</strong>, whichever is lower.</p>
+  agnosia:
+    value: 10
+    effect: >-
+      <p>Any units with the <strong>Swarm</strong> tag immediately move up to their
+      <strong>Speed</strong> to surround this unit. Each Swarm unit between the unit and any
+      attackers provides Cover:1.</p>
+    triggered: false
+prototypeToken:
+  name: The Petty Tyrant
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: H0n1mEqWTBCKPrC9
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: GIUPrgfNqNUThXwJ
+_key: '!actors!GIUPrgfNqNUThXwJ'

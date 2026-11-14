@@ -1,0 +1,61 @@
+name: Bell Ringers
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>These demons are often seen listlessly moving across battlefields, toying with the gong
+    mallets they carry. When they find an ally has fallen asleep or an enemy is open they strike
+    with all their might.</p><p>Codename: KODON · HP is shared by the whole Swarm (HP Total)</p>
+  faction: THELETUS
+  tags:
+    - Minion
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p>Deal 1 damage to an Adjacent creature.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Range:1, Damage:1</strong>. Shatter: Deal 5 damage. One of Kodon’s allies gains
+      <strong>Haste:1</strong>.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Bell Ringers
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: hsXh5sb6AljquH3A
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: kcfkJ2waryIFFw8v
+_key: '!actors!kcfkJ2waryIFFw8v'

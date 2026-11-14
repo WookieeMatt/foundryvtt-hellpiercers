@@ -1,0 +1,183 @@
+name: Morax
+type: boss
+img: systems/hellpiercers/assets/icons/warlord-helmet.svg
+system:
+  biography: >-
+    <p><em>OF THE BROKEN HORN</em></p><p>Once a great king of their own domain, commanding a
+    thousand Hell Legions, their horn was broken in the first war, and their magic greatly reduced.
+    Still, the flames of their long lost home still burns in the craven hole where their heart would
+    be.</p><p>Crown cost: 4 · Actions: 1/2 per player</p>
+  faction: EKKLESIA
+  tags:
+    - Boss
+  health:
+    value: 250
+    max: 250
+    temp: 0
+  scale: 1
+  speed: 6
+  actions: 1/2
+  agnosia:
+    value: 100
+    effect: >-
+      <p>Select a type of Minion and remove them from the battle. Detonate all Primed spaces. Allied
+      units and other demons within <strong>Burst:2</strong> recover HP equal to the number of
+      removed minions, while HELLPIERCER units within <strong>Burst:2</strong> take damage equal to
+      the number of removed minion units. Morax gains the following:</p><p>All tiles
+      <strong>Primed</strong> by Morax gain <strong>Countdown:3</strong>. When Countdown reaches
+      zero, the Primed tile detonates, dealing 5 damage to any units standing on the tile, and 2
+      damage to any adjacent units.</p>
+    triggered: false
+prototypeToken:
+  name: Morax
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/warlord-helmet.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items:
+  - _id: AVR0nA9dTDFcDiJL
+    name: Attack 1
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Charge:5</strong>. If Morax collides with a player, deal the remaining
+        <strong>Charge</strong> as damage. Any squares Morax moves through during this charge become
+        <strong>Primed</strong>.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p><strong>Charge:5</strong>. If Morax collides with a player, deal the remaining
+          <strong>Charge</strong> as damage. Any squares Morax moves through during this charge
+          become <strong>Primed</strong>.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!wrHENeXaHsXYCv5E.AVR0nA9dTDFcDiJL'
+  - _id: PwBjGlHl7CFGvT0j
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Detonate all <strong>Primed</strong> spaces. Deal 5 damage to any units standing on the
+        tiles, and 2 damage to any adjacent units.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>Detonate all <strong>Primed</strong> spaces. Deal 5 damage to any units standing on the
+          tiles, and 2 damage to any adjacent units.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 100000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!wrHENeXaHsXYCv5E.PwBjGlHl7CFGvT0j'
+  - _id: 3Um9k8iCKCHEXY3O
+    name: Attack 3
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Deal 5 damage to one unit adjacent to Morax, and <strong>Prime</strong> the two spaces on
+        either side of the damaged unit.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>Deal 5 damage to one unit adjacent to Morax, and <strong>Prime</strong> the two spaces
+          on either side of the damaged unit.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 200000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!wrHENeXaHsXYCv5E.3Um9k8iCKCHEXY3O'
+  - _id: iSoGeiTUeZCzZAiM
+    name: Special
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: special
+      effect: >-
+        <p>At the start of their turn, Morax may <strong>Unprime</strong> 3 tiles to summon either 3
+        minions from the EKKLESIA faction, or one miniboss from any demon faction currently in
+        play.</p>
+      attack: null
+      uses: null
+      trigger: null
+    effects: []
+    sort: 300000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!wrHENeXaHsXYCv5E.iSoGeiTUeZCzZAiM'
+effects: []
+folder: v9Izj4qogDXOpAKr
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: wrHENeXaHsXYCv5E
+_key: '!actors!wrHENeXaHsXYCv5E'

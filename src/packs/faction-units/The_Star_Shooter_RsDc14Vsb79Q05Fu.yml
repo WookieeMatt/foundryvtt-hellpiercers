@@ -1,0 +1,72 @@
+name: The Star Shooter
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>A mushroom sits atop their head, forming a brim which cuts across their face, framing their
+    menacing visage. Beneath a tattered and flowing overcoat it holsters two dueling
+    pistols.</p><p>Codename: Exacontismos</p>
+  faction: HENOSIS
+  tags:
+    - Miniboss
+  health:
+    value: 80
+    max: 80
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Range:6, Burst:1, Damage:3</strong>. If a target in <strong>Burst</strong> is at
+      equal or lower elevation to the Star Shooter, they may cause up to one target who meets that
+      criteria to increase the level of their elevation by one.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Range:1, Damage:2, Push:4</strong>. If the target collides with any other units,
+      damage is dealt per the <strong>Push</strong> rules, but to the unit collided with instead of
+      the target unit.</p><p><strong>Range:6</strong>, <strong>Damage:2</strong>. If this attack
+      targets a unit at elevation higher than the Star Shooter’s current elevation, that unit
+      immediately descends until they collide with the ground. Deal damage to the target equal to 2
+      + the units of elevation moved during the descent.</p><p>The Star Shooter deals an additional
+      point of damage on attacks which target a unit at a higher level of elevation than them.</p>
+  agnosia:
+    value: 30
+    effect: >-
+      <p>The Star Shooter may target up to two units within <strong>Burst:4</strong> and immediately
+      force them to increase their level of elevation by two. This unit may then make an attack
+      without consuming their action for the turn.</p>
+    triggered: false
+prototypeToken:
+  name: The Star Shooter
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: H0n1mEqWTBCKPrC9
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: RsDc14Vsb79Q05Fu
+_key: '!actors!RsDc14Vsb79Q05Fu'

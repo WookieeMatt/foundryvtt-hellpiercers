@@ -29,16 +29,18 @@ Targets Foundry VTT **v14.370**. See `docs/API.md` for the scripting API.
 - [ ] Swarm tech - track tokens and actors associated with a swarm
   - [x] Swarm HP pool, merge/split, Breaker
   - [x] Swarm attack plan (attacks and bonuses per adjacent tile)
-  - [ ] Automatic merge/join rules
+  - [x] Join adjacent units (token HUD), merge adjacent Swarms, expend tiles dialog after a Swarm attack
 - [x] Turn tracking
   - [x] Any-order activations driven by Foundry v14 combat lifecycle events
   - [x] Start/end of turn and end of round automation (Poison, Healing, Blazing, Pain Aura, Countdown, Brand, Spawner charge)
   - [x] Action economy with Haste, Shock, Frozen and Pin
-  - [x] Provoke, Limit Break charge from kills, Agnosia for minibosses and bosses
+  - [x] Provoke (Expanded Aggression range 2, MURIEL pass-through, Undo button for JEHOEL and table rulings), Limit Break charge from kills, Agnosia for minibosses and bosses
 - [x] Faction system
   - [x] Faction actor from the catalog: Crown, four Qualities derived from locations, upgrades, research, convoys, War Journal
   - [x] Ichor, STRATCOM phase counter, faction rolls
-  - [ ] Faction units, STRATCOM actions and map hazards (data pass)
+  - [x] Faction Units compendium: all 95 bosses, minibosses, minions, spawners and fortifications, one folder per faction
+  - [x] RECON Tables compendium (Chambers, Corridors, Vaults, Legendary Arms, Scavenge, Scout, Travel, NPC, Item D66, Location generator) and a Rules Reference journal
+  - [ ] Map hazards and boss variable-action UI
 - [ ] Include items - pending a public license for HELLPIERCERS
 
 ## Release

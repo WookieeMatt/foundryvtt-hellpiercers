@@ -1,0 +1,200 @@
+name: 'Location: Who''s In Charge'
+img: icons/svg/d20-grey.svg
+description: <p>One of the six columns of the Location Generator. Roll a D10 on each. <em>(Core Rules p.236)</em></p>
+results:
+  - _id: fAjtKcJxHhhHc4DU
+    type: text
+    name: Paranoid Tyrant
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!IToGfN0rGOAP5ts6.fAjtKcJxHhhHc4DU'
+  - _id: 4rj1wtAK65Bu9RNY
+    type: text
+    name: Bloodthirsty Warlord
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!IToGfN0rGOAP5ts6.4rj1wtAK65Bu9RNY'
+  - _id: 8fUwmCrKQWA3aHaJ
+    type: text
+    name: Armchair Commander
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!IToGfN0rGOAP5ts6.8fUwmCrKQWA3aHaJ'
+  - _id: X9G8TD28uVrDHRvR
+    type: text
+    name: Gilded Merchant
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!IToGfN0rGOAP5ts6.X9G8TD28uVrDHRvR'
+  - _id: sSIIMOlGjUVRS35Z
+    type: text
+    name: Craven Torturer
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!IToGfN0rGOAP5ts6.sSIIMOlGjUVRS35Z'
+  - _id: wBK7imvMnISZJGF9
+    type: text
+    name: Cunning Spymaster
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!IToGfN0rGOAP5ts6.wBK7imvMnISZJGF9'
+  - _id: IKu7zw00Mhia2Sqz
+    type: text
+    name: Gilded Merchant
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!IToGfN0rGOAP5ts6.IKu7zw00Mhia2Sqz'
+  - _id: RnAMM5KZCKFcudJb
+    type: text
+    name: Ruthless Engineer
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!IToGfN0rGOAP5ts6.RnAMM5KZCKFcudJb'
+  - _id: uN7paPMOumUj9wIH
+    type: text
+    name: Cruel Strategist
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!IToGfN0rGOAP5ts6.uN7paPMOumUj9wIH'
+  - _id: wCD8K3AFATESlmaw
+    type: text
+    name: Reclusive Technophile
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!IToGfN0rGOAP5ts6.wCD8K3AFATESlmaw'
+formula: 1d10
+replacement: true
+displayRoll: true
+folder: tCCMpbHpLpRcSelT
+sort: 1600000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: IToGfN0rGOAP5ts6
+_key: '!tables!IToGfN0rGOAP5ts6'

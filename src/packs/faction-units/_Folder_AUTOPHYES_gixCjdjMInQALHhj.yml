@@ -1,0 +1,16 @@
+name: AUTOPHYES
+type: Actor
+folder: null
+sorting: a
+sort: 200000
+color: '#3f6b3a'
+flags: {}
+_id: gixCjdjMInQALHhj
+description: ''
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_key: '!folders!gixCjdjMInQALHhj'

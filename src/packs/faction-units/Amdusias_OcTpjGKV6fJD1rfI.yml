@@ -1,0 +1,170 @@
+name: Amdusias
+type: boss
+img: systems/hellpiercers/assets/icons/warlord-helmet.svg
+system:
+  biography: >-
+    <p><em>THE RELUCTANT SLUMBERER</em></p><p>Also known as the Great Somnambulist. Her demonic
+    court endeavors to keep her amused and awake at all times, but her exhaustion is entropic. The
+    closer to sleep she gets, the harder she rages. Once she falls asleep, none can stop her
+    movements.</p><p>HP is shared by the whole Swarm (HP Total) · Speed: 9(Slumber) 4(Thrashing) ·
+    Crown cost: 4 · Actions: 1/2 per player</p>
+  faction: THELETUS
+  tags:
+    - Boss
+  health:
+    value: 230
+    max: 230
+    temp: 0
+  scale: 1
+  speed: 9
+  actions: 1/2
+  agnosia:
+    value: 115
+    effect: >-
+      <p>AMDUSIAS begins to rouse through bleary eyes. She bellows ferociously inflicting
+      <strong>Pin:1</strong> on all units who can hear in</p><p>range:3 as she grows to
+      <strong>Scale:2</strong>. She adopts a bestial visage with hoarfrost claws and crystaline
+      fangs. End Slumber Phase and Enter Thrashing Phase as AMDUSIAS fights against the return of
+      The Slumber.</p>
+    triggered: false
+prototypeToken:
+  name: Amdusias
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/warlord-helmet.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items:
+  - _id: Bq0NWbp4lwHKjUp2
+    name: Attack 1
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Charge, Arc</strong>: 9,. <strong>Damage:4</strong>. <strong>Shatter: </strong>8
+        damage. <strong>Shattered</strong> units gain <strong>Shock:1</strong>.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p><strong>Charge, Arc</strong>: 9,. <strong>Damage:4</strong>. <strong>Shatter:
+          </strong>8 damage. <strong>Shattered</strong> units gain <strong>Shock:1</strong>.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!OcTpjGKV6fJD1rfI.Bq0NWbp4lwHKjUp2'
+  - _id: d1L4gfQRDjnBPjSi
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Range:3</strong>. <strong>Damage:3</strong>. Targeted unit is
+        <strong>Frozen:1</strong>. <strong>Shatter</strong>: 3 damage. Repeat this attack against
+        another target within range of this unit’s remaining movement for the turn.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p><strong>Range:3</strong>. <strong>Damage:3</strong>. Targeted unit is
+          <strong>Frozen:1</strong>. <strong>Shatter</strong>: 3 damage. Repeat this attack against
+          another target within range of this unit’s remaining movement for the turn.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 100000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!OcTpjGKV6fJD1rfI.d1L4gfQRDjnBPjSi'
+  - _id: w4qSs5G3HagefcoP
+    name: Special
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: special
+      effect: >-
+        <h4>Thrashing Phase</h4><p><strong>Line:5 Width:3</strong>. <strong>Damage:5</strong>.
+        <strong>Shatter:</strong> 7 damage. Create uneasy terrain in <strong>Burst:1</strong> of all
+        shattered units, then they suffer <strong>Push:1</strong>.</p><p><strong>Range:1,
+        Damage:4</strong>. Shatter: 8 Damage. Unit gains <strong>Compel:2</strong>.</p><p>Burst:3.
+        <strong>Damage:3</strong>. Shatter: 5 damage. Inflict <strong>Bleed:2</strong>. If this
+        attack <strong>Shattered</strong> any units, this attack gains <strong>Lingering</strong>
+        for damage spaces within <strong>Burst:2</strong>.</p><p>Whenever a unit on the battlefield
+        is Frozen, gain one Charge. Charge may be spent as follows:</p><p><strong>3 Charge:
+        </strong>Next attack gains Transference.</p><p><strong>2 Charge (only after
+        AGNOSIA):</strong> Revert to Slumbering Phase. AGNOSIA value is now half this unit’s current
+        HP.</p><p><strong>1 Charge:</strong> Pick a unit. The next attack on this unit that triggers
+        Shatter does not remove any stacks of Frozen.</p><p><strong>8 Charge:</strong> The next
+        attack against all units that trigger Shatter does not remove any stacks of
+        Frozen.</p><p><strong>12 Charge:</strong> Detonate all stacks of Frozen on all units. They
+        take damage equal to twice their Frozen value. Reapply <strong>Frozen:1</strong> to all
+        units. This reapplication does not provide any Charges.</p><p>AMDUSIAS begins combat in
+        Slumbering Phase. While in Slumbering Phase, AMDUSIAS cannot be affected by nonstandard
+        terrain types or Slowed.</p><h4>Slumbering Phase</h4><p>Place three dreamform nodes within
+        range 5. All creatures within <strong>Burst:1</strong> of these nodes are
+        <strong>Frozen:3</strong>. Any units who enter <strong>Burst:1</strong> of the nodes are
+        likewise frozen. AMDUSIAS may move to any of these nodes once per turn without spending any
+        movement. Other units may not occupy the same space of the nodes. AMDUSIAS may have a
+        maximum of 4 nodes total. Placing nodes beyond the 4th will require erasing a prior
+        node.</p>
+      attack: null
+      uses: null
+      trigger: null
+    effects: []
+    sort: 200000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!OcTpjGKV6fJD1rfI.w4qSs5G3HagefcoP'
+effects: []
+folder: hsXh5sb6AljquH3A
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: OcTpjGKV6fJD1rfI
+_key: '!actors!OcTpjGKV6fJD1rfI'

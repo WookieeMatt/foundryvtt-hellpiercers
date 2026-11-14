@@ -1,0 +1,62 @@
+name: The Horned One
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>A brutish beast, barely aware of the war it was bred for. Only its violent nature and lack of
+    control keeps its subordinates in line.</p><p>Codename: KERAS</p>
+  faction: SYNCRASIS
+  tags:
+    - Miniboss
+  health:
+    value: 100
+    max: 100
+    temp: 0
+  scale: 2
+  speed: 4
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Charge:5</strong>, if Keras collides with a player, deal the remaining
+      <strong>Charge</strong> as damage and <strong>Push:2</strong>. If a player collides with a
+      wall, object, or another unit after the <strong>Push</strong>, deal an additional <strong>3
+      damage</strong>.</p>
+  special:
+    name: Special
+    description: <p><strong>Burst:3</strong>, <strong>Damage:5</strong></p>
+  agnosia:
+    value: 10
+    effect: <p>Deal all remaining HP as damage to the attacker. Unit dies immediately afterwards.</p>
+    triggered: false
+prototypeToken:
+  name: The Horned One
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: FG5KoiLA0hEjrX5J
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: qvYMh9liauMRzVu2
+_key: '!actors!qvYMh9liauMRzVu2'

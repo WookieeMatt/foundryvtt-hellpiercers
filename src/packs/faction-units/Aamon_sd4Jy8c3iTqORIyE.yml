@@ -1,0 +1,183 @@
+name: Aamon
+type: boss
+img: systems/hellpiercers/assets/icons/warlord-helmet.svg
+system:
+  biography: >-
+    <p><em>THE ROT BLOSSOM</em></p><p>Scholars of Hell speculate Aamon may exist at the center of a
+    vast network of fungal spores and tendrils, ruling over their loamy masses through sheer force
+    of will.</p><p>Crown cost: 4 · Actions: 1/2 per player</p>
+  faction: HENOSIS
+  tags:
+    - Boss
+  health:
+    value: 250
+    max: 250
+    temp: 0
+  scale: 1
+  speed: 8
+  actions: 1/2
+  agnosia:
+    value: 65
+    effect: >-
+      <p>Aamon ascends into the air and immediately makes an attack from
+      <strong>Elevation:3</strong>. On the start of its next turn, it returns to ground level. The
+      turn after that, it ascends to <strong>Elevation:3</strong> again before any actions are
+      taken. This pattern of moving from the ground to <strong>Elevation:3</strong> on alternating
+      turns continues until Aamon is killed or the fight is over.</p>
+    triggered: false
+prototypeToken:
+  name: Aamon
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/warlord-helmet.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items:
+  - _id: aRy1KW3E2XNXaxKi
+    name: Attack 1
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>When next to or moving near an adjacent wall, Aamon may launch off of it moving up to 10
+        spaces in a single direction. Any units along the line of Aamon’s movement take 3
+        damage.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>When next to or moving near an adjacent wall, Aamon may launch off of it moving up to
+          10 spaces in a single direction. Any units along the line of Aamon’s movement take 3
+          damage.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!sd4Jy8c3iTqORIyE.aRy1KW3E2XNXaxKi'
+  - _id: oBosDxspeuLn0vlN
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Range:5 Damage:5</strong>. Deal an additional 2 damage to any player within 2
+        spaces of the target.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p><strong>Range:5 Damage:5</strong>. Deal an additional 2 damage to any player within 2
+          spaces of the target.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 100000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!sd4Jy8c3iTqORIyE.oBosDxspeuLn0vlN'
+  - _id: l4yXRTE3WitPcBO1
+    name: Attack 3
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Charge:8</strong>, if Aamon collides with a player character, deal <strong>5
+        damage</strong>, end movement and increase Aamon’s <strong>Elevation</strong> by 1.
+        Subsequent attacks may use this skill again, further increasing elevation. If a turn passes
+        without using this skill, Aamon returns to the ground.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p><strong>Charge:8</strong>, if Aamon collides with a player character, deal <strong>5
+          damage</strong>, end movement and increase Aamon’s <strong>Elevation</strong> by 1.
+          Subsequent attacks may use this skill again, further increasing elevation. If a turn
+          passes without using this skill, Aamon returns to the ground.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 200000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!sd4Jy8c3iTqORIyE.l4yXRTE3WitPcBO1'
+  - _id: TP7Ny9Akt4hfRdFo
+    name: Special
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: special
+      effect: >-
+        <p>When Aamon drops to the ground from <strong>Elevation:3</strong> they deal 5 damage in
+        <strong>Burst:3</strong>.</p>
+      attack: null
+      uses: null
+      trigger: null
+    effects: []
+    sort: 300000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!sd4Jy8c3iTqORIyE.TP7Ny9Akt4hfRdFo'
+effects: []
+folder: H0n1mEqWTBCKPrC9
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: sd4Jy8c3iTqORIyE
+_key: '!actors!sd4Jy8c3iTqORIyE'

@@ -1,0 +1,471 @@
+name: 'RECON: Travel'
+img: icons/svg/d20-grey.svg
+description: <p>Roll on every leg of travel (2 Fuel). <em>(Core Rules p.88)</em></p>
+results:
+  - _id: HgG1BdqPlDe8IbPb
+    type: text
+    name: Railway tracks rise up from the unnatural dirt beside…
+    img: null
+    description: >-
+      <p>Railway tracks rise up from the unnatural dirt beside your road. An infernal engine, twisted from a
+      million trapped souls, thunders across the landscape in roughly the same direction as your party. A
+      cabal of warlocks gathers on an open-air carriage somewhere in the middle, conducting a symphony of
+      sorcery. Flames belch from its wheels, and the howl of Dragon- Hearts sends shivers through the haunted
+      ceramics of the HELLPIERCERS armor.</p>
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.HgG1BdqPlDe8IbPb'
+  - _id: 0Wi6bFdgE1NxZQIG
+    type: text
+    name: A storm in Hell isn’t just rain and wind.…
+    img: null
+    description: >-
+      <p>A storm in Hell isn’t just rain and wind. It's made of the same stuff everything else is: dead
+      people. Souls whip themselves into hurricanes and thrash in the thousands against the dirt. They bellow
+      into the air and launch themselves at the sky in a desperate rage. They lash with teeth of red thunder
+      and crush with strange pointed digits emerging from thick dark clouds. The ground is part of it, made of
+      the same soulstuff—it roils like the ocean, swallows like the void. There is a storm coming.</p>
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.0Wi6bFdgE1NxZQIG'
+  - _id: rQaBdw3brHKN09ry
+    type: text
+    name: Against the horizon two forms solidify. A titanic serpent…
+    img: null
+    description: >-
+      <p>Against the horizon two forms solidify. A titanic serpent and auroch are locked in mortal conflict.
+      The serpent sinks its fangs into the auroch, then swallows the creature whole. The auroch bursts forth
+      from the belly of the serpent in a rain of demonic viscera. As the last piece of gore settles on the
+      ground, it begins to flow back into the serpent’s wound, reinvigorating it. The creatures make to resume
+      their battle, but then their eyes settle onto your convoy.</p>
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.rQaBdw3brHKN09ry'
+  - _id: WHUjsCPV7BAxdrIY
+    type: text
+    name: The Graveyard of Blades stretches out for as far…
+    img: null
+    description: >-
+      <p>The Graveyard of Blades stretches out for as far as your eye can see; this is the Hell of weapons,
+      the place spears and bows went after the gun, the place the bullet went after humanity learned to throw
+      stars at each other. Every weapon ever made rests here, along with the spirits of those who could not
+      give them up.</p>
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.WHUjsCPV7BAxdrIY'
+  - _id: AxQU38YPyhmByR2v
+    type: text
+    name: Makeshift towers and the skulls of slain warlords mark…
+    img: null
+    description: >-
+      <p>Makeshift towers and the skulls of slain warlords mark this rudimentary highway. A tattered flag
+      warns that you are entering a Psychic-Liberation Zone. These humans reject metanoia, yet still fight
+      against Hell here in its warhold. More and more of these are being reported after the fall of DIS. The
+      humans here despise the pneumatic, and will not treat you with hospitality.</p>
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.AxQU38YPyhmByR2v'
+  - _id: 6qic3XC8VF34Cwo3
+    type: text
+    name: A young girl approaches you from the road. Her…
+    img: null
+    description: >-
+      <p>A young girl approaches you from the road. Her hands are cupped, holding pungent and rich soil. She
+      gestures at you pleadingly, thrusting her cupped hands toward you before throwing the soil to the
+      ground. She opens her mouth to speak out her request and in the place of words, more loamy earth spills
+      forward. Soil has collected in a pile at her feet. Eyes panicked and pitiful, she gestures to you once
+      again for help.</p>
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.6qic3XC8VF34Cwo3'
+  - _id: hlH1ReCP9NXrLVp4
+    type: text
+    name: Beams of light emerge sourcelessly from the ground, weaving…
+    img: null
+    description: >-
+      <p>Beams of light emerge sourcelessly from the ground, weaving between each and carving intricate
+      fractals in their trails. Slag and glass and wet, stinking heat well up along the edges of the channels
+      the lights carve. As their work is almost complete, it becomes clear that their labor was the carving of
+      a summoning circle. Its runes are carved in the language of the lost Martian philosophers. A being is to
+      be born here, in mere moments, from the time of one of humanity’s failed ascensions to godhood.</p>
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.hlH1ReCP9NXrLVp4'
+  - _id: fSuzK3X0StzsZcxR
+    type: text
+    name: The song of hammers striking metal fills your minds.…
+    img: null
+    description: >-
+      <p>The song of hammers striking metal fills your minds. Each blow solidifies in you an everstronger
+      image of an arm being forged. Your every footfall drives in sync with the pounding of the forge-hammer.
+      A curling dome of a building can be seen nearby. You know this to be the seat of the forge. Hellsteel
+      fingers curl above the anvil at the building’s center, shading it from the sun of Hell. Though the sound
+      of creation rings so loud in your heads as to be overwhelming, the forge before you lays still—fires
+      unlit, bellows inert, no metal to be forged.</p>
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.fSuzK3X0StzsZcxR'
+  - _id: THN3gIxeqhM7elJS
+    type: text
+    name: Shadows on the ground creep in bizarre crescents, coiling…
+    img: null
+    description: >-
+      <p>Shadows on the ground creep in bizarre crescents, coiling and twisting inwardly on themselves in a
+      disorientating display. After a while, these crescents become entirely disconnected from their source,
+      and they begin to multiply. Soon the entire world seems to be covered in an infinite sprawl of spiraling
+      shadows.</p>
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.THN3gIxeqhM7elJS'
+  - _id: NLdqL8BAnhEZbtwS
+    type: text
+    name: You happen across a series of ramshackle huts and…
+    img: null
+    description: >-
+      <p>You happen across a series of ramshackle huts and stalls. Demons devoid of affiliation roam about,
+      chatting, plying trades and trading goods. Oathbreakers and The Fatherless and Self- Mothers chatter
+      readily and happily here. Demonstrations of demonic meditative practice play out in a hastily cleared
+      space. Pacts, contracts, and ad-hoc agreements are spoken, scrawled, and signed here. A sign, seemingly
+      made by a flaming finger drawn across black steel, hangs above the entrance to this space. It reads “Lay
+      down your arms, drink from our cup.”</p>
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.NLdqL8BAnhEZbtwS'
+  - _id: 863uNEUsTYFXsu1h
+    type: text
+    name: Nearby stones, loose ropes, chains, and jewelry begin to…
+    img: null
+    description: >-
+      <p>Nearby stones, loose ropes, chains, and jewelry begin to float into the air. As you realize what is
+      taking place, your feet have already become so light you are no longer tethered to the ground. Your
+      entire convoy has unwillingly taken to the sky. The ground below you is seemingly no more. An enormous,
+      black shadow passes over you all. You have entered the hunting grounds of the Bythic Kite.</p>
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.863uNEUsTYFXsu1h'
+  - _id: 7puw9XcMKJnDuaS5
+    type: text
+    name: A yawning hole in the ground rumbles and groans.…
+    img: null
+    description: >-
+      <p>A yawning hole in the ground rumbles and groans. Its voice calls out to you, begging to be fed. It
+      NEEDS to be fed, it says. Terrible things are sure to happen if it goes unsated. Surely you can offer it
+      some small morsel?</p>
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.7puw9XcMKJnDuaS5'
+  - _id: HDDHRZOQyXWwDuIq
+    type: text
+    name: You stumble upon the unattended ruins of what was…
+    img: null
+    description: >-
+      <p>You stumble upon the unattended ruins of what was once Hell’s great glass manufactory. Workstations
+      were abandoned in a rush. Tools scatter the floor. Shattered glass and unrefined sand crunch beneath
+      your feet. Beautiful phantoms of creations that might have been</p><p>haunt the entire space. A thumping
+      sound emerges from the central furnace. Some gargantuan creature lies in agony, half-fed into the base
+      of the furnace. It bellows and thrashes in the blind pain of centuries pinned in the machinery.</p>
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.HDDHRZOQyXWwDuIq'
+  - _id: 6aEOlF7fnLHM5yGk
+    type: text
+    name: A sprawling shrine is carved into a mountainside. Rambling…
+    img: null
+    description: >-
+      <p>A sprawling shrine is carved into a mountainside. Rambling tales carved into the walls over eons
+      speak of the multitude of Architects of Adam, their names, the particular parts of the body each one
+      created, the ways they were arranged, and the one part which, in their ignorance, they stole from him.
+      The shrine was built to house and contain this esoteric organ.</p>
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.6aEOlF7fnLHM5yGk'
+  - _id: FEjitAKvveEbkb7p
+    type: text
+    name: An enormous formation of crystal juts from the landscape…
+    img: null
+    description: >-
+      <p>An enormous formation of crystal juts from the landscape like a kris. Mandalic paths of braided gold
+      twist along its form. It pulses and hums with a prayer unbroken since the time of the Ophite Collective,
+      before the fall of Babel. The serpent gnosis collecting inside, supplicated in prayer, has grown fat and
+      ripe. That no one has shattered it and made off with its fruits is an almost impossible idea. Unless, of
+      course, someone or something sits as its steward, turning away all who would shatter the crystalized
+      prayer.</p>
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.FEjitAKvveEbkb7p'
+  - _id: vkNQJil3SRKEwusM
+    type: text
+    name: What had appeared to be the silhouette of two…
+    img: null
+    description: >-
+      <p>What had appeared to be the silhouette of two linked towers turns out to be the body of an enormous
+      firearm driven into the earth of Hell. No trigger or other operating mechanisms are visible. Spherical
+      indentations lined with textured glass dot the surface of the gun. Closer inspection reveals these to be
+      biometric sensors. This weapon could only be operated by a cephalopod of colossal size.</p>
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.vkNQJil3SRKEwusM'
+  - _id: kz7Jg2URz1rYRzK9
+    type: text
+    name: On the horizon, the shattered remains of a dwarf…
+    img: null
+    description: >-
+      <p>On the horizon, the shattered remains of a dwarf planet lie half-buried in the ground, like a
+      corroding shipwreck on the ocean floor. This is Phaeton, a planet once said to have lain between Mars
+      and Jupiter, pulled here by a failed experiment. The demons shun this stolen world, for Phaeton never
+      existed and should not be here. And yet, lights dot its distant peak.</p>
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.kz7Jg2URz1rYRzK9'
+  - _id: gmGWGvUFxNxHVZbd
+    type: text
+    name: A woman with constellations for pupils and a large…
+    img: null
+    description: >-
+      <p>A woman with constellations for pupils and a large sack trudges towards a smoldering chunk of dead
+      star in the distance. In a past age the Archons shattered the Astrologer's star to thwart her ascension,
+      but she is determined to stitch it back together. Every recovered piece adds to her sack's astronomical
+      weight, making it harder to fend off the clawing demons.</p>
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.gmGWGvUFxNxHVZbd'
+  - _id: ePLr4IlfOxwE0gSe
+    type: text
+    name: A sprawling refinery sits precariously on a floating island…
+    img: null
+    description: >-
+      <p>A sprawling refinery sits precariously on a floating island in the middle of a gaping chasm.
+      Fulfilled, dead, and half-true prophecies have every last shred of rarefied augury squeezed out of them
+      here. Once extracted, it is processed into a dangerous psychedelic which gives demons insight into the
+      immediate future.</p>
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.ePLr4IlfOxwE0gSe'
+  - _id: 5USTQe7TbPRpa0n7
+    type: text
+    name: A fortress, part prison and part mobile weapons platform,…
+    img: null
+    description: >-
+      <p>A fortress, part prison and part mobile weapons platform, roams the landscape on massive treads.
+      Inside, souls who were just following orders fire weapons powered by echoes of the apocalypses they
+      brought about. These cannons temporarily rearrange the landscape into scenes of wrathful floods and
+      nuclear hellfire.</p>
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!NH9mBNYdEqz0ggCv.5USTQe7TbPRpa0n7'
+formula: 1d20
+replacement: true
+displayRoll: true
+folder: CTrwWIaS55HG2Tlu
+sort: 600000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: NH9mBNYdEqz0ggCv
+_key: '!tables!NH9mBNYdEqz0ggCv'

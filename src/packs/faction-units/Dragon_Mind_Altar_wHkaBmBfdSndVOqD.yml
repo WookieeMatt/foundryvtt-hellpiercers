@@ -1,0 +1,58 @@
+name: Dragon-Mind Altar
+type: spawner
+img: systems/hellpiercers/assets/icons/portal.svg
+system:
+  biography: >-
+    <p>Not all who heard the Polyp rose up with lavender spears—the silent borborites chased the
+    same primordial unity, and spoke the name of The Hidden One, the First Appearing One, and the
+    Self-Generated thricenamed androgynous one. She who stands beside the Monad, who holds the womb
+    that births the world. How Belias knew of her is a mystery—or perhaps, a false assumption.
+    Heavenly Wisdom is not always so.</p><p>Codename: Asebes</p>
+  faction: MIXIS
+  tags:
+    - Spawner
+    - Immobile
+  health:
+    value: 100
+    max: 100
+    temp: 0
+  scale: 2
+  speed: 0
+  spawn:
+    spawn: >-
+      <p><strong>Dragon-Spawning </strong>- At the end of the round, Dragon-Mind Altar gains
+      <strong>1 Charge</strong>. On the GM’s turn, they may spend 1 Charge to begin Spawning a
+      <strong>Nosos</strong>, or 3 to spawn a <strong>Lepis</strong> egg immediately.
+      <strong>Nosos</strong> remains attached to the Asebes Spawner, growing 1
+      <strong>Scale</strong> each turn it is attached. The GM may choose to free the
+      <strong>Nosos</strong> as its action on any turn following its spawn.</p>
+    special: ''
+    name: Special
+    charge: 0
+prototypeToken:
+  name: Dragon-Mind Altar
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/portal.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KiERE0EuRRjFBbV4
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: wHkaBmBfdSndVOqD
+_key: '!actors!wHkaBmBfdSndVOqD'

@@ -56,6 +56,7 @@ export const STATUS_RULES = [
   { id: "rush", img: "icons/svg/lightning.svg", decay: "trigger", group: "equipment" },
   { id: "magnetic", img: "icons/svg/lightning.svg", decay: "turn", group: "faction" },
   { id: "snakeskin", img: "icons/svg/acid.svg", decay: "trigger", group: "faction" },
+  { id: "aggression", img: "icons/svg/combat.svg", decay: "turn", group: "equipment" },
   { id: "glassflesh", img: "icons/svg/ice-shield.svg", decay: "trigger", group: "equipment" },
 
   // States. Agnosia is applied by the boss data model, Dead is a core overlay.

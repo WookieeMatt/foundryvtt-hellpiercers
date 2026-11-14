@@ -1,0 +1,68 @@
+name: Bloodtongues
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>A winged creature subjected to SYNCRASIS techno-organic fusion experiments. Its head has been
+    replaced with a mycelial warcolony, and its natural defenses hijacked by warfare aligned
+    bio-algorithms.</p><p>Codename: GOĒS</p>
+  faction: SYNCRASIS
+  tags:
+    - Miniboss
+  health:
+    value: 50
+    max: 50
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Range:4</strong>, Deal<strong> 3 damage </strong>to all creatures within
+      <strong>Burst:2</strong> and convert the spaces they are standing on to
+      <strong>Scorch</strong> terrain. <strong>Scorch</strong> terrain deals 1 damage when a unit
+      leaves that space.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Target:1</strong>, <strong>Range:3</strong>, <strong>Damage:4</strong>,
+      <strong>Slow:3</strong></p>
+  agnosia:
+    value: 10
+    effect: >-
+      <p>Select one miniboss unit within Range:5 and merge with them. Add this unit’s remaining HP
+      and grant the target miniboss the following ability:<strong> Target 2 units within Range:3,
+      deal 2 damage inflict Slow:2</strong></p>
+    triggered: false
+prototypeToken:
+  name: Bloodtongues
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: FG5KoiLA0hEjrX5J
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: BZfS9ALnPawNwbTw
+_key: '!actors!BZfS9ALnPawNwbTw'

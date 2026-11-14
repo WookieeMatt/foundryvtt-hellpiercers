@@ -1,0 +1,67 @@
+name: Soaring Bombardier
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>When the stain washed over a stygian anemone, it rose to flight in the form of CHALAZAOR. Its
+    volatile spawn are said to be irremovable when planted.</p><p>Codename: CHALAZAOR · Crown cost:
+    3</p>
+  faction: PARACLETUS
+  tags:
+    - Miniboss
+    - Flying
+  health:
+    value: 80
+    max: 80
+    temp: 0
+  scale: 1
+  speed: 8
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p>Create a <strong>Flowerbud</strong> on an adjacent square with 1 HP and
+      <strong>Countdown:2</strong>. When the timer reaches 0, it blooms into a <strong>Stain
+      Flower</strong>.</p>
+  special:
+    name: Special
+    description: <p>Deal 3 damage and <strong>Bleed:2</strong> to an adjacent unit.</p>
+  agnosia:
+    value: null
+    effect: >-
+      <p>CHALAZOR emits a hypnotic pattern of colors that mortal eyes weren’t meant to see.
+      <strong>Countdown:10</strong>. Whenever CHALAZOR would take damage, it takes 0 damage instead
+      and reduces <strong>Countdown</strong> by 1. When <strong>Countdown</strong> reaches zero,
+      CHALAZOR dies and deals 5 damage to <strong>Burst:2</strong>.</p>
+    triggered: false
+prototypeToken:
+  name: Soaring Bombardier
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: PYpf1v41cCASKyNC
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: lRyjAB6pGyVjTzMV
+_key: '!actors!lRyjAB6pGyVjTzMV'

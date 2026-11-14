@@ -1,0 +1,80 @@
+name: Skinthief
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Once, all matter was one. All living creatures existed in a primordial swamp
+    indistinguishable from each other. This bipedal macrophage colony runs an emulation suite in
+    senseless adulation of this state of being.</p><p>Codename: DORA · HP is shared by the whole
+    Swarm (HP Total)</p>
+  faction: SYNCRASIS
+  tags:
+    - Miniboss
+  health:
+    value: 45
+    max: 45
+    temp: 0
+  scale: 1
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p>Create a <strong>Linked</strong> terrain tile on an adjacent space. Only 3
+      <strong>Linked</strong> tiles created by Skinthief units may be active in any one TACCOM
+      encounter. If a Skinthief attempts to place a 4th <strong>Linked</strong> Tile, they must
+      remove one placed earlier. If an enemy unit besides the Skinthief uses a
+      <strong>Linked</strong> tile, all Skinthieves on the map gain one of the unit's attacks during
+      their next turns. <strong>Linked</strong> tiles may be moved between as if they were
+      adjacent.</p>
+  special:
+    name: Special
+    description: >-
+      <p>Target one adjacent unit. Deal 1D6 damage and create a <strong>Burst:2 Shaded:1</strong>
+      effect</p><p>centered on the target. This shade does not move with the target and vanishes at
+      the start of this unit's next turn, or when they are defeated, whichever happens
+      first.</p><p>Whenever a Skinthief is within a <strong>Shaded</strong> space, they may end
+      their turn and become invisible. While invisible, this unit may not move, attack, trigger
+      Provoke, or otherwise interact with the current TACCOM engagement. Remove their token or
+      marker from the map but remember where they are. When HELLPIERCERS move within
+      <strong>Burst:3</strong> of this unit, interrupt their movement, become visible and,
+      reposition within <strong>Range:2</strong>. If you reposition adjacent to the HELLPIERCER,
+      deal 1D6 damage.</p>
+  agnosia:
+    value: 15
+    effect: >-
+      <p>Select a previously deployed unit from this or an allied faction. Turn into that unit.
+      Retain this unit's current HP, and remove any Agnosia moves from the unit being transformed
+      into.</p>
+    triggered: false
+prototypeToken:
+  name: Skinthief
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: FG5KoiLA0hEjrX5J
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: rMz9fBEIJ8wrpnCR
+_key: '!actors!rMz9fBEIJ8wrpnCR'

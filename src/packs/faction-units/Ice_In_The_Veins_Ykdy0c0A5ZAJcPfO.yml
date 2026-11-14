@@ -1,0 +1,64 @@
+name: Ice-In-The-Veins
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>These vampiric scavengers are often found in the wake of battles between demonic forces. They
+    feast on the diamond dust of shattered bloody corpses. The warmth of fresh blood keeps them from
+    nodding into sleep when sated.</p><p>Codename: OLIGOTHERMOS</p>
+  faction: THELETUS
+  tags:
+    - Miniboss
+  health:
+    value: 80
+    max: 80
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Blast:2, Range:4</strong>, <strong>Damage:2</strong>. All enemies in range gain
+      Frozen:1 Bleeding enemies instead gain <strong>Frozen:3</strong>.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Range:5 Damage:1 Shatter: </strong>5 damage. This unit gains
+      <strong>Transference:1</strong>.</p><p><strong>Bleeding</strong> units count as
+      <strong>Frozen</strong> for the purposes of <strong>Shatter</strong> effects.</p>
+  agnosia:
+    value: 40
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Ice-In-The-Veins
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: hsXh5sb6AljquH3A
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: Ykdy0c0A5ZAJcPfO
+_key: '!actors!Ykdy0c0A5ZAJcPfO'

@@ -1,0 +1,66 @@
+name: Lurking Freak
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Direct descendant of some of the first beings spawned from the Source Seed and the catalyst
+    for the Contagion Mind, POTAGON once saw to the safety of the Seed on its journey through the
+    rivers of Hell until it reached its nest in the depths.</p><p>Codename: POTAGON</p>
+  faction: PARACLETUS
+  tags:
+    - Miniboss
+  health:
+    value: 90
+    max: 90
+    temp: 0
+  scale: 2
+  speed: 4
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Range:2</strong>,<strong> Line:4 Damage:4</strong>, and <strong>stain</strong>
+      targeted squares.</p>
+  special:
+    name: Special
+    description: >-
+      <p>Deal 10 damage to an adjacent unit, and target gets
+      <strong>Pinned:1</strong>.</p><h4>Stainwalk</h4><p>When <strong>POTAGON</strong> ends its turn
+      on a square that isn’t <strong>stained</strong>, it takes <strong>10 HP damage.</strong></p>
+  agnosia:
+    value: null
+    effect: >-
+      <p><strong>POTAGON</strong> burrows into the ground and counts as <strong>Stained</strong>
+      ground for other units to occupy.</p>
+    triggered: false
+prototypeToken:
+  name: Lurking Freak
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: PYpf1v41cCASKyNC
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: R4HSAxwUg1dLbVS9
+_key: '!actors!R4HSAxwUg1dLbVS9'

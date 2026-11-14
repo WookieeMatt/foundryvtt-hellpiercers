@@ -1,0 +1,58 @@
+name: Bloodletter
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: '<p>The Body Keeps Score.</p><p>Codename: Liphaiméō</p>'
+  faction: METRICOS
+  tags:
+    - Minion
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Range:1 Damage:1</strong>. Apply 1 bleed to target. If this target has any
+      <strong>Wound</strong>, deal 1 additional damage and inflict <strong>Bleed:1</strong></p>
+  special:
+    name: Special
+    description: ''
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Bloodletter
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KoxLGRv30kQgZFnI
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: JMr8l31kOsFr87F5
+_key: '!actors!JMr8l31kOsFr87F5'

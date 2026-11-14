@@ -1,0 +1,61 @@
+name: Latent Pudding
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>In the pressures of the deep sea, compressed Paraclesal flesh will roil and condense into an
+    AMBROID. AMBROID will sing an alien aria before they turn into a new weapon on the
+    terrain.</p><p>Codename: AMBROID</p>
+  faction: PARACLETUS
+  tags:
+    - Minion
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 4
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p><strong>Push:2</strong></p>
+  special:
+    name: Special
+    description: >-
+      <p>When ending its turn on a <strong>Stained</strong> tile, Latent Pudding may transform into
+      any Paracletus <strong>Fortification</strong>.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Latent Pudding
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: PYpf1v41cCASKyNC
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: Y11HgLeCiHVwR2Jp
+_key: '!actors!Y11HgLeCiHVwR2Jp'

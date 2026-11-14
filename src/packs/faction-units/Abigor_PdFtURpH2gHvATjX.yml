@@ -1,0 +1,181 @@
+name: Abigor
+type: boss
+img: systems/hellpiercers/assets/icons/warlord-helmet.svg
+system:
+  biography: >-
+    <p><em>THE ARCHO-TYRANNUS</em></p><p>The crowned amalgam of ancient, forgotten beings. The white
+    flesh it wears is said to be the remains of the previous king of this territory. Its shrill
+    scream is known to shatter obsidian, and crack the soul.</p><p>Crown cost: 4 · Actions: 1/2 per
+    player</p>
+  faction: SYNCRASIS
+  tags:
+    - Boss
+  health:
+    value: 200
+    max: 200
+    temp: 0
+  scale: 2
+  speed: 8
+  actions: 1/2
+  agnosia:
+    value: 50
+    effect: >-
+      <p><strong>Burst:3</strong> for 5 damage, Pin:1 all adjacent characters, and immediately enter
+      <strong>AEGIS</strong>.</p>
+    triggered: false
+prototypeToken:
+  name: Abigor
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/warlord-helmet.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items:
+  - _id: 8ynwFSeSDDz8i9MI
+    name: Attack 1
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Draw three 3x3 boxes on the map. The next time Abigor takes damage, each box deals
+        <strong>8 damage</strong> to any players within them. Abigor may have 5 active boxes at any
+        one time, and boxes disappear after they inflict damage.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>Draw three 3x3 boxes on the map. The next time Abigor takes damage, each box deals
+          <strong>8 damage</strong> to any players within them. Abigor may have 5 active boxes at
+          any one time, and boxes disappear after they inflict damage.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!PdFtURpH2gHvATjX.8ynwFSeSDDz8i9MI'
+  - _id: Dszpc4lI2UkFdrTk
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Bleed:2</strong> to all adjacent player characters, <strong>Pin:1</strong> any
+        one adjacent character, and summon 2 <strong>Swarm</strong> minions within 2 spaces of
+        Abigor</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p><strong>Bleed:2</strong> to all adjacent player characters, <strong>Pin:1</strong> any
+          one adjacent character, and summon 2 <strong>Swarm</strong> minions within 2 spaces of
+          Abigor</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 100000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!PdFtURpH2gHvATjX.Dszpc4lI2UkFdrTk'
+  - _id: LA01HlhELEMqWcdS
+    name: Attack 3
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Charge:8</strong>, if Abigor collides with a player, deal remaining
+        <strong>Charge+5 damage</strong>, <strong>Push:2</strong> and stop movement</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p><strong>Charge:8</strong>, if Abigor collides with a player, deal remaining
+          <strong>Charge+5 damage</strong>, <strong>Push:2</strong> and stop movement</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 200000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!PdFtURpH2gHvATjX.LA01HlhELEMqWcdS'
+  - _id: kJ9Fhj5keAwUYjmA
+    name: Special
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: special
+      effect: >-
+        <p>At the start of their turn, Abigor may devour an adjacent minion to enter <strong>AEGIS
+        State</strong>. In <strong>AEGIS State</strong>, Abigor takes flight and gains +1 Speed,
+        ignores any terrain restrictions, and is treated as having <strong>Elevation +3</strong>.
+        <strong>AEGIS</strong> ends when Abigor ends their turn.</p>
+      attack: null
+      uses: null
+      trigger: null
+    effects: []
+    sort: 300000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!PdFtURpH2gHvATjX.kJ9Fhj5keAwUYjmA'
+effects: []
+folder: FG5KoiLA0hEjrX5J
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: PdFtURpH2gHvATjX
+_key: '!actors!PdFtURpH2gHvATjX'

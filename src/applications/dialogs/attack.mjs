@@ -1,6 +1,6 @@
 import { Damage } from "../../data/damage.mjs";
 import { trySpendAction } from "../../taccom/actions.mjs";
-import { swarmAttackPlan } from "../../taccom/swarm.mjs";
+import { expendTiles, swarmAttackPlan } from "../../taccom/swarm.mjs";
 
 const { Application, HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -155,8 +155,17 @@ export class AttackHud extends HandlebarsApplicationMixin(Application) {
       await new Damage(damageData).toMessage(roll, targets);
     }
     if (plan && plan.expended > 0) {
+      const attackerToken =
+        this.sourceActor.token ?? this.sourceActor.getActiveTokens(true, true)[0];
+      const expended = await expendTiles(plan, attackerToken);
+      const left = plan.expended - expended;
+      const done = expended ? `${expended} tile${expended === 1 ? "" : "s"} expended.` : "";
+      const todo =
+        left > 0
+          ? ` The Swarm must still expend ${left} adjacent tile${left === 1 ? "" : "s"}: remove them from the Swarm.`
+          : "";
       await ChatMessage.create({
-        content: `<div class="hellpiercers turn-note"><header>Swarm attack</header><p>${plan.attacks} attacks (${plan.adjacent} tiles adjacent). The Swarm must expend ${plan.expended} adjacent tile${plan.expended === 1 ? "" : "s"}: remove them from the Swarm.</p></div>`,
+        content: `<div class="hellpiercers turn-note"><header>Swarm attack</header><p>${plan.attacks} attacks (${plan.adjacent} tiles adjacent). ${done}${todo}</p></div>`,
         speaker: ChatMessage.getSpeaker({ actor: this.sourceActor }),
       });
     }

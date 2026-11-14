@@ -1,0 +1,200 @@
+name: 'Location: Geography'
+img: icons/svg/d20-grey.svg
+description: <p>One of the six columns of the Location Generator. Roll a D10 on each. <em>(Core Rules p.236)</em></p>
+results:
+  - _id: 0hsdY8twrf7CDZfA
+    type: text
+    name: Lava Pits
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!kAxBIcUgE69vj5g0.0hsdY8twrf7CDZfA'
+  - _id: 2RbGmhJQoB97Cu1n
+    type: text
+    name: Lush Forest
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!kAxBIcUgE69vj5g0.2RbGmhJQoB97Cu1n'
+  - _id: 231itaOSAnm08aMc
+    type: text
+    name: Stone Forest
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!kAxBIcUgE69vj5g0.231itaOSAnm08aMc'
+  - _id: Ex1QyTYF4wCXqaLo
+    type: text
+    name: Beach
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!kAxBIcUgE69vj5g0.Ex1QyTYF4wCXqaLo'
+  - _id: pamEIlPAxe2RCHQ8
+    type: text
+    name: Non-Geometric Space
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!kAxBIcUgE69vj5g0.pamEIlPAxe2RCHQ8'
+  - _id: 0yaXrv75mfMUFDsV
+    type: text
+    name: Frozen
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!kAxBIcUgE69vj5g0.0yaXrv75mfMUFDsV'
+  - _id: OmaNAzQ2biTJ5F6w
+    type: text
+    name: Shadowy Karst
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!kAxBIcUgE69vj5g0.OmaNAzQ2biTJ5F6w'
+  - _id: JVFddWA8qGhA9vAy
+    type: text
+    name: Glaciovolcano
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!kAxBIcUgE69vj5g0.JVFddWA8qGhA9vAy'
+  - _id: xz1rDvNzuh9DBoxv
+    type: text
+    name: Floating Island
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!kAxBIcUgE69vj5g0.xz1rDvNzuh9DBoxv'
+  - _id: SC7iNE681uQBnbNk
+    type: text
+    name: Strange Ruins
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!kAxBIcUgE69vj5g0.SC7iNE681uQBnbNk'
+formula: 1d10
+replacement: true
+displayRoll: true
+folder: tCCMpbHpLpRcSelT
+sort: 1200000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: kAxBIcUgE69vj5g0
+_key: '!tables!kAxBIcUgE69vj5g0'

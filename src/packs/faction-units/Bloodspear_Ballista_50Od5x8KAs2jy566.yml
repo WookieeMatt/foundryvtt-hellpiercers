@@ -1,0 +1,64 @@
+name: Bloodspear Ballista
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>A ballista crafted from the bones of murdered Archons. Its bleached white surface is speckled
+    only with the rapid spooling of bloodkrill silk. Marksmen will often jest that in the right
+    hands you could lance a target in heaven.</p>
+  faction: METRICOS
+  tags:
+    - Turret
+    - Manned
+  health:
+    value: 90
+    max: 90
+    temp: 0
+  scale: 2
+  speed: 0
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Bleed:2</strong>, <strong>Damage:2</strong> and create a <strong>Bloodline</strong>
+      between the Ballista and a target. Passing through this Bloodline deals 2 Damage to any unit
+      that does so, and heals any Metricos unit within <strong>Range:2</strong>. The driver may
+      recall the bloodline and bring back whatever it hit.</p>
+  special:
+    name: Special
+    description: ''
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Bloodspear Ballista
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KoxLGRv30kQgZFnI
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: 50Od5x8KAs2jy566
+_key: '!actors!50Od5x8KAs2jy566'

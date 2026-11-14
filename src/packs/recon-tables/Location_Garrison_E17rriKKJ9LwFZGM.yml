@@ -1,0 +1,200 @@
+name: 'Location: Garrison'
+img: icons/svg/d20-grey.svg
+description: <p>One of the six columns of the Location Generator. Roll a D10 on each. <em>(Core Rules p.236)</em></p>
+results:
+  - _id: Df62NRNO9NeXeSwm
+    type: text
+    name: Occupied
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!E17rriKKJ9LwFZGM.Df62NRNO9NeXeSwm'
+  - _id: Dla1crG8xqmqDE9u
+    type: text
+    name: Skeleton Crew
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!E17rriKKJ9LwFZGM.Dla1crG8xqmqDE9u'
+  - _id: DWg7YtpoDukromUE
+    type: text
+    name: Floating Above
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!E17rriKKJ9LwFZGM.DWg7YtpoDukromUE'
+  - _id: hxKEglkBPG1AE61Z
+    type: text
+    name: Deep Below
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!E17rriKKJ9LwFZGM.hxKEglkBPG1AE61Z'
+  - _id: M1I8tieK3y0vExwh
+    type: text
+    name: Total Lockdown
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!E17rriKKJ9LwFZGM.M1I8tieK3y0vExwh'
+  - _id: bDQSorhjmYqo11pF
+    type: text
+    name: Faction Mutiny
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!E17rriKKJ9LwFZGM.bDQSorhjmYqo11pF'
+  - _id: GrxgRlyOJmr6yw58
+    type: text
+    name: Faction War
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!E17rriKKJ9LwFZGM.GrxgRlyOJmr6yw58'
+  - _id: QlGBwjXvMsHqA4To
+    type: text
+    name: Eternal Battlefield
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!E17rriKKJ9LwFZGM.QlGBwjXvMsHqA4To'
+  - _id: CYwBZdK7G5XKTOSr
+    type: text
+    name: Seemingly Empty
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!E17rriKKJ9LwFZGM.CYwBZdK7G5XKTOSr'
+  - _id: S3DfDv8MNWiNBLGx
+    type: text
+    name: Hosting Guests
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!E17rriKKJ9LwFZGM.S3DfDv8MNWiNBLGx'
+formula: 1d10
+replacement: true
+displayRoll: true
+folder: tCCMpbHpLpRcSelT
+sort: 1300000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: E17rriKKJ9LwFZGM
+_key: '!tables!E17rriKKJ9LwFZGM'

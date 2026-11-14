@@ -1,0 +1,16 @@
+name: EKKLESIA
+type: Actor
+folder: null
+sorting: a
+sort: 700000
+color: '#6b5a4a'
+flags: {}
+_id: v9Izj4qogDXOpAKr
+description: ''
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_key: '!folders!v9Izj4qogDXOpAKr'

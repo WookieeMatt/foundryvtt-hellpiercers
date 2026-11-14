@@ -1,0 +1,62 @@
+name: Stain Geyser
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>By adjusting the flow of subterranean stain rivers, they may bore upwards into a geyser on
+    the surface. The stain travels through the earth in a helix pattern, erupting in an efficient
+    and beautiful fractal array.</p>
+  faction: PARACLETUS
+  tags:
+    - Immobile
+    - Obstacle
+  health:
+    value: 30
+    max: 30
+    temp: 0
+  scale: 1
+  speed: 0
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: ''
+  special:
+    name: Special
+    description: >-
+      <p>Draw a 4x4 square around Stain Geyser. This area is stained while the Stain Geyser
+      exists.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Stain Geyser
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: PYpf1v41cCASKyNC
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: hjYvQicMIVCelZxm
+_key: '!actors!hjYvQicMIVCelZxm'

@@ -1,0 +1,56 @@
+name: The Myoclonic Awakening Chamber
+type: spawner
+img: systems/hellpiercers/assets/icons/portal.svg
+system:
+  biography: >-
+    <p>An enormous and icy chrysalis holds a captain of THELETUS who gave into the Slumber too
+    early. In time, the earth will crack like a body jerking to reject sleep and the warrior will
+    spill forth from the wound.</p><p>Codename: EGEÍRO</p>
+  faction: THELETUS
+  tags:
+    - Spawner
+    - Immobile
+  health:
+    value: 65
+    max: 65
+    temp: 0
+  scale: 2
+  speed: 0
+  spawn:
+    spawn: >-
+      <p><strong>Spawning - </strong>Whenever a unit gains Frozen within range: 5, this unit gains
+      one <strong>Charge</strong>. Five Charges can be spent to spawn a THELETUS miniboss. After
+      spawning, this unit dies.</p>
+    special: >-
+      <p><strong>Glacial Rending -</strong> When the <strong>Myoclonic Awakening Chamber</strong>
+      dies, its body falls to ruin and its death spasm becomes an avalanche. All units within
+      <strong>Range:3</strong> take 8 damage and gain <strong>Frozen:3</strong>.</p>
+    name: Special
+    charge: 0
+prototypeToken:
+  name: The Myoclonic Awakening Chamber
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/portal.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: hsXh5sb6AljquH3A
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: dLQJOz6feL6sjGBz
+_key: '!actors!dLQJOz6feL6sjGBz'

@@ -1,0 +1,16 @@
+name: Generators
+type: RollTable
+folder: null
+sorting: a
+sort: 100000
+color: null
+flags: {}
+_id: tCCMpbHpLpRcSelT
+description: ''
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_key: '!folders!tCCMpbHpLpRcSelT'

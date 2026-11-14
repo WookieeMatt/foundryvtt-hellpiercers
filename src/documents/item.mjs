@@ -107,9 +107,20 @@ export class HellpiercersItem extends Item {
       updates.push(["system.limit.value", 0]);
     }
     if (updates.length) await actor.update(Object.fromEntries(updates));
+    await this.#applyAutomaticEffects();
 
     if (!chat || !getSetting("chatCards")) return null;
     return this.toChat({ part });
+  }
+
+  /** Gear whose whole effect is a status on the user: name -> [status, stacks]. */
+  static AUTOMATIC_EFFECTS = {
+    "expanded aggression rituals": [["aggression", 2]],
+  };
+
+  async #applyAutomaticEffects() {
+    const effects = HellpiercersItem.AUTOMATIC_EFFECTS[this.name.toLowerCase()];
+    for (const [status, stacks] of effects ?? []) await this.actor.applyStatus(status, stacks);
   }
 
   /**

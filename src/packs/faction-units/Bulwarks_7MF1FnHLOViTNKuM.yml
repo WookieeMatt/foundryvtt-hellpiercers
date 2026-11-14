@@ -1,0 +1,61 @@
+name: Bulwarks
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>The elites in Haagenti’s personal service, these faceless, armoured opponents are far taller
+    than they should be, never seem to tire, and breathe a toxic, fetid fog that even turns the
+    heads of all but the most desiccated wastelander.</p><p>Codename: ERYMA</p>
+  faction: AUTOPHYES
+  tags:
+    - Minion
+  health:
+    value: 20
+    max: 20
+    temp: 0
+  scale: 1
+  speed: 2
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p><strong>Shock:1</strong>, <strong>Damage:5</strong></p>
+  special:
+    name: Special
+    description: >-
+      <p>Ending a turn adjacent to a <strong>Bulwark</strong> incurs <strong>Poison:2</strong> to
+      non-AUTOPHYES characters.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Bulwarks
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: gixCjdjMInQALHhj
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: 7MF1FnHLOViTNKuM
+_key: '!actors!7MF1FnHLOViTNKuM'

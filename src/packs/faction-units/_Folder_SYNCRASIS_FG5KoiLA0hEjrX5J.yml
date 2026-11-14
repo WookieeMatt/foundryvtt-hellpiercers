@@ -1,0 +1,16 @@
+name: SYNCRASIS
+type: Actor
+folder: null
+sorting: a
+sort: 0
+color: '#8a2b2b'
+flags: {}
+_id: FG5KoiLA0hEjrX5J
+description: ''
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_key: '!folders!FG5KoiLA0hEjrX5J'

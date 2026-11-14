@@ -1,0 +1,200 @@
+name: 'Location: Purpose'
+img: icons/svg/d20-grey.svg
+description: <p>One of the six columns of the Location Generator. Roll a D10 on each. <em>(Core Rules p.236)</em></p>
+results:
+  - _id: J6QFGT4DYt0tm3uY
+    type: text
+    name: Military Outpost
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!FKKxESAnnnkpha5i.J6QFGT4DYt0tm3uY'
+  - _id: MVKSRsFPqXDbnAmC
+    type: text
+    name: Open-Pit Mine
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!FKKxESAnnnkpha5i.MVKSRsFPqXDbnAmC'
+  - _id: ZXyLmNYJFA1EkUda
+    type: text
+    name: Agriculture
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!FKKxESAnnnkpha5i.ZXyLmNYJFA1EkUda'
+  - _id: LflDMhnCSuxGnYpt
+    type: text
+    name: Circus
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!FKKxESAnnnkpha5i.LflDMhnCSuxGnYpt'
+  - _id: bCEIlkqAx3VjOVlx
+    type: text
+    name: Construction Yard
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!FKKxESAnnnkpha5i.bCEIlkqAx3VjOVlx'
+  - _id: Im9zuROvka2EPR5r
+    type: text
+    name: Strategic Center
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!FKKxESAnnnkpha5i.Im9zuROvka2EPR5r'
+  - _id: OJNjrkaGVJlykg4Z
+    type: text
+    name: Barracks
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!FKKxESAnnnkpha5i.OJNjrkaGVJlykg4Z'
+  - _id: yVTGEWvGeD4hYk0E
+    type: text
+    name: Mercenary Base
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!FKKxESAnnnkpha5i.yVTGEWvGeD4hYk0E'
+  - _id: PdjNoEcTnGFbJo06
+    type: text
+    name: Laboratory
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!FKKxESAnnnkpha5i.PdjNoEcTnGFbJo06'
+  - _id: OCU1JDePcm0A9Iox
+    type: text
+    name: Hell Resort
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!FKKxESAnnnkpha5i.OCU1JDePcm0A9Iox'
+formula: 1d10
+replacement: true
+displayRoll: true
+folder: tCCMpbHpLpRcSelT
+sort: 1100000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: FKKxESAnnnkpha5i
+_key: '!tables!FKKxESAnnnkpha5i'

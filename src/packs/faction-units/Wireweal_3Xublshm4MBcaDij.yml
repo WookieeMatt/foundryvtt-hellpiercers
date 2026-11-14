@@ -1,0 +1,66 @@
+name: Wireweal
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>The cavernous, soul-crushing greed has so poisoned the land that it regularly vomits forth
+    tumors of covetous steel to protect and retain what it has taken by force.</p>
+  faction: AUTOPHYES
+  tags:
+    - Fortification
+    - Swarm
+    - Cover
+    - Obstacle
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 1
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: ''
+  special:
+    name: Special
+    description: >-
+      <p><strong>Wall:</strong> Can be chained into a Swarm as an action, granting the whole swarm
+      Cover:1 and moving along with them. While carrying the Wireweal, the Swarm may only make one
+      attack per round total. They may drop the Wireweal at any time as a <strong>Movement</strong>
+      action.</p><p><strong>Wall:3, Damage:2</strong> and applying <strong>Pin:1</strong> anyone
+      trapped within</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Wireweal
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: gixCjdjMInQALHhj
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: 3Xublshm4MBcaDij
+_key: '!actors!3Xublshm4MBcaDij'

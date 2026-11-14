@@ -1,0 +1,64 @@
+name: Ouroboric Worms
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Phasic creatures, locked in turmoil between realities. Their forms tore through the Monad,
+    but their spirits flow in the great miasma. Never truly here. Never truly there. Forever
+    shifting through metamorphic probabilities.</p><p>Codename: Autoblabes · Crown cost: 2</p>
+  faction: MIXIS
+  tags:
+    - Minion
+    - Swarm
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p>Deal 1 damage to an adjacent target.</p>
+  special:
+    name: Special
+    description: >-
+      <p>When in a <strong>Swarm</strong> of at least 2 units, Autoblabes may swarm with
+      <strong>Nosos</strong> units. When doing this, immediately make an attack with
+      <strong>Arc</strong> and damage equal to the <strong>Nosos</strong> unit’s
+      <strong>Sprawl</strong>. Destroy the <strong>Nosos</strong> unit afterwards.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Ouroboric Worms
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KiERE0EuRRjFBbV4
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: OmDZ9fhT8e4J8WPL
+_key: '!actors!OmDZ9fhT8e4J8WPL'

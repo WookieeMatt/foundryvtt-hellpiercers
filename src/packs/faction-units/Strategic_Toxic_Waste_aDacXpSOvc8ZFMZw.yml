@@ -1,0 +1,64 @@
+name: Strategic Toxic Waste
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>The sheer variety of toxic substances available to the denizens of Hell are innumerable. Of
+    course, it only made sense to group them all together into a kind of glowing soup and store them
+    in loose barrels at regular intervals. What could possibly go wrong?</p>
+  faction: AUTOPHYES
+  tags:
+    - Fortification
+    - Immobile
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 0
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: ''
+  special:
+    name: Special
+    description: >-
+      <p><strong>Nobody Could Have Predicted This:</strong> Destruction of these barrels will cause
+      a <strong>Burst:3 Damage:5</strong> explosion. In addition, it leaves behind a <strong>3x3
+      square of Toxic Sludge</strong> that provides <strong>Healing:2</strong> for AUTOPHYES units
+      only.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Strategic Toxic Waste
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: gixCjdjMInQALHhj
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: aDacXpSOvc8ZFMZw
+_key: '!actors!aDacXpSOvc8ZFMZw'

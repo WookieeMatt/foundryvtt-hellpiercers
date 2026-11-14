@@ -1,0 +1,67 @@
+name: Wall-Strider
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Life itself is too progressive for the Syncrasian doctrine.</p><p>Codename: Oloitrochos · HP
+    is shared by the whole Swarm (HP Total)</p>
+  faction: SYNCRASIS
+  tags:
+    - Miniboss
+  health:
+    value: 100
+    max: 100
+    temp: 0
+  scale: 2
+  speed: 3
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Wall:5</strong>, <strong>Push:1</strong>, <strong>Damage:6</strong>. Place
+      <strong>Obstacle:1</strong> on every space a unit was pushed from.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Range:6</strong>, <strong>Damage:6</strong>, <strong>Seeking</strong>. You may
+      choose to deal <strong>+2 Damage</strong> and gain <strong>Armor:2</strong> if this attack is
+      made while adjacent to an <strong>Obstacle</strong> or allied unit. Remove the
+      <strong>Obstacle</strong> or Allied unit from the field.</p><p>Unit is immune to any effects
+      that force movement, such as <strong>Push</strong> or <strong>Pull</strong>.</p>
+  agnosia:
+    value: 30
+    effect: >-
+      <p>Grant all allies within <strong>Range:3 Armor:1</strong> instantly. Grant
+      <strong>Armor:1</strong> to all adjacent allied units at the end of this unit's turn.</p>
+    triggered: false
+prototypeToken:
+  name: Wall-Strider
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: FG5KoiLA0hEjrX5J
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: M6xNbHS2PkElotYB
+_key: '!actors!M6xNbHS2PkElotYB'

@@ -1,0 +1,538 @@
+name: 'RECON: Vaults'
+img: icons/svg/d20-grey.svg
+description: <p>Roll when the squad opens a Vault. <em>(Core Rules p.74)</em></p>
+results:
+  - _id: tmADhx8Q116RdHcf
+    type: text
+    name: It is completely dark here. No light enters, no…
+    img: null
+    description: >-
+      <p>It is completely dark here. No light enters, no light escapes. The ground beneath the HELLPIERCERS is
+      wet. A cold white moon hangs lifelessly in the distance. On it, a strange network of ruins, fissures,
+      and craters tell a morose story. The soul of the Demiurge, its true soul, the one you drove a sword
+      through at the mountain of humanity's birth, is in there. Every atom in your body knows it. Any exertion
+      of will in this room parts the dark ocean below the HELLPIERCER, a diamond core rising to meet them.
+      Unlock the following Vehicle Options:</p><p><strong>Personalization - Exalted Idiot Creator Of All That
+      is</strong></p><p><em>Vehicle gains the personality and memories of the Demiurge, the naive monster who
+      wrought all pain in the universe in an ignorant search to emulate its mothers
+      love.</em></p><p><strong>Upgrade - Wings of Infinite Light</strong></p><p><em>The vehicle gains
+      collapsible wings of emerald-purple-golden light. These wings al low semi-effortless vertical ascension,
+      and can themselves open temporary rifts in the local reality matrix. Consume 1 Fuel when deployed. Grant
+      the vehicle the temporary tag Active-Arrested Pseudo-Evolution Catalyst until returning to
+      DIS.</em></p><p><strong>Upgrade - Final Rage Directing Giga-Art</strong></p><p><em>When combined with a
+      ritual catalyst such as a fruit of wisdom or a legendary arm, the vehicle begins a cataclysmic ascension
+      rite that transforms the vehicle into an in domitable giant of darkness. The ritual ends with its total
+      annihilation, and the anni hilation of an area roughly 2 Speed across on the STRATCOM. This ascension
+      funda mentally changes the rules of the local reality matrix. Decide among your table how this plays
+      out.</em></p>
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.tmADhx8Q116RdHcf'
+  - _id: 07VaHj76clfp8TYg
+    type: text
+    name: Somehow, a building from the ogdoad has laid under…
+    img: null
+    description: >-
+      <p>Somehow, a building from the ogdoad has laid under the catacombs of Hell for millenia. Oddly colored
+      flesh, bright hot red, is gilded with immaculately polished gold. Dazzling terminals sprawl endless
+      flowing Heaven-Code, sentient programming endlessly pursuing some unknown project. The bulk of the vault
+      is a massive pit holding a pale humanoid giant bound by golden chains. Its head has been removed,
+      replaced with an enormous golden Lion mask caught in a vicious snarl. High above the creature is an
+      unnerving halo, swirling with unidentifiable soul-matter.</p>
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.07VaHj76clfp8TYg'
+  - _id: gofYyVn9wyiq81lb
+    type: text
+    name: Every surface of the vault is covered in a…
+    img: null
+    description: >-
+      <p>Every surface of the vault is covered in a bizarre, beautiful mycelium. The strange non-Euclidean
+      structures shift with an unseen, unheard, irregular heartbeat that sends pulses of golden light through
+      the silvery flesh of the fungi. The ground underfoot is soft and yielding, the smell earthy but with a
+      fizzy hint of divinity. The walls are marked with ancient, decaying anti-divinity seals in a variety of
+      demonic languages. Several towers of mycelium dot the area, and when communed with readily accept a
+      spinther into them for communion. Whoever returns holds the One Last Minute Legendary Arm. Only beings
+      with souls would find themselves in such a cell, and only beings who have tested the bounds of divinity
+      warrant this security.</p>
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.gofYyVn9wyiq81lb'
+  - _id: oLeiIqCA4je9bv6g
+    type: text
+    name: Entry into this vault catapults the wanderers into an…
+    img: null
+    description: >-
+      <p>Entry into this vault catapults the wanderers into an incomprehensible miasma of souls. Physicality
+      washes away. All sense of stable space, even the understanding of it, struggles and fails against an
+      onslaught of a stranger space. Lives, goals, ideals, memories, dreams, entire persons play out across
+      impossible shapes that transgress through what little body exists of the entrant. A HELLPIERCER could
+      escape this, and would carry some mote of value with them, but extracting this many souls from a chamber
+      of guf requires specialized equipment. Why were they put here in this prison-within-a-prison in the
+      first place?</p>
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.oLeiIqCA4je9bv6g'
+  - _id: AQZjVXdWYLKYF9tK
+    type: text
+    name: A large frog perches within a jar. Its vessel…
+    img: null
+    description: >-
+      <p>A large frog perches within a jar. Its vessel is adorned in countless scribes of admiration. The
+      creature gurgles within its jar for a moment before handing you a small red capsule. At any time you may
+      break this capsule and receive any locked weapon until the end of the next TACCOM encounter.</p>
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.AQZjVXdWYLKYF9tK'
+  - _id: JThxx4sqYc4n0W5i
+    type: text
+    name: There is an obelisk here, marked in a language…
+    img: null
+    description: >-
+      <p>There is an obelisk here, marked in a language nobody in the group understands at first. When
+      touched, it reveals itself to be a collection of souls in an extra-dimensional bunker, hiding from
+      something. They select one HELLPIERCER and grant them the first step of the Halcyon Process. There are
+      seven more steps to uncover.</p>
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.JThxx4sqYc4n0W5i'
+  - _id: XdoDdtXCYyujOnnS
+    type: text
+    name: This vault has already been looted, but in the…
+    img: null
+    description: >-
+      <p>This vault has already been looted, but in the center rest remains of an infernal construction
+      engine. If players are able to repair its systems, it constructs one building in DIS for free before the
+      souls that make up its machinery are returned to their rightful forms. Name them. Get to know them a
+      little.</p>
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.XdoDdtXCYyujOnnS'
+  - _id: ll59lr6VdnqGJO5P
+    type: text
+    name: A single, plain jar rests in the center of…
+    img: null
+    description: >-
+      <p>A single, plain jar rests in the center of an otherwise empty and bland tomb. When taken back to DIS
+      and researched, it reveals itself to be a Demon Binding Pot, and adds the following action to the
+      HELLPIERCERS abilities:</p><p><em>As a Main Action, select an active enemy within this TACCOM encounter
+      and place a <strong>Countdown:3</strong> on them. At the end of the countdown, that enemy is permanently
+      sealed within the pot and can only be released by breaking it. If broken, the enemy de livers one of
+      their attacks at a target of the players choosing before vanishing forever. Discuss with the table how
+      the attack works beforehand.</em></p>
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.ll59lr6VdnqGJO5P'
+  - _id: koc7VymfcHXe5VrR
+    type: text
+    name: As the locks on this vault roll back into…
+    img: null
+    description: >-
+      <p>As the locks on this vault roll back into hidden dimensions, the door unfurls like a flower then
+      turns rotten, its petals sloughing off into wet lumps of gooey mess. A red mist seeps from the open
+      doorway, followed quickly by a cyclone of hellish miasma. The vault is empty but for a half-ruined
+      effigy of a twisted Archon, half-fused with some demonic creature. <strong>Be fore the next session, sit
+      down with the table and develop an entirely new faction rep resenting one of the Archon’s Hellguard
+      fused with demons.</strong> Create at minimum a Faction Boss, a miniboss, and at least one minion. These
+      creatures may be deployed by the GM during any future missions.</p>
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.koc7VymfcHXe5VrR'
+  - _id: IC0ybnyMbjlbLtEU
+    type: text
+    name: The vault contains only the flayed torso of some…
+    img: null
+    description: >-
+      <p>The vault contains only the flayed torso of some immense creature. Its blood is gold, its skin a
+      shattered mirror of silver and bronze. The creature's broken ribcage houses an emerald roughly the size
+      of a car. Touching it reveals to all present a ritual for diving their pneuma into it and the machine
+      needed to do so. Its representative begins to haunt the party, seen on distant walkways, meeting with
+      moribund characters.</p>
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.IC0ybnyMbjlbLtEU'
+  - _id: lFBENf3vSgHgC8YQ
+    type: text
+    name: Past the threshold of the vault the HELLPIERCERS forms—their…
+    img: null
+    description: >-
+      <p>Past the threshold of the vault the HELLPIERCERS forms—their golden skin, their nouswork armor—melts
+      into a stunning mundanity. Their flesh prickles in the cold, their eyes strain against the dark, and the
+      thrumming call of power behind their minds ebbs into a low buzz. Here, they are as Human as they have
+      ever felt. The center of the room holds a chamber with a primordial Armor, forged by an anonymous, long
+      dead demon artisan from the corpse of an undocumented Archon. It has the following
+      stats.</p><p><em><strong>Speed</strong> : 5 <strong>Special Movement</strong> : Keppler-Aristotelian
+      Unified Graviton Rite At any point in your movement, you may place a Void Attractor tile. By default,
+      the tile has a Burst:1 range, Attractor:1 strength, and must be placed within Range:2 of your current
+      location. You may spend any or all of your remaining Speed to increase any of these values. You can
+      dismiss this tile at any point during your turn. You may only have one Void Attractor tile active at a
+      time. <strong>Armor Action</strong> : Particle Interchangeability Module - As a Support Action, you may
+      change the direction of the Void Attractor tile’s attraction, changing its Pull effect to a Push. Using
+      this ability also makes your Attractor tile affect any damage patterns that fall into its Burst range.
+      Each time it is worn, it regains one more of its memories of Heaven, of ruling here in Hell, and of the
+      pathway to its own liberation. It will pursue this goal relentlessly.</em></p>
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.lFBENf3vSgHgC8YQ'
+  - _id: D0nXaUvXKqVrN40o
+    type: text
+    name: The vault appears from the outside as a treasure…
+    img: null
+    description: >-
+      <p>The vault appears from the outside as a treasure trove of Hell’s wealth. The arrayed riches of some
+      elder faction lay piled atop strange weapons and inscrutable ritual aids. Upon entering, this illusion
+      fades away. This bunker contains books, tablets, scrolls, and rudimentary technology preserving the work
+      of Edenite Monks who led the Hosanna protocol, the effort to carry the knowledge of ascension through
+      the thousand years of fire. Those who died forged this safe vault in Hell and continued their
+      divine-beyond-divine mission. Their work is impenetrable, and changes focus every few centuries as the
+      monks set their wisdom against archons, demons or internally, seeking some escape from Hell. Select one
+      of the following rituals to pursue and determine the catalyst, the archonic source, and the hylic
+      resonance needed to complete it:</p><p><em>Allows a single Legendary Arm to be made a permanent addition
+      to the squad’s weapon options.</em></p><p><em>Uncovers a further layer of Truth to the universe,
+      enlightening the HELLPIERCERS beyond their cosmic liberation, past the Hebdomas and the Monad, to a
+      realm of com plete understanding. Completing this ritual requires a living Faction Boss, the fused cores
+      of an ascended human and some other alien power, and a weapon capable of breaking the Keter-Lokantara
+      barrier. It immediately annihilates all the active fac tions and unmoors local reality. Discuss with the
+      table what happens next.</em></p>
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.D0nXaUvXKqVrN40o'
+  - _id: l4JQSdXEj7CwEBtF
+    type: text
+    name: A single plinth, surrounded by a small moat of…
+    img: null
+    description: >-
+      <p>A single plinth, surrounded by a small moat of glittering silver water direct from the abyssal ocean
+      of the Demiurge. Crossing it grants HELLPIERCERS one memory from before the great forgetting. The plinth
+      holds the embryonic form of a nascent Demon Lord, its crown still in flux, its single red eye searing a
+      vengeful rune into the eye of anyone brave enough to stare back. This is only part of an animus; it
+      yearns to fuse with power, to trigger something magnificent and obliterative. It dreams of a new status
+      quo, and its dreams bleed into any HELLPIERCER who stands close. Grant one player the following
+      ability:</p><p><em>As a Support Action, once per TACCOM select one enemy, then declare which HELLPIERCER
+      they will target next. That enemy cannot make any attack besides one that targets that HELLPIERCER until
+      it fulfills this prophecy.</em></p>
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.l4JQSdXEj7CwEBtF'
+  - _id: xDtaNK7cQlDZ3Ca5
+    type: text
+    name: Opening the ornate door of this vault triggers a…
+    img: null
+    description: >-
+      <p>Opening the ornate door of this vault triggers a hidden mechanism, sending the entire room spiraling
+      upward. It drills through ten thousand layers of history to crest within DIS itself. Within are
+      thousands of scrolls, carvings, tapestries, tablets, tomes, memory-coded bacterium, and audio logs
+      cataloging every failed prophecy there has ever been. Whenever you spend a few hours here, write down 3
+      things that will absolutely never, ever happen. Should any of these three things come to pass, rewrite
+      events such that they do not.</p>
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.xDtaNK7cQlDZ3Ca5'
+  - _id: hBwO7t8GVpeGXAkR
+    type: text
+    name: This chamber is as close to Earth as you…
+    img: null
+    description: >-
+      <p>This chamber is as close to Earth as you have felt since you walked the hero's mimesis ritual back
+      home. The vault resembles the dionysian chambers where you first learned to see the hidden path. Time
+      stops outside of this chamber, you can watch motes of reality juddering and shivering in place past the
+      threshold. The air here is heavy with some imitation of Hyper-LSD, its telltale camphor scent singing
+      your nostrils. Meditate here and share your experience. The one of you who spends the longest here gains
+      the following tag:</p><p><em>Mantling the demonic perversion of the divine acids has fractalized your
+      nous and given you paths beyond the road ahead. At any time, you may bring any number of peo ple back to
+      the hall you were enthroned, but you can’t leave with more than you car ried in with you. You also see
+      the waking lines of hyper-reality, fueling demonic security systems and defenses through their backdoor
+      to Psi-Space, and may manipulate them with enough time and space for a suitable ritual.</em></p>
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.hBwO7t8GVpeGXAkR'
+  - _id: otlpANscwLfSqlEq
+    type: text
+    name: Gnarled trees and coiled vines force a tempered approach…
+    img: null
+    description: >-
+      <p>Gnarled trees and coiled vines force a tempered approach to the center of this vault. A dome of green
+      grass is crowned with an impossible tree, one of swirling golden boughs and emerald and ruby leaves
+      which clink and tinkle in the non-existent wind. Strange fruits hang from its branches, each with an
+      alien face. A great lion-headed serpent lies sleeping around the tree. Upon approaching, an androgynous
+      figure clad in gold emerges, calling itself Adam-Eve. It offers you a weapon. Decide together what the
+      cost will be.</p>
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.otlpANscwLfSqlEq'
+  - _id: hJDRR2NqZE5qh3w9
+    type: text
+    name: This chamber is designed around a number of sapphire…
+    img: null
+    description: >-
+      <p>This chamber is designed around a number of sapphire and garnet sarcophagi—one for each member of the
+      squad. Resting in these grants the sleeper inescapable prophetic dreams, full of potent images of
+      crowns, of a white moon and a broken red planet, of the rotting corpse of the Demiurge and a million
+      demons marching through his watery grave. One of you awakens holding a weapon. The rest of you know the
+      shape of a terrifying apocalypse to come.</p>
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.hJDRR2NqZE5qh3w9'
+  - _id: 5YwFDAqaYIqJGfYg
+    type: text
+    name: Stepping into this vault is like being in the…
+    img: null
+    description: >-
+      <p>Stepping into this vault is like being in the center of every loudspeaker and subwoofer in the world,
+      blasting a wall of noise that threatens to unmake your body and soul. Your AT Field flares, layering
+      upon itself, separating you from your relationships, your connections, all but your nous, spinther, and
+      pneuma. This is what it is to be a demon. Within these ironclad walls you are a master of your own
+      psyche, but the barriers between yourself and others feels unbreakable. A weapon beckons from the raised
+      platform in the center of this room, where the noise is strongest.</p>
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.5YwFDAqaYIqJGfYg'
+  - _id: gEcjeKfwriHMn4lL
+    type: text
+    name: Some sort of long-abandoned demonic spying system. Tendrils of…
+    img: null
+    description: >-
+      <p>Some sort of long-abandoned demonic spying system. Tendrils of techno-organic material twist and coil
+      around a room that appears to be breathing, thinking, feeling. Any one of these tendrils will connect
+      you to a listening station somewhere in deep space, monitoring the comings and goings of Enlightened
+      Humanity's vast population, dancing their ineffable routines through the star clouds of the outerworlds.
+      Their music is transcendent. Perhaps that’s why this place was abandoned in the end. The party gains the
+      following ability:</p><p><em>After a successful mission, but before returning to DIS, place a beacon at
+      your current location on the STRATCOM map. You may spend this beacon to fully embody a sentient being
+      within 1 Speed of that location for up to 24 hours. You gain some of that being’s re cent memories,
+      their mannerisms, their drives, their will, and their goals. You cannot act in a way unbecoming for that
+      being, but you retain all knowledge gained during your excursion. You may only have one beacon active at
+      a time.</em></p>
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.gEcjeKfwriHMn4lL'
+  - _id: OTbvTW61lpxFfO84
+    type: text
+    name: A twisted chamber of throbbing volcanic glass and obsidian…
+    img: null
+    description: >-
+      <p>A twisted chamber of throbbing volcanic glass and obsidian curves. Every word spoken here prompts a
+      mocking retort from somewhere out of eyesight. Reflections display perverse mockeries of those who cast
+      them. Smooth surfaces pierce like knives and sharp edges are dull to the touch. The spirit who forged
+      this room was a sadist beyond compare. Destroy a single structure you have built in Dis and do not
+      recover its building materials. The spiteful echo writhes in glee. Select any building that has been
+      identified from an enemy faction. Destroy it.</p>
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xFq68qtEDHCFbCOT.OTbvTW61lpxFfO84'
+formula: 1d20
+replacement: true
+displayRoll: true
+folder: CTrwWIaS55HG2Tlu
+sort: 200000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: xFq68qtEDHCFbCOT
+_key: '!tables!xFq68qtEDHCFbCOT'

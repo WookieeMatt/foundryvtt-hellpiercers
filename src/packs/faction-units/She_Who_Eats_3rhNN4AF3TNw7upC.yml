@@ -1,0 +1,68 @@
+name: She-Who-Eats
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>When the Polyp’s flesh turned silver, she devoured their first shedding, and in this way she
+    held inside the things they were, as they wore outside the things they would
+    become.</p><p>Codename: Drakeîna · HP is shared by the whole Swarm (HP Total) · Sprawl: 8</p>
+  faction: MIXIS
+  tags:
+    - Miniboss
+  health:
+    value: 120
+    max: 120
+    temp: 0
+  scale: 1
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p>Target an allied unit with sprawl within <strong>Range</strong> equal to this unit's
+      current sprawl. Devour that unit and make an attack with damage and range equal to the
+      devoured units <strong>Sprawl</strong>.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Arc</strong>, <strong>Charge</strong> equal to current <strong>sprawl</strong>,
+      deal ramping damage (1 for the first tile moved through, 2 for the second, and so on). Deal an
+      additional 4 damage to any unit completely surrounded by <strong>She-Who- Eats</strong> during
+      this attack.</p>
+  agnosia:
+    value: 30
+    effect: >-
+      <p>Select up to 4 units within <strong>Range</strong> equal to this unit's
+      <strong>Sprawl</strong>. Increase each of these unit’s <strong>Sprawl</strong> by 2.</p>
+    triggered: false
+prototypeToken:
+  name: She-Who-Eats
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KiERE0EuRRjFBbV4
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: 3rhNN4AF3TNw7upC
+_key: '!actors!3rhNN4AF3TNw7upC'

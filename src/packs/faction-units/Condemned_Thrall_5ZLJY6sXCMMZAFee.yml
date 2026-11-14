@@ -1,0 +1,64 @@
+name: Condemned Thrall
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Originally ticks found in the gardens of their labyrinth, IXODES have been mutated and
+    repurposed as sacrifices in the name of Greater demons.</p><p>Codename: IXODES</p>
+  faction: METRICOS
+  tags:
+    - Swarm
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p>Deal 1 Damage and apply <strong>Bleed:1</strong> to an adjacent unit. Additionally, you may
+      sacrifice this unit to leave a Blood Tile. Any Metricos unit that ends its movement in this
+      tile gains <strong>5 Temporary HP</strong>, removing the tile.</p>
+  special:
+    name: Special
+    description: >-
+      <p>Ixodes can only form a <strong>Swarm</strong> with a Miniboss or Boss unit, and only one
+      IXODES may be in a given Swarm. You may sacrifice Ixodes to negate one attack against or to
+      remove one debuff from a unit in the Swarm.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Condemned Thrall
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KoxLGRv30kQgZFnI
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: 5ZLJY6sXCMMZAFee
+_key: '!actors!5ZLJY6sXCMMZAFee'

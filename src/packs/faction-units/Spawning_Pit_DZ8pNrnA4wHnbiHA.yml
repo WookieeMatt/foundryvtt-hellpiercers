@@ -1,0 +1,52 @@
+name: Spawning Pit
+type: spawner
+img: systems/hellpiercers/assets/icons/portal.svg
+system:
+  biography: >-
+    <p>Sentient souls laboriously ground into a fine paste and mixed with enchanted mud. A fertile
+    slurry for clawing horror.</p><p>Codename: KYŪMA</p>
+  faction: EKKLESIA
+  tags:
+    - Spawner
+    - Immobile
+  health:
+    value: 50
+    max: 50
+    temp: 0
+  scale: 1
+  speed: 0
+  spawn:
+    spawn: >-
+      <p><strong>Spawning </strong>- At the end of the round, Spawning Pit gains a
+      <strong>Charge</strong>. On the GM’s turn, they may spend 1 Charge to spawn a minion from any
+      currently active faction, or 5 Charges to spawn a miniboss.</p>
+    special: ''
+    name: Special
+    charge: 0
+prototypeToken:
+  name: Spawning Pit
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/portal.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: v9Izj4qogDXOpAKr
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: DZ8pNrnA4wHnbiHA
+_key: '!actors!DZ8pNrnA4wHnbiHA'

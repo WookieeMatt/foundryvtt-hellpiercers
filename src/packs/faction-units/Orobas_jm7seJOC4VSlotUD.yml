@@ -1,0 +1,173 @@
+name: Orobas
+type: boss
+img: systems/hellpiercers/assets/icons/warlord-helmet.svg
+system:
+  biography: >-
+    <p><em>THE SPEAKER</em></p><p>The herald of the Paracletus and the first to pour from the Source
+    Seed, OROBAS sees the world around it for what it could be. It does not want to kill you—it
+    wants to free you.</p><p>Crown cost: 4 · Actions: 1/2 per player</p>
+  faction: PARACLETUS
+  tags:
+    - Boss
+  health:
+    value: 200
+    max: 200
+    temp: 0
+  scale: 3
+  speed: 4
+  actions: 1/2
+  agnosia:
+    value: 50
+    effect: <p>Immediately spawn any one unique fortification within 5 squares of OROBAS.</p>
+    triggered: false
+prototypeToken:
+  name: Orobas
+  actorLink: false
+  disposition: -1
+  width: 5
+  height: 5
+  texture:
+    src: systems/hellpiercers/assets/icons/warlord-helmet.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items:
+  - _id: mhnGkYe36jYwJOQD
+    name: Attack 1
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Line:4</strong>. If the target is on a Stained square, deal 8 damage. Otherwise
+        deal 3 damage.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p><strong>Line:4</strong>. If the target is on a Stained square, deal 8 damage. Otherwise
+          deal 3 damage.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!jm7seJOC4VSlotUD.mhnGkYe36jYwJOQD'
+  - _id: lWsjzha1RWnq0IRa
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Deal 5 damage to an adjacent unit. If it kills that creature, spawn one new miniboss of
+        your choosing under your control.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>Deal 5 damage to an adjacent unit. If it kills that creature, spawn one new miniboss of
+          your choosing under your control.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 100000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!jm7seJOC4VSlotUD.lWsjzha1RWnq0IRa'
+  - _id: 9IsH2G3HMVjjf3q6
+    name: Attack 3
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Move any unit adjacent to any stained square onto that stained square, and deal that unit
+        5 damage.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>Move any unit adjacent to any stained square onto that stained square, and deal that
+          unit 5 damage.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 200000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!jm7seJOC4VSlotUD.9IsH2G3HMVjjf3q6'
+  - _id: eYIYAaAbHUal554k
+    name: Special
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: special
+      effect: >-
+        <p>When OROBAS takes damage, you may increase that damage by 1 to <strong>Stain</strong> an
+        adjacent square.</p><h4>Stainwalk</h4><p>When on a <strong>Stained</strong> square, OROBAS
+        moves twice as fast.</p>
+      attack: null
+      uses: null
+      trigger: null
+    effects: []
+    sort: 300000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!jm7seJOC4VSlotUD.eYIYAaAbHUal554k'
+effects: []
+folder: PYpf1v41cCASKyNC
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: jm7seJOC4VSlotUD
+_key: '!actors!jm7seJOC4VSlotUD'

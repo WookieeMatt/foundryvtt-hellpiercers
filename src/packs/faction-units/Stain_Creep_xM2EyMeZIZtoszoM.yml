@@ -1,0 +1,62 @@
+name: Stain Creep
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Sentient stain that walked before it could think. Nearby creatures will hear a constant
+    ringing—a comfort for the Paracletus but a source of unease for everyone else.</p><p>Codename:
+    KALUPTID</p>
+  faction: PARACLETUS
+  tags:
+    - Minion
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p>Deal 4 damage to an adjacent creature.</p>
+  special:
+    name: Special
+    description: >-
+      <p>If a <strong>Stain Creep</strong> ends its turn on a square that isn’t
+      <strong>Stained</strong>, it dies.</p><h4>Stainwalk</h4><p>Allied units can inhabit the same
+      square as <strong>Stain Creep.</strong></p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Stain Creep
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: PYpf1v41cCASKyNC
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: xM2EyMeZIZtoszoM
+_key: '!actors!xM2EyMeZIZtoszoM'

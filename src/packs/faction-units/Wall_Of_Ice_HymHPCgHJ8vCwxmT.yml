@@ -1,0 +1,64 @@
+name: Wall Of Ice
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Mountain dwelling demons known to fall asleep in narrow mountain passes. Their shock at
+    waking sends them into a frenzy which demolishes carefully carved paths across treacherous
+    mountain terrain.</p><p>Codename: MEGAS</p>
+  faction: THELETUS
+  tags:
+    - Miniboss
+  health:
+    value: 100
+    max: 100
+    temp: 0
+  scale: 1
+  speed: 4
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Wall:3</strong>, <strong>Range:1</strong>, <strong>Damage:3</strong>. All damaged
+      units gain: <strong>Frozen:1</strong>.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Burst:2 Damage:3</strong>. <strong>Shatter</strong>: 5 damage. This unit gains
+      <strong>Armor:1</strong>.</p><p>While Armored this unit has <strong>Scale:2</strong> and deals
+      additional damage equal to its Armor rating.</p>
+  agnosia:
+    value: 50
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Wall Of Ice
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: hsXh5sb6AljquH3A
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: HymHPCgHJ8vCwxmT
+_key: '!actors!HymHPCgHJ8vCwxmT'

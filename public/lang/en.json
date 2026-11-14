@@ -403,6 +403,7 @@
       "painAura": "{name} takes {value} damage from a Pain Aura.",
       "countdown": "Countdown expired on {name}.",
       "provoke": "{name} Provokes {target}: 1D6 = {value}.",
+      "undoProvoke": "Undo Provoke",
       "agnosia": "{name} enters AGNOSIA!",
       "downed": "{name} is down.",
       "turnStart": "{name} begins their turn.",
@@ -417,6 +418,10 @@
       "rez": "{name} is back on their feet."
     },
     "STATUSES": {
+      "aggression": {
+        "name": "Aggression",
+        "description": "Expanded Aggression Rituals: this unit's Provoke range is Range:2. Applied with 2 stacks so it lasts until the end of the unit's next turn. Remove 1 stack at the end of the affected unit's turn."
+      },
       "aegis": {
         "name": "Aegis",
         "description": "This unit may count as Flying for a number of squares of their movement up to their stacks of Aegis each turn. Flying units move over all types of terrain unimpeded, are treated as having +1 Elevation, and do not Provoke. Aegis-affected units may choose to spend their Aegis flight at any point during their movement. Aegis does not change a unit's Speed and does not count as adding spaces of movement, only modifying existing movement. Remove 1 stack at the end of the affected unit's turn"
@@ -548,6 +553,7 @@
     "TokenHUD": {
       "swarmActions": {
         "tooltip": "Swarm Actions",
+        "join": "Join adjacent",
         "new": "New Swarm",
         "merge": "Merge selected",
         "delete": "Delete"
@@ -558,8 +564,11 @@
     "packs": {
       "macros": "HELLPIERCERS Macros",
       "debugmacros": "Debug Macros",
+      "faction-units": "Faction Units",
       "player-abilities": "Player Abilities",
       "player-gear": "Player Gear",
+      "recon-tables": "RECON Tables",
+      "reference": "Rules Reference",
       "systeminfo": "System Information"
     }
   }

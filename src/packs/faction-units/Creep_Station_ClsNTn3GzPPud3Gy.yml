@@ -1,0 +1,64 @@
+name: Creep Station
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>By using a modified version of the transpatial superequation, the Contagion Mind links two
+    Paraclesal cubes on the battlefield. When boarded, the occupants of one cube will safely be
+    launched to a linked cube at a high speed.</p>
+  faction: PARACLETUS
+  tags:
+    - Carrier
+    - Manned
+  health:
+    value: 50
+    max: 50
+    temp: 0
+  scale: 2
+  speed: 0
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: ''
+  special:
+    name: Special
+    description: >-
+      <p>Draw a line of squares between any two Creep Stations. This line cannot pass through any
+      obstacles or void tiles. Any unit may board on one Creep Station and arrive at a connected
+      Creep Station at the beginning of their next turn. Units on the line while the Creep Station
+      is being used take 10 damage.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Creep Station
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: PYpf1v41cCASKyNC
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: ClsNTn3GzPPud3Gy
+_key: '!actors!ClsNTn3GzPPud3Gy'

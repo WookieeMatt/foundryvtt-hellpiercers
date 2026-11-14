@@ -1,0 +1,16 @@
+name: THELETUS
+type: Actor
+folder: null
+sorting: a
+sort: 600000
+color: '#3a5a8a'
+flags: {}
+_id: hsXh5sb6AljquH3A
+description: ''
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_key: '!folders!hsXh5sb6AljquH3A'

@@ -1,0 +1,200 @@
+name: 'Location: Defenses'
+img: icons/svg/d20-grey.svg
+description: <p>One of the six columns of the Location Generator. Roll a D10 on each. <em>(Core Rules p.236)</em></p>
+results:
+  - _id: azZQyvPEVlW16ef1
+    type: text
+    name: Weapons Array
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!nvf8ZDf0HIISsokR.azZQyvPEVlW16ef1'
+  - _id: ELqvGXzCz8Is9T5n
+    type: text
+    name: Cloaking Engine
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!nvf8ZDf0HIISsokR.ELqvGXzCz8Is9T5n'
+  - _id: ngUcQFhvYYEXa5bS
+    type: text
+    name: Ancient Battlements
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!nvf8ZDf0HIISsokR.ngUcQFhvYYEXa5bS'
+  - _id: BfCcViIkKbvZELfc
+    type: text
+    name: Shifting Labyrinth
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!nvf8ZDf0HIISsokR.BfCcViIkKbvZELfc'
+  - _id: 5GnpREwdFCF7dCdN
+    type: text
+    name: Enslaved Souls
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!nvf8ZDf0HIISsokR.5GnpREwdFCF7dCdN'
+  - _id: cnQhIf2igPxhK7zD
+    type: text
+    name: Insect Swarms
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!nvf8ZDf0HIISsokR.cnQhIf2igPxhK7zD'
+  - _id: wdN9JxkdgKOkLmh6
+    type: text
+    name: Spike Fields
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!nvf8ZDf0HIISsokR.wdN9JxkdgKOkLmh6'
+  - _id: gRaoGi4Itk0LBUsS
+    type: text
+    name: Sentient Megafauna
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!nvf8ZDf0HIISsokR.gRaoGi4Itk0LBUsS'
+  - _id: 0ABEDGcBQpkgWRbW
+    type: text
+    name: Chimeric Abominations
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!nvf8ZDf0HIISsokR.0ABEDGcBQpkgWRbW'
+  - _id: TkTSiVEsWFtkfXis
+    type: text
+    name: Undead Swarm
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!nvf8ZDf0HIISsokR.TkTSiVEsWFtkfXis'
+formula: 1d10
+replacement: true
+displayRoll: true
+folder: tCCMpbHpLpRcSelT
+sort: 1500000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: nvf8ZDf0HIISsokR
+_key: '!tables!nvf8ZDf0HIISsokR'

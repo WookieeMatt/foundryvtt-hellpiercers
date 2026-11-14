@@ -1,0 +1,70 @@
+name: Sloth
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Demons that had finished their training right at the end of the Archonian conquests debuted
+    to a new war with accolades but no experience. With ardor and command, MESI scour the
+    battlefield for tumultuous purposes.</p><p>Codename: MESI</p>
+  faction: METRICOS
+  tags:
+    - Miniboss
+  health:
+    value: 100
+    max: 100
+    temp: 0
+  scale: 2
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p>Select a <strong>Swarm</strong> anywhere on the TACCOM map. Break the Swarm and deal 5
+      damage to a unit within the Swarm’s original range. You may sacrifice an additional unit to
+      deal 1 more damage.</p>
+  special:
+    name: Special
+    description: >-
+      <p>Spend your turn preparing an attack and gain <strong>1 Anauros</strong>. Each subsequent
+      turn, you may spend your turn preparing and generate an additional<strong> 1 Anauros</strong>.
+      Movement while you have Anauros removes all stacks of <strong>Anauros</strong> immediately. On
+      your turn you may spend all Anauros to place a <strong>Blast:2</strong> box anywhere on the
+      battlefield and deal <strong>3 damage</strong> to all units within. For each
+      <strong>Anauros</strong> spent, select one of the following effects:</p>
+  agnosia:
+    value: 10
+    effect: >-
+      <p>Sloth may transform into any other available miniboss from this or another faction,
+      retaining the same HP as before its transformation.</p>
+    triggered: false
+prototypeToken:
+  name: Sloth
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KoxLGRv30kQgZFnI
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: 25Og3Kk4ZhIJq4CU
+_key: '!actors!25Og3Kk4ZhIJq4CU'

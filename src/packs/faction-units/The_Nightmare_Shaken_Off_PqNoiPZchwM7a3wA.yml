@@ -1,0 +1,65 @@
+name: The Nightmare Shaken Off
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>A hunched beast shrouded in wet fur. They lash out sporadically and with surprising speed.
+    Beneath their matted fur, a hollow chest cavity blows freezing, gale-force winds at all
+    times.</p><p>Codename: EPHIÁLTŃS</p>
+  faction: THELETUS
+  tags:
+    - Miniboss
+  health:
+    value: 65
+    max: 65
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Blast:2, Range:3, Damage:5</strong>. Apply Frozen: 1. Shatter: 10 damage. The
+      Nightmare Shaken Off immediately moves adjacent to any shattered target, if able. Frozen is
+      not applied to any units affected by the attack.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Burst:1, Damage:4</strong>. Shatter: 4 damage. <strong>Push:1</strong>. Repeat the
+      attack, increasing <strong>Burst</strong> by one. Repeat until this attack does not shatter
+      any units.</p>
+  agnosia:
+    value: 30
+    effect: <p>All of this unit’s Shatter effects also inflict <strong>Pin:1</strong>.</p>
+    triggered: false
+prototypeToken:
+  name: The Nightmare Shaken Off
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: hsXh5sb6AljquH3A
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: PqNoiPZchwM7a3wA
+_key: '!actors!PqNoiPZchwM7a3wA'

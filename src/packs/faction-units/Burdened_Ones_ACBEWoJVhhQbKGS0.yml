@@ -1,0 +1,63 @@
+name: Burdened Ones
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Jewelless crowns, shattered scepters, legless thrones, and mothworn robes. Their vertebrae
+    strain to haul the corpse of magnificence before the crawling worms that puppet their
+    future.</p><p>Codename: Platys · HP is shared by the whole Swarm (HP Total) · Crown cost: 3</p>
+  faction: EKKLESIA
+  tags:
+    - Miniboss
+  health:
+    value: 100
+    max: 100
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p><strong>Range:1 Damage:4</strong>. Targeted unit gains <strong>Enrage:1</strong>.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Burst:2 Damage:2</strong>. Enemy units damaged gain <strong>Enrage:1</strong>. If
+      more than one enemy was damaged by this attack, Enrage targets must be other enemy units
+      damaged by this attack.</p><p>When this unit ends its turn, all adjacent allied units gain
+      <strong>Armor:3</strong> and <strong>Compel:1</strong>.</p>
+  agnosia:
+    value: 50
+    effect: <p>All units with Armor gain <strong>Transference:1</strong> on all of their attacks.</p>
+    triggered: false
+prototypeToken:
+  name: Burdened Ones
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: v9Izj4qogDXOpAKr
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: ACBEWoJVhhQbKGS0
+_key: '!actors!ACBEWoJVhhQbKGS0'

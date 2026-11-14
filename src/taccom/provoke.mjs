@@ -36,6 +36,46 @@ export function rectsAdjacent(a, b) {
   return overlapX > EPS || overlapY > EPS;
 }
 
+/** Whether two rectangles overlap (share at least part of a cell). */
+function rectsOverlap(a, b) {
+  const ox = Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x);
+  const oy = Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y);
+  return ox > EPS && oy > EPS;
+}
+
+/**
+ * Whether `a` is within `range` spaces of `b` (range 1 = adjacent). A larger range grows `b` by
+ * range - 1 spaces on every side, then tests adjacency.
+ */
+export function rectsInRange(a, b, range = 1) {
+  const grow = Math.max(0, range - 1);
+  const grown = { x: b.x - grow, y: b.y - grow, w: b.w + 2 * grow, h: b.h + 2 * grow };
+  return rectsAdjacent(a, grown);
+}
+
+/** Units a token has moved through this turn (MURIEL's Nous-Agnostic Deployment), by token id. */
+const passedThrough = new Map();
+
+/** Keys of the enemy units whose spaces the mover crossed during one movement. */
+function crossedUnits(enemies, path) {
+  const crossed = new Set();
+  const size = { w: path[0].w, h: path[0].h };
+  for (let i = 0; i < path.length - 1; i++) {
+    const from = path[i];
+    const to = path[i + 1];
+    const steps = Math.max(1, Math.ceil(Math.hypot(to.x - from.x, to.y - from.y) * 4));
+    for (let n = 0; n <= steps; n++) {
+      const at = {
+        x: from.x + ((to.x - from.x) * n) / steps,
+        y: from.y + ((to.y - from.y) * n) / steps,
+        ...size,
+      };
+      for (const enemy of enemies) if (rectsOverlap(at, cells(enemy))) crossed.add(unitKey(enemy));
+    }
+  }
+  return crossed;
+}
+
 const isHostile = d => d === CONST.TOKEN_DISPOSITIONS.HOSTILE;
 const isFriendly = d => d === CONST.TOKEN_DISPOSITIONS.FRIENDLY;
 
@@ -77,10 +117,12 @@ export function findProvokers(mover, path) {
       const key = unitKey(enemy);
       if (provoked.has(key)) continue;
       const rect = cells(enemy);
-      if (!rectsAdjacent(from, rect) || rectsAdjacent(to, rect)) continue;
+      // Expanded Aggression Rituals: an enemy with Aggression Provokes out to Range:2.
+      const range = enemy.actor?.statuses.has("aggression") ? 2 : 1;
+      if (!rectsInRange(from, rect, range) || rectsInRange(to, rect, range)) continue;
       // A swarm only Provokes once none of its squares is still next to the mover.
       const members = enemies.filter(t => unitKey(t) === key);
-      if (members.some(m => rectsAdjacent(to, cells(m)))) continue;
+      if (members.some(m => rectsInRange(to, cells(m), range))) continue;
       provoked.set(key, enemy);
     }
   }
@@ -92,9 +134,14 @@ export function findProvokers(mover, path) {
  * @param {Damage} damage
  * @param {foundry.documents.TokenDocument} token
  */
-async function strike(damage, token) {
+async function strike(damage, token, undo = []) {
   const group = token.combatant?.group;
-  if (group?.type === "swarm") return damage.applyGroup(group, [token.uuid]);
+  if (group?.type === "swarm") {
+    undo.push({ uuid: group.uuid, hp: group.system.health.value });
+    return damage.applyGroup(group, [token.uuid]);
+  }
+  const { value, temp } = token.actor.system.health;
+  undo.push({ uuid: token.actor.uuid, hp: value, temp });
   return damage.apply(token);
 }
 
@@ -133,15 +180,27 @@ async function onMoveToken(doc, movement) {
   }
   if (path.length < 2) return;
 
-  const provokers = findProvokers(doc, path);
+  let provokers = findProvokers(doc, path);
+
+  // MURIEL (Nous-Agnostic Deployment): no Provoke from enemies moved through this turn.
+  if (actor.items.some(i => i.type === "ability" && /nous.agnostic/i.test(i.name))) {
+    const enemies = doc.parent.tokens.filter(
+      t => t.id !== doc.id && t.actor && areEnemies(doc.disposition, t.disposition)
+    );
+    const seen = passedThrough.get(doc.id) ?? new Set();
+    for (const key of crossedUnits(enemies, path)) seen.add(key);
+    passedThrough.set(doc.id, seen);
+    provokers = provokers.filter(t => !seen.has(unitKey(t)));
+  }
   if (!provokers.length) return;
 
   // Offhand Pistol (KOPIS): each enemy you Provoke is shot for 1D6 as well.
   const offhand = actor.items.some(i => i.type === "ability" && /offhand pistol/i.test(i.name));
   const lines = [];
+  const undo = [];
   for (const enemy of provokers) {
     const { roll, damage } = await rollD6(enemy.actor);
-    await strike(damage, doc);
+    await strike(damage, doc, undo);
     lines.push(
       `<li><i class="fa-solid fa-crosshairs"></i><span>${game.i18n.format(
         "HELLPIERCERS.TACCOM.provoke",
@@ -154,7 +213,7 @@ async function onMoveToken(doc, movement) {
     );
     if (offhand) {
       const { roll: shot, damage: pistol } = await rollD6(actor);
-      await strike(pistol, enemy);
+      await strike(pistol, enemy, undo);
       lines.push(
         `<li><i class="fa-solid fa-gun"></i><span>${foundry.utils.escapeHTML(doc.name)} fires back at ${foundry.utils.escapeHTML(enemy.name)}: 1D6 = ${shot.total}${shot.total >= 4 ? " (Push:1)" : ""}.</span></li>`
       );
@@ -162,14 +221,50 @@ async function onMoveToken(doc, movement) {
   }
   const ChatMessage = getDocumentClass("ChatMessage");
   await ChatMessage.create({
-    content: `<div class="hellpiercers turn-note"><header>Provoke</header><ul>${lines.join("")}</ul></div>`,
+    content: `<div class="hellpiercers turn-note"><header>Provoke</header><ul>${lines.join("")}</ul><footer><button type="button" data-action="undoProvoke"><i class="fa-solid fa-rotate-left"></i> ${game.i18n.localize("HELLPIERCERS.TACCOM.undoProvoke")}</button></footer></div>`,
     speaker: ChatMessage.getSpeaker({ token: doc }),
-    flags: { [game.system.id]: { turnNote: true, provoke: true } },
+    flags: { [game.system.id]: { turnNote: true, provoke: true, undo } },
   });
   Hooks.callAll("hellpiercers.provoke", doc, provokers);
+}
+
+/**
+ * Take back a Provoke (JEHOEL's Quark-Gluon-Celestium Form, terrain effects and so on): restores
+ * the HP of everything the Provoke card damaged.
+ * @param {foundry.documents.ChatMessage} message
+ */
+export async function undoProvoke(message) {
+  const entries = message.getFlag(game.system.id, "undo") ?? [];
+  for (const entry of entries) {
+    const doc = await fromUuid(entry.uuid);
+    if (!doc) continue;
+    if (doc.documentName === "Actor") {
+      await doc.update({ "system.health.value": entry.hp, "system.health.temp": entry.temp ?? 0 });
+      if (entry.hp > 0) await doc.setDefeated?.(false);
+    } else {
+      await doc.update({ "system.health.value": entry.hp });
+    }
+  }
+  await message.update({
+    content: message.content.replace(
+      /<footer>.*<\/footer>/s,
+      "<footer><em>Provoke undone.</em></footer>"
+    ),
+    [`flags.${game.system.id}.undo`]: [],
+  });
+}
+
+/** Add the Undo button handler to Provoke cards (GM only). */
+function onRenderChatMessage(message, html) {
+  const button = html.querySelector("[data-action='undoProvoke']");
+  if (!button) return;
+  if (!game.user.isGM) return button.remove();
+  button.addEventListener("click", () => undoProvoke(message));
 }
 
 /** Start watching movement. Call once on `ready`. */
 export function activateProvoke() {
   Hooks.on("moveToken", onMoveToken);
+  Hooks.on("renderChatMessageHTML", onRenderChatMessage);
+  Hooks.on("hellpiercers.turnStart", combatant => passedThrough.delete(combatant.tokenId));
 }

@@ -1,0 +1,64 @@
+name: Eyesting Rose
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>When the Source Seed was experimenting with fractals, PRISTIR was born. Those that try to
+    trace its patterns may lose track of its size and subsequent threat.</p><p>Codename: PRISTIR</p>
+  faction: PARACLETUS
+  tags:
+    - Miniboss
+  health:
+    value: 100
+    max: 100
+    temp: 0
+  scale: 1
+  speed: 3
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p>Increase PRISTIR’s scale by 2. Any occupied spaces take 5 damage and are pushed out.</p>
+  special:
+    name: Special
+    description: >-
+      <p>Deal 10 damage to <strong>Burst:1</strong>, then decrease PRISTIR’s scale by
+      1.</p><h4>Stainwalk</h4><p>When PRISTIR is on <strong>Stain</strong>, allies on connected
+      <strong>Stained</strong> squares take 2 less damage when attacked.and PRISTIR takes 2 more
+      damage when attacked.</p>
+  agnosia:
+    value: null
+    effect: >-
+      <p>Increase PRISTIR’s <strong>scale</strong> by 1 and PRISTIR is now <strong>Primed</strong>.
+      Any occupied spaces take 5 damage and are pushed out.</p>
+    triggered: false
+prototypeToken:
+  name: Eyesting Rose
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: PYpf1v41cCASKyNC
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: 1c7rPjAgZbPcxuwC
+_key: '!actors!1c7rPjAgZbPcxuwC'

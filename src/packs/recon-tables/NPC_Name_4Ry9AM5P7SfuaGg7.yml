@@ -1,0 +1,382 @@
+name: 'NPC: Name'
+img: icons/svg/d20-grey.svg
+description: >-
+  <p>One of the three columns of the NPC Generator. Roll a D20 on each (Name, Traits, Desires). <em>(Core
+  Rules p.234)</em></p>
+results:
+  - _id: xlk4lyNvejJD6v6P
+    type: text
+    name: Laodice
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.xlk4lyNvejJD6v6P'
+  - _id: WfKDKDtF3KnK4PsA
+    type: text
+    name: Argrophylax
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.WfKDKDtF3KnK4PsA'
+  - _id: N1OUFWek9q5cFUTX
+    type: text
+    name: Azra Heydari
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.N1OUFWek9q5cFUTX'
+  - _id: I2YIUFpAMjsthHsQ
+    type: text
+    name: Zenobia
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.I2YIUFpAMjsthHsQ'
+  - _id: WMqCMEIWt9KixFEj
+    type: text
+    name: Sibilia Xenos
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.WMqCMEIWt9KixFEj'
+  - _id: oA44e3gYTzjg28Wo
+    type: text
+    name: Onesiphoros
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.oA44e3gYTzjg28Wo'
+  - _id: WGJcSIxugNOlXajI
+    type: text
+    name: Nasim Al-Zaer
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.WGJcSIxugNOlXajI'
+  - _id: 5ycJUFGtNVAiel7D
+    type: text
+    name: Chrysanthe
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.5ycJUFGtNVAiel7D'
+  - _id: V2GeS4aBJUfPGjcp
+    type: text
+    name: Hypatia Photos
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.V2GeS4aBJUfPGjcp'
+  - _id: 6F8cH7ITeXp63ppA
+    type: text
+    name: The Wandering Eye
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.6F8cH7ITeXp63ppA'
+  - _id: YsivP5LWhvJ8xSFf
+    type: text
+    name: Yazdandar
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.YsivP5LWhvJ8xSFf'
+  - _id: sWLHDx04PzP4onBU
+    type: text
+    name: Lysimachos
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.sWLHDx04PzP4onBU'
+  - _id: 4UkAgxxDvXOZZBZy
+    type: text
+    name: Cyril
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.4UkAgxxDvXOZZBZy'
+  - _id: 51orphWYE70DyuvD
+    type: text
+    name: Artavardiya
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.51orphWYE70DyuvD'
+  - _id: dW7igJNW49QXshRh
+    type: text
+    name: Pandora Kalos
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.dW7igJNW49QXshRh'
+  - _id: O3i9z3iqL5Bgk0zH
+    type: text
+    name: Jawad the Heretic
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.O3i9z3iqL5Bgk0zH'
+  - _id: HOAcO4lBHuKGQ1N1
+    type: text
+    name: Petrus Charinus
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.HOAcO4lBHuKGQ1N1'
+  - _id: 3OCoef7xMUPF2rv2
+    type: text
+    name: Zenogene Venator
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.3OCoef7xMUPF2rv2'
+  - _id: ijz63rQ1Dy3Zqh2X
+    type: text
+    name: Libra Nikos
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.ijz63rQ1Dy3Zqh2X'
+  - _id: mYvR60xxm1SHHkxR
+    type: text
+    name: Zaman
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!4Ry9AM5P7SfuaGg7.mYvR60xxm1SHHkxR'
+formula: 1d20
+replacement: true
+displayRoll: true
+folder: tCCMpbHpLpRcSelT
+sort: 700000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: 4Ry9AM5P7SfuaGg7
+_key: '!tables!4Ry9AM5P7SfuaGg7'

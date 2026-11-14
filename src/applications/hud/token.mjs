@@ -1,3 +1,6 @@
+import { isSwarmUnit } from "../../data/combatant-group.mjs";
+import { joinSwarm } from "../../taccom/swarm.mjs";
+
 export class HellpiercersTokenHUD extends foundry.applications.hud.TokenHUD {
   static DEFAULT_OPTIONS = {
     actions: {
@@ -6,6 +9,7 @@ export class HellpiercersTokenHUD extends foundry.applications.hud.TokenHUD {
         buttons: [0, 2],
       },
       swarmDelete: HellpiercersTokenHUD.#swarmDelete,
+      swarmJoin: HellpiercersTokenHUD.#swarmJoin,
       swarmMerge: HellpiercersTokenHUD.#swarmMerge,
       swarmNew: HellpiercersTokenHUD.#swarmNew,
     },
@@ -16,7 +20,7 @@ export class HellpiercersTokenHUD extends foundry.applications.hud.TokenHUD {
 
     const combatant = this.object.combatant;
     const actor = this.object.actor;
-    if (!combatant || actor.type !== "minion" || !actor.system.tags.has("Horde")) return;
+    if (!combatant || !isSwarmUnit(actor)) return;
     const swarmBtn = document.createElement("button");
     swarmBtn.type = "button";
     swarmBtn.classList.add("control-icon");
@@ -38,7 +42,13 @@ export class HellpiercersTokenHUD extends foundry.applications.hud.TokenHUD {
     const ungrouped = canvas.tokens.controlled.some(
       t => t.actor.id === this.object.actor.id && t.combatant?.group?.type !== "swarm"
     );
-    const swarmActions = [];
+    const swarmActions = [
+      {
+        label: "HELLPIERCERS.TokenHUD.swarmActions.join",
+        icon: "fa-solid fa-link",
+        action: "swarmJoin",
+      },
+    ];
     if (selectedGroups.size > 1 || (selectedGroups.size > 0 && ungrouped)) {
       swarmActions.push({
         label: "HELLPIERCERS.TokenHUD.swarmActions.merge",
@@ -92,6 +102,12 @@ export class HellpiercersTokenHUD extends foundry.applications.hud.TokenHUD {
     }
     const statusId = target.dataset.statusId;
     await this.actor.toggleStatusEffect(statusId, { direction: ev.button === 2 ? -1 : 1 });
+  }
+
+  /** Join the Swarm formed by the adjacent units of the same name (or start one). */
+  static async #swarmJoin() {
+    this.togglePalette("swarmActions", false);
+    await joinSwarm(this.object.document);
   }
 
   /**

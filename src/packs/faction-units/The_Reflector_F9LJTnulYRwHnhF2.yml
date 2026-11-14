@@ -1,0 +1,71 @@
+name: The Reflector
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>A hulking demon that utilizes two calcified mushrooms as twin aegises. Scars run across their
+    body, a marker of battlefield prowess and disasters averted for their allies.</p><p>Codename:
+    Palintropos · Crown cost: 3</p>
+  faction: HENOSIS
+  tags:
+    - Miniboss
+  health:
+    value: 130
+    max: 130
+    temp: 0
+  scale: 2
+  speed: 4
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p><strong>Range:2, Burst:1, Damage:3</strong></p>
+  special:
+    name: Special
+    description: >-
+      <p>This unit may forgo attacking this round and instead gain:</p><p>When a unit within
+      R<strong>ange:6</strong> becomes the target of an attack, this unit may move up to 6 spaces
+      and take damage in the targeted unit’s stead. If the attacking unit’s position is within
+      <strong>Range:2</strong> of the target, you may trigger <strong>Averting
+      Palisade.</strong></p><p>When attacked by a unit within <strong>Range:2</strong> of this unit,
+      it may force the attacking unit to gain one elevation. If the elevated unit has no means to
+      maintain their elevation, they will begin falling at the start of their next turn.</p>
+  agnosia:
+    value: 40
+    effect: >-
+      <p>Gain <strong>Charge:3</strong>. When taking damage for another unit you may spend one
+      <strong>Charge</strong> to nullify all damage on that attack. You may spend <strong>2 Charges
+      </strong>to nullify all damage and force the attacking unit to gain 2 elevation. If the
+      elevated unit has no means to maintain their elevation, they will begin falling at the start
+      of their next turn.</p>
+    triggered: false
+prototypeToken:
+  name: The Reflector
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: H0n1mEqWTBCKPrC9
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: F9LJTnulYRwHnhF2
+_key: '!actors!F9LJTnulYRwHnhF2'

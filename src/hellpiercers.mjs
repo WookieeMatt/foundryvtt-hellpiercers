@@ -18,7 +18,7 @@ import { activateStratcom } from "./stratcom/engine.mjs";
 import { findCombatant, spendAction, trySpendAction } from "./taccom/actions.mjs";
 import { TurnEngine } from "./taccom/engine.mjs";
 import { activateProvoke, findProvokers } from "./taccom/provoke.mjs";
-import { swarmAttackPlan } from "./taccom/swarm.mjs";
+import { expendTiles, joinSwarm, swarmAttackPlan } from "./taccom/swarm.mjs";
 import { getStatusEffects } from "./util/statuses.mjs";
 
 globalThis.hellpiercers = Object.freeze({
@@ -32,6 +32,8 @@ globalThis.hellpiercers = Object.freeze({
     findCombatant,
     findProvokers,
     spendAction,
+    expendTiles,
+    joinSwarm,
     swarmAttackPlan,
     trySpendAction,
   }),

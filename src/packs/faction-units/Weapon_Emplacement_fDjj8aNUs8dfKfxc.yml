@@ -1,0 +1,60 @@
+name: Weapon Emplacement
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>“You’ve seen them too; ghosttrails, floaters— each of us leaves a residual trail through
+    Psi-Space, even when we’re undosed. These things stay connected just enough to pick up on those
+    trails and respond.” - Phantasikos Sari</p>
+  faction: EKKLESIA
+  tags:
+    - Fortification
+    - Stationary
+  health:
+    value: 25
+    max: 25
+    temp: 0
+  scale: 1
+  speed: 0
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p><strong>Line:4, Damage:3</strong></p>
+  special:
+    name: Special
+    description: ''
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Weapon Emplacement
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: v9Izj4qogDXOpAKr
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: fDjj8aNUs8dfKfxc
+_key: '!actors!fDjj8aNUs8dfKfxc'

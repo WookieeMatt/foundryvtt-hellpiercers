@@ -1,0 +1,382 @@
+name: 'NPC: Traits'
+img: icons/svg/d20-grey.svg
+description: >-
+  <p>One of the three columns of the NPC Generator. Roll a D20 on each (Name, Traits, Desires). <em>(Core
+  Rules p.234)</em></p>
+results:
+  - _id: wN5Be9ldU4CiwQdQ
+    type: text
+    name: New HELLPIERCER, Sentimental
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.wN5Be9ldU4CiwQdQ'
+  - _id: d2hRhDnFXNC8rSuy
+    type: text
+    name: Crusader's Spirit, Joyously Choleric
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.d2hRhDnFXNC8rSuy'
+  - _id: 7miAJtcO2ZGcVFOa
+    type: text
+    name: Quantum Alchemist, Capricious
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.7miAJtcO2ZGcVFOa'
+  - _id: r23aUjIuWFJ23qyw
+    type: text
+    name: Sacred Assassin, Sentimental
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.r23aUjIuWFJ23qyw'
+  - _id: A7bUdUeLElAv1dmG
+    type: text
+    name: Blind Oracle, Intoxicated Hedonist
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.A7bUdUeLElAv1dmG'
+  - _id: NXI29wP8LZQrqaOu
+    type: text
+    name: Master Technite, Indolent Wastrel
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.NXI29wP8LZQrqaOu'
+  - _id: hvc65gqbC1KJZHIp
+    type: text
+    name: Phlegmatic, Rebellious Heavenite
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.hvc65gqbC1KJZHIp'
+  - _id: C70mJsqvNuBJr9Yl
+    type: text
+    name: Dissatisfied HELLPIERCER, Ornery
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.C70mJsqvNuBJr9Yl'
+  - _id: gioojVqI8zZsABb1
+    type: text
+    name: Strangely Energetic, Genius Crafter
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.gioojVqI8zZsABb1'
+  - _id: cjvrOSpBop4NgkvU
+    type: text
+    name: Cryptic Observer, Melancholy
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.cjvrOSpBop4NgkvU'
+  - _id: io4WRzOGILAPMIw4
+    type: text
+    name: Devious Strategist, Melodramatic
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.io4WRzOGILAPMIw4'
+  - _id: g5rD4Mn06c7HpjqP
+    type: text
+    name: Hot-Blooded, Angel Slayer
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.g5rD4Mn06c7HpjqP'
+  - _id: RcoSZHjAjC6H5rPC
+    type: text
+    name: Mercurial Spirit, Habitual Paranoid
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.RcoSZHjAjC6H5rPC'
+  - _id: F1wg6Al3Trg7gifn
+    type: text
+    name: Sharp-Tongued, Unlucky Assassin
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.F1wg6Al3Trg7gifn'
+  - _id: QDIdIcIVm3G2Ddq2
+    type: text
+    name: Sanguine, Hyper-Pharmacist
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.QDIdIcIVm3G2Ddq2'
+  - _id: kdcI4rrXYspIxypH
+    type: text
+    name: Perfectionist Sage, Pronoiac
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.kdcI4rrXYspIxypH'
+  - _id: cxxCB6reJwAqdIAF
+    type: text
+    name: Quixotic Warrior-Poet, Loquacious
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.cxxCB6reJwAqdIAF'
+  - _id: 7mWrAamqH4JnP6Tv
+    type: text
+    name: Superstitious, Erudite Physicist
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.7mWrAamqH4JnP6Tv'
+  - _id: gM6yzCFVDEwQFcw4
+    type: text
+    name: Loudmouth Punk, Rebellious
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.gM6yzCFVDEwQFcw4'
+  - _id: vzUUut0SnAV99Zct
+    type: text
+    name: Time-Lost, Purified Spirit
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!VwMM46XFxWxhjYIh.vzUUut0SnAV99Zct'
+formula: 1d20
+replacement: true
+displayRoll: true
+folder: tCCMpbHpLpRcSelT
+sort: 800000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: VwMM46XFxWxhjYIh
+_key: '!tables!VwMM46XFxWxhjYIh'

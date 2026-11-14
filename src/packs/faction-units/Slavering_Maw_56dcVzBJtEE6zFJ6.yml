@@ -1,0 +1,57 @@
+name: Slavering Maw
+type: spawner
+img: systems/hellpiercers/assets/icons/portal.svg
+system:
+  biography: >-
+    <p>A seeping wound in the ground that looks bottomless, but seems to lead to an endless supply
+    of foul creatures. Around its circumference sit a thousand teeth-like protrusions that always
+    seem to be freshly dripping with a viscous fluid.</p><p>Codename: HYDRA</p>
+  faction: AUTOPHYES
+  tags:
+    - Spawner
+    - Immobile
+  health:
+    value: 80
+    max: 80
+    temp: 0
+  scale: 2
+  speed: 0
+  spawn:
+    spawn: >-
+      <p><strong>Spawning -</strong> At the end of the round, The Slavering Maw gains a
+      <strong>Charge</strong>. On the GM’s turn, they may spend <strong>1 Charge </strong>to spawn
+      an AUTOPHYES Minion, or <strong>5 Charges</strong> to spawn a miniboss.</p>
+    special: >-
+      <p><strong>Feed The Abyss -</strong> Enemies with the Minion tag who are knocked into a
+      <strong>Slavering Maw</strong> are instantly killed and Spawning is disabled for a turn while
+      the meal is swallowed. <strong>Slavering Maw</strong> immediately gains a
+      <strong>charge</strong>.</p>
+    name: Special
+    charge: 0
+prototypeToken:
+  name: Slavering Maw
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/portal.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: gixCjdjMInQALHhj
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: 56dcVzBJtEE6zFJ6
+_key: '!actors!56dcVzBJtEE6zFJ6'

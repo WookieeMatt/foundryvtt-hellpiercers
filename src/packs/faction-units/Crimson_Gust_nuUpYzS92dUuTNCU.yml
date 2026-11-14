@@ -1,0 +1,61 @@
+name: Crimson Gust
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Rustwinds howl like nightmares, the ground wells with red ichor. The blood behind your eyes
+    begins to pulsate. The veins in your hands set in motion a cowards revolt.</p><p>Codename:
+    Kaíō</p>
+  faction: METRICOS
+  tags:
+    - Minion
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p><strong>Range:1</strong>, <strong>Target:1</strong>, <strong>Damage:2</strong></p>
+  special:
+    name: Special
+    description: >-
+      <p>When this unit dies, apply <strong>Wound:1</strong> to all enemies in
+      <strong>Burst:1</strong></p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Crimson Gust
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KoxLGRv30kQgZFnI
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: nuUpYzS92dUuTNCU
+_key: '!actors!nuUpYzS92dUuTNCU'

@@ -2,7 +2,7 @@
   "id": "hellpiercers",
   "title": "HELLPIERCERS",
   "description": "HELL IS A PRISON. BREAK ITS BARS. Tactical Hell-slaying action with base building, overwhelming build options, and map based strategy.",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "compatibility": {
     "minimum": "14.370",
     "verified": "14.370",
@@ -38,6 +38,24 @@
       "path": "packs/player-abilities",
       "type": "Item",
       "label": "HELLPIERCERS.packs.player-abilities"
+    },
+    {
+      "name": "faction-units",
+      "path": "packs/faction-units",
+      "type": "Actor",
+      "label": "HELLPIERCERS.packs.faction-units"
+    },
+    {
+      "name": "recon-tables",
+      "path": "packs/recon-tables",
+      "type": "RollTable",
+      "label": "HELLPIERCERS.packs.recon-tables"
+    },
+    {
+      "name": "reference",
+      "path": "packs/reference",
+      "type": "JournalEntry",
+      "label": "HELLPIERCERS.packs.reference"
     },
     {
       "name": "systeminfo",
@@ -89,5 +107,5 @@
   "url": "https://github.com/WookieeMatt/foundryvtt-hellpiercers",
   "background": "systems/hellpiercers/assets/splash.jpg",
   "manifest": "https://github.com/WookieeMatt/foundryvtt-hellpiercers/releases/latest/download/system.json",
-  "download": "https://github.com/WookieeMatt/foundryvtt-hellpiercers/releases/download/v0.4.0/system.zip"
+  "download": "https://github.com/WookieeMatt/foundryvtt-hellpiercers/releases/download/v0.5.0/system.zip"
 }

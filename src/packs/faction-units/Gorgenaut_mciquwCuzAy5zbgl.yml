@@ -1,0 +1,64 @@
+name: Gorgenaut
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Formed at the Scyllan Convergence of thirteen seas, RETIARIUS is bent on consumption. By
+    swirling its energy in a Charybdic array pattern, it generates a near-inescapable
+    vacuum.</p><p>Codename: RETIARIUS</p>
+  faction: PARACLETUS
+  tags:
+    - Miniboss
+  health:
+    value: 100
+    max: 100
+    temp: 0
+  scale: 2
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p><strong>Cone:3</strong>. Deal 5 damage and pull any unit 1 space towards RETIARIUS.</p>
+  special:
+    name: Special
+    description: >-
+      <p>Deal 10 damage to an adjacent unit. Move that unit to any stained
+      square.</p><h4>Stainwalk</h4><p>When RETIARIUS is on a Stained square, it recovers 10 HP at
+      the end of your turn.</p>
+  agnosia:
+    value: null
+    effect: >-
+      <p>Draw a 5x5 box with RETIARIUS at the center and Stain them. Pull any enemies within the box
+      1 square towards RETIARIUS.</p>
+    triggered: false
+prototypeToken:
+  name: Gorgenaut
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: PYpf1v41cCASKyNC
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: mciquwCuzAy5zbgl
+_key: '!actors!mciquwCuzAy5zbgl'

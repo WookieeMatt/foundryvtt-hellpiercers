@@ -1,0 +1,59 @@
+name: Spitters
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>In this flawed ascension they filled the waters with the blood of the pierced beast, who in
+    his fury struck the iron from the flesh of man and left them bare and cold.</p><p>Codename:
+    Pschent · HP is shared by the whole Swarm (HP Total) · Sprawl: 3</p>
+  faction: MIXIS
+  tags:
+    - Minion
+  health:
+    value: 5
+    max: 5
+    temp: 0
+  scale: 1
+  speed: 8
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p><strong>Range:8</strong>, <strong>Damage:3 Poison:2</strong></p>
+  special:
+    name: Special
+    description: <p>Spitters may only move or attack during their turn.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Spitters
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KiERE0EuRRjFBbV4
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: ADFRT75oAJyKSfC4
+_key: '!actors!ADFRT75oAJyKSfC4'

@@ -1,0 +1,67 @@
+name: Halcyon Chariot
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Feeding a two-headed Acheronian stallion an unwilling thrall will lower its guard enough to
+    yoke it to a golden chariot. The psychogenic bridle compels the beast to fervent
+    compliance.</p><p>Codename: APOKROTOS · Crown cost: 3</p>
+  faction: METRICOS
+  tags:
+    - Miniboss
+  health:
+    value: 100
+    max: 100
+    temp: 0
+  scale: 2
+  speed: 8
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p>Place an adjacent unit on top of this one—that unit is <strong>Riding</strong> this one.
+      While <strong>Riding</strong>, they move as a single unit using APOKROTOS's Speed. The Rider
+      may trigger Apokrotos’s attacks on their turn. Apokrotos may carry up to 3 Minions or one
+      Miniboss.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Charge:5</strong>, <strong>Damage:4</strong>. Sacrifice a <strong>Rider</strong> to
+      deal 3 additional damage and inflict <strong>Bleed:2</strong>.</p>
+  agnosia:
+    value: 30
+    effect: >-
+      <p>Throw all passengers to an unoccupied space in <strong>Range:4</strong>. At the end of this
+      next turn, Chariot deals 10 damage in <strong>Burst:4</strong> and dies.</p>
+    triggered: false
+prototypeToken:
+  name: Halcyon Chariot
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KoxLGRv30kQgZFnI
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: efIzFHmYGY5KKoS2
+_key: '!actors!efIzFHmYGY5KKoS2'

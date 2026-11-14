@@ -1,0 +1,66 @@
+name: Singing Nexus
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Ice threaded and pulled like glass form a tower which cradles a slumbering babe suspended in
+    meters of frozen dreamstuff. The tower sways more erratically the colder it gets. Eventually the
+    tower rights itself, sloughing off freezing air in impossible concentrations.</p>
+  faction: THELETUS
+  tags:
+    - Fortification
+    - Amplifier
+  health:
+    value: 60
+    max: 60
+    temp: 0
+  scale: 1
+  speed: 0
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: ''
+  special:
+    name: Special
+    description: >-
+      <p>Frigid Amplifier: this ability triggers whenever the Singing Nexus is within range of any
+      effect which inflicts Frozen. For the purposes of Frozen effects it takes, the singing Nexus
+      counts as an enemy unit, but takes no damage from the triggering action. At the end of the
+      current combat round, if this fortification has taken any stacks of Frozen this round, it
+      triggers a Burst: 5 effect where it can distribute twice its current Frozen rating as stacks
+      of the Frozen effect among any enemies in the Burst.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Singing Nexus
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: hsXh5sb6AljquH3A
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: ZcMSAXZozUoQpCrB
+_key: '!actors!ZcMSAXZozUoQpCrB'

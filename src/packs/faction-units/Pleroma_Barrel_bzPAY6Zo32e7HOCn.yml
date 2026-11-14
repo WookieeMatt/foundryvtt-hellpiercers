@@ -1,0 +1,62 @@
+name: Pleroma Barrel
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>A hellsteel drum of condensed pleroma. HELLPIERCER weapons are consecrated with Gnosis, and
+    the explosive force of mass ascension can be deadly to creatures too close to the blast
+    zone.</p>
+  faction: EKKLESIA
+  tags:
+    - Fortification
+    - Stationary
+  health:
+    value: 10
+    max: 10
+    temp: 0
+  scale: 1
+  speed: 0
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: ''
+  special:
+    name: Special
+    description: >-
+      <p>When this fortification reaches 0 HP, instantly <strong>Burst:2</strong> and deal 5 HP
+      damage to all creatures within range</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Pleroma Barrel
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: v9Izj4qogDXOpAKr
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: bzPAY6Zo32e7HOCn
+_key: '!actors!bzPAY6Zo32e7HOCn'

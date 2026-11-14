@@ -1,0 +1,16 @@
+name: PARACLETUS
+type: Actor
+folder: null
+sorting: a
+sort: 500000
+color: '#2f6a73'
+flags: {}
+_id: PYpf1v41cCASKyNC
+description: ''
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_key: '!folders!PYpf1v41cCASKyNC'

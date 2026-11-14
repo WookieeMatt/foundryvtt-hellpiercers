@@ -1,0 +1,69 @@
+name: The Cultivator
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>This fungal creature is covered in recesses lined with devouring teeth which bubble with
+    rendering acids. The cultivator concerns itself with repurposing the component parts of all it
+    consumes.</p><p>Codename: Synaskeo</p>
+  faction: HENOSIS
+  tags:
+    - Miniboss
+  health:
+    value: 110
+    max: 110
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Range:1 Damage:2</strong>. This unit may force a minion to move one space. If it
+      ends its movement adjacent to this unit, the minion is devoured and this attack deals 2
+      additional <strong>Damage</strong>.</p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Line:3 Pull:1 Damage:1</strong>. If a unit pulled by this attack is made adjacent
+      to The Cultivator, the pulled unit gains <strong>Pin:1</strong>.</p><p>When this unit attacks
+      a unit which is pinned, inflict <strong>Poison:2</strong></p>
+  agnosia:
+    value: 50
+    effect: >-
+      <p>This unit produces a wave of digestive acids in <strong>Cone:3</strong>. Units in range
+      take 1 damage and <strong>Poisoned:1</strong>. Any units which are pinned take
+      <strong>Poison:3</strong>. Any units which are already under the effect of poison double their
+      current poison value.</p>
+    triggered: false
+prototypeToken:
+  name: The Cultivator
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: H0n1mEqWTBCKPrC9
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: pk8xWk3i56700fJk
+_key: '!actors!pk8xWk3i56700fJk'

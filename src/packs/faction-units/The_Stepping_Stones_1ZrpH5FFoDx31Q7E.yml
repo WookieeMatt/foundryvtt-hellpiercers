@@ -1,0 +1,66 @@
+name: The Stepping Stones
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Soft-bodied fungal soldiers deployed to support the forces of Henosis. While The stepping
+    stones remain unmoved, all who come into contact with them are made skyborne.</p><p>Codename:
+    Limen</p>
+  faction: HENOSIS
+  tags:
+    - Swarm
+    - Minion
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 3
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: ''
+  special:
+    name: Special
+    description: >-
+      <p>The stepping stones have no standard attack. Any time another unit deals damage to them
+      while <strong>Swarming</strong>, the damaging unit has their current elevation increased by
+      one. If the elevated unit has no means to maintain their elevation, they will begin falling at
+      the start of their next turn. The force distributed to launch another unit creates a kinetic
+      shockwave dealing 3 damage to all creatures within burst one of the
+      <strong>Swarm</strong>.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: The Stepping Stones
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: H0n1mEqWTBCKPrC9
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: 1ZrpH5FFoDx31Q7E
+_key: '!actors!1ZrpH5FFoDx31Q7E'

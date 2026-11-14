@@ -1,0 +1,200 @@
+name: 'Location: Resources'
+img: icons/svg/d20-grey.svg
+description: <p>One of the six columns of the Location Generator. Roll a D10 on each. <em>(Core Rules p.236)</em></p>
+results:
+  - _id: gdZCP104lj4NS60L
+    type: text
+    name: Bodies
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!YPZJxq2gJngvDDUF.gdZCP104lj4NS60L'
+  - _id: OJuHmWY8xjMVjs2p
+    type: text
+    name: Souls
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!YPZJxq2gJngvDDUF.OJuHmWY8xjMVjs2p'
+  - _id: 4ugqeubagmFNiFuW
+    type: text
+    name: Monsters
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!YPZJxq2gJngvDDUF.4ugqeubagmFNiFuW'
+  - _id: tf2R8F9u1mjuMkbG
+    type: text
+    name: Oil
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!YPZJxq2gJngvDDUF.tf2R8F9u1mjuMkbG'
+  - _id: Y8PNTDEcqEh1FEGY
+    type: text
+    name: Ore
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!YPZJxq2gJngvDDUF.Y8PNTDEcqEh1FEGY'
+  - _id: vG483UbGHLkcxDnV
+    type: text
+    name: Brimstone
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!YPZJxq2gJngvDDUF.vG483UbGHLkcxDnV'
+  - _id: T30xfELmumRHpt9P
+    type: text
+    name: Hellsteel
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!YPZJxq2gJngvDDUF.T30xfELmumRHpt9P'
+  - _id: k1R3FF4WCG9crF1B
+    type: text
+    name: Obsidian
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!YPZJxq2gJngvDDUF.k1R3FF4WCG9crF1B'
+  - _id: KyxFxYsHvU1Oevg8
+    type: text
+    name: Forgotten Ritual
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!YPZJxq2gJngvDDUF.KyxFxYsHvU1Oevg8'
+  - _id: RjAxiEHz5kHbjRND
+    type: text
+    name: Lost Research
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!YPZJxq2gJngvDDUF.RjAxiEHz5kHbjRND'
+formula: 1d10
+replacement: true
+displayRoll: true
+folder: tCCMpbHpLpRcSelT
+sort: 1400000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: YPZJxq2gJngvDDUF
+_key: '!tables!YPZJxq2gJngvDDUF'

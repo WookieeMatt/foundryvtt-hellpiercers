@@ -1,0 +1,670 @@
+name: Item Table
+img: icons/svg/d20-grey.svg
+description: >-
+  <p>Roll a D66 (a D6 for the tens and a D6 for the units). Demons usually don't drop items. <em>(Core Rules
+  p.235)</em></p>
+results:
+  - _id: 3NtwyvUKcZcA86Ri
+    type: text
+    name: Fallen Mars model
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.3NtwyvUKcZcA86Ri'
+  - _id: 74ICFEA8Rf5Fp1wm
+    type: text
+    name: Alchemic phials
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.74ICFEA8Rf5Fp1wm'
+  - _id: ettAZfPmZUu5pVxE
+    type: text
+    name: Tatters Of Lost Gold-Skin
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.ettAZfPmZUu5pVxE'
+  - _id: 6JCE9TN2XbqDCG8M
+    type: text
+    name: Astrological Replicant
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.6JCE9TN2XbqDCG8M'
+  - _id: v2gh4oIe8rfXWUqS
+    type: text
+    name: Archon statue
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.v2gh4oIe8rfXWUqS'
+  - _id: LMPTyShnYrKRt7B6
+    type: text
+    name: Gleaming pearl
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.LMPTyShnYrKRt7B6'
+  - _id: nPN1WMq7LUyzcEWZ
+    type: text
+    name: Angelic Death Mask
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 21
+      - 21
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.nPN1WMq7LUyzcEWZ'
+  - _id: rfzqTj9tf8NXYRuA
+    type: text
+    name: Soul-cage pendant
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 22
+      - 22
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.rfzqTj9tf8NXYRuA'
+  - _id: EyvFHFC4AoTQlhis
+    type: text
+    name: Abraxas-stone amulet
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 23
+      - 23
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.EyvFHFC4AoTQlhis'
+  - _id: J6MYGbc8Slmz8VAX
+    type: text
+    name: Rune-carved ammo
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 24
+      - 24
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.J6MYGbc8Slmz8VAX'
+  - _id: j0hVbOg6vHiBd1EI
+    type: text
+    name: Obscure ritual formulae
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 25
+      - 25
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.j0hVbOg6vHiBd1EI'
+  - _id: jfWRJ5ZDrBVWq4oA
+    type: text
+    name: Ancient bone reliquary
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 26
+      - 26
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.jfWRJ5ZDrBVWq4oA'
+  - _id: EqKHK5EYRk8BvEZk
+    type: text
+    name: Apotropaic wand
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 31
+      - 31
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.EqKHK5EYRk8BvEZk'
+  - _id: XRB0EMSuZZq1yUwt
+    type: text
+    name: Bezelbubian Propaganda
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 32
+      - 32
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.XRB0EMSuZZq1yUwt'
+  - _id: ygwNnoZzJg7vXNFB
+    type: text
+    name: Chronophage leech jar
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 33
+      - 33
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.ygwNnoZzJg7vXNFB'
+  - _id: vfAYgecJXgsDgb5C
+    type: text
+    name: Lost Spinther
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 34
+      - 34
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.vfAYgecJXgsDgb5C'
+  - _id: lpFWul7lurlkAlwq
+    type: text
+    name: Cybernetic clawed arm
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 35
+      - 35
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.lpFWul7lurlkAlwq'
+  - _id: kIsp78L6deHieZun
+    type: text
+    name: Tattered Orphite Diagrams
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 36
+      - 36
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.kIsp78L6deHieZun'
+  - _id: udp1T7boGWDnPgRX
+    type: text
+    name: Sentient Brick, Screaming For Its Master
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 41
+      - 41
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.udp1T7boGWDnPgRX'
+  - _id: IiEsPEXEFsSI0tnL
+    type: text
+    name: Hellsteel-alloy chains
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 42
+      - 42
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.IiEsPEXEFsSI0tnL'
+  - _id: JqSFnI5SrkBknVYJ
+    type: text
+    name: Fuel, 3 units. Sentient.
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 43
+      - 43
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.JqSFnI5SrkBknVYJ'
+  - _id: OuEp1R2MmZNUkHZ0
+    type: text
+    name: Old, shattered crown
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 44
+      - 44
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.OuEp1R2MmZNUkHZ0'
+  - _id: AejU2YF0MiWMkm67
+    type: text
+    name: Asphodelian psychedelics
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 45
+      - 45
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.AejU2YF0MiWMkm67'
+  - _id: 7RifD0pni8LbcFyF
+    type: text
+    name: Scales of the Second Eve
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 46
+      - 46
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.7RifD0pni8LbcFyF'
+  - _id: bZJUpr9RgRGONSBk
+    type: text
+    name: Soulfire chrysanthemum
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 51
+      - 51
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.bZJUpr9RgRGONSBk'
+  - _id: m2OtSVAGA1GVloap
+    type: text
+    name: Immaterium Navigation Records
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 52
+      - 52
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.m2OtSVAGA1GVloap'
+  - _id: eJjba3yqERn27Xz8
+    type: text
+    name: Audio-Absorbing Runestone, Full
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 53
+      - 53
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.eJjba3yqERn27Xz8'
+  - _id: T2RrX60DGCU5eP2U
+    type: text
+    name: Adapted Human Tech
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 54
+      - 54
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.T2RrX60DGCU5eP2U'
+  - _id: ezME5y960cQoevxh
+    type: text
+    name: Pooled Ogdoadian Remains
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 55
+      - 55
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.ezME5y960cQoevxh'
+  - _id: L5FN9hgpZmjK0rWZ
+    type: text
+    name: Obsidian Pillar, Numbered
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 56
+      - 56
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.L5FN9hgpZmjK0rWZ'
+  - _id: WaHFnKxcQCGmW1S1
+    type: text
+    name: Strange Hell Fruit
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 61
+      - 61
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.WaHFnKxcQCGmW1S1'
+  - _id: HulvNafHX5rjQFb7
+    type: text
+    name: Archaic comm unit
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 62
+      - 62
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.HulvNafHX5rjQFb7'
+  - _id: mb7YL6JfxtOKbd0V
+    type: text
+    name: Syzygos-Wrought Dagger
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 63
+      - 63
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.mb7YL6JfxtOKbd0V'
+  - _id: q6bfxmGoQkxIP12S
+    type: text
+    name: Anachronistic firearm
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 64
+      - 64
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.q6bfxmGoQkxIP12S'
+  - _id: usErqLuDkt1dvk6y
+    type: text
+    name: Miniaturized magnetar
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 65
+      - 65
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.usErqLuDkt1dvk6y'
+  - _id: ctibjtclcqkROBfU
+    type: text
+    name: Nous Bezoar
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 66
+      - 66
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!np0sSaoLhFMXaiw5.ctibjtclcqkROBfU'
+formula: (1d6 * 10) + 1d6
+replacement: true
+displayRoll: true
+folder: tCCMpbHpLpRcSelT
+sort: 1000000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: np0sSaoLhFMXaiw5
+_key: '!tables!np0sSaoLhFMXaiw5'

@@ -1,0 +1,382 @@
+name: 'NPC: Desires'
+img: icons/svg/d20-grey.svg
+description: >-
+  <p>One of the three columns of the NPC Generator. Roll a D20 on each (Name, Traits, Desires). <em>(Core
+  Rules p.234)</em></p>
+results:
+  - _id: vsQJbXxvUOE5NYWb
+    type: text
+    name: Find A Purpose
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.vsQJbXxvUOE5NYWb'
+  - _id: 15s0dK2Dwcdtvbua
+    type: text
+    name: Further Ascension
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.15s0dK2Dwcdtvbua'
+  - _id: fCQ4CMPnss8hDTgQ
+    type: text
+    name: Liberate A Friendly Soul
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.fCQ4CMPnss8hDTgQ'
+  - _id: Xl1qEdT2aFsT8AM9
+    type: text
+    name: Kill Crowned Demons
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.Xl1qEdT2aFsT8AM9'
+  - _id: gyJfUldxN9o80ytM
+    type: text
+    name: Live In The Present
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.gyJfUldxN9o80ytM'
+  - _id: bLHQqxfXs7SzIApq
+    type: text
+    name: Create Strange Art
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.bLHQqxfXs7SzIApq'
+  - _id: sELPjvESVUU9ixSF
+    type: text
+    name: Tend A Farm
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.sELPjvESVUU9ixSF'
+  - _id: M0t6Lkb86djUU7OW
+    type: text
+    name: Find A Purpose
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.M0t6Lkb86djUU7OW'
+  - _id: sqAZLOFxvEphRVE3
+    type: text
+    name: Invent Wonders
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.sqAZLOFxvEphRVE3'
+  - _id: Kpku8WQZA7KqQYdM
+    type: text
+    name: Talk To Ancient Souls
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.Kpku8WQZA7KqQYdM'
+  - _id: p2xX4qecE1RhqtvI
+    type: text
+    name: Capture, Study Demons
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.p2xX4qecE1RhqtvI'
+  - _id: GwmXxofH2HNzP1Bd
+    type: text
+    name: Ascend Through Battle
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.GwmXxofH2HNzP1Bd'
+  - _id: S14NCJvTUqhXQ8gH
+    type: text
+    name: Safety Through Power
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.S14NCJvTUqhXQ8gH'
+  - _id: VAn3Z0GSZYCLYaMQ
+    type: text
+    name: Attain Foreknowledge
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.VAn3Z0GSZYCLYaMQ'
+  - _id: f7Fd7rDebVNgw5AM
+    type: text
+    name: Explore New Mind States
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.f7Fd7rDebVNgw5AM'
+  - _id: j9KZcEMy57GACRfV
+    type: text
+    name: Uncover Hidden Truths
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.j9KZcEMy57GACRfV'
+  - _id: o8g1QBYsq6B5pkX6
+    type: text
+    name: Record Great Battles
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.o8g1QBYsq6B5pkX6'
+  - _id: UctBfQaDuwkOC6Jo
+    type: text
+    name: Justify Going Home
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.UctBfQaDuwkOC6Jo'
+  - _id: 5eQd4Gd1c0PFITN3
+    type: text
+    name: Have A Cat
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.5eQd4Gd1c0PFITN3'
+  - _id: AQWsb1l4mzTEnxbn
+    type: text
+    name: Change The Future
+    img: null
+    description: ''
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!Pf4TotBTZMnSZVEV.AQWsb1l4mzTEnxbn'
+formula: 1d20
+replacement: true
+displayRoll: true
+folder: tCCMpbHpLpRcSelT
+sort: 900000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: Pf4TotBTZMnSZVEV
+_key: '!tables!Pf4TotBTZMnSZVEV'

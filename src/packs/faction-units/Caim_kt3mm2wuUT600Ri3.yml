@@ -1,0 +1,180 @@
+name: Caim
+type: boss
+img: systems/hellpiercers/assets/icons/warlord-helmet.svg
+system:
+  biography: >-
+    <p><em>THE FIRST BLOODIED</em></p><p>When the Archons found themselves distracted with the
+    arrival of Syzygos, CAIM found the opportunity to take vengeance for their slights against him.
+    Baptised in their blood, CAIM dedicated himself to the pursuit of a furious justice and
+    order.</p><p>Crown cost: 4 · Actions: 1/2 per player</p>
+  faction: METRICOS
+  tags:
+    - Boss
+  health:
+    value: 200
+    max: 200
+    temp: 0
+  scale: 1
+  speed: 6
+  actions: 1/2
+  agnosia:
+    value: 50
+    effect: >-
+      <p>When CAIM hits AGNOSIA, immediately teleport to a free space adjacent to the nearest Swarm.
+      Reshape the Swarm into any shape, as long as the shape adheres to existing movement and
+      placement rules. The Swarm may overlay or collide with player characters already in play.
+      After placing the new Swarm, if any Swarm tiles collide with or overlay an existing player
+      character, Break, and deal 5 damage to the player character. Reshaping the Swarm ignores
+      movement penalties and elevation.</p>
+    triggered: false
+prototypeToken:
+  name: Caim
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/warlord-helmet.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items:
+  - _id: PhoJlj3l6CvvVqhr
+    name: Attack 1
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Target:1, Range:4</strong>, remove all <strong>Wounds</strong> from the target
+        and spawn Ixodes equal to wounds removed adjacent to either CAIM or the target.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p><strong>Target:1, Range:4</strong>, remove all <strong>Wounds</strong> from the target
+          and spawn Ixodes equal to wounds removed adjacent to either CAIM or the target.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!kt3mm2wuUT600Ri3.PhoJlj3l6CvvVqhr'
+  - _id: SyfC44Lpyqk6ijWz
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Deal 6 to an adjacent enemy and move one of your factions <strong>Swarms</strong> within
+        line of sight by up to that <strong>Swarm's</strong> speed.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>Deal 6 to an adjacent enemy and move one of your factions <strong>Swarms</strong>
+          within line of sight by up to that <strong>Swarm's</strong> speed.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 100000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!kt3mm2wuUT600Ri3.SyfC44Lpyqk6ijWz'
+  - _id: ChinpzwoSQCSe8I3
+    name: Attack 3
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Burst:1</strong>, <strong>Push:1</strong>. Any demons pushed back this way deal
+        an additional Wound:1 on their next attack.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p><strong>Burst:1</strong>, <strong>Push:1</strong>. Any demons pushed back this way deal
+          an additional Wound:1 on their next attack.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 200000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!kt3mm2wuUT600Ri3.ChinpzwoSQCSe8I3'
+  - _id: Gy327n8YXaLot0r1
+    name: Special
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: special
+      effect: >-
+        <p>If CAIM has not moved since their last attack, their next attack causes
+        <strong>Bleed:1</strong>.</p><p>Once per turn, when adjacent to a Swarm, CAIM can move to
+        any square adjacent to that Swarm at no cost to its Speed.</p>
+      attack: null
+      uses: null
+      trigger: null
+    effects: []
+    sort: 300000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!kt3mm2wuUT600Ri3.Gy327n8YXaLot0r1'
+effects: []
+folder: KoxLGRv30kQgZFnI
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: kt3mm2wuUT600Ri3
+_key: '!actors!kt3mm2wuUT600Ri3'

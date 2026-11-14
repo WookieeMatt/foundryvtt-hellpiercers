@@ -1,0 +1,883 @@
+name: HELLPIERCERS Reference
+pages:
+  - sort: 100000
+    name: Effects
+    type: text
+    _id: VDM7FMgI8vevaaop
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Every Effect from the Core Rules (pp. 94-95) plus the faction and equipment Effects. The TACCOM engine
+        applies the automatic ones at the start and end of each
+        turn.</p><table><thead><tr><th>Effect</th><th>Rule</th></tr></thead><tbody><tr><td><strong>Aegis</strong></td><td>This
+        unit may count as Flying for a number of squares of their movement up to their stacks of Aegis each turn. Flying
+        units move over all types of terrain unimpeded, are treated as having +1 Elevation, and do not Provoke.
+        Aegis-affected units may choose to spend their Aegis flight at any point during their movement. Aegis does not
+        change a unit's Speed and does not count as adding spaces of movement, only modifying existing movement. Remove
+        1 stack at the end of the affected unit's turn</td></tr><tr><td><strong>Armor</strong></td><td>This unit takes
+        -1 damage from each instance of damage. Remove 1 stack at the end of the affected unit's
+        turn.</td></tr><tr><td><strong>Blazing</strong></td><td>This unit takes 1 damage at the start of each turn.
+        Blazing spreads: any unit who begins a turn adjacent to a unit with Blazing gains Blazing:1 and im- mediately
+        takes its 1 damage. Additional Blazing does not add to existing Blazing — keep the highest number of stacks from
+        any one source and ignore all others. Remove 1 stack at the end of the affected unit’s turn, but only if there
+        are no units adjacent to it.</td></tr><tr><td><strong>Bleed</strong></td><td>All attacks against this target
+        deal an additional 1 damage. Remove 1 stack at the end of the affected unit’s
+        turn.</td></tr><tr><td><strong>Bound</strong></td><td>This unit cannot inflict Effects on other creatures.
+        Actions otherwise function as normal. Remove 1 stack at the end of the affected unit's
+        turn.</td></tr><tr><td><strong>Compel</strong></td><td>This unit forces enemies within a range equal to its
+        stacks to attack it during their turn, if able. Compel:1 affects all units that start their turns adjacent or
+        become adjacent and each additional stack increases the range by 1 square. Remove 1 stack after each
+        attackagainst the affected unit.</td></tr><tr><td><strong>Countdown</strong></td><td>Countdown does nothing
+        until the Effect ends, at which point it triggers a special effect based on the source of the Countdown. Remove
+        1 stack at the end of the round.</td></tr><tr><td><strong>Enrage</strong></td><td>This unit must attack a unit
+        with Compel if possible, including attacking an ally. It can only take attacks that do not target a unit with
+        Compel after making an attack that does, unless no unit has Compel. Remove 1 stack at the end of the affected
+        unit’s turn.</td></tr><tr><td><strong>Haste</strong></td><td>This unit may make one additional Action of any
+        type during their turn. Remove 1 stack after the additional action has been
+        taken.</td></tr><tr><td><strong>Healing</strong></td><td>This unit restores HP equal to their Healing value at
+        the end of their turn. When this Effect is applied to a tile, a unit standing on it is considered to have the
+        Effect at the tile’s number of stacks. A unit buffed with Healing:2 will restore 2 HP at the end of their turn
+        regardless of where they move; a Healing:3 tile will then also restore 3 HP to that unit if they end their turn
+        on that tile. These Healing Effects resolve separately if a unit is subject to both. This cannot increase a
+        unit’s max health beyond its default max HP. Remove 1 stack from each source of healing at the end of the
+        affected unit’s turn.</td></tr><tr><td><strong>Pin</strong></td><td>This unit cannot move or Sprint. Remove 1
+        stack at the end of the affected unit’s turn.</td></tr><tr><td><strong>Poison</strong></td><td>This unit takes 1
+        HP damage per stack at the end of their turn. After Poison’s damage is dealt, remove 1 stack of
+        Poison.</td></tr><tr><td><strong>Shaded</strong></td><td>Creatures with Shaded:1+ are surrounded by a Burst:1
+        “fog of war” effect, hiding enemies and their movements from players. Players can only see enemies within a
+        Shaded zone if they are adjacent to them. Shaded zones move with the unit or affected space unless stated
+        otherwise. Each additional stack of Shaded increases the scale of the burst to the same number. Remove 1 stack
+        at the end of the affected unit's turn.</td></tr><tr><td><strong>Shock</strong></td><td>This unit’s actions are
+        treated as one tier higher than their action type — Aux Actions count as Support Action, Support Actions count
+        as Main Actions, and Main Actions are impossible. Remove 1 stack at the end of the affected unit’s
+        turn.</td></tr><tr><td><strong>Slow</strong></td><td>This unit’s movement costs are doubled. Remove 1 stack at
+        the end of the affected unit’s turn.</td></tr><tr><td><strong>Transference</strong></td><td>This unit heals
+        itself, or this attack heals the attacker, for HP equal to any damage they inflict. Remove 1 stack at the end of
+        the affected unit's turn.</td></tr><tr><td><strong>Broken</strong></td><td>All attacks against this target deal
+        maximum damage. Remove 1 stack after each attack against the affected
+        unit.</td></tr><tr><td><strong>Fortified</strong></td><td>When a HELLPIERCER unit begins its turn on a tile with
+        Fortified, remove the Effect and restore 2 Reversal Charges to that unit.</td></tr><tr><td><strong>Pain
+        Aura</strong></td><td>This unit projects a Scale:2 field around them that causes 1 damage to any units ending
+        their turn within it, regardless of allegiance. Remove 1 stack at the end of the affected unit's
+        turn.</td></tr><tr><td><strong>Frozen</strong></td><td>The affected unit cannot use Aux Actions. Hitting a
+        Frozen target triggers Shatter, which replaces the attack's damage and effects and clears all Frozen. Ticks down
+        at the end of the affected unit's turn.</td></tr><tr><td><strong>Wound</strong></td><td>A mark of CAIM's
+        vengeance. Wounds do not tick down and last until the TACCOM encounter is over or a Metricos ability spends
+        them. Whenever a Metricos unit applies an Effect it also applies
+        Wound:1.</td></tr><tr><td><strong>Wrack</strong></td><td>The next attack against this unit cannot roll any
+        damage die lower than its Wrack value (never above the die's maximum), then all Wrack is
+        cleared.</td></tr><tr><td><strong>Constrict</strong></td><td>This unit may not move on their turn, and takes
+        additional damage from all sources equal to its Constrict
+        stacks.</td></tr><tr><td><strong>Brand</strong></td><td>When the Brand reaches 0, the Branded creature or object
+        explodes, dealing 4D6 damage to the target and 6 damage to all adjacent targets. Remove 1 stack at the end of
+        the round.</td></tr><tr><td><strong>Retaliation</strong></td><td>Gained when attacked while in a riposte stance.
+        Spend stacks to empower your next counter-charge. Lose 1 stack when you end a turn outside the
+        stance.</td></tr><tr><td><strong>Retrieve</strong></td><td>When this unit is attacked it may spend 1 stack to
+        move adjacent to its anchor, or move the anchor adjacent to
+        itself.</td></tr><tr><td><strong>Rush</strong></td><td>Spend a stack as a Free action to double your Speed at
+        any time during your turn.</td></tr><tr><td><strong>Magnetic</strong></td><td>At the start of the affected
+        unit's turn, creatures linked to it move 2 spaces toward it. This is not regular movement and costs no Speed,
+        but still Provokes.</td></tr><tr><td><strong>Snakeskin</strong></td><td>The unit takes 0 damage from the next
+        attack targeting it, then loses Snakeskin.</td></tr><tr><td><strong>Glassflesh</strong></td><td>The target
+        receives double damage from the next attack targeting them. The status lingers on the space where a unit dies
+        and is picked up by the next enemy to enter it.</td></tr><tr><td><strong>Agnosia</strong></td><td>This unit has
+        reached its Agnosia threshold and may use its single-use Agnosia move.</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.VDM7FMgI8vevaaop'
+  - sort: 200000
+    name: STRATCOM Buildings
+    type: text
+    _id: dvLf1Uxz24bww9Nq
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>The base-building tech tree follows the drawn tree (pp. 115-117). Resources: Hellsteel, Soulfire,
+        Brimstone.</p><table><thead><tr><th>Building</th><th>Cost</th><th>Requires</th><th>Unlocks</th></tr></thead><tbody><tr><td><strong>PRONOIA
+        Arms Modification Protocols</strong><br><em>gear</em></td><td>2
+        Hellsteel</td><td>—</td><td><strong>weapon</strong>: Love Without Consideration<br><strong>armor</strong>:
+        YADATHAN<br><strong>class</strong>: EPEUS<br><strong>gear</strong>: Assisted Ascension Module, Expanded
+        Aggression Rituals, Soter Assisted Defense System</td></tr><tr><td><strong>ANCILIA Tactical
+        Production</strong><br><em>equipment</em></td><td>1 Hellsteel</td><td>—</td><td><strong>weapon</strong>:
+        Sabaoth-Class Obliteration Charges<br><strong>class</strong>: HEPHAESTUS<br><strong>equipment</strong>: Hylic
+        Annihilation Corridor, Promethean-Grade Hylic Rejection Field, Thought-Guiding Redirection Circuits, Transient
+        Force Projection</td></tr><tr><td><strong>APONOIA Expedited Enlightenment
+        Process</strong><br><em>limit_break</em></td><td>1 Brimstone</td><td>—</td><td><strong>weapon</strong>:
+        Ambiguous Intentions<br><strong>armor</strong>: MURIEL<br><strong>class</strong>: CHRYSAOR<br><strong>halo
+        weapon</strong>: Monadic Offense Manifestation Array</td></tr><tr><td><strong>CHOIC Spatial Manipulation Sigil
+        Development</strong><br><em>weapon_slot</em></td><td>1 Brimstone</td><td>—</td><td><strong>weapon</strong>:
+        Heaven Burning Sword<br><strong>class</strong>: VARUNASTRA</td></tr><tr><td><strong>Synthetic Spinther
+        Manufacturing Lab</strong><br><em>vehicles</em></td><td>4 Brimstone, 5
+        Soulfire</td><td>—</td><td><strong>equipment</strong>: Motes of Bountiful Forethought<br><strong>halo
+        weapon</strong>: Catalytic-Actuated Positron Rifle</td></tr><tr><td><strong>HEBDOMAS Aerial Support
+        Wing</strong><br><em>off_grid</em></td><td>2 Soulfire, 2 Brimstone</td><td>—</td><td><strong>weapon</strong>:
+        Paradigm-Shattering Cauldron<br><strong>armor</strong>: BARAQIEL<br><strong>halo system</strong>: AEIDIS Combat
+        Drop Protocols</td></tr><tr><td><strong>Ignorance-Devouring Hyper-Spatial
+        Anchor</strong><br><em>reversals</em></td><td>3 Hellsteel, 1
+        Brimstone</td><td>—</td><td><strong>weapon</strong>: Heaven Or Hell<br><strong>gear</strong>: Angelweight
+        Optimization, Spiked Shoulders</td></tr><tr><td><strong>Archontic Longinomechanical Pneuma-Engineering
+        Bay</strong><br><em>halo</em></td><td>1 Soulfire</td><td>PRONOIA Arms Modification Protocols, Synthetic Spinther
+        Manufacturing Lab</td><td><strong>weapon</strong>: Regrettable Precaution<br><strong>armor</strong>:
+        NBAT<br><strong>class</strong>: OGMIOS<br><strong>equipment</strong>: Inverted Flagellation-Acceleration
+        Praxis<br><strong>halo weapon</strong>: AH-18 Pristir Cannon, Acherontic Warheads<br><strong>halo
+        system</strong>: Desant Anchors, ATLAS Tactical Transmateriel Pods, VELOS Aerial Reconfiguration
+        Suite</td></tr><tr><td><strong>ANOINT Reality Manipulation
+        Development</strong><br><em>grid_manipulation</em></td><td>2 Soulfire</td><td>Archontic Longinomechanical
+        Pneuma-Engineering Bay, HEBDOMAS Aerial Support Wing</td><td><strong>weapon</strong>: Her Tears Formed Our
+        World<br><strong>armor</strong>: ABATUR<br><strong>class</strong>: DERAFSH KAVIANI<br><strong>halo
+        system</strong>: Emergency Bythos Shunt</td></tr><tr><td><strong>EROS Management Vault
+        Systems</strong><br><em>legendary_arms</em></td><td>4 Soulfire, 3 Brimstone</td><td>CHOIC Spatial Manipulation
+        Sigil Development</td><td><strong>armor</strong>: JEHOEL<br><strong>gear</strong>: Weapon Link, Ablative
+        Pseudo-Soul<br><strong>equipment</strong>: Zoe-Emulation Soul Cloning Engine, Oblivion Induction Ritual
+        Device<br><strong>halo weapon</strong>: Longinus Driver</td></tr><tr><td><strong>SYZYGOS Automated Adulation
+        Suite</strong><br><em>roles</em></td><td>2 Hellsteel, 2 Brimstone</td><td>Ignorance-Devouring Hyper-Spatial
+        Anchor</td><td><strong>class</strong>: ULFBERHT<br><strong>equipment</strong>: Constrained Reality Modification
+        Circuits<br><strong>halo weapon</strong>: Keraunos Imas<br><strong>halo system</strong>: Katagnosis
+        Plating</td></tr><tr><td><strong>GNOSTIC Synthesis Chamber</strong><br><em>class_mastery</em></td><td>4
+        Hellsteel, 3 Soulfire</td><td>APONOIA Expedited Enlightenment Process</td><td><strong>weapon</strong>: Duty
+        Before Indulgence<br><strong>armor</strong>: MACROPROSOPUS</td></tr><tr><td><strong>AGNOIA Triumph
+        Chamber</strong><br><em>triumph</em></td><td>3 Hellsteel</td><td>GNOSTIC Synthesis
+        Chamber</td><td><strong>weapon</strong>: Consecrated Behemoth Spines<br><strong>armor</strong>:
+        SACHIEL<br><strong>class</strong>: ZOMORROD<br><strong>equipment</strong>: Hyper-Synaptic Anchor, Weaponized
+        Pommel<br><strong>gear</strong>: Weighted Push, Leviathan-Eyed Consecration Protocol</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.dvLf1Uxz24bww9Nq'
+  - sort: 300000
+    name: Missions & Objectives
+    type: text
+    _id: E09aCfYNx0IR5qy5
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Every mission pays out when it succeeds. The GM earns 1 Ichor per mission and 2 per defeated HELLPIERCER (p.
+        224).</p><table><thead><tr><th>Objective</th><th>Reward</th><th>Notes</th></tr></thead><tbody><tr><td><strong>Assault
+        A Hardened Target</strong></td><td>1 Hellsteel</td><td></td></tr><tr><td><strong>Rescue</strong></td><td>1
+        Brimstone</td><td></td></tr><tr><td><strong>Retrieve Intel</strong></td><td>1
+        Hellsteel</td><td></td></tr><tr><td><strong>Assassination</strong></td><td>1
+        Soulfire</td><td></td></tr><tr><td><strong>Defense</strong></td><td>1 Brimstone</td><td>A faction loses 1 Force
+        if the defense fails.</td></tr><tr><td><strong>Final Assault</strong></td><td>—</td><td>Requires a faction with
+        two Qualities at 0.</td></tr><tr><td><strong>The Destruction of the Demon
+        Prince</strong></td><td>—</td><td></td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.E09aCfYNx0IR5qy5'
+  - sort: 400000
+    name: Triumphs
+    type: text
+    _id: 9kQkHI1InOD0ddDx
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>A Triumph is a self-imposed challenge for one mission in exchange for a reward (pp.
+        121-122).</p><table><thead><tr><th>Triumph</th><th>Challenge</th><th>Reward</th></tr></thead><tbody><tr><td><strong>No
+        Gear</strong></td><td>No gear or mods can be used this mission.</td><td>1 additional Off-Grid Munitions use this
+        mission.</td></tr><tr><td><strong>Bleeding</strong></td><td>You gain Bleed:1 that cannot be removed until you
+        return to DIS.</td><td>Next mission you gain Healing:1 that cannot be removed until you return to
+        DIS.</td></tr><tr><td><strong>Reckless</strong></td><td>You must spend all your Speed every turn; unspent Speed
+        is dealt back as damage.</td><td>Gain 2 Charges of Rush: a Free action to double your
+        Speed.</td></tr><tr><td><strong>Echo</strong></td><td>Enemies treat you as occupying both the tile you start and
+        the tile you end your turn on.</td><td>Gain 2 resources of any type at mission
+        end.</td></tr><tr><td><strong>Tethered</strong></td><td>Two players take this at once and must end all movement
+        within 2 spaces of each other.</td><td>Choose Slow:1, Bleed:1 or Poison:1: attacks against creatures already
+        damaged by your partner gain it.</td></tr><tr><td><strong>Magnetic</strong></td><td>Once per turn the GM may
+        declare an enemy Magnetic; you move 2 spaces toward it at turn start (still Provokes).</td><td>One player gains
+        Trans-Body Attraction Suite.</td></tr><tr><td><strong>Hunted</strong></td><td>The GM has 3 Charges to summon a
+        chosen miniboss during your turn.</td><td>Charge-bought minibosses drop 1 resource (claim within 2
+        turns).</td></tr><tr><td><strong>Volatile</strong></td><td>Your attack patterns that overlap a player character
+        apply their Effects and half damage to them.</td><td>Gain Stasis-Induction Hyperforge (Aux: mark a tile of your
+        next attack Lingering:1).</td></tr><tr><td><strong>Frugal</strong></td><td>You may heal 1 HP when you damage an
+        adjacent creature, but no other healing except Rez.</td><td>Advance your Limit Break by 1 each turn (or restore
+        1 Equipment use per round if you have none).</td></tr><tr><td><strong>Last To Act</strong></td><td>You take your
+        actions after all enemy units.</td><td>Your loadout may include up to 2 options you have not
+        unlocked.</td></tr><tr><td><strong>Shaded</strong></td><td>All enemy minibosses gain permanent
+        Shaded:1.</td><td>+2 Speed on any turn you are or were in a Shaded
+        square.</td></tr><tr><td><strong>Swapped</strong></td><td>Once per round the GM may swap you with a minion or
+        miniboss.</td><td>Create an extra shared HELLPIERCER any player can transform into (Aux, once per
+        TACCOM).</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.9kQkHI1InOD0ddDx'
+  - sort: 500000
+    name: Roles
+    type: text
+    _id: 6inho1B8XKkpHUfC
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <h2>Skopos</h2><h3>Tulpic Observation Projection <small>STRATCOM</small> <em>(2 any)</em></h3><p>Select a
+        landmark on the last map you visited, then two more to draw a triangle. Any GM STRATCOM action that passes
+        through or happens inside the triangle must be announced, with no detail. You may remove your spy to read the
+        exact War Journal entry, which erases the triangle.</p><h3>Veil-Rending Reality Realignment
+        <small>STRATCOM</small> <em>(4 any)</em></h3><p>Write down two locations. The next convoy to arrive at one of
+        them actually arrives at the other. Only one pair is active at a time; reassign at the start of any STRATCOM
+        phase for 4 more.</p><h3>Stratiotici Mellonsophia Manipulation Ritual <small>RECON</small></h3><p>Name three
+        NPCs, two important objects and one ending. At any point during the current mission you may declare that any one
+        of the six presents itself to the party.</p><h3>Crystalline-Fortified Asset Heuristics
+        <small>RECON</small></h3><p>When you receive this role, choose an enemy faction. Once per mission, point to a
+        location on the STRATCOM map and ask the GM 3 questions about its current situation. You may burn 2 questions to
+        appear there as a psionic projection for about a minute.</p><h2>Mensor</h2><h3>Ogdoad Replication//Emulation
+        <small>STRATCOM</small></h3><p>Point to a place you stopped on the map outside of Locations and place one of: an
+        Empheryn Nanodrone Control Center (generates 1 Fuel and 1 Soulfire whenever visited); an 18-Hands Material
+        Annihilation Sacrament (when visited, destroy it to open a one-time tunnel to another location); a Vertex-Coil
+        Emergency Ephodia Distribution System (choose 4 numbered points; leaving one, roll a D4, and on a match restock
+        as if you had returned to DIS).</p><ul><li>Empheryn Nanodrone Control Center: 3 Hellsteel</li><li>18-Hands
+        Material Annihilation Sacrament: 3 Soulfire</li><li>Vertex-Coil Emergency Ephodia Distribution System: 3
+        Brimstone</li></ul><h3>Preemptive Inventory Supplementation <small>RECON</small></h3><p>Before leaving DIS
+        select two single-use items: Charonic Healing Salve (full HP; an ally also ignores the next damage), Portable
+        Reality Crushing Matrix (a portal to a visited location, or six connected Void tiles in TACCOM),
+        Terrain-Adaptive Restriction Embargo (destroy a Hazard), Hardlight Skyway Generating Xenoglossia (halve travel
+        time, or a 3-wide bridge in TACCOM). Usable in any phase; refreshed only by returning to DIS.</p><h3>Angelhound
+        Squire <small>RECON</small></h3><p>Once per STRATCOM, a machine of Angelic Metals carrying a Nephilic Seed
+        matures it into a Legendary Arm of your choice. It withers after one combat
+        encounter.</p><h2>Chresto</h2><h3>Magnificent Exorcism <small>STRATCOM</small></h3><p>On a conquered location
+        build a Pneuma Fortifying Gnostic Beacon: Consecrated Ground at Ascendance 1 (HELLPIERCERS begin TACCOM with
+        Aegis:1 or Haste:1). Using this on a location with a Beacon raises its tier: 2 = buildings can't be demolished
+        or demons can't hide; 3 = between three or more Beacons, demons can't build, fortify or create map hazards, or
+        HELLPIERCERS can't die within the border.</p><h3>Complete Dominion <small>STRATCOM</small></h3><p>After
+        defeating a faction, co-opt their final fortress. Answer: what defenses did you keep, what is it called now, its
+        biggest weakness, how do you decorate, who wants it back. Choose three tags from: Mobile, Underground, Aerial,
+        Aquatic, Weaponized, Hidden, Overt, Ornate, Vulgar, Haunted, Living, Inaccessible, Scry-Proof, Labyrinthine,
+        Leyline-Nexus, Non-Hylic Metamaterials. Visiting it counts as returning to DIS.</p><h3>Geometrization
+        <small>RECON</small></h3><p>When delving into the Catacombs below DIS, consult your map and rearrange its layout
+        however you see fit.</p><h3>Emergency Soul Triage <small>RECON</small></h3><p>Restore a human soul to its divine
+        form and ask the GM two questions from: What happened here? What are they planning? What should we be on the
+        lookout for? Who's in charge? What's the twist? They must answer honestly.</p><h2>Mahemikos</h2><h3>Collective
+        Bargaining <small>STRATCOM</small></h3><p>Select a friendly structure and spawn a unit. Rampaging Tyrant Slayers
+        move to the nearest enemy location or convoy, give its faction -1 Force and stop a convoy from moving while
+        attached, then retreat the next phase. Dragon-Minded Free Hellions are a growing community with 3 Growth Boxes:
+        each phase fill one to give the faction a leader, miniboss or minion, or make it friendly to humans. The
+        Vengeful Unquiet let you demand a War Journal page or active project at the location and remove one progress
+        mark or decoy convoy.</p><ul><li>Rampaging Tyrant Slayers: 2 Hellsteel</li><li>Dragon-Minded Free Hellions: 2
+        Soulfire</li><li>The Vengeful Unquiet: 2 Brimstone</li></ul><h3>Rising Blood Of Twenty Billion Martyred Divines
+        <small>RECON</small></h3><p>Whenever you revisit a location, gain 2 Charges. At any time you may declare that
+        you sabotaged a piece of equipment, machine, ritual or process there on a previous visit: spend 1 Charge and say
+        how, and what happens next.</p><h3>Mind-Liberating Pseudo-Ascending Activation Phrase
+        <small>RECON</small></h3><p>Before leaving DIS, mark a location and write down a minion or miniboss type. In
+        TACCOM there, a Support Action declares one such unit a Traitor: it switches sides, and is cooperative
+        afterwards. Name it and give it a goal.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.6inho1B8XKkpHUfC'
+  - sort: 600000
+    name: Off-Grid & Grid Manipulation
+    type: text
+    _id: REj9xXgY2TFC7HPh
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <h2>Off-Grid Munitions</h2><ul><li>Twelve Tone Fusion-Core Shattering Ritual</li><li>Directed Oblivion
+        Strike</li><li>Void-Transgressing Umbral Needle</li><li>Mk.89 Revised Seraphic Veil
+        Adaptation</li><li>Neuro-Linked Non-Euclidean Drone Assault Suite</li><li>Samothracian-Derived Annihilation
+        Swarm</li><li>Eight Heaven Toppling Giga-Bomb</li><li>Cryptographic Tempest-Enlightenment Infusion
+        Ritual</li><li>Predictive Stygian Nano-Swarm Support Incantation</li><li>Mithiran Cataclysm Unifier
+        V.1811.283.31</li></ul><h2>Grid Manipulation
+        Suites</h2><table><thead><tr><th>Suite</th><th>Tiles</th></tr></thead><tbody><tr><td><strong>Orphite Protective
+        Ritual Suite</strong></td><td>3 Cover, 2 Advantageous, 2 Obstacle:2</td></tr><tr><td><strong>Ogdoad-Mantling
+        Surefooted Ritual Suite</strong></td><td>4 Standard, 2 Uneasy, 1 Void</td></tr><tr><td><strong>Unmitigated
+        Apocalypse Emulation Suite</strong></td><td>4 Void</td></tr><tr><td><strong>Hylic-Tunneling Enabled Resonance
+        Suite</strong></td><td>2 Linked Tiles, 3 Cover, 3 Advantageous</td></tr><tr><td><strong>Projected Reality
+        Materialization Suite</strong></td><td>8 Standard, anywhere, including over walls and outside the
+        map</td></tr><tr><td><strong>Siloed Agape-Infused Sanctuary Ritual Suite</strong></td><td>A whole structure
+        placed anywhere on the map</td></tr><tr><td><strong>Vicious Emerald-Staffed Aggression Suite</strong></td><td>1
+        Void, 3 Trapped (2D6), 2 Ravaging Trapped (1D6 each entry)</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.REj9xXgY2TFC7HPh'
+  - sort: 700000
+    name: Vehicle
+    type: text
+    _id: M4zixCkUNQvHWSPF
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>The squad's vehicle has two upgrade slots and a readiness (ready, capable,
+        ruin).</p><table><thead><tr><th>Option</th><th>Kind</th><th>Cost</th><th>Requires</th></tr></thead><tbody><tr><td><strong>Vengeance
+        Enabling Hyper-Munitions
+        Adaptation</strong></td><td>upgrade</td><td>—</td><td>hebdomas</td></tr><tr><td><strong>Tactical Forward
+        Operating Base Mode</strong></td><td>upgrade</td><td>3 Hellsteel, 2
+        Soulfire</td><td>—</td></tr><tr><td><strong>OSP Module</strong></td><td>upgrade</td><td>5 Brimstone, 2
+        Soulfire</td><td>—</td></tr><tr><td><strong>Uncontestable Replicative Teleportation
+        Deployment</strong></td><td>upgrade</td><td>2 Brimstone, 2 Soulfire, 2
+        Hellsteel</td><td>—</td></tr><tr><td><strong>Motoric Ritual Delivery System</strong></td><td>upgrade</td><td>3
+        Brimstone, 1 Soulfire, 1 Hellsteel</td><td>—</td></tr><tr><td><strong>Hylic Emulation Matrix: CHOIC
+        Mode</strong></td><td>personalization</td><td>5 Soulfire, 5 Hellsteel</td><td>—</td></tr><tr><td><strong>Aquatic
+        Navigation Adaptations</strong></td><td>personalization</td><td>1 Soulfire, 2 Hellsteel, 3
+        Brimstone</td><td>—</td></tr><tr><td><strong>Enhanced Non-Hylic Navigation
+        Mode</strong></td><td>personalization</td><td>2 Soulfire, 3
+        Hellsteel</td><td>—</td></tr><tr><td><strong>Critical Form Abraxian Physics Manipulation
+        Suite</strong></td><td>personalization</td><td>2 Brimstone, 3 Hellsteel</td><td>—</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.M4zixCkUNQvHWSPF'
+  - sort: 800000
+    name: 'GM: Research & Convoys'
+    type: text
+    _id: FJdfFZarmWjJDcTF
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <h2>Research
+        Projects</h2><table><thead><tr><th>Project</th><th>Ichor</th><th>Phases</th><th>Limit</th><th>Effect</th></tr></thead><tbody><tr><td><strong>Nightmare
+        Sulfur Springtrap</strong></td><td>3</td><td>1</td><td>—</td><td>A miniboss gains: mark a special terrain tile
+        within Burst:2; when a player moves onto it, it explodes for 2 damage plus 1 in Burst:2 with
+        Lingering:2.</td></tr><tr><td><strong>Silhouette
+        Sub-Dimensionalization</strong></td><td>3</td><td>2</td><td>—</td><td>A miniboss projects a Scale:2 field in
+        which airstrikes cannot target any space.</td></tr><tr><td><strong>Anthropobythic Enmity
+        Imbuement</strong></td><td>5</td><td>2</td><td>—</td><td>A named miniboss resurrects at a ritual site, grows 10
+        HP each death, and steals a slain HELLPIERCER's kit.</td></tr><tr><td><strong>Bureaucratic Annihilation
+        Aura</strong></td><td>6</td><td>3</td><td>game</td><td>Gain one additional STRATCOM action per
+        phase.</td></tr><tr><td><strong>Heretical Allegiances</strong></td><td>7</td><td>5</td><td>faction</td><td>Add a
+        non-active faction's building, STRATCOM action and three units to this faction.</td></tr><tr><td><strong>Syzygos
+        Seduction Ritual</strong></td><td>11</td><td>7</td><td>—</td><td>The faction captures Fallen Mars: its fortress
+        is unassailable, Crown restrictions are waived, and it may assault DIS.</td></tr><tr><td><strong>Boundary
+        Shattering Reality Violence</strong></td><td>15</td><td>10</td><td>game</td><td>Destroy one of the faction's
+        buildings and introduce a new faction into
+        play.</td></tr></tbody></table><h2>Convoys</h2><table><thead><tr><th>Kind</th><th>Outcomes</th></tr></thead><tbody><tr><td><strong>Supply</strong></td><td>Fortify
+        Stronghold, Unit Drills, Research Project</td></tr><tr><td><strong>Support</strong></td><td>Unit Drills,
+        Research Project</td></tr><tr><td><strong>Assault</strong></td><td>Retake territory or attack (TACCOM, or roll
+        Force)</td></tr><tr><td><strong>Diplomatic</strong></td><td>Research Project, Infernal
+        Mass</td></tr><tr><td><strong>Decoy</strong></td><td>—</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.FJdfFZarmWjJDcTF'
+  - sort: 900000
+    name: 'Faction: SYNCRASIS'
+    type: text
+    _id: TQdw241d28q6WoDJ
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><em>CONQUER, DESTROY, RETVRN</em></p><p><strong>Boss:</strong> Abigor, The Archo-Tyrannus · <strong>Starting
+        Qualities:</strong> Force 5, Subterfuge 2, Territory 3, Assets 2</p><h2>Starting
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>Oraios's Vengeance</strong></td><td>destructive</td><td>+2 Force,
+        +1 Territory</td><td>—</td></tr><tr><td><strong>Lethian Tunnels</strong></td><td>extractive</td><td>+1
+        Subterfuge, +1 Assets</td><td>—</td></tr><tr><td><strong>The Asphodeal
+        Outposts</strong></td><td>defensive</td><td>+2 Force, +1 Territory</td><td>—</td></tr><tr><td><strong>Cyclopean
+        Ergastirion</strong></td><td>productive</td><td>+1 Force, +1 Assets</td><td>—</td></tr><tr><td><strong>Thera's
+        Temno</strong></td><td>logistical</td><td>+1 Territory</td><td>—</td></tr><tr><td><strong>Perceived 14th Layer
+        Korphe</strong></td><td>legendary</td><td>+1 Subterfuge</td><td>—</td></tr></tbody></table><h2>Unique
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>Mt Ararat</strong></td><td>productive</td><td>+1
+        Assets</td><td>▢</td></tr><tr><td><strong>Pelagoios</strong><br><em>Requires Geographical Rot
+        upgrade</em></td><td>logistical</td><td>+2 Subterfuge</td><td>▢▢▢</td></tr><tr><td><strong>The Hidden
+        World</strong></td><td>legendary</td><td>+1 Force, +1 Territory</td><td>▢▢</td></tr><tr><td><strong>The Garden
+        of Rancorous Edens</strong></td><td>destructive</td><td>+1 Subterfuge, +1
+        Assets</td><td>▢▢▢</td></tr><tr><td><strong>Pseudes-Sophia</strong></td><td>legendary</td><td>+1 Subterfuge, +1
+        Assets</td><td>▢▢▢</td></tr></tbody></table><h2>Upgrades</h2><table><thead><tr><th>Upgrade</th><th>Cost</th><th>Effect</th></tr></thead><tbody><tr><td><strong>Triassic
+        Hebdomian Ritual</strong></td><td>1</td><td>Unlock ABIGOR as a deployable
+        unit.</td></tr><tr><td><strong>Cariniferal Sigil Research</strong></td><td>3</td><td>Replace Abigor's first
+        attack with the Obstacle-spawning boxes.</td></tr><tr><td><strong>Sidiria
+        Lithourgia</strong></td><td>2</td><td>Wall-Strider may devour adjacent Obstacles for
+        Armor:1.</td></tr><tr><td><strong>Sentience Granting Undermind Rite</strong></td><td>2</td><td>Unlock the
+        Howling Primordia unit.</td></tr><tr><td><strong>Anima-Hylic Synthesis Ritual</strong></td><td>2</td><td>Little
+        Ghosts move through player characters and gain Swarm.</td></tr><tr><td><strong>Fleet Deployment
+        Orders</strong></td><td>2</td><td>Gain the Fleet Deployment STRATCOM action
+        (battleships).</td></tr><tr><td><strong>Geographical Rot</strong></td><td>2</td><td>Required for Pelagoios. The
+        book does not define this upgrade: cost and effect are a placeholder.</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.TQdw241d28q6WoDJ'
+  - sort: 1000000
+    name: 'Faction: HENOSIS'
+    type: text
+    _id: FnrqWWMz8xUyfmQJ
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><em>BRING ALL UNDER THE YOKE OF AAMON'S SPORES</em></p><p><strong>Boss:</strong> Aamon, The Rot Blossom ·
+        <strong>Starting Qualities:</strong> Force 3, Subterfuge 3, Territory 5, Assets 2</p><h2>Starting
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>Temple of Spore-Laden Breath</strong></td><td>legendary</td><td>+1
+        Force, +2 Territory</td><td>—</td></tr><tr><td><strong>Ascent of the Night's
+        Veil</strong></td><td>productive</td><td>+2 Force, +1 Assets</td><td>—</td></tr><tr><td><strong>Steel-Sharpening
+        Coliseum Annex</strong></td><td>defensive</td><td>+1 Subterfuge, +1
+        Territory</td><td>—</td></tr><tr><td><strong>Hastily Converted Mills</strong></td><td>productive</td><td>+2
+        Subterfuge, +1 Territory</td><td>—</td></tr><tr><td><strong>Underground Cultivation
+        Complex</strong></td><td>productive</td><td>+1 Territory, +1
+        Assets</td><td>—</td></tr></tbody></table><h2>Unique
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>Spore Farm</strong></td><td>productive</td><td>+1
+        Territory</td><td>▢</td></tr><tr><td><strong>The Lashing Thorns</strong></td><td>destructive</td><td>+1
+        Force</td><td>▢▢</td></tr><tr><td><strong>Night's Veil</strong></td><td>destructive</td><td>+1 Force, +1
+        Subterfuge</td><td>▢▢▢</td></tr><tr><td><strong>Necrophagic Facility</strong></td><td>productive</td><td>+1
+        Assets</td><td>▢▢</td></tr></tbody></table><h2>Upgrades</h2><table><thead><tr><th>Upgrade</th><th>Cost</th><th>Effect</th></tr></thead><tbody><tr><td><strong>Myconic
+        Ascension</strong></td><td>1</td><td>Unlock AAMON as a deployable unit.</td></tr><tr><td><strong>Teknon
+        Moks</strong></td><td>1</td><td>Unlock the Teknon Moks (Birth-Cap) spawner.</td></tr><tr><td><strong>Total
+        Subjectification</strong></td><td>3</td><td>Non-minion Henosis units adjacent to Swarms count as part of the
+        Swarm.</td></tr><tr><td><strong>Rot Conflagrator</strong></td><td>2</td><td>Unlock the Rot Conflagrator
+        fortification.</td></tr><tr><td><strong>Deathcap Meteor</strong></td><td>2</td><td>The Reflector may raise the
+        elevation of the unit it protects.</td></tr><tr><td><strong>Spore Hub</strong></td><td>2</td><td>Unlock the
+        Spore Hub fortification.</td></tr><tr><td><strong>Shatter The Sleeper's Chains</strong></td><td>2</td><td>Unlock
+        the Star Shooter for deployment.</td></tr><tr><td><strong>Sacrifice Most
+        Regrettable</strong></td><td>3</td><td>The Petty Tyrant may redirect attacks onto weaker
+        allies.</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.FnrqWWMz8xUyfmQJ'
+  - sort: 1100000
+    name: 'Faction: AUTOPHYES'
+    type: text
+    _id: P5LfYMzGGn9a20fZ
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><em>CONSUME, EXPLOIT, RETAIN AT ALL COST</em></p><p><strong>Boss:</strong> Haagenti, The Never-Sated ·
+        <strong>Starting Qualities:</strong> Force 2, Subterfuge 2, Territory 3, Assets 5</p><h2>Starting
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>Omphalos</strong></td><td>legendary</td><td>+1 Subterfuge, +3
+        Assets</td><td>—</td></tr><tr><td><strong>Mnemosyne Garden</strong></td><td>legendary</td><td>+1
+        Assets</td><td>—</td></tr><tr><td><strong>Ouroboric Manufactoria</strong></td><td>productive</td><td>+1 Force,
+        +1 Assets</td><td>—</td></tr><tr><td><strong>River of Nepenthe</strong></td><td>logistical</td><td>+1
+        Territory</td><td>—</td></tr><tr><td><strong>Drained Grail</strong></td><td>logistical</td><td>+1 Force, +1
+        Subterfuge</td><td>—</td></tr><tr><td><strong>March of Marasmos</strong></td><td>defensive</td><td>+1
+        Subterfuge, +2 Territory</td><td>—</td></tr></tbody></table><h2>Unique
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>The Nihilith</strong></td><td>logistical</td><td>+1
+        Subterfuge</td><td>▢▢</td></tr><tr><td><strong>Boneyard</strong></td><td>extractive</td><td>+1
+        Force</td><td>▢</td></tr><tr><td><strong>Crooked Obelisk</strong></td><td>defensive</td><td>+1
+        Force</td><td>▢▢</td></tr><tr><td><strong>Abyssal Exsanguinator</strong></td><td>extractive</td><td>+1
+        Territory</td><td>▢▢</td></tr><tr><td><strong>Vault of Plenty</strong></td><td>legendary</td><td>+1
+        Assets</td><td>▢▢▢</td></tr></tbody></table><h2>Upgrades</h2><table><thead><tr><th>Upgrade</th><th>Cost</th><th>Effect</th></tr></thead><tbody><tr><td><strong>Depleted
+        Uranium Claws</strong><br><em>Requires Boneyard</em></td><td>2</td><td>Extractor attacks +1
+        damage.</td></tr><tr><td><strong>Burrowing Frenzy</strong><br><em>Requires
+        Boneyard</em></td><td>1</td><td>Yearnlings can burrow.</td></tr><tr><td><strong>Cerebrospinal
+        Propellants</strong></td><td>2</td><td>Unlock the Whaler minion.</td></tr><tr><td><strong>Skinweaver
+        Looms</strong></td><td>2</td><td>Unlock the Singing Scythe minion.</td></tr><tr><td><strong>Hellblood Infusion
+        Regimen</strong><br><em>Requires Abyssal Exsanguinator</em></td><td>3</td><td>Once per TACCOM, +3 Speed for 3
+        turns, then lose half starting health.</td></tr><tr><td><strong>Thanatological Punch
+        Cards</strong><br><em>Requires The Nihilith</em></td><td>2</td><td>Minions dying near Bulwarks revive at full
+        health.</td></tr><tr><td><strong>Hematic Combustion</strong><br><em>Requires Abyssal
+        Exsanguinator</em></td><td>3</td><td>Unlock The Engine miniboss.</td></tr><tr><td><strong>ANATHEMATIC
+        Condensers</strong></td><td>3</td><td>Unlock the Crooked Obelisk and Nihilith
+        locations.</td></tr><tr><td><strong>Apotheotic Avarice</strong></td><td>5</td><td>Place the Vault of Plenty
+        location (GM gains 2 Ichor per turn).</td></tr><tr><td><strong>Carcinogenic Defensive
+        Upgrade</strong></td><td>1</td><td>Unlock the Wireweal Outbreak STRATCOM action.</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.P5LfYMzGGn9a20fZ'
+  - sort: 1200000
+    name: 'Faction: MIXIS'
+    type: text
+    _id: ALhm2GCAlBZfp4tn
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><em>A NEW GNOSIS, A NEW WORLD</em></p><p><strong>Boss:</strong> Obizu, The Leviathan Reborn ·
+        <strong>Starting Qualities:</strong> Force 3, Subterfuge 4, Territory 2, Assets 3</p><h2>Starting
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>Belias's Final Redoubt</strong></td><td>logistical</td><td>+1
+        Force, +1 Subterfuge, +1
+        Territory</td><td>—</td></tr><tr><td><strong>Eqwesh-AGE-2x10^22-1</strong></td><td>extractive</td><td>+1
+        Territory, +1 Assets</td><td>—</td></tr><tr><td><strong>The Mind of
+        Peleset</strong></td><td>logistical</td><td>+3
+        Subterfuge</td><td>—</td></tr><tr><td><strong>A-World-To-Come</strong></td><td>destructive</td><td>+2 Force, +2
+        Assets</td><td>—</td></tr></tbody></table><h2>Unique
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>The Memory Of The Shekelesh</strong></td><td>legendary</td><td>+1
+        Force, +1 Assets</td><td>▢▢▢</td></tr><tr><td><strong>Shardan-Elysium</strong></td><td>legendary</td><td>+2
+        Subterfuge</td><td>▢</td></tr><tr><td><strong>Echos of Tohu Wa-Bohu</strong></td><td>legendary</td><td>+2
+        Territory, +1 Assets</td><td>▢▢▢</td></tr><tr><td><strong>Dor, the Egress Of
+        Tjeker</strong></td><td>productive</td><td>+1 Subterfuge, +1 Territory</td><td>▢▢</td></tr><tr><td><strong>The
+        Danunan Loom</strong></td><td>productive</td><td>+1 Force, +2
+        Assets</td><td>▢▢▢</td></tr></tbody></table><h2>Upgrades</h2><table><thead><tr><th>Upgrade</th><th>Cost</th><th>Effect</th></tr></thead><tbody><tr><td><strong>Orphite
+        Truth-Revealing Ritual</strong></td><td>1</td><td>Unlock OBIZU as a unit.</td></tr><tr><td><strong>Gold-skinned
+        Serpent Ascension</strong></td><td>2</td><td>Choros gains an appendage; its attacks inflict
+        Poison:1.</td></tr><tr><td><strong>Oktapous Summoning Cista Mystica</strong></td><td>2</td><td>Allows the
+        deployment of She-Who-Eats.</td></tr><tr><td><strong>Eight Limbed Tartarus-Rending
+        Fist</strong></td><td>1</td><td>Sekos's attack gains Blast:2.</td></tr><tr><td><strong>Bull-Dragon Slaying
+        Leviathan Secrets</strong></td><td>2</td><td>OBIZU may Consume player
+        units.</td></tr><tr><td><strong>Apocalyptic World-Soul Devouring Cataclysm
+        Invocation</strong></td><td>1</td><td>Unlock the Awakened World-Choking Python
+        action.</td></tr><tr><td><strong>Circles-In-Circles</strong></td><td>1</td><td>Overlay another faction's map
+        (Reality Bends Like A Snake).</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.ALhm2GCAlBZfp4tn'
+  - sort: 1300000
+    name: 'Faction: METRICOS'
+    type: text
+    _id: dEFQVgjrvl9nB7D5
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><em>A PLACE FOR EVERY DEMON &amp; EVERY DEMON IN ITS PLACE</em></p><p><strong>Boss:</strong> Caim, The First
+        Bloodied · <strong>Starting Qualities:</strong> Force 3, Subterfuge 2, Territory 4, Assets 4</p><h2>Starting
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>Dikasteria Sanguinis</strong></td><td>defensive</td><td>+2 Force,
+        +1 Territory</td><td>—</td></tr><tr><td><strong>Labyrinth</strong></td><td>legendary</td><td>+1 Force, +3
+        Territory</td><td>—</td></tr><tr><td><strong>Thymosian Springs</strong></td><td>legendary</td><td>+1 Subterfuge,
+        +3 Assets</td><td>—</td></tr><tr><td><strong>Coagulatoreum</strong></td><td>defensive</td><td>+1 Subterfuge, +1
+        Assets</td><td>—</td></tr></tbody></table><h2>Unique
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>Roiling Hippodrome</strong></td><td>defensive</td><td>+1
+        Assets</td><td>▢▢</td></tr><tr><td><strong>Pit of Kesterion</strong></td><td>productive</td><td>+1
+        Force</td><td>▢▢▢</td></tr></tbody></table><h2>Upgrades</h2><table><thead><tr><th>Upgrade</th><th>Cost</th><th>Effect</th></tr></thead><tbody><tr><td><strong>Agile
+        Certification</strong></td><td>2</td><td>Swarms can move one square after taking
+        damage.</td></tr><tr><td><strong>Machinequus Breaking</strong></td><td>1</td><td>Unlock the Apokrotos
+        unit.</td></tr><tr><td><strong>Ignoble Indoctrination</strong></td><td>1</td><td>Non-Swarm Metricos units can
+        grow, dealing and taking double damage.</td></tr><tr><td><strong>Rite of
+        Command</strong></td><td>2</td><td>Unlock the Ixodes unit.</td></tr><tr><td><strong>Bloodcharge
+        Efficiency</strong></td><td>1</td><td>Bloodshield Phalanx base scale +1.</td></tr><tr><td><strong>Demignostic
+        Rites</strong></td><td>3</td><td>Unlock the Pit of Kesterion location and the Rising Echo
+        action.</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.dEFQVgjrvl9nB7D5'
+  - sort: 1400000
+    name: 'Faction: PARACLETUS'
+    type: text
+    _id: 6oZc9sJ0nk9eHLl9
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><em>REMAKE THE STRANGE INTO SOMETHING FAMILIAR</em></p><p><strong>Boss:</strong> Orobas, The Speaker ·
+        <strong>Starting Qualities:</strong> Force 2, Subterfuge 2, Territory 5, Assets 2</p><h2>Starting
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>Stain Springs</strong></td><td>defensive</td><td>+2 Subterfuge, +1
+        Territory</td><td>—</td></tr><tr><td><strong>Ekhinos Field</strong></td><td>logistical</td><td>+1 Force, +1
+        Territory</td><td>—</td></tr><tr><td><strong>Vandalous Nimbus</strong></td><td>logistical</td><td>+1 Force, +2
+        Territory</td><td>—</td></tr><tr><td><strong>Stygian Reef</strong></td><td>defensive</td><td>+1 Territory, +2
+        Assets</td><td>—</td></tr></tbody></table><h2>Unique
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>The Teethlands</strong></td><td>destructive</td><td>+1
+        Force</td><td>▢▢</td></tr><tr><td><strong>Brightwater Runs</strong></td><td>productive</td><td>+1
+        Territory</td><td>▢</td></tr><tr><td><strong>Fleshturn Vaults</strong></td><td>productive</td><td>+1
+        Territory</td><td>▢▢</td></tr></tbody></table><h2>Upgrades</h2><table><thead><tr><th>Upgrade</th><th>Cost</th><th>Effect</th></tr></thead><tbody><tr><td><strong>Living
+        Tide</strong></td><td>2</td><td>Stained squares can move like a Swarm (Speed
+        4).</td></tr><tr><td><strong>Extrarterran Evolution</strong></td><td>3</td><td>Unlock Potagon and Chalazaor for
+        deployment.</td></tr><tr><td><strong>Efficient Building</strong></td><td>2</td><td>Latent Pudding can transform
+        on any square.</td></tr><tr><td><strong>Storm Mastery</strong></td><td>3</td><td>One additional Seideonic cloud
+        per location.</td></tr><tr><td><strong>Interatomic Dowsing</strong></td><td>2</td><td>Stain Geyser draws a 6x6
+        square.</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.6oZc9sJ0nk9eHLl9'
+  - sort: 1500000
+    name: 'Faction: THELETUS'
+    type: text
+    _id: chgp9GcEgdWT3vkP
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><em>The Great Sleep must not come</em></p><p><strong>Boss:</strong> Amdusias, The Reluctant Slumberer ·
+        <strong>Starting Qualities:</strong> Force 5, Subterfuge 2, Territory 3, Assets 3</p><h2>Starting
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>The Slumberer's Bedchambers</strong></td><td>logistical</td><td>+2
+        Force, +1 Territory</td><td>—</td></tr><tr><td><strong>The Dreamthief's
+        Tundra</strong></td><td>productive</td><td>+2 Subterfuge, +1 Assets</td><td>—</td></tr><tr><td><strong>Razing
+        Crags</strong></td><td>defensive</td><td>+1 Force, +2 Territory</td><td>—</td></tr><tr><td><strong>Tithing
+        Storehouses</strong></td><td>logistical</td><td>+2 Assets</td><td>—</td></tr><tr><td><strong>Somnic
+        Enforcer</strong></td><td>destructive</td><td>+2 Force</td><td>—</td></tr></tbody></table><h2>Unique
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>The Bracing Pools</strong></td><td>defensive</td><td>+1
+        Force</td><td>▢</td></tr><tr><td><strong>The Clangorous Abbey</strong></td><td>productive</td><td>+1
+        Subterfuge</td><td>▢▢</td></tr><tr><td><strong>Slumbering Barrows</strong></td><td>defensive</td><td>+1
+        Territory</td><td>▢▢▢</td></tr><tr><td><strong>The Railing Grounds</strong></td><td>defensive</td><td>+1
+        Force</td><td>▢</td></tr></tbody></table><h2>Upgrades</h2><table><thead><tr><th>Upgrade</th><th>Cost</th><th>Effect</th></tr></thead><tbody><tr><td><strong>Night
+        Must Not Come</strong></td><td>1</td><td>Unlock AMDUSIAS.</td></tr><tr><td><strong>The Children Awaken
+        Anew</strong></td><td>1</td><td>Unlock the Myoclonic Awakening Chamber.</td></tr><tr><td><strong>Lord of the
+        Unnavigable Pass</strong></td><td>2</td><td>Unlock the Megas unit.</td></tr><tr><td><strong>Tender Fruit Finally
+        Born</strong><br><em>Requires The Clangorous Abbey and The Railing Grounds</em></td><td>3</td><td>Unlock The
+        Perfected Scream STRATCOM action.</td></tr><tr><td><strong>Singing Nexus</strong></td><td>2</td><td>Unlock the
+        Singing Nexus fortification.</td></tr><tr><td><strong>Bell of Awakening</strong></td><td>2</td><td>Unlock the
+        Bell of Awakening fortification.</td></tr><tr><td><strong>Explosive Momentum</strong></td><td>2</td><td>The
+        Ice-Glider gains +1 damage per Shatter this round.</td></tr><tr><td><strong>Sanguine
+        Gluttony</strong></td><td>1</td><td>The Ice-In-The-Veins gains a Pull attack against Bleeding
+        enemies.</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.chgp9GcEgdWT3vkP'
+  - sort: 1600000
+    name: 'Faction: EKKLESIA'
+    type: text
+    _id: uB0oD4czQ3DdJiWU
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><em>Bannerless princelings starved of power and prestige</em></p><p><strong>Boss:</strong> Morax, Of the
+        Broken Horn</p><h2>Starting
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody></tbody></table><h2>Unique
+        locations</h2><table><thead><tr><th>Location</th><th>Type</th><th>Quality</th><th>Build
+        time</th></tr></thead><tbody><tr><td><strong>The Molten Gold Castle</strong></td><td>defensive</td><td>+1
+        Territory</td><td>▢▢</td></tr><tr><td><strong>Ruined Babel</strong></td><td>legendary</td><td>+2
+        Assets</td><td>▢▢▢</td></tr><tr><td><strong>Tooth-Lined Road Of The Golden
+        Path</strong></td><td>logistical</td><td>+1 Force</td><td>▢</td></tr><tr><td><strong>Dream Devouring Leviathan
+        Pit</strong></td><td>productive</td><td>+1
+        Territory</td><td>▢</td></tr><tr><td><strong>Akkadia-Babylon</strong></td><td>defensive</td><td>+1 Subterfuge,
+        +1
+        Assets</td><td>▢▢▢</td></tr></tbody></table><h2>Upgrades</h2><table><thead><tr><th>Upgrade</th><th>Cost</th><th>Effect</th></tr></thead><tbody></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655684468
+      modifiedTime: 1794655684468
+    _key: '!journal.pages!GJNowsOTn7aJpTqB.uB0oD4czQ3DdJiWU'
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655684468
+  modifiedTime: 1794655684468
+_id: GJNowsOTn7aJpTqB
+_key: '!journal!GJNowsOTn7aJpTqB'

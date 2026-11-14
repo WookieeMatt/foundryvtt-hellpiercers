@@ -1,0 +1,65 @@
+name: The Little Ghosts
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>All living things have pneumatic potential, but microbes and pondscum lack the mass to
+    cultivate it. This amalgam of disembodied bacterial souls seeks gnosis in the basest
+    forms.</p><p>Codename: Mikrophasma · HP is shared by the whole Swarm (HP Total)</p>
+  faction: SYNCRASIS
+  tags:
+    - Minion
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: ''
+  special:
+    name: Special
+    description: >-
+      <p>Unit has no standard attack. They may move through Obstacles without spending
+      <strong>Speed</strong>. When they do, the Obstacle gains <strong>Countdown:3</strong>. When
+      Countdown hits 0, Obstacle explodes, creating a <strong>Burst:2</strong> space and dealing
+      damage equal to its original value to all units. If the obstacle is destroyed before
+      <strong>Countdown</strong> hits 0, it explodes in <strong>Burst:1</strong>, dealing damage
+      equal to the current <strong>Countdown</strong> to all units.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: The Little Ghosts
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: FG5KoiLA0hEjrX5J
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: Br3gWhAnvW3HCvur
+_key: '!actors!Br3gWhAnvW3HCvur'

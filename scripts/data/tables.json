@@ -1,0 +1,1218 @@
+{
+  "Chambers of Forbidden Truths": [
+    {
+      "n": 1,
+      "blocks": [
+        [
+          "p",
+          "The walls of this chamber recede forever. The map’s opposite edges connect to each other and Void spaces drop objects, players, and enemies on a random space somewhere else in the map."
+        ]
+      ]
+    },
+    {
+      "n": 2,
+      "blocks": [
+        [
+          "p",
+          "An ancient summoning chamber from the Archon age. Place<strong> four altars</strong> somewhere in the map and mark them with <strong>Countdown:4, 5, 6, and 7</strong>. When any <strong>Countdown</strong> hits <strong>zero</strong>, convert each altar into a boss from a random faction. Altars can be disabled by interacting with them."
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "blocks": [
+        [
+          "p",
+          "Effigies of Beelzebub line the sunken, furrowed walls of this arena. <strong>Enemies in this area do not have HP. To defeat them, they must collide with a wall.</strong> At the GM’s discretion, assign the following two effects to two minibosses in the current conflict, triggering when that miniboss is defeated:"
+        ],
+        [
+          "p",
+          "<em>Place a D20 on the table turned to 1. At the end of every round, increase it by 1. Add the value of the D20 to all damage dealt to all parties in this conflict. Reduce the die by 1 if a creature enters AGNOSIA</em>"
+        ],
+        [
+          "p",
+          "<em>Each side places one Tower within Range:2 of their units, first the GM, then the Players. Both towers gain Countdown:4. Flip a coin, and assign one tower the result, and the other tower the opposite result. When Countdown hits zero, the Heads Tower heals 6 HP to all adjacent creatures, and grants any extra Healing as Temporary HP. The Tails Tower deals 6 damage to all adjacent creatures and inflicts either Poison:2 or Bleed:1. The towers swap their function at the end of this round and reset their Countdown.</em>"
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "blocks": [
+        [
+          "p",
+          "A gargantuan statue has smashed through the ceiling and wrecked the structural integrity of this space. Each space in this area becomes <strong>Void</strong> after being stepped on twice."
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "blocks": [
+        [
+          "p",
+          "Every surface in this chamber is covered in a pearlescent mirror-glass, shimmering visions of a Hell triumphant in them, with all the Archons and all the Humans buried in a crimsonblack prison. Select a <strong>Boss</strong> from a faction not actively in play. That boss appears in the center of the arena. At the start of every round the <strong>Boss</strong> changes to another boss from a random faction, retaining their appearance and HP."
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "blocks": [
+        [
+          "p",
+          "A crystalline swamp where time flows in reverse. Huge glowing crystals grow from the muck and the air feels heavy. All players begin battle with <strong>Countdown:3</strong>. When countdown hits zero, each player rolls 3D4 and replaces their <strong>Speed</strong> with the total result. They regain <strong>Countdown:3</strong> and continue their turn as usual."
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "blocks": [
+        [
+          "p",
+          "A sentient chamber that twists and snarls, resisting the player at every step. Each player has a <strong>Burst:1</strong> aura surrounding them. Every round, the GM may “shuffle” the battlefield once, redrawing the arena’s walls and floors except for the Burst:1 aura around the players."
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "blocks": [
+        [
+          "p",
+          "A font in the center of the room gargles and sputters. Draw a <strong>3x3 box</strong> around the center of the arena. Enemies can only die within this box."
+        ]
+      ]
+    },
+    {
+      "n": 9,
+      "blocks": [
+        [
+          "p",
+          "The room is dotted with floating clusters of metal spikes. As an <strong>Aux Action</strong>, any character can Launch off any surface they are in contact with, travelling in a straight line until they collide with another object (a character can also be <strong>Shoved</strong> to move in this way—a smaller character always launches off a larger character, and characters of the same scale are launched off each other in opposite directions). Spiked clusters can also be shoved, dealing D8 damage when they collide with someone."
+        ]
+      ]
+    },
+    {
+      "n": 10,
+      "blocks": [
+        [
+          "p",
+          "The room howls with fury as two ghostly armies clash above the shimmering red-blue spector of Oraios, the Archon of greed in a seemingly endless ceiling. All attacks in this arena gain <strong>Lingering:1</strong>."
+        ]
+      ]
+    },
+    {
+      "n": 11,
+      "blocks": [
+        [
+          "p",
+          "The players begin TACCOM on separate one-square platforms in an ocean of <strong>Void</strong>. When they attack, their attack patterns create regular terrain over the <strong>Void</strong>. Enemy units are unaffected by <strong>Void</strong> in this room."
+        ]
+      ]
+    },
+    {
+      "n": 12,
+      "blocks": [
+        [
+          "p",
+          "The air is filled with a Hyper-LSD variant. Deploy at least two small <strong>Swarms</strong> and a miniboss to begin. Every turn, spawn a new unit of your choosing, then flip a coin. On heads, it’s not real. It vanishes at the end of this round. On tails, it’s very real. As a <strong>Support Action</strong>, players may exchange places with each other at the end of their movement."
+        ]
+      ]
+    },
+    {
+      "n": 13,
+      "blocks": [
+        [
+          "p",
+          "Physical rivers of time and reality flow through this roam, saturating the stone and metal surroundings with complex webs and eddies of fractalized time. <strong>Deploy at least one boss level unit and a supporting miniboss to begin</strong>. Every round, players must randomize who is controlling which character."
+        ]
+      ]
+    },
+    {
+      "n": 14,
+      "blocks": [
+        [
+          "p",
+          "A plinth in the center of the room envelops the space in a headache inducing red-purple light. As long as the players are in this room, the roles of GM and Player are reversed. Select one player every round to control the enemy units, while the GM takes their character. Deploy a medium sized <strong>Swarm</strong> and <strong>three spawners</strong> to begin."
+        ]
+      ]
+    },
+    {
+      "n": 15,
+      "blocks": [
+        [
+          "p",
+          "Causality is broken here—<strong>for every enemy in this conflict, the GM must mark a unique tile somewhere on the battle map. The enemy can only die on this tile</strong>. If the enemy receives enough damage to kill them on any other square of the map, they create a chronal instability. Remove the enemy and replace them with 1D6 Minions from any faction currently in play. These Minions can die anywhere."
+        ]
+      ]
+    },
+    {
+      "n": 16,
+      "blocks": [
+        [
+          "p",
+          "The hylic-emulation here is unstable, loosened by a trillion subjective years of history pressing down at the edges. <strong>Get a 52-card poker deck, shuffle it, and make a deck with 10 cards drawn from the top.</strong> Begin TACCOM in a large room with 3 corridors, each leading off into a Fog Of War shadow. When players move down a corridor and enter a new room, draw a card. Reshuffle the deck and repeat the process whenever the players pass through an unexplored door. Rooms share their contents with every other room represented by that card—if you draw a Queen Of Diamonds card three times in a row, each room will be the same as the last. Enemies, objectives, and so on all remain the same as when the players left that room last."
+        ]
+      ]
+    },
+    {
+      "n": 17,
+      "blocks": [
+        [
+          "p",
+          "The once-proud throne room of Iaos, Archon of Time. His shattered sun disc hangs low from the engraved ceiling. Four shards of it embedded in the floor shine a strange green-gold hue. These Shards are <strong>Obstacle:10</strong> objects that cause massive instabilities when broken, converting a <strong>Burst:2</strong> area centered around them into Void tiles. Here, time has become completely unmoored. Instead of standard <strong>Initiative</strong>, the GM begins each round by declaring what actions each of their units will take, players then take all their actions, before the GM plays out their predetermined moves in whatever order they desire. For each broken shard, the GM may <strong>spawn one miniboss-level unit from any active faction</strong> that takes its turn without this restriction, acting at the end of the round."
+        ]
+      ]
+    },
+    {
+      "n": 18,
+      "blocks": [
+        [
+          "p",
+          "A mundane and empty chamber folds away, its walls shifting and vanishing like an impossible origami sculpture. The bright light of an alien world and the heat of its bioluminescent surface sear strange implications and half-grasped truths into the players minds. TACCOM takes place in a narrow corridor,<strong> no more than 4 or 5 squares wide</strong>. After 3<strong> turns of com bat</strong>, this corridor rises and begins to move forward. The players find themselves standing on the back or limb of a titanic beast. Create an <strong>Interactable</strong> space at the top of the corridor that allows the players to shunt the beast 2 squares left or right. Any attack with <strong>Push:2</strong> or more will also move the beast a single space in the relevant direction. Other beasts maneuver beside, infront, or behind the player's mount, made up of whatever shapes or terrain effects the GM feels appropriate. Each contains a medium size <strong>Swarm</strong>, <strong>two minibosses</strong>, or a <strong>fac tion Boss</strong>. As the beast moves, it may move through pockets of <strong>Hazard</strong> terrain, which deal inflict either <strong>Slow:2</strong>, <strong>Bleed:2</strong>, or <strong>Poison:2</strong> to anyone caught in them."
+        ]
+      ]
+    },
+    {
+      "n": 19,
+      "blocks": [
+        [
+          "p",
+          "In the center of a very large room is a single <strong>Void</strong> tile with the Attractor effect over an infinite range. Once per turn, it emits an <strong>Arc:6</strong> attack dealing<strong> 3 damage</strong> to any unit it touches, inflicting either <strong>Slow:2</strong>, <strong>Shaded:2</strong>, <strong>Healing:3</strong>, or <strong>Haste:1</strong> (roll a D4 to determine which). If this attack kills a minion, that minion is converted to a <strong>Void</strong> tile with the <strong>Attractor</strong> effect over <strong>Range:2</strong>. The void tile in the center has all the traits of any Spawner tagged unit from any active enemy faction."
+        ]
+      ]
+    },
+    {
+      "n": 20,
+      "blocks": [
+        [
+          "p",
+          "The chamber is in utter chaos already. Spectral psi-space imprints of a thousand battles rage before the players. In addition to <strong>a medium sized Swarm</strong> and one<strong> Faction Boss</strong>, create three <strong>Blob:4</strong> clouds of ghostly mist around a large open area. Once per turn, spawn a unit from each <strong>Blob</strong> and reduce the <strong>Blob</strong> by that unit’s Scale. In this chamber, attacks gain the <strong>Delayed trait, their patterns only applying at the start of the attackers next turn</strong>. Attacks can harm allies caught in them."
+        ]
+      ]
+    }
+  ],
+  "Corridors": [
+    {
+      "n": 1,
+      "blocks": [
+        [
+          "p",
+          "The walls of this hall are thick with vines and ancient, dying plants. Yellow-brown rot and misty spore clouds cloud the senses. A single break in the ceiling shines the red-black light of Hell’s sky onto a single, disheveled Welwischia plant—the last of its kind here, or anywhere else. Once a powerful being by Abigor’s side, they were cast down here after the Syncrasis ascendence. Its voice is gentle, but furious."
+        ]
+      ]
+    },
+    {
+      "n": 2,
+      "blocks": [
+        [
+          "p",
+          "The vaults and hallways surrounding this passage are wet. They’re covered in barnacles, seaweed, and the ruins of broken ships bearing the emblem of the Sea People. If the MIXIS Faction is in play, mention its similarity to the banners they carry. The door opens to reveal a solid wall of water, suspended in place by magic. The hallway is home to thousands of extinct fish, who flow through you, sharing memories of a long forgotten Earth. HELLPIERCERS heal to full HP after sharing a fish memory. Their memories are ones of impossible war, of blind children playing with the weapons of Gods, of half-enlightened warrior kings leading armies of hastily uplifted seabourne kin."
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "blocks": [
+        [
+          "p",
+          "A massive 12-legged, 12-mouthed beast drenched in crimson lies across the corridor, blocking the path. Its multiple mouths twist back into toothy grins. Each mouth contains a small room, entered by crawling past its teeth. Each room contains the soul of a person the PCs have lost. Only two can be retrieved, but they all seem quite content."
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "blocks": [
+        [
+          "p",
+          "A pale, emaciated, and ghostly figure is weeping and lapping water from a crack in the far wall. They wear a faded gold sash around their body, bearing the near-illegible sigil of the House of Ekklesia. In the folds of their robe are baubles and inscrutable treasures from a lost age. They are hesitant to speak, as each word causes their tail to grow toward the hidden exit of the room."
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "blocks": [
+        [
+          "p",
+          "A terrifying visage, a bandage-wrapped skull with a single green-purple eyeball dominates the room. Hot air flows from its nostrils, despite its clear decomposition. Shoulders seen through cracked flooring reveal the figures restraining armor, scored with innumerable names of ancient hellions and the sigils of at least a dozen Archons. This creature will greedily devour the cores of ritually important objects (Faction Leader crowns, Forbidden Arms, HELLPIERCER Spinthers), and grows in strength and prophecy with each one, changing the world and its rules according to an inscrutable design. It will only ever tell you truths, but never welcome ones. Once it has a crown, a sword, and raiment, its bindings will no longer hold it."
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "blocks": [
+        [
+          "p",
+          "An old treasure vault belonging to a faction forgotten by time. Alien sigils and empty boxes litter the room. Under a pile of garbage, the old city plans for Dis can be uncovered. They reveal or imply something strange, troubling, or unsettling."
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "blocks": [
+        [
+          "p",
+          "A lost band of HELLPIERCERS wander this corridor, seemingly unable to see or interact with the players’ squad. The room they are in is drastically different than the one the players see, with a half dozen tall candelabras in a circle surrounding a brazier that refuses to light for the lost band of NPC HELLPIERCERS. The PCs cannot see the other room, but can interact with the objects in it."
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "blocks": [
+        [
+          "p",
+          "The walls of this short hallway recount the deeds of dozens of foot soldiers in Beezlebub’s liberation force. Many names have been scratched away but one remains… one that a member of the party recognizes."
+        ]
+      ]
+    },
+    {
+      "n": 9,
+      "blocks": [
+        [
+          "p",
+          "Contact with DIS breaks, the doors slam shut, the lights go out. When the lights return, a new member of the party is present; decide in secret if you remember them or not. The doors open and you are free to move on."
+        ]
+      ]
+    },
+    {
+      "n": 10,
+      "blocks": [
+        [
+          "p",
+          "This corridor appears as any other—dank black-blue stonework, inscrutable half-broken statues, tall candelabras cast in the corners. Every single object, down to the individual stones, makes a novel musical tone at the slightest touch. High above their heads, a glass orb containing a hand-sized replica of Fallen Mars will shatter and drop the replica if more than 10 sounds happen at once."
+        ]
+      ]
+    },
+    {
+      "n": 11,
+      "blocks": [
+        [
+          "p",
+          "This hallway merges with another somewhere out in the miasma of bythos. A squadron of kitted out, geared up, godling-empowered canines stalk the outer edge of the room, blending seamlessly with the stonework depicting the rise and fall of their spiritual cycle. Their own war of cosmic liberation mirrors your own."
+        ]
+      ]
+    },
+    {
+      "n": 12,
+      "blocks": [
+        [
+          "p",
+          "It dawns on you that the walls of this chamber are the enormous bat-like wings of some unthinkably vast creature. Its spine curves up and around the end of the corridor, its blackfurred body blocking any exit. Two spindly arms emerge from the darkness and lay themselves flat on the ground on either side of a small game board, laid on the floor The game is morelles or Nine Men’s Morris. The creature does not speak, and makes no interpretable sign of intelligence beyond responding to player moves. Winning opens the door behind the creature, who allows them to walk through unimpeded. A certain arrangement of pieces opens a special door to a random Vault. Losing will cost someone dearly."
+        ]
+      ]
+    },
+    {
+      "n": 13,
+      "blocks": [
+        [
+          "p",
+          "Two chambers side by side are connected by several pathways. Both chambers have a scale model of some unknown star system. In one of the chambers, each world is barren and ruined, with signs of once-great miniature civilizations rotting in the microscopic sands. In the other, the worlds are embroiled in a great battle with each other, with miniscule spaceships raining infinitesimal nuclear weapons on each other."
+        ]
+      ]
+    },
+    {
+      "n": 14,
+      "blocks": [
+        [
+          "p",
+          "The genealogy of one of the demonic factions currently in play sprawls out across the walls, ceiling, and floor of this chamber. A skeleton, animated by a geist-split of Beelzebub, is lashed into eternal maintenance of this place by some forgotten necromancer. He cannot leave until his contract is destroyed. Select a miniboss from any faction and use him in a future TACCOM."
+        ]
+      ]
+    },
+    {
+      "n": 15,
+      "blocks": [
+        [
+          "p",
+          "The hallway is lined with large tubes that once held a purple-green fluid, now dried and staining the glass tubes. Further inspection reveals the rotted remains of once-human pneuma, trapped within the fractal glass. There is a collector unit with a single vial of stillactive Hyper-LSD at its base."
+        ]
+      ]
+    },
+    {
+      "n": 16,
+      "blocks": [
+        [
+          "p",
+          "The chamber is lined with stone eyes, which turn into real eyeballs when approached. The eyes are majority human, but scattered through are demonic eyes, angelic eyes, eyes with spiral patterns or burning crosses in them. In the center of the chamber is a stone orb about six feet across. When approached, it forms into the non-Euclidean, two-dimensional eyeball of the Paracletus’s leader. Through ritual, surgery, or both, it can be implanted into the head of a HELLPIERCER, allowing them to see into the second dimension and observe the Paracletus’s true forms. If the Paracletus faction is not in play, they join the war as an additional faction upon installing the eye."
+        ]
+      ]
+    },
+    {
+      "n": 17,
+      "blocks": [
+        [
+          "p",
+          "The remains of a ritual summoning space adorned with the tapestries and ceremonial items of an active demonic faction. The ritual was hastily abandoned and could be completed by the party. Determine three esoteric steps—ring the bell, close the book, dash the candles, or similar—and scatter the elements throughout adjacent chambers, vaults, or corridors. When the ritual is complete, select one of the following and summon them within the sealed circle: an ancient wizard from the first human ascendency, clutching a brick of Babel-Gold; the jealous and vengeful sister of the current faction’s leader; or the torn gold and silver spirit of an Archon full of impotent fury."
+        ]
+      ]
+    },
+    {
+      "n": 18,
+      "blocks": [
+        [
+          "p",
+          "This chamber of ice stuns even HELLPIERCERS with a cold shock. A frosty mist impedes easy access, but will yield to the players’ power. The walls of the chamber stretch up impossibly high and are etched with sentient sigils that seem to writhe against comprehension. In the center of the room is a corpse of Saklas, its lion-headed skull almost cycloptic with a strange third eye socket in the center of its crown. Its bones are carved with a record of the 148 Sufferings and representations of Jupiter. An altar seems to grow organically out of these bones, surrounded by braziers of unearthly metal and obsidian obelisks. A heavy dagger, a bloodstone bell, and a golden mask covered in unblinking eyes promise audience with Syzygos."
+        ]
+      ]
+    },
+    {
+      "n": 19,
+      "blocks": [
+        [
+          "p",
+          "A desecrated cathedral, once a refuge for Archons surveying the pitiful workings of Hell. On gossamer threads millions of flies are punctured and dangle like beaded curtains down the cave walls. A statue in the center of the cave is decapitated, the remains of long-dried infernal feces encrusted about the stump. One of the HELLPIERCERS feels a disembodied whisper hiss through their armor, speaking to them alone. Pass them a note that says the following: ”Your comrades were slaughtered. The imposters surrounding you are waiting for you to bring them home. They will say anything.”"
+        ]
+      ]
+    },
+    {
+      "n": 20,
+      "blocks": [
+        [
+          "p",
+          "Something resembling a gilded theater of a splendored age. Three tiers of extravagant seating face a titanic stage, surrounded by dozens of reliefs celebrating forgotten Gods, Archon achievements in human suffering, and gleefully illustrated legends of demonic torture. Everything is covered with a thick layer of scorched soul-ash, carrying the whispering screams of still-burning souls. The ancient soul-wood of the stage swirls a million faces of pain, and in the center, illuminated by an ethereal light, is a small black crown with a single red jewel embedded in its center. The crown fits whoever wears it; it is a violation of gnosis, but all freedom is violation to someone. It will not be removed easily."
+        ]
+      ]
+    }
+  ],
+  "Vaults": [
+    {
+      "n": 1,
+      "blocks": [
+        [
+          "p",
+          "It is completely dark here. No light enters, no light escapes. The ground beneath the HELLPIERCERS is wet. A cold white moon hangs lifelessly in the distance. On it, a strange network of ruins, fissures, and craters tell a morose story. The soul of the Demiurge, its true soul, the one you drove a sword through at the mountain of humanity's birth, is in there. Every atom in your body knows it. Any exertion of will in this room parts the dark ocean below the HELLPIERCER, a diamond core rising to meet them. Unlock the following Vehicle Options:"
+        ],
+        ["s", "Personalization - Exalted Idiot Creator Of All That is"],
+        [
+          "p",
+          "<em>Vehicle gains the personality and memories of the Demiurge, the naive monster who wrought all pain in the universe in an ignorant search to emulate its mothers love.</em>"
+        ],
+        ["s", "Upgrade - Wings of Infinite Light"],
+        [
+          "p",
+          "<em>The vehicle gains collapsible wings of emerald-purple-golden light. These wings al low semi-effortless vertical ascension, and can themselves open temporary rifts in the local reality matrix. Consume 1 Fuel when deployed. Grant the vehicle the temporary tag Active-Arrested Pseudo-Evolution Catalyst until returning to DIS.</em>"
+        ],
+        ["s", "Upgrade - Final Rage Directing Giga-Art"],
+        [
+          "p",
+          "<em>When combined with a ritual catalyst such as a fruit of wisdom or a legendary arm, the vehicle begins a cataclysmic ascension rite that transforms the vehicle into an in domitable giant of darkness. The ritual ends with its total annihilation, and the anni hilation of an area roughly 2 Speed across on the STRATCOM. This ascension funda mentally changes the rules of the local reality matrix. Decide among your table how this plays out.</em>"
+        ]
+      ]
+    },
+    {
+      "n": 2,
+      "blocks": [
+        [
+          "p",
+          "Somehow, a building from the ogdoad has laid under the catacombs of Hell for millenia. Oddly colored flesh, bright hot red, is gilded with immaculately polished gold. Dazzling terminals sprawl endless flowing Heaven-Code, sentient programming endlessly pursuing some unknown project. The bulk of the vault is a massive pit holding a pale humanoid giant bound by golden chains. Its head has been removed, replaced with an enormous golden Lion mask caught in a vicious snarl. High above the creature is an unnerving halo, swirling with unidentifiable soul-matter."
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "blocks": [
+        [
+          "p",
+          "Every surface of the vault is covered in a bizarre, beautiful mycelium. The strange non-Euclidean structures shift with an unseen, unheard, irregular heartbeat that sends pulses of golden light through the silvery flesh of the fungi. The ground underfoot is soft and yielding, the smell earthy but with a fizzy hint of divinity. The walls are marked with ancient, decaying anti-divinity seals in a variety of demonic languages. Several towers of mycelium dot the area, and when communed with readily accept a spinther into them for communion. Whoever returns holds the One Last Minute Legendary Arm. Only beings with souls would find themselves in such a cell, and only beings who have tested the bounds of divinity warrant this security."
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "blocks": [
+        [
+          "p",
+          "Entry into this vault catapults the wanderers into an incomprehensible miasma of souls. Physicality washes away. All sense of stable space, even the understanding of it, struggles and fails against an onslaught of a stranger space. Lives, goals, ideals, memories, dreams, entire persons play out across impossible shapes that transgress through what little body exists of the entrant. A HELLPIERCER could escape this, and would carry some mote of value with them, but extracting this many souls from a chamber of guf requires specialized equipment. Why were they put here in this prison-within-a-prison in the first place?"
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "blocks": [
+        [
+          "p",
+          "A large frog perches within a jar. Its vessel is adorned in countless scribes of admiration. The creature gurgles within its jar for a moment before handing you a small red capsule. At any time you may break this capsule and receive any locked weapon until the end of the next TACCOM encounter."
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "blocks": [
+        [
+          "p",
+          "There is an obelisk here, marked in a language nobody in the group understands at first. When touched, it reveals itself to be a collection of souls in an extra-dimensional bunker, hiding from something. They select one HELLPIERCER and grant them the first step of the Halcyon Process. There are seven more steps to uncover."
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "blocks": [
+        [
+          "p",
+          "This vault has already been looted, but in the center rest remains of an infernal construction engine. If players are able to repair its systems, it constructs one building in DIS for free before the souls that make up its machinery are returned to their rightful forms. Name them. Get to know them a little."
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "blocks": [
+        [
+          "p",
+          "A single, plain jar rests in the center of an otherwise empty and bland tomb. When taken back to DIS and researched, it reveals itself to be a Demon Binding Pot, and adds the following action to the HELLPIERCERS abilities:"
+        ],
+        [
+          "p",
+          "<em>As a Main Action, select an active enemy within this TACCOM encounter and place a <strong>Countdown:3</strong> on them. At the end of the countdown, that enemy is permanently sealed within the pot and can only be released by breaking it. If broken, the enemy de livers one of their attacks at a target of the players choosing before vanishing forever. Discuss with the table how the attack works beforehand.</em>"
+        ]
+      ]
+    },
+    {
+      "n": 9,
+      "blocks": [
+        [
+          "p",
+          "As the locks on this vault roll back into hidden dimensions, the door unfurls like a flower then turns rotten, its petals sloughing off into wet lumps of gooey mess. A red mist seeps from the open doorway, followed quickly by a cyclone of hellish miasma. The vault is empty but for a half-ruined effigy of a twisted Archon, half-fused with some demonic creature. <strong>Be fore the next session, sit down with the table and develop an entirely new faction rep resenting one of the Archon’s Hellguard fused with demons.</strong> Create at minimum a Faction Boss, a miniboss, and at least one minion. These creatures may be deployed by the GM during any future missions."
+        ]
+      ]
+    },
+    {
+      "n": 10,
+      "blocks": [
+        [
+          "p",
+          "The vault contains only the flayed torso of some immense creature. Its blood is gold, its skin a shattered mirror of silver and bronze. The creature's broken ribcage houses an emerald roughly the size of a car. Touching it reveals to all present a ritual for diving their pneuma into it and the machine needed to do so. Its representative begins to haunt the party, seen on distant walkways, meeting with moribund characters."
+        ]
+      ]
+    },
+    {
+      "n": 11,
+      "blocks": [
+        [
+          "p",
+          "Past the threshold of the vault the HELLPIERCERS forms—their golden skin, their nouswork armor—melts into a stunning mundanity. Their flesh prickles in the cold, their eyes strain against the dark, and the thrumming call of power behind their minds ebbs into a low buzz. Here, they are as Human as they have ever felt. The center of the room holds a chamber with a primordial Armor, forged by an anonymous, long dead demon artisan from the corpse of an undocumented Archon. It has the following stats."
+        ],
+        [
+          "p",
+          "<em><strong>Speed</strong> : 5 <strong>Special Movement</strong> : Keppler-Aristotelian Unified Graviton Rite At any point in your movement, you may place a Void Attractor tile. By default, the tile has a Burst:1 range, Attractor:1 strength, and must be placed within Range:2 of your current location. You may spend any or all of your remaining Speed to increase any of these values. You can dismiss this tile at any point during your turn. You may only have one Void Attractor tile active at a time. <strong>Armor Action</strong> : Particle Interchangeability Module - As a Support Action, you may change the direction of the Void Attractor tile’s attraction, changing its Pull effect to a Push. Using this ability also makes your Attractor tile affect any damage patterns that fall into its Burst range. Each time it is worn, it regains one more of its memories of Heaven, of ruling here in Hell, and of the pathway to its own liberation. It will pursue this goal relentlessly.</em>"
+        ]
+      ]
+    },
+    {
+      "n": 12,
+      "blocks": [
+        [
+          "p",
+          "The vault appears from the outside as a treasure trove of Hell’s wealth. The arrayed riches of some elder faction lay piled atop strange weapons and inscrutable ritual aids. Upon entering, this illusion fades away. This bunker contains books, tablets, scrolls, and rudimentary technology preserving the work of Edenite Monks who led the Hosanna protocol, the effort to carry the knowledge of ascension through the thousand years of fire. Those who died forged this safe vault in Hell and continued their divine-beyond-divine mission. Their work is impenetrable, and changes focus every few centuries as the monks set their wisdom against archons, demons or internally, seeking some escape from Hell. Select one of the following rituals to pursue and determine the catalyst, the archonic source, and the hylic resonance needed to complete it:"
+        ],
+        [
+          "p",
+          "<em>Allows a single Legendary Arm to be made a permanent addition to the squad’s weapon options.</em>"
+        ],
+        [
+          "p",
+          "<em>Uncovers a further layer of Truth to the universe, enlightening the HELLPIERCERS beyond their cosmic liberation, past the Hebdomas and the Monad, to a realm of com plete understanding. Completing this ritual requires a living Faction Boss, the fused cores of an ascended human and some other alien power, and a weapon capable of breaking the Keter-Lokantara barrier. It immediately annihilates all the active fac tions and unmoors local reality. Discuss with the table what happens next.</em>"
+        ]
+      ]
+    },
+    {
+      "n": 13,
+      "blocks": [
+        [
+          "p",
+          "A single plinth, surrounded by a small moat of glittering silver water direct from the abyssal ocean of the Demiurge. Crossing it grants HELLPIERCERS one memory from before the great forgetting. The plinth holds the embryonic form of a nascent Demon Lord, its crown still in flux, its single red eye searing a vengeful rune into the eye of anyone brave enough to stare back. This is only part of an animus; it yearns to fuse with power, to trigger something magnificent and obliterative. It dreams of a new status quo, and its dreams bleed into any HELLPIERCER who stands close. Grant one player the following ability:"
+        ],
+        [
+          "p",
+          "<em>As a Support Action, once per TACCOM select one enemy, then declare which HELLPIERCER they will target next. That enemy cannot make any attack besides one that targets that HELLPIERCER until it fulfills this prophecy.</em>"
+        ]
+      ]
+    },
+    {
+      "n": 14,
+      "blocks": [
+        [
+          "p",
+          "Opening the ornate door of this vault triggers a hidden mechanism, sending the entire room spiraling upward. It drills through ten thousand layers of history to crest within DIS itself. Within are thousands of scrolls, carvings, tapestries, tablets, tomes, memory-coded bacterium, and audio logs cataloging every failed prophecy there has ever been. Whenever you spend a few hours here, write down 3 things that will absolutely never, ever happen. Should any of these three things come to pass, rewrite events such that they do not."
+        ]
+      ]
+    },
+    {
+      "n": 15,
+      "blocks": [
+        [
+          "p",
+          "This chamber is as close to Earth as you have felt since you walked the hero's mimesis ritual back home. The vault resembles the dionysian chambers where you first learned to see the hidden path. Time stops outside of this chamber, you can watch motes of reality juddering and shivering in place past the threshold. The air here is heavy with some imitation of Hyper-LSD, its telltale camphor scent singing your nostrils. Meditate here and share your experience. The one of you who spends the longest here gains the following tag:"
+        ],
+        [
+          "p",
+          "<em>Mantling the demonic perversion of the divine acids has fractalized your nous and given you paths beyond the road ahead. At any time, you may bring any number of peo ple back to the hall you were enthroned, but you can’t leave with more than you car ried in with you. You also see the waking lines of hyper-reality, fueling demonic security systems and defenses through their backdoor to Psi-Space, and may manipulate them with enough time and space for a suitable ritual.</em>"
+        ]
+      ]
+    },
+    {
+      "n": 16,
+      "blocks": [
+        [
+          "p",
+          "Gnarled trees and coiled vines force a tempered approach to the center of this vault. A dome of green grass is crowned with an impossible tree, one of swirling golden boughs and emerald and ruby leaves which clink and tinkle in the non-existent wind. Strange fruits hang from its branches, each with an alien face. A great lion-headed serpent lies sleeping around the tree. Upon approaching, an androgynous figure clad in gold emerges, calling itself Adam-Eve. It offers you a weapon. Decide together what the cost will be."
+        ]
+      ]
+    },
+    {
+      "n": 17,
+      "blocks": [
+        [
+          "p",
+          "This chamber is designed around a number of sapphire and garnet sarcophagi—one for each member of the squad. Resting in these grants the sleeper inescapable prophetic dreams, full of potent images of crowns, of a white moon and a broken red planet, of the rotting corpse of the Demiurge and a million demons marching through his watery grave. One of you awakens holding a weapon. The rest of you know the shape of a terrifying apocalypse to come."
+        ]
+      ]
+    },
+    {
+      "n": 18,
+      "blocks": [
+        [
+          "p",
+          "Stepping into this vault is like being in the center of every loudspeaker and subwoofer in the world, blasting a wall of noise that threatens to unmake your body and soul. Your AT Field flares, layering upon itself, separating you from your relationships, your connections, all but your nous, spinther, and pneuma. This is what it is to be a demon. Within these ironclad walls you are a master of your own psyche, but the barriers between yourself and others feels unbreakable. A weapon beckons from the raised platform in the center of this room, where the noise is strongest."
+        ]
+      ]
+    },
+    {
+      "n": 19,
+      "blocks": [
+        [
+          "p",
+          "Some sort of long-abandoned demonic spying system. Tendrils of techno-organic material twist and coil around a room that appears to be breathing, thinking, feeling. Any one of these tendrils will connect you to a listening station somewhere in deep space, monitoring the comings and goings of Enlightened Humanity's vast population, dancing their ineffable routines through the star clouds of the outerworlds. Their music is transcendent. Perhaps that’s why this place was abandoned in the end. The party gains the following ability:"
+        ],
+        [
+          "p",
+          "<em>After a successful mission, but before returning to DIS, place a beacon at your current location on the STRATCOM map. You may spend this beacon to fully embody a sentient being within 1 Speed of that location for up to 24 hours. You gain some of that being’s re cent memories, their mannerisms, their drives, their will, and their goals. You cannot act in a way unbecoming for that being, but you retain all knowledge gained during your excursion. You may only have one beacon active at a time.</em>"
+        ]
+      ]
+    },
+    {
+      "n": 20,
+      "blocks": [
+        [
+          "p",
+          "A twisted chamber of throbbing volcanic glass and obsidian curves. Every word spoken here prompts a mocking retort from somewhere out of eyesight. Reflections display perverse mockeries of those who cast them. Smooth surfaces pierce like knives and sharp edges are dull to the touch. The spirit who forged this room was a sadist beyond compare. Destroy a single structure you have built in Dis and do not recover its building materials. The spiteful echo writhes in glee. Select any building that has been identified from an enemy faction. Destroy it."
+        ]
+      ]
+    }
+  ],
+  "Legendary Arms": [
+    {
+      "n": 1,
+      "blocks": [
+        ["h", "Inversion-Infused Chained Ascension Missile Launcher"],
+        [
+          "p",
+          "<em>One of the 8 legendary arms held in the Beelzebuthian Armory. Forcibly injects 98% purity as cended mindforms into the target’s spinther-cage, causing an immediate and violent chain reac tion of escalating awakenings; each using the gnosis of the last to fuel the ascension of the next. </em>"
+        ],
+        [
+          "p",
+          "<em>Deal 3 damage to all enemies in <strong>Burst:6</strong> around the targeted unit. Before assigning damage, all targets within <strong>Burst:6</strong> gain <strong>Nova Burst:2.</strong></em>"
+        ],
+        [
+          "p",
+          "<em><strong>Nova Burst</strong> : When this unit dies, they explode, dealing x damage in <strong>Burst:3</strong> , where x is equal to 3 per every unit with <strong>Nova Burst</strong> killed this encounter. Any unit caught in this area of effect gains <strong>Nova Burst:2</strong> before taking damage. </em>"
+        ],
+        ["s", "1 Target, Range:6"],
+        ["s", "Extinguish: 3"]
+      ]
+    },
+    {
+      "n": 2,
+      "blocks": [
+        ["h", "One Last Minute"],
+        [
+          "p",
+          "<em>One of the 8 legendary arms held in the Beelzebuthian Armory. A small crystal orb containing a stolen year of warless peace. Echos of the forgotten loves and restful mornings rattle inside, tinkling like silver bells when shaken.</em>"
+        ],
+        [
+          "p",
+          "<em>Immediately end all effects, buffs, debuffs, and conditions within the attack pattern. Convert all special terrain within the attack pattern to Standard terrain. Reset all countdowns and remove any on-death effects within the attack pattern.</em>"
+        ],
+        ["s", "Burst:8"],
+        ["s", "Extinguish: 3"]
+      ]
+    },
+    {
+      "n": 3,
+      "blocks": [
+        ["h", "Militarized Auto-Styxiation Suite"],
+        [
+          "p",
+          "<em>One of the 8 legendary arms held in the Beelzebuthian Armory. The nature of Hell necessitated a unique approach to punishment; a sort of second hell, imprinted deep on the synth-spinther, emits an aura of misery around the subject, forcing them into a waking, walking prison of scorn.</em>"
+        ],
+        [
+          "p",
+          "<em>Attack: Select two enemies within Range:6 and attach a Ring:1 pattern to each unit. The pattern has the following effects</em>"
+        ],
+        ["h", "Ring of Suffering"],
+        [
+          "p",
+          "<em>The ring deals <strong> 5 damage</strong> to any units who begin their turn within it. The ring also deals <strong>5 dam-</strong> <strong>age</strong> to any unit who ends their turn within it. All units who begin their turn, pass through, or end their turn within the ring suffer <strong>Slow:2</strong> , <strong>Bleed:2</strong> . Any unit with a <strong>Ring of Suffering</strong> that dies passes along the ring to any enemy within the ring at the time of death. If multiple enemies are within the ring, the HELLPIERCER who landed the final blow selects one. </em>"
+        ],
+        [
+          "p",
+          "<em>If two Rings of Suffering overlap, both affected units immediately explode in a <strong>Blast:2</strong> pattern that deals <strong>10 damage</strong> to all enemies in range.</em>"
+        ],
+        ["s", "Range:6, Targets:2"],
+        ["s", "Extinguish: 2"]
+      ]
+    },
+    {
+      "n": 4,
+      "blocks": [
+        ["h", "Essence Of Baal’s Final Bastion"],
+        [
+          "p",
+          "<em>One of the 8 legendary arms held in the Beelzebuthian Armory. Though no ruins have been lo cated, Baal’s fortress is legendary among Hellions; their own attempt at heavenly invasion, a leviathan of flesh, bone, and hellsteel clawing at the oilslick sky. A fragment of its soul thrashes in this vial.</em>"
+        ],
+        [
+          "p",
+          "<em>Create an impenetrable dome in a Blast:1 pattern. The dome has Countdown:3, and dissipates af ter the status is resolved. Units cannot move in or out of the dome, cannot be targeted by any at tacks, and cannot be inflicted with any status effects. Terrain tiles within the dome are im mutable, and not affected by any abilities or effects that would change them. The dome can be tar geted, and the effects of the attack are applied to all units caught within it.</em>"
+        ],
+        ["s", "Range:6, Blast:1"],
+        ["s", "Extinguish: 3"]
+      ]
+    },
+    {
+      "n": 5,
+      "blocks": [
+        ["h", "Violence-Inflicted Forced Redemption Wave"],
+        [
+          "p",
+          "<em>One of the 8 legendary arms held in the Beelzebuthian Armory. Experiments in forced ascension culminated in this device. Homonculian spirits tattoo infernal agnosis on the bones and flesh of its targets, wisdom absorbs into the marrow. The victim, grateful for their new perspective, often offers a little help on their way out of samsara.</em>"
+        ],
+        [
+          "p",
+          "<em>Inflict Countdown:4 on all targets in the first layer of the pattern closest to the attacker, Count down:3 on the second, and Countdown:2 on the final layer. If a unit inflicted with a Countdown in this way dies, they transform into the following unit:</em>"
+        ],
+        ["h", "Celestial-Shattered Redemption Engine"],
+        ["p", "<em>Tags: <strong>Fortification, Stationary</strong></em>"],
+        ["p", "<em><strong>HP: </strong> 5</em>"],
+        ["p", "<em><strong>Speed: </strong> 0</em>"],
+        [
+          "p",
+          "<em><strong>Range:4</strong> , <strong>Target:1</strong> , <strong>Damage:3</strong> . The Redemption Engine automatically targets an enemy unit within 4 spaces from it and deals 3 damage at the end of the round.</em>"
+        ],
+        ["s", "Cone:3, Damage:0"],
+        ["s", "Extinguish: 4"]
+      ]
+    },
+    {
+      "n": 6,
+      "blocks": [
+        ["h", "Allegiance Of The Keraunios-Sky"],
+        [
+          "p",
+          "<em>One of the 8 legendary arms held in the Beelzebuthian Armory. Everything in Hell is sentient. The dust is made of the scattered ashes of a billion souls, the dirt is the compacted minds of an eternity of torture. Even fleeting lightning, for a microsecond, is a complete being. Sentience begs intelli gence, intelligence begs need, and need begs negotiation, alliances, and collaboration.</em>"
+        ],
+        [
+          "p",
+          "<em>Each enemy targeted by this attack creates a Burst:1 explosion, dealing damage equal to the initial attack to all enemies within. Any enemy that dies from this attack creates an additional Arc:2 at tack pattern that follows the same rules. </em>"
+        ],
+        ["s", "Arc:4, Damage:5"],
+        ["s", "Extinguish: 4"]
+      ]
+    },
+    {
+      "n": 7,
+      "blocks": [
+        ["h", "Delicate Suffering"],
+        [
+          "p",
+          "<em>One of the 8 legendary arms held in the Beelzebuthian Armory. ASTANPHAEUS’s most subtle work. By its gossamer edge was the golden skin of man flayed, our original divinity removed in tattered strips and used to sew the material fetters that bound us. Its cuts inflict no pain, some thing the Archon himself discovered shortly before his death.</em>"
+        ],
+        ["p", "<em>All targets hit with this weapon gain the Glassflesh status:</em>"],
+        ["p", "<em><strong>Glassflesh</strong></em>"],
+        [
+          "p",
+          "<em>Target receives double damage from the next attack targeting them. The affected unit retains the Glassflesh status until they die, but take no additional damage on attacks after the first. When defeated, the enemy unit leaves the status behind on the space they died. Any enemy unit who en ters this space removes the effect from the terrain and gains the Glassflesh status. This effect can stack if the enemy unit picks up additional Glassflesh statuses.</em>"
+        ],
+        ["s", "Range:4, Target:3"],
+        ["s", "Extinguish: 3"]
+      ]
+    },
+    {
+      "n": 8,
+      "blocks": [
+        ["h", "Thanatotic Refining Alchemic Cannon"],
+        [
+          "p",
+          "<em>One of the 8 legendary arms held in the Beelzebuthian Armory. In scavenging the libraries of the Archons techniques meant for punishing upstart humanity were discovered. Physicalization of the pain of loss was quickly discarded as it resulted uniformly in instant death. For HELLPIERCERS who sought not torture, but the elimination of their opposition this quirk was eminently weaponizable.</em>"
+        ],
+        [
+          "p",
+          "<em>The unit at the center of the attack pattern has damage dealt to them last. If this attack kills any units not in the center of the attack pattern, this attack deals 100 damage to the unit at the center when damage is dealt.</em>"
+        ],
+        ["s", "Damage: 1D6"],
+        ["s", "Exhaust: 3"]
+      ]
+    }
+  ],
+  "Scavenge": [
+    {
+      "n": 1,
+      "blocks": [
+        [
+          "p",
+          "Telltale columns of dust promise the arrival of legions of demonic minions. After the squad has secured their resources, start a TACCOM encounter against a Swarm no fewer than 15 units in size, with an objective to reach an escape zone (the HELLPIERCER's vehicle or the boundary of the map).<strong> Place 3 Scrap Piles</strong> on the map; each rewards the players with 1 random resource if interacted with. After three turns, spawn another <strong>Swarm</strong> of 15 units."
+        ]
+      ]
+    },
+    {
+      "n": 2,
+      "blocks": [
+        [
+          "p",
+          "Scavenging unearths something unexpected; roll on the <strong>Vaults</strong> table and incorporate the result into the search."
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "blocks": [
+        [
+          "p",
+          "Once the salvage has been stowed, a dark shadow looms in the sky. Players may choose to escape now or to gain <strong>1 additional resource</strong>. If they opt for the additional resource, the GM gains <strong>3 Charge</strong>. They may spend that <strong>Charge</strong> at any time during the next TACCOM phase to spawn a miniboss from any faction."
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "blocks": [
+        [
+          "p",
+          "The party sights an abandoned tomb ruined by the constant howling winds. Within is a sentient shadow, a remnant of one of the lost factions. It is willing to trade up to three of the resources it holds within its body in exchange for accompanying the party to their destination. If they agree, select a miniboss from any faction and allow the party to control it as a shared unit. If the shadow encounters a boss creature, it will attempt to consume it and take its <strong>Crown</strong>. What happens next is up to you."
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "blocks": [
+        [
+          "p",
+          "Within the pile of scrap is a much larger construct, buried by centuries of dust/soil/rock/living fungus. It’s human, but it’s not one of yours. Within are a number of corpses in NASAstyle space suits, too decomposed to identify. Its fragmented logs describe something called <strong>THE SAMSON PROTOCOL</strong>, an undocumented incursion into Hell for unknown purposes. It looks like whoever these humans were, they failed. Create a <strong>TACCOM</strong> map with a wide open space, centered on a large wreck. The wreck has at least one <strong>Interact</strong> space marked, and one “wall” of the arena should be marked as the point of egress, but the map is otherwise empty until the wreck has been Interacted with by a player. As soon as the players interact with the wreck, <strong>spawn a massive horde of at least 10 units on an edge of the bat tlefield</strong>. Spawn another at the start of the next round, and another at the start of the round following. If players defeat the entire horde, they secure the wreck for transport back to DIS, where someone will help figure out what was going on here. Otherwise, they may escape via the egress tiles."
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "blocks": [
+        [
+          "p",
+          "Resources here require the deployment of an ascension-blessed spinther ignition drill. Create a <strong>TACCOM</strong> map large enough to accommodate <strong>three small hills with an Interact spot at the top of each</strong>. When a player interacts with those spots, they place the <strong>Drill</strong> and begin converting the soil into liberated ascended humanity, creating an enormous golden veil of godsmoke. The drill gains <strong>Countdown:8</strong>, remove each drill that reaches 0. After the first hill is interacted with, begin spawning one <strong>Minion</strong> unit near the edge of the battlefield after each player turn and one <strong>miniboss</strong> at the end of each round. Each additional <strong>Drill</strong> placed spawns<strong> one additional minion per player turn and one additional Miniboss per round</strong>. If players activate all three drills, spawn one <strong>Boss-level creature at the end of the following round instead of three Minibosses</strong>. At the end of each drill’s countdown, players receive <strong>4 Hellsteel</strong>, <strong>4 Brimstone</strong>, or <strong>4 Soulfire</strong>, and may opt to leave the battle immediately. If they complete all three drills, end <strong>TACCOM</strong> and roll on the <strong>Vaults</strong> table."
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "blocks": [
+        [
+          "p",
+          "Fog rolls down a nearby embankment, wailing and carrying dreaded reality edits, pulling apart the local timespace. Several enemy battalions are using it as cover. While the player squad’s extractor runs, create a <strong>TACCOM</strong> map with a defensible location on one side, the <strong>Base</strong>, where the players spawn. The rest of the map is a flat open space. <strong>Draw a line across the map around two rows ahead of the base</strong>. Players may not pass this line. At the end of each round, the fog covers the furthest uncovered row from the Base, advancing toward the line drawn earlier. When the fog reaches that line, the extractor finishes its work. <strong>Players cannot see through the fog, cannot use any abilities that reveal enemies under the fog, etc</strong>. The GM may spawn units as they see fit, most likely a minion heavy mix from the current faction."
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "blocks": [
+        [
+          "p",
+          "A rich source of fuel and supplies erupts from a volcanic geyser nearby. Enemy faction units are attempting to exploit the same resources as the players here too. Create a <strong>TACCOM</strong> map with a large volcano in the center, occupying a roughly <strong>3x3 space</strong>. At the start of every round, select a tile at random by rolling one die for the row and one for the column. The volcano launches a <strong>1x1 fireball</strong> from the center of the volcano toward the random tile. It moves 1 space at the end of each turn (player or GM) until it arrives at its destination. <strong>The fireball deals 6 damage to any unit it collides but otherwise does not impede movement</strong>. When the fireball arrives at its destination, it creates a <strong>Blast:2</strong>, <strong>5 damage</strong> explosion that converts all spaces within the blast to <strong>Scorch</strong> terrain. <strong>Scorch</strong> terrain deals <strong>1 damage</strong> when a unit leaves that space. <strong>To win, the players must interact with the Volcano three times</strong>. If an enemy faction <strong>Interacts</strong> with the <strong>Volcano</strong>, launch a fireball at one player character’s current location. When anyone Interacts with the <strong>Volcano</strong>, it gains <strong>Cooldown:1</strong>, preventing anyone else from <strong>Interacting</strong> with it until the next round."
+        ]
+      ]
+    },
+    {
+      "n": 9,
+      "blocks": [
+        [
+          "p",
+          "A network of chasms and canyons blocks lines of sight and egress. The survey auguries have detected veins of hardened soulmatter within. Deeper into the labyrinthian geography, the walls of nousbound stone grow pliant, malleable, soft like melting plastic. After the players find the source of the readings and begin extraction, alien claws grasp from within the gloopy rock. Demons from factions not actively in play tear their way into this reality. Create a <strong>TACCOM</strong> scene with lots of long corridors branching off from a large central arena. These corridors terminate in an <strong>Escape</strong> tile that allows players to leave the battle when interacted with. <strong>Pick 4 or 5 spawners</strong> from a variety of factions and place them within the walls of the canyon. Spawn units out of the boundaries of the map and the walls."
+        ]
+      ]
+    },
+    {
+      "n": 10,
+      "blocks": [
+        [
+          "p",
+          "On a hellswept bluff, twin stone obelisks mark a set of stairs leading deep into the bowels of Hell. At the foot of the stairs rests a wide, open chamber, lit with an unearthly light. Its low ceiling is decorated in images of the divine feminine, while the center of the room is taken up by an enormous summoning circle bearing the sign of the ouroboros. If a player steps into this circle, they appear on the frontlines of a vast demonic horde. <strong>Have all players who stepped in the circle select a demonic faction, and a unit from that faction</strong>. They are experiencing a temporal vision of the pivotal moment when that faction rose to power, claiming their crown and their sovereignty. <strong>With some effort, players can leap between crea tures in this realm, with minions being easy to co-opt and bosses nigh impossible</strong>. During any <strong>TACCOM</strong> scenes, have players use enemy units and allow them to change to another enemy unit as a Support Action or when their current host dies. Players leave with their new insights when it is narratively dramatic for them to do so."
+        ]
+      ]
+    }
+  ],
+  "Scout": [
+    {
+      "n": 1,
+      "blocks": [
+        [
+          "p",
+          "The tracks of a demon convoy are clear to see…too clear, in fact. There’s an ambush waiting ahead. Reveal to the players what kind of force they will be contending with and suggest a way to turn the tables."
+        ]
+      ]
+    },
+    {
+      "n": 2,
+      "blocks": [
+        [
+          "p",
+          "The grinding of some gargantuan machinery cuts through the howling winds. In addition to whatever else the Demons have going on, an apocryphon-scale drill is tearing through the landscape nearby, its ignosis hunting for something like a bloodhound. The demonic forces in the area are split between the point of interest and the drill itself."
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "blocks": [
+        ["p", "The party comes across a battle in progress. Roll a D6."],
+        ["p", "<strong>1-2</strong>: Two demonic factions are fighting"],
+        [
+          "p",
+          "<strong>3-4</strong>: The demons are fighting enraged wildlife or, depending on the state of the current campaign, friendly partisans."
+        ],
+        [
+          "p",
+          "<strong>5-6</strong>: The demons are fighting themselves. Inner conflicts have spilled over into open warfare. Intervening on either side might be rewarding, or they could immediately turn on the party. It's Hell, after all."
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "blocks": [
+        [
+          "p",
+          "The party discovers the edges of a huge scar, leading them to what looks like an enormous shattered crystal snowflake. The corpse of a nameless Archon rests within, tangled and halfformed. An escapee from the war? A traitor on their way to alert Hell? You'll never know now. Its body has drained out, golden ichor in mercury-like pools waiting to be collected. Perhaps someone in DIS can make use of this?"
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "blocks": [
+        [
+          "p",
+          "A procession is approaching from another direction, but not a hostile one. Eyeless giants bearing immense gold palanquins trudge, without word, along a depressed ravine in the soil they themselves stomped out over centuries of unceasing march. Most of the platforms are empty, their skeletal riders holding wisps of reins or dangling by threadbare silks from the seats. One near the back has been converted into a cargo hauler for a makeshift merchant caravan, the giants slowly making their way between several \"unholy\" sites operating on instructions long forgotten. The merchants are hesitant to speak, but are not meaningfully armed. If the party seems willing to trade, they can be convinced to give some tidbits of info on the region, perhaps revealing a location or the local Boss' recent endeavor."
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "blocks": [
+        [
+          "p",
+          "A camp lies on the horizon, the inhabitants armed with nought but broken, rusted weapons and magics that spark more than they scorch. A dozen banners of armies long dead or never existed fly from their shabby tents. They are on guard, but a terrible sense of resignation reigns over the soldiers. They are the Faithless, a mercenary company who are damned to wander from master to master, every cause they attach themselves to giving them another defeat but continued existence. They cannot die, they cannot rest, yet they cannot win. They will reject almost any offer of cooperation or charity. They might offer information, and some of it might be useful. Perhaps they hold a cherished relic of a better day. It won't take much to get them to part with it; what good would it do them?"
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "blocks": [
+        [
+          "p",
+          "An enormous ritual altar lies ahead. On closer inspection, things look out of place. The incongruent markings of several different traditions sprawl in gibberish lines, sealing circles lie broken or incomplete, and the priest guiding the ritual is merely a lesser demon using a flimsy glamor to pretend to be a Prince thought long dead. It won't take long to figure out that they are attempting—attempting is the key word here—a ritual of great power. All they know, however, is what they've pieced together from ancient tomes and mere observation from a distance. Helping them is probably a bad idea."
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "blocks": [
+        [
+          "p",
+          "The party discovers an incongruity up ahead. A replica of a small town on Earth from another century sits in a little valley. The inhabitants claim to be human but are very much not, and they will fight to the death if you attempt to seize anything from the town. Feel free to put on a charming regional accent when speaking for the demons in this area. Shortly after arriving, hostile demons begin to attack the town from the opposite direction."
+        ]
+      ]
+    },
+    {
+      "n": 9,
+      "blocks": [
+        [
+          "p",
+          "An enemy convoy has stalled out up ahead. A landslide has blocked the path, and various menials are focusing on clearing the path ahead. You might allow them to finish before striking, and risk some of the loot escaping, or strike now, and find yourself in the exact same canyon, potentially to be ambushed from the rear just like the convoy."
+        ]
+      ]
+    },
+    {
+      "n": 10,
+      "blocks": [
+        [
+          "p",
+          "A convoy bearing unknown sigils has arrived ahead of you. Whoever this is must be important: their entourage is being welcomed as honored guests, their flags are being raised above the location, and their minions are co-mingling. Something gargantuan wrapped in a bound, red tarp is being unloaded from a vehicle ahead. The next conflict will likely involve several factions; surely there’s a way to manipulate this to your advantage."
+        ]
+      ]
+    },
+    {
+      "n": 11,
+      "blocks": [
+        [
+          "p",
+          "The Corpse-Engine of a Hell Titan is plainly visible, lashed and constrained behind the next point of interest. These monsters were weapons of cosmic destruction in long past eras, when man still cloaked themselves in gold. How this faction came to possess one, how they’re made, how many of them are left and who has them are all good questions to ask while exploring the next location; it’s all but certain a faction boss will end up activating the Corpse-Engine at some point during the assault."
+        ]
+      ]
+    },
+    {
+      "n": 12,
+      "blocks": [
+        [
+          "p",
+          "The land here is giving way. The souls of the soil have felt the presence of their brethren and rebel against their eternal jailors. The point of interest will be devoured entirely by the Hellish wastes soon, which will certainly get in the way of your exploration. Be ready for rooms to collapse, exits to vanish, and your surroundings to collapse into the boundless catacombs deep in the vengeful chthon."
+        ]
+      ]
+    },
+    {
+      "n": 13,
+      "blocks": [
+        [
+          "p",
+          "A beam of heavenly light parts the sky above your next location, like a beacon visible from hundreds of miles around. The rotten stench of marble and gold and the shrill soulless horking of trumpets close in the closer you approach. Heaven is empty, the angelic hosts are dead… so what is happening here?"
+        ]
+      ]
+    },
+    {
+      "n": 14,
+      "blocks": [
+        [
+          "p",
+          "This place is ruined. It’s been abandoned and hollowed for decades at least. Shriveled skeletal forms little the hallways. Malfunctioning tech and rotten demonic fixtures draw the HELLPIERCERS deeper and deeper into the dark, empty facility. For all TACCOM scenes in this facility, cap all enemy HP to 1, representing the skeletal and spectral nature of the foes. HELLPIERCERS may uncover a strange ritual experiment, an angelic corpse with bones of black stone or a pocketed hylic dimension locked in stasis. After they uncover this or some other baffling truth, time begins to flow in reverse in this cursed location, with the failure of the experiment rippling back inwardly, reviving the demonic legions inside. Restore enemy HP to their defaults during following TACCOM scenes."
+        ]
+      ]
+    },
+    {
+      "n": 15,
+      "blocks": [
+        [
+          "p",
+          "Syzygos’s light shines a haunting red glow over the scene below you. Demons at this location have reverted dozens of souls back to human form, given them weapons, and forced them to fight in a bloodpit. Their immortal form still suffers—worse, even, in the sisters' red light. The garrison is completely distracted, though."
+        ]
+      ]
+    },
+    {
+      "n": 16,
+      "blocks": [
+        [
+          "p",
+          "The demons have suspended a device above the location. Any HELLPIERCER can immediately identify it as an AN602 thermonuclear atomic bomb, with a yield of around 58 megatons. An explosion half that size still scars the gateways of the divine congress in Heaven."
+        ]
+      ]
+    },
+    {
+      "n": 17,
+      "blocks": [
+        [
+          "p",
+          "A thick cloud of gas envelopes the area. It hangs low to the ground and looking closely at the reddish-purple hues reveals a kaleidoscopic miasma of exploding fractals and endless swirls of shapes and colors. This is gaseous Hyper-LSD, or at least a derivative of it. Tread carefully."
+        ]
+      ]
+    },
+    {
+      "n": 18,
+      "blocks": [
+        [
+          "p",
+          "Any HELLPIERCER with Truth-Seeking Eyes can see a different angle to this location. If one looks katawardly, another faction’s building has overlaid itself with this one across a seventh spatial dimension. It shouldn’t be too hard to navigate both at the same time in a practical sense, but it makes any objective here much more complicated. Select a building from a faction not in active play. At any point, players may move between these buildings by walking in a kataward direction. Taking a dosage of Hyper-LSD or descending into a ritual trance also does the trick."
+        ]
+      ]
+    },
+    {
+      "n": 19,
+      "blocks": [
+        [
+          "p",
+          "As you begin your approach, the sky darkens. Syzygos turns to face you, her cracked face leaking a strange ethereal white light that spreads out from the shattered and ruined planetoid like a spider's web. Lashes of purple plasma arc around the blackened stone. Within a second or two, all light seems to have vanished from the sky but for the strange halo crowning the fallen sister. It is pitch black now; you can hear the screams of the demonic forces, panicking somewhere within the complex."
+        ]
+      ]
+    },
+    {
+      "n": 20,
+      "blocks": [
+        [
+          "p",
+          "The location you seek bursts forth from the horizon. A gargantuan set of tank treads, three enormous rocket engines, and a strange sail-like protrusion propel it at dizzying speeds across the land. It shows no signs of slowing down."
+        ]
+      ]
+    }
+  ],
+  "Travel": [
+    {
+      "n": 1,
+      "blocks": [
+        [
+          "p",
+          "Railway tracks rise up from the unnatural dirt beside your road. An infernal engine, twisted from a million trapped souls, thunders across the landscape in roughly the same direction as your party. A cabal of warlocks gathers on an open-air carriage somewhere in the middle, conducting a symphony of sorcery. Flames belch from its wheels, and the howl of Dragon- Hearts sends shivers through the haunted ceramics of the HELLPIERCERS armor."
+        ]
+      ]
+    },
+    {
+      "n": 2,
+      "blocks": [
+        [
+          "p",
+          "A storm in Hell isn’t just rain and wind. It's made of the same stuff everything else is: dead people. Souls whip themselves into hurricanes and thrash in the thousands against the dirt. They bellow into the air and launch themselves at the sky in a desperate rage. They lash with teeth of red thunder and crush with strange pointed digits emerging from thick dark clouds. The ground is part of it, made of the same soulstuff—it roils like the ocean, swallows like the void. There is a storm coming."
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "blocks": [
+        [
+          "p",
+          "Against the horizon two forms solidify. A titanic serpent and auroch are locked in mortal conflict. The serpent sinks its fangs into the auroch, then swallows the creature whole. The auroch bursts forth from the belly of the serpent in a rain of demonic viscera. As the last piece of gore settles on the ground, it begins to flow back into the serpent’s wound, reinvigorating it. The creatures make to resume their battle, but then their eyes settle onto your convoy."
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "blocks": [
+        [
+          "p",
+          "The Graveyard of Blades stretches out for as far as your eye can see; this is the Hell of weapons, the place spears and bows went after the gun, the place the bullet went after humanity learned to throw stars at each other. Every weapon ever made rests here, along with the spirits of those who could not give them up."
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "blocks": [
+        [
+          "p",
+          "Makeshift towers and the skulls of slain warlords mark this rudimentary highway. A tattered flag warns that you are entering a Psychic-Liberation Zone. These humans reject metanoia, yet still fight against Hell here in its warhold. More and more of these are being reported after the fall of DIS. The humans here despise the pneumatic, and will not treat you with hospitality."
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "blocks": [
+        [
+          "p",
+          "A young girl approaches you from the road. Her hands are cupped, holding pungent and rich soil. She gestures at you pleadingly, thrusting her cupped hands toward you before throwing the soil to the ground. She opens her mouth to speak out her request and in the place of words, more loamy earth spills forward. Soil has collected in a pile at her feet. Eyes panicked and pitiful, she gestures to you once again for help."
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "blocks": [
+        [
+          "p",
+          "Beams of light emerge sourcelessly from the ground, weaving between each and carving intricate fractals in their trails. Slag and glass and wet, stinking heat well up along the edges of the channels the lights carve. As their work is almost complete, it becomes clear that their labor was the carving of a summoning circle. Its runes are carved in the language of the lost Martian philosophers. A being is to be born here, in mere moments, from the time of one of humanity’s failed ascensions to godhood."
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "blocks": [
+        [
+          "p",
+          "The song of hammers striking metal fills your minds. Each blow solidifies in you an everstronger image of an arm being forged. Your every footfall drives in sync with the pounding of the forge-hammer. A curling dome of a building can be seen nearby. You know this to be the seat of the forge. Hellsteel fingers curl above the anvil at the building’s center, shading it from the sun of Hell. Though the sound of creation rings so loud in your heads as to be overwhelming, the forge before you lays still—fires unlit, bellows inert, no metal to be forged."
+        ]
+      ]
+    },
+    {
+      "n": 9,
+      "blocks": [
+        [
+          "p",
+          "Shadows on the ground creep in bizarre crescents, coiling and twisting inwardly on themselves in a disorientating display. After a while, these crescents become entirely disconnected from their source, and they begin to multiply. Soon the entire world seems to be covered in an infinite sprawl of spiraling shadows."
+        ]
+      ]
+    },
+    {
+      "n": 10,
+      "blocks": [
+        [
+          "p",
+          "You happen across a series of ramshackle huts and stalls. Demons devoid of affiliation roam about, chatting, plying trades and trading goods. Oathbreakers and The Fatherless and Self- Mothers chatter readily and happily here. Demonstrations of demonic meditative practice play out in a hastily cleared space. Pacts, contracts, and ad-hoc agreements are spoken, scrawled, and signed here. A sign, seemingly made by a flaming finger drawn across black steel, hangs above the entrance to this space. It reads “Lay down your arms, drink from our cup.”"
+        ]
+      ]
+    },
+    {
+      "n": 11,
+      "blocks": [
+        [
+          "p",
+          "Nearby stones, loose ropes, chains, and jewelry begin to float into the air. As you realize what is taking place, your feet have already become so light you are no longer tethered to the ground. Your entire convoy has unwillingly taken to the sky. The ground below you is seemingly no more. An enormous, black shadow passes over you all. You have entered the hunting grounds of the Bythic Kite."
+        ]
+      ]
+    },
+    {
+      "n": 12,
+      "blocks": [
+        [
+          "p",
+          "A yawning hole in the ground rumbles and groans. Its voice calls out to you, begging to be fed. It NEEDS to be fed, it says. Terrible things are sure to happen if it goes unsated. Surely you can offer it some small morsel?"
+        ]
+      ]
+    },
+    {
+      "n": 13,
+      "blocks": [
+        [
+          "p",
+          "You stumble upon the unattended ruins of what was once Hell’s great glass manufactory. Workstations were abandoned in a rush. Tools scatter the floor. Shattered glass and unrefined sand crunch beneath your feet. Beautiful phantoms of creations that might have been"
+        ],
+        [
+          "p",
+          "haunt the entire space. A thumping sound emerges from the central furnace. Some gargantuan creature lies in agony, half-fed into the base of the furnace. It bellows and thrashes in the blind pain of centuries pinned in the machinery."
+        ]
+      ]
+    },
+    {
+      "n": 14,
+      "blocks": [
+        [
+          "p",
+          "A sprawling shrine is carved into a mountainside. Rambling tales carved into the walls over eons speak of the multitude of Architects of Adam, their names, the particular parts of the body each one created, the ways they were arranged, and the one part which, in their ignorance, they stole from him. The shrine was built to house and contain this esoteric organ."
+        ]
+      ]
+    },
+    {
+      "n": 15,
+      "blocks": [
+        [
+          "p",
+          "An enormous formation of crystal juts from the landscape like a kris. Mandalic paths of braided gold twist along its form. It pulses and hums with a prayer unbroken since the time of the Ophite Collective, before the fall of Babel. The serpent gnosis collecting inside, supplicated in prayer, has grown fat and ripe. That no one has shattered it and made off with its fruits is an almost impossible idea. Unless, of course, someone or something sits as its steward, turning away all who would shatter the crystalized prayer."
+        ]
+      ]
+    },
+    {
+      "n": 16,
+      "blocks": [
+        [
+          "p",
+          "What had appeared to be the silhouette of two linked towers turns out to be the body of an enormous firearm driven into the earth of Hell. No trigger or other operating mechanisms are visible. Spherical indentations lined with textured glass dot the surface of the gun. Closer inspection reveals these to be biometric sensors. This weapon could only be operated by a cephalopod of colossal size."
+        ]
+      ]
+    },
+    {
+      "n": 17,
+      "blocks": [
+        [
+          "p",
+          "On the horizon, the shattered remains of a dwarf planet lie half-buried in the ground, like a corroding shipwreck on the ocean floor. This is Phaeton, a planet once said to have lain between Mars and Jupiter, pulled here by a failed experiment. The demons shun this stolen world, for Phaeton never existed and should not be here. And yet, lights dot its distant peak."
+        ]
+      ]
+    },
+    {
+      "n": 18,
+      "blocks": [
+        [
+          "p",
+          "A woman with constellations for pupils and a large sack trudges towards a smoldering chunk of dead star in the distance. In a past age the Archons shattered the Astrologer's star to thwart her ascension, but she is determined to stitch it back together. Every recovered piece adds to her sack's astronomical weight, making it harder to fend off the clawing demons."
+        ]
+      ]
+    },
+    {
+      "n": 19,
+      "blocks": [
+        [
+          "p",
+          "A sprawling refinery sits precariously on a floating island in the middle of a gaping chasm. Fulfilled, dead, and half-true prophecies have every last shred of rarefied augury squeezed out of them here. Once extracted, it is processed into a dangerous psychedelic which gives demons insight into the immediate future."
+        ]
+      ]
+    },
+    {
+      "n": 20,
+      "blocks": [
+        [
+          "p",
+          "A fortress, part prison and part mobile weapons platform, roams the landscape on massive treads. Inside, souls who were just following orders fire weapons powered by echoes of the apocalypses they brought about. These cannons temporarily rearrange the landscape into scenes of wrathful floods and nuclear hellfire."
+        ]
+      ]
+    }
+  ]
+}

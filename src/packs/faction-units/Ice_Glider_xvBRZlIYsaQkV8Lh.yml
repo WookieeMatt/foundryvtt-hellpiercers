@@ -1,0 +1,65 @@
+name: Ice Glider
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>A sleek figure with billowing wings who locomotes by freezing a trail in the air ahead of
+    them. That these trails disintegrate in the wake of the ice glider has made them favored scouts
+    of the armies of Theletus.</p><p>Codename: NAUTŃS</p>
+  faction: THELETUS
+  tags:
+    - Miniboss
+  health:
+    value: 85
+    max: 85
+    temp: 0
+  scale: 1
+  speed: 6
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Blast:3 Range:3</strong>. All units in blast range gain
+      <strong>Frozen:2</strong></p>
+  special:
+    name: Special
+    description: >-
+      <p><strong>Charge:8 Damage:2</strong>. <strong>Shatter:</strong> 5 damage. This unit may
+      choose a new direction to continue the charge while gaining no additional spaces of movement
+      for the charge.</p><p>This unit does not trigger harmful or negative terrain effects while
+      <strong>Charging</strong>.</p>
+  agnosia:
+    value: 45
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Ice Glider
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: hsXh5sb6AljquH3A
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: xvBRZlIYsaQkV8Lh
+_key: '!actors!xvBRZlIYsaQkV8Lh'

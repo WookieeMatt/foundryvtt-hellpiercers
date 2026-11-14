@@ -1,0 +1,66 @@
+name: Singing Scythe
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>A flying manta ray made of skin and piano wire, these quick, flying creatures slice trees and
+    old buildings to digestible sizes without slowing down. Their name comes from the musical
+    whistling tones that emit from their permanently agape mouths as they dive upon their foes.
+    Tags: Minion</p><p>Codename: HEIMA · Crown cost: 2</p>
+  faction: AUTOPHYES
+  tags:
+    - Minion
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Charge:7, Damage:5</strong>. Running into other units does not interrupt this
+      <strong>Charge</strong>. Deal damage to all units run over or into by this attack, enemy or
+      ally.</p>
+  special:
+    name: Special
+    description: >-
+      <p>These creatures always count as having <strong>Aegis:5</strong>, ignoring terrain features
+      and are treated as having <strong>+1 Elevation</strong>. They are immune to any attack that
+      only targets adjacent units.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Singing Scythe
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: gixCjdjMInQALHhj
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: MljyQI1GxLE0qeyY
+_key: '!actors!MljyQI1GxLE0qeyY'

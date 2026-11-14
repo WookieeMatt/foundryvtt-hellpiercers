@@ -1,0 +1,63 @@
+name: Stain Flower
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>In corrupting the Fibonacci sequence with Paraclesal mathematics, seeds injected into the
+    battlefield can bloom into viable standins for lower level demons. Swarms including a Stain
+    Flower will notice an empty presence in the Contagion Mind that merely echoes the units it is
+    linked with.</p>
+  faction: PARACLETUS
+  tags:
+    - Immobile
+    - Obstacle
+  health:
+    value: 10
+    max: 10
+    temp: 0
+  scale: 1
+  speed: 0
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: ''
+  special:
+    name: Special
+    description: >-
+      <p>These pods count as part of a Swarm when next to any minions without joining them. They
+      cannot move or take any action, and have 1 HP.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Stain Flower
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: PYpf1v41cCASKyNC
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: xwkBgYABziuTQ93V
+_key: '!actors!xwkBgYABziuTQ93V'

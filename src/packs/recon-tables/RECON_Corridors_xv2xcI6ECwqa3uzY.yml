@@ -1,0 +1,484 @@
+name: 'RECON: Corridors'
+img: icons/svg/d20-grey.svg
+description: <p>Roll when the squad explores the caverns (1 Supply, gain 1 Revelation). <em>(Core Rules p.70)</em></p>
+results:
+  - _id: IOk2FHBzrwFUZYUC
+    type: text
+    name: The walls of this hall are thick with vines…
+    img: null
+    description: >-
+      <p>The walls of this hall are thick with vines and ancient, dying plants. Yellow-brown rot and misty
+      spore clouds cloud the senses. A single break in the ceiling shines the red-black light of Hell’s sky
+      onto a single, disheveled Welwischia plant—the last of its kind here, or anywhere else. Once a powerful
+      being by Abigor’s side, they were cast down here after the Syncrasis ascendence. Its voice is gentle,
+      but furious.</p>
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.IOk2FHBzrwFUZYUC'
+  - _id: ppFTWQHrG04hHvGs
+    type: text
+    name: The vaults and hallways surrounding this passage are wet.…
+    img: null
+    description: >-
+      <p>The vaults and hallways surrounding this passage are wet. They’re covered in barnacles, seaweed, and
+      the ruins of broken ships bearing the emblem of the Sea People. If the MIXIS Faction is in play, mention
+      its similarity to the banners they carry. The door opens to reveal a solid wall of water, suspended in
+      place by magic. The hallway is home to thousands of extinct fish, who flow through you, sharing memories
+      of a long forgotten Earth. HELLPIERCERS heal to full HP after sharing a fish memory. Their memories are
+      ones of impossible war, of blind children playing with the weapons of Gods, of half-enlightened warrior
+      kings leading armies of hastily uplifted seabourne kin.</p>
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.ppFTWQHrG04hHvGs'
+  - _id: YxGXCb8cGVOEM3ah
+    type: text
+    name: A massive 12-legged, 12-mouthed beast drenched in crimson lies…
+    img: null
+    description: >-
+      <p>A massive 12-legged, 12-mouthed beast drenched in crimson lies across the corridor, blocking the
+      path. Its multiple mouths twist back into toothy grins. Each mouth contains a small room, entered by
+      crawling past its teeth. Each room contains the soul of a person the PCs have lost. Only two can be
+      retrieved, but they all seem quite content.</p>
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.YxGXCb8cGVOEM3ah'
+  - _id: 8DWs8izxRjHyVFpM
+    type: text
+    name: A pale, emaciated, and ghostly figure is weeping and…
+    img: null
+    description: >-
+      <p>A pale, emaciated, and ghostly figure is weeping and lapping water from a crack in the far wall. They
+      wear a faded gold sash around their body, bearing the near-illegible sigil of the House of Ekklesia. In
+      the folds of their robe are baubles and inscrutable treasures from a lost age. They are hesitant to
+      speak, as each word causes their tail to grow toward the hidden exit of the room.</p>
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.8DWs8izxRjHyVFpM'
+  - _id: eFax8C9omSVO9ZPW
+    type: text
+    name: A terrifying visage, a bandage-wrapped skull with a single…
+    img: null
+    description: >-
+      <p>A terrifying visage, a bandage-wrapped skull with a single green-purple eyeball dominates the room.
+      Hot air flows from its nostrils, despite its clear decomposition. Shoulders seen through cracked
+      flooring reveal the figures restraining armor, scored with innumerable names of ancient hellions and the
+      sigils of at least a dozen Archons. This creature will greedily devour the cores of ritually important
+      objects (Faction Leader crowns, Forbidden Arms, HELLPIERCER Spinthers), and grows in strength and
+      prophecy with each one, changing the world and its rules according to an inscrutable design. It will
+      only ever tell you truths, but never welcome ones. Once it has a crown, a sword, and raiment, its
+      bindings will no longer hold it.</p>
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.eFax8C9omSVO9ZPW'
+  - _id: NFW8pHHoPF3Hv3vE
+    type: text
+    name: An old treasure vault belonging to a faction forgotten…
+    img: null
+    description: >-
+      <p>An old treasure vault belonging to a faction forgotten by time. Alien sigils and empty boxes litter
+      the room. Under a pile of garbage, the old city plans for Dis can be uncovered. They reveal or imply
+      something strange, troubling, or unsettling.</p>
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.NFW8pHHoPF3Hv3vE'
+  - _id: GFk9XSExtttg4VDY
+    type: text
+    name: A lost band of HELLPIERCERS wander this corridor, seemingly…
+    img: null
+    description: >-
+      <p>A lost band of HELLPIERCERS wander this corridor, seemingly unable to see or interact with the
+      players’ squad. The room they are in is drastically different than the one the players see, with a half
+      dozen tall candelabras in a circle surrounding a brazier that refuses to light for the lost band of NPC
+      HELLPIERCERS. The PCs cannot see the other room, but can interact with the objects in it.</p>
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.GFk9XSExtttg4VDY'
+  - _id: sIrFwX9k8cfwjWs2
+    type: text
+    name: The walls of this short hallway recount the deeds…
+    img: null
+    description: >-
+      <p>The walls of this short hallway recount the deeds of dozens of foot soldiers in Beezlebub’s
+      liberation force. Many names have been scratched away but one remains… one that a member of the party
+      recognizes.</p>
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.sIrFwX9k8cfwjWs2'
+  - _id: ZXOCgPzP5WvYhXHq
+    type: text
+    name: Contact with DIS breaks, the doors slam shut, the…
+    img: null
+    description: >-
+      <p>Contact with DIS breaks, the doors slam shut, the lights go out. When the lights return, a new member
+      of the party is present; decide in secret if you remember them or not. The doors open and you are free
+      to move on.</p>
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.ZXOCgPzP5WvYhXHq'
+  - _id: 2Q3AwnjaMRLECqSZ
+    type: text
+    name: This corridor appears as any other—dank black-blue stonework, inscrutable…
+    img: null
+    description: >-
+      <p>This corridor appears as any other—dank black-blue stonework, inscrutable half-broken statues, tall
+      candelabras cast in the corners. Every single object, down to the individual stones, makes a novel
+      musical tone at the slightest touch. High above their heads, a glass orb containing a hand-sized replica
+      of Fallen Mars will shatter and drop the replica if more than 10 sounds happen at once.</p>
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.2Q3AwnjaMRLECqSZ'
+  - _id: ISkIKcT7aXqLRjtc
+    type: text
+    name: This hallway merges with another somewhere out in the…
+    img: null
+    description: >-
+      <p>This hallway merges with another somewhere out in the miasma of bythos. A squadron of kitted out,
+      geared up, godling-empowered canines stalk the outer edge of the room, blending seamlessly with the
+      stonework depicting the rise and fall of their spiritual cycle. Their own war of cosmic liberation
+      mirrors your own.</p>
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.ISkIKcT7aXqLRjtc'
+  - _id: FWgL8PxssHMLva2H
+    type: text
+    name: It dawns on you that the walls of this…
+    img: null
+    description: >-
+      <p>It dawns on you that the walls of this chamber are the enormous bat-like wings of some unthinkably
+      vast creature. Its spine curves up and around the end of the corridor, its blackfurred body blocking any
+      exit. Two spindly arms emerge from the darkness and lay themselves flat on the ground on either side of
+      a small game board, laid on the floor The game is morelles or Nine Men’s Morris. The creature does not
+      speak, and makes no interpretable sign of intelligence beyond responding to player moves. Winning opens
+      the door behind the creature, who allows them to walk through unimpeded. A certain arrangement of pieces
+      opens a special door to a random Vault. Losing will cost someone dearly.</p>
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.FWgL8PxssHMLva2H'
+  - _id: lAvRvOIzCk0r6fx4
+    type: text
+    name: Two chambers side by side are connected by several…
+    img: null
+    description: >-
+      <p>Two chambers side by side are connected by several pathways. Both chambers have a scale model of some
+      unknown star system. In one of the chambers, each world is barren and ruined, with signs of once-great
+      miniature civilizations rotting in the microscopic sands. In the other, the worlds are embroiled in a
+      great battle with each other, with miniscule spaceships raining infinitesimal nuclear weapons on each
+      other.</p>
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.lAvRvOIzCk0r6fx4'
+  - _id: mCWxBKGeYJpZ0sP7
+    type: text
+    name: The genealogy of one of the demonic factions currently…
+    img: null
+    description: >-
+      <p>The genealogy of one of the demonic factions currently in play sprawls out across the walls, ceiling,
+      and floor of this chamber. A skeleton, animated by a geist-split of Beelzebub, is lashed into eternal
+      maintenance of this place by some forgotten necromancer. He cannot leave until his contract is
+      destroyed. Select a miniboss from any faction and use him in a future TACCOM.</p>
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.mCWxBKGeYJpZ0sP7'
+  - _id: aNies2LsSnbC8Fzy
+    type: text
+    name: The hallway is lined with large tubes that once…
+    img: null
+    description: >-
+      <p>The hallway is lined with large tubes that once held a purple-green fluid, now dried and staining the
+      glass tubes. Further inspection reveals the rotted remains of once-human pneuma, trapped within the
+      fractal glass. There is a collector unit with a single vial of stillactive Hyper-LSD at its base.</p>
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.aNies2LsSnbC8Fzy'
+  - _id: zpWBzPVNQ92mImrN
+    type: text
+    name: The chamber is lined with stone eyes, which turn…
+    img: null
+    description: >-
+      <p>The chamber is lined with stone eyes, which turn into real eyeballs when approached. The eyes are
+      majority human, but scattered through are demonic eyes, angelic eyes, eyes with spiral patterns or
+      burning crosses in them. In the center of the chamber is a stone orb about six feet across. When
+      approached, it forms into the non-Euclidean, two-dimensional eyeball of the Paracletus’s leader. Through
+      ritual, surgery, or both, it can be implanted into the head of a HELLPIERCER, allowing them to see into
+      the second dimension and observe the Paracletus’s true forms. If the Paracletus faction is not in play,
+      they join the war as an additional faction upon installing the eye.</p>
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.zpWBzPVNQ92mImrN'
+  - _id: 5GhcouUw55tSIPeK
+    type: text
+    name: The remains of a ritual summoning space adorned with…
+    img: null
+    description: >-
+      <p>The remains of a ritual summoning space adorned with the tapestries and ceremonial items of an active
+      demonic faction. The ritual was hastily abandoned and could be completed by the party. Determine three
+      esoteric steps—ring the bell, close the book, dash the candles, or similar—and scatter the elements
+      throughout adjacent chambers, vaults, or corridors. When the ritual is complete, select one of the
+      following and summon them within the sealed circle: an ancient wizard from the first human ascendency,
+      clutching a brick of Babel-Gold; the jealous and vengeful sister of the current faction’s leader; or the
+      torn gold and silver spirit of an Archon full of impotent fury.</p>
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.5GhcouUw55tSIPeK'
+  - _id: mVaHGo1HHJrsSkJe
+    type: text
+    name: This chamber of ice stuns even HELLPIERCERS with a…
+    img: null
+    description: >-
+      <p>This chamber of ice stuns even HELLPIERCERS with a cold shock. A frosty mist impedes easy access, but
+      will yield to the players’ power. The walls of the chamber stretch up impossibly high and are etched
+      with sentient sigils that seem to writhe against comprehension. In the center of the room is a corpse of
+      Saklas, its lion-headed skull almost cycloptic with a strange third eye socket in the center of its
+      crown. Its bones are carved with a record of the 148 Sufferings and representations of Jupiter. An altar
+      seems to grow organically out of these bones, surrounded by braziers of unearthly metal and obsidian
+      obelisks. A heavy dagger, a bloodstone bell, and a golden mask covered in unblinking eyes promise
+      audience with Syzygos.</p>
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.mVaHGo1HHJrsSkJe'
+  - _id: EYMj5So2q5kc0LTe
+    type: text
+    name: A desecrated cathedral, once a refuge for Archons surveying…
+    img: null
+    description: >-
+      <p>A desecrated cathedral, once a refuge for Archons surveying the pitiful workings of Hell. On gossamer
+      threads millions of flies are punctured and dangle like beaded curtains down the cave walls. A statue in
+      the center of the cave is decapitated, the remains of long-dried infernal feces encrusted about the
+      stump. One of the HELLPIERCERS feels a disembodied whisper hiss through their armor, speaking to them
+      alone. Pass them a note that says the following: ”Your comrades were slaughtered. The imposters
+      surrounding you are waiting for you to bring them home. They will say anything.”</p>
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.EYMj5So2q5kc0LTe'
+  - _id: o2N2dVxavCdudBb6
+    type: text
+    name: Something resembling a gilded theater of a splendored age.…
+    img: null
+    description: >-
+      <p>Something resembling a gilded theater of a splendored age. Three tiers of extravagant seating face a
+      titanic stage, surrounded by dozens of reliefs celebrating forgotten Gods, Archon achievements in human
+      suffering, and gleefully illustrated legends of demonic torture. Everything is covered with a thick
+      layer of scorched soul-ash, carrying the whispering screams of still-burning souls. The ancient
+      soul-wood of the stage swirls a million faces of pain, and in the center, illuminated by an ethereal
+      light, is a small black crown with a single red jewel embedded in its center. The crown fits whoever
+      wears it; it is a violation of gnosis, but all freedom is violation to someone. It will not be removed
+      easily.</p>
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!xv2xcI6ECwqa3uzY.o2N2dVxavCdudBb6'
+formula: 1d20
+replacement: true
+displayRoll: true
+folder: CTrwWIaS55HG2Tlu
+sort: 100000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: xv2xcI6ECwqa3uzY
+_key: '!tables!xv2xcI6ECwqa3uzY'

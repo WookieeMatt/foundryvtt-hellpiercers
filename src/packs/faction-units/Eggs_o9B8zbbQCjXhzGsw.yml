@@ -1,0 +1,55 @@
+name: Eggs
+type: spawner
+img: systems/hellpiercers/assets/icons/portal.svg
+system:
+  biography: >-
+    <p>What dwells within the egg is unimportant; the egg will not hatch. It is you who stirs
+    against the atom-fine shell, brittle and eager to crack. Does the egg contain salvation, a
+    renewal for this illspawned world, or an end to it all, and peace through annihilation? What do
+    you contain?</p><p>Codename: LEPIS</p>
+  faction: MIXIS
+  tags:
+    - Spawner
+    - Immobile
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 0
+  spawn:
+    spawn: >-
+      <p>When this unit spawns it gains <strong>Countdown:2</strong>, when
+      <strong>Countdown</strong> expires, remove the egg from play and spawn any minion tagged unit
+      except for <strong>Nosos</strong>. Alternatively, add 1 to the <strong>Countdown</strong>,
+      then spawn a <strong>Choros</strong> and remove the egg from play.</p>
+    special: ''
+    name: Special
+    charge: 0
+prototypeToken:
+  name: Eggs
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/portal.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KiERE0EuRRjFBbV4
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: o9B8zbbQCjXhzGsw
+_key: '!actors!o9B8zbbQCjXhzGsw'

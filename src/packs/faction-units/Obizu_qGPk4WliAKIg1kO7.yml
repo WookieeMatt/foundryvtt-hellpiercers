@@ -1,0 +1,169 @@
+name: Obizu
+type: boss
+img: systems/hellpiercers/assets/icons/warlord-helmet.svg
+system:
+  biography: >-
+    <p><em>THE LEVIATHAN REBORN</em></p><p>The Polyp tried in vain to share the gilded truth with
+    its neighbors, but ignorance turns lavender to spears and humanity had learned long to fear
+    those rising from the sea. Their Queen’s blood would awaken a dawnless age, and her rebirth
+    foretold their infernal kingdoms.</p><p>Sprawl: 8 · Crown cost: 4</p>
+  faction: MIXIS
+  tags:
+    - Boss
+  health:
+    value: 250
+    max: 250
+    temp: 0
+  scale: 1
+  speed: 4
+  actions: '1'
+  agnosia:
+    value: 150
+    effect: >-
+      <p>Instantly convert all remaining <strong>Snake</strong> into Speed, reduce
+      <strong>Speed</strong> by 1 each following round until OBIZU’s Speed reaches 5. OBIZU gains
+      the following abilities:</p><p>OBIZU now gains health whenever a Consumed unit takes damage,
+      equal to the damage taken.</p><p>OBIZU may now spend <strong>Snake</strong> before attacking
+      to increase the damage of any attack by the amount of Snake spent.</p><p>OBIZU may now
+      <strong>Consume</strong> adjacent allied units to gain 1 Snake. Consumed minions are instantly
+      destroyed and leave the battlefield, minibosses follow all the same rules as player units,
+      taking damage at the start of their turn until they leave the snake.</p>
+    triggered: false
+prototypeToken:
+  name: Obizu
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/warlord-helmet.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items:
+  - _id: rto2uWz5dHlAbcyf
+    name: Attack 1
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Star:3</strong>, <strong>Damage:3</strong> Gain <strong>1 Snake</strong> for each
+        target damaged by this attack.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p><strong>Star:3</strong>, <strong>Damage:3</strong> Gain <strong>1 Snake</strong> for
+          each target damaged by this attack.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!qGPk4WliAKIg1kO7.rto2uWz5dHlAbcyf'
+  - _id: qMUFQUwihnBXjiTw
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Spend<strong> 3 Snake</strong> and either spawn a <strong>Nosos</strong> or
+        <strong>Pschent</strong> unit adjacent to <strong>OBIZU</strong>, or gain 1 Sprawl.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>Spend<strong> 3 Snake</strong> and either spawn a <strong>Nosos</strong> or
+          <strong>Pschent</strong> unit adjacent to <strong>OBIZU</strong>, or gain 1 Sprawl.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 100000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!qGPk4WliAKIg1kO7.qMUFQUwihnBXjiTw'
+  - _id: Uv7Lnv9rTp2LNisE
+    name: Attack 3
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>When a player unit is completely encircled by <strong>OBIZU</strong>, deal damage equal
+        to <strong>OBIZU’s</strong> current <strong>Sprawl</strong> and inflict
+        <strong>Constrict:1</strong>. Player units with <strong>Constrict</strong> may not move on
+        their turn, and take additional damage from all sources equal to their current
+        <strong>Constrict</strong>. <strong>OBIZU</strong> may spend any amount of
+        <strong>Snake</strong> during this attack to increase the damage inflicted by 1 per
+        <strong>snake</strong>. This attack triggers automatically, and retriggers if OBIZU begins
+        their turn encircling a player unit.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>When a player unit is completely encircled by <strong>OBIZU</strong>, deal damage equal
+          to <strong>OBIZU’s</strong> current <strong>Sprawl</strong> and inflict
+          <strong>Constrict:1</strong>. Player units with <strong>Constrict</strong> may not move on
+          their turn, and take additional damage from all sources equal to their current
+          <strong>Constrict</strong>. <strong>OBIZU</strong> may spend any amount of
+          <strong>Snake</strong> during this attack to increase the damage inflicted by 1 per
+          <strong>snake</strong>. This attack triggers automatically, and retriggers if OBIZU begins
+          their turn encircling a player unit.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 200000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656067899
+      modifiedTime: 1794656067899
+    _key: '!actors.items!qGPk4WliAKIg1kO7.Uv7Lnv9rTp2LNisE'
+effects: []
+folder: KiERE0EuRRjFBbV4
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: qGPk4WliAKIg1kO7
+_key: '!actors!qGPk4WliAKIg1kO7'

@@ -1,0 +1,477 @@
+name: 'RECON: Scout'
+img: icons/svg/d20-grey.svg
+description: <p>Roll when the squad scouts ahead (1 Revelation). <em>(Core Rules p.85)</em></p>
+results:
+  - _id: 9I3quHIhixwFuH3e
+    type: text
+    name: The tracks of a demon convoy are clear to…
+    img: null
+    description: >-
+      <p>The tracks of a demon convoy are clear to see…too clear, in fact. There’s an ambush waiting ahead.
+      Reveal to the players what kind of force they will be contending with and suggest a way to turn the
+      tables.</p>
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.9I3quHIhixwFuH3e'
+  - _id: yw3FynOGGIlB0S9l
+    type: text
+    name: The grinding of some gargantuan machinery cuts through the…
+    img: null
+    description: >-
+      <p>The grinding of some gargantuan machinery cuts through the howling winds. In addition to whatever
+      else the Demons have going on, an apocryphon-scale drill is tearing through the landscape nearby, its
+      ignosis hunting for something like a bloodhound. The demonic forces in the area are split between the
+      point of interest and the drill itself.</p>
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.yw3FynOGGIlB0S9l'
+  - _id: P487fgLNDIDMPxvt
+    type: text
+    name: The party comes across a battle in progress. Roll…
+    img: null
+    description: >-
+      <p>The party comes across a battle in progress. Roll a D6.</p><p><strong>1-2</strong>: Two demonic
+      factions are fighting</p><p><strong>3-4</strong>: The demons are fighting enraged wildlife or, depending
+      on the state of the current campaign, friendly partisans.</p><p><strong>5-6</strong>: The demons are
+      fighting themselves. Inner conflicts have spilled over into open warfare. Intervening on either side
+      might be rewarding, or they could immediately turn on the party. It's Hell, after all.</p>
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.P487fgLNDIDMPxvt'
+  - _id: wJ5kL8uBwnuG07jL
+    type: text
+    name: The party discovers the edges of a huge scar,…
+    img: null
+    description: >-
+      <p>The party discovers the edges of a huge scar, leading them to what looks like an enormous shattered
+      crystal snowflake. The corpse of a nameless Archon rests within, tangled and halfformed. An escapee from
+      the war? A traitor on their way to alert Hell? You'll never know now. Its body has drained out, golden
+      ichor in mercury-like pools waiting to be collected. Perhaps someone in DIS can make use of this?</p>
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.wJ5kL8uBwnuG07jL'
+  - _id: zgH7aSbkBmRBdTGn
+    type: text
+    name: A procession is approaching from another direction, but not…
+    img: null
+    description: >-
+      <p>A procession is approaching from another direction, but not a hostile one. Eyeless giants bearing
+      immense gold palanquins trudge, without word, along a depressed ravine in the soil they themselves
+      stomped out over centuries of unceasing march. Most of the platforms are empty, their skeletal riders
+      holding wisps of reins or dangling by threadbare silks from the seats. One near the back has been
+      converted into a cargo hauler for a makeshift merchant caravan, the giants slowly making their way
+      between several "unholy" sites operating on instructions long forgotten. The merchants are hesitant to
+      speak, but are not meaningfully armed. If the party seems willing to trade, they can be convinced to
+      give some tidbits of info on the region, perhaps revealing a location or the local Boss' recent
+      endeavor.</p>
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.zgH7aSbkBmRBdTGn'
+  - _id: CqOD86zfHOKCqMAo
+    type: text
+    name: A camp lies on the horizon, the inhabitants armed…
+    img: null
+    description: >-
+      <p>A camp lies on the horizon, the inhabitants armed with nought but broken, rusted weapons and magics
+      that spark more than they scorch. A dozen banners of armies long dead or never existed fly from their
+      shabby tents. They are on guard, but a terrible sense of resignation reigns over the soldiers. They are
+      the Faithless, a mercenary company who are damned to wander from master to master, every cause they
+      attach themselves to giving them another defeat but continued existence. They cannot die, they cannot
+      rest, yet they cannot win. They will reject almost any offer of cooperation or charity. They might offer
+      information, and some of it might be useful. Perhaps they hold a cherished relic of a better day. It
+      won't take much to get them to part with it; what good would it do them?</p>
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.CqOD86zfHOKCqMAo'
+  - _id: SeTNLBynfpjGM22B
+    type: text
+    name: An enormous ritual altar lies ahead. On closer inspection,…
+    img: null
+    description: >-
+      <p>An enormous ritual altar lies ahead. On closer inspection, things look out of place. The incongruent
+      markings of several different traditions sprawl in gibberish lines, sealing circles lie broken or
+      incomplete, and the priest guiding the ritual is merely a lesser demon using a flimsy glamor to pretend
+      to be a Prince thought long dead. It won't take long to figure out that they are attempting—attempting
+      is the key word here—a ritual of great power. All they know, however, is what they've pieced together
+      from ancient tomes and mere observation from a distance. Helping them is probably a bad idea.</p>
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.SeTNLBynfpjGM22B'
+  - _id: FuYD3K3GkB5YszB2
+    type: text
+    name: The party discovers an incongruity up ahead. A replica…
+    img: null
+    description: >-
+      <p>The party discovers an incongruity up ahead. A replica of a small town on Earth from another century
+      sits in a little valley. The inhabitants claim to be human but are very much not, and they will fight to
+      the death if you attempt to seize anything from the town. Feel free to put on a charming regional accent
+      when speaking for the demons in this area. Shortly after arriving, hostile demons begin to attack the
+      town from the opposite direction.</p>
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.FuYD3K3GkB5YszB2'
+  - _id: H9j6Jfb3mVdCr9oJ
+    type: text
+    name: An enemy convoy has stalled out up ahead. A…
+    img: null
+    description: >-
+      <p>An enemy convoy has stalled out up ahead. A landslide has blocked the path, and various menials are
+      focusing on clearing the path ahead. You might allow them to finish before striking, and risk some of
+      the loot escaping, or strike now, and find yourself in the exact same canyon, potentially to be ambushed
+      from the rear just like the convoy.</p>
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.H9j6Jfb3mVdCr9oJ'
+  - _id: pwxgnyPqEuYmTVJ7
+    type: text
+    name: A convoy bearing unknown sigils has arrived ahead of…
+    img: null
+    description: >-
+      <p>A convoy bearing unknown sigils has arrived ahead of you. Whoever this is must be important: their
+      entourage is being welcomed as honored guests, their flags are being raised above the location, and
+      their minions are co-mingling. Something gargantuan wrapped in a bound, red tarp is being unloaded from
+      a vehicle ahead. The next conflict will likely involve several factions; surely there’s a way to
+      manipulate this to your advantage.</p>
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.pwxgnyPqEuYmTVJ7'
+  - _id: Fp9bTyNB0ECeXxEt
+    type: text
+    name: The Corpse-Engine of a Hell Titan is plainly visible,…
+    img: null
+    description: >-
+      <p>The Corpse-Engine of a Hell Titan is plainly visible, lashed and constrained behind the next point of
+      interest. These monsters were weapons of cosmic destruction in long past eras, when man still cloaked
+      themselves in gold. How this faction came to possess one, how they’re made, how many of them are left
+      and who has them are all good questions to ask while exploring the next location; it’s all but certain a
+      faction boss will end up activating the Corpse-Engine at some point during the assault.</p>
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.Fp9bTyNB0ECeXxEt'
+  - _id: pcZjFvoCyCfQyCzg
+    type: text
+    name: The land here is giving way. The souls of…
+    img: null
+    description: >-
+      <p>The land here is giving way. The souls of the soil have felt the presence of their brethren and rebel
+      against their eternal jailors. The point of interest will be devoured entirely by the Hellish wastes
+      soon, which will certainly get in the way of your exploration. Be ready for rooms to collapse, exits to
+      vanish, and your surroundings to collapse into the boundless catacombs deep in the vengeful chthon.</p>
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.pcZjFvoCyCfQyCzg'
+  - _id: 0RCsB7gktPgD9sFw
+    type: text
+    name: A beam of heavenly light parts the sky above…
+    img: null
+    description: >-
+      <p>A beam of heavenly light parts the sky above your next location, like a beacon visible from hundreds
+      of miles around. The rotten stench of marble and gold and the shrill soulless horking of trumpets close
+      in the closer you approach. Heaven is empty, the angelic hosts are dead… so what is happening here?</p>
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.0RCsB7gktPgD9sFw'
+  - _id: 4Nr6ksOfhTBSilyb
+    type: text
+    name: This place is ruined. It’s been abandoned and hollowed…
+    img: null
+    description: >-
+      <p>This place is ruined. It’s been abandoned and hollowed for decades at least. Shriveled skeletal forms
+      little the hallways. Malfunctioning tech and rotten demonic fixtures draw the HELLPIERCERS deeper and
+      deeper into the dark, empty facility. For all TACCOM scenes in this facility, cap all enemy HP to 1,
+      representing the skeletal and spectral nature of the foes. HELLPIERCERS may uncover a strange ritual
+      experiment, an angelic corpse with bones of black stone or a pocketed hylic dimension locked in stasis.
+      After they uncover this or some other baffling truth, time begins to flow in reverse in this cursed
+      location, with the failure of the experiment rippling back inwardly, reviving the demonic legions
+      inside. Restore enemy HP to their defaults during following TACCOM scenes.</p>
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.4Nr6ksOfhTBSilyb'
+  - _id: CiB0b5qd70UtFGIz
+    type: text
+    name: Syzygos’s light shines a haunting red glow over the…
+    img: null
+    description: >-
+      <p>Syzygos’s light shines a haunting red glow over the scene below you. Demons at this location have
+      reverted dozens of souls back to human form, given them weapons, and forced them to fight in a bloodpit.
+      Their immortal form still suffers—worse, even, in the sisters' red light. The garrison is completely
+      distracted, though.</p>
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.CiB0b5qd70UtFGIz'
+  - _id: ll4kd9NFSRMG8zBS
+    type: text
+    name: The demons have suspended a device above the location.…
+    img: null
+    description: >-
+      <p>The demons have suspended a device above the location. Any HELLPIERCER can immediately identify it as
+      an AN602 thermonuclear atomic bomb, with a yield of around 58 megatons. An explosion half that size
+      still scars the gateways of the divine congress in Heaven.</p>
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.ll4kd9NFSRMG8zBS'
+  - _id: MiVEF0W9m1zuYSEi
+    type: text
+    name: A thick cloud of gas envelopes the area. It…
+    img: null
+    description: >-
+      <p>A thick cloud of gas envelopes the area. It hangs low to the ground and looking closely at the
+      reddish-purple hues reveals a kaleidoscopic miasma of exploding fractals and endless swirls of shapes
+      and colors. This is gaseous Hyper-LSD, or at least a derivative of it. Tread carefully.</p>
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.MiVEF0W9m1zuYSEi'
+  - _id: Ton5XpE4ZFegFyUB
+    type: text
+    name: Any HELLPIERCER with Truth-Seeking Eyes can see a different…
+    img: null
+    description: >-
+      <p>Any HELLPIERCER with Truth-Seeking Eyes can see a different angle to this location. If one looks
+      katawardly, another faction’s building has overlaid itself with this one across a seventh spatial
+      dimension. It shouldn’t be too hard to navigate both at the same time in a practical sense, but it makes
+      any objective here much more complicated. Select a building from a faction not in active play. At any
+      point, players may move between these buildings by walking in a kataward direction. Taking a dosage of
+      Hyper-LSD or descending into a ritual trance also does the trick.</p>
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.Ton5XpE4ZFegFyUB'
+  - _id: BjSmfJGw77BevNiA
+    type: text
+    name: As you begin your approach, the sky darkens. Syzygos…
+    img: null
+    description: >-
+      <p>As you begin your approach, the sky darkens. Syzygos turns to face you, her cracked face leaking a
+      strange ethereal white light that spreads out from the shattered and ruined planetoid like a spider's
+      web. Lashes of purple plasma arc around the blackened stone. Within a second or two, all light seems to
+      have vanished from the sky but for the strange halo crowning the fallen sister. It is pitch black now;
+      you can hear the screams of the demonic forces, panicking somewhere within the complex.</p>
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.BjSmfJGw77BevNiA'
+  - _id: Zui8wYv9eiwsopSd
+    type: text
+    name: The location you seek bursts forth from the horizon.…
+    img: null
+    description: >-
+      <p>The location you seek bursts forth from the horizon. A gargantuan set of tank treads, three enormous
+      rocket engines, and a strange sail-like protrusion propel it at dizzying speeds across the land. It
+      shows no signs of slowing down.</p>
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!8ahOxksdEkhYefd1.Zui8wYv9eiwsopSd'
+formula: 1d20
+replacement: true
+displayRoll: true
+folder: CTrwWIaS55HG2Tlu
+sort: 500000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: 8ahOxksdEkhYefd1
+_key: '!tables!8ahOxksdEkhYefd1'

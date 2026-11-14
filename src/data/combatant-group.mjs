@@ -1,5 +1,11 @@
 const fields = foundry.data.fields;
 
+/** Whether an actor can join a Swarm (the book's Swarm tag; Horde is the older name). */
+export function isSwarmUnit(actor) {
+  const tags = actor?.system?.tags;
+  return actor?.type === "minion" && !!tags && (tags.has("Swarm") || tags.has("Horde"));
+}
+
 export class SwarmModel extends foundry.abstract.TypeDataModel {
   static LOCALIZATION_PREFIXES = ["HELLPIERCERS.ACTOR"];
   static defineSchema() {
@@ -16,9 +22,7 @@ export class SwarmModel extends foundry.abstract.TypeDataModel {
    * @returns The tokens that were added to the swarm
    */
   async addMembers(tokens) {
-    const additions = tokens.filter(
-      t => t.actor.type === "minion" && t.actor.system.tags.has("Horde") && t.combatant
-    );
+    const additions = tokens.filter(t => isSwarmUnit(t.actor) && t.combatant);
     const newHp = this.health.value + additions.length * 10;
     // /** @type {foundry.documents.Combat} */
     // const combat = this.parent.parent
@@ -35,9 +39,7 @@ export class SwarmModel extends foundry.abstract.TypeDataModel {
    * @returns The tokens that were removed from the swarm
    */
   async removeMembers(tokens) {
-    const removals = tokens.filter(
-      t => t.actor.type === "minion" && t.actor.system.tags.has("Horde")
-    );
+    const removals = tokens.filter(t => isSwarmUnit(t.actor));
     const newHp = this.health.value - this.getUnitHealth().value * removals.length;
     for (const token of removals) {
       await token.combatant.update({ group: null });

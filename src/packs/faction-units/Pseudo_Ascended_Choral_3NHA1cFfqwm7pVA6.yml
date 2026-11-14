@@ -1,0 +1,64 @@
+name: Pseudo-Ascended Choral
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Remnants of the seabed, torn apart and granted will beyond its own reckoning. A tiny saklas,
+    writhing in its agnoia, spitting reality-rending bile at random.</p>
+  faction: MIXIS
+  tags:
+    - Fortification
+    - Immobile
+  health:
+    value: 15
+    max: 15
+    temp: 0
+  scale: 1
+  speed: 0
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p>Remove 1 Uneasy Terrain within <strong>Burst:1</strong>. Target a player unit within
+      <strong>Range:2</strong>, deal 1 damage and inflict <strong>Bleed:2</strong></p>
+  special:
+    name: Special
+    description: >-
+      <p>When a player unit moves within <strong>Burst:1</strong>, immediately interrupt their
+      action and replace all <strong>Standard</strong> terrain within <strong>Burst:1</strong> with
+      <strong>Uneasy</strong> terrain.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Pseudo-Ascended Choral
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KiERE0EuRRjFBbV4
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: 3NHA1cFfqwm7pVA6
+_key: '!actors!3NHA1cFfqwm7pVA6'

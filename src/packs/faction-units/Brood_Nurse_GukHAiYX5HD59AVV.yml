@@ -1,0 +1,61 @@
+name: Brood Nurse
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Did She appear to them, as well? A Polyp Sophia, her arms clad in silver scales, a great
+    serpent-polyp at her feet, there in Belias's hidden fortress? Did she whisper secrets to them,
+    as she did us?</p><p>Codename: SEKOS</p>
+  faction: MIXIS
+  tags:
+    - Minion
+  health:
+    value: 1
+    max: 1
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: <p><strong>Range:3</strong>, <strong>Damage:1</strong>, <strong>Bleed:2</strong></p>
+  special:
+    name: Special
+    description: >-
+      <p>When striking a target with an existing negative status effect, place an egg adjacent to
+      this unit.</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Brood Nurse
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KiERE0EuRRjFBbV4
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: GukHAiYX5HD59AVV
+_key: '!actors!GukHAiYX5HD59AVV'

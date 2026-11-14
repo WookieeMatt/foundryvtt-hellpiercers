@@ -1,0 +1,65 @@
+name: Whalers
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>Fast moving quadrupeds resembling a large decapitated wolf’s body with too many joints, their
+    spines can be launched forth, acting as a harpoon made of bone and sinew. The spinal cord used
+    as the fishing line feels everything. If this thing had a head, it would be
+    screaming.</p><p>Codename: THALASSOURGOS</p>
+  faction: AUTOPHYES
+  tags:
+    - Minion
+  health:
+    value: 5
+    max: 5
+    temp: 0
+  scale: 1
+  speed: 5
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p><strong>Line:10</strong> harpoon attack dealing 3 damage, <strong>Pull:3</strong> toward
+      Whaler to the first character in the line.</p>
+  special:
+    name: Special
+    description: >-
+      <p>Creatures damaged by Whalers are impaled and count as <strong>Slow</strong> and
+      <strong>Bleeding</strong> until this enemy is killed or they are no longer within
+      <strong>Range:10</strong>. The Whaler cannot strike again while it has a creature impaled</p>
+  agnosia:
+    value: null
+    effect: ''
+    triggered: false
+prototypeToken:
+  name: Whalers
+  actorLink: false
+  disposition: -1
+  width: 1
+  height: 1
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: gixCjdjMInQALHhj
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: ZApSttaLg9G0fAU5
+_key: '!actors!ZApSttaLg9G0fAU5'

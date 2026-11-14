@@ -1,0 +1,287 @@
+name: 'RECON: Scavenge'
+img: icons/svg/d20-grey.svg
+description: <p>Roll when the squad scavenges (gain 1 Revelation and roll the Tone Die). <em>(Core Rules p.82)</em></p>
+results:
+  - _id: DsmmL2Ia0FK1xGr2
+    type: text
+    name: Telltale columns of dust promise the arrival of legions…
+    img: null
+    description: >-
+      <p>Telltale columns of dust promise the arrival of legions of demonic minions. After the squad has
+      secured their resources, start a TACCOM encounter against a Swarm no fewer than 15 units in size, with
+      an objective to reach an escape zone (the HELLPIERCER's vehicle or the boundary of the map).<strong>
+      Place 3 Scrap Piles</strong> on the map; each rewards the players with 1 random resource if interacted
+      with. After three turns, spawn another <strong>Swarm</strong> of 15 units.</p>
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!SPCY2bEswFEk0ow3.DsmmL2Ia0FK1xGr2'
+  - _id: czuHXA6x6En7Z5Jr
+    type: text
+    name: Scavenging unearths something unexpected; roll on the Vaults table…
+    img: null
+    description: >-
+      <p>Scavenging unearths something unexpected; roll on the <strong>Vaults</strong> table and incorporate
+      the result into the search.</p>
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!SPCY2bEswFEk0ow3.czuHXA6x6En7Z5Jr'
+  - _id: 5v57QuXDjcXpwTdh
+    type: text
+    name: Once the salvage has been stowed, a dark shadow…
+    img: null
+    description: >-
+      <p>Once the salvage has been stowed, a dark shadow looms in the sky. Players may choose to escape now or
+      to gain <strong>1 additional resource</strong>. If they opt for the additional resource, the GM gains
+      <strong>3 Charge</strong>. They may spend that <strong>Charge</strong> at any time during the next
+      TACCOM phase to spawn a miniboss from any faction.</p>
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!SPCY2bEswFEk0ow3.5v57QuXDjcXpwTdh'
+  - _id: NEztHJ3LFtUFF4w1
+    type: text
+    name: The party sights an abandoned tomb ruined by the…
+    img: null
+    description: >-
+      <p>The party sights an abandoned tomb ruined by the constant howling winds. Within is a sentient shadow,
+      a remnant of one of the lost factions. It is willing to trade up to three of the resources it holds
+      within its body in exchange for accompanying the party to their destination. If they agree, select a
+      miniboss from any faction and allow the party to control it as a shared unit. If the shadow encounters a
+      boss creature, it will attempt to consume it and take its <strong>Crown</strong>. What happens next is
+      up to you.</p>
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!SPCY2bEswFEk0ow3.NEztHJ3LFtUFF4w1'
+  - _id: 4t3xi1qtz3cmXWmF
+    type: text
+    name: Within the pile of scrap is a much larger…
+    img: null
+    description: >-
+      <p>Within the pile of scrap is a much larger construct, buried by centuries of dust/soil/rock/living
+      fungus. It’s human, but it’s not one of yours. Within are a number of corpses in NASAstyle space suits,
+      too decomposed to identify. Its fragmented logs describe something called <strong>THE SAMSON
+      PROTOCOL</strong>, an undocumented incursion into Hell for unknown purposes. It looks like whoever these
+      humans were, they failed. Create a <strong>TACCOM</strong> map with a wide open space, centered on a
+      large wreck. The wreck has at least one <strong>Interact</strong> space marked, and one “wall” of the
+      arena should be marked as the point of egress, but the map is otherwise empty until the wreck has been
+      Interacted with by a player. As soon as the players interact with the wreck, <strong>spawn a massive
+      horde of at least 10 units on an edge of the bat tlefield</strong>. Spawn another at the start of the
+      next round, and another at the start of the round following. If players defeat the entire horde, they
+      secure the wreck for transport back to DIS, where someone will help figure out what was going on here.
+      Otherwise, they may escape via the egress tiles.</p>
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!SPCY2bEswFEk0ow3.4t3xi1qtz3cmXWmF'
+  - _id: NIoqOtknfimIhf4G
+    type: text
+    name: Resources here require the deployment of an ascension-blessed spinther…
+    img: null
+    description: >-
+      <p>Resources here require the deployment of an ascension-blessed spinther ignition drill. Create a
+      <strong>TACCOM</strong> map large enough to accommodate <strong>three small hills with an Interact spot
+      at the top of each</strong>. When a player interacts with those spots, they place the
+      <strong>Drill</strong> and begin converting the soil into liberated ascended humanity, creating an
+      enormous golden veil of godsmoke. The drill gains <strong>Countdown:8</strong>, remove each drill that
+      reaches 0. After the first hill is interacted with, begin spawning one <strong>Minion</strong> unit near
+      the edge of the battlefield after each player turn and one <strong>miniboss</strong> at the end of each
+      round. Each additional <strong>Drill</strong> placed spawns<strong> one additional minion per player
+      turn and one additional Miniboss per round</strong>. If players activate all three drills, spawn one
+      <strong>Boss-level creature at the end of the following round instead of three Minibosses</strong>. At
+      the end of each drill’s countdown, players receive <strong>4 Hellsteel</strong>, <strong>4
+      Brimstone</strong>, or <strong>4 Soulfire</strong>, and may opt to leave the battle immediately. If they
+      complete all three drills, end <strong>TACCOM</strong> and roll on the <strong>Vaults</strong>
+      table.</p>
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!SPCY2bEswFEk0ow3.NIoqOtknfimIhf4G'
+  - _id: UFcJibASNAKKF8dU
+    type: text
+    name: Fog rolls down a nearby embankment, wailing and carrying…
+    img: null
+    description: >-
+      <p>Fog rolls down a nearby embankment, wailing and carrying dreaded reality edits, pulling apart the
+      local timespace. Several enemy battalions are using it as cover. While the player squad’s extractor
+      runs, create a <strong>TACCOM</strong> map with a defensible location on one side, the
+      <strong>Base</strong>, where the players spawn. The rest of the map is a flat open space. <strong>Draw a
+      line across the map around two rows ahead of the base</strong>. Players may not pass this line. At the
+      end of each round, the fog covers the furthest uncovered row from the Base, advancing toward the line
+      drawn earlier. When the fog reaches that line, the extractor finishes its work. <strong>Players cannot
+      see through the fog, cannot use any abilities that reveal enemies under the fog, etc</strong>. The GM
+      may spawn units as they see fit, most likely a minion heavy mix from the current faction.</p>
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!SPCY2bEswFEk0ow3.UFcJibASNAKKF8dU'
+  - _id: Eq11ueY341bblAlX
+    type: text
+    name: A rich source of fuel and supplies erupts from…
+    img: null
+    description: >-
+      <p>A rich source of fuel and supplies erupts from a volcanic geyser nearby. Enemy faction units are
+      attempting to exploit the same resources as the players here too. Create a <strong>TACCOM</strong> map
+      with a large volcano in the center, occupying a roughly <strong>3x3 space</strong>. At the start of
+      every round, select a tile at random by rolling one die for the row and one for the column. The volcano
+      launches a <strong>1x1 fireball</strong> from the center of the volcano toward the random tile. It moves
+      1 space at the end of each turn (player or GM) until it arrives at its destination. <strong>The fireball
+      deals 6 damage to any unit it collides but otherwise does not impede movement</strong>. When the
+      fireball arrives at its destination, it creates a <strong>Blast:2</strong>, <strong>5 damage</strong>
+      explosion that converts all spaces within the blast to <strong>Scorch</strong> terrain.
+      <strong>Scorch</strong> terrain deals <strong>1 damage</strong> when a unit leaves that space.
+      <strong>To win, the players must interact with the Volcano three times</strong>. If an enemy faction
+      <strong>Interacts</strong> with the <strong>Volcano</strong>, launch a fireball at one player
+      character’s current location. When anyone Interacts with the <strong>Volcano</strong>, it gains
+      <strong>Cooldown:1</strong>, preventing anyone else from <strong>Interacting</strong> with it until the
+      next round.</p>
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!SPCY2bEswFEk0ow3.Eq11ueY341bblAlX'
+  - _id: F4QAmF4WTBQz1vBa
+    type: text
+    name: A network of chasms and canyons blocks lines of…
+    img: null
+    description: >-
+      <p>A network of chasms and canyons blocks lines of sight and egress. The survey auguries have detected
+      veins of hardened soulmatter within. Deeper into the labyrinthian geography, the walls of nousbound
+      stone grow pliant, malleable, soft like melting plastic. After the players find the source of the
+      readings and begin extraction, alien claws grasp from within the gloopy rock. Demons from factions not
+      actively in play tear their way into this reality. Create a <strong>TACCOM</strong> scene with lots of
+      long corridors branching off from a large central arena. These corridors terminate in an
+      <strong>Escape</strong> tile that allows players to leave the battle when interacted with. <strong>Pick
+      4 or 5 spawners</strong> from a variety of factions and place them within the walls of the canyon. Spawn
+      units out of the boundaries of the map and the walls.</p>
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!SPCY2bEswFEk0ow3.F4QAmF4WTBQz1vBa'
+  - _id: xf2s3xkfbLycNpLh
+    type: text
+    name: On a hellswept bluff, twin stone obelisks mark a…
+    img: null
+    description: >-
+      <p>On a hellswept bluff, twin stone obelisks mark a set of stairs leading deep into the bowels of Hell.
+      At the foot of the stairs rests a wide, open chamber, lit with an unearthly light. Its low ceiling is
+      decorated in images of the divine feminine, while the center of the room is taken up by an enormous
+      summoning circle bearing the sign of the ouroboros. If a player steps into this circle, they appear on
+      the frontlines of a vast demonic horde. <strong>Have all players who stepped in the circle select a
+      demonic faction, and a unit from that faction</strong>. They are experiencing a temporal vision of the
+      pivotal moment when that faction rose to power, claiming their crown and their sovereignty. <strong>With
+      some effort, players can leap between crea tures in this realm, with minions being easy to co-opt and
+      bosses nigh impossible</strong>. During any <strong>TACCOM</strong> scenes, have players use enemy units
+      and allow them to change to another enemy unit as a Support Action or when their current host dies.
+      Players leave with their new insights when it is narratively dramatic for them to do so.</p>
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!SPCY2bEswFEk0ow3.xf2s3xkfbLycNpLh'
+formula: 1d10
+replacement: true
+displayRoll: true
+folder: CTrwWIaS55HG2Tlu
+sort: 400000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: SPCY2bEswFEk0ow3
+_key: '!tables!SPCY2bEswFEk0ow3'

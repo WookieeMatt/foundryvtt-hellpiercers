@@ -1,0 +1,76 @@
+name: Many-Footed Serpent
+type: minion
+img: systems/hellpiercers/assets/icons/cultist.svg
+system:
+  biography: >-
+    <p>In the age of the empty sky, the secret places of the earth were barren, but the secret
+    places under the sea, where the Archon Belias laid their secret fortress opened its gates to
+    strange eyes, and through its gnosis the soft creatures of the sea rose to see like Humans, and
+    deeper still.</p><p>Codename: Choros · Crown cost: 3</p>
+  faction: MIXIS
+  tags:
+    - Miniboss
+  health:
+    value: 100
+    max: 100
+    temp: 0
+  scale: 2
+  speed: 4
+  strike:
+    name: Strike
+    range:
+      kind: targets
+      value: 1
+    damage:
+      formula: '0'
+    description: >-
+      <p>Using the <strong>Appendages</strong>’ current <strong>Sprawl</strong> as the
+      <strong>range</strong>, attack a player unit, deal 6 damage to the unit and any other units
+      within <strong>Burst:2</strong>.</p>
+  special:
+    name: Special
+    description: >-
+      <p>Target a player unit within line of sight, remove an appendage and deal 5 damage
+      <strong>+Sprawl</strong> to the target.</p><p>The Many-Footed Serpent is a
+      <strong>Scale:2</strong> unit with 4 appendages sprouting out from it. Each
+      <strong>Appendage</strong> begins at <strong>Sprawl:4</strong>, and each appendage has 2
+      Speed. <strong>Appendages</strong> lose 1 <strong>Sprawl</strong> for every attack with
+      <strong>Breaker</strong> that targets them. Destroying an <strong>Appendage</strong> entirely
+      by reducing it to 0 Sprawl instantly deals damage to <strong>Choros</strong> equal to 25% of
+      its current HP. <strong>Appendages</strong> (either the ones this unit begins with or the ones
+      they gain) attach to one of the borders of the unit, and the tile of appendage directly
+      adjacent to the unit cannot move except to follow the movement of the unit itself.</p>
+  agnosia:
+    value: 30
+    effect: >-
+      <p>Choros gains the following ability:</p><p>Once per turn, as a <strong>free action</strong>,
+      when you are adjacent to an allied minion, you may devour it and create a new appendage with
+      <strong>Sprawl</strong> equal to the devoured unit’s <strong>Sprawl</strong>.</p>
+    triggered: false
+prototypeToken:
+  name: Many-Footed Serpent
+  actorLink: false
+  disposition: -1
+  width: 3
+  height: 3
+  texture:
+    src: systems/hellpiercers/assets/icons/cultist.svg
+  displayName: 20
+  displayBars: 20
+  bar1:
+    attribute: health
+items: []
+effects: []
+folder: KiERE0EuRRjFBbV4
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794656067899
+  modifiedTime: 1794656067899
+_id: maPxOZ2LduR6rJzv
+_key: '!actors!maPxOZ2LduR6rJzv'

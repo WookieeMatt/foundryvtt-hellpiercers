@@ -1,0 +1,242 @@
+name: 'RECON: Legendary Arms'
+img: icons/svg/d20-grey.svg
+description: <p>The 8 legendary arms held in the Beelzebuthian Armory. <em>(Core Rules p.79)</em></p>
+results:
+  - _id: elPCgvxRKkllNnAP
+    type: text
+    name: Inversion-Infused Chained Ascension Missile Launcher
+    img: null
+    description: >-
+      <h3>Inversion-Infused Chained Ascension Missile Launcher</h3><p><em>One of the 8 legendary arms held in
+      the Beelzebuthian Armory. Forcibly injects 98% purity as cended mindforms into the target’s
+      spinther-cage, causing an immediate and violent chain reac tion of escalating awakenings; each using the
+      gnosis of the last to fuel the ascension of the next. </em></p><p><em>Deal 3 damage to all enemies in
+      <strong>Burst:6</strong> around the targeted unit. Before assigning damage, all targets within
+      <strong>Burst:6</strong> gain <strong>Nova Burst:2.</strong></em></p><p><em><strong>Nova Burst</strong>
+      : When this unit dies, they explode, dealing x damage in <strong>Burst:3</strong> , where x is equal to
+      3 per every unit with <strong>Nova Burst</strong> killed this encounter. Any unit caught in this area of
+      effect gains <strong>Nova Burst:2</strong> before taking damage. </em></p><p><strong>1 Target,
+      Range:6</strong></p><p><strong>Extinguish: 3</strong></p>
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!vVrtlPbcizeXftmR.elPCgvxRKkllNnAP'
+  - _id: g6M8G9KjUxO1dF8w
+    type: text
+    name: One Last Minute
+    img: null
+    description: >-
+      <h3>One Last Minute</h3><p><em>One of the 8 legendary arms held in the Beelzebuthian Armory. A small
+      crystal orb containing a stolen year of warless peace. Echos of the forgotten loves and restful mornings
+      rattle inside, tinkling like silver bells when shaken.</em></p><p><em>Immediately end all effects,
+      buffs, debuffs, and conditions within the attack pattern. Convert all special terrain within the attack
+      pattern to Standard terrain. Reset all countdowns and remove any on-death effects within the attack
+      pattern.</em></p><p><strong>Burst:8</strong></p><p><strong>Extinguish: 3</strong></p>
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!vVrtlPbcizeXftmR.g6M8G9KjUxO1dF8w'
+  - _id: IJGvtevPoUrB7DU0
+    type: text
+    name: Militarized Auto-Styxiation Suite
+    img: null
+    description: >-
+      <h3>Militarized Auto-Styxiation Suite</h3><p><em>One of the 8 legendary arms held in the Beelzebuthian
+      Armory. The nature of Hell necessitated a unique approach to punishment; a sort of second hell,
+      imprinted deep on the synth-spinther, emits an aura of misery around the subject, forcing them into a
+      waking, walking prison of scorn.</em></p><p><em>Attack: Select two enemies within Range:6 and attach a
+      Ring:1 pattern to each unit. The pattern has the following effects</em></p><h3>Ring of
+      Suffering</h3><p><em>The ring deals <strong> 5 damage</strong> to any units who begin their turn within
+      it. The ring also deals <strong>5 dam-</strong> <strong>age</strong> to any unit who ends their turn
+      within it. All units who begin their turn, pass through, or end their turn within the ring suffer
+      <strong>Slow:2</strong> , <strong>Bleed:2</strong> . Any unit with a <strong>Ring of Suffering</strong>
+      that dies passes along the ring to any enemy within the ring at the time of death. If multiple enemies
+      are within the ring, the HELLPIERCER who landed the final blow selects one. </em></p><p><em>If two Rings
+      of Suffering overlap, both affected units immediately explode in a <strong>Blast:2</strong> pattern that
+      deals <strong>10 damage</strong> to all enemies in range.</em></p><p><strong>Range:6,
+      Targets:2</strong></p><p><strong>Extinguish: 2</strong></p>
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!vVrtlPbcizeXftmR.IJGvtevPoUrB7DU0'
+  - _id: A9QGmIhtpenJpNHO
+    type: text
+    name: Essence Of Baal’s Final Bastion
+    img: null
+    description: >-
+      <h3>Essence Of Baal’s Final Bastion</h3><p><em>One of the 8 legendary arms held in the Beelzebuthian
+      Armory. Though no ruins have been lo cated, Baal’s fortress is legendary among Hellions; their own
+      attempt at heavenly invasion, a leviathan of flesh, bone, and hellsteel clawing at the oilslick sky. A
+      fragment of its soul thrashes in this vial.</em></p><p><em>Create an impenetrable dome in a Blast:1
+      pattern. The dome has Countdown:3, and dissipates af ter the status is resolved. Units cannot move in or
+      out of the dome, cannot be targeted by any at tacks, and cannot be inflicted with any status effects.
+      Terrain tiles within the dome are im mutable, and not affected by any abilities or effects that would
+      change them. The dome can be tar geted, and the effects of the attack are applied to all units caught
+      within it.</em></p><p><strong>Range:6, Blast:1</strong></p><p><strong>Extinguish: 3</strong></p>
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!vVrtlPbcizeXftmR.A9QGmIhtpenJpNHO'
+  - _id: yHt0ZvtA4lg7VqkY
+    type: text
+    name: Violence-Inflicted Forced Redemption Wave
+    img: null
+    description: >-
+      <h3>Violence-Inflicted Forced Redemption Wave</h3><p><em>One of the 8 legendary arms held in the
+      Beelzebuthian Armory. Experiments in forced ascension culminated in this device. Homonculian spirits
+      tattoo infernal agnosis on the bones and flesh of its targets, wisdom absorbs into the marrow. The
+      victim, grateful for their new perspective, often offers a little help on their way out of
+      samsara.</em></p><p><em>Inflict Countdown:4 on all targets in the first layer of the pattern closest to
+      the attacker, Count down:3 on the second, and Countdown:2 on the final layer. If a unit inflicted with a
+      Countdown in this way dies, they transform into the following unit:</em></p><h3>Celestial-Shattered
+      Redemption Engine</h3><p><em>Tags: <strong>Fortification, Stationary</strong></em></p><p><em><strong>HP:
+      </strong> 5</em></p><p><em><strong>Speed: </strong> 0</em></p><p><em><strong>Range:4</strong> ,
+      <strong>Target:1</strong> , <strong>Damage:3</strong> . The Redemption Engine automatically targets an
+      enemy unit within 4 spaces from it and deals 3 damage at the end of the
+      round.</em></p><p><strong>Cone:3, Damage:0</strong></p><p><strong>Extinguish: 4</strong></p>
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!vVrtlPbcizeXftmR.yHt0ZvtA4lg7VqkY'
+  - _id: wCcFl9H7o4NXwXfi
+    type: text
+    name: Allegiance Of The Keraunios-Sky
+    img: null
+    description: >-
+      <h3>Allegiance Of The Keraunios-Sky</h3><p><em>One of the 8 legendary arms held in the Beelzebuthian
+      Armory. Everything in Hell is sentient. The dust is made of the scattered ashes of a billion souls, the
+      dirt is the compacted minds of an eternity of torture. Even fleeting lightning, for a microsecond, is a
+      complete being. Sentience begs intelli gence, intelligence begs need, and need begs negotiation,
+      alliances, and collaboration.</em></p><p><em>Each enemy targeted by this attack creates a Burst:1
+      explosion, dealing damage equal to the initial attack to all enemies within. Any enemy that dies from
+      this attack creates an additional Arc:2 at tack pattern that follows the same rules.
+      </em></p><p><strong>Arc:4, Damage:5</strong></p><p><strong>Extinguish: 4</strong></p>
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!vVrtlPbcizeXftmR.wCcFl9H7o4NXwXfi'
+  - _id: UCjbYfNPTRJoavNo
+    type: text
+    name: Delicate Suffering
+    img: null
+    description: >-
+      <h3>Delicate Suffering</h3><p><em>One of the 8 legendary arms held in the Beelzebuthian Armory.
+      ASTANPHAEUS’s most subtle work. By its gossamer edge was the golden skin of man flayed, our original
+      divinity removed in tattered strips and used to sew the material fetters that bound us. Its cuts inflict
+      no pain, some thing the Archon himself discovered shortly before his death.</em></p><p><em>All targets
+      hit with this weapon gain the Glassflesh
+      status:</em></p><p><em><strong>Glassflesh</strong></em></p><p><em>Target receives double damage from the
+      next attack targeting them. The affected unit retains the Glassflesh status until they die, but take no
+      additional damage on attacks after the first. When defeated, the enemy unit leaves the status behind on
+      the space they died. Any enemy unit who en ters this space removes the effect from the terrain and gains
+      the Glassflesh status. This effect can stack if the enemy unit picks up additional Glassflesh
+      statuses.</em></p><p><strong>Range:4, Target:3</strong></p><p><strong>Extinguish: 3</strong></p>
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!vVrtlPbcizeXftmR.UCjbYfNPTRJoavNo'
+  - _id: 7vZUgCiSOgGzh3t6
+    type: text
+    name: Thanatotic Refining Alchemic Cannon
+    img: null
+    description: >-
+      <h3>Thanatotic Refining Alchemic Cannon</h3><p><em>One of the 8 legendary arms held in the Beelzebuthian
+      Armory. In scavenging the libraries of the Archons techniques meant for punishing upstart humanity were
+      discovered. Physicalization of the pain of loss was quickly discarded as it resulted uniformly in
+      instant death. For HELLPIERCERS who sought not torture, but the elimination of their opposition this
+      quirk was eminently weaponizable.</em></p><p><em>The unit at the center of the attack pattern has damage
+      dealt to them last. If this attack kills any units not in the center of the attack pattern, this attack
+      deals 100 damage to the unit at the center when damage is dealt.</em></p><p><strong>Damage:
+      1D6</strong></p><p><strong>Exhaust: 3</strong></p>
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794655640178
+      modifiedTime: 1794655640178
+    _key: '!tables.results!vVrtlPbcizeXftmR.7vZUgCiSOgGzh3t6'
+formula: 1d8
+replacement: true
+displayRoll: true
+folder: CTrwWIaS55HG2Tlu
+sort: 300000
+ownership:
+  default: 0
+flags: {}
+_stats:
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.5.0
+  createdTime: 1794655640178
+  modifiedTime: 1794655640178
+_id: vVrtlPbcizeXftmR
+_key: '!tables!vVrtlPbcizeXftmR'
