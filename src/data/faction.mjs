@@ -1,9 +1,11 @@
+import { tint } from "../integrations/dice.mjs";
 import {
   CONVOY_KINDS,
   CONVOY_TRAVEL_PHASES,
   LOCATION_TYPES,
   RESEARCH_PROJECTS,
 } from "../stratcom/catalog.mjs";
+import { findAction, hazardOf } from "../stratcom/faction-actions.mjs";
 import {
   FACTIONS_BY_ID,
   MAX_CROWN,
@@ -138,6 +140,35 @@ export class ProjectModel extends foundry.abstract.DataModel {
   }
 }
 
+/**
+ * A map hazard on the STRATCOM map. Staged hazards (Devolve, Eyerot) carry the stage text of the
+ * STRATCOM action that created them; custom ones are just a name and notes (p. 225).
+ */
+export class HazardModel extends foundry.abstract.DataModel {
+  static LOCALIZATION_PREFIXES = ["HELLPIERCERS.HAZARD"];
+  static defineSchema() {
+    return {
+      id: idField(),
+      name: new fields.StringField({ required: true, blank: false, initial: "Map Hazard" }),
+      /** Name of the STRATCOM action that defines the stages, or "" for a custom hazard. */
+      action: new fields.StringField({ initial: "" }),
+      location: new fields.StringField({ initial: "" }),
+      stage: count(0, { min: 0 }),
+      maxStage: count(0, { min: 0 }),
+      /** Advances by one stage at the start of every STRATCOM phase. */
+      auto: new fields.BooleanField({ initial: false }),
+      status: new fields.StringField({
+        initial: "active",
+        choices: {
+          active: "HELLPIERCERS.HAZARD.status.active",
+          cleared: "HELLPIERCERS.HAZARD.status.cleared",
+        },
+      }),
+      notes: new fields.StringField({ initial: "" }),
+    };
+  }
+}
+
 /* -------------------------------------------- */
 /*  Faction actor                               */
 /* -------------------------------------------- */
@@ -173,6 +204,7 @@ export class FactionModel extends foundry.abstract.TypeDataModel {
       upgrades: new fields.SetField(new fields.StringField()),
       projects: new fields.ArrayField(new fields.EmbeddedDataField(ProjectModel)),
       convoys: new fields.ArrayField(new fields.EmbeddedDataField(ConvoyModel)),
+      hazards: new fields.ArrayField(new fields.EmbeddedDataField(HazardModel)),
       organization: new fields.HTMLField(),
       journal: new fields.HTMLField(),
       supplyLines: new fields.HTMLField(),
@@ -230,7 +262,7 @@ export class FactionModel extends foundry.abstract.TypeDataModel {
 
   /**
    * Apply a transformation to an embedded array and save it.
-   * @param {"locations" | "projects" | "convoys"} path
+   * @param {"locations" | "projects" | "convoys" | "hazards"} path
    * @param {(items: object[]) => object[] | void} fn
    */
   async #mutate(path, fn) {
@@ -450,6 +482,108 @@ export class FactionModel extends foundry.abstract.TypeDataModel {
   }
 
   /* -------------------------------------------- */
+  /*  STRATCOM actions and map hazards            */
+  /* -------------------------------------------- */
+
+  /**
+   * Use one of the faction's STRATCOM actions: posts the action and, if it defines a staged map
+   * hazard, places it (or advances the existing one at the chosen location by a stage).
+   * @param {string} name
+   * @param {object} [options]
+   * @param {string} [options.location]  Where a hazard goes
+   * @param {boolean} [options.force=false]  Ignore the Crown gate
+   * @returns {Promise<{ ok: boolean, reason?: string, hazard?: object }>}
+   */
+  async useAction(name, { location = "", force = false } = {}) {
+    const action = findAction(this.key, name);
+    if (!action) return { ok: false, reason: "unknown" };
+    if (action.crown && !force && !this.canDeployAtCrown(action.crown)) {
+      return { ok: false, reason: "crown" };
+    }
+    let hazard = null;
+    const def = hazardOf(action);
+    if (def) {
+      const existing = this.hazards.find(
+        h => h.action === action.name && h.status === "active" && h.location === location
+      );
+      if (existing && !def.auto) {
+        hazard = await this.advanceHazard(existing.id, 1);
+      } else {
+        hazard = await this.addHazard({
+          name: def.name,
+          action: action.name,
+          location,
+          stage: def.auto ? 0 : 1,
+          maxStage: def.stages.length,
+          auto: def.auto,
+        });
+      }
+    }
+    const esc = foundry.utils.escapeHTML;
+    const body = action.body.map(p => `<p>${p}</p>`).join("");
+    const ChatMessage = getDocumentClass("ChatMessage");
+    await ChatMessage.create({
+      content: `<div class="hellpiercers turn-note stratcom-action"><header>${esc(this.parent.name)}: ${esc(action.name)}</header>${action.flavor ? `<p><em>${esc(action.flavor)}</em></p>` : ""}${body}${location ? `<p><strong>Location:</strong> ${esc(location)}</p>` : ""}</div>`,
+      speaker: ChatMessage.getSpeaker({ actor: this.parent }),
+      whisper: ChatMessage.getWhisperRecipients("GM").map(u => u.id),
+      flags: { [game.system.id]: { turnNote: true, stratcomAction: name } },
+    });
+    return { ok: true, hazard };
+  }
+
+  /** @param {Partial<HazardModel>} data */
+  async addHazard(data) {
+    const hazard = {
+      id: newId(),
+      name: data.name ?? "Map Hazard",
+      action: data.action ?? "",
+      location: data.location ?? "",
+      stage: data.stage ?? 0,
+      maxStage: data.maxStage ?? 0,
+      auto: data.auto ?? false,
+      status: "active",
+      notes: data.notes ?? "",
+    };
+    await this.#mutate("hazards", items => {
+      items.push(hazard);
+    });
+    return hazard;
+  }
+
+  /** Move a hazard along its track. @param {string} id @param {number} delta */
+  async advanceHazard(id, delta = 1) {
+    let result = null;
+    await this.#mutate("hazards", items => {
+      const h = items.find(i => i.id === id);
+      if (!h) return;
+      h.stage = Math.max(0, Math.min(h.maxStage || h.stage + delta, h.stage + delta));
+      result = { ...h };
+    });
+    return result;
+  }
+
+  /** Clearing a hazard immediately ends all its effects. @param {string} id */
+  async clearHazard(id) {
+    await this.#mutate("hazards", items => {
+      const h = items.find(i => i.id === id);
+      if (h) h.status = "cleared";
+    });
+  }
+
+  /** @param {string} id */
+  async removeHazard(id) {
+    await this.#mutate("hazards", items => items.filter(h => h.id !== id));
+  }
+
+  /** @param {string} id @param {object} changes */
+  async updateHazard(id, changes) {
+    await this.#mutate("hazards", items => {
+      const h = items.find(i => i.id === id);
+      if (h) foundry.utils.mergeObject(h, foundry.utils.expandObject(changes));
+    });
+  }
+
+  /* -------------------------------------------- */
   /*  Creation                                    */
   /* -------------------------------------------- */
 
@@ -516,7 +650,10 @@ export class FactionModel extends foundry.abstract.TypeDataModel {
 export async function rollSuccesses(actor, dice, { label = "", whisper = false } = {}) {
   const n = Math.max(0, Math.floor(dice));
   const ChatMessage = getDocumentClass("ChatMessage");
-  const roll = n > 0 ? await new foundry.dice.Roll(`${n}d6`).evaluate() : null;
+  const roll =
+    n > 0
+      ? await tint(new foundry.dice.Roll(`${n}d6`), actor?.system?.key || "quality").evaluate()
+      : null;
   const successes = roll ? roll.dice[0].results.filter(r => r.result === 6).length : 0;
   const content = `<div class="hellpiercers faction-roll ${successes ? "success" : "fail"}">
     <header>${foundry.utils.escapeHTML(actor?.name ?? "")}${label ? `: ${foundry.utils.escapeHTML(label)}` : ""}</header>

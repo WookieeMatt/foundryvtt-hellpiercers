@@ -17,10 +17,10 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: charge
+      value: 5
     damage:
-      formula: '0'
+      formula: '3'
     description: >-
       <p><strong>Charge:5</strong>, if Keras collides with a player, deal the remaining
       <strong>Charge</strong> as damage and <strong>Push:2</strong>. If a player collides with a
@@ -28,7 +28,7 @@ system:
       damage</strong>.</p>
   special:
     name: Special
-    description: <p><strong>Burst:3</strong>, <strong>Damage:5</strong></p>
+    description: ''
   agnosia:
     value: 10
     effect: <p>Deal all remaining HP as damage to the attacker. Unit dies immediately afterwards.</p>
@@ -45,7 +45,36 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: NleRgmL71wFxPZEV
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: <p><strong>Burst:3</strong>, <strong>Damage:5</strong></p>
+      attack:
+        range:
+          kind: burst
+          value: 3
+          name: Range
+        damage:
+          formula: '5'
+        description: <p><strong>Burst:3</strong>, <strong>Damage:5</strong></p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!qvYMh9liauMRzVu2.NleRgmL71wFxPZEV'
 effects: []
 folder: FG5KoiLA0hEjrX5J
 sort: 0
@@ -56,7 +85,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: qvYMh9liauMRzVu2
 _key: '!actors!qvYMh9liauMRzVu2'

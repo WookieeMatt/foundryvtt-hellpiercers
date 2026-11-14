@@ -1,4 +1,5 @@
 import { Damage } from "../../data/damage.mjs";
+import { tint } from "../../integrations/dice.mjs";
 import { trySpendAction } from "../../taccom/actions.mjs";
 import { expendTiles, swarmAttackPlan } from "../../taccom/swarm.mjs";
 
@@ -144,9 +145,19 @@ export class AttackHud extends HandlebarsApplicationMixin(Application) {
         : null;
     const bonuses = plan ? plan.bonuses : [0];
 
+    Hooks.callAll("hellpiercers.attack", {
+      actor: this.sourceActor,
+      item: this.sourceItem,
+      attack: this.#attack,
+      targets: game.user.targets.map(t => t.document),
+    });
+
     for (const bonus of bonuses) {
       const formula = bonus ? `${baseFormula} + ${bonus}` : baseFormula;
-      const roll = await new foundry.dice.Roll(formula, this.sourceActor.getRollData()).evaluate();
+      const roll = await tint(
+        new foundry.dice.Roll(formula, this.sourceActor.getRollData()),
+        "damage"
+      ).evaluate();
       const damageData = this.#attack.damage.toObject();
       if (bonus) damageData.formula = formula;
       damageData.roll = JSON.stringify(roll.toJSON());

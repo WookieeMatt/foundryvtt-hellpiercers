@@ -28,11 +28,7 @@ system:
       devoured units <strong>Sprawl</strong>.</p>
   special:
     name: Special
-    description: >-
-      <p><strong>Arc</strong>, <strong>Charge</strong> equal to current <strong>sprawl</strong>,
-      deal ramping damage (1 for the first tile moved through, 2 for the second, and so on). Deal an
-      additional 4 damage to any unit completely surrounded by <strong>She-Who- Eats</strong> during
-      this attack.</p>
+    description: ''
   agnosia:
     value: 30
     effect: >-
@@ -51,7 +47,44 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: Wn9knnKOKICkvdO0
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Arc</strong>, <strong>Charge</strong> equal to current <strong>sprawl</strong>,
+        deal ramping damage (1 for the first tile moved through, 2 for the second, and so on). Deal
+        an additional 4 damage to any unit completely surrounded by <strong>She-Who- Eats</strong>
+        during this attack.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '4'
+        description: >-
+          <p><strong>Arc</strong>, <strong>Charge</strong> equal to current <strong>sprawl</strong>,
+          deal ramping damage (1 for the first tile moved through, 2 for the second, and so on).
+          Deal an additional 4 damage to any unit completely surrounded by <strong>She-Who-
+          Eats</strong> during this attack.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!3rhNN4AF3TNw7upC.Wn9knnKOKICkvdO0'
 effects: []
 folder: KiERE0EuRRjFBbV4
 sort: 0
@@ -62,7 +95,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: 3rhNN4AF3TNw7upC
 _key: '!actors!3rhNN4AF3TNw7upC'

@@ -52,7 +52,7 @@ items:
           value: 1
           name: Range
         damage:
-          formula: '0'
+          formula: '8'
         description: >-
           <p>Draw three 3x3 boxes on the map. The next time Abigor takes damage, each box deals
           <strong>8 damage</strong> to any players within them. Abigor may have 5 active boxes at
@@ -68,8 +68,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!PdFtURpH2gHvATjX.8ynwFSeSDDz8i9MI'
   - _id: Dszpc4lI2UkFdrTk
     name: Attack 2
@@ -103,8 +103,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!PdFtURpH2gHvATjX.Dszpc4lI2UkFdrTk'
   - _id: LA01HlhELEMqWcdS
     name: Attack 3
@@ -117,11 +117,11 @@ items:
         <strong>Charge+5 damage</strong>, <strong>Push:2</strong> and stop movement</p>
       attack:
         range:
-          kind: targets
-          value: 1
+          kind: charge
+          value: 8
           name: Range
         damage:
-          formula: '0'
+          formula: '5'
         description: >-
           <p><strong>Charge:8</strong>, if Abigor collides with a player, deal remaining
           <strong>Charge+5 damage</strong>, <strong>Push:2</strong> and stop movement</p>
@@ -136,8 +136,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!PdFtURpH2gHvATjX.LA01HlhELEMqWcdS'
   - _id: kJ9Fhj5keAwUYjmA
     name: Special
@@ -162,8 +162,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!PdFtURpH2gHvATjX.kJ9Fhj5keAwUYjmA'
 effects: []
 folder: FG5KoiLA0hEjrX5J
@@ -175,7 +175,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: PdFtURpH2gHvATjX
 _key: '!actors!PdFtURpH2gHvATjX'

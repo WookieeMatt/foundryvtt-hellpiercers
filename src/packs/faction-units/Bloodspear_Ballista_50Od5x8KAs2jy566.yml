@@ -20,9 +20,9 @@ system:
     name: Strike
     range:
       kind: targets
-      value: 1
+      value: 2
     damage:
-      formula: '0'
+      formula: '2'
     description: >-
       <p><strong>Bleed:2</strong>, <strong>Damage:2</strong> and create a <strong>Bloodline</strong>
       between the Ballista and a target. Passing through this Bloodline deals 2 Damage to any unit
@@ -58,7 +58,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: 50Od5x8KAs2jy566
 _key: '!actors!50Od5x8KAs2jy566'

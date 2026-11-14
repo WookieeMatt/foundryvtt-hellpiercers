@@ -23,7 +23,7 @@ system:
       kind: targets
       value: 1
     damage:
-      formula: '0'
+      formula: '1'
     description: <p>Deal 1 damage to an adjacent target</p>
   special:
     name: Special
@@ -57,7 +57,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: I14G7SZNind16T8A
 _key: '!actors!I14G7SZNind16T8A'

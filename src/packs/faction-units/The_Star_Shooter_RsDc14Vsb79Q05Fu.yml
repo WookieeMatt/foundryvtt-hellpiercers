@@ -18,10 +18,10 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
+      kind: burst
       value: 1
     damage:
-      formula: '0'
+      formula: '3'
     description: >-
       <p><strong>Range:6, Burst:1, Damage:3</strong>. If a target in <strong>Burst</strong> is at
       equal or lower elevation to the Star Shooter, they may cause up to one target who meets that
@@ -29,13 +29,8 @@ system:
   special:
     name: Special
     description: >-
-      <p><strong>Range:1, Damage:2, Push:4</strong>. If the target collides with any other units,
-      damage is dealt per the <strong>Push</strong> rules, but to the unit collided with instead of
-      the target unit.</p><p><strong>Range:6</strong>, <strong>Damage:2</strong>. If this attack
-      targets a unit at elevation higher than the Star Shooter’s current elevation, that unit
-      immediately descends until they collide with the ground. Deal damage to the target equal to 2
-      + the units of elevation moved during the descent.</p><p>The Star Shooter deals an additional
-      point of damage on attacks which target a unit at a higher level of elevation than them.</p>
+      <p>The Star Shooter deals an additional point of damage on attacks which target a unit at a
+      higher level of elevation than them.</p>
   agnosia:
     value: 30
     effect: >-
@@ -55,7 +50,79 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: UbGzaX9DcPJnXMb7
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Range:1, Damage:2, Push:4</strong>. If the target collides with any other units,
+        damage is dealt per the <strong>Push</strong> rules, but to the unit collided with instead
+        of the target unit.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '2'
+        description: >-
+          <p><strong>Range:1, Damage:2, Push:4</strong>. If the target collides with any other
+          units, damage is dealt per the <strong>Push</strong> rules, but to the unit collided with
+          instead of the target unit.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!RsDc14Vsb79Q05Fu.UbGzaX9DcPJnXMb7'
+  - _id: 24hgGyEQHI6PHNw8
+    name: Attack 3
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Range:6</strong>, <strong>Damage:2</strong>. If this attack targets a unit at
+        elevation higher than the Star Shooter’s current elevation, that unit immediately descends
+        until they collide with the ground. Deal damage to the target equal to 2 + the units of
+        elevation moved during the descent.</p>
+      attack:
+        range:
+          kind: targets
+          value: 6
+          name: Range
+        damage:
+          formula: '2'
+        description: >-
+          <p><strong>Range:6</strong>, <strong>Damage:2</strong>. If this attack targets a unit at
+          elevation higher than the Star Shooter’s current elevation, that unit immediately descends
+          until they collide with the ground. Deal damage to the target equal to 2 + the units of
+          elevation moved during the descent.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 100000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!RsDc14Vsb79Q05Fu.24hgGyEQHI6PHNw8'
 effects: []
 folder: H0n1mEqWTBCKPrC9
 sort: 0
@@ -66,7 +133,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: RsDc14Vsb79Q05Fu
 _key: '!actors!RsDc14Vsb79Q05Fu'

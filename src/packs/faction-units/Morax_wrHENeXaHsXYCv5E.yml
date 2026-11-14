@@ -53,8 +53,8 @@ items:
         <strong>Primed</strong>.</p>
       attack:
         range:
-          kind: targets
-          value: 1
+          kind: charge
+          value: 5
           name: Range
         damage:
           formula: '0'
@@ -73,8 +73,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!wrHENeXaHsXYCv5E.AVR0nA9dTDFcDiJL'
   - _id: PwBjGlHl7CFGvT0j
     name: Attack 2
@@ -91,7 +91,7 @@ items:
           value: 1
           name: Range
         damage:
-          formula: '0'
+          formula: '5'
         description: >-
           <p>Detonate all <strong>Primed</strong> spaces. Deal 5 damage to any units standing on the
           tiles, and 2 damage to any adjacent units.</p>
@@ -106,8 +106,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!wrHENeXaHsXYCv5E.PwBjGlHl7CFGvT0j'
   - _id: 3Um9k8iCKCHEXY3O
     name: Attack 3
@@ -124,7 +124,7 @@ items:
           value: 1
           name: Range
         damage:
-          formula: '0'
+          formula: '5'
         description: >-
           <p>Deal 5 damage to one unit adjacent to Morax, and <strong>Prime</strong> the two spaces
           on either side of the damaged unit.</p>
@@ -139,8 +139,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!wrHENeXaHsXYCv5E.3Um9k8iCKCHEXY3O'
   - _id: iSoGeiTUeZCzZAiM
     name: Special
@@ -164,8 +164,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!wrHENeXaHsXYCv5E.iSoGeiTUeZCzZAiM'
 effects: []
 folder: v9Izj4qogDXOpAKr
@@ -177,7 +177,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: wrHENeXaHsXYCv5E
 _key: '!actors!wrHENeXaHsXYCv5E'

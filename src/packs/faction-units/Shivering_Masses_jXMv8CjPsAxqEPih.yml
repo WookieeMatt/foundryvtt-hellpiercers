@@ -22,11 +22,11 @@ system:
       kind: targets
       value: 1
     damage:
-      formula: '0'
+      formula: '3'
     description: <p>Deal 3 damage to an adjacent creature.</p>
   special:
     name: Special
-    description: <p><strong>Line:4</strong>. All creatures in range gain <strong>Frozen:1</strong>.</p>
+    description: ''
   agnosia:
     value: null
     effect: ''
@@ -43,7 +43,36 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: 0B7vKEAiDv1rllHU
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: <p><strong>Line:4</strong>. All creatures in range gain <strong>Frozen:1</strong>.</p>
+      attack:
+        range:
+          kind: line
+          value: 4
+          name: Range
+        damage:
+          formula: '0'
+        description: <p><strong>Line:4</strong>. All creatures in range gain <strong>Frozen:1</strong>.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!jXMv8CjPsAxqEPih.0B7vKEAiDv1rllHU'
 effects: []
 folder: hsXh5sb6AljquH3A
 sort: 0
@@ -54,7 +83,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: jXMv8CjPsAxqEPih
 _key: '!actors!jXMv8CjPsAxqEPih'

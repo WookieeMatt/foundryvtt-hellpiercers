@@ -21,7 +21,7 @@ system:
       kind: targets
       value: 1
     damage:
-      formula: '0'
+      formula: '5'
     description: <p><strong>Shock:1</strong>, <strong>Damage:5</strong></p>
   special:
     name: Special
@@ -55,7 +55,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: 7MF1FnHLOViTNKuM
 _key: '!actors!7MF1FnHLOViTNKuM'

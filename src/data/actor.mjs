@@ -453,12 +453,25 @@ export class BossModel extends foundry.abstract.TypeDataModel {
     };
   }
 
-  _getActivations() {
-    if (this.actions === "1") return 1;
-    const players =
+  /** How many player characters the Variable Action System counts. */
+  get playerCount() {
+    return (
       game.settings.get(game.system.id, "playerCountOverride") ??
-      game.users.filter(u => u.character).length;
-    return foundry.dice.Roll.safeEval(`max(1, round((${this.actions}) * ${players}))`);
+      game.users.filter(u => u.character).length
+    );
+  }
+
+  /**
+   * Actions per round (p. 133): the Actions stat is "actions/players", so 1/2 is one action for
+   * every two players. Rounding goes in the players' favour (down), and a boss always gets at least 1.
+   */
+  _getActivations() {
+    const stat = String(this.actions ?? "1").trim();
+    const match = stat.match(/^(\d+(?:\.\d+)?)\s*(?:\/\s*(\d+(?:\.\d+)?))?$/);
+    if (!match) return 1;
+    const actions = Number(match[1]);
+    const per = Number(match[2] ?? 1) || 1;
+    return Math.max(1, Math.floor((actions / per) * Math.max(1, this.playerCount)));
   }
 
   async _preCreate(data) {

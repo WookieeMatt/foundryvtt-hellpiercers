@@ -53,11 +53,11 @@ items:
         target damaged by this attack.</p>
       attack:
         range:
-          kind: targets
-          value: 1
+          kind: star
+          value: 3
           name: Range
         damage:
-          formula: '0'
+          formula: '3'
         description: >-
           <p><strong>Star:3</strong>, <strong>Damage:3</strong> Gain <strong>1 Snake</strong> for
           each target damaged by this attack.</p>
@@ -72,8 +72,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!qGPk4WliAKIg1kO7.rto2uWz5dHlAbcyf'
   - _id: qMUFQUwihnBXjiTw
     name: Attack 2
@@ -105,8 +105,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!qGPk4WliAKIg1kO7.qMUFQUwihnBXjiTw'
   - _id: Uv7Lnv9rTp2LNisE
     name: Attack 3
@@ -150,8 +150,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!qGPk4WliAKIg1kO7.Uv7Lnv9rTp2LNisE'
 effects: []
 folder: KiERE0EuRRjFBbV4
@@ -163,7 +163,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: qGPk4WliAKIg1kO7
 _key: '!actors!qGPk4WliAKIg1kO7'

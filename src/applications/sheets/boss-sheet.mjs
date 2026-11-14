@@ -12,6 +12,7 @@ export class BossSheet extends HellpiercersActorSheetMixin(ToggleMixin(ActorShee
       addAttack: this.#addAttack,
       addSpecial: this.#addSpecial,
       onAttack: this.#onAttack,
+      recalcActions: this.#recalcActions,
     },
   };
 
@@ -46,6 +47,18 @@ export class BossSheet extends HellpiercersActorSheetMixin(ToggleMixin(ActorShee
   async _preparePartContext(partId, ctx) {
     const TextEditor = foundry.applications.ux.TextEditor.implementation;
     Object.assign(ctx, super._preparePartContext(partId, ctx));
+    if (partId === "header") {
+      const system = this.actor.system;
+      const combatant = game.combat?.getCombatantsByActor?.(this.actor)?.[0];
+      ctx.activations = {
+        players: system.playerCount,
+        total: system._getActivations(),
+        current: combatant?.system.activations.max ?? null,
+        stale: combatant ? combatant.system.activations.max !== system._getActivations() : false,
+        presets: ["1", "1/1", "1/2", "1/3", "2/3", "1/4"],
+      };
+      ctx.isGM = game.user.isGM;
+    }
     if (partId === "abilities") {
       ctx.attacks = [];
       for (const attack of this.actor.system.attacks) {
@@ -72,6 +85,19 @@ export class BossSheet extends HellpiercersActorSheetMixin(ToggleMixin(ActorShee
       };
     }
     return ctx;
+  }
+
+  /** The Actions stat is set when the encounter starts; this recalculates it (players joined or left). */
+  static async #recalcActions() {
+    const combatants = game.combat?.getCombatantsByActor?.(this.actor) ?? [];
+    const total = this.actor.system._getActivations();
+    for (const combatant of combatants) {
+      const spent = combatant.system.activations.max - combatant.system.activations.value;
+      await combatant.update({
+        "system.activations.max": total,
+        "system.activations.value": Math.max(0, total - spent),
+      });
+    }
   }
 
   static async #addAttack() {

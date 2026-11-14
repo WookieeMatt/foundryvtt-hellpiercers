@@ -19,10 +19,10 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: burst
+      value: 2
     damage:
-      formula: '0'
+      formula: '6'
     description: >-
       <p>Using the <strong>Appendages</strong>’ current <strong>Sprawl</strong> as the
       <strong>range</strong>, attack a player unit, deal 6 damage to the unit and any other units
@@ -30,16 +30,15 @@ system:
   special:
     name: Special
     description: >-
-      <p>Target a player unit within line of sight, remove an appendage and deal 5 damage
-      <strong>+Sprawl</strong> to the target.</p><p>The Many-Footed Serpent is a
-      <strong>Scale:2</strong> unit with 4 appendages sprouting out from it. Each
-      <strong>Appendage</strong> begins at <strong>Sprawl:4</strong>, and each appendage has 2
-      Speed. <strong>Appendages</strong> lose 1 <strong>Sprawl</strong> for every attack with
-      <strong>Breaker</strong> that targets them. Destroying an <strong>Appendage</strong> entirely
-      by reducing it to 0 Sprawl instantly deals damage to <strong>Choros</strong> equal to 25% of
-      its current HP. <strong>Appendages</strong> (either the ones this unit begins with or the ones
-      they gain) attach to one of the borders of the unit, and the tile of appendage directly
-      adjacent to the unit cannot move except to follow the movement of the unit itself.</p>
+      <p>The Many-Footed Serpent is a <strong>Scale:2</strong> unit with 4 appendages sprouting out
+      from it. Each <strong>Appendage</strong> begins at <strong>Sprawl:4</strong>, and each
+      appendage has 2 Speed. <strong>Appendages</strong> lose 1 <strong>Sprawl</strong> for every
+      attack with <strong>Breaker</strong> that targets them. Destroying an
+      <strong>Appendage</strong> entirely by reducing it to 0 Sprawl instantly deals damage to
+      <strong>Choros</strong> equal to 25% of its current HP. <strong>Appendages</strong> (either
+      the ones this unit begins with or the ones they gain) attach to one of the borders of the
+      unit, and the tile of appendage directly adjacent to the unit cannot move except to follow the
+      movement of the unit itself.</p>
   agnosia:
     value: 30
     effect: >-
@@ -59,7 +58,40 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: cJvEF3pVMZ98MGVw
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Target a player unit within line of sight, remove an appendage and deal 5 damage
+        <strong>+Sprawl</strong> to the target.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '5'
+        description: >-
+          <p>Target a player unit within line of sight, remove an appendage and deal 5 damage
+          <strong>+Sprawl</strong> to the target.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!maPxOZ2LduR6rJzv.cJvEF3pVMZ98MGVw'
 effects: []
 folder: KiERE0EuRRjFBbV4
 sort: 0
@@ -70,7 +102,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: maPxOZ2LduR6rJzv
 _key: '!actors!maPxOZ2LduR6rJzv'

@@ -11,6 +11,7 @@
  */
 
 import { gapDistance, getAdjacentTokens, hasSquareGrid } from "../canvas/adjacency.mjs";
+import { tint } from "../integrations/dice.mjs";
 import { getSetting } from "../settings.mjs";
 
 const t = (key, data) => game.i18n.format(`HELLPIERCERS.TACCOM.${key}`, data);
@@ -332,7 +333,7 @@ export async function endRound(combat, round = combat.round) {
  */
 async function detonateBrand(combatant, lines) {
   const actor = combatant.actor;
-  const roll = await new foundry.dice.Roll("4d6").evaluate();
+  const roll = await tint(new foundry.dice.Roll("4d6"), "damage").evaluate();
   await actor.takeDamage(roll.total);
   lines.push({
     icon: "fa-burst",

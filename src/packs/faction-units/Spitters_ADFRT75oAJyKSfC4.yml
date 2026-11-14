@@ -19,9 +19,9 @@ system:
     name: Strike
     range:
       kind: targets
-      value: 1
+      value: 8
     damage:
-      formula: '0'
+      formula: '3'
     description: <p><strong>Range:8</strong>, <strong>Damage:3 Poison:2</strong></p>
   special:
     name: Special
@@ -53,7 +53,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: ADFRT75oAJyKSfC4
 _key: '!actors!ADFRT75oAJyKSfC4'

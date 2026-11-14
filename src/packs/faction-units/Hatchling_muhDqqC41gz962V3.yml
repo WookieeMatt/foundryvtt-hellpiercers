@@ -22,7 +22,7 @@ system:
       kind: targets
       value: 1
     damage:
-      formula: '0'
+      formula: '2'
     description: >-
       <p><strong>Damage:2</strong>, <strong>Range:1</strong>. If this unit was frozen before making
       this attack, apply <strong>Frozen:1</strong> to target.</p>
@@ -58,7 +58,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: muhDqqC41gz962V3
 _key: '!actors!muhDqqC41gz962V3'

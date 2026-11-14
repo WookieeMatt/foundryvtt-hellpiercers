@@ -18,19 +18,18 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: line
+      value: 4
     damage:
-      formula: '0'
+      formula: '4'
     description: >-
       <p><strong>Range:2</strong>,<strong> Line:4 Damage:4</strong>, and <strong>stain</strong>
       targeted squares.</p>
   special:
     name: Special
     description: >-
-      <p>Deal 10 damage to an adjacent unit, and target gets
-      <strong>Pinned:1</strong>.</p><h4>Stainwalk</h4><p>When <strong>POTAGON</strong> ends its turn
-      on a square that isn’t <strong>stained</strong>, it takes <strong>10 HP damage.</strong></p>
+      <h4>Stainwalk</h4><p>When <strong>POTAGON</strong> ends its turn on a square that isn’t
+      <strong>stained</strong>, it takes <strong>10 HP damage.</strong></p>
   agnosia:
     value: null
     effect: >-
@@ -49,7 +48,36 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: 39IihGoPFC8t758W
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: <p>Deal 10 damage to an adjacent unit, and target gets <strong>Pinned:1</strong>.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '10'
+        description: <p>Deal 10 damage to an adjacent unit, and target gets <strong>Pinned:1</strong>.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!R4HSAxwUg1dLbVS9.39IihGoPFC8t758W'
 effects: []
 folder: PYpf1v41cCASKyNC
 sort: 0
@@ -60,7 +88,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: R4HSAxwUg1dLbVS9
 _key: '!actors!R4HSAxwUg1dLbVS9'

@@ -20,17 +20,15 @@ system:
     name: Strike
     range:
       kind: targets
-      value: 1
+      value: 2
     damage:
-      formula: '0'
+      formula: '3'
     description: >-
       <p>Deal 3 damage to a creature within <strong>Range:2</strong>. If the attacked creature is on
       a square with no terrain effects, Prime that square.</p>
   special:
     name: Special
-    description: >-
-      <p>Move immediately to a <strong>Primed</strong> square, remove the <strong>Mark</strong>, and
-      <strong>Burst:2</strong> for 2 damage.</p>
+    description: ''
   agnosia:
     value: 40
     effect: >-
@@ -49,7 +47,40 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: y1jTBMAFhf6fDlTZ
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Move immediately to a <strong>Primed</strong> square, remove the <strong>Mark</strong>,
+        and <strong>Burst:2</strong> for 2 damage.</p>
+      attack:
+        range:
+          kind: burst
+          value: 2
+          name: Range
+        damage:
+          formula: '2'
+        description: >-
+          <p>Move immediately to a <strong>Primed</strong> square, remove the <strong>Mark</strong>,
+          and <strong>Burst:2</strong> for 2 damage.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!RsXR9Crr9KhYu3Jl.y1jTBMAFhf6fDlTZ'
 effects: []
 folder: v9Izj4qogDXOpAKr
 sort: 0
@@ -60,7 +91,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: RsXR9Crr9KhYu3Jl
 _key: '!actors!RsXR9Crr9KhYu3Jl'

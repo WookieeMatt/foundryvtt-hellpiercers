@@ -18,17 +18,16 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: cone
+      value: 3
     damage:
-      formula: '0'
+      formula: '5'
     description: <p><strong>Cone:3</strong>. Deal 5 damage and pull any unit 1 space towards RETIARIUS.</p>
   special:
     name: Special
     description: >-
-      <p>Deal 10 damage to an adjacent unit. Move that unit to any stained
-      square.</p><h4>Stainwalk</h4><p>When RETIARIUS is on a Stained square, it recovers 10 HP at
-      the end of your turn.</p>
+      <h4>Stainwalk</h4><p>When RETIARIUS is on a Stained square, it recovers 10 HP at the end of
+      your turn.</p>
   agnosia:
     value: null
     effect: >-
@@ -47,7 +46,36 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: hx35wlOSdoNolytA
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: <p>Deal 10 damage to an adjacent unit. Move that unit to any stained square.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '10'
+        description: <p>Deal 10 damage to an adjacent unit. Move that unit to any stained square.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!mciquwCuzAy5zbgl.hx35wlOSdoNolytA'
 effects: []
 folder: PYpf1v41cCASKyNC
 sort: 0
@@ -58,7 +86,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: mciquwCuzAy5zbgl
 _key: '!actors!mciquwCuzAy5zbgl'

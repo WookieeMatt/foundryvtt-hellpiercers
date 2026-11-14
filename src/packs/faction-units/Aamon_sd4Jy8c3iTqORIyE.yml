@@ -54,7 +54,7 @@ items:
           value: 1
           name: Range
         damage:
-          formula: '0'
+          formula: '3'
         description: >-
           <p>When next to or moving near an adjacent wall, Aamon may launch off of it moving up to
           10 spaces in a single direction. Any units along the line of Aamon’s movement take 3
@@ -70,8 +70,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!sd4Jy8c3iTqORIyE.aRy1KW3E2XNXaxKi'
   - _id: oBosDxspeuLn0vlN
     name: Attack 2
@@ -85,10 +85,10 @@ items:
       attack:
         range:
           kind: targets
-          value: 1
+          value: 5
           name: Range
         damage:
-          formula: '0'
+          formula: '5'
         description: >-
           <p><strong>Range:5 Damage:5</strong>. Deal an additional 2 damage to any player within 2
           spaces of the target.</p>
@@ -103,8 +103,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!sd4Jy8c3iTqORIyE.oBosDxspeuLn0vlN'
   - _id: l4yXRTE3WitPcBO1
     name: Attack 3
@@ -119,11 +119,11 @@ items:
         without using this skill, Aamon returns to the ground.</p>
       attack:
         range:
-          kind: targets
-          value: 1
+          kind: charge
+          value: 8
           name: Range
         damage:
-          formula: '0'
+          formula: '5'
         description: >-
           <p><strong>Charge:8</strong>, if Aamon collides with a player character, deal <strong>5
           damage</strong>, end movement and increase Aamon’s <strong>Elevation</strong> by 1.
@@ -140,8 +140,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!sd4Jy8c3iTqORIyE.l4yXRTE3WitPcBO1'
   - _id: TP7Ny9Akt4hfRdFo
     name: Special
@@ -164,8 +164,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!sd4Jy8c3iTqORIyE.TP7Ny9Akt4hfRdFo'
 effects: []
 folder: H0n1mEqWTBCKPrC9
@@ -177,7 +177,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: sd4Jy8c3iTqORIyE
 _key: '!actors!sd4Jy8c3iTqORIyE'

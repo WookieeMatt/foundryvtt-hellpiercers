@@ -21,10 +21,10 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: blast
+      value: 2
     damage:
-      formula: '0'
+      formula: '1'
     description: >-
       <p><strong>Range:4</strong>, <strong>Blast:2</strong>, <strong>Damage:1</strong>. If any
       primed tiles are within the blast of this unit’s attack, the tile unprimes and all tiles in
@@ -65,7 +65,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: R4EymJAfVhSG1hHy
 _key: '!actors!R4EymJAfVhSG1hHy'

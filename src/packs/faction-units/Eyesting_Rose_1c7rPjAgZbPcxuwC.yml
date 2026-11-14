@@ -20,13 +20,12 @@ system:
       kind: targets
       value: 1
     damage:
-      formula: '0'
+      formula: '5'
     description: <p>Increase PRISTIR’s scale by 2. Any occupied spaces take 5 damage and are pushed out.</p>
   special:
     name: Special
     description: >-
-      <p>Deal 10 damage to <strong>Burst:1</strong>, then decrease PRISTIR’s scale by
-      1.</p><h4>Stainwalk</h4><p>When PRISTIR is on <strong>Stain</strong>, allies on connected
+      <h4>Stainwalk</h4><p>When PRISTIR is on <strong>Stain</strong>, allies on connected
       <strong>Stained</strong> squares take 2 less damage when attacked.and PRISTIR takes 2 more
       damage when attacked.</p>
   agnosia:
@@ -47,7 +46,36 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: 67rXperBW54NnBuo
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: <p>Deal 10 damage to <strong>Burst:1</strong>, then decrease PRISTIR’s scale by 1.</p>
+      attack:
+        range:
+          kind: burst
+          value: 1
+          name: Range
+        damage:
+          formula: '10'
+        description: <p>Deal 10 damage to <strong>Burst:1</strong>, then decrease PRISTIR’s scale by 1.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!1c7rPjAgZbPcxuwC.67rXperBW54NnBuo'
 effects: []
 folder: PYpf1v41cCASKyNC
 sort: 0
@@ -58,7 +86,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: 1c7rPjAgZbPcxuwC
 _key: '!actors!1c7rPjAgZbPcxuwC'

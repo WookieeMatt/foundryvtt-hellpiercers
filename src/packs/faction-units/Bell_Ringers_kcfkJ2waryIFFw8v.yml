@@ -21,13 +21,11 @@ system:
       kind: targets
       value: 1
     damage:
-      formula: '0'
+      formula: '1'
     description: <p>Deal 1 damage to an Adjacent creature.</p>
   special:
     name: Special
-    description: >-
-      <p><strong>Range:1, Damage:1</strong>. Shatter: Deal 5 damage. One of Kodon’s allies gains
-      <strong>Haste:1</strong>.</p>
+    description: ''
   agnosia:
     value: null
     effect: ''
@@ -44,7 +42,40 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: V9Yx4qXoCevQLGEN
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Range:1, Damage:1</strong>. Shatter: Deal 5 damage. One of Kodon’s allies gains
+        <strong>Haste:1</strong>.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '1'
+        description: >-
+          <p><strong>Range:1, Damage:1</strong>. Shatter: Deal 5 damage. One of Kodon’s allies gains
+          <strong>Haste:1</strong>.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!kcfkJ2waryIFFw8v.V9Yx4qXoCevQLGEN'
 effects: []
 folder: hsXh5sb6AljquH3A
 sort: 0
@@ -55,7 +86,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: kcfkJ2waryIFFw8v
 _key: '!actors!kcfkJ2waryIFFw8v'

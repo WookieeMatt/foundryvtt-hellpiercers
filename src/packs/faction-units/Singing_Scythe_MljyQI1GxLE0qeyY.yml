@@ -19,10 +19,10 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: charge
+      value: 7
     damage:
-      formula: '0'
+      formula: '5'
     description: >-
       <p><strong>Charge:7, Damage:5</strong>. Running into other units does not interrupt this
       <strong>Charge</strong>. Deal damage to all units run over or into by this attack, enemy or
@@ -60,7 +60,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: MljyQI1GxLE0qeyY
 _key: '!actors!MljyQI1GxLE0qeyY'

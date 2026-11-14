@@ -29,9 +29,7 @@ system:
       Miniboss.</p>
   special:
     name: Special
-    description: >-
-      <p><strong>Charge:5</strong>, <strong>Damage:4</strong>. Sacrifice a <strong>Rider</strong> to
-      deal 3 additional damage and inflict <strong>Bleed:2</strong>.</p>
+    description: ''
   agnosia:
     value: 30
     effect: >-
@@ -50,7 +48,41 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: VztOFO6KT5RLcqtD
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Charge:5</strong>, <strong>Damage:4</strong>. Sacrifice a <strong>Rider</strong>
+        to deal 3 additional damage and inflict <strong>Bleed:2</strong>.</p>
+      attack:
+        range:
+          kind: charge
+          value: 5
+          name: Range
+        damage:
+          formula: '4'
+        description: >-
+          <p><strong>Charge:5</strong>, <strong>Damage:4</strong>. Sacrifice a
+          <strong>Rider</strong> to deal 3 additional damage and inflict
+          <strong>Bleed:2</strong>.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!efIzFHmYGY5KKoS2.VztOFO6KT5RLcqtD'
 effects: []
 folder: KoxLGRv30kQgZFnI
 sort: 0
@@ -61,7 +93,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: efIzFHmYGY5KKoS2
 _key: '!actors!efIzFHmYGY5KKoS2'

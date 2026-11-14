@@ -18,8 +18,8 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: burst
+      value: 5
     damage:
       formula: '0'
     description: <p>Burst:5 Damage:0. Allied units in the burst deal +2 Damage on their next attack.</p>
@@ -55,7 +55,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: UN0L2laNFC76Navy
 _key: '!actors!UN0L2laNFC76Navy'

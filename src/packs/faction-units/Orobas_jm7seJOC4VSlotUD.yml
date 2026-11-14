@@ -44,11 +44,11 @@ items:
         deal 3 damage.</p>
       attack:
         range:
-          kind: targets
-          value: 1
+          kind: line
+          value: 4
           name: Range
         damage:
-          formula: '0'
+          formula: '8'
         description: >-
           <p><strong>Line:4</strong>. If the target is on a Stained square, deal 8 damage. Otherwise
           deal 3 damage.</p>
@@ -63,8 +63,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!jm7seJOC4VSlotUD.mhnGkYe36jYwJOQD'
   - _id: lWsjzha1RWnq0IRa
     name: Attack 2
@@ -81,7 +81,7 @@ items:
           value: 1
           name: Range
         damage:
-          formula: '0'
+          formula: '5'
         description: >-
           <p>Deal 5 damage to an adjacent unit. If it kills that creature, spawn one new miniboss of
           your choosing under your control.</p>
@@ -96,8 +96,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!jm7seJOC4VSlotUD.lWsjzha1RWnq0IRa'
   - _id: 9IsH2G3HMVjjf3q6
     name: Attack 3
@@ -114,7 +114,7 @@ items:
           value: 1
           name: Range
         damage:
-          formula: '0'
+          formula: '5'
         description: >-
           <p>Move any unit adjacent to any stained square onto that stained square, and deal that
           unit 5 damage.</p>
@@ -129,8 +129,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!jm7seJOC4VSlotUD.9IsH2G3HMVjjf3q6'
   - _id: eYIYAaAbHUal554k
     name: Special
@@ -154,8 +154,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!jm7seJOC4VSlotUD.eYIYAaAbHUal554k'
 effects: []
 folder: PYpf1v41cCASKyNC
@@ -167,7 +167,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: jm7seJOC4VSlotUD
 _key: '!actors!jm7seJOC4VSlotUD'

@@ -29,7 +29,7 @@ system:
       Flower</strong>.</p>
   special:
     name: Special
-    description: <p>Deal 3 damage and <strong>Bleed:2</strong> to an adjacent unit.</p>
+    description: ''
   agnosia:
     value: null
     effect: >-
@@ -50,7 +50,36 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: CkfD7jfcdmYSsQt2
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: <p>Deal 3 damage and <strong>Bleed:2</strong> to an adjacent unit.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '3'
+        description: <p>Deal 3 damage and <strong>Bleed:2</strong> to an adjacent unit.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!lRyjAB6pGyVjTzMV.CkfD7jfcdmYSsQt2'
 effects: []
 folder: PYpf1v41cCASKyNC
 sort: 0
@@ -61,7 +90,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: lRyjAB6pGyVjTzMV
 _key: '!actors!lRyjAB6pGyVjTzMV'

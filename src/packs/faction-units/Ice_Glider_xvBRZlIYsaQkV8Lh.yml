@@ -18,8 +18,8 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: blast
+      value: 3
     damage:
       formula: '0'
     description: >-
@@ -28,9 +28,7 @@ system:
   special:
     name: Special
     description: >-
-      <p><strong>Charge:8 Damage:2</strong>. <strong>Shatter:</strong> 5 damage. This unit may
-      choose a new direction to continue the charge while gaining no additional spaces of movement
-      for the charge.</p><p>This unit does not trigger harmful or negative terrain effects while
+      <p>This unit does not trigger harmful or negative terrain effects while
       <strong>Charging</strong>.</p>
   agnosia:
     value: 45
@@ -48,7 +46,42 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: sFI64G97jcIg85hE
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Charge:8 Damage:2</strong>. <strong>Shatter:</strong> 5 damage. This unit may
+        choose a new direction to continue the charge while gaining no additional spaces of movement
+        for the charge.</p>
+      attack:
+        range:
+          kind: charge
+          value: 8
+          name: Range
+        damage:
+          formula: '2'
+        description: >-
+          <p><strong>Charge:8 Damage:2</strong>. <strong>Shatter:</strong> 5 damage. This unit may
+          choose a new direction to continue the charge while gaining no additional spaces of
+          movement for the charge.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!xvBRZlIYsaQkV8Lh.sFI64G97jcIg85hE'
 effects: []
 folder: hsXh5sb6AljquH3A
 sort: 0
@@ -59,7 +92,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: xvBRZlIYsaQkV8Lh
 _key: '!actors!xvBRZlIYsaQkV8Lh'

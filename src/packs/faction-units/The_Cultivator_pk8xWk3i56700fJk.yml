@@ -21,17 +21,14 @@ system:
       kind: targets
       value: 1
     damage:
-      formula: '0'
+      formula: '2'
     description: >-
       <p><strong>Range:1 Damage:2</strong>. This unit may force a minion to move one space. If it
       ends its movement adjacent to this unit, the minion is devoured and this attack deals 2
       additional <strong>Damage</strong>.</p>
   special:
     name: Special
-    description: >-
-      <p><strong>Line:3 Pull:1 Damage:1</strong>. If a unit pulled by this attack is made adjacent
-      to The Cultivator, the pulled unit gains <strong>Pin:1</strong>.</p><p>When this unit attacks
-      a unit which is pinned, inflict <strong>Poison:2</strong></p>
+    description: <p>When this unit attacks a unit which is pinned, inflict <strong>Poison:2</strong></p>
   agnosia:
     value: 50
     effect: >-
@@ -52,7 +49,40 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: VWByOt6UCaTHQo4t
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Line:3 Pull:1 Damage:1</strong>. If a unit pulled by this attack is made adjacent
+        to The Cultivator, the pulled unit gains <strong>Pin:1</strong>.</p>
+      attack:
+        range:
+          kind: line
+          value: 3
+          name: Range
+        damage:
+          formula: '1'
+        description: >-
+          <p><strong>Line:3 Pull:1 Damage:1</strong>. If a unit pulled by this attack is made
+          adjacent to The Cultivator, the pulled unit gains <strong>Pin:1</strong>.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!pk8xWk3i56700fJk.VWByOt6UCaTHQo4t'
 effects: []
 folder: H0n1mEqWTBCKPrC9
 sort: 0
@@ -63,7 +93,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: pk8xWk3i56700fJk
 _key: '!actors!pk8xWk3i56700fJk'

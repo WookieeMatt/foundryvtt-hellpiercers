@@ -156,23 +156,33 @@ export function checkUnlocked(item, party = getParty()) {
  *  - every location under construction gains a build box, and goes live when complete
  *  - convoys that have travelled long enough arrive
  * The GM gets a private summary; players are only told a new phase began.
- * @returns {Promise<{ phase: number, built: string[], arrived: string[] }>}
+ * @returns {Promise<{ phase: number, built: string[], arrived: string[], grown: string[] }>}
  */
 export async function advancePhase() {
   if (!game.user.isGM) {
     ui.notifications.warn("Only the GM advances the STRATCOM phase.");
-    return { phase: phase.get(), built: [], arrived: [] };
+    return { phase: phase.get(), built: [], arrived: [], grown: [] };
   }
   const next = phase.get() + 1;
   await game.settings.set(SYSTEM(), "stratcomPhase", next);
 
   const built = [];
   const arrived = [];
+  const grown = [];
   for (const faction of getFactions()) {
     const system = faction.system;
     const locations = system.locations.map(l => l.toObject());
     const convoys = system.convoys.map(c => c.toObject());
+    const hazards = system.hazards.map(h => h.toObject());
     let changed = false;
+
+    // Staged map hazards that grow on their own (Devolve) take a step every phase.
+    for (const hazard of hazards) {
+      if (hazard.status !== "active" || !hazard.auto || hazard.stage >= hazard.maxStage) continue;
+      hazard.stage += 1;
+      changed = true;
+      grown.push(`${faction.name}: ${hazard.name} reaches stage ${hazard.stage}`);
+    }
 
     for (const location of locations) {
       if (location.status !== "building") continue;
@@ -192,18 +202,25 @@ export async function advancePhase() {
         );
       }
     }
-    if (changed) await faction.update({ "system.locations": locations, "system.convoys": convoys });
+    if (changed) {
+      await faction.update({
+        "system.locations": locations,
+        "system.convoys": convoys,
+        "system.hazards": hazards,
+      });
+    }
   }
 
   const lines = [
     ...built.map(b => `<li><i class="fa-solid fa-hammer"></i> Completed: ${esc(b)}</li>`),
     ...arrived.map(a => `<li><i class="fa-solid fa-truck-fast"></i> Arrived: ${esc(a)}</li>`),
+    ...grown.map(g => `<li><i class="fa-solid fa-biohazard"></i> ${esc(g)}</li>`),
   ];
   await announce(`<header>STRATCOM phase ${next}</header>`);
   if (lines.length)
     await whisperGM(`<header>Phase ${next}: GM summary</header><ul>${lines.join("")}</ul>`);
-  Hooks.callAll("hellpiercers.stratcomPhase", next, { built, arrived });
-  return { phase: next, built, arrived };
+  Hooks.callAll("hellpiercers.stratcomPhase", next, { built, arrived, grown });
+  return { phase: next, built, arrived, grown };
 }
 
 /* -------------------------------------------- */

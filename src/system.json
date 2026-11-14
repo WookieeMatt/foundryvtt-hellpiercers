@@ -2,7 +2,7 @@
   "id": "hellpiercers",
   "title": "HELLPIERCERS",
   "description": "HELL IS A PRISON. BREAK ITS BARS. Tactical Hell-slaying action with base building, overwhelming build options, and map based strategy.",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "compatibility": {
     "minimum": "14.370",
     "verified": "14.370",
@@ -97,7 +97,43 @@
       }
     }
   },
-  "relationships": {},
+  "relationships": {
+    "recommends": [
+      {
+        "id": "dice-so-nice",
+        "type": "module",
+        "reason": "3D dice, themed by roll type.",
+        "compatibility": {
+          "minimum": "6.4.5"
+        }
+      },
+      {
+        "id": "sequencer",
+        "type": "module",
+        "reason": "Plays the built-in animations (and is required by Automated Animations)."
+      },
+      {
+        "id": "socketlib",
+        "type": "module",
+        "reason": "Required by Automated Animations."
+      },
+      {
+        "id": "autoanimations",
+        "type": "module",
+        "reason": "Automated Animations: configurable animations for attacks and effects."
+      },
+      {
+        "id": "JB2A_DnD5e",
+        "type": "module",
+        "reason": "JB2A Free animation library for the built-in effects."
+      },
+      {
+        "id": "jb2a_patreon",
+        "type": "module",
+        "reason": "JB2A Premium (Patreon) animation library; more colours for the built-in effects."
+      }
+    ]
+  },
   "socket": true,
   "initiative": null,
   "grid": { "diagonals": 6, "distance": 1, "type": 1, "units": "" },
@@ -107,5 +143,5 @@
   "url": "https://github.com/WookieeMatt/foundryvtt-hellpiercers",
   "background": "systems/hellpiercers/assets/splash.jpg",
   "manifest": "https://github.com/WookieeMatt/foundryvtt-hellpiercers/releases/latest/download/system.json",
-  "download": "https://github.com/WookieeMatt/foundryvtt-hellpiercers/releases/download/v0.5.0/system.zip"
+  "download": "https://github.com/WookieeMatt/foundryvtt-hellpiercers/releases/download/v0.6.0/system.zip"
 }

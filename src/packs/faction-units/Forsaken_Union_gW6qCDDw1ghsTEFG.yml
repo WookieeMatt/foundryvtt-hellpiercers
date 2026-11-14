@@ -20,7 +20,7 @@ system:
       kind: targets
       value: 1
     damage:
-      formula: '0'
+      formula: '2'
     description: <p>Deal 2 damage to an adjacent creature.</p>
   special:
     name: Special
@@ -55,7 +55,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: gW6qCDDw1ghsTEFG
 _key: '!actors!gW6qCDDw1ghsTEFG'

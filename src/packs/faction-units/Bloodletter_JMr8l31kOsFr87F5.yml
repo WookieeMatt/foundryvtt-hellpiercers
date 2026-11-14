@@ -18,7 +18,7 @@ system:
       kind: targets
       value: 1
     damage:
-      formula: '0'
+      formula: '1'
     description: >-
       <p><strong>Range:1 Damage:1</strong>. Apply 1 bleed to target. If this target has any
       <strong>Wound</strong>, deal 1 additional damage and inflict <strong>Bleed:1</strong></p>
@@ -52,7 +52,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: JMr8l31kOsFr87F5
 _key: '!actors!JMr8l31kOsFr87F5'

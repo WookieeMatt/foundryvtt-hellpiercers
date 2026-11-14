@@ -151,6 +151,43 @@ await hellpiercers.asGM("damage", { targets: [token.document.uuid], amount: 4, o
 `automateEffects`, `armorRule` (RAW flat -1, or per stack), `bleedRule`, `trackActions`,
 `chatCards`, `playerCountOverride`.
 
+## Module integrations
+
+All optional; the system runs without any of them.
+
+- **Dice So Nice** (setting *Themed Dice*): damage, healing, RECON, the Tone Die, Provoke and every
+  faction's Quality dice get their own HELLPIERCERS colourset (`hellpiercers-damage`, `-heal`, `-tone`,
+  `-recon`, `-provoke`, `-quality`, `-<faction id>`). `hellpiercers.animations.tint(roll, "damage")`
+  tints a roll before you evaluate it. Provoke dice are attached to the Provoke card so they roll in 3D.
+- **Animations** (setting *Animations*): `auto` tries Automated Animations first and falls back to the
+  built-in JB2A effects; `automated-animations`, `builtin` and `none` pick one. Built-in effects need
+  Sequencer and a JB2A library. The *JB2A Library* setting picks Free or Premium; in `auto` Premium is
+  used when `jb2a_patreon` is active, and every effect falls back to the best path the installed library
+  has (`src/integrations/jb2a-catalog.mjs` lists them, Premium first, Free last). Automated Animations
+  matches on the attack's name, or on `HELLPIERCERS Melee|Ranged|Burst|Line|Cone... [Element]`, and
+  animates Status Effects itself.
+- Hooks fired for animations (use them from your own modules): `hellpiercers.attack ({ actor, item,
+  attack, targets })`, `hellpiercers.hit ({ tokens, damage })`, `hellpiercers.healed (actor, amount)`,
+  `hellpiercers.rezzed (actor)`, `hellpiercers.limitReady (actor)`.
+- Macro API: `await hellpiercers.animations.attack({ actor, targets, attack })`,
+  `.impact(tokens, { conditions })`, `.single("heal" | "rez" | "defeat" | "provoke" | "limit" | "agnosia" | "teleport", token)`,
+  `.status(token, "blazing", "on" | "off")`, `.describe()` (what is installed and which provider/tier
+  is in use).
+
+## Faction actions and map hazards
+
+`faction.system.useAction(name, { location, force })` posts a faction's STRATCOM action to the GM and
+places its staged map hazard if it has one (Devolve advances every STRATCOM phase; Eyerot grows by 1
+per use at the chosen location). `addHazard`, `advanceHazard(id, delta)`, `clearHazard(id)`,
+`removeHazard(id)` manage hazards by hand ("Create Map Hazard"). The data is in
+`src/stratcom/data/faction-actions.json` (extracted by `scripts/data/parse_actions.py`); the faction
+sheet has an Actions tab (GM only).
+
+## Boss actions
+
+A Boss's Actions stat is `actions/players` (1/2 is one action for every two players, rounded down,
+minimum 1). The boss sheet shows the result and a button to recalculate it mid-encounter.
+
 ## Compendiums
 
 `HELLPIERCERS Macros`, `Player Gear`, `Player Abilities`, plus (v0.5.0): `Faction Units` (95 Actors

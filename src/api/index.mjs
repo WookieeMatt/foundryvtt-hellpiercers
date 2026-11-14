@@ -12,6 +12,7 @@
  */
 
 import { Damage } from "../data/damage.mjs";
+import { tint } from "../integrations/dice.mjs";
 import { stratcom } from "../stratcom/engine.mjs";
 import { findCombatant, spendAction } from "../taccom/actions.mjs";
 import { TurnEngine } from "../taccom/engine.mjs";
@@ -180,7 +181,7 @@ const RECON_OUTCOMES = Object.freeze({
  */
 export async function reconRoll({ actor, tags = 0, label = "" } = {}) {
   const speakerActor = resolve(actor)[0] ?? null;
-  const roll = await new foundry.dice.Roll("2d6 + @tags", { tags }).evaluate();
+  const roll = await tint(new foundry.dice.Roll("2d6 + @tags", { tags }), "recon").evaluate();
   const outcome =
     roll.total >= 10
       ? RECON_OUTCOMES.success
@@ -207,7 +208,7 @@ export async function reconRoll({ actor, tags = 0, label = "" } = {}) {
  * @param {string} [label]
  */
 export async function toneDie(label = "") {
-  const roll = await new foundry.dice.Roll("1d10").evaluate();
+  const roll = await tint(new foundry.dice.Roll("1d10"), "tone").evaluate();
   const t = roll.total;
   const band =
     t <= 2

@@ -17,21 +17,18 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: wall
+      value: 5
     damage:
-      formula: '0'
+      formula: '6'
     description: >-
       <p><strong>Wall:5</strong>, <strong>Push:1</strong>, <strong>Damage:6</strong>. Place
       <strong>Obstacle:1</strong> on every space a unit was pushed from.</p>
   special:
     name: Special
     description: >-
-      <p><strong>Range:6</strong>, <strong>Damage:6</strong>, <strong>Seeking</strong>. You may
-      choose to deal <strong>+2 Damage</strong> and gain <strong>Armor:2</strong> if this attack is
-      made while adjacent to an <strong>Obstacle</strong> or allied unit. Remove the
-      <strong>Obstacle</strong> or Allied unit from the field.</p><p>Unit is immune to any effects
-      that force movement, such as <strong>Push</strong> or <strong>Pull</strong>.</p>
+      <p>Unit is immune to any effects that force movement, such as <strong>Push</strong> or
+      <strong>Pull</strong>.</p>
   agnosia:
     value: 30
     effect: >-
@@ -50,7 +47,44 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: 40cW7kuGm8wBEaAv
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Range:6</strong>, <strong>Damage:6</strong>, <strong>Seeking</strong>. You may
+        choose to deal <strong>+2 Damage</strong> and gain <strong>Armor:2</strong> if this attack
+        is made while adjacent to an <strong>Obstacle</strong> or allied unit. Remove the
+        <strong>Obstacle</strong> or Allied unit from the field.</p>
+      attack:
+        range:
+          kind: targets
+          value: 6
+          name: Range
+        damage:
+          formula: '6'
+        description: >-
+          <p><strong>Range:6</strong>, <strong>Damage:6</strong>, <strong>Seeking</strong>. You may
+          choose to deal <strong>+2 Damage</strong> and gain <strong>Armor:2</strong> if this attack
+          is made while adjacent to an <strong>Obstacle</strong> or allied unit. Remove the
+          <strong>Obstacle</strong> or Allied unit from the field.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!M6xNbHS2PkElotYB.40cW7kuGm8wBEaAv'
 effects: []
 folder: FG5KoiLA0hEjrX5J
 sort: 0
@@ -61,7 +95,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: M6xNbHS2PkElotYB
 _key: '!actors!M6xNbHS2PkElotYB'

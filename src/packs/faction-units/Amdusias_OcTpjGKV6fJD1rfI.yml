@@ -51,11 +51,11 @@ items:
         damage. <strong>Shattered</strong> units gain <strong>Shock:1</strong>.</p>
       attack:
         range:
-          kind: targets
-          value: 1
+          kind: arc
+          value: 9
           name: Range
         damage:
-          formula: '0'
+          formula: '4'
         description: >-
           <p><strong>Charge, Arc</strong>: 9,. <strong>Damage:4</strong>. <strong>Shatter:
           </strong>8 damage. <strong>Shattered</strong> units gain <strong>Shock:1</strong>.</p>
@@ -70,8 +70,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!OcTpjGKV6fJD1rfI.Bq0NWbp4lwHKjUp2'
   - _id: d1L4gfQRDjnBPjSi
     name: Attack 2
@@ -86,10 +86,10 @@ items:
       attack:
         range:
           kind: targets
-          value: 1
+          value: 3
           name: Range
         damage:
-          formula: '0'
+          formula: '3'
         description: >-
           <p><strong>Range:3</strong>. <strong>Damage:3</strong>. Targeted unit is
           <strong>Frozen:1</strong>. <strong>Shatter</strong>: 3 damage. Repeat this attack against
@@ -105,8 +105,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!OcTpjGKV6fJD1rfI.d1L4gfQRDjnBPjSi'
   - _id: w4qSs5G3HagefcoP
     name: Special
@@ -151,8 +151,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!OcTpjGKV6fJD1rfI.w4qSs5G3HagefcoP'
 effects: []
 folder: hsXh5sb6AljquH3A
@@ -164,7 +164,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: OcTpjGKV6fJD1rfI
 _key: '!actors!OcTpjGKV6fJD1rfI'

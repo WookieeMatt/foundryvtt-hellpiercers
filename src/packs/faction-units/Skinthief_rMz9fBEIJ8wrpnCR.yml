@@ -34,16 +34,12 @@ system:
   special:
     name: Special
     description: >-
-      <p>Target one adjacent unit. Deal 1D6 damage and create a <strong>Burst:2 Shaded:1</strong>
-      effect</p><p>centered on the target. This shade does not move with the target and vanishes at
-      the start of this unit's next turn, or when they are defeated, whichever happens
-      first.</p><p>Whenever a Skinthief is within a <strong>Shaded</strong> space, they may end
-      their turn and become invisible. While invisible, this unit may not move, attack, trigger
-      Provoke, or otherwise interact with the current TACCOM engagement. Remove their token or
-      marker from the map but remember where they are. When HELLPIERCERS move within
-      <strong>Burst:3</strong> of this unit, interrupt their movement, become visible and,
-      reposition within <strong>Range:2</strong>. If you reposition adjacent to the HELLPIERCER,
-      deal 1D6 damage.</p>
+      <p>Whenever a Skinthief is within a <strong>Shaded</strong> space, they may end their turn and
+      become invisible. While invisible, this unit may not move, attack, trigger Provoke, or
+      otherwise interact with the current TACCOM engagement. Remove their token or marker from the
+      map but remember where they are. When HELLPIERCERS move within <strong>Burst:3</strong> of
+      this unit, interrupt their movement, become visible and, reposition within
+      <strong>Range:2</strong>. If you reposition adjacent to the HELLPIERCER, deal 1D6 damage.</p>
   agnosia:
     value: 15
     effect: >-
@@ -63,7 +59,73 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: 1a35wZRBAqzTGYDT
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Target one adjacent unit. Deal 1D6 damage and create a <strong>Burst:2 Shaded:1</strong>
+        effect</p>
+      attack:
+        range:
+          kind: burst
+          value: 2
+          name: Range
+        damage:
+          formula: '6'
+        description: >-
+          <p>Target one adjacent unit. Deal 1D6 damage and create a <strong>Burst:2
+          Shaded:1</strong> effect</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!rMz9fBEIJ8wrpnCR.1a35wZRBAqzTGYDT'
+  - _id: c7yWBVGJDo4OBkYX
+    name: Attack 3
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>centered on the target. This shade does not move with the target and vanishes at the
+        start of this unit's next turn, or when they are defeated, whichever happens first.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>centered on the target. This shade does not move with the target and vanishes at the
+          start of this unit's next turn, or when they are defeated, whichever happens first.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 100000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!rMz9fBEIJ8wrpnCR.c7yWBVGJDo4OBkYX'
 effects: []
 folder: FG5KoiLA0hEjrX5J
 sort: 0
@@ -74,7 +136,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: rMz9fBEIJ8wrpnCR
 _key: '!actors!rMz9fBEIJ8wrpnCR'

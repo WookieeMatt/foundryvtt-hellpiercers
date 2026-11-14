@@ -12,6 +12,8 @@ export class MinionSheet extends HellpiercersActorSheetMixin(ToggleMixin(ActorSh
       editDamage: MinionSheet.#editDamage,
       editRange: MinionSheet.#editRange,
       onAttack: MinionSheet.#onAttack,
+      onExtraAttack: MinionSheet.#onExtraAttack,
+      addExtraAttack: MinionSheet.#addExtraAttack,
     },
     window: { resizable: true },
     position: { width: 600, height: 681 },
@@ -49,6 +51,22 @@ export class MinionSheet extends HellpiercersActorSheetMixin(ToggleMixin(ActorSh
     const TextEditor = foundry.applications.ux.TextEditor.implementation;
     Object.assign(ctx, await super._preparePartContext(partId, ctx, opts));
     if (partId === "abilities") {
+      // Minibosses have more than one attack: the extras are ability items.
+      ctx.extraAttacks = await Promise.all(
+        this.actor.itemTypes.ability
+          .filter(i => i.system.action === "attack")
+          .map(async item => ({
+            id: item.id,
+            name: item.name,
+            enriched: await TextEditor.enrichHTML(
+              item.system.effect || item.system.attack?.description,
+              {
+                secrets: this.actor.isOwner,
+                rollData: this.actor.getRollData.bind(this.actor),
+              }
+            ),
+          }))
+      );
       ctx.strike = {
         field: ctx.systemFields.strike.fields.description,
         enriched: await TextEditor.enrichHTML(this.actor.system.strike.description, {
@@ -104,6 +122,30 @@ export class MinionSheet extends HellpiercersActorSheetMixin(ToggleMixin(ActorSh
     );
     if (!new_range) return;
     await this.document.update({ "system.strike.range": _replace(new_range) });
+  }
+
+  /** @this {MinionSheet} */
+  static async #onExtraAttack(_ev, target) {
+    const item = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    this.minimize();
+    await ui.attackHud.attack({ actor: this.actor, item });
+    this.maximize();
+  }
+
+  /** @this {MinionSheet} */
+  static async #addExtraAttack() {
+    const count = this.actor.itemTypes.ability.filter(i => i.system.action === "attack").length;
+    await getDocumentClass("Item").create(
+      {
+        name: `Attack ${count + 2}`,
+        type: "ability",
+        system: {
+          action: "attack",
+          attack: { damage: { formula: "3" }, range: { kind: "targets", value: 1 } },
+        },
+      },
+      { parent: this.actor, renderSheet: true }
+    );
   }
 
   /** @this {MinionSheet} */

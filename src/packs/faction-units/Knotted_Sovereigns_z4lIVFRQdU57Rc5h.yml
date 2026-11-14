@@ -17,20 +17,18 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: charge
+      value: 4
     damage:
-      formula: '0'
+      formula: '3'
     description: >-
       <p><strong>Charge:4</strong>, <strong>Damage:3</strong>. During Charge, this unit may move
       through its own allies. This unit may consume one such ally to gain 1 Charge.</p>
   special:
     name: Special
     description: >-
-      <p><strong>Arc:3</strong>, <strong>Damage:3</strong>. For each unoccupied space in the Arc
-      pattern, place 1 Egg.</p><p>At the start of this unit's turn, it may spend Charge to gain 1
-      Scale and -1 Speed for each Charge spent. This temporary buff is lost at the start of their
-      next turn.</p>
+      <p>At the start of this unit's turn, it may spend Charge to gain 1 Scale and -1 Speed for each
+      Charge spent. This temporary buff is lost at the start of their next turn.</p>
   agnosia:
     value: 30
     effect: >-
@@ -50,7 +48,40 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: sxo3pJ5ZvC7iQ4ot
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Arc:3</strong>, <strong>Damage:3</strong>. For each unoccupied space in the Arc
+        pattern, place 1 Egg.</p>
+      attack:
+        range:
+          kind: arc
+          value: 3
+          name: Range
+        damage:
+          formula: '3'
+        description: >-
+          <p><strong>Arc:3</strong>, <strong>Damage:3</strong>. For each unoccupied space in the Arc
+          pattern, place 1 Egg.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!z4lIVFRQdU57Rc5h.sxo3pJ5ZvC7iQ4ot'
 effects: []
 folder: KiERE0EuRRjFBbV4
 sort: 0
@@ -61,7 +92,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: z4lIVFRQdU57Rc5h
 _key: '!actors!z4lIVFRQdU57Rc5h'

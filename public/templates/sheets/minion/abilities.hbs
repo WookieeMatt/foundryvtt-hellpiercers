@@ -91,6 +91,27 @@
     </div>
   </div>
 
+  {{#each extraAttacks}}
+    <div class="item-block item attack extra" data-item-id="{{id}}">
+      <label class="flexrow">
+        <span>{{name}}</span>
+        <a
+          class="weapon-damage button icon fa-solid fa-dice"
+          data-action="onExtraAttack"
+        ></a>
+        <a class="control" role="button" data-context="weapon"><i
+            class="fa-solid fa-bars"
+          ></i></a>
+      </label>
+      <div class="effect"><div class="editor-content">{{{enriched}}}</div></div>
+    </div>
+  {{/each}}
+  {{#if editable}}
+    <button type="button" data-action="addExtraAttack">
+      <i class="fa-solid fa-plus"></i>&nbsp;Add Attack
+    </button>
+  {{/if}}
+
   <div class="item-block special">
     <label for="{{rootId}}-system.special.name">
       {{localize "HELLPIERCERS.ACTOR.FIELDS.special.label"}}

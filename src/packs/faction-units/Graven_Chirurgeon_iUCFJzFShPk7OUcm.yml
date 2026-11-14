@@ -19,7 +19,7 @@ system:
     name: Strike
     range:
       kind: targets
-      value: 1
+      value: 4
     damage:
       formula: '0'
     description: >-
@@ -28,9 +28,7 @@ system:
       stacks of Wound removed or the Effect's current stacks, whichever is lower.</p>
   special:
     name: Special
-    description: >-
-      <p>Select a target within Line of Sight with an active <strong>Effect</strong>. Increase that
-      Effect’s intensity by 1.</p>
+    description: ''
   agnosia:
     value: 20
     effect: >-
@@ -49,7 +47,40 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: 5C6O0AqdNRhe9T7I
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Select a target within Line of Sight with an active <strong>Effect</strong>. Increase
+        that Effect’s intensity by 1.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>Select a target within Line of Sight with an active <strong>Effect</strong>. Increase
+          that Effect’s intensity by 1.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!iUCFJzFShPk7OUcm.5C6O0AqdNRhe9T7I'
 effects: []
 folder: KoxLGRv30kQgZFnI
 sort: 0
@@ -60,7 +91,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: iUCFJzFShPk7OUcm
 _key: '!actors!iUCFJzFShPk7OUcm'

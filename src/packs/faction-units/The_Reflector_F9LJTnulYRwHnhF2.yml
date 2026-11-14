@@ -18,21 +18,17 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
+      kind: burst
       value: 1
     damage:
-      formula: '0'
+      formula: '3'
     description: <p><strong>Range:2, Burst:1, Damage:3</strong></p>
   special:
     name: Special
     description: >-
-      <p>This unit may forgo attacking this round and instead gain:</p><p>When a unit within
-      R<strong>ange:6</strong> becomes the target of an attack, this unit may move up to 6 spaces
-      and take damage in the targeted unit’s stead. If the attacking unit’s position is within
-      <strong>Range:2</strong> of the target, you may trigger <strong>Averting
-      Palisade.</strong></p><p>When attacked by a unit within <strong>Range:2</strong> of this unit,
-      it may force the attacking unit to gain one elevation. If the elevated unit has no means to
-      maintain their elevation, they will begin falling at the start of their next turn.</p>
+      <p>When attacked by a unit within <strong>Range:2</strong> of this unit, it may force the
+      attacking unit to gain one elevation. If the elevated unit has no means to maintain their
+      elevation, they will begin falling at the start of their next turn.</p>
   agnosia:
     value: 40
     effect: >-
@@ -54,7 +50,73 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: hGxnYpoSmRgLsbtL
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: <p>This unit may forgo attacking this round and instead gain:</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '0'
+        description: <p>This unit may forgo attacking this round and instead gain:</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!F9LJTnulYRwHnhF2.hGxnYpoSmRgLsbtL'
+  - _id: kwBScfkuOMA6zCIq
+    name: Attack 3
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>When a unit within R<strong>ange:6</strong> becomes the target of an attack, this unit
+        may move up to 6 spaces and take damage in the targeted unit’s stead. If the attacking
+        unit’s position is within <strong>Range:2</strong> of the target, you may trigger
+        <strong>Averting Palisade.</strong></p>
+      attack:
+        range:
+          kind: targets
+          value: 2
+          name: Range
+        damage:
+          formula: '0'
+        description: >-
+          <p>When a unit within R<strong>ange:6</strong> becomes the target of an attack, this unit
+          may move up to 6 spaces and take damage in the targeted unit’s stead. If the attacking
+          unit’s position is within <strong>Range:2</strong> of the target, you may trigger
+          <strong>Averting Palisade.</strong></p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 100000
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!F9LJTnulYRwHnhF2.kwBScfkuOMA6zCIq'
 effects: []
 folder: H0n1mEqWTBCKPrC9
 sort: 0
@@ -65,7 +127,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: F9LJTnulYRwHnhF2
 _key: '!actors!F9LJTnulYRwHnhF2'

@@ -1,0 +1,114 @@
+<section
+  class="tab actions {{tab.cssClass}} scrollable flexcol"
+  data-tab="{{tab.id}}"
+  data-group="primary"
+>
+  <h3>STRATCOM actions</h3>
+  {{#unless actions.length}}
+    <p class="hint">
+      This faction prints no STRATCOM actions. Upgrades may grant some.
+    </p>
+  {{/unless}}
+  <ul class="stratcom-actions">
+    {{#each actions}}
+      <li
+        class="action {{#if locked}}locked{{/if}}"
+        data-action-name="{{name}}"
+      >
+        <div class="row">
+          <b>{{name}}</b>
+          {{#if crown}}
+            <span
+              class="crown-gate"
+              title="Crown gate: usable once the Crown has fallen to {{crown}}"
+            >
+              {{#each crownPips}}<i class="fa-solid fa-crown"></i>{{/each}}
+              {{#if locked}}<i class="fa-solid fa-lock"></i>{{/if}}
+            </span>
+          {{/if}}
+          {{#if @root.isGM}}
+            <button type="button" data-action="useAction">
+              <i class="fa-solid fa-bolt"></i> Use
+            </button>
+          {{/if}}
+        </div>
+        {{#if flavor}}<p class="flavor"><em>{{flavor}}</em></p>{{/if}}
+        <div class="body">{{{body}}}</div>
+        {{#if hazard}}<p class="hint">
+            Creates the {{hazard.name}} map hazard ({{hazard.stages}}
+            stages{{#if hazard.auto}}, advances every STRATCOM phase{{/if}}).
+          </p>{{/if}}
+      </li>
+    {{/each}}
+  </ul>
+
+  {{#if mechanics.length}}
+    <h3>Unique mechanics</h3>
+    <ul class="stratcom-actions">
+      {{#each mechanics}}
+        <li class="action" data-action-name="{{name}}">
+          <b>{{name}}</b>
+          {{#if flavor}}<p class="flavor"><em>{{flavor}}</em></p>{{/if}}
+          <div class="body">{{{body}}}</div>
+        </li>
+      {{/each}}
+    </ul>
+  {{/if}}
+
+  <h3>
+    Map hazards
+    {{#if @root.isGM}}<button type="button" data-action="addHazard">
+        <i class="fa-solid fa-plus"></i> Create Map Hazard
+      </button>{{/if}}
+  </h3>
+  {{#unless hazards.length}}<p class="hint">
+      No active map hazards.
+    </p>{{/unless}}
+  <ul class="hazards">
+    {{#each hazards}}
+      <li class="hazard" data-hazard="{{id}}">
+        <div class="row">
+          <b>{{name}}</b>
+          {{#if location}}<span class="where">@ {{location}}</span>{{/if}}
+          {{#if staged}}
+            <span class="stage">
+              {{#if @root.isGM}}<button
+                  type="button"
+                  data-action="stepHazard"
+                  data-delta="-1"
+                >
+                  <i class="fa-solid fa-minus"></i>
+                </button>{{/if}}
+              Stage {{stage}} / {{maxStage}}{{#if auto}}
+                (auto){{/if}}
+              {{#if @root.isGM}}<button
+                  type="button"
+                  data-action="stepHazard"
+                  data-delta="1"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>{{/if}}
+            </span>
+          {{/if}}
+          {{#if @root.isGM}}
+            <button type="button" data-action="clearHazard">
+              <i class="fa-solid fa-broom"></i> Clear
+            </button>
+            <button type="button" data-action="removeHazard">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          {{/if}}
+        </div>
+        {{#if intro}}<p class="hint">{{intro}}</p>{{/if}}
+        {{#if text}}<div class="body">{{{text}}}</div>{{/if}}
+        {{#if notes}}<p>{{notes}}</p>{{/if}}
+      </li>
+    {{/each}}
+  </ul>
+  {{#if clearedHazards.length}}
+    <p class="hint">
+      Cleared: {{#each clearedHazards}}{{this}}{{#unless @last}},
+        {{/unless}}{{/each}}
+    </p>
+  {{/if}}
+</section>

@@ -18,19 +18,18 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: blast
+      value: 2
     damage:
-      formula: '0'
+      formula: '2'
     description: >-
       <p><strong>Blast:2, Range:4</strong>, <strong>Damage:2</strong>. All enemies in range gain
       Frozen:1 Bleeding enemies instead gain <strong>Frozen:3</strong>.</p>
   special:
     name: Special
     description: >-
-      <p><strong>Range:5 Damage:1 Shatter: </strong>5 damage. This unit gains
-      <strong>Transference:1</strong>.</p><p><strong>Bleeding</strong> units count as
-      <strong>Frozen</strong> for the purposes of <strong>Shatter</strong> effects.</p>
+      <p><strong>Bleeding</strong> units count as <strong>Frozen</strong> for the purposes of
+      <strong>Shatter</strong> effects.</p>
   agnosia:
     value: 40
     effect: ''
@@ -47,7 +46,40 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: 7TNxz11LxD9Sm43n
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Range:5 Damage:1 Shatter: </strong>5 damage. This unit gains
+        <strong>Transference:1</strong>.</p>
+      attack:
+        range:
+          kind: targets
+          value: 5
+          name: Range
+        damage:
+          formula: '1'
+        description: >-
+          <p><strong>Range:5 Damage:1 Shatter: </strong>5 damage. This unit gains
+          <strong>Transference:1</strong>.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!Ykdy0c0A5ZAJcPfO.7TNxz11LxD9Sm43n'
 effects: []
 folder: hsXh5sb6AljquH3A
 sort: 0
@@ -58,7 +90,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: Ykdy0c0A5ZAJcPfO
 _key: '!actors!Ykdy0c0A5ZAJcPfO'

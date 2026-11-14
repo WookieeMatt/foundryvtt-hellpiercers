@@ -19,23 +19,21 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: charge
+      value: 6
     damage:
-      formula: '0'
+      formula: '6'
     description: >-
       <p><strong>Charge:6</strong>, <strong>Damage:6</strong>, deal 3 damage to any units adjacent
       to the charge path.</p>
   special:
     name: Special
     description: >-
-      <p><strong>Target:X</strong>, <strong>Range:1</strong>, <strong>Damage:3</strong>. This attack
-      can be used up to 5 times, selecting a different target each time if possible.</p><p>When the
-      Harvester unit becomes active in a battle, any defeated unit leaves behind a <strong>Corpse
-      token</strong>. If the Harvester runs over a <strong>Corpse</strong> in the course of its
-      turn, remove the <strong>Corpse</strong> and add 1 damage to the Harvesters next attack. After
-      the attack, the damage returns to base level. Players can attack these corpses to remove
-      them.</p>
+      <p>When the Harvester unit becomes active in a battle, any defeated unit leaves behind a
+      <strong>Corpse token</strong>. If the Harvester runs over a <strong>Corpse</strong> in the
+      course of its turn, remove the <strong>Corpse</strong> and add 1 damage to the Harvesters next
+      attack. After the attack, the damage returns to base level. Players can attack these corpses
+      to remove them.</p>
   agnosia:
     value: 30
     effect: >-
@@ -56,7 +54,40 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: g5gfNauxvw6eWJhT
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Target:X</strong>, <strong>Range:1</strong>, <strong>Damage:3</strong>. This
+        attack can be used up to 5 times, selecting a different target each time if possible.</p>
+      attack:
+        range:
+          kind: targets
+          value: 1
+          name: Range
+        damage:
+          formula: '3'
+        description: >-
+          <p><strong>Target:X</strong>, <strong>Range:1</strong>, <strong>Damage:3</strong>. This
+          attack can be used up to 5 times, selecting a different target each time if possible.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!chKoF8R6IcAUg8Yc.g5gfNauxvw6eWJhT'
 effects: []
 folder: gixCjdjMInQALHhj
 sort: 0
@@ -67,7 +98,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: chKoF8R6IcAUg8Yc
 _key: '!actors!chKoF8R6IcAUg8Yc'

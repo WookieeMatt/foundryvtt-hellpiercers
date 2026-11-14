@@ -18,10 +18,10 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
+      kind: burst
       value: 1
     damage:
-      formula: '0'
+      formula: '1'
     description: >-
       <p>Remove 1 Uneasy Terrain within <strong>Burst:1</strong>. Target a player unit within
       <strong>Range:2</strong>, deal 1 damage and inflict <strong>Bleed:2</strong></p>
@@ -58,7 +58,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: 3NHA1cFfqwm7pVA6
 _key: '!actors!3NHA1cFfqwm7pVA6'

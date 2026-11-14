@@ -19,14 +19,14 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: line
+      value: 2
     damage:
-      formula: '0'
+      formula: '5'
     description: <p><strong>Line:2, Damage:5</strong> as the drills focus their efforts.</p>
   special:
     name: Special
-    description: <p><strong>Cone:2, Damage:3</strong> as the drills splay out, <strong>Bleed:2</strong>.</p>
+    description: ''
   agnosia:
     value: 30
     effect: >-
@@ -47,7 +47,38 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: NBpArntrHzimvKyk
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: <p><strong>Cone:2, Damage:3</strong> as the drills splay out, <strong>Bleed:2</strong>.</p>
+      attack:
+        range:
+          kind: cone
+          value: 2
+          name: Range
+        damage:
+          formula: '3'
+        description: >-
+          <p><strong>Cone:2, Damage:3</strong> as the drills splay out,
+          <strong>Bleed:2</strong>.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!gwQX4Z3ziNol5HvU.NBpArntrHzimvKyk'
 effects: []
 folder: gixCjdjMInQALHhj
 sort: 0
@@ -58,7 +89,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: gwQX4Z3ziNol5HvU
 _key: '!actors!gwQX4Z3ziNol5HvU'

@@ -11,6 +11,11 @@ export const SETTINGS = Object.freeze({
   stratcomPhase: "stratcomPhase",
   activeParty: "activeParty",
   deriveUnlocks: "deriveUnlocks",
+  themedDice: "themedDice",
+  animationProvider: "animationProvider",
+  jb2aTier: "jb2aTier",
+  animateAttacks: "animateAttacks",
+  animateEffects: "animateEffects",
 });
 
 /**
@@ -93,6 +98,66 @@ export function registerSettings() {
     config: true,
     name: "HELLPIERCERS.SETTINGS.automateProvoke.name",
     hint: "HELLPIERCERS.SETTINGS.automateProvoke.hint",
+    type: new fields.BooleanField({ initial: true }),
+  });
+
+  // Module integrations: Dice So Nice, Automated Animations, Sequencer and JB2A.
+  game.settings.register(id, "themedDice", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.themedDice.name",
+    hint: "HELLPIERCERS.SETTINGS.themedDice.hint",
+    type: new fields.BooleanField({ initial: true }),
+  });
+
+  game.settings.register(id, "animationProvider", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.animationProvider.name",
+    hint: "HELLPIERCERS.SETTINGS.animationProvider.hint",
+    type: new fields.StringField({
+      required: true,
+      blank: false,
+      initial: "auto",
+      choices: {
+        auto: "HELLPIERCERS.SETTINGS.animationProvider.auto",
+        "automated-animations": "HELLPIERCERS.SETTINGS.animationProvider.automated",
+        builtin: "HELLPIERCERS.SETTINGS.animationProvider.builtin",
+        none: "HELLPIERCERS.SETTINGS.animationProvider.none",
+      },
+    }),
+  });
+
+  game.settings.register(id, "jb2aTier", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.jb2aTier.name",
+    hint: "HELLPIERCERS.SETTINGS.jb2aTier.hint",
+    type: new fields.StringField({
+      required: true,
+      blank: false,
+      initial: "auto",
+      choices: {
+        auto: "HELLPIERCERS.SETTINGS.jb2aTier.auto",
+        premium: "HELLPIERCERS.SETTINGS.jb2aTier.premium",
+        free: "HELLPIERCERS.SETTINGS.jb2aTier.free",
+      },
+    }),
+  });
+
+  game.settings.register(id, "animateAttacks", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.animateAttacks.name",
+    hint: "HELLPIERCERS.SETTINGS.animateAttacks.hint",
+    type: new fields.BooleanField({ initial: true }),
+  });
+
+  game.settings.register(id, "animateEffects", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.animateEffects.name",
+    hint: "HELLPIERCERS.SETTINGS.animateEffects.hint",
     type: new fields.BooleanField({ initial: true }),
   });
 

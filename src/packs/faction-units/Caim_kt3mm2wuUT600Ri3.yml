@@ -52,7 +52,7 @@ items:
       attack:
         range:
           kind: targets
-          value: 1
+          value: 4
           name: Range
         damage:
           formula: '0'
@@ -70,8 +70,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!kt3mm2wuUT600Ri3.PhoJlj3l6CvvVqhr'
   - _id: SyfC44Lpyqk6ijWz
     name: Attack 2
@@ -103,8 +103,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!kt3mm2wuUT600Ri3.SyfC44Lpyqk6ijWz'
   - _id: ChinpzwoSQCSe8I3
     name: Attack 3
@@ -117,7 +117,7 @@ items:
         an additional Wound:1 on their next attack.</p>
       attack:
         range:
-          kind: targets
+          kind: burst
           value: 1
           name: Range
         damage:
@@ -136,8 +136,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!kt3mm2wuUT600Ri3.ChinpzwoSQCSe8I3'
   - _id: Gy327n8YXaLot0r1
     name: Special
@@ -161,8 +161,8 @@ items:
       coreVersion: '14.370'
       systemId: hellpiercers
       systemVersion: 0.5.0
-      createdTime: 1794656067899
-      modifiedTime: 1794656067899
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
     _key: '!actors.items!kt3mm2wuUT600Ri3.Gy327n8YXaLot0r1'
 effects: []
 folder: KoxLGRv30kQgZFnI
@@ -174,7 +174,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: kt3mm2wuUT600Ri3
 _key: '!actors!kt3mm2wuUT600Ri3'

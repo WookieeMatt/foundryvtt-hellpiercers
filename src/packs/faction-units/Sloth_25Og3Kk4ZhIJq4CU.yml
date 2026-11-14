@@ -21,20 +21,14 @@ system:
       kind: targets
       value: 1
     damage:
-      formula: '0'
+      formula: '5'
     description: >-
       <p>Select a <strong>Swarm</strong> anywhere on the TACCOM map. Break the Swarm and deal 5
       damage to a unit within the Swarm’s original range. You may sacrifice an additional unit to
       deal 1 more damage.</p>
   special:
     name: Special
-    description: >-
-      <p>Spend your turn preparing an attack and gain <strong>1 Anauros</strong>. Each subsequent
-      turn, you may spend your turn preparing and generate an additional<strong> 1 Anauros</strong>.
-      Movement while you have Anauros removes all stacks of <strong>Anauros</strong> immediately. On
-      your turn you may spend all Anauros to place a <strong>Blast:2</strong> box anywhere on the
-      battlefield and deal <strong>3 damage</strong> to all units within. For each
-      <strong>Anauros</strong> spent, select one of the following effects:</p>
+    description: ''
   agnosia:
     value: 10
     effect: >-
@@ -53,7 +47,50 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: 1yHfO8Z3zDpdaJ9B
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p>Spend your turn preparing an attack and gain <strong>1 Anauros</strong>. Each subsequent
+        turn, you may spend your turn preparing and generate an additional<strong> 1
+        Anauros</strong>. Movement while you have Anauros removes all stacks of
+        <strong>Anauros</strong> immediately. On your turn you may spend all Anauros to place a
+        <strong>Blast:2</strong> box anywhere on the battlefield and deal <strong>3 damage</strong>
+        to all units within. For each <strong>Anauros</strong> spent, select one of the following
+        effects:</p>
+      attack:
+        range:
+          kind: blast
+          value: 2
+          name: Range
+        damage:
+          formula: '3'
+        description: >-
+          <p>Spend your turn preparing an attack and gain <strong>1 Anauros</strong>. Each
+          subsequent turn, you may spend your turn preparing and generate an additional<strong> 1
+          Anauros</strong>. Movement while you have Anauros removes all stacks of
+          <strong>Anauros</strong> immediately. On your turn you may spend all Anauros to place a
+          <strong>Blast:2</strong> box anywhere on the battlefield and deal <strong>3
+          damage</strong> to all units within. For each <strong>Anauros</strong> spent, select one
+          of the following effects:</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!25Og3Kk4ZhIJq4CU.1yHfO8Z3zDpdaJ9B'
 effects: []
 folder: KoxLGRv30kQgZFnI
 sort: 0
@@ -64,7 +101,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: 25Og3Kk4ZhIJq4CU
 _key: '!actors!25Og3Kk4ZhIJq4CU'

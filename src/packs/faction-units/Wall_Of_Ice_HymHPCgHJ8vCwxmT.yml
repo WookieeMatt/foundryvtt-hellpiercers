@@ -18,19 +18,18 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: wall
+      value: 3
     damage:
-      formula: '0'
+      formula: '3'
     description: >-
       <p><strong>Wall:3</strong>, <strong>Range:1</strong>, <strong>Damage:3</strong>. All damaged
       units gain: <strong>Frozen:1</strong>.</p>
   special:
     name: Special
     description: >-
-      <p><strong>Burst:2 Damage:3</strong>. <strong>Shatter</strong>: 5 damage. This unit gains
-      <strong>Armor:1</strong>.</p><p>While Armored this unit has <strong>Scale:2</strong> and deals
-      additional damage equal to its Armor rating.</p>
+      <p>While Armored this unit has <strong>Scale:2</strong> and deals additional damage equal to
+      its Armor rating.</p>
   agnosia:
     value: 50
     effect: ''
@@ -47,7 +46,40 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: f31iWSSyzNhbSxna
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Burst:2 Damage:3</strong>. <strong>Shatter</strong>: 5 damage. This unit gains
+        <strong>Armor:1</strong>.</p>
+      attack:
+        range:
+          kind: burst
+          value: 2
+          name: Range
+        damage:
+          formula: '3'
+        description: >-
+          <p><strong>Burst:2 Damage:3</strong>. <strong>Shatter</strong>: 5 damage. This unit gains
+          <strong>Armor:1</strong>.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!HymHPCgHJ8vCwxmT.f31iWSSyzNhbSxna'
 effects: []
 folder: hsXh5sb6AljquH3A
 sort: 0
@@ -58,7 +90,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: HymHPCgHJ8vCwxmT
 _key: '!actors!HymHPCgHJ8vCwxmT'

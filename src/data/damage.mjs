@@ -215,6 +215,9 @@ export class Damage extends foundry.abstract.DataModel {
     await this.#applyTransference(result.dealt);
     await this.#applyConditions([actor]);
     if (result.downed && actor.type !== "human") await this.#creditKills(1);
+    if (result.dealt > 0 || result.absorbed > 0) {
+      Hooks.callAll("hellpiercers.hit", { tokens: actor.getActiveTokens(true), damage: this });
+    }
 
     if (message) await this.#printConfirmation(resolved.total, message, [target.uuid]);
     return { ...resolved, result };
@@ -269,6 +272,12 @@ export class Damage extends foundry.abstract.DataModel {
     await this.#consume(actors[0], resolved.consume);
     await this.#applyTransference(dealt);
     await this.#applyConditions(actors);
+    if (dealt > 0) {
+      Hooks.callAll("hellpiercers.hit", {
+        tokens: tokens.map(uuid => fromUuidSync(uuid)).filter(Boolean),
+        damage: this,
+      });
+    }
     // Every square of a Swarm that is defeated counts as an enemy defeated (p. 102).
     if (group.system.health.value <= 0) {
       await Promise.all(actors.map(a => a.setDefeated(true)));
@@ -294,6 +303,7 @@ export class Damage extends foundry.abstract.DataModel {
     if (after === before) return;
     await attacker.update({ "system.limit.value": after });
     if (before < max && after >= max) {
+      Hooks.callAll("hellpiercers.limitReady", attacker);
       await getDocumentClass("ChatMessage").create({
         content: `<div class="hellpiercers turn-note"><header>${game.i18n.format("HELLPIERCERS.TACCOM.limitReady", { name: foundry.utils.escapeHTML(attacker.name) })}</header></div>`,
         speaker: getDocumentClass("ChatMessage").getSpeaker({ actor: attacker }),

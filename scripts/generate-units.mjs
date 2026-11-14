@@ -76,6 +76,21 @@ const stats = {
   modifiedTime: now,
 };
 
+/** Pull a damage formula and a range out of the printed text ("Arc:3, Damage:2"; "Burst:3 for 5 damage"). */
+const KINDS = ["burst", "blast", "line", "cone", "ring", "star", "charge", "wall", "arc"];
+const parseAttack = html => {
+  const text = html.replace(/<[^>]+>/g, " ");
+  const dmg = text.match(/Damage:\s*(\d+)/i) ?? text.match(/(\d+)\s+damage/i);
+  const shape = text.match(new RegExp(String.raw`\b(${KINDS.join("|")})\s*:?\s*(\d+)`, "i"));
+  const range = text.match(/Range:\s*(\d+)/i);
+  return {
+    formula: dmg ? dmg[1] : "0",
+    range: shape
+      ? { kind: shape[1].toLowerCase(), value: Number(shape[2]) }
+      : { kind: "targets", value: range ? Number(range[1]) : 1 },
+  };
+};
+
 /** An embedded ability on a boss. `action` is attack or special. */
 const ability = (actorId, name, action, effect, sort) => ({
   _id: id16(`${actorId}:${name}:${sort}`),
@@ -88,8 +103,8 @@ const ability = (actorId, name, action, effect, sort) => ({
     attack:
       action === "attack"
         ? {
-            range: { kind: "targets", value: 1, name: "Range" },
-            damage: { formula: "0" },
+            range: { ...parseAttack(effect ?? "").range, name: "Range" },
+            damage: { formula: parseAttack(effect ?? "").formula },
             description: effect ?? "",
           }
         : null,
@@ -183,17 +198,20 @@ for (const raw of units) {
     };
   } else {
     const [first, ...rest] = u.attacks;
+    const strike = parseAttack(first ?? "");
     system.strike = {
       name: "Strike",
-      range: { kind: "targets", value: 1 },
-      damage: { formula: "0" },
+      range: strike.range,
+      damage: { formula: strike.formula },
       description: first ? para(first) : "",
     };
-    const extra = [
-      ...rest.map(a => para(a)),
-      ...(u.special_text.length ? [paras(u.special_text)] : []),
-    ].join("");
-    system.special = { name: "Special", description: extra };
+    for (const [i, a] of rest.entries()) {
+      items.push(ability(_id, `Attack ${i + 2}`, "attack", para(a), i));
+    }
+    system.special = {
+      name: "Special",
+      description: u.special_text.length ? paras(u.special_text) : "",
+    };
     system.agnosia = { value: u.agnosia ?? null, effect: agnosiaEffect, triggered: false };
   }
 

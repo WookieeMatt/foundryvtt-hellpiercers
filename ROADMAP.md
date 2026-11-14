@@ -17,6 +17,7 @@ Targets Foundry VTT **v14.370**. See `docs/API.md` for the scripting API.
   - [x] Action pips (Main / Support / Aux / Move), status chips with stacks, Rez, add-status picker
   - [x] Use buttons on abilities and weapon actives, with chat cards
   - [ ] Full redesign of the HELLPIERCER sheet
+- [x] Dice So Nice (themed dice), Automated Animations bridge, built-in Sequencer/JB2A effects (Free and Premium)
 - [ ] Babele support - if needed
 - [x] STRATCOM layer
   - [x] Party actor: resources, base building on the drawn tech tree, item unlocks, missions, vehicle, roles, Class Mastery, Legendary Arms Aion
@@ -40,7 +41,8 @@ Targets Foundry VTT **v14.370**. See `docs/API.md` for the scripting API.
   - [x] Ichor, STRATCOM phase counter, faction rolls
   - [x] Faction Units compendium: all 95 bosses, minibosses, minions, spawners and fortifications, one folder per faction
   - [x] RECON Tables compendium (Chambers, Corridors, Vaults, Legendary Arms, Scavenge, Scout, Travel, NPC, Item D66, Location generator) and a Rules Reference journal
-  - [ ] Map hazards and boss variable-action UI
+  - [x] Per-faction STRATCOM actions (Actions tab), staged map hazards (Devolve, Eyerot), Create Map Hazard
+  - [x] Boss variable-action stat shown and recalculable
 - [ ] Include items - pending a public license for HELLPIERCERS
 
 ## Release

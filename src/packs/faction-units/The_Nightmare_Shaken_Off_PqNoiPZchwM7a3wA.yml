@@ -18,20 +18,17 @@ system:
   strike:
     name: Strike
     range:
-      kind: targets
-      value: 1
+      kind: blast
+      value: 2
     damage:
-      formula: '0'
+      formula: '5'
     description: >-
       <p><strong>Blast:2, Range:3, Damage:5</strong>. Apply Frozen: 1. Shatter: 10 damage. The
       Nightmare Shaken Off immediately moves adjacent to any shattered target, if able. Frozen is
       not applied to any units affected by the attack.</p>
   special:
     name: Special
-    description: >-
-      <p><strong>Burst:1, Damage:4</strong>. Shatter: 4 damage. <strong>Push:1</strong>. Repeat the
-      attack, increasing <strong>Burst</strong> by one. Repeat until this attack does not shatter
-      any units.</p>
+    description: ''
   agnosia:
     value: 30
     effect: <p>All of this unit’s Shatter effects also inflict <strong>Pin:1</strong>.</p>
@@ -48,7 +45,42 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: rOogEGncFeWUHUEZ
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Burst:1, Damage:4</strong>. Shatter: 4 damage. <strong>Push:1</strong>. Repeat
+        the attack, increasing <strong>Burst</strong> by one. Repeat until this attack does not
+        shatter any units.</p>
+      attack:
+        range:
+          kind: burst
+          value: 1
+          name: Range
+        damage:
+          formula: '4'
+        description: >-
+          <p><strong>Burst:1, Damage:4</strong>. Shatter: 4 damage. <strong>Push:1</strong>. Repeat
+          the attack, increasing <strong>Burst</strong> by one. Repeat until this attack does not
+          shatter any units.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!PqNoiPZchwM7a3wA.rOogEGncFeWUHUEZ'
 effects: []
 folder: hsXh5sb6AljquH3A
 sort: 0
@@ -59,7 +91,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: PqNoiPZchwM7a3wA
 _key: '!actors!PqNoiPZchwM7a3wA'

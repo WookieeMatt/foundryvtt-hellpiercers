@@ -237,6 +237,7 @@ export class HellpiercersActor extends foundry.documents.Actor {
     if (after === before) return 0;
     await this.update({ "system.health.value": after });
     if (before <= 0 && after > 0) await this.setDefeated(false);
+    Hooks.callAll("hellpiercers.healed", this, after - before);
     const agnosia = this.system.agnosia;
     if (agnosia?.triggered && agnosia.value != null && after > agnosia.value) {
       await this.update({ "system.agnosia.triggered": false });
@@ -306,6 +307,7 @@ export class HellpiercersActor extends foundry.documents.Actor {
       "system.health.value": this.system.health.max ?? this.system.health.value,
     });
     await this.setDefeated(false);
+    Hooks.callAll("hellpiercers.rezzed", this);
   }
 
   async modifyTokenAttribute(attribute, value, isDelta = false, isBar = true) {

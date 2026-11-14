@@ -282,9 +282,17 @@
         "locations": "Locations",
         "convoys": "Convoys",
         "research": "Research",
+        "actions": "Actions",
         "upgrades": "Upgrades",
         "notes": "Notes"
       }
+    },
+    "BOSS": {
+      "activations": "Actions per round",
+      "recalc": "Recalculate for the current number of players"
+    },
+    "HAZARD": {
+      "status": { "active": "Active", "cleared": "Cleared" }
     },
     "LOCATION": {
       "type": {
@@ -343,6 +351,33 @@
       "playerCountOverride": {
         "name": "Player Count Override",
         "hint": "Sets the number of players for boss action calculation.  Leave blank to autodetect"
+      },
+      "themedDice": {
+        "name": "Themed Dice (Dice So Nice)",
+        "hint": "Roll damage, healing, RECON, the Tone Die, Provoke and faction dice in HELLPIERCERS colours. Needs Dice So Nice."
+      },
+      "animationProvider": {
+        "name": "Animations",
+        "hint": "Automated Animations plays animations you configure in its menu (name a rule after the attack, or 'HELLPIERCERS Melee', 'HELLPIERCERS Burst Fire'...). The built-in effects need Sequencer plus a JB2A library, Free or Premium. Auto tries Automated Animations first and falls back to the built-in effects.",
+        "auto": "Automatic: Automated Animations, then built-in JB2A",
+        "automated": "Automated Animations only",
+        "builtin": "Built-in JB2A effects only",
+        "none": "No animations"
+      },
+      "jb2aTier": {
+        "name": "JB2A Library",
+        "hint": "Which JB2A library the built-in effects use. Automatic picks Premium (Patreon) if it is active and the Free library otherwise, and every effect falls back to the best animation the installed library has.",
+        "auto": "Automatic",
+        "premium": "Premium (Patreon)",
+        "free": "Free"
+      },
+      "animateAttacks": {
+        "name": "Animate Attacks",
+        "hint": "Play attack, impact and Provoke animations."
+      },
+      "animateEffects": {
+        "name": "Animate Effects",
+        "hint": "Play animations for Status Effects, healing, defeat, Rez, Limit Break and AGNOSIA. Automated Animations animates Status Effects on its own."
       },
       "automateEffects": {
         "name": "Automate Turn Effects",

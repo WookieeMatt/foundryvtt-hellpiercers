@@ -1,5 +1,6 @@
 import { CONVOY_KINDS, LOCATION_TYPES, RESEARCH_PROJECTS } from "../../stratcom/catalog.mjs";
 import { ichor, phase, stratcom } from "../../stratcom/engine.mjs";
+import { FACTION_ACTIONS, hazardOf } from "../../stratcom/faction-actions.mjs";
 import { QUALITY_KEYS } from "../../stratcom/faction-catalog.mjs";
 import { HellpiercersActorSheetMixin } from "./mixins.mjs";
 
@@ -40,6 +41,11 @@ export class FactionSheet extends HellpiercersActorSheetMixin(ActorSheet) {
       tickProject: FactionSheet.#tickProject,
       scrapProject: FactionSheet.#scrapProject,
       buyUpgrade: FactionSheet.#buyUpgrade,
+      useAction: FactionSheet.#useAction,
+      addHazard: FactionSheet.#addHazard,
+      stepHazard: FactionSheet.#stepHazard,
+      clearHazard: FactionSheet.#clearHazard,
+      removeHazard: FactionSheet.#removeHazard,
     },
   };
 
@@ -59,6 +65,10 @@ export class FactionSheet extends HellpiercersActorSheetMixin(ActorSheet) {
       template: "systems/hellpiercers/templates/sheets/faction/research.hbs",
       scrollable: [""],
     },
+    actions: {
+      template: "systems/hellpiercers/templates/sheets/faction/actions.hbs",
+      scrollable: [""],
+    },
     upgrades: {
       template: "systems/hellpiercers/templates/sheets/faction/upgrades.hbs",
       scrollable: [""],
@@ -76,6 +86,7 @@ export class FactionSheet extends HellpiercersActorSheetMixin(ActorSheet) {
         { id: "locations" },
         { id: "convoys" },
         { id: "research" },
+        { id: "actions" },
         { id: "upgrades" },
         { id: "notes" },
       ],
@@ -133,6 +144,7 @@ export class FactionSheet extends HellpiercersActorSheetMixin(ActorSheet) {
     if (partId === "locations") this.#prepareLocations(ctx);
     if (partId === "convoys") this.#prepareConvoys(ctx);
     if (partId === "research") this.#prepareResearch(ctx);
+    if (partId === "actions") this.#prepareActions(ctx);
     if (partId === "upgrades") this.#prepareUpgrades(ctx);
     if (partId === "notes") await this.#prepareNotes(ctx);
     return ctx;
@@ -214,6 +226,53 @@ export class FactionSheet extends HellpiercersActorSheetMixin(ActorSheet) {
       boxes: Array.from({ length: p.time }, (_, i) => ({ filled: i < p.progress })),
       canTick: phase.get() > p.startedPhase,
     }));
+  }
+
+  #prepareActions(ctx) {
+    const f = this.actor.system;
+    ctx.isGM = game.user.isGM;
+    // The faction's plans are the GM's secret.
+    const catalog = game.user.isGM
+      ? (FACTION_ACTIONS[f.key] ?? { actions: [], mechanics: [] })
+      : { actions: [], mechanics: [] };
+    const present = list =>
+      list.map(a => {
+        const hazard = hazardOf(a);
+        return {
+          name: a.name,
+          flavor: a.flavor,
+          body: a.body.filter(p => !/^<strong>Stage/.test(p)).join(""),
+          crown: a.crown,
+          crownPips: a.crown ? Array.from({ length: a.crown }, () => 1) : [],
+          locked: a.crown ? !f.canDeployAtCrown(a.crown) : false,
+          hazard: hazard
+            ? { name: hazard.name, stages: hazard.stages.length, auto: hazard.auto }
+            : null,
+        };
+      });
+    ctx.actions = present(catalog.actions);
+    ctx.mechanics = present(catalog.mechanics);
+    ctx.hasCatalog = !!f.catalog;
+    ctx.hazards = f.hazards
+      .filter(h => h.status === "active" && game.user.isGM)
+      .map(h => {
+        const def = h.action
+          ? hazardOf(catalog.actions.find(a => a.name === h.action) ?? {})
+          : null;
+        return {
+          id: h.id,
+          name: h.name,
+          location: h.location,
+          stage: h.stage,
+          maxStage: h.maxStage,
+          auto: h.auto,
+          notes: h.notes,
+          staged: h.maxStage > 0,
+          text: def ? def.stages.slice(0, Math.max(1, h.stage)).join("") : "",
+          intro: def?.intro ?? "",
+        };
+      });
+    ctx.clearedHazards = f.hazards.filter(h => h.status === "cleared").map(h => h.name);
   }
 
   #prepareUpgrades(ctx) {
@@ -376,6 +435,50 @@ export class FactionSheet extends HellpiercersActorSheetMixin(ActorSheet) {
   }
 
   /** @this {FactionSheet} @param {Event} _ev @param {HTMLElement} target */
+  /** Use a faction STRATCOM action, asking where when it places a hazard. */
+  static async #useAction(ev, target) {
+    const name = target.closest("[data-action-name]").dataset.actionName;
+    const def = (FACTION_ACTIONS[this.actor.system.key]?.actions ?? []).find(a => a.name === name);
+    let location = "";
+    if (def && hazardOf(def)) {
+      const input = await Dialog().input({
+        window: { title: name },
+        content: `<div class="form-group"><label>Location</label><div class="form-fields"><input type="text" name="location" autofocus></div><p class="hint">Where the map hazard goes (or which location grows a stage).</p></div>`,
+      });
+      if (!input) return;
+      location = input.location ?? "";
+    }
+    const result = await this.actor.system.useAction(name, { location, force: ev.shiftKey });
+    if (result.reason === "crown") {
+      ui.notifications.warn(
+        `${name} needs the faction's Crown to have fallen. Shift-click to ignore.`
+      );
+    }
+  }
+
+  /** A custom hazard, for the "Create Map Hazard" STRATCOM action. */
+  static async #addHazard() {
+    const input = await Dialog().input({
+      window: { title: "Create Map Hazard" },
+      content: `<div class="form-group"><label>Name</label><div class="form-fields"><input type="text" name="name" autofocus></div></div><div class="form-group"><label>Between</label><div class="form-fields"><input type="text" name="location" placeholder="Two locations"></div></div>`,
+    });
+    if (!input?.name) return;
+    await this.actor.system.addHazard({ name: input.name, location: input.location ?? "" });
+  }
+
+  static async #stepHazard(_ev, target) {
+    const { id } = target.closest("[data-hazard]").dataset;
+    await this.actor.system.advanceHazard(id, Number(target.dataset.delta));
+  }
+
+  static async #clearHazard(_ev, target) {
+    await this.actor.system.clearHazard(target.closest("[data-hazard]").dataset.hazard);
+  }
+
+  static async #removeHazard(_ev, target) {
+    await this.actor.system.removeHazard(target.closest("[data-hazard]").dataset.hazard);
+  }
+
   static async #buyUpgrade(_ev, target) {
     await this.actor.system.buyUpgrade(target.closest("[data-upgrade]").dataset.upgrade, stratcom);
   }

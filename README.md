@@ -8,6 +8,10 @@ It covers all three layers of play:
 - **STRATCOM** - the division's base, resources and tech tree, missions, and the GM's factions
 - **RECON** - 2D6 + tags rolls and the Tone Die
 
+Optional modules (all recommended in the manifest): **Dice So Nice** (themed dice),
+**Automated Animations** with **Sequencer** and **socketlib**, and **JB2A** (Free or Premium; the
+system detects which and falls back to the best animation each library has). See *Settings*.
+
 See [`docs/API.md`](docs/API.md) for the macro API and [`ROADMAP.md`](ROADMAP.md) for progress.
 
 ## Install

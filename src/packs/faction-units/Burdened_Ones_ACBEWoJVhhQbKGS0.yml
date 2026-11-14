@@ -21,15 +21,13 @@ system:
       kind: targets
       value: 1
     damage:
-      formula: '0'
+      formula: '4'
     description: <p><strong>Range:1 Damage:4</strong>. Targeted unit gains <strong>Enrage:1</strong>.</p>
   special:
     name: Special
     description: >-
-      <p><strong>Burst:2 Damage:2</strong>. Enemy units damaged gain <strong>Enrage:1</strong>. If
-      more than one enemy was damaged by this attack, Enrage targets must be other enemy units
-      damaged by this attack.</p><p>When this unit ends its turn, all adjacent allied units gain
-      <strong>Armor:3</strong> and <strong>Compel:1</strong>.</p>
+      <p>When this unit ends its turn, all adjacent allied units gain <strong>Armor:3</strong> and
+      <strong>Compel:1</strong>.</p>
   agnosia:
     value: 50
     effect: <p>All units with Armor gain <strong>Transference:1</strong> on all of their attacks.</p>
@@ -46,7 +44,42 @@ prototypeToken:
   displayBars: 20
   bar1:
     attribute: health
-items: []
+items:
+  - _id: ZELfPCMnl7zF4pix
+    name: Attack 2
+    type: ability
+    img: systems/hellpiercers/assets/icons/round-star.svg
+    system:
+      action: attack
+      effect: >-
+        <p><strong>Burst:2 Damage:2</strong>. Enemy units damaged gain <strong>Enrage:1</strong>. If
+        more than one enemy was damaged by this attack, Enrage targets must be other enemy units
+        damaged by this attack.</p>
+      attack:
+        range:
+          kind: burst
+          value: 2
+          name: Range
+        damage:
+          formula: '2'
+        description: >-
+          <p><strong>Burst:2 Damage:2</strong>. Enemy units damaged gain <strong>Enrage:1</strong>.
+          If more than one enemy was damaged by this attack, Enrage targets must be other enemy
+          units damaged by this attack.</p>
+      uses: null
+      trigger: null
+    effects: []
+    sort: 0
+    flags: {}
+    ownership:
+      default: 0
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.5.0
+      createdTime: 1794656713636
+      modifiedTime: 1794656713636
+    _key: '!actors.items!ACBEWoJVhhQbKGS0.ZELfPCMnl7zF4pix'
 effects: []
 folder: v9Izj4qogDXOpAKr
 sort: 0
@@ -57,7 +90,7 @@ _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
   systemVersion: 0.5.0
-  createdTime: 1794656067899
-  modifiedTime: 1794656067899
+  createdTime: 1794656713636
+  modifiedTime: 1794656713636
 _id: ACBEWoJVhhQbKGS0
 _key: '!actors!ACBEWoJVhhQbKGS0'

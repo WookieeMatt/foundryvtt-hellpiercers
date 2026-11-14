@@ -9,6 +9,7 @@
  */
 
 import { Damage } from "../data/damage.mjs";
+import { tint } from "../integrations/dice.mjs";
 import { getSetting } from "../settings.mjs";
 
 const EPS = 1e-3;
@@ -145,8 +146,12 @@ async function strike(damage, token, undo = []) {
   return damage.apply(token);
 }
 
+/** Rolls made while resolving a Provoke, attached to its chat card so they roll in 3D. */
+let provokeRolls = [];
+
 async function rollD6(source) {
-  const roll = await new foundry.dice.Roll("1d6").evaluate();
+  const roll = await tint(new foundry.dice.Roll("1d6"), "provoke").evaluate();
+  provokeRolls.push(roll);
   const damage = new Damage({
     formula: "1d6",
     value: roll.total,
@@ -198,6 +203,7 @@ async function onMoveToken(doc, movement) {
   const offhand = actor.items.some(i => i.type === "ability" && /offhand pistol/i.test(i.name));
   const lines = [];
   const undo = [];
+  provokeRolls = [];
   for (const enemy of provokers) {
     const { roll, damage } = await rollD6(enemy.actor);
     await strike(damage, doc, undo);
@@ -223,6 +229,7 @@ async function onMoveToken(doc, movement) {
   await ChatMessage.create({
     content: `<div class="hellpiercers turn-note"><header>Provoke</header><ul>${lines.join("")}</ul><footer><button type="button" data-action="undoProvoke"><i class="fa-solid fa-rotate-left"></i> ${game.i18n.localize("HELLPIERCERS.TACCOM.undoProvoke")}</button></footer></div>`,
     speaker: ChatMessage.getSpeaker({ token: doc }),
+    rolls: provokeRolls,
     flags: { [game.system.id]: { turnNote: true, provoke: true, undo } },
   });
   Hooks.callAll("hellpiercers.provoke", doc, provokers);

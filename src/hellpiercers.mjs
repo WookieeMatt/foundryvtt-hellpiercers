@@ -12,6 +12,8 @@ import { extendActorDirectory } from "./hooks/directory.mjs";
 import { onHotbarDrop } from "./hooks/hotbar.mjs";
 import { fixDerivedTokenBars } from "./hooks/tokenbars.mjs";
 import { extendTokenConfig } from "./hooks/tokenconfig.mjs";
+import * as animations from "./integrations/animations.mjs";
+import { activateDice, tint } from "./integrations/dice.mjs";
 import { checkMigration } from "./migration.mjs";
 import { registerSettings } from "./settings.mjs";
 import { activateStratcom } from "./stratcom/engine.mjs";
@@ -27,6 +29,10 @@ globalThis.hellpiercers = Object.freeze({
   data,
   documents,
   placeables,
+  animations: Object.freeze({
+    ...animations,
+    tint,
+  }),
   taccom: Object.freeze({
     engine: TurnEngine,
     findCombatant,
@@ -55,6 +61,7 @@ Hooks.once("init", () => {
   const DocumentSheetConfig = foundry.applications.apps.DocumentSheetConfig;
 
   registerSettings();
+  activateDice();
 
   // Actors
   Object.assign(CONFIG.Actor.dataModels, {
@@ -234,6 +241,7 @@ Hooks.once("ready", () => {
   activateSocket();
   activateStratcom();
   activateProvoke();
+  animations.activateAnimations();
   return checkMigration();
 });
 

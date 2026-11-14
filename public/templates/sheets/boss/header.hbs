@@ -50,6 +50,21 @@
     {{
       formGroup systemFields.actions value=systemSource.actions classes="actions box" rootId=rootId
     }}
+    <div class="form-group box activations">
+      <label>{{localize "HELLPIERCERS.BOSS.activations"}}</label>
+      <div class="form-fields bare">
+        {{activations.total}}
+        <span class="hint">({{activations.players}} players)</span>
+        {{#if activations.stale}}
+          {{#if isGM}}
+            <a
+              data-action="recalcActions"
+              data-tooltip="HELLPIERCERS.BOSS.recalc"
+            ><i class="fa-solid fa-rotate"></i></a>
+          {{/if}}
+        {{/if}}
+      </div>
+    </div>
   {{else}}
     <div class="form-group box speed">
       <label>{{localize "HELLPIERCERS.ACTOR.FIELDS.speed.label"}}</label>
@@ -61,7 +76,10 @@
     </div>
     <div class="form-group box actions">
       <label>{{localize "HELLPIERCERS.ACTOR.FIELDS.actions.label"}}</label>
-      <div class="form-fields bare">{{system.actions}}</div>
+      <div class="form-fields bare">
+        {{system.actions}}
+        <span class="hint">= {{activations.total}} per round</span>
+      </div>
     </div>
   {{/if}}
   <div class="form-group box chartags">
