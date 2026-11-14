@@ -70,11 +70,12 @@ export class HellpiercersActor extends foundry.documents.Actor {
    * @param {string} statusId
    * @param {number} [stacks=1]
    */
-  async applyStatus(statusId, stacks = 1) {
+  async applyStatus(statusId, stacks = 1, { permanent = false } = {}) {
     if (!(statusId in CONFIG.statusEffects)) {
       throw new Error(`Invalid status ID "${statusId}"`);
     }
     if (!(stacks > 0)) return null;
+    if (permanent) return this.#applyPermanentStatus(statusId, stacks);
     const rule = RULES_BY_ID[statusId];
     const current = this.getStatusStacks(statusId);
     if (rule?.stack === "max" && current > 0) {
@@ -82,6 +83,18 @@ export class HellpiercersActor extends foundry.documents.Actor {
       return this.toggleStatusEffect(statusId, { direction: stacks - current });
     }
     return this.toggleStatusEffect(statusId, { direction: stacks });
+  }
+
+  /**
+   * Apply a status that does not decay: it lasts until the squad returns to DIS.
+   * @param {string} statusId
+   * @param {number} stacks
+   */
+  async #applyPermanentStatus(statusId, stacks) {
+    const cls = getDocumentClass("ActiveEffect");
+    const effect = await cls.fromStatusEffect(statusId);
+    effect.updateSource({ "system.stacks": stacks, "system.decay": "never" });
+    return cls.create(effect, { parent: this });
   }
 
   /**
@@ -205,6 +218,7 @@ export class HellpiercersActor extends foundry.documents.Actor {
     await this.update(update);
 
     const downed = before > 0 && after <= 0;
+    await this.#checkAgnosia(before, after);
     if (downed && autoDefeat) await this.setDefeated(true);
     if (downed) Hooks.callAll("hellpiercers.actorDowned", this);
     return { requested, absorbed, dealt, before, after, downed };
@@ -223,7 +237,35 @@ export class HellpiercersActor extends foundry.documents.Actor {
     if (after === before) return 0;
     await this.update({ "system.health.value": after });
     if (before <= 0 && after > 0) await this.setDefeated(false);
+    const agnosia = this.system.agnosia;
+    if (agnosia?.triggered && agnosia.value != null && after > agnosia.value) {
+      await this.update({ "system.agnosia.triggered": false });
+    }
     return after - before;
+  }
+
+  /**
+   * AGNOSIA: when a Boss or Miniboss drops to its threshold it makes one final desperate move. This
+   * announces it once (the move is played out immediately, and is not one of the unit's turns).
+   * @param {number} before
+   * @param {number} after
+   */
+  async #checkAgnosia(before, after) {
+    const agnosia = this.system.agnosia;
+    if (!agnosia || agnosia.value == null || agnosia.triggered) return;
+    if (!(before > agnosia.value && after <= agnosia.value)) return;
+    await this.update({ "system.agnosia.triggered": true });
+    // Bosses keep their Agnosia effect in sync themselves.
+    if (this.type !== "boss" && !this.statuses.has("agnosia")) await this.applyStatus("agnosia", 1);
+    const TextEditor = foundry.applications.ux.TextEditor.implementation;
+    const enriched = await TextEditor.enrichHTML(agnosia.effect ?? "", { relativeTo: this });
+    const ChatMessage = getDocumentClass("ChatMessage");
+    await ChatMessage.create({
+      content: `<div class="hellpiercers turn-note agnosia"><header>${game.i18n.format("HELLPIERCERS.TACCOM.agnosia", { name: foundry.utils.escapeHTML(this.name) })}</header><div>${enriched}</div></div>`,
+      speaker: ChatMessage.getSpeaker({ actor: this }),
+      flags: { [game.system.id]: { agnosia: true } },
+    });
+    Hooks.callAll("hellpiercers.agnosia", this);
   }
 
   /**

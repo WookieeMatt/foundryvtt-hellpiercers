@@ -17,6 +17,8 @@ import { registerSettings } from "./settings.mjs";
 import { activateStratcom } from "./stratcom/engine.mjs";
 import { findCombatant, spendAction, trySpendAction } from "./taccom/actions.mjs";
 import { TurnEngine } from "./taccom/engine.mjs";
+import { activateProvoke, findProvokers } from "./taccom/provoke.mjs";
+import { swarmAttackPlan } from "./taccom/swarm.mjs";
 import { getStatusEffects } from "./util/statuses.mjs";
 
 globalThis.hellpiercers = Object.freeze({
@@ -25,7 +27,14 @@ globalThis.hellpiercers = Object.freeze({
   data,
   documents,
   placeables,
-  taccom: Object.freeze({ engine: TurnEngine, findCombatant, spendAction, trySpendAction }),
+  taccom: Object.freeze({
+    engine: TurnEngine,
+    findCombatant,
+    findProvokers,
+    spendAction,
+    swarmAttackPlan,
+    trySpendAction,
+  }),
   util: {
     placeTemplate,
     setTargets,
@@ -222,6 +231,7 @@ Hooks.once("i18nInit", () => {
 Hooks.once("ready", () => {
   activateSocket();
   activateStratcom();
+  activateProvoke();
   return checkMigration();
 });
 

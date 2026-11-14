@@ -214,6 +214,7 @@ export class Damage extends foundry.abstract.DataModel {
     await this.#consume(actor, resolved.consume);
     await this.#applyTransference(result.dealt);
     await this.#applyConditions([actor]);
+    if (result.downed && actor.type !== "human") await this.#creditKills(1);
 
     if (message) await this.#printConfirmation(resolved.total, message, [target.uuid]);
     return { ...resolved, result };
@@ -242,7 +243,9 @@ export class Damage extends foundry.abstract.DataModel {
     const dealt = resolved.total;
 
     // Bust shit up
+    let brokenSquares = 0;
     if (this.qualities.breaker && dealt > group.system.getUnitHealth().value) {
+      brokenSquares = tokens.length;
       await group.update({
         "system.health.value": Math.max(
           0,
@@ -266,8 +269,36 @@ export class Damage extends foundry.abstract.DataModel {
     await this.#consume(actors[0], resolved.consume);
     await this.#applyTransference(dealt);
     await this.#applyConditions(actors);
+    // Every square of a Swarm that is defeated counts as an enemy defeated (p. 102).
+    if (group.system.health.value <= 0) {
+      await Promise.all(actors.map(a => a.setDefeated(true)));
+      await this.#creditKills(actors.length);
+    } else if (brokenSquares > 0) {
+      await this.#creditKills(brokenSquares);
+    }
     if (message) await this.#printConfirmation(dealt, message, [group.uuid, tokens]);
     return resolved;
+  }
+
+  /**
+   * Credit defeated enemies towards the attacker's Limit Break (p. 102).
+   * @param {number} count
+   */
+  async #creditKills(count) {
+    const attacker = this.attacker;
+    const limit = attacker?.system?.limit;
+    if (attacker?.type !== "human" || !limit || !(count > 0)) return;
+    const max = limit.max ?? Number.POSITIVE_INFINITY;
+    const before = limit.value ?? 0;
+    const after = Math.min(max, before + count);
+    if (after === before) return;
+    await attacker.update({ "system.limit.value": after });
+    if (before < max && after >= max) {
+      await getDocumentClass("ChatMessage").create({
+        content: `<div class="hellpiercers turn-note"><header>${game.i18n.format("HELLPIERCERS.TACCOM.limitReady", { name: foundry.utils.escapeHTML(attacker.name) })}</header></div>`,
+        speaker: getDocumentClass("ChatMessage").getSpeaker({ actor: attacker }),
+      });
+    }
   }
 
   /**

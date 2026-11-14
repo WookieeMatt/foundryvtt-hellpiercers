@@ -116,6 +116,22 @@ await game.actors.get(input.faction).system.rollQuality(input.quality, { advanta
     img: "icons/svg/door-exit.svg",
     command: "await hellpiercers.stratcom.completeMission({ success: true });",
   },
+  {
+    name: "Create Campaign Map",
+    img: "icons/svg/mountain.svg",
+    command: `const available = await hellpiercers.stratcom.availableMaps();
+const factions = hellpiercers.stratcom.getFactions().filter(f => available.has(f.system.key));
+if (!factions.length) return ui.notifications.warn("No faction maps found in assets/hellpiercers/maps.");
+const checks = factions.map(f => \`<label class="checkbox"><input type="checkbox" name="\${f.system.key}"> \${f.name}</label>\`).join("");
+const input = await foundry.applications.api.Dialog.input({
+  window: { title: "Campaign Map", icon: "fa-solid fa-map" },
+  content: \`<p>Choose up to three factions, left to right in sheet order.</p>\${checks}\`,
+});
+if (!input) return;
+const ids = factions.map(f => f.system.key).filter(k => input[k]);
+const scene = await hellpiercers.stratcom.createCampaignMap(ids, { activate: false });
+if (scene) ui.notifications.info(\`Created \${scene.name}\`);`,
+  },
   { name: "Rez Selected", img: "icons/svg/angel.svg", command: "await hellpiercers.rez();" },
   {
     name: "RECON Roll",

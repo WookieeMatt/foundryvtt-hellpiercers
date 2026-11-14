@@ -8,6 +8,7 @@
 import { registerGmOperation } from "../api/socket.mjs";
 import { ICHOR_PER_DEFEAT, ICHOR_PER_MISSION } from "./catalog.mjs";
 import { FACTIONS_BY_ID } from "./faction-catalog.mjs";
+import { availableMaps, createCampaignMap } from "./map.mjs";
 
 const SYSTEM = () => game.system.id;
 
@@ -218,7 +219,23 @@ export async function completeMission({ success = true } = {}) {
   const party = getParty();
   if (!party) return null;
   if (!game.user.isGM && !party.isOwner) return null;
-  const { rewards, defeats, mastered } = await party.system.completeMission({ success });
+  const { rewards, defeats, mastered, bonusAny } = await party.system.completeMission({ success });
+
+  // A Triumph can promise resources of any type: ask which.
+  if (bonusAny > 0) {
+    const options = ["hellsteel", "soulfire", "brimstone"]
+      .map(
+        r => `<option value="${r}">${game.i18n.localize(`HELLPIERCERS.RESOURCES.${r}`)}</option>`
+      )
+      .join("");
+    const choice = await foundry.applications.api.Dialog.input({
+      window: { title: `Triumph reward: ${bonusAny} resources` },
+      content: `<div class="form-group"><label>Resource</label><div class="form-fields"><select name="resource">${options}</select></div></div>`,
+    });
+    const resource = choice?.resource ?? "hellsteel";
+    await party.system.gain({ [resource]: bonusAny });
+    rewards[resource] = (rewards[resource] ?? 0) + bonusAny;
+  }
 
   const ichorGain = ICHOR_PER_MISSION + ICHOR_PER_DEFEAT * defeats;
   if (game.user.isGM)
@@ -284,4 +301,6 @@ export const stratcom = Object.freeze({
   checkUnlocked,
   advancePhase,
   completeMission,
+  createCampaignMap,
+  availableMaps,
 });

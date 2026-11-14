@@ -364,6 +364,10 @@
         "name": "Track Actions",
         "hint": "Track Main, Support, Aux and Move actions for each combatant in the combat tracker."
       },
+      "automateProvoke": {
+        "name": "Automate Provoke",
+        "hint": "When a token is dragged away from an adjacent enemy during combat, the GM client rolls the 1D6 Provoke attack automatically. Flying (Aegis) units and forced movement never Provoke."
+      },
       "activeParty": {
         "name": "Active Party",
         "hint": "The party whose buildings unlock items for the whole table.",

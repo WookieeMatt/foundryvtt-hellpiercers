@@ -77,6 +77,19 @@
             <a data-action="openMember"><b>{{name}}</b></a>
             <span>{{className}}{{#if armorName}}
                 &middot; {{armorName}}{{/if}}</span>
+            {{#if @root.hasTriumph}}
+              <select data-triumph-for="{{id}}" data-tooltip="Triumph">
+                <option value="">No Triumph</option>
+                {{#each @root.triumphs}}
+                  <option
+                    value="{{key}}"
+                    {{#if (eq key ../triumph)}}selected{{/if}}
+                  >
+                    {{name}}
+                  </option>
+                {{/each}}
+              </select>
+            {{/if}}
             <span class="hp">{{hp}}/{{hpMax}}</span>
             <a data-action="removeMember" data-tooltip="Remove"><i
                 class="fa-solid fa-xmark"
@@ -108,6 +121,8 @@
         >
         Used this expedition
       </label>
+      {{#if offGridExtra}}<span class="hint"
+        >+{{offGridExtra}} extra use (Triumph)</span>{{/if}}
     </div>
   {{/if}}
 
@@ -170,6 +185,20 @@
               </option>
             {{/each}}
           </select>
+          <ul class="role-actions">
+            {{#each actions}}
+              <li data-tooltip="{{text}}">
+                <a
+                  data-action="useRoleAction"
+                  data-role="{{../key}}"
+                  data-role-action="{{id}}"
+                >
+                  <i class="fa-solid fa-bolt"></i> {{name}}
+                </a>
+                <em>{{phase}}{{#if cost}} &middot; {{cost}}{{/if}}</em>
+              </li>
+            {{/each}}
+          </ul>
         </div>
       {{/each}}
     </div>

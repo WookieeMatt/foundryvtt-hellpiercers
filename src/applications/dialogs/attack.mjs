@@ -1,5 +1,6 @@
 import { Damage } from "../../data/damage.mjs";
 import { trySpendAction } from "../../taccom/actions.mjs";
+import { swarmAttackPlan } from "../../taccom/swarm.mjs";
 
 const { Application, HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -129,19 +130,36 @@ export class AttackHud extends HandlebarsApplicationMixin(Application) {
     // Attacking costs the action of the item that makes the attack (a Main Action for weapons).
     const cost = this.sourceItem?.getActionCost?.() ?? "main";
     if (this.sourceActor && !(await trySpendAction(this.sourceActor, cost))) return;
-    const roll = await new foundry.dice.Roll(
-      this.#attack.damage.formula.replace("@charge", `@counters.${this.sourceItem?.id}.value`),
-      this.sourceActor.getRollData()
-    ).evaluate();
-    const damageData = this.#attack.damage.toObject();
-    damageData.roll = JSON.stringify(roll.toJSON());
-    damageData.source = this.sourceItem?.uuid ?? this.sourceActor.uuid;
-    damageData.value = roll.total;
-    const damage = new Damage(damageData);
-    await damage.toMessage(
-      roll,
-      game.user.targets.map(t => t.document.uuid)
+
+    const targets = game.user.targets.map(t => t.document.uuid);
+    const baseFormula = this.#attack.damage.formula.replace(
+      "@charge",
+      `@counters.${this.sourceItem?.id}.value`
     );
+
+    // A Swarm attacks once per adjacent tile, each gaining +1 damage per adjacent tile.
+    const plan =
+      this.sourceActor?.type === "minion" && game.user.targets.size === 1
+        ? swarmAttackPlan(this.sourceActor, game.user.targets.first().document)
+        : null;
+    const bonuses = plan ? plan.bonuses : [0];
+
+    for (const bonus of bonuses) {
+      const formula = bonus ? `${baseFormula} + ${bonus}` : baseFormula;
+      const roll = await new foundry.dice.Roll(formula, this.sourceActor.getRollData()).evaluate();
+      const damageData = this.#attack.damage.toObject();
+      if (bonus) damageData.formula = formula;
+      damageData.roll = JSON.stringify(roll.toJSON());
+      damageData.source = this.sourceItem?.uuid ?? this.sourceActor.uuid;
+      damageData.value = roll.total;
+      await new Damage(damageData).toMessage(roll, targets);
+    }
+    if (plan && plan.expended > 0) {
+      await ChatMessage.create({
+        content: `<div class="hellpiercers turn-note"><header>Swarm attack</header><p>${plan.attacks} attacks (${plan.adjacent} tiles adjacent). The Swarm must expend ${plan.expended} adjacent tile${plan.expended === 1 ? "" : "s"}: remove them from the Swarm.</p></div>`,
+        speaker: ChatMessage.getSpeaker({ actor: this.sourceActor }),
+      });
+    }
     this.close();
   }
 

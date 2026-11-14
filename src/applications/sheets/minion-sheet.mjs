@@ -65,6 +65,14 @@ export class MinionSheet extends HellpiercersActorSheetMixin(ToggleMixin(ActorSh
         }),
         value: ctx.system.special.description,
       };
+      ctx.agnosia = {
+        field: ctx.systemFields.agnosia.fields.effect,
+        enriched: await TextEditor.enrichHTML(this.actor.system.agnosia.effect, {
+          secrets: this.actor.isOwner,
+          rollData: this.actor.getRollData.bind(this.actor),
+        }),
+        value: ctx.system.agnosia.effect,
+      };
     }
     return ctx;
   }

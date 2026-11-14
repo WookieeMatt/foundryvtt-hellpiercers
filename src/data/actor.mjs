@@ -331,6 +331,12 @@ export class MinionModel extends foundry.abstract.TypeDataModel {
         name: new fields.StringField({ initial: "Special" }),
         description: new fields.HTMLField({}),
       }),
+      /** Minibosses have an AGNOSIA threshold too. Leave the value empty for ordinary minions. */
+      agnosia: new fields.SchemaField({
+        value: new fields.NumberField({ integer: true, nullable: true, initial: null, min: 0 }),
+        effect: new fields.HTMLField({}),
+        triggered: new fields.BooleanField({ initial: false }),
+      }),
     };
   }
 
@@ -420,6 +426,8 @@ export class BossModel extends foundry.abstract.TypeDataModel {
           initial: 10,
         }),
         effect: new fields.HTMLField({}),
+        /** AGNOSIA is a single-use move: set when it fires, cleared when the unit is healed above it. */
+        triggered: new fields.BooleanField({ initial: false }),
       }),
     };
   }

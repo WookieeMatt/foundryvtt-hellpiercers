@@ -1,0 +1,35 @@
+name: Create Campaign Map
+type: script
+command: |-
+  const available = await hellpiercers.stratcom.availableMaps();
+  const factions = hellpiercers.stratcom.getFactions().filter(f => available.has(f.system.key));
+  if (!factions.length) return ui.notifications.warn("No faction maps found in assets/hellpiercers/maps.");
+  const checks = factions.map(f => `<label class="checkbox"><input type="checkbox" name="${f.system.key}"> ${f.name}</label>`).join("");
+  const input = await foundry.applications.api.Dialog.input({
+    window: { title: "Campaign Map", icon: "fa-solid fa-map" },
+    content: `<p>Choose up to three factions, left to right in sheet order.</p>${checks}`,
+  });
+  if (!input) return;
+  const ids = factions.map(f => f.system.key).filter(k => input[k]);
+  const scene = await hellpiercers.stratcom.createCampaignMap(ids, { activate: false });
+  if (scene) ui.notifications.info(`Created ${scene.name}`);
+img: icons/svg/mountain.svg
+author: null
+scope: global
+folder: null
+ownership:
+  default: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.2.0
+  createdTime: 1763100000000
+  modifiedTime: 1763100000000
+  lastModifiedBy: null
+  exportSource: null
+_id: HPCreateCampaign
+sort: 1000000
+_key: '!macros!HPCreateCampaign'

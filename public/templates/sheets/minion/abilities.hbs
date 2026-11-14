@@ -116,4 +116,35 @@
       {{/if}}
     </div>
   </div>
+
+  {{#if (or editable system.agnosia.value)}}
+    <div class="item-block agnosia">
+      <label for="{{rootId}}-system.agnosia.value">
+        {{localize "HELLPIERCERS.ACTOR.FIELDS.agnosia.label"}}
+        <small>(miniboss HP threshold)</small>
+      </label>
+      <div class="flexrow">
+        {{#if editable}}
+          <input
+            type="number"
+            id="{{rootId}}-system.agnosia.value"
+            name="system.agnosia.value"
+            value="{{system.agnosia.value}}"
+            min="0"
+          >
+        {{else}}
+          <div class="value">{{system.agnosia.value}}</div>
+        {{/if}}
+      </div>
+      <div class="effect">
+        {{#if editable}}
+          {{
+            formInput agnosia.field value=agnosia.value enriched=agnosia.enriched toggled=false
+          }}
+        {{else}}
+          <div class="editor-content">{{{agnosia.enriched}}}</div>
+        {{/if}}
+      </div>
+    </div>
+  {{/if}}
 </section>

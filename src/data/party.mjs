@@ -8,9 +8,11 @@ import {
   OFF_GRID_MUNITIONS,
   RESOURCES,
   ROLES,
+  TRIUMPHS,
   VEHICLE_OPTIONS,
   VEHICLE_READINESS,
 } from "../stratcom/catalog.mjs";
+import { ROLE_ACTIONS } from "../stratcom/roles.mjs";
 
 const fields = foundry.data.fields;
 
@@ -40,6 +42,12 @@ export class PartyModel extends foundry.abstract.TypeDataModel {
       /** Off-Grid Munitions Support selected for the expedition. */
       offGrid: new fields.StringField({ initial: "" }),
       offGridUsed: new fields.BooleanField({ initial: false }),
+      /** Extra Off-Grid Munitions uses this mission (from a Triumph). */
+      offGridExtra: new fields.NumberField({ integer: true, nullable: false, initial: 0, min: 0 }),
+      /** Each member's chosen Triumph for the next mission: actor id -> Triumph key. */
+      triumphs: new fields.TypedObjectField(new fields.StringField()),
+      /** Effects to apply to a member at the start of their next mission: actor id -> status ids. */
+      pendingBoons: new fields.ObjectField(),
       gridSuite: new fields.StringField({ initial: "" }),
       legendaryArms: new fields.ArrayField(
         new fields.SchemaField({
@@ -80,6 +88,8 @@ export class PartyModel extends foundry.abstract.TypeDataModel {
             done: new fields.BooleanField({ initial: false }),
           })
         ),
+        /** Resources of any type still to be claimed at the end of the mission (a Triumph reward). */
+        bonusAny: new fields.NumberField({ integer: true, nullable: false, initial: 0, min: 0 }),
         /** HELLPIERCERS downed this mission. The GM earns 2 Ichor for each. */
         defeats: new fields.NumberField({ integer: true, nullable: false, initial: 0, min: 0 }),
         startedPhase: new fields.NumberField({ integer: true, nullable: false, initial: 0 }),
@@ -315,6 +325,85 @@ export class PartyModel extends foundry.abstract.TypeDataModel {
       "system.offGridUsed": false,
     });
     await this.#prepareSquad("leave");
+    await this.#applyTriumphs();
+  }
+
+  /**
+   * Apply the effects of each member's Triumph and post a reminder of everyone's challenge and
+   * reward. Bleeding, Reckless, No Gear and Echo are automatic; the rest are rules for the table.
+   */
+  async #applyTriumphs() {
+    if (!this.buildings.has("agnoia")) return;
+    const live = this.live;
+    const lines = [];
+    const boons = foundry.utils.deepClone(live.pendingBoons ?? {});
+    let offGridExtra = 0;
+    let bonusAny = 0;
+    for (const actor of live.memberActors) {
+      // Boons earned on the previous mission start now and last until DIS.
+      for (const id of boons[actor.id] ?? []) await actor.applyStatus(id, 1, { permanent: true });
+      delete boons[actor.id];
+
+      const key = live.triumphs[actor.id];
+      const triumph = key ? TRIUMPHS[key] : null;
+      if (!triumph) continue;
+      lines.push(
+        `<li><b>${foundry.utils.escapeHTML(actor.name)}</b>: ${foundry.utils.escapeHTML(triumph.name)}<br><em>${foundry.utils.escapeHTML(triumph.challenge)}</em><br>Reward: ${foundry.utils.escapeHTML(triumph.reward)}</li>`
+      );
+      if (key === "bare") offGridExtra += 1;
+      if (key === "bleeding") {
+        await actor.applyStatus("bleed", 1, { permanent: true });
+        boons[actor.id] = [...(boons[actor.id] ?? []), "healing"];
+      }
+      if (key === "reckless") await actor.applyStatus("rush", 2);
+      if (key === "echo") bonusAny += 2;
+    }
+    await this.parent.update({
+      "system.offGridExtra": offGridExtra,
+      "system.mission.bonusAny": bonusAny,
+      "system.pendingBoons": boons,
+    });
+    if (lines.length) {
+      await getDocumentClass("ChatMessage").create({
+        content: `<div class="hellpiercers stratcom-note"><header>Triumphs</header><ul>${lines.join("")}</ul></div>`,
+      });
+    }
+  }
+
+  /**
+   * Use a Role action: pay its cost and post it to chat.
+   * @param {string} role       "skopos" | "mensor" | "chresto" | "mahemikos"
+   * @param {string} actionId
+   * @param {object} [choice]
+   * @param {number} [choice.option]    Which option for actions that have them
+   * @param {string} [choice.resource]  Which resource pays an "any" cost
+   * @returns {Promise<{ ok: boolean, reason?: string }>}
+   */
+  async useRoleAction(role, actionId, { option, resource } = {}) {
+    const def = ROLE_ACTIONS[role]?.find(a => a.id === actionId);
+    if (!def) return { ok: false, reason: "unknown" };
+    let cost = { ...(def.cost ?? {}) };
+    let label = def.name;
+    if (def.options) {
+      const chosen = def.options[option ?? 0];
+      if (!chosen) return { ok: false, reason: "option" };
+      cost = { ...chosen.cost };
+      label = `${def.name}: ${chosen.name}`;
+    }
+    if (cost.any) {
+      if (!resource || !RESOURCES.includes(resource)) return { ok: false, reason: "resource" };
+      cost = { [resource]: cost.any };
+    }
+    if (Object.keys(cost).length && !(await this.spend(cost))) return { ok: false, reason: "cost" };
+    const holder = game.actors.get(this.live.roles[role]);
+    const paid = Object.entries(cost)
+      .map(([r, n]) => `${n} ${r}`)
+      .join(", ");
+    await getDocumentClass("ChatMessage").create({
+      content: `<div class="hellpiercers stratcom-note"><header>${foundry.utils.escapeHTML(label)}</header><p><em>${ROLES[role].label}${holder ? `: ${foundry.utils.escapeHTML(holder.name)}` : ""}${paid ? ` &middot; paid ${paid}` : ""}</em></p><p>${foundry.utils.escapeHTML(def.text)}</p></div>`,
+      speaker: holder ? getDocumentClass("ChatMessage").getSpeaker({ actor: holder }) : undefined,
+    });
+    return { ok: true };
   }
 
   /** @param {string} key */
@@ -346,11 +435,12 @@ export class PartyModel extends foundry.abstract.TypeDataModel {
    * Finish the mission and return to DIS: pay out resources, advance Class Mastery, and rearm.
    * @param {object} [options]
    * @param {boolean} [options.success=true]  Whether the mission as a whole succeeded
-   * @returns {Promise<{ rewards: Record<string, number>, defeats: number, mastered: string[] }>}
+   * @returns {Promise<{ rewards: Record<string, number>, defeats: number, mastered: string[], bonusAny: number }>}
    */
   async completeMission({ success = true } = {}) {
     const rewards = this.missionRewards;
     const defeats = this.mission.defeats;
+    const bonusAny = this.mission.bonusAny;
     const mastered = [];
 
     if (success) await this.gain(rewards);
@@ -378,9 +468,12 @@ export class PartyModel extends foundry.abstract.TypeDataModel {
       "system.mission.active": false,
       "system.mission.objectives": [],
       "system.mission.defeats": 0,
+      "system.mission.bonusAny": 0,
+      "system.offGridExtra": 0,
+      "system.==triumphs": {},
     });
     await this.#prepareSquad("return");
-    return { rewards, defeats, mastered };
+    return { rewards, defeats, mastered, bonusAny: success ? bonusAny : 0 };
   }
 
   /** The member actors that exist. */

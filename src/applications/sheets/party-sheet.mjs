@@ -5,6 +5,7 @@ import {
   OFF_GRID_MUNITIONS,
   RESOURCES,
   ROLES,
+  TRIUMPHS,
   VEHICLE_OPTIONS,
   VEHICLE_READINESS,
 } from "../../stratcom/catalog.mjs";
@@ -15,6 +16,7 @@ import {
   ichor,
   phase,
 } from "../../stratcom/engine.mjs";
+import { ROLE_ACTIONS } from "../../stratcom/roles.mjs";
 import { HellpiercersActorSheetMixin } from "./mixins.mjs";
 
 const ActorSheet = foundry.applications.sheets.ActorSheet;
@@ -50,6 +52,7 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
       setReadiness: PartySheet.#setReadiness,
       buyVehicleOption: PartySheet.#buyVehicleOption,
       toggleVehicleOption: PartySheet.#toggleVehicleOption,
+      useRoleAction: PartySheet.#useRoleAction,
     },
   };
 
@@ -90,6 +93,16 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
   /** @override */
   async _onRender(ctx, opts) {
     await super._onRender(ctx, opts);
+    // Each member's Triumph is stored on the party, keyed by actor id.
+    for (const el of this.element.querySelectorAll("select[data-triumph-for]")) {
+      el.addEventListener("change", async ev => {
+        const select = /** @type {HTMLSelectElement} */ (ev.currentTarget);
+        const id = select.dataset.triumphFor;
+        await this.actor.update({
+          [`system.triumphs.${select.value ? id : `-=${id}`}`]: select.value || null,
+        });
+      });
+    }
     // Inline edits to Legendary Arms go through the model, not the form.
     for (const el of this.element.querySelectorAll("[data-array='arm'][data-field]")) {
       el.addEventListener("change", async ev => {
@@ -162,7 +175,10 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
       factionName: game.actors.get(mission.faction)?.name ?? "",
       rewards: costText(party.missionRewards),
     };
+    ctx.hasTriumph = party.mechanics.has("triumph");
+    ctx.triumphs = Object.entries(TRIUMPHS).map(([key, t]) => ({ key, name: t.name }));
     ctx.members = party.memberActors.map(a => ({
+      triumph: party.triumphs[a.id] ?? "",
       id: a.id,
       name: a.name,
       img: a.img,
@@ -172,6 +188,7 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
       hpMax: a.system.health?.max,
     }));
     ctx.hasOffGrid = party.mechanics.has("off_grid");
+    ctx.offGridExtra = party.offGridExtra;
     ctx.offGrid = OFF_GRID_MUNITIONS.map(name => ({ name, selected: name === party.offGrid }));
     ctx.hasGrid = party.mechanics.has("grid_manipulation");
     ctx.gridSuites = Object.entries(GRID_SUITES).map(([key, s]) => ({
@@ -187,7 +204,13 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
       key,
       label: role.label,
       holder: party.roles[key],
-      actions: role.actions.join(", "),
+      actions: (ROLE_ACTIONS[key] ?? []).map(a => ({
+        id: a.id,
+        name: a.name,
+        phase: a.phase,
+        text: a.text,
+        cost: a.cost?.any ? `${a.cost.any} of any resource` : "",
+      })),
       members: ctx.members.map(m => ({ ...m, selected: m.id === party.roles[key] })),
     }));
     ctx.hasMastery = party.mechanics.has("class_mastery");
@@ -363,6 +386,33 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
         ? `Legendary Arms expired: ${expired.join(", ")}`
         : "Session ended. Aion reduced."
     );
+  }
+
+  /** @this {PartySheet} @param {Event} _ev @param {HTMLElement} target */
+  static async #useRoleAction(_ev, target) {
+    const role = target.dataset.role;
+    const actionId = target.dataset.roleAction;
+    const def = ROLE_ACTIONS[role].find(a => a.id === actionId);
+    const choice = {};
+    if (def.options || def.cost?.any) {
+      const optionHtml = def.options
+        ? `<div class="form-group"><label>Option</label><div class="form-fields"><select name="option">${def.options
+            .map((o, i) => `<option value="${i}">${o.name} (${costText(o.cost)})</option>`)
+            .join("")}</select></div></div>`
+        : "";
+      const resourceHtml = def.cost?.any
+        ? `<div class="form-group"><label>Pay ${def.cost.any} with</label><div class="form-fields"><select name="resource">${RESOURCES.map(r => `<option value="${r}">${game.i18n.localize(`HELLPIERCERS.RESOURCES.${r}`)}</option>`).join("")}</select></div></div>`
+        : "";
+      const picked = await Dialog().input({
+        window: { title: def.name, icon: "fa-solid fa-bolt" },
+        content: optionHtml + resourceHtml,
+      });
+      if (!picked) return;
+      if (picked.option !== undefined) choice.option = Number(picked.option);
+      if (picked.resource) choice.resource = picked.resource;
+    }
+    const result = await this.actor.system.useRoleAction(role, actionId, choice);
+    if (!result.ok) ui.notifications.warn(`Can't use ${def.name}: ${result.reason}`);
   }
 
   /** @this {PartySheet} @param {Event} _ev @param {HTMLElement} target */

@@ -418,57 +418,69 @@ export const GRID_SUITES = Object.freeze({
 /** Triumphs (p. 121-122): a self-imposed challenge in exchange for a reward, for one mission. */
 export const TRIUMPHS = Object.freeze({
   bare: {
+    name: "No Gear",
     challenge: "No gear or mods can be used this mission.",
     reward: "1 additional Off-Grid Munitions use this mission.",
   },
   bleeding: {
+    name: "Bleeding",
     challenge: "You gain Bleed:1 that cannot be removed until you return to DIS.",
     reward: "Next mission you gain Healing:1 that cannot be removed until you return to DIS.",
   },
   reckless: {
+    name: "Reckless",
     challenge: "You must spend all your Speed every turn; unspent Speed is dealt back as damage.",
     reward: "Gain 2 Charges of Rush: a Free action to double your Speed.",
   },
   echo: {
+    name: "Echo",
     challenge:
       "Enemies treat you as occupying both the tile you start and the tile you end your turn on.",
     reward: "Gain 2 resources of any type at mission end.",
   },
   tethered: {
+    name: "Tethered",
     challenge:
       "Two players take this at once and must end all movement within 2 spaces of each other.",
     reward:
       "Choose Slow:1, Bleed:1 or Poison:1: attacks against creatures already damaged by your partner gain it.",
   },
   magnetic: {
+    name: "Magnetic",
     challenge:
       "Once per turn the GM may declare an enemy Magnetic; you move 2 spaces toward it at turn start (still Provokes).",
     reward: "One player gains Trans-Body Attraction Suite.",
   },
   hunted: {
+    name: "Hunted",
     challenge: "The GM has 3 Charges to summon a chosen miniboss during your turn.",
     reward: "Charge-bought minibosses drop 1 resource (claim within 2 turns).",
   },
   volatile: {
+    name: "Volatile",
     challenge:
       "Your attack patterns that overlap a player character apply their Effects and half damage to them.",
     reward: "Gain Stasis-Induction Hyperforge (Aux: mark a tile of your next attack Lingering:1).",
   },
   frugal: {
+    name: "Frugal",
     challenge:
       "You may heal 1 HP when you damage an adjacent creature, but no other healing except Rez.",
     reward:
       "Advance your Limit Break by 1 each turn (or restore 1 Equipment use per round if you have none).",
   },
   last: {
+    name: "Last To Act",
     challenge: "You take your actions after all enemy units.",
     reward: "Your loadout may include up to 2 options you have not unlocked.",
   },
   shaded: {
+    name: "Shaded",
     challenge: "All enemy minibosses gain permanent Shaded:1.",
     reward: "+2 Speed on any turn you are or were in a Shaded square.",
   },
   swapped: {
+    name: "Swapped",
     challenge: "Once per round the GM may swap you with a minion or miniboss.",
     reward:
       "Create an extra shared HELLPIERCER any player can transform into (Aux, once per TACCOM).",

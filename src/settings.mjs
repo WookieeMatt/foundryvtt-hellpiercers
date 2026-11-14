@@ -6,6 +6,7 @@ export const SETTINGS = Object.freeze({
   bleedRule: "bleedRule",
   trackActions: "trackActions",
   chatCards: "chatCards",
+  automateProvoke: "automateProvoke",
   ichor: "ichor",
   stratcomPhase: "stratcomPhase",
   activeParty: "activeParty",
@@ -84,6 +85,14 @@ export function registerSettings() {
     config: true,
     name: "HELLPIERCERS.SETTINGS.chatCards.name",
     hint: "HELLPIERCERS.SETTINGS.chatCards.hint",
+    type: new fields.BooleanField({ initial: true }),
+  });
+
+  game.settings.register(id, "automateProvoke", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.automateProvoke.name",
+    hint: "HELLPIERCERS.SETTINGS.automateProvoke.hint",
     type: new fields.BooleanField({ initial: true }),
   });
 

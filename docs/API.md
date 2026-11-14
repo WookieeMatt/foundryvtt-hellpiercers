@@ -81,6 +81,36 @@ Faction (`actor.system`): Qualities and Crown are derived from the active locati
 Hooks: `hellpiercers.stratcomPhase (phase, {built, arrived})`, `hellpiercers.missionComplete (party, result)`,
 `hellpiercers.actorDowned (actor)`.
 
+## More TACCOM rules
+
+- **Limit Break:** every enemy a HELLPIERCER defeats (each Swarm square counts) adds to `system.limit.value`
+  up to the class's Break Value, and a chat note announces when it is ready. Using the Limit Break
+  ability resets it; leaving DIS also resets it.
+- **Agnosia:** Bosses and Minibosses (set `system.agnosia.value` on a minion) announce their Agnosia
+  once when HP first reaches the threshold, with the Agnosia text, and get the Agnosia status. Healing
+  above the threshold re-arms it. Hook: `hellpiercers.agnosia (actor)`.
+- **Provoke:** when a token is dragged away from an adjacent enemy during combat the GM client rolls
+  the 1D6 Provoke attack, per enemy unit (a Swarm only once its last square leaves), checked along
+  the whole path of the move. Aegis (flying) units, forced movement (`method: "api"`) and actors
+  with the flag `hellpiercers.noProvoke` are exempt. KOPIS's Offhand Pistol fires back automatically.
+  Toggle with the Automate Provoke setting. `hellpiercers.taccom.findProvokers(token, path)`.
+- **Swarm attacks:** the attack dialog makes one attack per Swarm tile adjacent to the target (max
+  4 vs Scale 1, 12 vs Scale 2), each with +1 damage per adjacent tile, and tells you how many tiles
+  to expend. `hellpiercers.taccom.swarmAttackPlan(attackerActor, targetTokenDoc)`.
+
+## STRATCOM extras
+
+- **Roles:** `party.system.useRoleAction(role, actionId, { option, resource })` pays the cost and
+  posts the action. The party sheet lists each Role's STRATCOM actions and RECON moves
+  (`src/stratcom/roles.mjs`).
+- **Triumphs:** pick one per squad member on the party sheet. Bleeding, Reckless, No Gear and Echo are
+  automatic (permanent Bleed:1, Rush:2, an extra Off-Grid use, 2 resources of any type at the end);
+  the rest are posted as a reminder when the mission starts. Permanent effects last until you return
+  to DIS: `actor.applyStatus(id, n, { permanent: true })`.
+- **Campaign map:** `await hellpiercers.stratcom.createCampaignMap(["syncrasis", "henosis", "autophyes"])`
+  builds a gridless scene with the three map segments side by side. Put one 1:1.8 image per
+  faction at `assets/hellpiercers/maps/<faction id>.webp` (not shipped: it is the book's art).
+
 ## RECON
 
 ```js
