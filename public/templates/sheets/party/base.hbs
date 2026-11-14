@@ -1,0 +1,46 @@
+<section
+  class="tab base {{tab.cssClass}} scrollable flexcol"
+  data-tab="{{tab.id}}"
+  data-group="primary"
+>
+  <ul class="buildings">
+    {{#each buildings}}
+      <li
+        class="building {{#if built}}built{{else if buildable}}buildable{{else}}locked{{/if}}"
+        data-building-id="{{id}}"
+      >
+        <div class="head">
+          <b>{{name}}</b>
+          <span class="cost">{{cost}}</span>
+          {{#if built}}
+            <span class="state"><i class="fa-solid fa-check"></i> Built</span>
+            {{#if refundable}}
+              <a data-action="refundBuilding" data-tooltip="Refund"><i
+                  class="fa-solid fa-rotate-left"
+                ></i></a>
+            {{/if}}
+          {{else}}
+            <button
+              type="button"
+              data-action="buildBuilding"
+              {{#unless buildable}}disabled{{/unless}}
+            >
+              Build
+            </button>
+          {{/if}}
+        </div>
+        {{#if missing.length}}
+          <p class="requires">
+            Requires: {{#each missing}}{{this}}{{#unless @last}},
+              {{/unless}}{{/each}}
+          </p>
+        {{/if}}
+        <ul class="unlocks">
+          {{#each unlocks}}
+            <li><b>{{type}}:</b> {{names}}</li>
+          {{/each}}
+        </ul>
+      </li>
+    {{/each}}
+  </ul>
+</section>

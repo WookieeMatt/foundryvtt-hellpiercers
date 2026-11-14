@@ -6,6 +6,10 @@ export const SETTINGS = Object.freeze({
   bleedRule: "bleedRule",
   trackActions: "trackActions",
   chatCards: "chatCards",
+  ichor: "ichor",
+  stratcomPhase: "stratcomPhase",
+  activeParty: "activeParty",
+  deriveUnlocks: "deriveUnlocks",
 });
 
 /**
@@ -83,9 +87,72 @@ export function registerSettings() {
     type: new fields.BooleanField({ initial: true }),
   });
 
+  game.settings.register(id, "ichor", {
+    scope: "world",
+    config: false,
+    type: new fields.NumberField({
+      required: true,
+      integer: true,
+      nullable: false,
+      initial: 0,
+      min: 0,
+    }),
+    onChange: () => rerenderStratcom(),
+  });
+
+  game.settings.register(id, "stratcomPhase", {
+    scope: "world",
+    config: false,
+    type: new fields.NumberField({
+      required: true,
+      integer: true,
+      nullable: false,
+      initial: 0,
+      min: 0,
+    }),
+    onChange: () => rerenderStratcom(),
+  });
+
+  game.settings.register(id, "activeParty", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.activeParty.name",
+    hint: "HELLPIERCERS.SETTINGS.activeParty.hint",
+    type: new fields.StringField({
+      required: false,
+      blank: true,
+      initial: "",
+      choices: () => ({
+        "": "HELLPIERCERS.SETTINGS.activeParty.auto",
+        ...Object.fromEntries(
+          (game.actors?.filter(a => a.type === "party") ?? []).map(a => [a.id, a.name])
+        ),
+      }),
+    }),
+    onChange: () => rerenderStratcom(),
+  });
+
+  game.settings.register(id, "deriveUnlocks", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.deriveUnlocks.name",
+    hint: "HELLPIERCERS.SETTINGS.deriveUnlocks.hint",
+    type: new fields.BooleanField({ initial: true }),
+    onChange: () => rerenderStratcom(),
+  });
+
   game.settings.register(id, "migrationVersion", {
     scope: "world",
     config: false,
     type: new fields.StringField({ required: true, initial: "0" }),
   });
+}
+
+/** Refresh everything that displays campaign state. */
+function rerenderStratcom() {
+  for (const actor of game.actors ?? []) {
+    if (actor.type === "human") actor.prepareData();
+    if (["party", "faction", "human"].includes(actor.type) && actor.sheet?.rendered)
+      actor.sheet.render();
+  }
 }

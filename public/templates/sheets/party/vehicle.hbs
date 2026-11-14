@@ -1,0 +1,66 @@
+<section
+  class="tab vehicle {{tab.cssClass}} scrollable flexcol"
+  data-tab="{{tab.id}}"
+  data-group="primary"
+>
+  {{#if hasVehicle}}
+    <div class="panel">
+      <input
+        type="text"
+        name="system.vehicle.name"
+        value="{{system.vehicle.name}}"
+        placeholder="Name your vehicle"
+      >
+      <div class="readiness">
+        {{#each readiness}}
+          <button
+            type="button"
+            class="{{#if current}}active{{/if}}"
+            data-action="setReadiness"
+            data-readiness="{{key}}"
+          >
+            {{label}}
+          </button>
+        {{/each}}
+      </div>
+    </div>
+    <div class="panel">
+      <h3>
+        Upgrades <small>(two active at a time)</small> and Personalization
+      </h3>
+      <ul class="vehicle-options">
+        {{#each vehicleOptions}}
+          <li
+            data-option-id="{{id}}"
+            class="{{kind}} {{#if installed}}installed{{/if}}"
+          >
+            <b>{{name}}</b>
+            <em>{{kind}}</em>
+            <span class="cost">{{cost}}</span>
+            {{#if owned}}
+              <button type="button" data-action="toggleVehicleOption">
+                {{#if installed}}Remove{{else}}Install{{/if}}
+              </button>
+            {{else}}
+              <button
+                type="button"
+                data-action="buyVehicleOption"
+                {{#if locked}}disabled{{/if}}
+              >
+                Buy
+              </button>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="panel">
+      <textarea name="system.vehicle.notes" placeholder="Vehicle notes"
+      >{{system.vehicle.notes}}</textarea>
+    </div>
+  {{else}}
+    <p class="hint">
+      Build the Synthetic Spinther Manufacturing Lab to gain a vehicle.
+    </p>
+  {{/if}}
+</section>

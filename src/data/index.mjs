@@ -5,6 +5,8 @@ export * as Combatant from "./combatant.mjs";
 export * as CombatantGroup from "./combatant-group.mjs";
 export * from "./damage.mjs";
 export * as ActiveEffect from "./effect.mjs";
+export * as Faction from "./faction.mjs";
 export * from "./halo-upgrade-model.mjs";
 export * as Item from "./item.mjs";
+export * as Party from "./party.mjs";
 export * from "./range-model.mjs";

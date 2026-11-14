@@ -1,3 +1,4 @@
+import { getParty } from "../stratcom/engine.mjs";
 import { Attack } from "./attack.mjs";
 
 /**
@@ -181,6 +182,28 @@ export class HumanModel extends foundry.abstract.TypeDataModel {
     };
     this.limit.max = this.abilities.class.limit?.system.break_value;
     this.reversal_charges.max = this.abilities.armor.reversal?.system.uses;
+  }
+
+  /**
+   * The party's buildings decide which advanced options are unlocked (Cross Class Development,
+   * Limit Breaks, Reversals and the second weapon slot). The "Configure Unlocks" toggles still apply
+   * when the world has no party, or when unlocks are not derived from the party.
+   */
+  prepareDerivedData() {
+    let derive = false;
+    try {
+      derive = game.settings.get(game.system.id, "deriveUnlocks");
+    } catch {
+      return;
+    }
+    const party = derive ? getParty() : null;
+    if (!party) return;
+    this.meta.cross_class = party.system.has("gnostic");
+    this.meta.limit_break = party.system.has("aponoia");
+    this.meta.reversal = party.system.has("ignorance");
+    // HARPE's Boundless Dokeo grants one additional weapon.
+    const dokeo = /harpe/i.test(this.class?.name ?? "") ? 1 : 0;
+    this.meta.weapon_slots = party.system.weaponSlots + dokeo;
   }
 
   /**
@@ -533,36 +556,5 @@ export class SpawnerModel extends foundry.abstract.TypeDataModel {
   }
 }
 
-export class FactionModel extends foundry.abstract.TypeDataModel {
-  static LOCALIZATION_PREFIXES = ["HELLPIERCERS.ACTOR"];
-  static DEFAULT_ICON = "systems/hellpiercers/assets/icons/flying-flag.svg";
-  static defineSchema() {
-    return {
-      description: new fields.HTMLField(),
-      crown: new fields.SchemaField({
-        description: new fields.StringField(),
-        value: new fields.NumberField({ initial: 5, integer: true }),
-      }),
-      qualities: new fields.SchemaField({
-        force: new fields.NumberField({ min: 0, initial: 2, integer: true, nullable: false }),
-        subterfuge: new fields.NumberField({ min: 0, initial: 2, integer: true, nullable: false }),
-        territory: new fields.NumberField({ min: 0, initial: 2, integer: true, nullable: false }),
-        assets: new fields.NumberField({ min: 0, initial: 2, integer: true, nullable: false }),
-      }),
-    };
-  }
-
-  prepareBaseData() {
-    this.crown.max = 5;
-  }
-
-  async _preCreate(data) {
-    this.parent.updateSource(
-      foundry.utils.mergeObject(
-        { prototypeToken: { actorLink: true, disposition: CONST.TOKEN_DISPOSITIONS.NEUTRAL } },
-        data,
-        { inplace: false, insertKeys: false, insertValues: false }
-      )
-    );
-  }
-}
+export { FactionModel } from "./faction.mjs";
+export { PartyModel } from "./party.mjs";

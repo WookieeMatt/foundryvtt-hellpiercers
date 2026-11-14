@@ -74,6 +74,48 @@ if (input) await hellpiercers.heal(null, Number(input.amount));`,
     command: `${input("Temporary HP", "fa-solid fa-shield-heart", amountField(2, 1))}
 if (input) await hellpiercers.tempHP(null, Number(input.amount));`,
   },
+  {
+    name: "Advance STRATCOM Phase",
+    img: "icons/svg/clockwork.svg",
+    command: "await hellpiercers.stratcom.advancePhase();",
+  },
+  {
+    name: "Gain Ichor",
+    img: "icons/svg/aura.svg",
+    command: `${input("Gain Ichor", "fa-solid fa-droplet", amountField(1, -99))}
+if (input) await hellpiercers.stratcom.ichor.add(Number(input.amount), "Manual");`,
+  },
+  {
+    name: "Gain Resources",
+    img: "icons/svg/coins.svg",
+    command: `${input(
+      "Gain Resources",
+      "fa-solid fa-coins",
+      `<div class="form-group"><label>Hellsteel</label><div class="form-fields"><input type="number" name="hellsteel" value="0"></div></div><div class="form-group"><label>Soulfire</label><div class="form-fields"><input type="number" name="soulfire" value="0"></div></div><div class="form-group"><label>Brimstone</label><div class="form-fields"><input type="number" name="brimstone" value="0"></div></div>`
+    )}
+const party = hellpiercers.stratcom.getParty();
+if (!input || !party) return ui.notifications.warn("No party found.");
+await party.system.gain({ hellsteel: Number(input.hellsteel), soulfire: Number(input.soulfire), brimstone: Number(input.brimstone) });`,
+  },
+  {
+    name: "Faction Roll",
+    img: "icons/svg/d6-grey.svg",
+    command: `const factions = hellpiercers.stratcom.getFactions();
+if (!factions.length) return ui.notifications.warn("No factions yet.");
+const fo = factions.map(f => \`<option value="\${f.id}">\${f.name}</option>\`).join("");
+const qo = ["force", "subterfuge", "territory", "assets"].map(q => \`<option value="\${q}">\${q}</option>\`).join("");
+const input = await foundry.applications.api.Dialog.input({
+  window: { title: "Faction Roll", icon: "fa-solid fa-dice-d6" },
+  content: \`<div class="form-group"><label>Faction</label><div class="form-fields"><select name="faction">\${fo}</select></div></div><div class="form-group"><label>Quality</label><div class="form-fields"><select name="quality">\${qo}</select></div></div><div class="form-group"><label>Advantage</label><div class="form-fields"><input type="checkbox" name="advantage"></div></div>\`,
+});
+if (!input) return;
+await game.actors.get(input.faction).system.rollQuality(input.quality, { advantage: input.advantage, whisper: true });`,
+  },
+  {
+    name: "Return To DIS",
+    img: "icons/svg/door-exit.svg",
+    command: "await hellpiercers.stratcom.completeMission({ success: true });",
+  },
   { name: "Rez Selected", img: "icons/svg/angel.svg", command: "await hellpiercers.rez();" },
   {
     name: "RECON Roll",

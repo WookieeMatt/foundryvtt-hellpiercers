@@ -5,7 +5,7 @@
   id="{{partId}}"
 >
   {{> weaponBlock weaponPri}}
-  {{> weaponBlock weaponSec}}
+  {{#if (gt system.meta.weapon_slots 1)}}{{> weaponBlock weaponSec}}{{/if}}
   {{> armorBlock armor}}
   {{> classBlock class}}
   {{#if (or system.meta.reversal system.meta.limit_break)}}

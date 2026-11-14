@@ -1,0 +1,13 @@
+<section
+  class="tab notes {{tab.cssClass}} scrollable flexcol"
+  data-tab="{{tab.id}}"
+  data-group="primary"
+>
+  {{#if editable}}
+    {{
+      formInput journal.field value=journal.value enriched=journal.enriched toggled=false
+    }}
+  {{else}}
+    <div class="editor-content">{{{journal.enriched}}}</div>
+  {{/if}}
+</section>

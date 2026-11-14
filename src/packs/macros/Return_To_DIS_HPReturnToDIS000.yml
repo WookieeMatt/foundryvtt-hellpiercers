@@ -1,0 +1,24 @@
+name: Return To DIS
+type: script
+command: |-
+  await hellpiercers.stratcom.completeMission({ success: true });
+img: icons/svg/door-exit.svg
+author: null
+scope: global
+folder: null
+ownership:
+  default: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.2.0
+  createdTime: 1763100000000
+  modifiedTime: 1763100000000
+  lastModifiedBy: null
+  exportSource: null
+_id: HPReturnToDIS000
+sort: 900000
+_key: '!macros!HPReturnToDIS000'

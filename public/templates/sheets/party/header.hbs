@@ -1,0 +1,47 @@
+<header class="sheet-header stratcom-header">
+  <img
+    class="portrait"
+    src="{{actor.img}}"
+    data-edit="img"
+    data-action="editImage"
+    title="{{actor.name}}"
+  >
+  <div class="titles">
+    <input
+      type="text"
+      name="name"
+      value="{{actor.name}}"
+      placeholder="Division name"
+    >
+    <input
+      type="text"
+      name="system.tagline"
+      value="{{system.tagline}}"
+      placeholder="Tagline"
+    >
+  </div>
+  <div class="resources">
+    {{#each resources}}
+      <label class="resource {{key}}">
+        <span>{{label}}</span>
+        <input
+          type="number"
+          name="system.resources.{{key}}"
+          value="{{value}}"
+          min="0"
+        >
+      </label>
+    {{/each}}
+  </div>
+  <div class="campaign-state">
+    <span class="phase">STRATCOM phase <b>{{phase}}</b></span>
+    {{#if isGM}}
+      <span class="ichor"><i class="fa-solid fa-droplet"></i> Ichor <b>{{
+            ichor
+          }}</b></span>
+      <button type="button" data-action="advancePhase">
+        <i class="fa-solid fa-forward-step"></i> Advance phase
+      </button>
+    {{/if}}
+  </div>
+</header>

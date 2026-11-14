@@ -1,0 +1,28 @@
+name: Gain Ichor
+type: script
+command: |-
+  const input = await foundry.applications.api.Dialog.input({
+    window: { title: "Gain Ichor", icon: "fa-solid fa-droplet" },
+    content: `<div class="form-group"><label>Amount</label><div class="form-fields"><input type="number" name="amount" value="1" min="-99" autofocus></div></div>`,
+  });
+  if (input) await hellpiercers.stratcom.ichor.add(Number(input.amount), "Manual");
+img: icons/svg/aura.svg
+author: null
+scope: global
+folder: null
+ownership:
+  default: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.2.0
+  createdTime: 1763100000000
+  modifiedTime: 1763100000000
+  lastModifiedBy: null
+  exportSource: null
+_id: HPGainIchor00000
+sort: 600000
+_key: '!macros!HPGainIchor00000'

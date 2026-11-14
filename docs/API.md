@@ -52,6 +52,35 @@ The engine itself is at `hellpiercers.taccom.engine` (`startTurn`, `endTurn`, `s
 Limit Break progress or Equipment uses, and posts a chat card. `item.getActionCost()` tells you
 what it costs. Shift-click the bolt on a sheet as GM to ignore resource checks.
 
+## STRATCOM
+
+```js
+const S = hellpiercers.stratcom;
+S.getParty();                          // the active party actor
+S.getFactions();                       // every faction actor
+await S.createFaction('syncrasis');    // from the catalog (Crown, boss, starting locations)
+await S.createParty('Hellfire Division');
+S.ichor.get(); await S.ichor.add(2, 'reason'); await S.ichor.spend(3, 'reason'); // GM only
+S.phase.get(); await S.advancePhase(); // construction progresses, convoys arrive (GM only)
+await S.completeMission({ success: true }); // pay out, rearm the squad, Ichor to the GM
+S.checkUnlocked(item);                 // { unlocked, building } for an item
+```
+
+Party (`actor.system`): `canBuild(id)`, `build(id)`, `refund(id)`, `gain({hellsteel, soulfire, brimstone})`,
+`spend(cost)`, `startMission({objectives, faction, phase})`, `toggleObjective(key)`, `completeMission()`,
+`buyVehicleOption(id)`, `toggleVehicleUpgrade(id)`, `setReadiness(r)`, `endSession()` (Aion -1),
+`isUnlocked(type, name)`. Buildings follow the drawn tech tree: PRONOIA + Synthetic Spinther Lab ->
+Archontic Bay; Bay + HEBDOMAS -> ANOINT; CHOIC -> EROS; Ignorance-Devouring -> SYZYGOS; APONOIA ->
+GNOSTIC -> AGNOIA.
+
+Faction (`actor.system`): Qualities and Crown are derived from the active locations.
+`addLocation(def, {building})`, `setLocationStatus(id, status)`, `rollQuality(keys, {advantage, whisper})`,
+`buyUpgrade(name, stratcom)`, `startProject(key, phase)`, `advanceProject(id, {pay, tick}, phase, stratcom)`,
+`deployConvoy(data, phase)`. `system.finalAssaultReady` is true when two Qualities are at 0.
+
+Hooks: `hellpiercers.stratcomPhase (phase, {built, arrived})`, `hellpiercers.missionComplete (party, result)`,
+`hellpiercers.actorDowned (actor)`.
+
 ## RECON
 
 ```js

@@ -1,0 +1,78 @@
+<section
+  class="tab locations {{tab.cssClass}} scrollable flexcol"
+  data-tab="{{tab.id}}"
+  data-group="primary"
+>
+  <div class="toolbar">
+    <button type="button" data-action="addLocation">
+      <i class="fa-solid fa-plus"></i> Add location
+    </button>
+  </div>
+  <ul class="locations">
+    {{#each locations}}
+      <li class="location {{status}}" data-location-id="{{id}}">
+        <div class="row">
+          <input
+            type="text"
+            data-array="location"
+            data-id="{{id}}"
+            data-field="name"
+            value="{{name}}"
+          >
+          <select data-array="location" data-id="{{id}}" data-field="type">
+            {{#each types}}<option
+                value="{{key}}"
+                {{#if selected}}selected{{/if}}
+              >
+                {{label}}
+              </option>{{/each}}
+          </select>
+          <select data-array="location" data-id="{{id}}" data-field="status">
+            {{#each statuses}}<option
+                value="{{key}}"
+                {{#if selected}}selected{{/if}}
+              >
+                {{label}}
+              </option>{{/each}}
+          </select>
+          <a data-action="removeLocation" data-tooltip="Delete"><i
+              class="fa-solid fa-trash"
+            ></i></a>
+        </div>
+        <div class="row quality">
+          <span>Quality:</span>
+          {{#each quality}}
+            <label>
+              {{@key}}
+              <input
+                type="number"
+                min="0"
+                data-array="location"
+                data-id="{{../id}}"
+                data-field="quality.{{@key}}"
+                value="{{this}}"
+              >
+            </label>
+          {{/each}}
+          <label class="checkbox">
+            <input
+              type="checkbox"
+              data-array="location"
+              data-id="{{id}}"
+              data-field="revealed"
+              {{#if revealed}}checked{{/if}}
+            >
+            Known to players
+          </label>
+        </div>
+        {{#if building}}
+          <div class="row build">
+            Construction: <b>{{buildValue}}</b> / {{buildMax}}
+            <button type="button" data-action="buildStep">+1 phase</button>
+          </div>
+        {{/if}}
+        {{#if requires}}<p class="requires">Requires: {{requires}}</p>{{/if}}
+      </li>
+    {{/each}}
+  </ul>
+</section>

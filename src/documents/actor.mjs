@@ -206,6 +206,7 @@ export class HellpiercersActor extends foundry.documents.Actor {
 
     const downed = before > 0 && after <= 0;
     if (downed && autoDefeat) await this.setDefeated(true);
+    if (downed) Hooks.callAll("hellpiercers.actorDowned", this);
     return { requested, absorbed, dealt, before, after, downed };
   }
 

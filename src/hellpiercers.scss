@@ -2,6 +2,7 @@
 @use "styles/overrides";
 @use "styles/sheets/actor";
 @use "styles/sheets/item";
+@use "styles/stratcom";
 @use "styles/taccom";
 
 .theme-dark {
@@ -40,6 +41,9 @@ body.system-hellpiercers {
     label {
       white-space: nowrap;
     }
+  }
+  &.sheet.stratcom {
+    @include stratcom.sheet;
   }
   &.sheet.actor {
     @include actor.base;
@@ -166,6 +170,7 @@ body.system-hellpiercers {
 }
 
 @include taccom.chat;
+@include stratcom.chat;
 
 .token-config {
   @include overrides.token-config;

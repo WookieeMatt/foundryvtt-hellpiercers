@@ -12,9 +12,11 @@ export { WeaponSheet } from "./weapon-sheet.mjs";
 // Actors
 
 export { BossSheet } from "./boss-sheet.mjs";
+export { FactionSheet } from "./faction-sheet.mjs";
 export { HaloSheet } from "./halo.mjs";
 export { HumanSheet } from "./human-sheet.mjs";
 export { MinionSheet } from "./minion-sheet.mjs";
+export { PartySheet } from "./party-sheet.mjs";
 export { SpawnerSheet } from "./spawner.mjs";
 
 // Overrides

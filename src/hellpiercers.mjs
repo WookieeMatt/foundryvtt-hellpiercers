@@ -8,11 +8,13 @@ import { placeTemplate } from "./canvas/range-template.mjs";
 import { setTargets } from "./canvas/targeting.mjs";
 import * as data from "./data/index.mjs";
 import * as documents from "./documents/index.mjs";
+import { extendActorDirectory } from "./hooks/directory.mjs";
 import { onHotbarDrop } from "./hooks/hotbar.mjs";
 import { fixDerivedTokenBars } from "./hooks/tokenbars.mjs";
 import { extendTokenConfig } from "./hooks/tokenconfig.mjs";
 import { checkMigration } from "./migration.mjs";
 import { registerSettings } from "./settings.mjs";
+import { activateStratcom } from "./stratcom/engine.mjs";
 import { findCombatant, spendAction, trySpendAction } from "./taccom/actions.mjs";
 import { TurnEngine } from "./taccom/engine.mjs";
 import { getStatusEffects } from "./util/statuses.mjs";
@@ -50,6 +52,7 @@ Hooks.once("init", () => {
     halo: data.Actor.HaloModel,
     human: data.Actor.HumanModel,
     minion: data.Actor.MinionModel,
+    party: data.Actor.PartyModel,
     spawner: data.Actor.SpawnerModel,
   });
   CONFIG.Actor.documentClass = documents.HellpiercersActor;
@@ -62,6 +65,7 @@ Hooks.once("init", () => {
     halo: { bar: ["health"], value: ["scale", "speed"] },
     human: { bar: ["health", "limit", "reversal_charges"], value: ["scale", "speed"] },
     minion: { bar: ["health", "swarm_hp"], value: ["scale", "speed"] },
+    party: { bar: [], value: ["resources.hellsteel", "resources.soulfire", "resources.brimstone"] },
     spawner: { bar: ["health"], value: ["scale", "speed", "spawn.charge"] },
   };
   DocumentSheetConfig.registerSheet(Actor, game.system.id, sheets.BossSheet, {
@@ -78,6 +82,16 @@ Hooks.once("init", () => {
     types: ["human"],
     makeDefault: true,
     label: "HELLPIERCERS.SHEETS.Actor.human",
+  });
+  DocumentSheetConfig.registerSheet(Actor, game.system.id, sheets.FactionSheet, {
+    types: ["faction"],
+    makeDefault: true,
+    label: "HELLPIERCERS.SHEETS.Actor.faction",
+  });
+  DocumentSheetConfig.registerSheet(Actor, game.system.id, sheets.PartySheet, {
+    types: ["party"],
+    makeDefault: true,
+    label: "HELLPIERCERS.SHEETS.Actor.party",
   });
   DocumentSheetConfig.registerSheet(Actor, game.system.id, sheets.MinionSheet, {
     types: ["minion"],
@@ -207,11 +221,13 @@ Hooks.once("i18nInit", () => {
 
 Hooks.once("ready", () => {
   activateSocket();
+  activateStratcom();
   return checkMigration();
 });
 
 // Hooks
 Hooks.on("hotbarDrop", onHotbarDrop);
+Hooks.on("renderActorDirectory", extendActorDirectory);
 Hooks.on("renderTokenConfig", extendTokenConfig);
 Hooks.on("renderPrototypeTokenConfig", extendTokenConfig);
 Hooks.on("canvasReady", fixDerivedTokenBars);

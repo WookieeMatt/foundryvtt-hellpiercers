@@ -18,7 +18,11 @@ Targets Foundry VTT **v14.370**. See `docs/API.md` for the scripting API.
   - [x] Use buttons on abilities and weapon actives, with chat cards
   - [ ] Full redesign of the HELLPIERCER sheet
 - [ ] Babele support - if needed
-- [ ] STRATCOM layer - Possibly base/map interaction
+- [x] STRATCOM layer
+  - [x] Party actor: resources, base building on the drawn tech tree, item unlocks, missions, vehicle, roles, Class Mastery, Legendary Arms Aion
+  - [x] Unlocks derived from party buildings (Limit Breaks, Reversals, Cross Class, weapon slots)
+  - [ ] Roles' STRATCOM actions and RECON moves, Triumph automation
+  - [ ] Campaign map scene helper
 - [x] Damage Application
   - [x] Armor, Bleed, Constrict, Broken, Wrack, Snakeskin, Glassflesh, Compel
   - [x] Transference, Bound, Temporary HP, auto-defeat, Rez
@@ -30,7 +34,10 @@ Targets Foundry VTT **v14.370**. See `docs/API.md` for the scripting API.
   - [x] Start/end of turn and end of round automation (Poison, Healing, Blazing, Pain Aura, Countdown, Brand, Spawner charge)
   - [x] Action economy with Haste, Shock, Frozen and Pin
   - [ ] Provoke, Limit Break charge tracking from kills, Agnosia triggers for minibosses
-- [ ] Faction system
+- [x] Faction system
+  - [x] Faction actor from the catalog: Crown, four Qualities derived from locations, upgrades, research, convoys, War Journal
+  - [x] Ichor, STRATCOM phase counter, faction rolls
+  - [ ] Faction units, STRATCOM actions and map hazards (data pass)
 - [ ] Include items - pending a public license for HELLPIERCERS
 
 ## Release

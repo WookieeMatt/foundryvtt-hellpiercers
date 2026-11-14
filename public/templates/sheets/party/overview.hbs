@@ -1,0 +1,191 @@
+<section
+  class="tab overview {{tab.cssClass}} scrollable flexcol"
+  data-tab="{{tab.id}}"
+  data-group="primary"
+>
+  {{!-- Mission --}}
+  <div class="panel mission">
+    <h3>Mission</h3>
+    {{#if mission.active}}
+      <ul class="objectives">
+        {{#each mission.objectives}}
+          <li data-objective="{{key}}" class="{{#if done}}done{{/if}}">
+            <a data-action="toggleObjective">
+              <i
+                class="fa-solid {{#if done}}fa-square-check{{else}}fa-square{{/if}}"
+              ></i>
+              {{label}}
+            </a>
+            <span class="reward">{{reward}}</span>
+          </li>
+        {{/each}}
+      </ul>
+      <p>
+        {{#if mission.factionName}}Target: <b>{{mission.factionName}}</b>
+          &middot;
+        {{/if}}Defeated: <b>{{mission.defeats}}</b> &middot; Rewards so far:
+        <b>{{mission.rewards}}</b>
+      </p>
+      <div class="buttons">
+        <button type="button" data-action="finishMission" data-success="true">
+          <i class="fa-solid fa-flag-checkered"></i> Return to DIS
+        </button>
+        <button type="button" data-action="finishMission" data-success="false">
+          <i class="fa-solid fa-flag"></i> Abandon
+        </button>
+      </div>
+    {{else}}
+      <div class="mission-planner">
+        <ul class="objectives">
+          {{#each mission.choices}}
+            <li>
+              <label>
+                <input type="checkbox" name="objective" value="{{key}}">
+                {{label}}{{#if special}}
+                  <em>(special)</em>{{/if}}
+              </label>
+              <span class="reward">{{reward}}</span>
+            </li>
+          {{/each}}
+        </ul>
+        <div class="form-group">
+          <label>Target faction</label>
+          <select name="faction">
+            <option value="">None</option>
+            {{#each mission.factions}}
+              <option value="{{id}}" {{#if selected}}selected{{/if}}>
+                {{name}}
+              </option>
+            {{/each}}
+          </select>
+        </div>
+        <button type="button" data-action="startMission">
+          <i class="fa-solid fa-person-walking-arrow-right"></i> Leave DIS
+        </button>
+      </div>
+    {{/if}}
+  </div>
+
+  {{!-- Squad --}}
+  <div class="panel squad">
+    <h3>Squad <small>(drop a HELLPIERCER here)</small></h3>
+    {{#if members.length}}
+      <ul class="members">
+        {{#each members}}
+          <li data-member-id="{{id}}">
+            <img src="{{img}}" alt="">
+            <a data-action="openMember"><b>{{name}}</b></a>
+            <span>{{className}}{{#if armorName}}
+                &middot; {{armorName}}{{/if}}</span>
+            <span class="hp">{{hp}}/{{hpMax}}</span>
+            <a data-action="removeMember" data-tooltip="Remove"><i
+                class="fa-solid fa-xmark"
+              ></i></a>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p class="hint">No squad members yet.</p>
+    {{/if}}
+  </div>
+
+  {{#if hasOffGrid}}
+    <div class="panel off-grid">
+      <h3>Off-Grid Munitions Support</h3>
+      <select name="system.offGrid">
+        <option value="">None selected</option>
+        {{#each offGrid}}
+          <option value="{{name}}" {{#if selected}}selected{{/if}}>
+            {{name}}
+          </option>
+        {{/each}}
+      </select>
+      <label class="checkbox">
+        <input
+          type="checkbox"
+          name="system.offGridUsed"
+          {{#if system.offGridUsed}}checked{{/if}}
+        >
+        Used this expedition
+      </label>
+    </div>
+  {{/if}}
+
+  {{#if hasGrid}}
+    <div class="panel grid-suite">
+      <h3>Pre-Battle Grid Manipulation</h3>
+      <select name="system.gridSuite">
+        <option value="">None selected</option>
+        {{#each gridSuites}}
+          <option value="{{key}}" {{#if selected}}selected{{/if}}>
+            {{name}} - {{tiles}}
+          </option>
+        {{/each}}
+      </select>
+    </div>
+  {{/if}}
+
+  {{#if hasLegendary}}
+    <div class="panel legendary">
+      <h3>
+        Legendary Arms
+        <a data-action="addArm" data-tooltip="Add"><i
+            class="fa-solid fa-plus"
+          ></i></a>
+        <a data-action="endSession" data-tooltip="End session (Aion -1)"><i
+            class="fa-solid fa-hourglass-half"
+          ></i></a>
+      </h3>
+      <ul>
+        {{#each arms}}
+          <li data-arm-index="{{index}}">
+            <b>{{name}}</b>
+            <input
+              type="number"
+              data-array="arm"
+              data-index="{{index}}"
+              data-field="aion"
+              value="{{aion}}"
+              min="0"
+            >
+            Aion
+            <a data-action="removeArm"><i class="fa-solid fa-trash"></i></a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/if}}
+
+  {{#if hasRoles}}
+    <div class="panel roles">
+      <h3>Roles</h3>
+      {{#each roles}}
+        <div class="form-group">
+          <label>{{label}}</label>
+          <select name="system.roles.{{key}}">
+            <option value="">Unassigned</option>
+            {{#each members}}
+              <option value="{{id}}" {{#if selected}}selected{{/if}}>
+                {{name}}
+              </option>
+            {{/each}}
+          </select>
+        </div>
+      {{/each}}
+    </div>
+  {{/if}}
+
+  {{#if hasMastery}}
+    <div class="panel mastery">
+      <h3>Class Mastery</h3>
+      <ul>
+        {{#each mastery}}
+          <li>
+            <b>{{name}}</b>: {{missions}} / 5 missions
+            {{#if mastered}}<i class="fa-solid fa-star"></i> Mastered{{/if}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/if}}
+</section>

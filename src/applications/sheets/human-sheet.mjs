@@ -1,3 +1,5 @@
+import { BUILDINGS_BY_ID } from "../../stratcom/catalog.mjs";
+import { checkUnlocked } from "../../stratcom/engine.mjs";
 import { hotReloadActorSheet } from "./hot-sheet.mjs";
 import { HellpiercersActorSheetMixin, ToggleMixin } from "./mixins.mjs";
 
@@ -215,6 +217,14 @@ export class HumanSheet extends HellpiercersActorSheetMixin(ToggleMixin(ActorShe
   async _onDropItem(event, item) {
     if (!this.actor.isOwner) return null;
     if (this.actor.uuid === item.parent?.uuid) return super._onDropItem(event, item);
+
+    // Options are unlocked by the party's buildings. The GM may override.
+    const { unlocked, building } = checkUnlocked(item);
+    if (!unlocked) {
+      const needs = BUILDINGS_BY_ID[building]?.name ?? building;
+      ui.notifications.warn(`${item.name} is locked: build ${needs} first.`);
+      if (!game.user.isGM) return null;
+    }
     switch (item.type) {
       case "weapon":
         return this._onDropWeapon(event, item);

@@ -1,0 +1,30 @@
+name: Gain Resources
+type: script
+command: |-
+  const input = await foundry.applications.api.Dialog.input({
+    window: { title: "Gain Resources", icon: "fa-solid fa-coins" },
+    content: `<div class="form-group"><label>Hellsteel</label><div class="form-fields"><input type="number" name="hellsteel" value="0"></div></div><div class="form-group"><label>Soulfire</label><div class="form-fields"><input type="number" name="soulfire" value="0"></div></div><div class="form-group"><label>Brimstone</label><div class="form-fields"><input type="number" name="brimstone" value="0"></div></div>`,
+  });
+  const party = hellpiercers.stratcom.getParty();
+  if (!input || !party) return ui.notifications.warn("No party found.");
+  await party.system.gain({ hellsteel: Number(input.hellsteel), soulfire: Number(input.soulfire), brimstone: Number(input.brimstone) });
+img: icons/svg/coins.svg
+author: null
+scope: global
+folder: null
+ownership:
+  default: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.2.0
+  createdTime: 1763100000000
+  modifiedTime: 1763100000000
+  lastModifiedBy: null
+  exportSource: null
+_id: HPGainResources0
+sort: 700000
+_key: '!macros!HPGainResources0'

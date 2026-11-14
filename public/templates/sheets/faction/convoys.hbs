@@ -1,0 +1,79 @@
+<section
+  class="tab convoys {{tab.cssClass}} scrollable flexcol"
+  data-tab="{{tab.id}}"
+  data-group="primary"
+>
+  <div class="toolbar">
+    <button type="button" data-action="deployConvoy">
+      <i class="fa-solid fa-truck-fast"></i> Deploy convoy
+    </button>
+    <span class="hint"
+    >Convoys arrive at the start of the second phase after deployment (now:
+      phase {{currentPhase}}).</span>
+  </div>
+  <ul class="convoys">
+    {{#each convoys}}
+      <li class="convoy {{status}}" data-convoy-id="{{id}}">
+        <div class="row">
+          <b>{{kindLabel}}</b>
+          <input
+            type="text"
+            data-array="convoy"
+            data-id="{{id}}"
+            data-field="name"
+            value="{{name}}"
+            placeholder="Name"
+          >
+          <span>{{from}} &rarr; {{to}}</span>
+          <span class="status">{{statusLabel}}{{#if traveling}}
+              (arrives phase {{arrivesPhase}}){{/if}}</span>
+        </div>
+        <div class="row">
+          <input
+            type="text"
+            data-array="convoy"
+            data-id="{{id}}"
+            data-field="outcome"
+            value="{{outcome}}"
+            placeholder="Outcome on arrival"
+            list="outcomes-{{id}}"
+          >
+          <datalist id="outcomes-{{id}}">
+            {{#each outcomes}}<option value="{{this}}"></option>{{/each}}
+          </datalist>
+          <label class="checkbox">
+            <input
+              type="checkbox"
+              data-array="convoy"
+              data-id="{{id}}"
+              data-field="revealed"
+              {{#if revealed}}checked{{/if}}
+            >
+            Revealed
+          </label>
+          {{#if arrived}}
+            <button
+              type="button"
+              data-action="resolveConvoy"
+              data-status="resolved"
+            >
+              Resolve
+            </button>
+          {{/if}}
+          {{#if traveling}}
+            <button
+              type="button"
+              data-action="resolveConvoy"
+              data-status="intercepted"
+            >
+              Intercepted
+            </button>
+          {{/if}}
+          <a data-action="removeConvoy" data-tooltip="Delete"><i
+              class="fa-solid fa-trash"
+            ></i></a>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+</section>

@@ -1,0 +1,64 @@
+<header class="sheet-header stratcom-header faction-header">
+  <img
+    class="portrait"
+    src="{{actor.img}}"
+    data-edit="img"
+    data-action="editImage"
+    title="{{actor.name}}"
+  >
+  <div class="titles">
+    <input type="text" name="name" value="{{actor.name}}" placeholder="Faction">
+    <input
+      type="text"
+      name="system.crown.description"
+      value="{{system.crown.description}}"
+      placeholder="Crown"
+    >
+    <input
+      type="text"
+      name="system.boss"
+      value="{{system.boss}}"
+      placeholder="Boss"
+    >
+  </div>
+  <div
+    class="crown"
+    data-tooltip="Crown {{system.crown.value}} of {{system.crown.max}}"
+  >
+    <span class="label">Crown</span>
+    {{#each crownPips}}
+      <i class="fa-solid fa-crown {{#if filled}}filled{{else}}empty{{/if}}"></i>
+    {{/each}}
+  </div>
+  <div class="qualities">
+    {{#each qualities}}
+      <div class="quality {{key}}">
+        <a
+          data-action="rollQuality"
+          data-quality="{{key}}"
+          data-tooltip="Roll {{label}} (shift: public)"
+        >
+          <i class="fa-solid fa-dice-d6"></i>
+        </a>
+        <span class="label">{{label}}</span>
+        <span class="dots">
+          {{#each dots}}<i
+              class="fa-solid fa-circle {{#if filled}}filled{{else}}empty{{/if}}"
+            ></i>{{/each}}
+        </span>
+        <b>{{value}}</b>{{#if (gt raw value)}}<small>(+{{raw}})</small>{{/if}}
+      </div>
+    {{/each}}
+  </div>
+  {{#if finalAssaultReady}}
+    <div class="banner">Final Assault available: {{zero}} at 0</div>
+  {{/if}}
+  {{#if isGM}}
+    <div class="campaign-state">
+      <span class="phase">Phase <b>{{phase}}</b></span>
+      <span class="ichor"><i class="fa-solid fa-droplet"></i> Ichor <b>{{
+            ichor
+          }}</b></span>
+    </div>
+  {{/if}}
+</header>

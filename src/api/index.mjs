@@ -12,6 +12,7 @@
  */
 
 import { Damage } from "../data/damage.mjs";
+import { stratcom } from "../stratcom/engine.mjs";
 import { findCombatant, spendAction } from "../taccom/actions.mjs";
 import { TurnEngine } from "../taccom/engine.mjs";
 import { gmDo, registerGmOperation } from "./socket.mjs";
@@ -294,6 +295,7 @@ export const api = Object.freeze({
   rez,
   status,
   combat,
+  stratcom,
   recon: Object.freeze({ roll: reconRoll, dialog: reconDialog, tone: toneDie }),
   asGM,
 });

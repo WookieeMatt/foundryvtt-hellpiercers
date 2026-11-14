@@ -3,6 +3,7 @@
     "Actor": {
       "boss": "Boss",
       "faction": "Faction",
+      "party": "Party",
       "halo": "HALO Unit",
       "human": "HELLPIERCER",
       "minion": "Minion",
@@ -260,10 +261,57 @@
         "blob": "Blob"
       }
     },
+    "RESOURCES": {
+      "hellsteel": "Hellsteel",
+      "soulfire": "Soulfire",
+      "brimstone": "Brimstone"
+    },
+    "PARTY": {
+      "TABS": {
+        "overview": "Overview",
+        "base": "Base",
+        "vehicle": "Vehicle",
+        "notes": "Notes"
+      },
+      "vehicle": {
+        "readiness": { "ready": "Ready", "capable": "Capable", "ruin": "Ruin" }
+      }
+    },
+    "FACTION": {
+      "TABS": {
+        "locations": "Locations",
+        "convoys": "Convoys",
+        "research": "Research",
+        "upgrades": "Upgrades",
+        "notes": "Notes"
+      }
+    },
+    "LOCATION": {
+      "type": {
+        "extractive": "Extractive",
+        "productive": "Productive",
+        "destructive": "Destructive",
+        "defensive": "Defensive",
+        "logistical": "Logistical",
+        "legendary": "Legendary"
+      },
+      "status": { "active": "Active", "building": "Under construction", "lost": "Lost" }
+    },
+    "CONVOY": {
+      "status": {
+        "traveling": "Traveling",
+        "arrived": "Arrived",
+        "resolved": "Resolved",
+        "intercepted": "Intercepted"
+      }
+    },
+    "PROJECT": { "status": { "active": "In development", "complete": "Complete" } },
     "SHEETS": {
       "ActiveEffect": { "base": "HELLPIERCERS Active Effect Sheet" },
       "Actor": {
         "boss": "Boss Sheet",
+        "faction": "Faction Sheet",
+        "party": "Party Sheet",
         "halo": "HALO Unit Sheet",
         "human": "HELLPIERCER Sheet",
         "minion": "Minion Sheet"
@@ -315,6 +363,15 @@
       "trackActions": {
         "name": "Track Actions",
         "hint": "Track Main, Support, Aux and Move actions for each combatant in the combat tracker."
+      },
+      "activeParty": {
+        "name": "Active Party",
+        "hint": "The party whose buildings unlock items for the whole table.",
+        "auto": "First party actor"
+      },
+      "deriveUnlocks": {
+        "name": "Unlocks From Party Buildings",
+        "hint": "Cross Class Development, Limit Breaks, Reversals and weapon slots follow the active party's buildings instead of each character's own toggles."
       },
       "chatCards": {
         "name": "Post Ability Cards",

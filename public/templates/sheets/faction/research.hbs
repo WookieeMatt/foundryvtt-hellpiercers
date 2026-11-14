@@ -1,0 +1,67 @@
+<section
+  class="tab research {{tab.cssClass}} scrollable flexcol"
+  data-tab="{{tab.id}}"
+  data-group="primary"
+>
+  <div class="toolbar">
+    <select name="project">
+      {{#each projectChoices}}
+        <option value="{{key}}" {{#if disabled}}disabled{{/if}}>
+          {{name}} ({{cost}} Ichor, {{time}} time)
+        </option>
+      {{/each}}
+    </select>
+    <button
+      type="button"
+      data-action="startProject"
+      {{#if atLimit}}disabled{{/if}}
+    >
+      <i class="fa-solid fa-flask"></i> Start project
+    </button>
+    {{#if atLimit}}<span class="hint"
+      >Two projects are already in development.</span>{{/if}}
+  </div>
+  <ul class="projects">
+    {{#each projects}}
+      <li
+        class="project {{#if complete}}complete{{/if}}"
+        data-project-id="{{id}}"
+      >
+        <div class="row">
+          <b>{{name}}</b>
+          {{#if complete}}<span class="state"><i class="fa-solid fa-check"></i>
+              Complete</span>{{/if}}
+        </div>
+        <p>{{effect}}</p>
+        {{#unless complete}}
+          <div class="row">
+            Ichor <b>{{paid}}</b> / {{cost}}
+            <button type="button" data-action="payProject" data-amount="1">
+              +1
+            </button>
+            <button type="button" data-action="payProject" data-amount="all">
+              Pay all
+            </button>
+            &nbsp; Research time
+            {{#each boxes}}<i
+                class="fa-solid fa-square {{#if filled}}filled{{else}}empty{{/if}}"
+              ></i>{{/each}}
+            <button
+              type="button"
+              data-action="tickProject"
+              {{#unless canTick}}disabled{{/unless}}
+            >
+              Fill box
+            </button>
+            <a
+              data-action="scrapProject"
+              data-tooltip="Scrap (refund half of the Ichor paid)"
+            >
+              <i class="fa-solid fa-trash"></i>
+            </a>
+          </div>
+        {{/unless}}
+      </li>
+    {{/each}}
+  </ul>
+</section>

@@ -1,0 +1,49 @@
+<section
+  class="tab notes {{tab.cssClass}} scrollable flexcol"
+  data-tab="{{tab.id}}"
+  data-group="primary"
+>
+  {{#each editors}}
+    <div class="panel">
+      <h3>{{label}}</h3>
+      {{#if @root.editable}}
+        {{formInput field value=value enriched=enriched toggled=true}}
+      {{else}}
+        <div class="editor-content">{{{enriched}}}</div>
+      {{/if}}
+    </div>
+  {{/each}}
+  {{#if isGM}}
+    <div class="panel adjustments">
+      <h3>Quality adjustments</h3>
+      <p class="hint">
+        Qualities are the sum of active locations plus these adjustments. The
+        Crown falls 1 for every 2 points below the starting total ({{
+          startTotal
+        }}).
+      </p>
+      <div class="row">
+        {{#each adjust}}
+          <label>{{key}} <input
+              type="number"
+              name="system.qualityAdjust.{{key}}"
+              value="{{value}}"
+            ></label>
+        {{/each}}
+        <label>Starting total <input
+            type="number"
+            name="system.startTotal"
+            value="{{startTotal}}"
+            min="0"
+          ></label>
+        <label>Crown override <input
+            type="number"
+            name="system.crown.override"
+            value="{{crownOverride}}"
+            min="1"
+            max="5"
+          ></label>
+      </div>
+    </div>
+  {{/if}}
+</section>
