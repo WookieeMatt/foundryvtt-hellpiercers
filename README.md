@@ -12,7 +12,7 @@ See [`docs/API.md`](docs/API.md) for the macro API and [`ROADMAP.md`](ROADMAP.md
 
 ## Install
 
-Manifest URL: `https://github.com/wookieematt/foundryvtt-hellpiercers/releases/latest/download/system.json`
+Manifest URL: `https://github.com/WookieeMatt/foundryvtt-hellpiercers/releases/latest/download/system.json`
 
 ## Development
 

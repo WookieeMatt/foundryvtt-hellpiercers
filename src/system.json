@@ -9,7 +9,7 @@
     "maximum": "14"
   },
   "authors": [
-    { "name": "WookieeMatt", "url": "https://github.com/wookieematt" },
+    { "name": "WookieeMatt", "url": "https://github.com/WookieeMatt" },
     { "name": "Bolts", "url": "https://codeberg.org/Bolts/foundryvtt-hellpiercers" }
   ],
   "esmodules": ["hellpiercers.mjs"],
@@ -84,8 +84,8 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "agnosia.bar",
   "flags": { "hotReload": { "extensions": ["json", "hbs"], "paths": ["lang", "templates"] } },
-  "url": "https://github.com/wookieematt/foundryvtt-hellpiercers",
+  "url": "https://github.com/WookieeMatt/foundryvtt-hellpiercers",
   "background": "systems/hellpiercers/assets/splash.jpg",
-  "manifest": "https://github.com/wookieematt/foundryvtt-hellpiercers/releases/latest/download/system.json",
-  "download": "https://github.com/wookieematt/foundryvtt-hellpiercers/releases/download/v0.3.0/system.zip"
+  "manifest": "https://github.com/WookieeMatt/foundryvtt-hellpiercers/releases/latest/download/system.json",
+  "download": "https://github.com/WookieeMatt/foundryvtt-hellpiercers/releases/download/v0.3.0/system.zip"
 }
