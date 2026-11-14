@@ -1,0 +1,32 @@
+_id: Weighted0Push000
+name: Weighted Push
+img: icons/magic/earth/strike-fist-stone-gray.webp
+type: gear
+system:
+  description: >-
+    <p><em>Intention precedes essence. To become immovable, simply become
+    immovable. To move the immovable, it is enough to simply declare it
+    movable.</em></p>
+  kind: armor
+  effect: >-
+    <p>You can Shove targets of Scale:2 or Scale:3 up to 2 spaces. You can Shove
+    Scale:1 characters up to 3 spaces.</p>
+  target: ''
+folder: 1upYVLWgpnHioybI
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754176962056
+  modifiedTime: 1756177979608
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Weighted0Push000'

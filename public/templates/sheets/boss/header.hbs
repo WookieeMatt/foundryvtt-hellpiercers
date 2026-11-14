@@ -1,0 +1,88 @@
+<header class="sheet-header">
+  <div class="charname">
+    {{#if editable}}
+      {{formInput fields.name value=actor.name placeholder=(localize "Name")}}
+    {{else}}
+      {{actor.name}}
+    {{/if}}
+  </div>
+  <div class="portrait">
+    <img
+      src="{{actor.img}}"
+      class="portrait"
+      data-edit="img"
+      data-action="editImage"
+      title="{{actor.name}}"
+    >
+  </div>
+  <div class="hp box">
+    <label for="{{rootId}}-system.health.value">
+      {{localize "HELLPIERCERS.ACTOR.FIELDS.health.label"}}
+    </label>
+    <div class="form-fields flexrow">
+      <div class="value">
+        {{
+          formInput
+        systemFields.health.fields.value
+        value=system.health.value
+        max=system.health.max
+        id=(concat rootId "-system.health.value")
+        }}
+      </div>
+      <div class="max">
+        {{#if editable}}
+          {{
+            formInput systemFields.health.fields.max value=systemSource.health.max
+          }}
+        {{else}}
+          {{system.health.max}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+  {{#if editable}}
+    {{
+      formGroup systemFields.speed value=systemSource.speed classes="speed box" rootId=rootId
+    }}
+    {{
+      formGroup systemFields.scale value=systemSource.scale classes="scale box" rootId=rootId
+    }}
+    {{
+      formGroup systemFields.actions value=systemSource.actions classes="actions box" rootId=rootId
+    }}
+  {{else}}
+    <div class="form-group box speed">
+      <label>{{localize "HELLPIERCERS.ACTOR.FIELDS.speed.label"}}</label>
+      <div class="form-fields bare">{{system.speed}}</div>
+    </div>
+    <div class="form-group box scale">
+      <label>{{localize "HELLPIERCERS.ACTOR.FIELDS.scale.label"}}</label>
+      <div class="form-fields bare">{{system.scale}}</div>
+    </div>
+    <div class="form-group box actions">
+      <label>{{localize "HELLPIERCERS.ACTOR.FIELDS.actions.label"}}</label>
+      <div class="form-fields bare">{{system.actions}}</div>
+    </div>
+  {{/if}}
+  <div class="form-group box chartags">
+    <label class="flexrow">
+      <span>{{localize "HELLPIERCERS.ACTOR.FIELDS.tags.label"}}</span>
+      {{#if editable}}
+        <a
+          class="control"
+          role="button"
+          aria-label='{{localize "HELLPIERCERS.ACTOR.SHEET.actions.editTags"}}'
+          data-tooltip
+          data-action="editTags"
+        >
+          <i class="fa-solid fa-edit"></i>
+        </a>
+      {{/if}}
+    </label>
+    <div class="form-fields">
+      {{
+        formInput systemFields.tags value=system.tags disabled=true rootId=rootId
+      }}
+    </div>
+  </div>
+</header>

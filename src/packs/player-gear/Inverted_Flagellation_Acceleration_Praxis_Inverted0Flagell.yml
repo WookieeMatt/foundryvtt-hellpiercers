@@ -1,0 +1,32 @@
+_id: Inverted0Flagell
+name: Inverted Flagellation-Acceleration Praxis
+img: icons/skills/movement/feet-winged-boots-glowing-yellow.webp
+type: equipment
+system:
+  description: >-
+    <p><em>The fight-or-flight response has aided humanity in its survival for
+    unknown eons. Now, thanks to psychedelic thought-sigils and theosophic
+    neurotransmitters that bend neural pathways into ritual shapes, new options
+    are available.</em></p>
+  effect: >-
+    <p>Gain movement equal to damage you have taken this round before this
+    equipment is used.</p>
+  available: true
+folder: ttVRofJze0f0u91g
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754147092644
+  modifiedTime: 1756177979602
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Inverted0Flagell'

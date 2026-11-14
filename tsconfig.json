@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2024",
+    "outDir": "dist",
+    "moduleResolution": "bundler",
+    "skipLibCheck": false,
+    "allowJs": true,
+    "paths": {
+      "@client/*": ["./foundry/client/*"],
+      "@common/*": ["./foundry/common/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "scripts"],
+  "include": [
+    "src",
+    "foundry/client/client.mjs",
+    "foundry/common/primitives/global.d.mts",
+    "foundry/client/global.d.mts"
+  ]
+}

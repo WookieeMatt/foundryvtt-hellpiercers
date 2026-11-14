@@ -1,0 +1,33 @@
+_id: BARAQIEL00000000
+name: BARAQIEL
+img: icons/weapons/staves/staff-simple-gold.webp
+type: armor
+system:
+  description: >-
+    <p><em>He Who Bound The Lightning came at us like a beam of light; to catch
+    his eye was to catch his doom. His battleslaves held Heaven's sky in
+    locked-motion and baffled our airforce. It is said a Cainite adept made
+    allegiances of the heavenly thunder, and used forbidden bindings to catch
+    the Aeon, and turn him into a bullet in the head of God.</em></p>
+  speed: 6
+  ability: Compendium.hellpiercers.player-abilities.Item.BARAQIEL00000002
+  movement: Compendium.hellpiercers.player-abilities.Item.BARAQIEL00000001
+  reversal: Compendium.hellpiercers.player-abilities.Item.BARAQIEL00000003
+folder: plav4DgytmDlKEnT
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390304211
+  modifiedTime: 1756177979598
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!BARAQIEL00000000'

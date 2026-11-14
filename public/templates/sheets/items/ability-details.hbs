@@ -1,0 +1,148 @@
+<section
+  class="tab details scrollable flexcol {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="details"
+>
+  {{#if editable}}
+    {{
+      formGroup
+    systemFields.action
+    value=system.action
+    localize=true
+    classes="item-block"
+    rootId=rootId
+    disabled=(or actor)
+    }}
+  {{else}}
+    <div class="form-group item-block">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.action.label"}}</label>
+      <div class="value">
+        {{localize (concat "HELLPIERCERS.ITEM.action." system.action)}}
+      </div>
+    </div>
+  {{/if}}
+  {{#if (eq system.action "attack")}}
+    <div class="item-block attack">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.attack.label"}}</label>
+      <div class="damage">
+        <label>{{
+            localize "HELLPIERCERS.ITEM.FIELDS.attack.damage.label"
+          }}</label>
+        <div class="flexrow">
+          {{#if editable}}
+            {{
+              formInput
+          systemFields.attack.fields.damage.fields.formula
+          value=system.attack.damage.formula
+          placeholder="0"
+            }}
+            <button
+              class="icon fa-solid fa-cog"
+              type="button"
+              data-action="editDamage"
+            >
+            </button>
+          {{else}}
+            <div class="flexcol">
+              <span class="value">{{system.attack.damage.short_text}}</span>
+              <span class="qualities">{{
+                  system.attack.damage.qualities_text
+                }}</span>
+            </div>
+          {{/if}}
+        </div>
+      </div>
+      <div class="range">
+        <label>{{
+            localize "HELLPIERCERS.ITEM.FIELDS.attack.range.label"
+          }}</label>
+        <div class="flexrow">
+          <span class="value">
+            {{#if (eq system.attack.range.kind "bespoke")}}
+              <img src="{{system.attack.range.svg_uri}}">
+            {{else}}
+              {{system.attack.range.short_text}}
+            {{/if}}
+          </span>
+          {{#if editable}}
+            <button
+              class="icon fa-solid fa-cog"
+              type="button"
+              data-action="editRange"
+            >
+            </button>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+    {{#if editable}}
+      {{
+        formGroup systemFields.counter.fields.enabled
+    value=systemSource.counter.enabled
+    classes="item-block" rootId=rootId
+      }}
+    {{/if}}
+    {{else if (eq system.action "reversal")}}
+    {{#if editable}}
+      {{
+        formGroup systemFields.uses value=system.uses classes="item-block" rootId=rootId
+      }}
+      {{
+        formGroup systemFields.trigger value=system.trigger elementType="textarea" classes="item-block" rootId=rootId
+      }}
+    {{else}}
+      <div class="item-block uses">
+        <label for="system.uses">{{
+            localize "HELLPIERCERS.ITEM.FIELDS.uses.label"
+          }}</label>
+        <div class="value">{{system.uses}}</div>
+      </div>
+      <div class="item-block trigger">
+        <label for="system.trigger">{{
+            localize "HELLPIERCERS.ITEM.FIELDS.trigger.label"
+          }}</label>
+        <div class="value">{{system.trigger}}</div>
+      </div>
+    {{/if}}
+  {{/if}}
+  {{#if (eq system.action "limit")}}
+    {{#if editable}}
+      {{
+        formGroup systemFields.break_value value=system.break_value classes="item-block" rootId=rootId
+      }}
+    {{else}}
+      <div class="item-block break_value">
+        <label for="system.break_value">{{
+            localize "HELLPIERCERS.ITEM.FIELDS.break_value.label"
+          }}</label>
+        <div class="value">{{system.break_value}}</div>
+      </div>
+    {{/if}}
+  {{/if}}
+  {{#if editable}}
+    {{
+      formGroup effect.field enriched=effect.enriched value=effect.value classes="item-block" compact=true rootId=rootId
+    }}
+    {{else if effect.enriched}}
+    <div class="item-block effect">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.effect.label"}}</label>
+      <div class="editor-content">{{{effect.enriched}}}</div>
+    </div>
+  {{/if}}
+  {{#if (or editable system.item.type)}}
+    <div class="item-block item">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.kind.label"}}</label>
+      {{#if editable}}
+        {{
+          formInput systemFields.item.fields.type value=system.item.type localize=true disabled=(or actor)
+        }}
+        {{formInput systemFields.item.fields.uuid value=system.item.uuid}}
+      {{else}}
+        <div class="value">
+          {{localize (concat "TYPES.Item." system.item.type)}}
+        </div>
+        <span>{{{item_link}}}</span>
+      {{/if}}
+    </div>
+  {{/if}}
+</section>

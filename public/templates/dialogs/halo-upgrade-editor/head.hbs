@@ -1,0 +1,18 @@
+<section class="main">
+  {{
+    formInput effect.field value=effect.value enriched=effect.enriched toggled=false compact=true
+  }}
+  <fieldset>
+    <legend>{{localize "HELLPIERCERS.DIALOG.HaloUpgradeEditor.cost"}}</legend>
+    {{
+      formGroup fields.cost.fields.brimstone value=model.cost.brimstone rootId=rootId
+    }}
+    {{
+      formGroup fields.cost.fields.hellsteel value=model.cost.hellsteel rootId=rootId
+    }}
+    {{
+      formGroup fields.cost.fields.soulfire value=model.cost.soulfire rootId=rootId
+    }}
+  </fieldset>
+  {{formGroup fields.unlocked value=model.unlocked rootId=rootId}}
+</section>

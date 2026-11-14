@@ -1,0 +1,36 @@
+name: SVG and Template Test
+type: script
+command: |-
+  const range = await hellpiercers.applications.RangeEditor.editRange({
+    kind: "line",
+    value: 2,
+    modifiers: { scale: actor?.system.scale },
+  }).catch(() => {});
+
+  if (!range) return;
+
+  const { Dialog } = foundry.applications.api;
+  await Dialog.prompt({ content: `<img src="${range.svg_uri}">` });
+
+  (() => hellpiercers.util.placeTemplate(range, { actor }))();
+img: icons/svg/daze.svg
+author: 0uq1NcpEgiMQWXgA
+scope: global
+folder: null
+ownership:
+  default: 0
+  0uq1NcpEgiMQWXgA: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha1
+  createdTime: 1721853137918
+  modifiedTime: 1755622356872
+  lastModifiedBy: JIYn39iJgV1tMnlB
+  exportSource: null
+_id: J3f9vabYGEiWxPBe
+sort: 400000
+_key: '!macros!J3f9vabYGEiWxPBe'

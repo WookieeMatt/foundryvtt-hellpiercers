@@ -1,0 +1,70 @@
+_id: She0Speaks0The0L
+name: She Speaks The Language Of Kings
+img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
+type: weapon
+system:
+  description: >-
+    <p><em>"The ruins of a dead god, the splintered bones of the exalted dead,
+    and consecrated plasma-baked ceramics imbue this weapon with a 189%
+    Devastation Coefficient across the psionic planes. Do not fire this thing
+    Hylic-side if you value your nebula" - Tech- nite Zostrianos</em></p>
+  attacks:
+    - name: Attack
+      damage:
+        formula: 3 + 2D10
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: true
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: targets
+        value: 3
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: 4
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+  active:
+    name: Anointed With Heavenfallen Brass
+    description: >-
+      <p><strong>Mark</strong> up to 3 enemies within <strong>Range:4</strong>
+      of at least one ally. If they move on their turn, even if pushed or
+      teleported, instantly deal half damage to them without using an action and
+      remove their mark. This damage ignores all range and line-of-sight
+      restrictions. You may have up to 6 enemies <strong>Marked</strong> this
+      way. You may dismiss or replace a <strong>Mark</strong> at any time at no
+      cost.</p>
+  passive:
+    name: Foresight Enhanced Targeting Systems
+    description: <p>This weapon has the <strong>Breaker</strong> tag.</p>
+  selected_attack: 0
+folder: GTdAaocCUUI6rY5Z
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753146263584
+  modifiedTime: 1756177979606
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!She0Speaks0The0L'

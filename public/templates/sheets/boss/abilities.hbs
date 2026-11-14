@@ -1,0 +1,100 @@
+<section
+  class="tab abilities flexcol {{tab.cssClass}} scrollable"
+  data-group="primary"
+  data-tab="abilities"
+>
+  {{#each attacks}}
+    <div class="item-block item attack draggable" data-item-id="{{attack.id}}">
+      <label class="flexrow">
+        <span>{{attack.name}}</span>
+        {{#if attack.system.counter.enabled}}
+          <input
+            class="charge-input"
+            type="number"
+            value="{{attack.system.counter.value}}"
+            min="0"
+            id="{{@root.rootId}}-{{attack.id}}-counter.value"
+          >
+        {{/if}}
+        <a class="control" role="button" data-context="weapon"><i
+            class="fa-solid fa-bars"
+          ></i></a>
+      </label>
+      <div class="damage flexcol">
+        <label>{{
+            localize "HELLPIERCERS.ITEM.FIELDS.attack.damage.label"
+          }}</label>
+        <div class="value">{{attack.system.attack.damage.formula}}</div>
+      </div>
+      <div class="range flexcol">
+        <label>{{
+            localize "HELLPIERCERS.ITEM.FIELDS.attack.range.label"
+          }}</label>
+        <div class="value flexrow">
+          <span>
+            {{#if (eq attack.system.attack.range.kind "bespoke")}}
+              <img
+                src="{{attack.system.attack.range.svg_uri}}"
+                class="range-preview"
+              >
+            {{else}}
+              {{attack.system.attack.range.short_text}}
+            {{/if}}
+          </span>
+          <a
+            class="weapon-damage button icon fa-solid fa-dice"
+            data-action="onAttack"
+          ></a>
+        </div>
+      </div>
+      {{#if effect}}
+        <div class="effect flexcol">
+          <label>{{localize "HELLPIERCERS.ITEM.FIELDS.effect.label"}}</label>
+          <div class="editor-content">
+            {{{effect}}}
+          </div>
+        </div>
+      {{/if}}
+    </div>
+  {{/each}}
+  {{#if (and editable (lt attacks.length 3))}}
+    <button type="button" data-action="addAttack">
+      <i class="fa-solid fa-plus"></i>&nbsp;Add Attack
+    </button>
+  {{/if}}
+  {{#if special.item}}
+    <div class="item-block special" data-item-id="{{special.item.id}}">
+      <label class="flexrow">
+        <span>{{special.item.name}}</span>
+        <a class="control" role="button" data-context="weapon"><i
+            class="fa-solid fa-bars"
+          ></i></a>
+      </label>
+      <div class="effect">{{{special.effect}}}</div>
+    </div>
+    {{else if editable}}
+    <button type="button" data-action="addSpecial">
+      <i class="fa-solid fa-plus"></i>&nbsp;Add Special
+    </button>
+  {{/if}}
+  <div class="item-block agnosia">
+    <label class="flexrow">
+      <span>{{localize "HELLPIERCERS.ACTOR.FIELDS.agnosia.label"}}</span>
+      <span class="agnosia-val flex0">
+        {{localize "HELLPIERCERS.ACTOR.FIELDS.agnosia.value.label"}}:{{
+          system.agnosia.value
+        }}
+      </span>
+    </label>
+    {{#if editable}}
+      {{
+        formGroup systemFields.agnosia.fields.value value=system.agnosia.value classes="flexcol" rootId=rootId
+      }}
+      {{
+        formInput agnosia.field value=agnosia.value enriched=agnosia.enriched toggled=false
+      }}
+    {{else}}
+      <div class="editor-content">{{{agnosia.enriched}}}</div>
+    {{/if}}
+  </div>
+</section>

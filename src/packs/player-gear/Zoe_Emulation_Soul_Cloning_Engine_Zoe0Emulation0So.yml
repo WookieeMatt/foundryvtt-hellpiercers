@@ -1,0 +1,38 @@
+_id: Zoe0Emulation0So
+name: Zoe-Emulation Soul Cloning Engine
+img: icons/magic/unholy/hands-cloud-light-pink.webp
+type: equipment
+system:
+  description: >-
+    <p><em>Eupraxia found her first fragment of the second Eve in a gilded cage
+    beneath the library of Abraxas. Since then, she has scoured reality and
+    found 104 more. Through studying this isopsephic matter, we gain a better
+    understanding of Eve-Sophia's power.</em></p>
+  effect: >-
+    <p>Select an enemy within Range:4. Create a shadow clone of them anywhere
+    within Range:4. This copy remains in place until the enemies turn. Any
+    damage the copy receives is applied to the targeted enemy. On the enemies
+    turn, the enemy teleports to the shadow clone’s location, removes the shadow
+    clone from play, and explodes, dealing 2D6 in Burst:1, not including
+    damaging itself. If the enemy dies before their turn, they instantly
+    teleport to the shadow clone’s location, remove the shadow clone from play,
+    and deal 4D6 damage in Burst:3</p>
+  available: true
+folder: ttVRofJze0f0u91g
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754147092644
+  modifiedTime: 1756177979609
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Zoe0Emulation0So'

@@ -1,0 +1,43 @@
+<section
+  class="tab abilities flexcol {{tab.cssClass}} scrollable"
+  data-group="primary"
+  data-tab="abilities"
+>
+  <div class="item-block">
+    <label class="flexrow">
+      <span>{{localize "HELLPIERCERS.ACTOR.FIELDS.spawn.spawn.label"}}</span>
+      {{
+        formInput systemFields.spawn.fields.charge value=system.spawn.charge classes="spawn-charge-input"
+      }}
+    </label>
+    {{#if editable}}
+      {{formInput spawn.field value=spawn.value compact=true}}
+    {{else}}
+      <div class="editor-content">{{{spawn.enriched}}}</div>
+    {{/if}}
+  </div>
+
+  <div class="item-block">
+    <label for="{{rootId}}-system.spawn.name">{{
+        localize "HELLPIERCERS.ACTOR.FIELDS.spawn.special.label"
+      }}</label>
+    <div class="flexrow">
+      {{#if editable}}
+        {{
+          formInput systemFields.spawn.fields.name
+        value=systemSource.spawn.name
+        id=(concat rootId "-system.spawn.name")
+        }}
+      {{else}}
+        <div class="value">{{system.spawn.name}}</div>
+      {{/if}}
+    </div>
+    <div class="effect">
+      {{#if editable}}
+        {{formInput special.field value=special.value compact=true}}
+      {{else}}
+        <div class="editor-content">{{{special.enriched}}}</div>
+      {{/if}}
+    </div>
+  </div>
+</section>

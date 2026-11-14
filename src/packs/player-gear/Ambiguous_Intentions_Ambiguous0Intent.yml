@@ -1,0 +1,111 @@
+_id: Ambiguous0Intent
+name: Ambiguous Intentions
+img: icons/magic/movement/trail-streak-zigzag-yellow.webp
+type: weapon
+system:
+  description: >-
+    <p><em>In Eve-Sophia's final congress, she granted her nameless ambassador a
+    shred of the Beast's senecta. This convent of true divinity calls to an age
+    of promised gold, should those who hear its whispers follow their
+    hearts.</em></p>
+  attacks:
+    - name: Attack
+      damage:
+        formula: 3 + 2D8 - (@charge)
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: bespoke
+        value: 1
+        spaces:
+          - i: -1
+            j: -1
+          - i: 0
+            j: 1
+          - i: 0
+            j: 2
+          - i: 1
+            j: -1
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+    - name: Blood−Hungry Enhancement Prayer
+      range:
+        name: Range
+        kind: burst
+        value: 2
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      damage:
+        formula: 3 + 2D8
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      description: ''
+  active:
+    name: Terminating The Eightfold Path
+    description: >-
+      <p>When you attack, if one of the squares in your attack pattern is empty,
+      you may immediately move into that square for zero movement cost and take
+      a free attack with <strong>-1 damage</strong>. You may repeat this as long
+      as you deal at least 1 damage to any target, with each subsequent attack
+      dealing an additional <strong>-1 damage</strong>. When you move,
+      <strong>Mark</strong> the spaces you step into. You may not move into a
+      <strong>Marked</strong> tile in this way. Remove all of your
+      <strong>Marks</strong> at the start of your next turn.</p>
+  passive:
+    name: Blood−Hungry Enhancement Prayer
+    description: >-
+      <p>For each enemy killed with Ambiguous Intentions during your turn, gain
+      <strong>1 Charge</strong>. When you attack with 3 or more
+      <strong>Charges</strong>, the attack is <strong>Burst:2</strong> and
+      ignores the weapon’s damage reduction penalties, then loses <strong>3
+      Charges</strong>.</p>
+  selected_attack: 0
+  counter:
+    enabled: true
+folder: GTdAaocCUUI6rY5Z
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753146263584
+  modifiedTime: 1756177979597
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Ambiguous0Intent'

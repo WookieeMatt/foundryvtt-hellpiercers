@@ -1,0 +1,117 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.7/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "includes": ["**", "!**/node_modules", "!dist", "!foundry"]
+  },
+  "formatter": {
+    "enabled": true,
+    "useEditorconfig": true,
+    "lineWidth": 100,
+    "includes": ["!src/packs"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": { "noThisInStatic": "off", "noForEach": "on" },
+      "correctness": {
+        "noNodejsModules": "error",
+        "noUndeclaredDependencies": {
+          "level": "on",
+          "options": { "devDependencies": false, "peerDependencies": false }
+        },
+        "noUndeclaredVariables": "on",
+        "useParseIntRadix": "off",
+        "useSingleJsDocAsterisk": "on"
+      },
+      "style": {
+        "noParameterAssign": "on",
+        "noUnusedTemplateLiteral": "on",
+        "noUselessElse": "on",
+        "useDefaultParameterLast": "on"
+      },
+      "suspicious": { "noConstantBinaryExpressions": "on", "noVar": "on" }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["scripts/*", "vite.config.*"],
+      "javascript": { "globals": [] },
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noNodejsModules": "off",
+            "noUndeclaredDependencies": { "level": "on", "options": {} }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["src/global.d.mts"],
+      "linter": { "rules": { "correctness": { "noUndeclaredDependencies": "off" } } }
+    }
+  ],
+  "javascript": {
+    "formatter": { "trailingCommas": "es5", "arrowParentheses": "asNeeded" },
+    "globals": [
+      "hellpiercers",
+      "foundry",
+      "CONFIG",
+      "CONST",
+      "game",
+      "ui",
+      "canvas",
+      "_del",
+      "_replace",
+      "ActiveEffect",
+      "Actor",
+      "ActorDelta",
+      "Adventure",
+      "AmbientLightDocument",
+      "AmbientSoundDocument",
+      "Card",
+      "Cards",
+      "ChatMessage",
+      "Combat",
+      "Combatant",
+      "CombatantGroup",
+      "DrawingDocument",
+      "FogExploration",
+      "Folder",
+      "Item",
+      "JournalEntry",
+      "JournalEntryCategory",
+      "JournalEntryPage",
+      "Macro",
+      "MeasuredTemplateDocument",
+      "NoteDocument",
+      "Playlist",
+      "PlaylistSound",
+      "RegionBehavior",
+      "RegionDocument",
+      "RollTable",
+      "Scene",
+      "Setting",
+      "TableResult",
+      "TileDocument",
+      "TokenDocument",
+      "User",
+      "WallDocument",
+      "Color",
+      "Collection",
+      "fromUuid",
+      "fromUuidSync",
+      "getDocumentClass",
+      "Hooks",
+      "ProseMirror",
+      "Roll",
+      "PIXI",
+      "Handlebars"
+    ]
+  }
+}

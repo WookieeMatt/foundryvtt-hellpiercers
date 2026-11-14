@@ -1,0 +1,74 @@
+_id: Regrettable0Prec
+name: Regrettable Precaution
+img: icons/magic/movement/abstract-ribbons-red-orange.webp
+type: weapon
+system:
+  description: >-
+    <p><em>Halfway between a gun and a prayer. Each invocation sends sympathies
+    through the arrayed realities in hopes of finding a causality where you have
+    a better weapon in your hands.</em></p>
+  attacks:
+    - name: Attack
+      damage:
+        formula: 3 + 3D6
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: bespoke
+        value: 1
+        spaces:
+          - i: 0
+            j: 1
+          - i: 0
+            j: 2
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+  active:
+    name: Instant Materialization
+    description: >-
+      <p>Throw your weapon at a target within <strong>Range:4</strong>. Mark the
+      tile and deal damage to all enemies within <strong>Burst:1</strong> of the
+      target. You must step on the marked tile to retrieve <em>Regrettable
+      Precaution</em>.</p>
+  passive:
+    name: Weapon−Based Lifeform
+    description: >-
+      <p>You may use an <strong>Aux Action</strong> to attack with
+      <em>Regrettable Precaution</em>, even when you have already attacked, you
+      have another weapon equipped, or your <em>Regrettable Precaution</em> is
+      currently on the ground. If it’s on the ground, use the marked tile as the
+      source of its attack pattern. This cannot be used to fire someone else’s
+      <em>Regrettable Precaution</em>.</p>
+  selected_attack: 0
+folder: GTdAaocCUUI6rY5Z
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753146263584
+  modifiedTime: 1756177979605
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Regrettable0Prec'

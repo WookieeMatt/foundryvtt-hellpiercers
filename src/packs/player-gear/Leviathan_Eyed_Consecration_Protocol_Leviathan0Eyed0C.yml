@@ -1,0 +1,36 @@
+_id: Leviathan0Eyed0C
+name: Leviathan-Eyed Consecration Protocol
+img: icons/sundries/lights/candle-pillar-lit-yellow.webp
+type: gear
+system:
+  description: >-
+    <p><em>Like children on the beach, we first learned to walk in the
+    footprints of our tormentor gods: wells of energy pulsing through non-hylic
+    directions. Now, we make our own footprints.</em></p>
+  kind: weapon
+  effect: >-
+    <p>At the end of your turn, place a Blast:2 square somewhere within Range:3.
+    Make a note of this but do not draw it on the map or indicate it to the GM.
+    If any creature enters this space, interrupt and make an attack with your
+    primary weapon from that enemy's position. The square vanishes after this
+    attack. You may communicate the overwatch squares location to your allies
+    however you wish.</p>
+  target: ''
+folder: 1upYVLWgpnHioybI
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754176962056
+  modifiedTime: 1756177979603
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Leviathan0Eyed0C'

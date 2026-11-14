@@ -1,0 +1,66 @@
+_id: DERAFSH0KAVIANI1
+name: Immaterialization Suite
+img: icons/sundries/flags/banner-standard-brown.webp
+type: ability
+system:
+  action: active
+  effect: >-
+    <p>Once per turn, you may select a player character within
+    <strong>Range:2</strong> and spend one of your actions to grant that player
+    an immediate use of that type of action. You gain one additional  action a
+    step lower than the one you spent—granting another player a <strong>Main
+    Action</strong> grants you an additional <strong>Support Action</strong>,
+    granting a <strong>Support Action</strong>  gives you an additional
+    <strong>Aux Action</strong>. Granting an <strong>Aux Action</strong> also
+    gives you an additional <strong>Aux Action</strong>.</p>
+  item:
+    type: class
+    uuid: Compendium.hellpiercers.player-gear.DERAFSH0KAVIANI0
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  uses: null
+  trigger: null
+  break_value: 10
+folder: CStrIPAtdL2bGn2g
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390239072
+  modifiedTime: 1756177965558
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!DERAFSH0KAVIANI1'

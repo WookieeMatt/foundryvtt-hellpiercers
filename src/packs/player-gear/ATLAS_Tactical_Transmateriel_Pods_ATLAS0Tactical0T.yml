@@ -1,0 +1,58 @@
+name: ATLAS Tactical Transmateriel Pods
+type: halo_system
+_id: ATLAS0Tactical0T
+img: icons/containers/chest/chest-reinforced-steel-red.webp
+system:
+  description: >-
+    <p><em>Simple reality-skewing anchors allow HALO pilots to bend local space
+    across a 9-dimensional axis, enabling rapid on-site resupply directly from
+    DIS Support Battalion Unit “Didymus.”</em></p>
+  effect: >-
+    <p>This system begins each TACCOM mission with 1 Supply Counter. As a
+    Support Action, you may spend 1 Supply Counter and choose an allied
+    character within Range:3, then select one of the following effects: That
+    character gains Healing:5 and may immediately move 3 spaces. [Requires
+    ANCILIA Tactical Production] If that character’s Equipment has been
+    expended, they gain another use of it.</p>
+  upgrades:
+    - cost:
+        brimstone: 1
+        hellsteel: 2
+        soulfire: 0
+      effect: >-
+        <p>This system begins each TACCOM mission with 2 Supply Counters instead
+        of 1.</p>
+      unlocked: false
+    - cost:
+        brimstone: 0
+        hellsteel: 0
+        soulfire: 3
+      effect: <p>The Healing granted by this system becomes Healing:10.</p>
+      unlocked: false
+    - cost:
+        brimstone: 2
+        hellsteel: 0
+        soulfire: 1
+      effect: >-
+        <p>A character whose Equipment has been expended can choose to regain
+        another use of it or gain one use of any other piece of Equipment
+        granted by the ANCILIA Tactical Production of their choice.</p>
+      unlocked: false
+folder: eG8qD3hpnyaGlvhV
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756146302269
+  modifiedTime: 1756177979596
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!ATLAS0Tactical0T'

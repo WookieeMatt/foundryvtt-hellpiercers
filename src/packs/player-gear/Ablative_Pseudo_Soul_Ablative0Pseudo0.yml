@@ -1,0 +1,37 @@
+_id: Ablative0Pseudo0
+name: Ablative Pseudo-Soul
+img: icons/magic/defensive/barrier-shield-dome-deflect-blue.webp
+type: gear
+system:
+  description: >-
+    <p><em>In the hands of a skilled worker, simple nous-stuff can be
+    synthesized from lower-order creatures, such as krill. These pseudo-souls
+    lack consciousness, but will often grow a sense of self. Should it attain
+    synesis, its protectively incorruptible aspects fail—with awareness comes
+    risk.</em></p>
+  kind: armor
+  effect: >-
+    <p>You have a pool of 5 Temporary HP. This Temporary HP restores at the end
+    of your turn every round. You may share any amount of this Temporary HP with
+    any adjacent target as an Aux Action. Temporary HP takes damage before HP.
+    If you have multiple sources of Temporary HP, you choose the order in which
+    they take damage.</p>
+  target: ''
+folder: 1upYVLWgpnHioybI
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754176962056
+  modifiedTime: 1756177979597
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Ablative0Pseudo0'

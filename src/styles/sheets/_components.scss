@@ -1,0 +1,255 @@
+$borderColor: var(--hellpiercers-sheet-box-border);
+$dividerColor: var(--hellpiercers-sheet-box-divider);
+$labelBg: color(from $dividerColor srgb r g b / 0.25);
+
+@mixin item-list {
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li.header {
+      column-span: all;
+      border-bottom: 1px solid var(--hellpiercers-sheet-box-divider);
+      border-top: 1px solid var(--hellpiercers-sheet-box-divider);
+      /* malva-ignore */
+      background:
+        color(from var(--hellpiercers-sheet-box-divider) srgb r g b / 0.25);
+    }
+    &.temporary {
+      columns: 2;
+    }
+    li {
+      img {
+        flex: 0;
+        margin: auto 0.25rem;
+      }
+      a.control {
+        flex: 0;
+        padding: 0.1rem;
+      }
+      input[type="checkbox"] {
+        flex: 0;
+      }
+    }
+    li.new-effect {
+      button {
+        width: auto;
+        break-inside: avoid;
+      }
+    }
+  }
+}
+
+@mixin plain-input {
+  input {
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: var(--font-size-18);
+    transition: initial;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+@mixin box-label {
+  grid-area: label;
+  border-bottom: 1px solid $dividerColor;
+  line-height: unset;
+  background: $labelBg;
+  padding: 0rem 0.5rem;
+}
+
+@mixin sheet-tabs {
+  nav.sheet-tabs {
+    padding: 0 1rem;
+    border-top: 1px solid var(--color-text-selection-bg);
+    border-bottom: 1px solid var(--color-text-selection-bg);
+    margin: unset;
+
+    a {
+      flex: 1;
+      &:hover {
+        text-shadow: unset;
+      }
+      &.active {
+        background: var(--color-text-selection-bg);
+        color: var(--color-text-selection);
+        text-shadow: unset;
+      }
+    }
+  }
+}
+
+@mixin ability-blocks {
+  $borderColor: var(--hellpiercers-sheet-box-border);
+  $dividerColor: var(--hellpiercers-sheet-box-divider);
+  $labelBg: color(from $dividerColor srgb r g b / 0.25);
+  gap: 0.25rem;
+
+  .item-block {
+    border: 1px solid $borderColor;
+    display: flex;
+    flex-direction: column;
+    label {
+      input.charge-input {
+        flex: 0 0 2rem;
+        border-radius: 0;
+        text-align: center;
+        font-size: var(--font-size-14);
+        padding: 0px;
+        height: 1rem;
+        margin-right: 0.25rem;
+      }
+      flex: 0;
+      border-bottom: 1px solid $dividerColor;
+      background: $labelBg;
+      padding: 0rem 0.5rem;
+    }
+    input, select {
+      border-radius: unset;
+      font-size: var(--font-size-18);
+    }
+    .value {
+      min-height: var(--input-height);
+      padding: 0 0.5rem;
+      display: flex;
+      align-items: center;
+      font-size: var(--font-size-18);
+      border: 1px solid transparent;
+    }
+  }
+}
+
+@mixin header-boxes-v2 {
+  .box {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    flex-direction: column;
+    border: 1px solid $borderColor;
+    label {
+      background: $labelBg;
+      border-bottom: 1px solid $dividerColor;
+      padding: 0 0.25rem;
+    }
+    .form-fields {
+      font-size: var(--font-size-18);
+      display: flex;
+      overflow: auto;
+      &.bare {
+        align-items: center;
+        justify-content: center;
+      }
+      input {
+        text-align: center;
+        border-radius: 0;
+      }
+      > .value > input {
+        border: none;
+        background: none;
+        box-shadow: none;
+      }
+      .max {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        border-left: 1px solid $dividerColor;
+      }
+      string-tags {
+        div.tags {
+          flex-wrap: nowrap;
+        }
+        input:disabled, button:disabled {
+          display: none;
+        }
+      }
+    }
+  }
+  .charname, .charname input {
+    grid-area: charname;
+    font-family: var(--font-h1);
+    font-size: var(--font-size-40);
+    height: fit-content;
+    text-align: center;
+    border-radius: 0;
+  }
+  .chartags {
+    grid-area: tags;
+  }
+  .speed {
+    grid-area: speed;
+  }
+  .scale {
+    grid-area: scale;
+  }
+  .actions {
+    grid-area: actions;
+  }
+  div.portrait {
+    grid-area: portrait;
+    border: 1px solid $borderColor;
+    align-self: end;
+    width: 6.6rem;
+    aspect-ratio: 1 / 1;
+    img.portrait {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: 50% top;
+    }
+  }
+  .pronouns {
+    grid-area: pronouns;
+    width: auto;
+    .form-fields {
+      font-size: var(--font-size-14);
+      text-wrap-mode: nowrap;
+      input {
+        text-align: center;
+      }
+    }
+  }
+  .hp {
+    grid-area: hp;
+  }
+}
+
+@mixin slide-toggle($width: 1.5rem, $height: 0.6 * $width) {
+  $thumb-size: $height * 0.7;
+  $thumb-margin: $height * 0.15;
+  .slide-toggle {
+    cursor: pointer;
+    background-color: #fff3;
+    height: $height;
+    width: $width;
+    border-radius: $height;
+    display: flex;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    &::after {
+      content: "";
+      background-color: var(--color-light-1);
+      transition: 0.1s ease-in;
+      width: $thumb-size;
+      height: $thumb-size;
+      border-radius: 50%;
+      margin-left: $thumb-margin;
+    }
+    &:not(.locked) {
+      background-color: #66bb6acc;
+      &::after {
+        translate: calc($width - $height);
+      }
+    }
+  }
+  @at-root {
+    .application.hellpiercers.minimized
+      .window-header
+      div.slide-toggle.header-control {
+      display: none;
+    }
+  }
+}

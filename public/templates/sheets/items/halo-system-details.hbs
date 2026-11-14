@@ -1,0 +1,75 @@
+<section
+  class="tab details scrollable flexcol {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="details"
+>
+  {{#if editable}}
+    {{
+      formGroup effect.field enriched=effect.enriched value=effect.value compact=true classes="item-block" rootId=rootId
+    }}
+  {{else}}
+    <div class="item-block">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.effect.label"}}</label>
+      <div class="editor-content">{{{effect.enriched}}}</div>
+    </div>
+  {{/if}}
+  {{#if upgrades.length}}
+    <ol class="upgrades">
+      <li class="header">
+        {{localize "HELLPIERCERS.ITEM.FIELDS.upgrades.label"}}
+      </li>
+      {{#each upgrades}}
+        <li data-index="{{@index}}">
+          <div class="flexrow">
+            <div class="cost">
+              {{#if upgrade.cost.brimstone}}
+                <span>
+                  {{upgrade.cost.brimstone}}
+                  {{
+                    localize "HELLPIERCERS.UPGRADE.FIELDS.cost.brimstone.label"~
+                  }}
+                </span>
+              {{/if}}
+              {{#if upgrade.cost.hellsteel}}
+                <span>
+                  {{upgrade.cost.hellsteel}}
+                  {{
+                    localize "HELLPIERCERS.UPGRADE.FIELDS.cost.hellsteel.label"~
+                  }}
+                </span>
+              {{/if}}
+              {{#if upgrade.cost.soulfire}}
+                <span>
+                  {{upgrade.cost.soulfire}}
+                  {{
+                    localize "HELLPIERCERS.UPGRADE.FIELDS.cost.soulfire.label"~
+                  }}
+                </span>
+              {{/if}}
+            </div>
+            <a class="control toggle" role="button" data-action="toggleUpgrade">
+              <i
+                class='{{ifThen upgrade.unlocked "fa-solid fa-square-check" "fa-regular fa-square"}}'
+              >
+              </i>
+            </a>
+            {{#if @root.editable}}
+              <a
+                class="control icon fa-solid fa-bars"
+                role="button"
+                data-context="upgrade"
+              ></a>
+            {{/if}}
+          </div>
+          <div class="effect">{{{effect}}}</div>
+        </li>
+      {{/each}}
+    </ol>
+  {{/if}}
+  {{#if editable}}
+    <button type="button" class="new-upgrade" data-action="addUpgrade">
+      <i class="fa-solid fa-plus"></i>
+      {{localize "HELLPIERCERS.ITEM.SHEET.upgrades.add"}}
+    </button>
+  {{/if}}
+</section>

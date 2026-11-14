@@ -1,0 +1,225 @@
+// TACCOM UI: action pips, status chips, chat cards, tracker pips.
+
+@mixin bar {
+  .taccom-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0.125rem 0 0.25rem;
+
+    .action-pips {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      padding: 0.125rem 0.25rem;
+      border: 1px solid var(--hellpiercers-sheet-box-divider);
+      border-radius: 6px;
+      transition: box-shadow 0.2s, border-color 0.2s;
+
+      &.active {
+        border-color: var(--hellpiercers-sheet-box-border);
+        box-shadow: 0 0 6px 0 var(--hellpiercers-sheet-box-border);
+      }
+
+      .pip {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.375rem;
+        height: 1.625rem;
+        padding: 0 0.5rem;
+        margin: 0;
+        font-size: var(--font-size-12);
+        line-height: 1;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        background: transparent;
+        border: 1px solid var(--hellpiercers-sheet-box-divider);
+        border-radius: 999px;
+        cursor: pointer;
+
+        .gem {
+          width: 0.625rem;
+          height: 0.625rem;
+          transform: rotate(45deg);
+          background: var(--hellpiercers-range-button-background);
+          border: 1px solid var(--hellpiercers-sheet-box-border);
+          transition: background 0.15s, opacity 0.15s;
+        }
+
+        &.spent {
+          opacity: 0.45;
+          .gem {
+            background: transparent;
+          }
+          .label {
+            text-decoration: line-through;
+          }
+        }
+        &.blocked {
+          opacity: 0.55;
+          border-style: dashed;
+          .gem {
+            background: var(--color-level-error, #b33);
+          }
+        }
+        &:hover:not(.spent, .blocked) {
+          border-color: var(--hellpiercers-sheet-box-border);
+        }
+      }
+
+      .haste {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0 0.375rem;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+    }
+
+    .status-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      min-height: 1.5rem;
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0 0.5rem 0 0.25rem;
+        height: 1.5rem;
+        font-size: var(--font-size-12);
+        color: var(--color-text-primary);
+        background: var(--hellpiercers-sheet-box-divider);
+        border: 1px solid var(--hellpiercers-sheet-box-border);
+        border-radius: 999px;
+        cursor: pointer;
+        user-select: none;
+
+        img {
+          width: 1rem;
+          height: 1rem;
+          border: none;
+          filter: var(--status-icon-filter, none);
+          @at-root .theme-light & {
+            --status-icon-filter: invert(1);
+          }
+        }
+        .stacks {
+          min-width: 1.125rem;
+          text-align: center;
+          padding: 0 0.25rem;
+          border-radius: 999px;
+          background: var(--hellpiercers-sheet-box-border);
+          color: #fff;
+        }
+        &.add {
+          padding: 0 0.5rem;
+          background: transparent;
+          border-style: dashed;
+        }
+        &.rez {
+          color: #fff;
+          background: var(--color-level-success, #2a7);
+          border-color: transparent;
+        }
+        &:hover {
+          filter: brightness(1.15);
+        }
+      }
+    }
+  }
+
+  a.use,
+  .use[role="button"] {
+    color: var(--hellpiercers-range-button-background);
+    &:hover {
+      color: var(--color-text-hyperlink, #fff);
+      text-shadow: 0 0 6px currentColor;
+    }
+  }
+}
+
+@mixin chat {
+  // Turn effect summaries and ability cards
+  .hellpiercers.turn-note {
+    header {
+      font-family: var(--font-h1);
+      font-size: var(--font-size-16);
+      border-bottom: 1px solid var(--color-border-light-2, #8884);
+      margin-bottom: 0.25rem;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: flex;
+        gap: 0.5rem;
+        align-items: baseline;
+        i {
+          width: 1rem;
+          text-align: center;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .hellpiercers.ability-card {
+    header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: cover;
+        border: 1px solid var(--hellpiercers-sheet-box-border, #888);
+        border-radius: 4px;
+      }
+      h3 {
+        margin: 0;
+        border: none;
+        font-family: var(--font-h1);
+      }
+      .meta {
+        font-size: var(--font-size-12);
+        opacity: 0.75;
+      }
+    }
+    .body {
+      margin-top: 0.375rem;
+      p:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@mixin tracker {
+  .combatant .token-initiative {
+    .action-pips {
+      display: flex;
+      gap: 3px;
+      .pip {
+        width: 0.5rem;
+        height: 0.5rem;
+        transform: rotate(45deg);
+        border: 1px solid var(--color-text-secondary, #888);
+        background: var(--color-text-secondary, #888);
+        &.spent {
+          background: transparent;
+          opacity: 0.5;
+        }
+        &.blocked {
+          background: var(--color-level-error, #b33);
+          border-color: var(--color-level-error, #b33);
+        }
+      }
+    }
+  }
+}

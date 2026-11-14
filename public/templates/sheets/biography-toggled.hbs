@@ -1,0 +1,15 @@
+<section
+  class="tab biography {{tab.cssClass}} scrollable flexcol"
+  data-group="primary"
+  data-tab="biography"
+>
+  {{#if editable}}
+    {{
+      formInput biography.field value=biography.value enriched=biography.enriched toggled=false
+    }}
+  {{else}}
+    <div>
+      {{{biography.enriched}}}
+    </div>
+  {{/if}}
+</section>

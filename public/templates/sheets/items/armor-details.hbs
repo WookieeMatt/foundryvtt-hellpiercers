@@ -1,0 +1,40 @@
+<section
+  class="tab details scrollable flexcol {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="details"
+>
+  {{#if editable}}
+    {{
+      formGroup systemFields.speed value=system.speed classes="item-block" rootId=rootId
+    }}
+    {{
+      formGroup systemFields.movement value=system.movement classes="item-block" rootId=rootId
+    }}
+    {{
+      formGroup systemFields.ability value=system.ability classes="item-block" rootId=rootId
+    }}
+    {{
+      formGroup systemFields.reversal value=system.reversal classes="item-block" rootId=rootId
+    }}
+  {{else}}
+    <div class="item-block speed">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.speed.label"}}</label>
+      <div class="value">{{system.speed}}</div>
+    </div>
+    <div class="item-block movement">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.movement.label"}}</label>
+      <span>{{{movement.anchor}}}</span>
+      <div class="editor-content">{{{movement.enriched}}}</div>
+    </div>
+    <div class="item-block ability">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.ability.label"}}</label>
+      <span>{{{ability.anchor}}}</span>
+      <div class="editor-content">{{{ability.enriched}}}</div>
+    </div>
+    <div class="item-block reversal">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.reversal.label"}}</label>
+      <span>{{{reversal.anchor}}}</span>
+      <div class="editor-content">{{{reversal.enriched}}}</div>
+    </div>
+  {{/if}}
+</section>

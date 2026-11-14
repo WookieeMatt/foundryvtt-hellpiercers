@@ -1,0 +1,51 @@
+name: Katagnosis Plating
+type: halo_system
+_id: Katagnosis0Plati
+img: icons/magic/symbols/runes-carved-stone-yellow.webp
+system:
+  description: >-
+    <p><em>Shards of the fallen sister have inexplicable properties; by
+    powdering a recovered slither of her form and integrating it into the
+    sigil-hardened and ritual-formed ceramics, HALO units gain a portion of the
+    agnosia the demonic forces leverage against them.</em></p>
+  effect: >-
+    <p>Whenever you move, you may push hostile characters in the path of your
+    movement that you come into contact with, forcing them to move the same
+    number and direction of spaces as you move, mirroring your movement exactly.
+    Pushing enemies through Obstructing terrain causes that terrain to be
+    destroyed and deals 10 damage to each enemy pushed through any amount of
+    Obstructing terrain this way during your movement.</p>
+  upgrades:
+    - cost:
+        brimstone: 0
+        hellsteel: 1
+        soulfire: 2
+      effect: >-
+        <p>You may reduce all Push and Recoil you take by 1 to a minimum of 0.
+        You may take this upgrade a second time, increasing the reduction to
+        2.</p>
+      unlocked: false
+    - cost:
+        brimstone: 0
+        hellsteel: 0
+        soulfire: 3
+      effect: <p>You are immune to Slow.</p>
+      unlocked: false
+folder: eG8qD3hpnyaGlvhV
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756146302269
+  modifiedTime: 1756177979602
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Katagnosis0Plati'

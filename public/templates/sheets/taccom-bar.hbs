@@ -1,0 +1,57 @@
+<div class="taccom-bar">
+  {{#if combatState}}
+    <div class="action-pips {{#if combatState.active}}active{{/if}}">
+      {{#each combatState.actions}}
+        <button
+          type="button"
+          class="pip {{id}} {{#if spent}}spent{{/if}} {{#if blocked}}blocked{{/if}}"
+          data-action="toggleAction"
+          data-action-id="{{id}}"
+          data-tooltip="{{hint}}"
+          aria-pressed="{{spent}}"
+        >
+          <span class="gem"></span>
+          <span class="label">{{label}}</span>
+        </button>
+      {{/each}}
+      {{#if combatState.haste}}
+        <span
+          class="haste"
+          data-tooltip="HELLPIERCERS.ACTIONS.haste"
+        ><i class="fa-solid fa-bolt"></i> +{{combatState.haste}}</span>
+      {{/if}}
+    </div>
+  {{/if}}
+  <div class="status-chips">
+    {{#each statusChips}}
+      <a
+        class="chip {{id}}"
+        data-action="adjustStatus"
+        data-status-id="{{id}}"
+        data-tooltip="{{description}}"
+        data-tooltip-direction="UP"
+      >
+        <img src="{{img}}" alt="">
+        <span class="name">{{name}}</span>
+        {{#unless overlay}}<b class="stacks">{{stacks}}</b>{{/unless}}
+      </a>
+    {{/each}}
+    {{#if editable}}
+      <a
+        class="chip add"
+        role="button"
+        data-action="addStatus"
+        data-tooltip="HELLPIERCERS.ACTOR.SHEET.actions.addStatus"
+      ><i class="fa-solid fa-plus"></i></a>
+    {{/if}}
+    {{#if isDefeated}}
+      <a
+        class="chip rez"
+        role="button"
+        data-action="rezActor"
+        data-tooltip="HELLPIERCERS.ACTOR.SHEET.actions.rez"
+      ><i class="fa-solid fa-hand-holding-heart"></i>
+        {{localize "HELLPIERCERS.ACTOR.SHEET.actions.rez"}}</a>
+    {{/if}}
+  </div>
+</div>

@@ -1,0 +1,20 @@
+type: Item
+folder: null
+name: Weapon
+color: null
+sorting: a
+_id: GTdAaocCUUI6rY5Z
+description: ''
+sort: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.346'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753136351298
+  modifiedTime: 1753136351298
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!folders!GTdAaocCUUI6rY5Z'

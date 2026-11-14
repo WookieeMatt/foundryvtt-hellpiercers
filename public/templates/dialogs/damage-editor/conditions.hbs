@@ -1,0 +1,19 @@
+<fieldset>
+  <legend>{{localize "HELLPIERCERS.DAMAGE.FIELDS.conditions.label"}}</legend>
+  <ol class="condition-inputs">
+    {{#each damage.conditions}}
+      <li class="flexrow" data-index="{{@index}}">
+        <select name="c.{{@index}}.id">
+          {{selectOptions ../conditions.choices localize=true selected=@key}}
+        </select>
+        <input type="number" name="c.{{@index}}.value" value="{{this}}">
+        <a class="control" data-action="removeCondition"><i
+            class="fa-solid fa-minus"
+          ></i></a>
+      </li>
+    {{/each}}
+  </ol>
+  <button type="button" data-action="addCondition">
+    <i class="fa-solid fa-plus"></i>Add
+  </button>
+</fieldset>

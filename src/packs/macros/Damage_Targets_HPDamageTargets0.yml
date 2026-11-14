@@ -1,0 +1,31 @@
+name: Damage Targets
+type: script
+command: |-
+  const input = await foundry.applications.api.Dialog.input({
+    window: { title: "Damage Targets", icon: "fa-solid fa-burst" },
+    content: `<div class="form-group"><label>Amount</label><div class="form-fields"><input type="number" name="amount" value="5" min="0" autofocus></div></div><div class="form-group"><label>Raw</label><div class="form-fields"><input type="checkbox" name="raw"></div><p class="hint">Skip Armor, Bleed and other modifiers.</p></div>`,
+  });
+  if (!input) return;
+  const targets = game.user.targets.size ? [...game.user.targets] : canvas.tokens.controlled;
+  if (!targets.length) return ui.notifications.warn("Target or select a token first.");
+  await hellpiercers.damage(targets, Number(input.amount), { raw: input.raw });
+img: icons/svg/sword.svg
+author: null
+scope: global
+folder: null
+ownership:
+  default: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.2.0
+  createdTime: 1763100000000
+  modifiedTime: 1763100000000
+  lastModifiedBy: null
+  exportSource: null
+_id: HPDamageTargets0
+sort: 0
+_key: '!macros!HPDamageTargets0'

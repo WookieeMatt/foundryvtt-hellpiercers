@@ -1,0 +1,165 @@
+name: Longinus Driver
+img: icons/weapons/polearms/spear-flared-silver-pink.webp
+type: halo_weapon
+_id: Longinus0Driver0
+system:
+  description: >-
+    <p><em>Symbolically, practically, and metaphysically, both the stake and the
+    spear have long historical associations with slaying evil and spilling the
+    blood of the divine. While several proposals were raised during the planning
+    stages for a mech-tier tactical melee weapon, it was these qualities which
+    ultimately led engineers towards the development of the Longinus Driver. A
+    straightforward weapon, the driver utilizes a captive bolt design to
+    electromagnetically accelerate a superhardened, ward-engraved spike with
+    devastating force, capable of penetrating even the toughest of hellforged
+    armor in a single blow.</em></p>
+  counter:
+    enabled: false
+    value: 0
+    max: null
+  effect: >-
+    <p>Choose an attack profile at the beginning of combat; you may switch
+    profiles as a Support Action. This weapon begins each combat charged. Before
+    or after you make an attack with this weapon while it is charged, you may
+    move 2 spaces. </p><p>Hammer Profile - 30 Damage, Range:3,
+    Push:6</p><p>Spike Profile - 2D10 Damage, Line:3, Piercing, Shock:1. Targets
+    take +10 damage for each space the Line extends through or overlaps with the
+    target beyond the first (a target that is hit by the very end space of the
+    line will take 2D10 damage, while a target that is adjacent to the HALO Unit
+    will take 20+2D10 damage).</p><p>Once this weapon has been used to attack,
+    it becomes discharged. You may continue to attack with it while discharged
+    to reduced effect:</p><p>Hammer Profile - 2D10 damage, Range:3,
+    Push:2</p><p>Spike Profile - 2D10 damage, Line:3, Piercing</p>
+  secondary:
+    action: main
+    effect: Charge this weapon, and you may move up to 2 spaces.
+  attacks:
+    - damage:
+        formula: '30'
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: true
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: targets
+        value: 1
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: 3
+          width: null
+          length: null
+          push: 6
+          recoil: null
+          scale: null
+      description: ''
+      name: Hammer Profile
+    - name: Hammer Profile (Discharged)
+      range:
+        name: Range
+        kind: targets
+        value: 1
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: 3
+          width: null
+          length: null
+          push: 2
+          recoil: null
+          scale: null
+      damage:
+        formula: 2D10
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: true
+        wrack: null
+        value: null
+      description: ''
+    - name: Spike Profile
+      range:
+        name: Range
+        kind: line
+        value: 3
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      damage:
+        formula: 2D10
+        source: null
+        conditions:
+          shock: 1
+        qualities:
+          piercing: true
+          transference: false
+          breaker: false
+          overpenetrating: true
+        wrack: null
+        value: null
+      description: ''
+    - name: Spike Profile (Discharged)
+      range:
+        name: Range
+        kind: line
+        value: 3
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      damage:
+        formula: 2D10
+        source: null
+        conditions: {}
+        qualities:
+          piercing: true
+          transference: false
+          breaker: false
+          overpenetrating: true
+        wrack: null
+        value: null
+      description: ''
+  selected_attack: 0
+  tags: []
+folder: 3PRmrrGpg5K8AWEp
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756170201241
+  modifiedTime: 1756177979603
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Longinus0Driver0'

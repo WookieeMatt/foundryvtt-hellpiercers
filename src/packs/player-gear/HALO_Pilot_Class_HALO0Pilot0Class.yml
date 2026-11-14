@@ -1,0 +1,33 @@
+_id: HALO0Pilot0Class
+name: HALO Pilot Class
+img: icons/commodities/tech/cog-bronze.webp
+type: class
+system:
+  description: >-
+    <p><em>When your HALO Unit is reduced to 0 HP, your pilot may immediately
+    eject from the wreckage, teleporting to an unoccupied space within Range:3.
+    A dismounted HALO Unit pilot has the following stats and abilities as part
+    of their standard pilot loadout; they cannot equip other armors, weapons, or
+    equipment.</em></p>
+  health: 40
+  active: Compendium.hellpiercers.player-abilities.Item.HALO0Pilot0Clas1
+  passive: Compendium.hellpiercers.player-abilities.Item.HALO0Pilot0Clas2
+  limit: Compendium.hellpiercers.player-abilities.Item.HALO0Pilot0Clas3
+folder: 7KVmHWz8OUEGwBpj
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390323855
+  modifiedTime: 1756177979601
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!HALO0Pilot0Class'

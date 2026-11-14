@@ -1,0 +1,63 @@
+_id: SHARUR0000000003
+name: Ultimate Inverted Awakening Technique
+img: icons/weapons/maces/mace-round-spiked-grey.webp
+type: ability
+system:
+  action: limit
+  effect: >-
+    <p>Nullify all currently existing Attractor and Void  Attractor tiles. Your
+    character gains all the traits of a Void Attractor tile, and may move over
+    enemies without any  additional Speed costs. You gain Aegis for each tile of
+    movement, but you must end your turn on a valid tile. This effect ends at
+    the end of your next turn.</p>
+  break_value: 14
+  item:
+    type: class
+    uuid: Compendium.hellpiercers.player-gear.SHARUR0000000000
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  uses: null
+  trigger: null
+folder: xmK48GWm698TzIr9
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390248723
+  modifiedTime: 1756177965573
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!SHARUR0000000003'

@@ -1,0 +1,87 @@
+<section
+  class="tab loadout flexcol {{tab.cssClass}} scrollable"
+  data-tab="{{tab.id}}"
+  data-group="primary"
+  id="{{partId}}"
+>
+  <ol class="gear plain items">
+    <li class="header">{{localize "HELLPIERCERS.ACTOR.SHEET.loadout.gear"}}</li>
+    {{#each itemTypes.gear}}
+      <li
+        class="item-block item gear draggable gear{{@index}}"
+        data-item-id="{{item.id}}"
+      >
+        <label class="flexrow">
+          <span class="name">{{item.name}}</span>
+          <span class="kind">{{
+              localize (concat "TYPES.Item." item.system.kind)
+            }}</span>
+          <a
+            class="control icon fa-solid fa-bars"
+            role="button"
+            data-context="item"
+          ></a>
+        </label>
+        <div class="editor-content">{{{effect}}}</div>
+      </li>
+    {{else}}
+      <li class="item">
+        <span class="name">
+          {{localize "HELLPIERCERS.ACTOR.SHEET.missing.gear"}}
+        </span>
+      </li>
+    {{/each}}
+  </ol>
+  <ol class="equipment plain items">
+    <li class="header">
+      {{localize "HELLPIERCERS.ACTOR.SHEET.loadout.equipment"}}
+    </li>
+    {{#each itemTypes.equipment}}
+      <div
+        class="item-block item equipment draggable equipment{{@index}}"
+        data-item-id="{{item.id}}"
+      >
+        <label class="flexrow">
+          <span class="name">{{item.name}}</span>
+          <a
+            class='flat icon fa-regular {{ifThen item.system.available "fa-circle-check" "fa-circle"}}'
+            data-action="toggleEquipemnt"
+          >
+          </a>
+          <a
+            class="control icon fa-solid fa-bars"
+            role="button"
+            data-context="item"
+          ></a>
+        </label>
+        <div class="editor-content">{{{effect}}}</div>
+      </div>
+    {{else}}
+      <li class="item">
+        <span class="name">
+          {{localize "HELLPIERCERS.ACTOR.SHEET.missing.equipment"}}
+        </span>
+      </li>
+    {{/each}}
+  </ol>
+  <ol class="weapons plain items">
+    <li class="header">
+      {{localize "HELLPIERCERS.ACTOR.SHEET.loadout.weapons"}}
+    </li>
+    {{#each itemTypes.weapon}}
+      <li class="item draggable flexrow" data-item-id="{{item.id}}">
+        <img class="thumbnail" src="{{item.img}}" alt="{{item.name}}">
+        <span class="name">{{item.name}}</span>
+        <a class="control" role="button" data-context="item">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </li>
+    {{else}}
+      <li class="item">
+        <span class="name">
+          {{localize "HELLPIERCERS.ACTOR.SHEET.missing.weapons"}}
+        </span>
+      </li>
+    {{/each}}
+  </ol>
+</section>

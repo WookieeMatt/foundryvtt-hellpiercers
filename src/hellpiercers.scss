@@ -1,0 +1,197 @@
+@use "styles/dialogs";
+@use "styles/overrides";
+@use "styles/sheets/actor";
+@use "styles/sheets/item";
+@use "styles/taccom";
+
+.theme-dark {
+  --hellpiercers-sheet-box-border: #584a75;
+  --hellpiercers-sheet-box-divider: #3e3453;
+  --hellpiercers-range-button-background: #a599bf;
+  // --hellpiercers-range-button-color: #a599bf;
+  .hellpiercers.application {
+    --hellpiercers-test-property: true;
+  }
+}
+.theme-light {
+  --hellpiercers-sheet-box-border: #777777;
+  --hellpiercers-sheet-box-divider: #aaaaaa;
+  --hellpiercers-range-button-background: #545454;
+  // --hellpiercers-range-button-color: #545454;
+  .hellpiercers.application {
+    --hellpiercers-test-property: false;
+  }
+}
+
+body.system-hellpiercers {
+  --font-h1: "MedievalSharp", cursive;
+}
+
+.hellpiercers {
+  &.sheet .window-content {
+    gap: 0.25rem;
+  }
+  &.sheet:has(.locked) {
+    .draggable {
+      cursor: var(--cursor-default);
+    }
+  }
+  &.sheet.config {
+    label {
+      white-space: nowrap;
+    }
+  }
+  &.sheet.actor {
+    @include actor.base;
+    @include taccom.bar;
+    &.halo {
+      @include actor.halo;
+    }
+    &.human {
+      @include actor.human;
+    }
+    &.boss {
+      @include actor.boss;
+    }
+    &.minion {
+      @include actor.minion;
+    }
+    &.spawner {
+      @include actor.spawner;
+    }
+  }
+  &.sheet.item {
+    @include item.base;
+    &.armor, &.class {
+      @include item.armor;
+    }
+    &.ability {
+      @include item.ability;
+    }
+    &.gear {
+      @include item.gear;
+    }
+    &.halo-system {
+      @include item.halo-system;
+    }
+    &.halo-weapon {
+      @include item.halo-weapon;
+    }
+    &.weapon {
+      @include item.weapon;
+    }
+  }
+  &.damage-editor {
+    @include dialogs.damage-editor;
+  }
+  &.range-editor {
+    @include dialogs.range-editor;
+  }
+  &.new-ability {
+    @include dialogs.new-ability;
+  }
+  &.attack-dialog {
+    @include dialogs.attack-dialog;
+  }
+  &.chat-message {
+    .message-content.damage {
+      > h4.actor {
+        font-family: var(--font-h1);
+        margin-bottom: 0;
+      }
+      > div.item {
+        font-family: var(--font-h1);
+        font-size: var(--font-size-20);
+      }
+      ol.plain {
+        .label {
+          font-weight: bold;
+        }
+      }
+      .condition {
+        display: flex;
+        flex-direction: row;
+        img {
+          width: 20px;
+          height: 20px;
+          filter: var(--status-icon-filter);
+          @at-root .chat-log.themed.theme-light {
+            --status-icon-filter: invert(1);
+          }
+        }
+      }
+      .dice-result {
+        display: grid;
+        grid-template:
+          "roll total" 1fr
+          "tooltip tooltip" min-content / 1fr min-content;
+        .dice-formula {
+          grid-area: roll;
+          margin-bottom: unset;
+        }
+        .dice-total {
+          grid-area: total;
+          break-inside: avoid;
+          text-wrap-mode: nowrap;
+          padding: 0 0.5rem;
+          margin-bottom: unset;
+        }
+        .dice-tooltip {
+          grid-area: tooltip;
+        }
+      }
+      ol.button-row {
+        list-style: none;
+        padding-left: 0;
+        li {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          img {
+            width: 3rem;
+            height: 3rem;
+            object-fit: cover;
+            object-position: 50% 0;
+          }
+          span.name {
+            flex: 1;
+            font-family: var(--font-h1);
+            font-size: var(--font-size-20);
+            padding: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include taccom.chat;
+
+.token-config {
+  @include overrides.token-config;
+}
+
+#token-hud {
+  @include overrides.token-hud;
+}
+
+.combat-sidebar {
+  @include overrides.combat-tracker;
+  @include taccom.tracker;
+}
+
+// .tab.sidebar-tab.chat-sidebar,
+// #chat-notifications {
+//   .chat-message {
+//     section.damage {
+//       .condition {
+//         display: flex;
+//         flex-direction: row;
+//         img {
+//           width: 20px;
+//           height: 20px;
+//         }
+//       }
+//     }
+//   }
+// }

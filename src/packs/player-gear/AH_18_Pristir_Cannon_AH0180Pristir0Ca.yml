@@ -1,0 +1,77 @@
+name: AH-18 Pristir Cannon
+img: icons/weapons/artillery/cannon-engraved-gold.webp
+type: halo_weapon
+_id: AH0180Pristir0Ca
+system:
+  description: >-
+    <p><em>Simple and straightforward compared to many of the more esoteric
+    armaments found in HELLPIERCER arsenals, the forces of Hell have yet to
+    develop an effective countermeasure against sustained heavy-caliber fire
+    delivered at 10,000 rounds per minute.</em></p>
+  counter:
+    enabled: false
+    value: 0
+    max: null
+  effect: >-
+    <p>Create a Blast:2 area of suppressive fire centered on your target that
+    lasts until the start of your next turn. Hostile characters are treated as
+    having Shock while within this area; if they move outside of this area, the
+    effect immediately ends and they take 10 damage.</p>
+  secondary:
+    action: main
+    effect: >-
+      At the start of your turn, you may switch your HALO Unit's fire control
+      systems over to an automatic sentry mode. While in this mode, you become
+      Slow and cannot use this weapon to attack, but whenever an attack
+      originating from further than Range:3 targets you or an adjacent allied
+      character, roll 1D6; on 5+, that attack is shot down by ward-engraved
+      bullets and harmlessly neutralized. Any hostile character that moves
+      within Range:3 of you or closer while sentry mode is active automatically
+      takes 5 damage. You may deactivate sentry mode at the start of your turn.
+  attacks:
+    - damage:
+        formula: 5 + 4D10
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: targets
+        value: 1
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: 5
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+  selected_attack: 0
+  tags: []
+folder: 3PRmrrGpg5K8AWEp
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756170201241
+  modifiedTime: 1756177979596
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!AH0180Pristir0Ca'

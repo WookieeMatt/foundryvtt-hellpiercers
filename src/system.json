@@ -1,0 +1,90 @@
+{
+  "id": "hellpiercers",
+  "title": "HELLPIERCERS",
+  "description": "HELL IS A PRISON. BREAK ITS BARS. Tactical Hell-slaying action with base building, overwhelming build options, and map based strategy.",
+  "version": "0.2.0",
+  "compatibility": {
+    "minimum": "14.370",
+    "verified": "14.370",
+    "maximum": "14"
+  },
+  "authors": [
+    { "name": "WookieeMatt", "url": "https://github.com/wookieematt" },
+    { "name": "Bolts", "url": "https://codeberg.org/Bolts/foundryvtt-hellpiercers" }
+  ],
+  "esmodules": ["hellpiercers.mjs"],
+  "styles": [{ "src": "styles/hellpiercers.css", "layer": "system" }],
+  "packs": [
+    {
+      "name": "debugmacros",
+      "path": "packs/debugmacros",
+      "type": "Macro",
+      "label": "HELLPIERCERS.packs.debugmacros"
+    },
+    {
+      "name": "macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "label": "HELLPIERCERS.packs.macros"
+    },
+    {
+      "name": "player-gear",
+      "path": "packs/player-gear",
+      "type": "Item",
+      "label": "HELLPIERCERS.packs.player-gear"
+    },
+    {
+      "name": "player-abilities",
+      "path": "packs/player-abilities",
+      "type": "Item",
+      "label": "HELLPIERCERS.packs.player-abilities"
+    },
+    {
+      "name": "systeminfo",
+      "path": "packs/systeminfo",
+      "type": "JournalEntry",
+      "label": "HELLPIERCERS.packs.systeminfo"
+    }
+  ],
+  "languages": [{ "lang": "en", "name": "English", "path": "lang/en.json" }],
+  "documentTypes": {
+    "Actor": {
+      "boss": { "htmlFields": ["biography", "agnosia.effect"] },
+      "faction": { "htmlFields": ["description"] },
+      "halo": { "htmlFields": ["biography"] },
+      "human": { "htmlFields": ["biography"] },
+      "minion": { "htmlFields": ["biography", "strike.description", "special.description"] },
+      "spawner": { "htmlFields": ["biography"] }
+    },
+    "ChatMessage": { "damage": {}, "response": {} },
+    "CombatantGroup": { "swarm": {} },
+    "Item": {
+      "ability": { "htmlFields": ["effect", "attack.description"] },
+      "armor": { "htmlFields": ["description"] },
+      "class": { "htmlFields": ["description"] },
+      "equipment": { "htmlFields": ["description"] },
+      "gear": { "htmlFields": ["description", "effect"] },
+      "halo_system": { "htmlFields": ["description", "effect", "upgrades.*.effect"] },
+      "halo_weapon": { "htmlFields": ["description", "attack.description"] },
+      "weapon": {
+        "htmlFields": [
+          "description",
+          "active.description",
+          "passive.description",
+          "attacks.*.description"
+        ]
+      }
+    }
+  },
+  "relationships": {},
+  "socket": true,
+  "initiative": null,
+  "grid": { "diagonals": 6, "distance": 1, "type": 1, "units": "" },
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "agnosia.bar",
+  "flags": { "hotReload": { "extensions": ["json", "hbs"], "paths": ["lang", "templates"] } },
+  "url": "https://github.com/wookieematt/foundryvtt-hellpiercers",
+  "background": "systems/hellpiercers/assets/splash.jpg",
+  "manifest": "https://github.com/wookieematt/foundryvtt-hellpiercers/releases/latest/download/system.json",
+  "download": "https://github.com/wookieematt/foundryvtt-hellpiercers/releases/download/v0.2.0/system.zip"
+}

@@ -1,0 +1,72 @@
+_id: SACHIEL000000002
+name: Blessed Wake
+img: icons/commodities/currency/coins-plain-gold.webp
+type: ability
+system:
+  action: active
+  effect: >-
+    <p>While in or adjacent to <strong>Advantageous</strong> Terrain, you may
+    spend a <strong>Support Action</strong> to Activate it. Select one of the
+    benefits below: </p><ul><li>Shelter - The Advantageous terrain becomes
+    Advantageous with <strong>Cover</strong></li><li>Succor - The Advantageous
+    terrain becomes Advantageous with <strong>Healing:1</strong></li><li>Stymie
+    - The Advantageous terrain becomes Advantageous with
+    <strong>Uneasy</strong></li><li>Settle - The Advantageous terrain becomes
+    Advantageous with <strong>Fortified</strong></li></ul> <strong>Activation is
+    contagious</strong>—it affects all contiguous <strong>Advantageous</strong>
+    spaces at once. You may only have one benefit active at any one time.
+    Changing the active benefit or applying the benefit to a different cluster
+    of advantageous terrain removes any previously applied benefits to any
+    previously activated spaces. Previously enhanced tiles revert to
+    Advantageous terrain with no other modifiers.<p></p>
+  item:
+    type: armor
+    uuid: Compendium.hellpiercers.player-gear.Item.SACHIEL000000000
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  uses: null
+  trigger: null
+  break_value: 10
+folder: CeIRCaW5CjOmDfmO
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753389575841
+  modifiedTime: 1756177965571
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!SACHIEL000000002'

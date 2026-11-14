@@ -1,0 +1,92 @@
+<li
+  class="hellpiercers chat-message message damage flexcol {{cssClass}}"
+  data-message-id="{{message._id}}"
+  {{#if borderColor}}style="border-color:{{borderColor}}"
+  {{/if}}
+>
+  <header class="message-header flexrow">
+    <h4 class="message-sender">
+      {{#if isWhisper}}<i class="fa-solid fa-eye-slash"></i>{{/if}}
+      {{alias}}
+    </h4>
+    <span class="message-metadata">
+      <time class="message-timestamp">{{timeSince message.timestamp}}</time>
+      {{#if canDelete}}
+        <a
+          aria-label="{{localize 'Delete'}}"
+          class="message-delete"
+          data-action="deleteMessage"
+        >
+          <i class="fa-solid fa-trash" inert></i>
+        </a>
+      {{/if}}
+      {{#if canClose}}
+        <a
+          aria-label='{{ localize "CHAT.Dismiss" }}'
+          class="message-dismiss"
+          data-action="dismissMessage"
+        >
+          <i class="fa-solid fa-xmark" inert></i>
+        </a>
+      {{/if}}
+    </span>
+  </header>
+  <div class="message-content damage">
+    <h4 class="actor">{{title.actor}}</h4>
+    <div class="item">{{title.item}}</div>
+    {{{rolldata}}}
+    <div class="flexrow">
+      {{#if conditions.length}}
+        <ol class="conditions plain">
+          <li class="label">
+            {{localize "HELLPIERCERS.DAMAGE.FIELDS.conditions.label"}}
+          </li>
+          {{#each conditions}}
+            <li class="condition">
+              <img src="{{img}}">
+              <span class="name">{{localize name}}:{{value}}</span>
+            </li>
+          {{/each}}
+        </ol>
+      {{/if}}
+      {{#if qualities.length}}
+        <ol class="qualities plain">
+          <li class="label">
+            {{localize "HELLPIERCERS.DAMAGE.FIELDS.qualities.label"}}
+          </li>
+          {{#each qualities}}
+            <li class="quality">{{localize .}}</li>
+          {{/each}}
+        </ol>
+      {{/if}}
+    </div>
+    <ol class="button-row">
+      {{#each targets}}
+        <li
+          class="target"
+          data-target-type="{{type}}"
+          data-target-uuid="{{uuid}}"
+          data-target-tokens="{{units}}"
+        >
+          <img src="{{img}}" class="thumbnail">
+          <span class="name">{{#if (eq type "swarm")}}<i
+                class="fa-solid fa-people-group"
+              ></i>
+            {{/if}}{{name}}</span>
+          {{#if owner}}
+            <button
+              type="button"
+              class="apply"
+              data-chat-action="apply{{type}}"
+              aria-label='{{ localize "HELLPIERCERS.CHAT.ACTIONS.applyDamage" }}'
+              data-tooltip
+              {{disabled handled}}
+            >
+              <i class="fa-solid fa-sword"></i>
+            </button>
+          {{/if}}
+        </li>
+      {{/each}}
+    </ol>
+  </div>
+</li>

@@ -1,0 +1,35 @@
+_id: Temporary0Sympat
+name: Temporary Sympathetic Leyline-Attraction Nanofield
+img: icons/magic/defensive/shield-barrier-blades-teal.webp
+type: gear
+system:
+  description: >-
+    <p><em>We make allies of the very wounds you cause. Our bleeding, broken
+    bodies reknit at our asking; your fire and bile sloughs at our request. I
+    have made a comrade of the matter under your feet and sing harmonies with
+    the weapon in my hands.</em></p>
+  kind: weapon
+  effect: >-
+    <p>Once per round, when you take damage, you may take any amount of it as
+    Temporary Damage instead. On your next turn, each time you harm enemies,
+    heal 1 point of Temporary Damage per enemy harmed. Convert all remaining
+    Temporary Damage to regular damage at the end of that turn.</p>
+  target: ''
+folder: 1upYVLWgpnHioybI
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754176962056
+  modifiedTime: 1756177979606
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Temporary0Sympat'

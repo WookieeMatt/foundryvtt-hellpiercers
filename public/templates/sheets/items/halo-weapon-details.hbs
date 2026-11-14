@@ -1,0 +1,59 @@
+<section
+  class="tab details scrollable flexcol {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="details"
+>
+  <div class="item-block attack">
+    <label>{{localize "HELLPIERCERS.ITEM.FIELDS.attack.label"}}</label>
+    {{#if editable}}
+      {{
+        formGroup effect.field
+      value=effect.value enriched=effect.enriched
+      classes="effect flexcol" compact=true rootId=rootId
+      }}
+    {{else}}
+      <div class="effect flexcol">
+        <label>{{localize "HELLPIERCERS.ITEM.FIELDS.effect.label"}}</label>
+        <div class="editor-content bare">{{{effect.enriched}}}</div>
+      </div>
+    {{/if}}
+  </div>
+  {{#if editable}}
+    <div class="item-block secondary">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.secondary.label"}}</label>
+      {{
+        formGroup systemFields.secondary.fields.action
+      value=system.secondary.action
+      classes="flexcol"
+      localize=true
+      rootId=rootId
+      }}
+      {{
+        formGroup secondary.field
+      value=secondary.value
+      enriched=secondary.enriched
+      classes="flexcol"
+      compact=true
+      rootId=rootId
+      }}
+    </div>
+    {{else if system.secondary.effect}}
+    <div class="item-block secondary">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.secondary.label"}}</label>
+      <div class="flexcol">
+        <label>{{
+            localize "HELLPIERCERS.ITEM.FIELDS.secondary.action.label"
+          }}</label>
+        <div class="value">
+          {{localize (concat "HELLPIERCERS.ACTION." system.secondary.action)}}
+        </div>
+      </div>
+      <div class="flexcol">
+        <label>{{
+            localize "HELLPIERCERS.ITEM.FIELDS.secondary.effect.label"
+          }}</label>
+        <div class="editor-content bare">{{{secondary.enriched}}}</div>
+      </div>
+    </div>
+  {{/if}}
+</section>

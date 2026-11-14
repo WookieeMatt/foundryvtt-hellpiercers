@@ -1,0 +1,65 @@
+_id: ULFBERHT00000001
+name: Boundless Abundence
+img: icons/weapons/swords/sword-runed-glowing.webp
+type: ability
+system:
+  action: active
+  effect: >-
+    <p>You begin each battle with <strong>5 Charges</strong>. When you attack
+    with a weapon, you may spend a <strong>Charge</strong> to grant that attack
+    <strong>Lingering:1</strong>. You may spend <strong>3 Charges</strong> to
+    include spaces of the weapon effect that already dealt damage in the
+    <strong>Lingering Effect</strong>. You may spend <strong>2 Charges</strong>
+    to move any <strong>Lingering</strong> space up to three spaces in any
+    direction. It triggers if it moves across an enemy.</p>
+  item:
+    type: class
+    uuid: Compendium.hellpiercers.player-gear.ULFBERHT00000000
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  uses: null
+  trigger: null
+  break_value: 10
+folder: r35MX4kJmvaxzFew
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390239072
+  modifiedTime: 1756177965573
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!ULFBERHT00000001'

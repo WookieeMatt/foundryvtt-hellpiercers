@@ -1,0 +1,35 @@
+_id: Temporary0Psi0In
+name: Temporary Psi-Inducing Spore Ampulla
+img: icons/consumables/mushrooms/alien-spotted-blue.webp
+type: gear
+system:
+  description: >-
+    <p><em>Negotiations with the Outer Mycelial Thought-Things by our
+    psychonauts have yielded boons in the form of new strains of psilocybin.
+    Properly dosed pilots are able to temporarily suspend multiple
+    potentialities before locking one into place as surely as the cycling of a
+    bolt action rifle.</em></p>
+  kind: weapon
+  effect: >-
+    <p>Before you attack, select a weapon from your unlocked options and
+    complete the attack using that weapon's options. Then, discard this Gear and
+    restore your original weapon.</p>
+  target: ''
+folder: 1upYVLWgpnHioybI
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754176962056
+  modifiedTime: 1756177979606
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Temporary0Psi0In'

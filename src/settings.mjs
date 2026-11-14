@@ -1,0 +1,91 @@
+export const SETTINGS = Object.freeze({
+  playerCountOverride: "playerCountOverride",
+  migrationVersion: "migrationVersion",
+  automateEffects: "automateEffects",
+  armorRule: "armorRule",
+  bleedRule: "bleedRule",
+  trackActions: "trackActions",
+  chatCards: "chatCards",
+});
+
+/**
+ * Read a system setting.
+ * @param {keyof typeof SETTINGS} key
+ */
+export function getSetting(key) {
+  return game.settings.get(game.system.id, SETTINGS[key]);
+}
+
+export function registerSettings() {
+  const fields = foundry.data.fields;
+  const id = game.system.id;
+  const ruleChoices = key => ({
+    flat: `HELLPIERCERS.SETTINGS.${key}.flat`,
+    stacks: `HELLPIERCERS.SETTINGS.${key}.stacks`,
+  });
+
+  game.settings.register(id, "playerCountOverride", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.playerCountOverride.name",
+    hint: "HELLPIERCERS.SETTINGS.playerCountOverride.hint",
+    type: new fields.NumberField({ initial: null, min: 0 }),
+  });
+
+  game.settings.register(id, "automateEffects", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.automateEffects.name",
+    hint: "HELLPIERCERS.SETTINGS.automateEffects.hint",
+    type: new fields.BooleanField({ initial: true }),
+  });
+
+  game.settings.register(id, "armorRule", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.armorRule.name",
+    hint: "HELLPIERCERS.SETTINGS.armorRule.hint",
+    type: new fields.StringField({
+      required: true,
+      blank: false,
+      initial: "flat",
+      choices: ruleChoices("armorRule"),
+    }),
+  });
+
+  game.settings.register(id, "bleedRule", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.bleedRule.name",
+    hint: "HELLPIERCERS.SETTINGS.bleedRule.hint",
+    type: new fields.StringField({
+      required: true,
+      blank: false,
+      initial: "flat",
+      choices: ruleChoices("bleedRule"),
+    }),
+  });
+
+  game.settings.register(id, "trackActions", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.trackActions.name",
+    hint: "HELLPIERCERS.SETTINGS.trackActions.hint",
+    type: new fields.BooleanField({ initial: true }),
+    onChange: () => ui.combat?.render(),
+  });
+
+  game.settings.register(id, "chatCards", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.chatCards.name",
+    hint: "HELLPIERCERS.SETTINGS.chatCards.hint",
+    type: new fields.BooleanField({ initial: true }),
+  });
+
+  game.settings.register(id, "migrationVersion", {
+    scope: "world",
+    config: false,
+    type: new fields.StringField({ required: true, initial: "0" }),
+  });
+}

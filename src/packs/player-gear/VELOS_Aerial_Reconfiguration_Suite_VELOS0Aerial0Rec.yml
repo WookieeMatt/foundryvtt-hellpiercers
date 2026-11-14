@@ -1,0 +1,66 @@
+name: VELOS Aerial Reconfiguration Suite
+type: halo_system
+_id: VELOS0Aerial0Rec
+img: icons/magic/holy/barrier-shield-winged-cross.webp
+system:
+  description: >-
+    <p><em>By default, HALO Units are designed for traversal across Hell’s
+    treacherous and uneven terrain, but through a series of high-performance
+    engineering upgrades, hardpoint-mounted thrusters, and further refinement of
+    a pilot’s soul synchronization to produce desired raiment expressions, even
+    heavy mechanized frames can be utilized for airborne operations as well.
+    This comprehensive reconfiguration suite requires additional training to
+    acclimate pilots to the complexities of mechanized flight, but the sight of
+    a HALO Unit descending towards the battlefield on blazing wings is known to
+    have significant psychological as well as tactical benefits.</em></p>
+  effect: >-
+    <p>As a Main Action, you may transform your HALO Unit into a flight-capable
+    mode. While in this mode, you gain Aegis:Infinity and your Speed is doubled.
+    This mode lasts until the start of your next turn.</p>
+  upgrades:
+    - cost:
+        brimstone: 1
+        hellsteel: 2
+        soulfire: 0
+      effect: >-
+        <p>While in this mode, you may attack using your Standard Armament (see
+        Mech Weapons, page 53) as an Aux Action.</p>
+      unlocked: false
+    - cost:
+        brimstone: 1
+        hellsteel: 1
+        soulfire: 1
+      effect: >-
+        <p>Every hostile character you pass over while in this mode takes
+        Blazing:2.</p>
+      unlocked: false
+    - cost:
+        brimstone: 0
+        hellsteel: 3
+        soulfire: 0
+      effect: >-
+        <p>Your HALO Unit can adopt a long−range mode suitable for use as aerial
+        squad transport. During Recon, you count as a Vehicle with Map Speed:3
+        and Flight. Bodies of water, large mountain ranges, and other barriers
+        do not impede your movement while flying, but your movements across the
+        map are impossible to hide or obscure while flying. Everyone knows where
+        you’re going, just the way you like it.</p>
+      unlocked: false
+folder: eG8qD3hpnyaGlvhV
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756146302269
+  modifiedTime: 1756177979607
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!VELOS0Aerial0Rec'

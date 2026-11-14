@@ -1,0 +1,233 @@
+name: Catalytic-Actuated Positron Rifle
+img: icons/magic/fire/projectile-beams-salvo-red.webp
+type: halo_weapon
+_id: Catalytic0Actuat
+system:
+  description: >-
+    <p><em>"Utilizing an n-space condensed hypertoroidal accelerator to generate
+    a coherent charged particle beam, the catalytic-actuated positron rifle
+    (often referred to by pilots as a "CAP gun") represents the current cutting
+    edge in Hell-paradigm directed energy weaponry. The particle stream can also
+    be focused through a sevenfold modulated mandala channeling gateway to
+    further amplify its power, but doing so drastically increases the recoil
+    stresses placed on the firing HALO Unit to the point of physically
+    displacing the mech when fired if not properly braced."</em></p>
+  counter:
+    enabled: false
+    value: 0
+    max: null
+  effect: >-
+    <p>The energy discharged by this weapon carves molten furrows into the
+    ground which explode shortly thereafter. All terrain within this weapon’s
+    Line area becomes Uneasy terrain in addition to whatever other type it might
+    be (such as Cover) and any character who begins their turn in that area or
+    enters it for the first time in a round takes 1D10 damage. This effect lasts
+    until the end of your next turn.</p>
+  secondary:
+    action: main
+    effect: >-
+      Using this weapon’s secondary mode draws additional power into it,
+      charging an even larger shot. Each time the weapon is charged this way,
+      add a Charge Counter to it, up to a safe maximum of 2 counters. When you
+      next fire the weapon, expend all counters for the following
+      effects:</p><p>1 Counter - The weapon does +1D10 damage, the Line’s width
+      is increased to 3, and the Recoil from firing after moving is increased to
+      4.</p><p>2 Counters - The weapon does +2D10 damage, the Line’s width is
+      increased to 5, the Recoil from firing after moving is increased to 6, and
+      the Overpenetrating tag is ignored for this attack, as the sheer power of
+      the beam saturates anything within its area of effect with devastating
+      amounts of energy.</p><p>Attempting to charge this weapon when it is
+      already at 2 counters results in a catastrophic overload. You and your
+      mech are annihilated in a high−energy explosion, instantly and
+      irreversibly dying and dealing 10+6D10 Piercing damage in a Burst:3 area.
+      All terrain within this area is similarly destroyed, reduced to a
+      fusedglass crater of Standard terrain in the explosion’s
+      wake.</p><p>Whenever you use this weapon’s Secondary Mode (without
+      exploding), choose a hostile character within Range:20 and mark them with
+      a target- ing laser. This mark lasts until the end of your next turn.
+      Whenever an allied character attacks a marked target, they may consume
+      this mark to give their attack Piercing and to roll their damage twice,
+      taking the best result, against that target.
+  attacks:
+    - damage:
+        formula: '25'
+        source: null
+        conditions: {}
+        qualities:
+          piercing: true
+          transference: false
+          breaker: false
+          overpenetrating: true
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: line
+        value: 20
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+      name: Stationary (Charge 0)
+    - name: Stationary (Charge 1)
+      range:
+        name: Range
+        kind: line
+        value: 20
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: null
+          width: 3
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      damage:
+        formula: 25 + 1D10
+        source: null
+        conditions: {}
+        qualities:
+          piercing: true
+          transference: false
+          breaker: false
+          overpenetrating: true
+        wrack: null
+        value: null
+      description: ''
+    - name: Stationary (Charge 2)
+      range:
+        name: Range
+        kind: line
+        value: 20
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: null
+          width: 5
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      damage:
+        formula: 25 + 2D10
+        source: null
+        conditions: {}
+        qualities:
+          piercing: true
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      description: ''
+    - name: Moved (Charge 0)
+      range:
+        name: Range
+        kind: line
+        value: 20
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: 2
+          scale: null
+      damage:
+        formula: 1D10
+        source: null
+        conditions: {}
+        qualities:
+          piercing: true
+          transference: false
+          breaker: false
+          overpenetrating: true
+        wrack: null
+        value: null
+      description: ''
+    - name: Moved (Charge 1)
+      range:
+        name: Range
+        kind: line
+        value: 20
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: null
+          width: 3
+          length: null
+          push: null
+          recoil: 4
+          scale: null
+      damage:
+        formula: 2D10
+        source: null
+        conditions: {}
+        qualities:
+          piercing: true
+          transference: false
+          breaker: false
+          overpenetrating: true
+        wrack: null
+        value: null
+      description: ''
+    - name: Moved (Charge 3)
+      range:
+        name: Range
+        kind: line
+        value: 20
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: null
+          width: 5
+          length: null
+          push: null
+          recoil: 6
+          scale: null
+      damage:
+        formula: 3D10
+        source: null
+        conditions: {}
+        qualities:
+          piercing: true
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      description: ''
+  selected_attack: 0
+  tags: []
+folder: 3PRmrrGpg5K8AWEp
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756170201241
+  modifiedTime: 1756177979598
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Catalytic0Actuat'

@@ -1,0 +1,119 @@
+<section
+  class="tab abilities flexcol {{tab.cssClass}} scrollable"
+  data-group="primary"
+  data-tab="abilities"
+>
+  <div class="item-block strike">
+    <div class="strike-name">
+      <label class="flexrow" for="{{rootId}}-system.strike.name">
+        {{localize "HELLPIERCERS.ACTOR.FIELDS.strike.label"}}
+      </label>
+      <div class="flexrow">
+        {{#if editable}}
+          {{
+            formInput systemFields.strike.fields.name
+      value=systemSource.strike.name
+      id=(concat rootId "-system.strike.name")
+          }}
+        {{else}}
+          <div class="value">{{system.strike.name}}</div>
+        {{/if}}
+        <a
+          class="icon button fa-solid fa-dice"
+          role="button"
+          data-action="onAttack"
+          data-uuid="{{actor.uuid}}"
+        ></a>
+      </div>
+    </div>
+
+    <div class="range">
+      <label>{{localize "HELLPIERCERS.ACTOR.FIELDS.strike.range.label"}}</label>
+      <div class="flexrow">
+        <div class="value">
+          {{#if (eq system.strike.range.kind "bespoke")}}
+            <img src="{{system.strike.range.svg_uri}}">
+          {{else}}
+            {{system.strike.range.short_text}}
+          {{/if}}
+        </div>
+        {{#if editable}}
+          <button
+            class="icon fa-solid fa-cog"
+            type="button"
+            data-action="editRange"
+          >
+          </button>
+        {{/if}}
+      </div>
+    </div>
+
+    <div class="damage">
+      <label for="{{rootId}}-system.strike.damage.formula">
+        {{localize "HELLPIERCERS.ACTOR.FIELDS.strike.damage.label"}}
+      </label>
+      <div class="flexrow">
+        {{#if editable}}
+          <div class="flexcol">
+            {{
+              formInput systemFields.strike.fields.damage.fields.formula
+            value=systemSource.strike.damage.formula
+            id=(concat rootId "-system.strike.damage.formula")
+            }}
+            <span class="qualities">{{
+                system.strike.damage.qualities_text
+              }}</span>
+          </div>
+          <button
+            class="icon fa-solid fa-cog"
+            type="button"
+            data-action="editDamage"
+          >
+          </button>
+        {{else}}
+          <div class="flexcol">
+            <div class="value">{{system.strike.damage.short_text}}</div>
+            <span class="qualities">{{
+                system.strike.damage.qualities_text
+              }}</span>
+          </div>
+        {{/if}}
+      </div>
+    </div>
+    <div class="effect">
+      {{#if editable}}
+        {{
+          formInput strike.field value=strike.value enriched=strike.enriched toggled=false
+        }}
+      {{else}}
+        <div class="editor-content">{{{strike.enriched}}}</div>
+      {{/if}}
+    </div>
+  </div>
+
+  <div class="item-block special">
+    <label for="{{rootId}}-system.special.name">
+      {{localize "HELLPIERCERS.ACTOR.FIELDS.special.label"}}
+    </label>
+    <div class="flexrow">
+      {{#if editable}}
+        {{
+          formInput systemFields.special.fields.name
+      value=systemSource.special.name
+      id=(concat rootId "-system.special.name")
+        }}
+      {{else}}
+        <div class="value">{{system.special.name}}</div>
+      {{/if}}
+    </div>
+    <div class="effect">
+      {{#if editable}}
+        {{
+          formInput special.field value=special.value enriched=special.enriched toggled=false
+        }}
+      {{else}}
+        <div class="editor-content">{{{special.enriched}}}</div>
+      {{/if}}
+    </div>
+  </div>
+</section>

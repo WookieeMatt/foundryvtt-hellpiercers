@@ -1,0 +1,67 @@
+_id: MURIEL0000000003
+name: MURIEL Reversal
+img: icons/magic/death/undead-ghost-scream-teal.webp
+type: ability
+system:
+  action: reversal
+  effect: >-
+    <p>Immediately trigger your armor ability. Add the damage you would receive
+    from this attack to the ability before you add any of your own
+    HP.</p><p><em>The collapse turned outward, boiling with the heat of
+    sacrificial pyre, of all the hate that ever rung through a heart, of the
+    purest love in its purest moment. The Liturgical Dampeners strained,
+    threatening to buckle under the force stripping 2847 prayers inside it. Then
+    it was dark. The first beam of light cast over Muriel's corpse revealed a
+    withered thing, bent over a chair. The angel appeared to have died in its
+    sleep.</em></p>
+  trigger: Targeted by an enemy attack
+  uses: 1
+  item:
+    type: armor
+    uuid: Compendium.hellpiercers.player-gear.Item.MURIEL0000000000
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  break_value: 10
+folder: 9KUPo9T1PmxZWkvM
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390182319
+  modifiedTime: 1756177965569
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!MURIEL0000000003'

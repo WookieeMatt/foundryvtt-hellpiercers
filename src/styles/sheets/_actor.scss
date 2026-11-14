@@ -1,0 +1,474 @@
+@use "components";
+$borderColor: var(--hellpiercers-sheet-box-border);
+$dividerColor: var(--hellpiercers-sheet-box-divider);
+$labelBg: color(from $dividerColor srgb r g b / 0.25);
+
+@mixin base {
+  header.window-header {
+    @include components.slide-toggle();
+  }
+
+  a.control {
+    flex: 0 0 auto;
+  }
+  a.flat {
+    margin-right: 0.25rem;
+    flex: 0;
+    text-shadow: none;
+  }
+
+  @include components.sheet-tabs;
+
+  [data-context] {
+    nav#context-menu {
+      $width: 150px;
+      left: calc(100% - $width);
+      width: $width;
+      min-width: $width;
+      max-width: $width;
+      text-shadow: none;
+    }
+  }
+  .tab.abilities, .tab.loadout {
+    flex: 1;
+  }
+  .tab.biography {
+    flex: 1;
+    prose-mirror {
+      flex: 1;
+    }
+  }
+  .tab.effects {
+    @include components.item-list;
+  }
+}
+
+@mixin halo {
+  header.sheet-header {
+    display: grid;
+    grid-template:
+      "portrait charname charname charname charname" min-content
+      "portrait hp speed scale tags" min-content /
+      auto 5rem 3.25rem 3.25rem 1fr;
+    gap: 0.25rem;
+    @include components.header-boxes-v2;
+  }
+
+  .tab.abilities {
+    @include components.ability-blocks;
+    .standard {
+      display: grid;
+      grid-template:
+        "label label" min-content
+        "damage range" min-content /
+        1fr 1fr;
+      > label {
+        grid-area: label;
+      }
+      .damage {
+        grid-area: damage;
+        border-right: 1px solid $dividerColor;
+      }
+      .range {
+        grid-area: range;
+        .value span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .damage, .range {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .weapon {
+      display: grid;
+      grid-template:
+        "label label" min-content
+        "damage range" min-content
+        "effect secondary" 1fr /
+        1fr 1fr;
+      > label {
+        grid-area: label;
+      }
+      .profile {
+        flex: 0 0 auto;
+        display: flex;
+        padding-right: 0.5rem;
+        align-items: center;
+        gap: 0.25rem;
+      }
+      .damage {
+        grid-area: damage;
+        border-right: 1px solid $dividerColor;
+      }
+      .range {
+        grid-area: range;
+        .value span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .damage, .range {
+        display: flex;
+        flex-direction: column;
+      }
+      .effect {
+        grid-area: effect;
+        border-right: 1px solid $dividerColor;
+      }
+      .secondary {
+        grid-area: secondary;
+      }
+      .effect, .secondary {
+        > .editor-content {
+          max-height: 150px;
+          overflow: hidden auto;
+        }
+      }
+    }
+    .system > .editor-content {
+      max-height: 150px;
+      overflow: hidden auto;
+    }
+  }
+}
+
+@mixin human {
+  header.sheet-header {
+    display: grid;
+    grid-template:
+      "portrait charname charname charname charname" min-content
+      "portrait hp       speed    pronouns tags" min-content /
+      auto 5rem 3.25rem 6rem 1fr;
+    gap: 0.25rem;
+    @include components.header-boxes-v2;
+  }
+
+  a.context-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .abilities {
+    flex: 1;
+    &.active {
+      display: grid;
+    }
+    grid-template:
+      "lweap rweap" min-content
+      "armor armor" 10rem
+      "class class" 10rem
+      "special special" min-content / 1fr 1fr;
+    gap: 0.25rem;
+    .weapon_pri, .weapon_sec {
+      border: 3px double $borderColor;
+      display: flex;
+      flex-direction: column;
+      cursor: var(--cursor-default);
+      > * {
+        padding: 0.25rem;
+      }
+      .selection {
+        border-bottom: 1px solid $dividerColor;
+        background-color: $labelBg;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        input.charge-input {
+          flex: 0 0 2rem;
+          border-radius: 0;
+          text-align: center;
+          padding: 0px;
+          height: 1rem;
+          margin-right: 0.25rem;
+        }
+        label {
+          font-family: var(--font-h1);
+          flex: 1;
+        }
+      }
+      .attack {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        .switcher {
+          a {
+            padding: 0.25rem;
+          }
+        }
+        span.damage {
+          flex: 1;
+        }
+      }
+      .active, .passive {
+        flex: 1;
+        border-top: 1px solid $dividerColor;
+      }
+    }
+    .weapon_pri {
+      grid-area: lweap;
+    }
+    .weapon_sec {
+      grid-area: rweap;
+    }
+    .armor {
+      grid-area: armor;
+    }
+    .class {
+      grid-area: class;
+    }
+    .special {
+      grid-area: special;
+    }
+    .armor, .class, .special {
+      display: grid;
+      border: 3px double $borderColor;
+      height: 10rem;
+      grid-template:
+        "head head" min-content
+        ". ." 1fr /
+        1fr 1fr;
+      cursor: var(--cursor-default);
+      overflow: initial;
+      > * {
+        padding: 0.25rem;
+      }
+      .selection {
+        grid-area: head;
+        border-bottom: 1px solid $dividerColor;
+        background-color: $labelBg;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        label {
+          font-family: var(--font-h1);
+          flex: 1;
+        }
+      }
+      .ability {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        > * {
+          padding: 0.25rem;
+        }
+        .bar {
+          border-bottom: 1px solid $dividerColor;
+          padding: 0;
+          padding-left: 0.25rem;
+          input.value {
+            background: none;
+            border: none;
+            border-left: 1px solid $dividerColor;
+            border-right: 1px solid $dividerColor;
+            border-radius: 0;
+            box-shadow: none;
+            flex: 0 0 1.5rem;
+            font-size: var(--font-size-16);
+            height: 1.5rem;
+            padding: 0;
+            text-align: center;
+          }
+          span.max {
+            font-size: var(--font-size-16);
+            flex: 0 0 1.5rem;
+            text-align: center;
+          }
+        }
+        .description {
+          padding-right: var(--scroll-margin);
+          overflow: hidden auto;
+          flex: 1 1 0;
+        }
+      }
+      > :nth-child(2) {
+        border-right: 1px solid $dividerColor;
+      }
+    }
+  }
+  .loadout {
+    @include components.item-list;
+    @include components.ability-blocks;
+    .item-block label, li .name {
+      font-family: var(--font-h1);
+    }
+    img.thumbnail {
+      width: 20px;
+      height: 20px;
+    }
+    .editor-content {
+      max-height: 150px;
+      overflow: hidden auto;
+    }
+  }
+}
+
+@mixin boss {
+  header.sheet-header {
+    display: grid;
+    grid-template:
+      "portrait charname charname charname charname charname" min-content
+      "portrait hp       speed    scale    actions  tags" min-content /
+      auto 6.25rem 3.25rem 3.25rem 3.5rem 1fr;
+    gap: 0.25rem;
+    @include components.header-boxes-v2;
+  }
+
+  .tab.abilities {
+    @include components.ability-blocks;
+    .attack {
+      display: grid;
+      grid-template:
+        "label label" min-content
+        "damage range" min-content
+        "effect effect" 1fr /
+        1fr 1fr;
+      > label {
+        grid-area: label;
+      }
+      .damage {
+        grid-area: damage;
+        border-right: 1px solid $dividerColor;
+      }
+      .range {
+        grid-area: range;
+        .value span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .damage, .range {
+        display: flex;
+        flex-direction: column;
+      }
+      .effect {
+        grid-area: effect;
+        border-right: 1px solid $dividerColor;
+      }
+      .secondary {
+        grid-area: secondary;
+      }
+      .effect, .secondary {
+        > .editor-content {
+          max-height: 150px;
+          overflow: hidden auto;
+        }
+      }
+    }
+  }
+}
+
+@mixin minion {
+  header.sheet-header {
+    display: grid;
+    grid-template:
+      min-content min-content / auto min-content min-content min-content 1fr;
+    grid-template:
+      "portrait charname charname charname charname" min-content
+      "portrait hp       speed    scale    tags" min-content /
+      auto 5rem 3.25rem 3.25rem 1fr;
+    gap: 0.25rem;
+    @include components.header-boxes-v2;
+  }
+
+  .tab.abilities {
+    @include components.ability-blocks;
+    gap: 0.25rem;
+    .strike {
+      display: grid;
+      grid-template:
+        "strike strike" min-content
+        "damage range" min-content
+        "effect effect" 1fr /
+        1fr 1fr;
+      .strike-name {
+        grid-area: strike;
+      }
+      .range {
+        grid-area: range;
+        display: flex;
+        flex-direction: column;
+        > div {
+          flex: 1;
+        }
+        .value {
+          justify-content: center;
+          > img {
+            max-height: calc(2 * var(--input-height));
+          }
+        }
+      }
+      .damage {
+        grid-area: damage;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid $dividerColor;
+        > div {
+          flex: 1;
+        }
+        .qualities {
+          font-size: var(--font-size-12);
+          font-weight: bold;
+        }
+      }
+      .effect {
+        grid-area: effect;
+        border-top: 1px solid $dividerColor;
+        max-height: 150px;
+        &:not(:has(prose-mirror)) {
+          overflow: hidden auto;
+        }
+        .editor-content {
+          margin: 0 0.5rem;
+        }
+      }
+    }
+    .special {
+      .effect {
+        grid-area: effect;
+        border-top: 1px solid $dividerColor;
+        max-height: 150px;
+        &:not(:has(prose-mirror)) {
+          overflow: hidden auto;
+        }
+        .editor-content {
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@mixin spawner {
+  header.sheet-header {
+    display: grid;
+    grid-template:
+      min-content min-content / auto min-content min-content min-content 1fr;
+    grid-template:
+      "portrait charname charname charname charname" min-content
+      "portrait hp       speed    scale    tags" min-content /
+      auto 6.25rem 3.25rem 3.25rem 1fr;
+    gap: 0.25rem;
+    @include components.header-boxes-v2;
+  }
+  .tab.abilities {
+    @include components.ability-blocks;
+    label {
+      .spawn-charge-input {
+        flex: 0 0 2rem;
+        border-radius: 0;
+        text-align: center;
+        font-size: var(--font-size-14);
+        padding: 0px;
+        height: 1.1rem;
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}

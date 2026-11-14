@@ -1,0 +1,34 @@
+_id: Soter0Assisted0D
+name: Soter Assisted Defense System
+img: icons/magic/defensive/shield-barrier-glowing-blue.webp
+type: gear
+system:
+  description: >-
+    <p><em>Gnosis is carried by the light, and the light is the Word. The Beast
+    carried with it the Word, and we pass this on to the unthinking world in
+    turn. To bathe in this light, to speak the Word, is to be beyond
+    invincible.</em></p>
+  kind: weapon
+  effect: >-
+    <p>Whenever you spend your entire turn attacking enemies without moving, the
+    tile where your character is standing becomes Cover for as long as you’re
+    standing in it.</p>
+  target: ''
+folder: 1upYVLWgpnHioybI
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754176962056
+  modifiedTime: 1756177979606
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Soter0Assisted0D'

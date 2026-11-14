@@ -1,0 +1,70 @@
+_id: MACROPROSOPUS002
+name: Litany of Transmogrification
+img: icons/magic/perception/shadow-stealth-eyes-purple.webp
+type: ability
+system:
+  action: active
+  effect: >-
+    <p>Place a copy of yourself within <strong>Range:3</strong>. This copy has 1
+    HP. Actions, including attacks and movement, may be made from either your
+    original self or the copy. You may have up to 3 copies active at any time.
+    Characters in this armor and copies made using its ability have the
+    <strong>Swarm</strong> trait, and may convert into a Swarm as a
+    <strong>Support Action</strong>. This Swarm does not receive the HP benefits
+    of swarming, but does receive <strong>+1 damage</strong> for each square of
+    the Swarm adjacent to the target. When you swarm, you are not limited to
+    attacking adjacent enemies like demon Swarms. You may split your actions and
+    movement between your clones however you wish (e.g. you may spend 3 Speed on
+    a clone and 2 Speed on yourself) but all movement must occur at the same
+    time.</p>
+  item:
+    type: armor
+    uuid: Compendium.hellpiercers.player-gear.Item.MACROPROSOPUS000
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  uses: null
+  trigger: null
+  break_value: 10
+folder: 9ZNK4D05PnJRvOsO
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753389575841
+  modifiedTime: 1756177965567
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!MACROPROSOPUS002'

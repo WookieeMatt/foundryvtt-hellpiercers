@@ -1,0 +1,82 @@
+_id: OGMIOS0000000002
+name: Sophia Enclosing Hermetic Chamber
+img: icons/commodities/gems/pearls-white.webp
+type: ability
+system:
+  action: passive
+  effect: >-
+    <p>You control a small pocket dimension compressed into a jewel, ritual
+    token, or other small object. Using the 59th Level Sophia Transposing Art,
+    you can transport any active object from the current battlefield into this
+    pocket dimension. The pocket dimension is represented by a 5x5 grid that
+    shares no squares with the main map. When you enter your own pocket
+    dimension, this vessel falls into the square you were in. Allies can carry
+    it while you’re within.  </p><hr />During combat, when you kill a miniboss
+    or swarm, gain <strong>Perspective:1</strong>. Spend any number of stacks of
+    <strong>Perspective</strong> as a <strong>free action</strong> to alter the
+    properties of your pocket dimension in the following ways:  <ul><li>The next
+    friendly unit to enter the  dimension gains +1 HP per Stack spent. This can
+    increase max HP until the end of the current TACCOM.  </li><li>The next
+    friendly unit to enter the  dimension gains +1 Damage to their next attack
+    per Stack spent.  </li><li>Increase your Hermetic Crystal’s HP by 1 per
+    stack spent until the end of TACCOM. You may exceed its starting HP. 
+    </li><li>Place 2 wraiths inside your grid. They have the following stats:
+    {INSERT LINK HERE] </li></ul>Your grid must always contain your Sophia
+    Enclosing Hermetic Crystal. This Fortification has the following stats: 
+    [INSERT LINK HERE]<p></p><p>If at any point the crystal is destroyed,
+    anything and everything within the pocket dimension is ejected onto free 
+    spaces adjacent to the character. If no  adjacent space is free, the table
+    can decide where the creatures and objects end up. After the grid is
+    completely empty, reset your grid and replace the Sophia  Enclosing Hermetic
+    Crystal.</p>
+  item:
+    type: class
+    uuid: Compendium.hellpiercers.player-gear.OGMIOS0000000000
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  uses: null
+  trigger: null
+  break_value: 10
+folder: 2C7MwlG7JDFSIjFu
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390260665
+  modifiedTime: 1756177965571
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!OGMIOS0000000002'

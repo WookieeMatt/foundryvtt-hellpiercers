@@ -1,0 +1,89 @@
+_id: Ten0Thousand0Yea
+name: Ten Thousand Year Reign Shattering Blade
+img: icons/magic/symbols/runes-etched-steel-blade.webp
+type: weapon
+system:
+  description: >-
+    <p><em>Taken from Abraxas's broken hands and plunged into the heart of his
+    lover. The first of Divine Humanity's purified weapons is said to know the
+    18 hymns of tyrant-woe, and it scalds the air in the presence of crowned
+    heads.</em></p>
+  attacks:
+    - name: Attack
+      damage:
+        formula: 4 + 2D10
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: bespoke
+        value: 1
+        spaces:
+          - i: -1
+            j: 0
+          - i: 0
+            j: -1
+          - i: 0
+            j: 1
+          - i: 1
+            j: 0
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+  active:
+    name: Roaming Strikes
+    description: >-
+      <p>You take a powerful riposte stance. Until your next move or attack, you
+      gain <strong>Armor:2</strong> and <strong>Compel:1</strong> and you may
+      not use any <strong>Reversal</strong> abilities. Enemy attacks against you
+      grant 1 stack of <strong>Retaliation</strong> while you are in this
+      stance. When you end your turn with stacks of
+      <strong>Retaliation</strong>, but aren’t in this stance, you lose 1 stack
+      of it. On any of your turns following this one when you have at least
+      <strong>Retaliation:1</strong>, you may make an attack with
+      <strong>Charge</strong>, <strong>Arc:X</strong>, where <strong>X</strong>
+      is your starting <strong>Speed</strong> plus your stacks of
+      <strong>Retaliation</strong>. When making this attack, you may spend
+      <strong>Retaliation</strong> to modify the attack. You may gain 1 modifier
+      per 1 stack of <strong>Retaliation</strong> spent, with no restrictions on
+      duplicate effects: </p><ul><li>You gain Aegis:1 before your attack
+      </li><li>Your attack gains the Breaker tag </li><li>Your attack gains
+      Bleed:1 </li><li>Your attack gains Lingering:1 </li><li>Your attack gains
+      Push:2 </li><li>Your attack gains +1 Damage </li><li>You may make one
+      square in your pattern Uneasy after your attack </li></ul><p></p>
+  passive:
+    name: Eight-Folded Four-Fold Tetragram
+    description: >-
+      <p>When you kill an enemy with this weapon, you may move into the empty
+      space and perform a regular attack as a free action.</p>
+  selected_attack: 0
+folder: GTdAaocCUUI6rY5Z
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753146263584
+  modifiedTime: 1756177979606
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Ten0Thousand0Yea'

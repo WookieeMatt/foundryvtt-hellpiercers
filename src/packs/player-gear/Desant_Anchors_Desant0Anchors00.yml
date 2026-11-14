@@ -1,0 +1,50 @@
+name: Desant Anchors
+type: halo_system
+_id: Desant0Anchors00
+img: icons/commodities/metal/chain-silver.webp
+system:
+  description: >-
+    <p><em>Despite everything, the spinther yearns to connect with more of its
+    kind, and even the facsimile of divinity, or corruption thereof, cries out
+    for its celestial shadow. Additional quick-mounting anchor points,
+    footholds, and deployable cover panels allow HELLPIERCER units to quickly
+    hook up and dismount from a mech as needed.</em></p>
+  effect: >-
+    <p>Whenever you move, up to two allied characters you are overlapping can
+    move with you, mirroring your movement exactly.</p>
+  upgrades:
+    - cost:
+        brimstone: 0
+        hellsteel: 3
+        soulfire: 0
+      effect: >-
+        <p>After moving, you may place any allied characters that moved with you
+        into any unoccupied spaces adjacent to you.</p>
+      unlocked: false
+    - cost:
+        brimstone: 0
+        hellsteel: 0
+        soulfire: 3
+      effect: >-
+        <p><strong>1/round</strong>, an adjacent allied character may make an
+        attack with your Standard Armament (see Mech Weapons, page 53) as a
+        Support Action.</p>
+      unlocked: false
+folder: eG8qD3hpnyaGlvhV
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756146302269
+  modifiedTime: 1756177979600
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Desant0Anchors00'

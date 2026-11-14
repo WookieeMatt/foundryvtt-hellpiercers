@@ -1,0 +1,30 @@
+_id: MALAKBEL00000000
+name: MALAKBEL
+img: icons/magic/light/explosion-star-large-orange.webp
+type: armor
+system:
+  description: >-
+    <p><em>“O' Rises The Sun, Whose New Light Shines Free Of The Eyes of The
+    Enemy. Woe To The Dark, Which Faces Now A Blinded Sun”</em></p>
+  speed: 7
+  ability: Compendium.hellpiercers.player-abilities.Item.MALAKBEL00000002
+  movement: Compendium.hellpiercers.player-abilities.Item.MALAKBEL00000001
+  reversal: Compendium.hellpiercers.player-abilities.Item.MALAKBEL00000003
+folder: plav4DgytmDlKEnT
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390304211
+  modifiedTime: 1756177979603
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!MALAKBEL00000000'

@@ -1,0 +1,64 @@
+@mixin token-config {
+  input[type="checkbox"].hellpiercers.lock {
+    appearance: none;
+    width: 1rem;
+    &:not(:checked) {
+      &::before {
+        content: "";
+      }
+      &::after {
+        font-size: 1rem;
+        font-family: var(--font-awesome);
+        font-weight: 800;
+        color: var(--color-text-primary);
+        content: "\f023";
+      }
+    }
+    &:checked {
+      &::before {
+        content: "";
+      }
+      &::after {
+        font-size: 1rem;
+        font-family: var(--font-awesome);
+        font-weight: 800;
+        color: var(--color-text-primary);
+        content: "\f3c1";
+      }
+    }
+  }
+}
+
+@mixin token-hud {
+  .palette.swarm-actions {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: auto;
+    min-width: 140px;
+    padding: 3px;
+    color: var(--control-icon-color);
+    .swarm-action-control {
+      border: 1px solid transparent;
+      border-radius: 3px;
+      padding: 3px;
+      white-space: nowrap;
+      &:hover {
+        color: var(--control-hover-icon-color);
+        border-color: var(--control-hover-border-color);
+      }
+    }
+  }
+}
+
+@mixin combat-tracker {
+  .combat-tracker .combatant .token-initiative {
+    // flex: 0 0 auto;
+    flex-direction: row;
+    button {
+      font-size: 1.25rem;
+      filter: none;
+      color: var(--color-text-subtle);
+    }
+  }
+}

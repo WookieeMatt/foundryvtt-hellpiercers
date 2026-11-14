@@ -1,0 +1,20 @@
+{
+  "useTabs": false,
+  "newLineKind": "lf",
+  "biome": {
+    "lineWidth": 100,
+    "trailingCommas": "es5",
+    "arrowParentheses": "asNeeded"
+  },
+  "malva": {},
+  "markup": {
+    "html.normal.selfClosing": false,
+    "html.void.selfClosing": false
+  },
+  "excludes": ["**/node_modules", "*-lock.*", "*.svg"],
+  "plugins": [
+    "https://plugins.dprint.dev/biome-0.12.6.wasm",
+    "https://plugins.dprint.dev/g-plane/malva-v0.15.2.wasm",
+    "https://plugins.dprint.dev/g-plane/markup_fmt-v0.27.0.wasm"
+  ]
+}

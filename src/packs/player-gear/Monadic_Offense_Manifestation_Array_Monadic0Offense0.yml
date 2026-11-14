@@ -1,0 +1,82 @@
+name: Monadic Offense Manifestation Array
+img: icons/magic/light/projectiles-trio-pink.webp
+type: halo_weapon
+_id: Monadic0Offense0
+system:
+  description: >-
+    <p><em>"While the raiment effect that results from soul synchronization with
+    a HALO Unit is known for the wide variety of dramatic physical
+    transmutations that occur within a piloted mech, with additional training
+    and the integration of specially attuned focusing arrays, this effect can be
+    further enhanced for offensive purposes as well. A developmental outgrowth
+    of research into Temporal/ Spiritual Interpolation, a so-called divine
+    weapon manifestation array is less of a singular armament and more an
+    expression of the pilot’s will made manifest."</em></p>
+  counter:
+    enabled: false
+    value: 0
+    max: null
+  effect: >-
+    <p>You may attack up to three different targets within Range:3 each time you
+    use this weapon and spread your damage across selected targets as evenly as
+    possible. If you choose to attack only a single target, roll your damage
+    twice and take the best result.</p>
+  secondary:
+    action: support
+    effect: >-
+      Choose an allied character within Range:3 and imbue them with a manifested
+      weapon of spiritual energy, its form reflecting the user's own soul; a
+      character can only be imbued with one of these weapons at a time. During
+      their turn, a character with a manifested weapon can perform the following
+      attack as a Support Action:</p><h4>HALO Imbued Reality</h4><p>Rending
+      Rounds<br>2D10 Damage<br>Attack Pattern: Range:3</p><p>Effect - Before
+      making this attack, you may teleport to any free space adjacent to the
+      target. Against targets with Bleed, this attack also gains Transference.
+  attacks:
+    - damage:
+        formula: 8 + 4D10
+        source: null
+        conditions:
+          bleed: 2
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: targets
+        value: 1
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: 3
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+  selected_attack: 0
+  tags: []
+folder: 3PRmrrGpg5K8AWEp
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756170201241
+  modifiedTime: 1756177979604
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Monadic0Offense0'

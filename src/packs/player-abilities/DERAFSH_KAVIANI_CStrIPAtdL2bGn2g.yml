@@ -1,0 +1,18 @@
+name: DERAFSH KAVIANI
+type: Item
+folder: 5Ix3A6rTBlcSLL0h
+_id: CStrIPAtdL2bGn2g
+description: ''
+sorting: a
+sort: 0
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.346'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  lastModifiedBy: null
+_key: '!folders!CStrIPAtdL2bGn2g'

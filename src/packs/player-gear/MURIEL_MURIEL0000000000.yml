@@ -1,0 +1,33 @@
+_id: MURIEL0000000000
+name: MURIEL
+img: icons/magic/death/undead-ghost-scream-teal.webp
+type: armor
+system:
+  description: >-
+    <p><em>To be encased in the Heavenly Magus's flesh is to feel the desperate
+    eager need bulging and straining in every nucleus. To feel the membrane of
+    every cell in your body screaming for growth. Feed it, gorge yourself on
+    gnosis until your renewed enlightenment sears ignorance from the
+    air.</em></p>
+  speed: 5
+  ability: Compendium.hellpiercers.player-abilities.Item.MURIEL0000000002
+  movement: Compendium.hellpiercers.player-abilities.Item.MURIEL0000000001
+  reversal: Compendium.hellpiercers.player-abilities.Item.MURIEL0000000003
+folder: plav4DgytmDlKEnT
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390304211
+  modifiedTime: 1756177979604
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!MURIEL0000000000'

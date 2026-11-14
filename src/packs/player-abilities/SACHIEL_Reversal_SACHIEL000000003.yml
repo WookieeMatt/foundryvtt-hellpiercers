@@ -1,0 +1,64 @@
+_id: SACHIEL000000003
+name: SACHIEL Reversal
+img: icons/commodities/currency/coins-plain-gold.webp
+type: ability
+system:
+  action: reversal
+  effect: >-
+    <p>Push:3 to all adjacent units. This may Break Swarms.</p><p><em>“We found
+    him in the vaults of heaven. One final count of the arrayed treasures of
+    Ogdoad. What need has heaven for goblets and silver coins? It was no matter.
+    We melted the ocean of gilded sorrow in his screaming blood, and crafted his
+    isolationism into strength.” - Heradan, 8th Adherent to the Rebel
+    Fist</em></p>
+  trigger: Targeted by an adjacent enemy
+  uses: 3
+  item:
+    type: armor
+    uuid: Compendium.hellpiercers.player-gear.Item.SACHIEL000000000
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  break_value: 10
+folder: CeIRCaW5CjOmDfmO
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390182319
+  modifiedTime: 1756177965572
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!SACHIEL000000003'

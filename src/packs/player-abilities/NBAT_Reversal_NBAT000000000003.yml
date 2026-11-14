@@ -1,0 +1,66 @@
+_id: NBAT000000000003
+name: NBAT Reversal
+img: icons/commodities/flowers/lily-bloom-purple.webp
+type: ability
+system:
+  action: reversal
+  effect: >-
+    <p>Transform into a tile of Advantageous Terrain, avoiding the initial
+    attack. Remain in this state until the end of your next turn. In this form
+    you may move as normal, but all other actions are impossible until the end
+    of your next turn. Players may trigger you as if you were any other piece of
+    Advantage terrain, and you may move under other players and enemies,
+    imparting any relevant effects when you do.</p><p><em>Those who strike
+    against you strike against the light of the Monad and the breath of the
+    world. A wound against one is a wound against all.</em></p>
+  trigger: Targeted by an enemy attack
+  uses: 3
+  item:
+    type: armor
+    uuid: Compendium.hellpiercers.player-gear.Item.NBAT000000000000
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  break_value: 10
+folder: 01QuLMcxBkIfcxWJ
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390182319
+  modifiedTime: 1756177965570
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!NBAT000000000003'

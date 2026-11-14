@@ -1,0 +1,31 @@
+_id: Hylic0Annihilati
+name: Hylic Annihilation Corridor
+img: icons/environment/traps/trap-jaw-steel.webp
+type: equipment
+system:
+  description: >-
+    <p><em>The desire to liberate Hell wells up within every human's heart.
+    Overflows. Poured into this reification engine, it manifests in a lance of
+    psychophasic rage.</em></p>
+  effect: >-
+    <p>Create a Line:5, Width:1 box on the map. Enemies in this box take 1 HP
+    Damage at the end of their turn. The box disappears after combat.</p>
+  available: true
+folder: ttVRofJze0f0u91g
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754147092644
+  modifiedTime: 1756177979602
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Hylic0Annihilati'

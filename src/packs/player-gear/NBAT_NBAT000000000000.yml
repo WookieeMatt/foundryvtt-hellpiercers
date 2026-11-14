@@ -1,0 +1,30 @@
+_id: NBAT000000000000
+name: NBAT
+img: icons/commodities/flowers/lily-bloom-purple.webp
+type: armor
+system:
+  description: >-
+    <p><em>A sleek shining suit like a sewing needle. When you wear it, it feels
+    like your guilt is being pulled out of your very bones.</em></p>
+  speed: 8
+  ability: Compendium.hellpiercers.player-abilities.Item.NBAT000000000002
+  movement: Compendium.hellpiercers.player-abilities.Item.NBAT000000000001
+  reversal: Compendium.hellpiercers.player-abilities.Item.NBAT000000000003
+folder: plav4DgytmDlKEnT
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390304211
+  modifiedTime: 1756177979604
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!NBAT000000000000'

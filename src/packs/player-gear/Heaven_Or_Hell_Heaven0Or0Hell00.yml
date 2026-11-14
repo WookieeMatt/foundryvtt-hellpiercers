@@ -1,0 +1,89 @@
+_id: Heaven0Or0Hell00
+name: Heaven Or Hell
+img: icons/equipment/hand/gauntlet-cuffed-steel-blue.webp
+type: weapon
+system:
+  description: >-
+    <p><em>Torn from the Demiurge’s wrists, these gauntlets channel the fists of
+    every punch thrown in the direction of an oppressor, calling forth every
+    brutality of every war in a single, sickening blow.</em></p>
+  attacks:
+    - name: Attack
+      damage:
+        formula: '3'
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: bespoke
+        value: 1
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+  active:
+    name: Entangled Simulation Collapse
+    description: >-
+      <p>If you are attacked at any point before your next turn, move to a space
+      adjacent to your attacker, gain <strong>Throw:1</strong>, and make a free
+      weapon attack.</p>
+  passive:
+    name: Schmovement
+    description: >-
+      <p>When you hit an enemy with a weapon attack or use your Armor Reversal,
+      you also gain 1 stack of one of the following Combo Tags: Juggle,
+      Knockdown, or Pressure. Combo Tag stacks stay until you use them or TACCOM
+      ends. Any time you cause damage in any way, as a free action you may spend
+      any number of stacks of Combo Tags on the following options without limits
+      on duplication:</p><p><strong>Juggle</strong></p><ul><li><p>Deal 1 damage
+      and gain Pressure:1.</p></li><li><p>Deal 3 damage to an adjacent unit
+      other than the one you just
+      hit.</p></li></ul><p><strong>Knockdown</strong></p><ul><li><p>Flip a coin
+      and call it. If you are right, deal 5 more damage and gain Pressure:1. If
+      you are wrong, take 2 damage for each Knockdown spent this
+      turn.</p></li><li><p>Gain
+      Throw:1.</p></li></ul><p><strong>Pressure</strong></p><ul><li><p>Push your
+      opponent 2 spaces. If the opponent collides with another unit, wall, or
+      other impassable terrain, gain Bounce:1, then deal 1 damage to both
+      targets.</p></li><li><p>Move up to 3 spaces, then deal 3 damage to an
+      adjacent unit.</p></li></ul><p><strong>Bounce</strong></p><ul><li><p>Deal
+      1 damage and push your target 1 space. If the opponent collides with
+      another unit, deal 1 damage to that unit and you gain
+      Knockdown:1.</p></li><li><p>Deal 3 damage and move 1
+      space.</p></li></ul><p><strong>Throw</strong></p><ul><li><p>Push your
+      target up to 3 spaces in any direction.</p></li><li><p>Deal 2 damage, then
+      flip a coin and call it. If you are right, gain Knockdown:1. If you are
+      wrong, take 1 damage.</p></li></ul>
+  selected_attack: 0
+folder: GTdAaocCUUI6rY5Z
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753146263584
+  modifiedTime: 1756177979601
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Heaven0Or0Hell00'

@@ -1,0 +1,31 @@
+name: Clear Status
+type: script
+command: |-
+  const statuses = Object.values(CONFIG.statusEffects).filter(s => s.hud !== false);
+  const options = statuses.map(s => `<option value="${s.id}">${game.i18n.localize(s.name)}</option>`).join("");
+  const input = await foundry.applications.api.Dialog.input({
+    window: { title: "Clear Status", icon: "fa-solid fa-eraser" },
+    content: `<div class="form-group"><label>Status</label><div class="form-fields"><select name="status">${options}</select></div></div>`,
+  });
+  if (!input) return;
+  await hellpiercers.status.remove(null, input.status);
+img: icons/svg/cancel.svg
+author: null
+scope: global
+folder: null
+ownership:
+  default: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.370'
+  systemId: hellpiercers
+  systemVersion: 0.2.0
+  createdTime: 1763100000000
+  modifiedTime: 1763100000000
+  lastModifiedBy: null
+  exportSource: null
+_id: HPClearStatus000
+sort: 200000
+_key: '!macros!HPClearStatus000'

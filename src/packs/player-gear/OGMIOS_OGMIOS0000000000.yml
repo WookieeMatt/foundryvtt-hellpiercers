@@ -1,0 +1,32 @@
+_id: OGMIOS0000000000
+name: OGMIOS
+img: icons/commodities/gems/pearls-white.webp
+type: class
+system:
+  description: >-
+    <p><em>The doors are open, but only to those with eyes to see. Hyper-LSD and
+    an adjusted  reality-perspective-realignment suite forge walls of golden
+    thought and homunculi of pearls; a bastion for us, a killbox for
+    them.</em></p>
+  health: 20
+  active: Compendium.hellpiercers.player-abilities.Item.OGMIOS0000000001
+  passive: Compendium.hellpiercers.player-abilities.Item.OGMIOS0000000002
+  limit: Compendium.hellpiercers.player-abilities.Item.OGMIOS0000000003
+folder: 7KVmHWz8OUEGwBpj
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390323855
+  modifiedTime: 1756177979604
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!OGMIOS0000000000'

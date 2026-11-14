@@ -1,0 +1,277 @@
+@use "components";
+
+$borderColor: var(--hellpiercers-sheet-box-border);
+$dividerColor: var(--hellpiercers-sheet-box-divider);
+$labelBg: color(from $dividerColor srgb r g b / 0.25);
+
+@mixin plain-input {
+  input[type="text"],
+  input[type="number"],
+  select {
+    background: none;
+    border: none;
+    border-radius: unset;
+    transition: unset;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+@mixin box-label {
+  grid-area: label;
+  border-bottom: 1px solid $dividerColor;
+  background: $labelBg;
+  padding: 0rem 0.5rem;
+}
+
+@mixin base {
+  header.window-header {
+    @include components.slide-toggle();
+  }
+  a.control {
+    flex: 0 0 auto;
+    width: min-content;
+    height: min-content;
+  }
+
+  header.sheet-header {
+    display: grid;
+    grid-template:
+      "portrait charname" min-content
+      "description description" 1fr /
+      min-content 1fr;
+    gap: 0.25rem;
+    @include components.header-boxes-v2;
+
+    div.portrait {
+      align-self: center;
+      grid-area: portrait;
+      aspect-ratio: 1 / 1;
+      width: 50px;
+    }
+    .charname {
+      grid-area: charname;
+      &, input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--font-size-28);
+      }
+    }
+    .description {
+      grid-area: description;
+      > .editor-content {
+        font-size: var(--font-size-12);
+        max-height: 100px;
+        overflow: hidden auto;
+      }
+    }
+  }
+
+  @include components.sheet-tabs;
+
+  .tab.effects {
+    @include components.item-list;
+  }
+}
+
+@mixin ability {
+  $borderColor: var(--hellpiercers-sheet-box-border);
+  $dividerColor: var(--hellpiercers-sheet-box-divider);
+  $labelBg: color(from $dividerColor srgb r g b / 0.25);
+
+  .tab.details {
+    @include components.ability-blocks;
+    .item-block.attack {
+      display: grid;
+      grid-template:
+        "label label" min-content
+        "damage range" 1fr /
+        1fr 1fr;
+      > label {
+        grid-area: label;
+      }
+      .damage, .range {
+        display: flex;
+        flex-direction: column;
+      }
+      .damage {
+        grid-area: damage;
+        border-right: 1px solid $dividerColor;
+      }
+      .range {
+        grid-area: range;
+        .value {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .item-block textarea {
+      width: 100%;
+      resize: none;
+    }
+    .item-block > .editor-content {
+      max-height: 150px;
+      overflow: hidden auto;
+    }
+  }
+}
+
+@mixin armor {
+  .tab.details {
+    @include components.ability-blocks;
+    .item-block > .editor-content {
+      max-height: 100px;
+      overflow: hidden auto;
+    }
+  }
+}
+
+@mixin gear {
+  .tab.details {
+    @include components.ability-blocks;
+    .form-group > .editor-content {
+      max-height: 150px;
+      overflow: hidden auto;
+    }
+  }
+}
+
+@mixin halo-system {
+  .tab.details {
+    @include components.ability-blocks;
+    @include components.item-list;
+    .item-block > .editor-content {
+      max-height: 150px;
+      overflow: hidden auto;
+    }
+    .upgrades > li {
+      .cost {
+        span:not(:last-child)::after {
+          content: ", ";
+        }
+      }
+      border-bottom: 1px solid $dividerColor;
+    }
+  }
+}
+
+@mixin halo-weapon {
+  .tab.details {
+    @include components.ability-blocks;
+    .item-block.attack {
+      display: grid;
+      grid-template:
+        "label label" min-content
+        "damage range" min-content
+        "effect effect" min-content /
+        1fr 1fr;
+      > label {
+        grid-area: label;
+      }
+      .damage {
+        grid-area: damage;
+        border-right: 1px solid $dividerColor;
+      }
+      .range {
+        grid-area: range;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .effect {
+        grid-area: effect;
+      }
+    }
+    .item-block {
+      .editor-content.bare {
+        max-height: 150px;
+        overflow: hidden auto;
+      }
+    }
+  }
+  .tab.profiles {
+    @include components.ability-blocks;
+    max-height: 350px;
+    .attack {
+      display: grid;
+      grid-template:
+        "label label" min-content
+        "damage range" 1fr /
+        1fr 1fr;
+      > label {
+        grid-area: label;
+      }
+      .damage {
+        grid-area: damage;
+        border-right: 1px solid $dividerColor;
+      }
+      .range {
+        grid-area: range;
+        .value span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .damage, .range {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@mixin weapon {
+  $borderColor: var(--hellpiercers-sheet-box-border);
+  $dividerColor: var(--hellpiercers-sheet-box-divider);
+  $labelBg: color(from $dividerColor srgb r g b / 0.25);
+
+  .tab.details {
+    @include components.ability-blocks;
+    .active, .passive {
+      & > .editor-content {
+        max-height: 150px;
+        overflow: hidden auto;
+      }
+    }
+  }
+  .tab.profiles {
+    @include components.ability-blocks;
+    max-height: 350px;
+    .attack {
+      display: grid;
+      grid-template:
+        "label label" min-content
+        "damage range" 1fr /
+        1fr 1fr;
+      > label {
+        grid-area: label;
+      }
+      .damage {
+        grid-area: damage;
+        border-right: 1px solid $dividerColor;
+      }
+      .range {
+        grid-area: range;
+        .value span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .damage, .range {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .tab.effects {
+    max-height: 350px;
+  }
+}

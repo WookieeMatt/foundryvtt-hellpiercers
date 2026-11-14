@@ -1,0 +1,42 @@
+name: Emergency Bythos Shunt
+type: halo_system
+_id: Emergency0Bythos
+img: icons/skills/movement/figure-running-gray.webp
+system:
+  description: >-
+    <p><em>Longinomechanical synchronization inevitably exposes the pilot’s
+    aligned pneumatics to sympathetic damage, and even risks permanent
+    annihilation in extreme cases. Standard ejection protocols are insufficient
+    to unseat a fully embedded nous. Instead, the Bythos Shunt system rapidly
+    converts the rider’s spinther into an ascended divine addict through an
+    overwhelming dose of psi-space induction psychedelics, forcing their soul
+    through—enmeshing it with—the local material matrix, protecting their
+    delicate essence from attack and allowing their soul synchronization to
+    return to safe levels before re-entry.</em></p>
+  effect: >-
+    <p>When your HALO Unit is reduced to 0 HP, your pilot may immediately eject
+    from the wreckage, teleporting to an unoccupied space within Range:3. A
+    dismounted HALO Unit pilot has the following stats and abilities as part of
+    their standard pilot loadout; they cannot equip other armors, weapons, or
+    equipment. @UUID[Compendium.hellpiercers.player-gear.Item.HALO0Pilot0Armor]
+    @UUID[Compendium.hellpiercers.player-gear.Item.HALO0Pilot0Class]
+    @UUID[Compendium.hellpiercers.player-gear.Item.Pilot0Personal0D]</p>
+  upgrades: []
+folder: eG8qD3hpnyaGlvhV
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756146302269
+  modifiedTime: 1756177979600
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Emergency0Bythos'

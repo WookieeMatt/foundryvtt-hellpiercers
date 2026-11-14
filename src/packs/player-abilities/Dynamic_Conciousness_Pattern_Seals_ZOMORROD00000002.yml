@@ -1,0 +1,65 @@
+_id: ZOMORROD00000002
+name: Dynamic Conciousness Pattern Seals
+img: icons/magic/water/barrier-ice-crystal-wall-green.webp
+type: ability
+system:
+  action: passive
+  effect: >-
+    <p>Whenever you summon a new minion or miniboss, you may
+    <strong>Stock</strong> it. You can only have one <strong>Stocked</strong>
+    unit at any one time. This confers  two benefits: a <strong>Stocked</strong>
+    unit may be summoned by expending <strong>Charges</strong> even when it
+    isn’t present; and you may consume the <strong>Stock</strong> completely to
+    summon that unit as a <strong>free action</strong> without spending
+    <strong>Charges</strong>.</p>
+  item:
+    type: class
+    uuid: Compendium.hellpiercers.player-gear.ZOMORROD00000000
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  uses: null
+  trigger: null
+  break_value: 10
+folder: DQKd6K2FogBjT9U4
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390260665
+  modifiedTime: 1756177965577
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!ZOMORROD00000002'

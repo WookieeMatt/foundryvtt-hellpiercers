@@ -1,0 +1,32 @@
+_id: Thought0Guiding0
+name: Thought-Guiding Redirection Circuits
+img: icons/magic/control/debuff-energy-hold-levitate-teal-blue.webp
+type: equipment
+system:
+  description: >-
+    <p><em>When this infra-dimensional neural augment attunes itself to an
+    opponent, it overwhelms them with humanity's righteous fury. For one bright
+    moment, their desires align with the HELLPIERCER's own.</em></p>
+  effect: >-
+    <p>Select a single enemy within Range:5 and use its attack against another
+    enemy. Any invalid, unsupported, or otherwise impossible actions are either
+    unsuccessful, or can be adjudicated by the table.</p>
+  available: true
+folder: ttVRofJze0f0u91g
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754147092644
+  modifiedTime: 1756177979606
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Thought0Guiding0'

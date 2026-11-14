@@ -1,0 +1,32 @@
+_id: Weapon0Link00000
+name: Weapon Link
+img: icons/commodities/metal/clasp-steel-braid-glowing.webp
+type: gear
+system:
+  description: >-
+    <p><em>The first obstacle standing between HELLPIERCERS and DIS was the
+    Great Beast Charybdis. It died in seconds, ten thousand years of pent-up
+    spite vaporizing all but a piece of its lower jaw bone.</em></p>
+  kind: weapon
+  effect: >-
+    <p>Your weapons are connected by angel tendons. You can swap weapons once
+    per turn for free.</p>
+  target: ''
+folder: 1upYVLWgpnHioybI
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754176962056
+  modifiedTime: 1756177979607
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Weapon0Link00000'

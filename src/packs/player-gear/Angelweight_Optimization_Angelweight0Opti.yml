@@ -1,0 +1,32 @@
+_id: Angelweight0Opti
+name: Angelweight Optimization
+img: icons/commodities/materials/feather-white.webp
+type: gear
+system:
+  description: >-
+    <p><em>Nothing weighs less than nothing, but this aeonic matter is so
+    concentrated with non-hylic material that the old incantations break down.
+    Energy exceeds the Einstein barrier and loops back around in a paracausal
+    floating point error. An ounce of this stuff repels gravity's grasping
+    hands. A pound can turn you inside out.</em></p>
+  kind: armor
+  effect: <p>At Elevation 3 you can move up to 2 spaces for every Speed you spend.</p>
+  target: ''
+folder: 1upYVLWgpnHioybI
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754176962056
+  modifiedTime: 1756177979597
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Angelweight0Opti'

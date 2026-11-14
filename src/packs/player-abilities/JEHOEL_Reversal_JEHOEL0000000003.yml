@@ -1,0 +1,69 @@
+_id: JEHOEL0000000003
+name: JEHOEL Reversal
+img: icons/tools/fasteners/chain-steel-grey.webp
+type: ability
+system:
+  action: reversal
+  effect: >-
+    <p>Immediately convert the nearest special terrain to Link and send the
+    attacker through it. If there are no other Link tiles on the map at this
+    time, the enemy vanishes and emerges from the next Link tile you create.
+    Whether the enemy emerges immediately or later, you may rotate it to any
+    facing you choose, then it completes its attack, inflicting its damage and
+    Effects wherever it now aims.</p><p><em>The hunt was one of endurance. Of
+    hundreds of thousands of footsteps and with each the question of if the next
+    would take you where your senses told you they would. As long as humanity
+    has hunted, it has excelled in outpacing and exhausting its prey. Jehoel,
+    despite her cunning, was no different. We gutted her like a mammoth on a
+    dais made of firmament.</em></p>
+  trigger: Targeted by an enemy attack while on or adjacent to special terrain
+  uses: 4
+  item:
+    type: armor
+    uuid: Compendium.hellpiercers.player-gear.Item.JEHOEL0000000000
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  break_value: 10
+folder: t51tgkAcIUkUBtWU
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390182319
+  modifiedTime: 1756177965565
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!JEHOEL0000000003'

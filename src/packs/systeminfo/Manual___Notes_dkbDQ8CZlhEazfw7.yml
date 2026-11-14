@@ -1,0 +1,332 @@
+name: Manual & Notes
+_id: dkbDQ8CZlhEazfw7
+pages:
+  - sort: 100000
+    name: Notice of Beta Jank
+    type: text
+    _id: NIdeFGfuO32ubmCd
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>This system is still in the alpha phase. Not all features are
+        implemented.</p><p>Notable missing features:</p><ol><li><p>STRATCOM base
+        building and unlocks.</p></li><li><p>Recon</p></li></ol><p>Your patience
+        is appreciated.</p><h2>Reporting Issues</h2><p>Open issues can be seen
+        here: <a
+        href="https://todo.sr.ht/~bolts/foundryvtt-hellpiercers">https://todo.sr.ht/~bolts/foundryvtt-hellpiercers</a></p><p>Bug
+        reports can be submitted to the ticket system via email at the page
+        above.</p><h1>Be aware that until the system hits 1.0, breaking changes
+        may occur on updates.</h1><p>I will try to warn in advance in the
+        patchnotes on the repository, but I'm only human.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+      0uq1NcpEgiMQWXgA: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.347'
+      systemId: hellpiercers
+      systemVersion: 0.alpha1
+      createdTime: 1736288127008
+      modifiedTime: 1756173413876
+      lastModifiedBy: JIYn39iJgV1tMnlB
+      exportSource: null
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.NIdeFGfuO32ubmCd'
+  - sort: 200000
+    name: Building Items
+    type: text
+    _id: ffis5fdmv3EmuexX
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>In the current version, due to the possibility of underlying data
+        changes, I'm not shipping compendiums quite yet.</p><p>For most items,
+        it's pretty straightforward. Bosses have a button on their sheets to add
+        abilities and minions don't need items.</p><p>For player abilities, it's
+        a bit more complicated (but not ridiculously so!). Weapons can be built
+        on their own and dropped onto the HELLPIERCER sheet. For classes, you'll
+        need to make the ability items separate from the class
+        item.</p><ol><li><p>Create an item of type Class and fill in the name,
+        description and health value.</p></li><li><p>Create an item of type
+        Ability and fill in the name and effect specifying it as an Active. Then
+        drag the corresponding class item from the sidebar to the "Enter UUID or
+        Drop Document" area at the bottom of the sheet. Then close the sheet and
+        drag the Active item to Active section on the
+        class.</p></li><li><p>Repeat step 2 except choosing the Passive subtype
+        and dragging it to the Passive input.</p></li><li><p>Repeat step 2 this
+        time choosing the Limit Break subtype and filling in the break value and
+        dragging it to the Limit Break section.</p></li></ol><p>Creating an
+        Armor item is similar, except using the Movement, Active and Reversal
+        subtypes for each ability.</p><p>When creating a weapon, clicking on the
+        cog button for the range will open an editor for the range. You can
+        select from the different range types or build a bespoke range pattern.
+        Ranges are built and displayed with the origin facing east.  Clicking
+        the cog button near the damage will open an advanced editor for the
+        damage.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+      0uq1NcpEgiMQWXgA: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.346'
+      systemId: hellpiercers
+      systemVersion: 0.alpha1
+      createdTime: 1736288652740
+      modifiedTime: 1741241052822
+      lastModifiedBy: JIYn39iJgV1tMnlB
+      exportSource: null
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.ffis5fdmv3EmuexX'
+  - sort: 300000
+    name: Attacks
+    type: text
+    _id: woBcekCLT8xp6Cni
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>On the sheets, click on the dice icon near a weapon, attack or strike
+        to open the targeting dialog.</p><p>If the attack is an area of effect
+        attack, there will be a range button in the dialog. Click the button to
+        hide the dialog and put a template down. Generally you'll be clicking
+        the space where the attacking unit it for placement. While placing the
+        scroll wheel will rotate the template between the 4 cardinal
+        directions.</p><p>Once the template is placed, any affected units will
+        be targeted. If the attack is not an aoe, or if you want to fine tune
+        targets, the normal foundry targeting tools can be used. The T and
+        Shift+T hotkeys are easy to use.</p><p>Confirm the dialog and dice will
+        be rolled and cards printed for each target. Users that can modify the
+        target will be shown an apply damage button to automatically apply the
+        damage. When applying, a confirmation will be shown.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+      0uq1NcpEgiMQWXgA: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.346'
+      systemId: hellpiercers
+      systemVersion: 0.alpha1
+      createdTime: 1736290188294
+      modifiedTime: 1736290670155
+      lastModifiedBy: 0uq1NcpEgiMQWXgA
+      exportSource: null
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.woBcekCLT8xp6Cni'
+  - sort: 400000
+    name: Credits
+    type: text
+    _id: k6zghMJZcTUWAiII
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><a
+        href="https://sandypuggames.itch.io/hellpiercers-preview-edition">HELLPIERCERS</a>
+        is by <a href="https://spg.crd.co/">Sandy Pug Games</a>. Included
+        artwork is used with permission.</p><p>This project uses icons from <a
+        href="https://game-icons.net/" rel="nofollow
+        noopener">https://game-icons.net/</a> under <a
+        href="http://creativecommons.org/licenses/by/3.0/" rel="nofollow
+        noopener">CC BY 3.0</a></p><p><a
+        href="https://fonts.google.com/specimen/MedievalSharp" rel="nofollow
+        noopener">Medieval Sharp</a> font by Wojciech Kalinowski used under the
+        <a
+        href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=OFL"
+        rel="nofollow noopener">Open Font License</a></p><p>This system is
+        programmed by Bolts. Support me on <a
+        href="https://ko-fi.com/bolts">https://ko-fi.com/bolts</a>. Donations
+        are not required, but are much appreciated.</p><a
+        href="https://ko-fi.com/G2G6VL7NN" target="_blank"><img
+        src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee
+        at ko-fi.com" height="36" /></a>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+      0uq1NcpEgiMQWXgA: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.347'
+      systemId: hellpiercers
+      systemVersion: 0.alpha1
+      createdTime: 1736290689558
+      modifiedTime: 1756176342203
+      lastModifiedBy: JIYn39iJgV1tMnlB
+      exportSource: null
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.k6zghMJZcTUWAiII'
+  - sort: 350000
+    name: Cool Modules
+    type: text
+    _id: xdprHt5khVQnCuaZ
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Nothing yet, though feel free to test and report any
+        incompatibilities.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+      0uq1NcpEgiMQWXgA: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.346'
+      systemId: hellpiercers
+      systemVersion: 0.alpha1
+      createdTime: 1736291058286
+      modifiedTime: 1736291135621
+      lastModifiedBy: 0uq1NcpEgiMQWXgA
+      exportSource: null
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.xdprHt5khVQnCuaZ'
+  - sort: 150000
+    name: Change Log
+    type: text
+    _id: MauFU7m4EmDZ7Frx
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <h2>Beta 1 (0.beta1)</h2><ol><li><p>Add compendium of player build
+        options and compendium of class and armor
+        abilities.</p></li><li><p>Overhaul of sheets. All sheets are now
+        toggled. By default sheets open in locked mod which limits the ability
+        to edit their stats and items. Unlocking the sheet using the switch in
+        the header bar allows adding deleting and moving items, editing stats
+        (where they aren't derived), and generally setting up the actor. Putting
+        it in locked/play mode prevents unintended edits. When creating a new
+        actor or item, the sheet will open in edit mode
+        automatically.</p></li><li><p>Add a configuration menu to HELLPIERCER
+        and HALO sheets to enable unlocks.</p></li><li><p>Add automation for
+        status decay and augment the Active Effect sheet with the system
+        duration handling.</p></li><li><p>Add profile switching to HELLPIERCER
+        and HALO weapons.</p></li><li><p>Add Equipment item type and
+        sheet</p></li><li><p>Improve combat tracker styling</p></li><li><p>Add
+        spawner actor type and sheets.</p></li></ol><p><span class="notification
+        warning">Due to data changes to HALO Weapons, you may need to redo the
+        damage and range for any existing weapons.</span></p><h2>Alpha 4
+        (0.alpha4)</h2><p>Hotfix for alpha 3</p><ol><li><p>Fix an issue in
+        datamodels that was causing attack data to be cleared when editing
+        weapons.</p></li><li><p>Partial rework of the attack dialog. Improves
+        attack dialog styling and appearance. Fixes positioning when changing
+        the sidebar collapse state. Add opening animation. Reworks the dialog as
+        a ui hud element. <br /><span class="notification info">Existing macros
+        for attacks need to be recreated to account for these
+        changes.</span></p></li><li><p>Add descriptions to status effects and
+        re-sort the effects in the token hud to be alphabetically sorted in
+        accordance with the core rulebook.</p></li></ol><h2>Alpha 3
+        (0.alpha3)</h2><ol><li><p>Added swarm functionality. Minion units that
+        are in combat can be group selected and added to a swarm if they have
+        the Horde tag and are backed by the same actor by right clicking and
+        selecting the New swarm option from the token hud.</p></li><li><p>Combat
+        tracker is now built in. You should disable Lancer Initiative if you
+        still have it. Multiple activations isn't handled yet and the styling
+        isn't great, but it exists.</p></li><li><p>Revamped damage rolling and
+        application. Should now be much closer to the rules, especially with
+        respect to swarms. The chat cards are improved and now handle multiple
+        targets with a single card.</p></li><li><p>New actors now have better
+        defaults for disposition and actor link. These settings can still be
+        overridden by prototype token overrides, but now HELLPIERCER and HALO
+        actors are friendly by default and Minions have unlinked tokens by
+        default.</p></li><li><p>Token sizing is now automatic. There's a toggle
+        in the token config if you need to override without changing scale,
+        otherwise token size will follow the scale stat (with live updates
+        even)</p></li><li><p>A lot of under the hood stuff that doesn't really
+        need description here, but rest assured, it makes <em>my</em> life
+        easier.</p></li></ol><h2>Alpha 2 (0.alpha2)</h2><ol><li><p>Add HALO
+        units and item types for their gear</p></li><li><p>Rework attack data.
+        This may require redoing some items.</p></li><li><p>Move many sheet
+        functions to context menus</p></li></ol><h2>Alpha 1
+        (0.alpha1)</h2><p>Initial Release</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    category: null
+    ownership:
+      default: -1
+      JIYn39iJgV1tMnlB: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.347'
+      systemId: hellpiercers
+      systemVersion: 0.alpha1
+      createdTime: 1741209659146
+      modifiedTime: 1756219728217
+      lastModifiedBy: JIYn39iJgV1tMnlB
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.MauFU7m4EmDZ7Frx'
+folder: null
+sort: 0
+ownership:
+  default: 0
+  0uq1NcpEgiMQWXgA: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: hellpiercers
+  systemVersion: 0.alpha1
+  createdTime: 1736288118947
+  modifiedTime: 1736288118947
+  lastModifiedBy: 0uq1NcpEgiMQWXgA
+  exportSource: null
+categories: []
+_key: '!journal!dkbDQ8CZlhEazfw7'

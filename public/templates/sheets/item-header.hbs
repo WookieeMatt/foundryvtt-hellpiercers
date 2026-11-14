@@ -1,0 +1,33 @@
+<header class="sheet-header">
+  <div class="charname">
+    {{#if editable}}
+      {{formInput fields.name value=item.name}}
+    {{else}}
+      {{item.name}}
+    {{/if}}
+  </div>
+  <div class="portrait">
+    <img
+      src="{{item.img}}"
+      class="portrait"
+      data-edit="img"
+      data-action="editImage"
+      title="{{item.name}}"
+    >
+  </div>
+  {{#if description}}
+    <div class="description">
+      {{#if editable}}
+        {{
+          formInput description.field
+      name="system.description"
+      value=description.value
+      enriched=description.enriched
+      compact=true
+        }}
+      {{else}}
+        <div class="editor-content">{{{description.enriched}}}</div>
+      {{/if}}
+    </div>
+  {{/if}}
+</header>

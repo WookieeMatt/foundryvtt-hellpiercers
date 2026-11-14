@@ -1,0 +1,48 @@
+<header>
+  <div class="item-name">
+    <h4 class="source">
+      {{#if item}}{{item.name}}{{else}}{{attack.name}}{{/if}}
+    </h4>
+    {{#if attacker}}<span class="attacker">{{attacker.name}}</span>{{/if}}
+  </div>
+  <div class="profile">
+    <div class="formula">
+      <strong>{{localize "HELLPIERCERS.ATTACK.FIELDS.damage.label"}}</strong>:
+      {{attack.damage.formula}}
+    </div>
+    <div class="range">
+      {{#if aoe}}
+        <button
+          type="button"
+          data-action="placeTemplate"
+          data-tooltip="<img src='{{attack.range.svg_uri}}'>"
+          data-tooltip-direction="UP"
+        >
+          <i class="fa-solid fa-ruler-combined"></i>{{attack.range.name}}
+        </button>
+      {{else}}
+        <span class="label">{{
+            localize "HELLPIERCERS.ITEM.FIELDS.range.label"
+          }}</span>:
+        {{attack.range.short_text}}
+      {{/if}}
+    </div>
+    {{#if hasProfiles}}
+      <div class="name">{{attack.name}}</div>
+      <div class="prev">
+        <a
+          class="control icon fa-solid fa-caret-left"
+          data-action="switchProfile"
+          data-delta="-1"
+        ></a>
+      </div>
+      <div class="next">
+        <a
+          class="control icon fa-solid fa-caret-right"
+          data-action="switchProfile"
+          data-delta="1"
+        ></a>
+      </div>
+    {{/if}}
+  </div>
+</header>

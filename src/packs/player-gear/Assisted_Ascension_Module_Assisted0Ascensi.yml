@@ -1,0 +1,35 @@
+_id: Assisted0Ascensi
+name: Assisted Ascension Module
+img: icons/magic/holy/angel-winged-humanoid-blue.webp
+type: gear
+system:
+  description: >-
+    <p><em>Not everyone is born with secrets carving canyons in their mind.
+    Those without sublimation would fester in hylic darkness—our revolution
+    stands apart. Those who have risen through the veil bring back patterns,
+    sounds, scents from a higher plane. On the old Earth, we imbue these relics
+    into fabric and metal, to train the infant nous to recognize Truth until it
+    is ready to do so on its own.</em></p>
+  kind: armor
+  effect: >-
+    <p>The user always has Aegis:1 and cannot lose their last stack of
+    Aegis.</p>
+  target: ''
+folder: 1upYVLWgpnHioybI
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754176962056
+  modifiedTime: 1756177979598
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Assisted0Ascensi'

@@ -1,0 +1,40 @@
+<section
+  class="tab details scrollable flexcol {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="details"
+>
+  {{#if editable}}
+    {{
+      formGroup systemFields.health value=system.health classes="item-block" rootId=rootId
+    }}
+    {{
+      formGroup systemFields.active value=system.active classes="item-block" rootId=rootId
+    }}
+    {{
+      formGroup systemFields.passive value=system.passive classes="item-block" rootId=rootId
+    }}
+    {{
+      formGroup systemFields.limit value=system.limit classes="item-block" rootId=rootId
+    }}
+  {{else}}
+    <div class="item-block health">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.health.label"}}</label>
+      <div class="value">{{system.health}}</div>
+    </div>
+    <div class="item-block active">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.active.label"}}</label>
+      <span>{{{active.anchor}}}</span>
+      <div class="editor-content">{{{active.enriched}}}</div>
+    </div>
+    <div class="item-block passive">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.passive.label"}}</label>
+      <span>{{{passive.anchor}}}</span>
+      <div class="editor-content">{{{passive.enriched}}}</div>
+    </div>
+    <div class="item-block limit">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.limit.label"}}</label>
+      <span>{{{limit.anchor}}}</span>
+      <div class="editor-content">{{{limit.enriched}}}</div>
+    </div>
+  {{/if}}
+</section>

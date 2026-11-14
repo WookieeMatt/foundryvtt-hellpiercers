@@ -1,0 +1,41 @@
+<section
+  class="tab details scrollable flexcol {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="details"
+>
+  {{#if editable}}
+    <div class="item-block active">
+      {{
+        formGroup systemFields.active.fields.name value=system.active.name classes="flexcol" rootId=rootId
+      }}
+      {{
+        formInput active.field enriched=active.enriched value=active.value toggled=false compact=true
+      }}
+    </div>
+    <div class="item-block passive">
+      {{
+        formGroup systemFields.passive.fields.name value=system.passive.name classes="flexcol" rootId=rootId
+      }}
+      {{formInput passive.field enriched=passive.enriched value=passive.value}}
+    </div>
+  {{else}}
+    <div class="item-block active">
+      <div class="flexcol">
+        <label>{{localize "HELLPIERCERS.ITEM.FIELDS.active.label"}}</label>
+        <div class="flexrow">
+          <div class="value">{{system.active.name}}</div>
+        </div>
+      </div>
+      <div class="editor-content">{{{active.enriched}}}</div>
+    </div>
+    <div class="item-block passive">
+      <div class="flexcol">
+        <label>{{localize "HELLPIERCERS.ITEM.FIELDS.passive.label"}}</label>
+        <div class="flexrow">
+          <div class="value">{{system.passive.name}}</div>
+        </div>
+      </div>
+      <div class="editor-content">{{{passive.enriched}}}</div>
+    </div>
+  {{/if}}
+</section>

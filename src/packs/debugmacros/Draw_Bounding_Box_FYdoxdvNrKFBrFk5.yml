@@ -1,0 +1,41 @@
+name: Draw Bounding Box
+type: script
+_id: FYdoxdvNrKFBrFk5
+author: JIYn39iJgV1tMnlB
+img: icons/svg/temple.svg
+scope: global
+command: |-
+  const aabb = new PIXI.Rectangle(
+    100,
+    100,
+    200,
+    200,
+  );
+
+  if (!this.drawing) {
+    this.drawing = new PIXI.Graphics();
+    canvas.stage.addChild(this.drawing);
+  }
+  this.drawing.clear();
+  this.drawing.lineStyle({
+    color: 0x00ff00,
+    thickness: 2,
+  });
+  this.drawing.drawShape(aabb);
+folder: null
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.346'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1752763690631
+  modifiedTime: 1752764050337
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!macros!FYdoxdvNrKFBrFk5'

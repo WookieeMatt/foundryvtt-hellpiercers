@@ -1,0 +1,32 @@
+_id: DERAFSH0KAVIANI0
+name: DERAFSH KAVIANI
+img: icons/sundries/flags/banner-standard-brown.webp
+type: class
+system:
+  description: >-
+    <p><em>When Eve-Sophia spread across the skies and took on the 148
+    Sufferings, humanity looked upon her sprawling and interconected roots and
+    saw themselves. We are each a dazzling light, bound in the maze of roots and
+    hung from the firmament ever blining the Demiurge.</em></p>
+  health: 0
+  active: Compendium.hellpiercers.player-abilities.Item.DERAFSH0KAVIANI1
+  passive: Compendium.hellpiercers.player-abilities.Item.DERAFSH0KAVIANI2
+  limit: Compendium.hellpiercers.player-abilities.Item.DERAFSH0KAVIANI3
+folder: 7KVmHWz8OUEGwBpj
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390323855
+  modifiedTime: 1756177979599
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!DERAFSH0KAVIANI0'

@@ -1,0 +1,33 @@
+_id: JEHOEL0000000000
+name: JEHOEL
+img: icons/tools/fasteners/chain-steel-grey.webp
+type: armor
+system:
+  description: >-
+    <p><em>Synthetic monadic links: Life and Death, Mind and Truth, Word and
+    Life, Man and Faith—each an eternally collapsing contradiction. The first
+    monadic technique builds similar symbolic links between the abstracted self
+    and others, for a moment transforming both subjects into universal concepts.
+    Real like radiation or hope.</em></p>
+  speed: 6
+  ability: Compendium.hellpiercers.player-abilities.Item.JEHOEL0000000002
+  movement: Compendium.hellpiercers.player-abilities.Item.JEHOEL0000000001
+  reversal: Compendium.hellpiercers.player-abilities.Item.JEHOEL0000000003
+folder: plav4DgytmDlKEnT
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390304211
+  modifiedTime: 1756177979602
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!JEHOEL0000000000'

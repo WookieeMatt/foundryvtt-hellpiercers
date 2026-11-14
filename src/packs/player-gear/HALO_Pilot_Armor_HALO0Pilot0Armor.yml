@@ -1,0 +1,33 @@
+_id: HALO0Pilot0Armor
+name: HALO Pilot Armor
+img: icons/equipment/chest/breastplate-layered-steel.webp
+type: armor
+system:
+  description: >-
+    <p><em>When your HALO Unit is reduced to 0 HP, your pilot may immediately
+    eject from the wreckage, teleporting to an unoccupied space within Range:3.
+    A dismounted HALO Unit pilot has the following stats and abilities as part
+    of their standard pilot loadout; they cannot equip other armors, weapons, or
+    equipment.</em></p>
+  speed: 5
+  ability: Compendium.hellpiercers.player-abilities.Item.HALO0Pilot0Armo2
+  movement: Compendium.hellpiercers.player-abilities.Item.HALO0Pilot0Armo1
+  reversal: Compendium.hellpiercers.player-abilities.Item.HALO0Pilot0Armo3
+folder: plav4DgytmDlKEnT
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390304211
+  modifiedTime: 1756177979600
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!HALO0Pilot0Armor'

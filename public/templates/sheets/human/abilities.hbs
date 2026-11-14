@@ -1,0 +1,194 @@
+<section
+  class="tab abilities {{tab.cssClass}} scrollable"
+  data-tab="{{tab.id}}"
+  data-group="primary"
+  id="{{partId}}"
+>
+  {{> weaponBlock weaponPri}}
+  {{> weaponBlock weaponSec}}
+  {{> armorBlock armor}}
+  {{> classBlock class}}
+  {{#if (or system.meta.reversal system.meta.limit_break)}}
+    {{> specialBlock reversal=armor.reversal limit=class.limit}}
+  {{/if}}
+</section>
+
+{{#*inline "weaponBlock"}}
+  <div
+    class="{{classes}} weapon item draggable"
+    {{#if item}}data-item-id="{{item.id}}"
+    {{/if}}
+  >
+    <div class="selection">
+      {{#if item}}
+        <label>{{item.name}}</label>
+        {{#if item.system.counter.enabled}}
+          <input
+            class="charge-input"
+            type="number"
+            value="{{item.system.counter.value}}"
+            min="0"
+            id="{{@root.rootId}}-{{item.id}}-counter.value"
+          >
+        {{/if}}
+        <a class="context-menu" role="button" data-context="weapon"><i
+            class="fa-solid fa-bars"
+          ></i></a>
+      {{else}}
+        <label>{{localize "HELLPIERCERS.ACTOR.SHEET.missing.weapon"}}</label>
+      {{/if}}
+    </div>
+    <div class="attack" data-attack-index="{{item.system.selected_attack}}">
+      {{#if item}}
+        {{#if (gt item.system.attacks.length 1)}}
+          <div class="switcher flexcol">
+            <a
+              class="icon fa-solid fa-caret-up"
+              data-action="switchWeaponProfile"
+              data-delta="1"
+            ></a>
+            <a
+              class="icon fa-solid fa-caret-down"
+              data-action="switchWeaponProfile"
+              data-delta="-1"
+            ></a>
+          </div>
+        {{/if}}
+        <span class="damage">Damage: {{
+            item.system.attack.damage.formula
+          }}</span>
+        <span class="range">
+          {{#if (eq item.system.attack.range.kind "bespoke")}}
+            <img src="{{item.system.attack.range.svg_uri}}">
+          {{else}}
+            {{item.system.attack.range.short_text}}
+          {{/if}}
+        </span>
+        <a
+          role="button"
+          class="button icon fa-solid fa-dice"
+          data-action="onAttack"
+        ></a>
+      {{/if}}
+    </div>
+    <div class="active">
+      <div data-tooltip="{{active_desc}}">
+        {{localize "HELLPIERCERS.ITEM.FIELDS.active.label"}}: {{
+          item.system.active.name
+        }}
+      </div>
+      {{#if item.isUsable}}
+        <a
+          class="use"
+          role="button"
+          data-action="useItem"
+          data-part="active"
+          data-tooltip="HELLPIERCERS.ACTOR.SHEET.actions.use"
+        ><i class="fa-solid fa-bolt"></i></a>
+      {{/if}}
+    </div>
+    <div class="passive">
+      <div data-tooltip="{{passive_desc}}">
+        {{localize "HELLPIERCERS.ITEM.FIELDS.passive.label"}}: {{
+          item.system.passive.name
+        }}
+      </div>
+    </div>
+  </div>
+{{/inline}}
+
+{{#*inline "armorBlock"}}
+  <div
+    class="armor item draggable"
+    {{#if item}}data-item-id="{{item.id}}"
+    {{/if}}
+  >
+    <div class="selection">
+      {{#if item}}
+        <label>{{item.name}}</label>
+        <a class="context-menu" role="button" data-context="armor"><i
+            class="fa-solid fa-bars"
+          ></i></a>
+      {{else}}
+        <label>{{localize "HELLPIERCERS.ACTOR.SHEET.missing.armor"}}</label>
+      {{/if}}
+    </div>
+    {{> abilityBlock ability}}
+    {{> abilityBlock movement}}
+  </div>
+{{/inline}}
+
+{{#*inline "classBlock"}}
+  <div
+    class="class item draggable"
+    {{#if item}}data-item-id="{{item.id}}"
+    {{/if}}
+  >
+    <div class="selection">
+      {{#if item}}
+        <label>{{item.name}}</label>
+        <a class="context-menu" role="button" data-context="class"><i
+            class="fa-solid fa-bars"
+          ></i></a>
+      {{else}}
+        <label>{{localize "HELLPIERCERS.ACTOR.SHEET.missing.class"}}</label>
+      {{/if}}
+    </div>
+    {{> abilityBlock active}}
+    {{> abilityBlock passive}}
+  </div>
+{{/inline}}
+
+{{#*inline "specialBlock"}}
+  <div class="special">
+    <div class="selection">
+      <label>{{localize "HELLPIERCERS.ACTOR.SHEET.meta.special"}}</label>
+    </div>
+    {{#if @root.system.meta.limit_break}}{{> abilityBlock limit}}{{/if}}
+    {{#if @root.system.meta.reversal}}{{> abilityBlock reversal}}{{/if}}
+  </div>
+{{/inline}}
+
+{{#*inline "abilityBlock"}}
+  <div
+    class="{{classes}} ability item"
+    {{#if item}}data-item-id="{{item.id}}"
+    {{/if}}
+    data-ability-key="{{key}}"
+  >
+    <div class="selection">
+      {{#if item}}
+        <label>{{item.name}}</label>
+        {{#if item.isUsable}}
+          <a
+            class="use"
+            role="button"
+            data-action="useItem"
+            data-tooltip="HELLPIERCERS.ACTOR.SHEET.actions.use"
+          ><i class="fa-solid fa-bolt"></i></a>
+        {{/if}}
+        <a class="context-menu" role="button" data-context="ability"><i
+            class="fa-solid fa-bars"
+          ></i></a>
+      {{else}}
+        <label>{{localize "HELLPIERCERS.ACTOR.SHEET.missing.ability"}}</label>
+      {{/if}}
+    </div>
+    {{#if bar}}
+      <div class="bar flexrow">
+        <label for="{{@root.rootId}}-{{key}}">{{localize bar.label}}</label>
+        {{
+          formInput bar.valueField
+      classes="value"
+      value=bar.value max=bar.max
+      type="number"
+      id=(concat @root.rootId "-" key)
+        }}
+        <span class="max">{{bar.max}}</span>
+      </div>
+    {{/if}}
+    <div class="description">
+      {{{desc}}}
+    </div>
+  </div>
+{{/inline}}

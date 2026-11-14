@@ -1,0 +1,32 @@
+_id: SACHIEL000000000
+name: SACHIEL
+img: icons/commodities/currency/coins-plain-gold.webp
+type: armor
+system:
+  description: >-
+    <p><em>Honeyed was the blood of Sachiel in his deep compassion, though its
+    sweetness made of him a miser. He met his end toppled and flayed by Tolgar
+    and his legions who had never tasted sweetness. Whomsoever wears Sachiel's
+    skin wears too Tolgar's stern lesson, “kindness given is not lost.”</em></p>
+  speed: 7
+  ability: Compendium.hellpiercers.player-abilities.Item.SACHIEL000000002
+  movement: Compendium.hellpiercers.player-abilities.Item.SACHIEL000000001
+  reversal: Compendium.hellpiercers.player-abilities.Item.SACHIEL000000003
+folder: plav4DgytmDlKEnT
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390304211
+  modifiedTime: 1756177979605
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!SACHIEL000000000'

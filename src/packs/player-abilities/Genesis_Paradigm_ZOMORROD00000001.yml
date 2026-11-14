@@ -1,0 +1,69 @@
+_id: ZOMORROD00000001
+name: Genesis Paradigm
+img: icons/magic/water/barrier-ice-crystal-wall-green.webp
+type: ability
+system:
+  action: active
+  effect: >-
+    <p>You begin each battle with <strong>3 Charges</strong>. As a
+    <strong>Support Action</strong>, spend a <strong>Charge</strong> to summon a
+    copy of a minion currently present on the battlefield, or spend <strong>2
+    Charges</strong> to summon a copy of a miniboss currently present on the 
+    battlefield. The summoned unit arrives within <strong>Range:3</strong> of
+    you and has HP equal to your HP at the time you summon it. It acts 
+    immediately after you in the initiative order and may only take a single
+    action per turn. Otherwise, it is identical to the copied miniboss or minion
+    and has all of their abilities and attacks. Minions with the
+    <strong>Swarm</strong> tag may create a Swarm with the other units you
+    control, gaining the full benefits of that Swarm.</p>
+  item:
+    type: class
+    uuid: Compendium.hellpiercers.player-gear.ZOMORROD00000000
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  uses: null
+  trigger: null
+  break_value: 10
+folder: DQKd6K2FogBjT9U4
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390239072
+  modifiedTime: 1756177965576
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!ZOMORROD00000001'

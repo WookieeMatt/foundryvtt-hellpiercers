@@ -1,0 +1,505 @@
+{
+  "TYPES": {
+    "Actor": {
+      "boss": "Boss",
+      "faction": "Faction",
+      "halo": "HALO Unit",
+      "human": "HELLPIERCER",
+      "minion": "Minion",
+      "spawner": "Spawner"
+    },
+    "Item": {
+      "ability": "Ability",
+      "armor": "Armor",
+      "class": "Class",
+      "equipment": "Equipment",
+      "gear": "Gear",
+      "halo_system": "HALO System",
+      "halo_weapon": "HALO Weapon",
+      "weapon": "Weapon"
+    }
+  },
+  "HELLPIERCERS": {
+    "ACTOR": {
+      "FIELDS": {
+        "actions": { "label": "Actions" },
+        "agnosia": {
+          "label": "Agnosia",
+          "description": { "label": "Effect" },
+          "value": { "label": "Value" }
+        },
+        "armor": { "label": "Armor" },
+        "attacks": { "label": "Attacks" },
+        "biography": { "label": "Biography" },
+        "callsign": { "label": "Callsign" },
+        "class": { "label": "Class" },
+        "faction": { "label": "Faction" },
+        "health": { "label": "HP" },
+        "limit": { "label": "Break Value" },
+        "max_weapons": { "label": "Max Weapons" },
+        "meta": {
+          "label": "Progression",
+          "limit_break": { "label": "Limit Break Unlocked" },
+          "multi_system": { "label": "Multi-System Unlocked" },
+          "reversal": { "label": "Reversal Unlocked" },
+          "weapon_slots": { "label": "Weapon Slots" }
+        },
+        "pilot": { "label": "Pilot" },
+        "pronouns": { "label": "Pronouns", "placeholder": "any/all" },
+        "reversal_charges": { "label": "Charges" },
+        "scale": { "label": "Scale" },
+        "spawn": {
+          "label": "Spawn",
+          "charge": { "label": "Charges" },
+          "name": { "label": "Name" },
+          "spawn": {
+            "label": "Spawning",
+            "initial": "At the end of the round, this unit gains a <strong>Charge</strong>. On the GM’s turn, they may spend 1 Charge to spawn a minion from this faction, or 5 Charges to spawn a miniboss."
+          },
+          "special": { "label": "Special" }
+        },
+        "special": {
+          "label": "Special",
+          "description": { "label": "Effect" },
+          "name": { "label": "Name" }
+        },
+        "speed": { "label": "Speed" },
+        "strike": {
+          "label": "Strike",
+          "damage": { "label": "Damage" },
+          "description": { "label": "Effect" },
+          "name": { "label": "Name" },
+          "range": { "label": "Range" }
+        },
+        "standard_armament": { "label": "Standard Armament" },
+        "tags": { "label": "Tags" },
+        "weapon": { "label": "Weapon" }
+      },
+      "SHEET": {
+        "actions": {
+          "editTags": "Edit Tags",
+          "addStatus": "Add Status",
+          "use": "Use",
+          "rez": "Rez"
+        },
+        "status": {
+          "label": "Status",
+          "stacks": "Stacks"
+        },
+        "effects": {
+          "active": "Active Effects",
+          "item": "Item Effects",
+          "temporary": "Temporary Effects"
+        },
+        "context": {
+          "chat": "Post to Chat",
+          "open": "Open Sheet"
+        },
+        "loadout": {
+          "equipment": "Equimpent",
+          "gear": "Gear",
+          "weapons": "Weapons"
+        },
+        "meta": {
+          "configure": "Configure Unlocks",
+          "special": "Special Abilities"
+        },
+        "missing": {
+          "ability": "Missing Ability",
+          "armor": "No Armor",
+          "class": "No Class",
+          "equipment": "No Equipment",
+          "gear": "No Gear",
+          "halo_system": "No System",
+          "weapon": "No Weapon",
+          "weapons": "No Weapons"
+        }
+      },
+      "TABS": {
+        "abilities": "Abilities",
+        "loadout": "Loadout",
+        "biography": "Notes",
+        "effects": "Effects"
+      }
+    },
+    "CHAT": {
+      "FIELDS": {},
+      "ACTIONS": {
+        "applyDamage": "Apply Damage"
+      }
+    },
+    "COMBAT": {
+      "FIELDS": {},
+      "activateCombatantTurn": "Start Turn",
+      "deactivateCombatantTurn": "End Turn"
+    },
+    "EFFECT": {
+      "FIELDS": {
+        "decay": {
+          "label": "Decay Trigger",
+          "turn": "End of Turn",
+          "round": "End of Round",
+          "trigger": "When Triggered",
+          "never": "Manual",
+          "special": "Special"
+        },
+        "stacks": { "label": "Stacks" }
+      }
+    },
+    "ITEM": {
+      "FIELDS": {
+        "ability": { "label": "Armor Ability" },
+        "action": { "label": "Action Type" },
+        "active": { "label": "Active", "name": { "label": "Active" } },
+        "attack": {
+          "label": "Attack",
+          "damage": { "label": "Damage" },
+          "range": { "label": "Range" }
+        },
+        "available": { "label": "Use Available" },
+        "break_value": { "label": "Break Value" },
+        "counter": { "label": "Counter", "enabled": { "label": "Use Counter" } },
+        "damage": { "label": "Damage" },
+        "description": { "label": "Description" },
+        "effect": { "label": "Effect" },
+        "health": { "label": "Health" },
+        "kind": { "label": "Type" },
+        "limit": { "label": "Limit Break" },
+        "movement": { "label": "Movement" },
+        "passive": { "label": "Passive", "name": { "label": "Passive" } },
+        "range": { "label": "Range" },
+        "reversal": { "label": "Reversal" },
+        "secondary": {
+          "label": "Secondary Mode",
+          "action": { "label": "Action" },
+          "effect": { "label": "Effect" }
+        },
+        "speed": { "label": "Speed" },
+        "tags": { "label": "Tags" },
+        "trigger": { "label": "Trigger" },
+        "upgrades": { "label": "Upgrades" },
+        "uses": { "label": "Charges" }
+      },
+      "SHEET": {
+        "missing": { "effects": "No Active Effects" },
+        "profiles": {
+          "add": "Add New Profile",
+          "remove": "Remove",
+          "rename": "Rename"
+        },
+        "upgrades": { "add": "Add New Upgrade" }
+      },
+      "TABS": {
+        "details": "Details",
+        "effects": "Effects",
+        "profiles": "Profiles"
+      },
+      "action": {
+        "active": "Active",
+        "attack": "Attack",
+        "limit": "Limit Break",
+        "movement": "Movement",
+        "passive": "Passive",
+        "reversal": "Reversal",
+        "special": "Special"
+      }
+    },
+    "ACTION": {
+      "main": "Main Action",
+      "support": "Support Action",
+      "aux": "Aux Action",
+      "passive": "Passive"
+    },
+    "ATTACK": {
+      "FIELDS": {
+        "damage": { "label": "Damage" },
+        "description": { "label": "Description" },
+        "name": { "label": "Name" },
+        "range": { "label": "Range" }
+      }
+    },
+    "DAMAGE": {
+      "FIELDS": {
+        "formula": { "label": "Damage Formula" },
+        "conditions": { "label": "Conditions" },
+        "qualities": {
+          "label": "Qualities",
+          "piercing": { "label": "Piercing" },
+          "transference": { "label": "Transference" },
+          "breaker": { "label": "Breaker" },
+          "overpenetrating": { "label": "Overpenetrating" }
+        }
+      }
+    },
+    "RANGE": {
+      "FIELDS": {
+        "kind": { "label": "Range Type" },
+        "modifiers": {
+          "label": "Modifiers",
+          "length": { "label": "Length" },
+          "push": { "label": "Push" },
+          "range": { "label": "Range" },
+          "recoil": { "label": "Recoil" },
+          "width": { "label": "Width" }
+        },
+        "name": { "label": "Name" },
+        "value": { "label": "Value" }
+      },
+      "type": {
+        "bespoke": "Bespoke",
+        "burst": "Burst",
+        "blast": "Blast",
+        "line": "Line",
+        "cone": "Cone",
+        "ring": "Ring",
+        "star": "Star",
+        "charge": "Charge",
+        "wall": "Wall",
+        "arc": "Arc",
+        "targets": "Targets",
+        "blob": "Blob"
+      }
+    },
+    "SHEETS": {
+      "ActiveEffect": { "base": "HELLPIERCERS Active Effect Sheet" },
+      "Actor": {
+        "boss": "Boss Sheet",
+        "halo": "HALO Unit Sheet",
+        "human": "HELLPIERCER Sheet",
+        "minion": "Minion Sheet"
+      },
+      "Item": { "weapon": "Weapon Sheet" }
+    },
+    "UPGRADE": {
+      "FIELDS": {
+        "cost": {
+          "label": "Cost",
+          "brimstone": { "label": "Brimstone" },
+          "hellsteel": { "label": "Hellsteel" },
+          "soulfire": { "label": "Soulfire" }
+        }
+      }
+    },
+    "DIALOG": {
+      "new_ability": { "title": "New Ability", "content": "Add a new Ability?" },
+      "HaloUpgradeEditor": { "title": "Upgrade Editor", "cost": "Cost" },
+      "RangeEditor": { "title": "Edit Range" },
+      "replaceItem": {
+        "content": "<p>Replace <strong>{old}</strong> with <strong>{new}</strong>?</p>"
+      },
+      "SheetConfig": {
+        "title": "Sheet Config: {name}"
+      }
+    },
+    "SETTINGS": {
+      "playerCountOverride": {
+        "name": "Player Count Override",
+        "hint": "Sets the number of players for boss action calculation.  Leave blank to autodetect"
+      },
+      "automateEffects": {
+        "name": "Automate Turn Effects",
+        "hint": "The GM client automatically resolves Poison, Healing, Blazing, Pain Aura and effect decay at the start and end of each unit's turn."
+      },
+      "armorRule": {
+        "name": "Armor Stack Rule",
+        "hint": "How Armor reduces damage.",
+        "flat": "Rules as written: -1 damage per instance regardless of stacks",
+        "stacks": "Each stack reduces damage by 1"
+      },
+      "bleedRule": {
+        "name": "Bleed Stack Rule",
+        "hint": "How Bleed increases damage.",
+        "flat": "Rules as written: +1 damage per instance regardless of stacks",
+        "stacks": "Each stack adds 1 damage"
+      },
+      "trackActions": {
+        "name": "Track Actions",
+        "hint": "Track Main, Support, Aux and Move actions for each combatant in the combat tracker."
+      },
+      "chatCards": {
+        "name": "Post Ability Cards",
+        "hint": "Using an ability, weapon active, armor action or equipment from a sheet posts a chat card and spends the matching action."
+      }
+    },
+    "ACTIONS": {
+      "main": { "label": "Main", "hint": "Attack, Rez, or Weapon Ability" },
+      "support": { "label": "Support", "hint": "Use, Class Active, Armor Action, or Equipment" },
+      "aux": { "label": "Aux", "hint": "Shove, Weapon Swap, or Sprint" },
+      "move": { "label": "Move", "hint": "Move up to your Speed" },
+      "haste": "Haste: extra action",
+      "shock": "Shock: this action is one tier higher",
+      "frozen": "Frozen: Aux Actions are unavailable",
+      "spent": "Spent",
+      "available": "Available",
+      "reset": "Refresh actions",
+      "none": "No actions remaining"
+    },
+    "TACCOM": {
+      "poison": "{name} takes {value} Poison damage.",
+      "healing": "{name} recovers {value} HP from Healing.",
+      "blazing": "{name} takes {value} Blazing damage.",
+      "blazingSpread": "{name} catches fire from a neighbor.",
+      "painAura": "{name} takes {value} damage from a Pain Aura.",
+      "countdown": "Countdown expired on {name}.",
+      "provoke": "{name} Provokes {target}: 1D6 = {value}.",
+      "agnosia": "{name} enters AGNOSIA!",
+      "downed": "{name} is down.",
+      "turnStart": "{name} begins their turn.",
+      "roundEnd": "Round {round} ends.",
+      "turnEnd": "{name} ends their turn.",
+      "roundStart": "Round {round} begins.",
+      "applied": "Applied {value} damage to {name}.",
+      "healed": "Healed {name} for {value}.",
+      "limitBreak": "{name} unleashes their Limit Break!",
+      "limitReady": "{name}'s Limit Break is ready.",
+      "reversalSpent": "{name} spends a Reversal charge ({left} left).",
+      "rez": "{name} is back on their feet."
+    },
+    "STATUSES": {
+      "aegis": {
+        "name": "Aegis",
+        "description": "This unit may count as Flying for a number of squares of their movement up to their stacks of Aegis each turn. Flying units move over all types of terrain unimpeded, are treated as having +1 Elevation, and do not Provoke. Aegis-affected units may choose to spend their Aegis flight at any point during their movement. Aegis does not change a unit's Speed and does not count as adding spaces of movement, only modifying existing movement. Remove 1 stack at the end of the affected unit's turn"
+      },
+      "armor": {
+        "name": "Armor",
+        "description": "This unit takes -1 damage from each instance of damage. Remove 1 stack at the end of the affected unit's turn."
+      },
+      "blazing": {
+        "name": "Blazing",
+        "description": "This unit takes 1 damage at the start of each turn. Blazing spreads: any unit who begins a turn adjacent to a unit with Blazing gains Blazing:1 and im- mediately takes its 1 damage. Additional Blazing does not add to existing Blazing — keep the highest number of stacks from any one source and ignore all others. Remove 1 stack at the end of the affected unit’s turn, but only if there are no units adjacent to it."
+      },
+      "bleed": {
+        "name": "Bleed",
+        "description": "All attacks against this target deal an additional 1 damage. Remove 1 stack at the end of the affected unit’s turn."
+      },
+      "bound": {
+        "name": "Bound",
+        "description": "This unit cannot inflict Effects on other creatures. Actions otherwise function as normal. Remove 1 stack at the end of the affected unit's turn."
+      },
+      "compel": {
+        "name": "Compel",
+        "description": "This unit forces enemies within a range equal to its stacks to attack it during their turn, if able. Compel:1 affects all units that start their turns adjacent or become adjacent and each additional stack increases the range by 1 square. Remove 1 stack after each attackagainst the affected unit."
+      },
+      "countdown": {
+        "name": "Countdown",
+        "description": "Countdown does nothing until the Effect ends, at which point it triggers a special effect based on the source of the Countdown. Remove 1 stack at the end of the round."
+      },
+      "enrage": {
+        "name": "Enrage",
+        "description": "This unit must attack a unit with Compel if possible, including attacking an ally. It can only take attacks that do not target a unit with Compel after making an attack that does, unless no unit has Compel. Remove 1 stack at the end of the affected unit’s turn."
+      },
+      "haste": {
+        "name": "Haste",
+        "description": "This unit may make one additional Action of any type during their turn. Remove 1 stack after the additional action has been taken."
+      },
+      "healing": {
+        "name": "Healing",
+        "description": "This unit restores HP equal to their Healing value at the end of their turn. When this Effect is applied to a tile, a unit standing on it is considered to have the Effect at the tile’s number of stacks. A unit buffed with Healing:2 will restore 2 HP at the end of their turn regardless of where they move; a Healing:3 tile will then also restore 3 HP to that unit if they end their turn on that tile. These Healing Effects resolve separately if a unit is subject to both. This cannot increase a unit’s max health beyond its default max HP. Remove 1 stack from each source of healing at the end of the affected unit’s turn."
+      },
+      "pin": {
+        "name": "Pin",
+        "description": "This unit cannot move or Sprint. Remove 1 stack at the end of the affected unit’s turn."
+      },
+      "poison": {
+        "name": "Poison",
+        "description": "This unit takes 1 HP damage per stack at the end of their turn. After Poison’s damage is dealt, remove 1 stack of Poison."
+      },
+      "shaded": {
+        "name": "Shaded",
+        "description": "Creatures with Shaded:1+ are surrounded by a Burst:1 “fog of war” effect, hiding enemies and their movements from players. Players can only see enemies within a Shaded zone if they are adjacent to them. Shaded zones move with the unit or affected space unless stated otherwise. Each additional stack of Shaded increases the scale of the burst to the same number. Remove 1 stack at the end of the affected unit's turn."
+      },
+      "shock": {
+        "name": "Shock",
+        "description": "This unit’s actions are treated as one tier higher than their action type — Aux Actions count as Support Action, Support Actions count as Main Actions, and Main Actions are impossible. Remove 1 stack at the end of the affected unit’s turn."
+      },
+      "slow": {
+        "name": "Slow",
+        "description": "This unit’s movement costs are doubled. Remove 1 stack at the end of the affected unit’s turn."
+      },
+      "transference": {
+        "name": "Transference",
+        "description": "This unit heals itself, or this attack heals the attacker, for HP equal to any damage they inflict. Remove 1 stack at the end of the affected unit's turn."
+      },
+      "broken": {
+        "name": "Broken",
+        "description": "All attacks against this target deal maximum damage. Remove 1 stack after each attack against the affected unit."
+      },
+      "fortified": {
+        "name": "Fortified",
+        "description": "When a HELLPIERCER unit begins its turn on a tile with Fortified, remove the Effect and restore 2 Reversal Charges to that unit."
+      },
+      "pain_aura": {
+        "name": "Pain Aura",
+        "description": "This unit projects a Scale:2 field around them that causes 1 damage to any units ending their turn within it, regardless of allegiance. Remove 1 stack at the end of the affected unit's turn."
+      },
+      "frozen": {
+        "name": "Frozen",
+        "description": "The affected unit cannot use Aux Actions. Hitting a Frozen target triggers Shatter, which replaces the attack's damage and effects and clears all Frozen. Ticks down at the end of the affected unit's turn."
+      },
+      "wound": {
+        "name": "Wound",
+        "description": "A mark of CAIM's vengeance. Wounds do not tick down and last until the TACCOM encounter is over or a Metricos ability spends them. Whenever a Metricos unit applies an Effect it also applies Wound:1."
+      },
+      "wrack": {
+        "name": "Wrack",
+        "description": "The next attack against this unit cannot roll any damage die lower than its Wrack value (never above the die's maximum), then all Wrack is cleared."
+      },
+      "constrict": {
+        "name": "Constrict",
+        "description": "This unit may not move on their turn, and takes additional damage from all sources equal to its Constrict stacks."
+      },
+      "brand": {
+        "name": "Brand",
+        "description": "When the Brand reaches 0, the Branded creature or object explodes, dealing 4D6 damage to the target and 6 damage to all adjacent targets. Remove 1 stack at the end of the round."
+      },
+      "retaliation": {
+        "name": "Retaliation",
+        "description": "Gained when attacked while in a riposte stance. Spend stacks to empower your next counter-charge. Lose 1 stack when you end a turn outside the stance."
+      },
+      "retrieve": {
+        "name": "Retrieve",
+        "description": "When this unit is attacked it may spend 1 stack to move adjacent to its anchor, or move the anchor adjacent to itself."
+      },
+      "rush": {
+        "name": "Rush",
+        "description": "Spend a stack as a Free action to double your Speed at any time during your turn."
+      },
+      "magnetic": {
+        "name": "Magnetic",
+        "description": "At the start of the affected unit's turn, creatures linked to it move 2 spaces toward it. This is not regular movement and costs no Speed, but still Provokes."
+      },
+      "snakeskin": {
+        "name": "Snakeskin",
+        "description": "The unit takes 0 damage from the next attack targeting it, then loses Snakeskin."
+      },
+      "glassflesh": {
+        "name": "Glassflesh",
+        "description": "The target receives double damage from the next attack targeting them. The status lingers on the space where a unit dies and is picked up by the next enemy to enter it."
+      },
+      "agnosia": {
+        "name": "Agnosia",
+        "description": "This unit has reached its Agnosia threshold and may use its single-use Agnosia move."
+      }
+    },
+    "TokenConfig": {
+      "manual_token_size": { "tooltip": "Unlock token size from actor scale stat" }
+    },
+    "TokenHUD": {
+      "swarmActions": {
+        "tooltip": "Swarm Actions",
+        "new": "New Swarm",
+        "merge": "Merge selected",
+        "delete": "Delete"
+      }
+    },
+    "title": "HELLPIERCERS",
+    "tagline": "Hell is a prison. Break its bars.",
+    "packs": {
+      "macros": "HELLPIERCERS Macros",
+      "debugmacros": "Debug Macros",
+      "player-abilities": "Player Abilities",
+      "player-gear": "Player Gear",
+      "systeminfo": "System Information"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+type: Item
+folder: null
+name: HALO Weapon
+color: null
+sorting: a
+_id: 3PRmrrGpg5K8AWEp
+description: ''
+sort: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756147590766
+  modifiedTime: 1756147590766
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!folders!3PRmrrGpg5K8AWEp'

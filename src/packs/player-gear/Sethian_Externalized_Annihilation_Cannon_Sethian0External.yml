@@ -1,0 +1,78 @@
+_id: Sethian0External
+name: Sethian Externalized Annihilation Cannon
+img: icons/magic/unholy/beam-ringed-impact-purple.webp
+type: weapon
+system:
+  description: >-
+    <p><em>"It's an inversion of the Heimarne matrix— it projects, rather than
+    contains. Expands, rather than condenses. And frees, rather than enslaves.
+    You need condensed celestials for power, but that's child’s play for us
+    these days." - Technite Zostrianos</em></p>
+  attacks:
+    - name: Attack
+      damage:
+        formula: 3 + 5D6
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: true
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: bespoke
+        value: 1
+        spaces:
+          - i: -1
+            j: 2
+          - i: 0
+            j: 2
+          - i: 0
+            j: 3
+          - i: 1
+            j: 2
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+  active:
+    name: Canticle Boosted Warhook
+    description: >-
+      <p>Target an enemy, obstacle, or wall within <strong>Range:3</strong>.
+      Instantly move adjacent to your target. If the target is an enemy, inflict
+      <strong>Blazing:2</strong> and deal damage. You become immune to
+      <strong>Blazing</strong> until the end of your next turn.</p>
+  passive:
+    name: Precise Chaos
+    description: >-
+      <p>This weapon has the <strong>Breaker</strong> tag. If you choose not to
+      deal damage to the squares of a Swarm separately with
+      <strong>Breaker</strong>, deal this weapon’s damage to the Swarm once for
+      each square of your pattern that targets it (up to a maximum of 12+20D6
+      damage).</p>
+  selected_attack: 0
+folder: GTdAaocCUUI6rY5Z
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753146263584
+  modifiedTime: 1756177979605
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Sethian0External'

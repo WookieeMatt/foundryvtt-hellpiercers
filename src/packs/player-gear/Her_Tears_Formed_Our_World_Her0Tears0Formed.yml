@@ -1,0 +1,85 @@
+_id: Her0Tears0Formed
+name: Her Tears Formed Our World
+img: icons/commodities/gems/gem-rough-drop-blue.webp
+type: weapon
+system:
+  description: >-
+    <p><em>A droplet from the silvery crystal tears Sophia shed for the cruelty
+    visited upon humankind, or perhaps for her child, ignorant in the dark
+    water. Left orphaned until discovered after our ascension, it had fractured
+    in the eons since, gaining a jagged edge. Bound in scripture to a
+    transuranic metal haft, this axe makes Her sorrow our strength.</em></p>
+  attacks:
+    - name: Attack
+      damage:
+        formula: (@charge)D10
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: bespoke
+        value: 1
+        spaces:
+          - i: -1
+            j: -1
+          - i: -1
+            j: 0
+          - i: -1
+            j: 1
+          - i: 0
+            j: -1
+          - i: 0
+            j: 1
+          - i: 1
+            j: -1
+          - i: 1
+            j: 0
+          - i: 1
+            j: 1
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+  active:
+    name: Ophthalmos
+    description: >-
+      <p>Gain <strong>2 Spin Charge</strong> and move up to your Speed in a
+      straight line.</p>
+  passive:
+    name: Blood−Lined Sairo
+    description: >-
+      <p>When an enemy enters your range, deal your damage and then reduce spin
+      by 1. When you kill an enemy on a turn that isn’t yours, move up to your
+      <strong>Speed</strong>.</p>
+  selected_attack: 0
+  counter:
+    enabled: true
+folder: GTdAaocCUUI6rY5Z
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753146263584
+  modifiedTime: 1756177979601
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Her0Tears0Formed'

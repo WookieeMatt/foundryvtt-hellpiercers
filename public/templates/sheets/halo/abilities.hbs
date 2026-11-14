@@ -1,0 +1,135 @@
+<section
+  class="tab {{tab.id}} {{tab.cssClass}} scrollable"
+  data-group="primary"
+  data-tab="abilities"
+>
+  <div class="item-block standard">
+    <label class="flexrow">{{localize system.standard_armament.name}}</label>
+    <div class="damage">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.attack.damage.label"}}</label>
+      <div class="value">{{system.standard_armament.damage.formula}}</div>
+    </div>
+    <div class="range flexcol">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.attack.range.label"}}</label>
+      <div class="value flexrow">
+        <span>
+          {{#if (eq system.standard_armament.range.kind "bespoke")}}
+            <img
+              src="{{system.standard_armament.range.svg_uri}}"
+              class="range-preview"
+            >
+          {{else}}
+            {{system.standard_armament.range.short_text}}
+          {{/if}}
+        </span>
+        <a
+          class="weapon-damage button icon fa-solid fa-dice"
+          data-action="onAttack"
+        ></a>
+      </div>
+    </div>
+  </div>
+  <div class="item-block item weapon" data-item-id="{{system.weapon.id}}">
+    {{#if system.weapon}}
+      <label class="flexrow">
+        <span class="flex1">{{system.weapon.name}}</span>
+        {{#if (gt system.weapon.system.attacks.length 1)}}
+          <span class="profile">
+            <a
+              class="icon fa-solid fa-caret-left"
+              data-action="switchWeaponProfile"
+              data-delta="-1"
+            ></a>
+            {{system.weapon.system.attack.name}}
+            <a
+              class="icon fa-solid fa-caret-right"
+              data-action="switchWeaponProfile"
+              data-delta="1"
+            ></a>
+          </span>
+        {{/if}}
+        {{#if system.weapon.system.counter.enabled}}
+          <input
+            class="charge-input"
+            type="number"
+            value="{{system.weapon.system.counter.value}}"
+            min="0"
+            id="{{rootId}}-{{system.weapon.id}}-counter.value"
+          >
+        {{/if}}
+        <a class="control" role="button" data-context="weapon"><i
+            class="fa-solid fa-bars"
+          ></i></a>
+      </label>
+      <div class="damage">
+        <label>{{
+            localize "HELLPIERCERS.ITEM.FIELDS.attack.damage.label"
+          }}</label>
+        <div class="value">{{system.weapon.system.attack.damage.formula}}</div>
+      </div>
+      <div class="range flexcol">
+        <label>{{
+            localize "HELLPIERCERS.ITEM.FIELDS.attack.range.label"
+          }}</label>
+        <div class="value flexrow">
+          <span>
+            {{#if (eq system.weapon.system.attack.range.kind "bespoke")}}
+              <img
+                src="{{system.weapon.system.attack.range.svg_uri}}"
+                class="range-preview"
+              >
+            {{else}}
+              {{system.weapon.system.attack.range.short_text}}
+            {{/if}}
+          </span>
+          <a
+            class="weapon-damage button icon fa-solid fa-dice"
+            data-action="onAttack"
+          ></a>
+        </div>
+      </div>
+      <div class="effect flexcol">
+        <label>{{localize "HELLPIERCERS.ITEM.FIELDS.effect.label"}}</label>
+        <div class="editor-content">
+          {{{weapon.effect.enriched}}}
+        </div>
+      </div>
+      <div class="secondary flexcol">
+        <label>
+          {{localize "HELLPIERCERS.ITEM.FIELDS.secondary.label"}}
+          ({{
+            localize (concat "HELLPIERCERS.ACTION." system.weapon.system.secondary.action)
+          }})
+        </label>
+        <div class="editor-content">
+          {{{weapon.secondary.enriched}}}
+        </div>
+      </div>
+    {{else}}
+      <label>{{localize "HELLPIERCERS.ACTOR.FIELDS.weapon.label"}}</label>
+      <div class="value">
+        {{localize "HELLPIERCERS.ACTOR.SHEET.missing.weapon"}}
+      </div>
+    {{/if}}
+  </div>
+  {{#each systems}}
+    <div
+      class="item-block item system system{{@index}} draggable"
+      data-item-id="{{item.id}}"
+    >
+      <label class="flexrow">
+        <span>
+          {{item.name}}
+        </span>
+        {{#if item.id}}
+          <a class="control" role="button" data-context="weapon"><i
+              class="fa-solid fa-bars"
+            ></i></a>
+        {{/if}}
+      </label>
+      <div class="editor-content">
+        {{{effect}}}
+      </div>
+    </div>
+  {{/each}}
+</section>

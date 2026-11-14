@@ -1,0 +1,32 @@
+_id: ASMODEL000000000
+name: ASMODEL
+img: icons/commodities/biological/eye-blue.webp
+type: armor
+system:
+  description: >-
+    <p><em>Asmodel's cruelty wove the strings of agape with threads of the bull,
+    and coated tongues in carnelian. His minions roamed the palaces of devotion
+    and brought ruin to the beauty therein. He was slain by the lovers Orisia
+    and Karisia, whose tongues broke his.</em></p>
+  speed: 4
+  ability: Compendium.hellpiercers.player-abilities.Item.ASMODEL000000002
+  movement: Compendium.hellpiercers.player-abilities.Item.ASMODEL000000001
+  reversal: Compendium.hellpiercers.player-abilities.Item.ASMODEL000000003
+folder: plav4DgytmDlKEnT
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390304211
+  modifiedTime: 1756177979596
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!ASMODEL000000000'

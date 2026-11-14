@@ -1,0 +1,80 @@
+name: Keraunos Imas
+img: icons/magic/fire/projectile-wave-arrow.webp
+type: halo_weapon
+_id: Keraunos0Imas000
+system:
+  description: >-
+    <p><em>Though solar nexus systems provide HELLPIERCER forces with abundant,
+    portable energy, there are still times when additional power is
+    required.</em></p>
+  counter:
+    enabled: true
+    value: 0
+    max: null
+  effect: >-
+    <p>Inflict Wrack equal to the flat damage value dealt by this attack (e.g. a
+    damage roll of 5+3D8+6 will inflict Wrack:11). </p><p><em>This attack deals
+    +3 Damage to all targets for each non-Swarm target within its area (e.g. if
+    three non-Swarm targets are attacked, all targets take +9 damage).</em></p>
+  secondary:
+    action: passive
+    effect: >-
+      Unlike other HALO Unit weapons, Keraunos Imas's Secondary Mode activates
+      automatically once the weapon has been fired. At the start of your next
+      turn after attacking with it, your mech begins drawing in ambient energy
+      to recharge its capacitors and becomes wreathed in crackling divine
+      electricity from the overflow. This generates a Burst:2 area around you;
+      hostile characters that begin their turn in this area or enter it for the
+      first time in a round generate an Arc:2, Slow:2 effect on nearby enemy
+      units. Allied characters that begin their turn in this area or adjacent to
+      you are empowered by coursing energy, causing their next attack to deal
+      Wrack:3 in addition to its usual effects (this does not stack with
+      itself). At the start of your following turn, this effect ends and
+      Keraunos Imas can be fired once again.
+  attacks:
+    - damage:
+        formula: 5 + 3D8 + (3 * @charge)
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: true
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: arc
+        value: 10
+        spaces:
+          - i: 0
+            j: 1
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+  selected_attack: 0
+  tags: []
+folder: 3PRmrrGpg5K8AWEp
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756170201241
+  modifiedTime: 1756177979603
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Keraunos0Imas000'

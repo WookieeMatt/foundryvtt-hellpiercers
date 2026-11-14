@@ -1,0 +1,32 @@
+_id: Hyper0Synaptic0A
+name: Hyper-Synaptic Anchor
+img: icons/magic/control/energy-stream-link-teal.webp
+type: equipment
+system:
+  description: >-
+    <p><em>"Look deeper and you'll realize that every Human is linked on a
+    metaphysical level, all of us instinctively reaching out for each other.
+    After all, what else do we have?"</em></p>
+  effect: >-
+    <p>Mark an Ally; they gain Retrieve:3. When any player with Retrieve is
+    attacked, they may spend 1 stack of Retrieve to move adjacent to you, or
+    move you adjacent to themselves.</p>
+  available: true
+folder: ttVRofJze0f0u91g
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754147092644
+  modifiedTime: 1756177979602
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Hyper0Synaptic0A'

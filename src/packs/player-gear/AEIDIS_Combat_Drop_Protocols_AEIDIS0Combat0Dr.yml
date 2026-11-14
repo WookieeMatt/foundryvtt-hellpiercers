@@ -1,0 +1,57 @@
+name: AEIDIS Combat Drop Protocols
+type: halo_system
+_id: AEIDIS0Combat0Dr
+img: icons/magic/movement/trail-streak-impact-blue.webp
+system:
+  description: >-
+    <p><em>The Apocryphon of John, a Rho-class battlecruiser, was trapped in a
+    turbulent dimensional fissure while on upper reach patrol, slipping into an
+    uncharted n-space pocket beyond linear chronology and vanishing from local
+    space-time. So far, recovery attempts have proven fruitless, but Ekstatikos
+    Engineers on exceptional doses of psi-space induction hyper-LSD have made
+    contact with the ship’s psi-space imprints. These echoes, brief instances of
+    pseudo-existence, serve as a novel tactical deployment platform. HALO pilots
+    with APOCRYPHON drop protocol authorization have their mechs
+    quantum-entangled with dimensional transmitter arrays in DIS, allowing
+    instant manifestation within an echo of the Apocryphon's drop bay upon
+    activation. These echoes enable orbit-to-Hell insertion procedures and
+    provide an effectively limitless supply of drop pods, though they lack
+    permanence between transmissions. Some pilots have experienced interactions
+    with the echoes of the Apocryphon's crew, who offer cryptic advice and
+    well-wishes on their missions, hinting at a recollection of previous drop
+    actions.</em></p>
+  effect: >-
+    <p>At the start of combat, you may declare that your HALO Unit is awaiting a
+    combat drop; hold it in reserve instead of deploying it as normal. During
+    the first round of combat, you enter the fight via drop pod, slamming down
+    into the fray at any point when you would be able to take your turn
+    normally. When you do this, place yourself anywhere on the map that isn't
+    occupied by allied characters, including overlapping with hostile
+    characters. You must deploy no further Range:5 away from an allied character
+    unless you hold your deployment until every other allied character has taken
+    their turn, at which point you may deploy anywhere on the map you wish.
+    Swarm NPCs you land on are instantly and messily killed, and that Swarm is
+    Broken. Other NPCs take 2D10 damage, gain Slow:1, and are then pushed to the
+    nearest unoccupied space adjacent to you. Any Cover, Impassible, or Obstacle
+    terrain you land on is completely obliterated and reduced to Uneasy terrain.
+    You may then act immediately after landing, taking your turn for the round
+    as normal.</p>
+  upgrades: []
+folder: eG8qD3hpnyaGlvhV
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1756146302269
+  modifiedTime: 1756177979595
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!AEIDIS0Combat0Dr'

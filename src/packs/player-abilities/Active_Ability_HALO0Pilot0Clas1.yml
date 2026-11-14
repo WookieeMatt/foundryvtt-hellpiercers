@@ -1,0 +1,65 @@
+_id: HALO0Pilot0Clas1
+name: Active Ability
+img: icons/commodities/tech/cog-bronze.webp
+type: ability
+system:
+  action: active
+  effect: >-
+    <p>As a Main Action, attack an enemy within Range:2. This attack is Arc:2
+    and Charge. For each enemy you hit with your Arc, your attack gains an
+    additional Arc:1. The first targeted enemy  takes 1 damage, the second takes
+    2 damage, and so on. You may not target the same enemy more than once per
+    turn. You must end this action on a valid space. If you arc into an enemy
+    and cannot end on an adjacent space, take 2 damage for each space you have
+    to move till you reach the nearest safe tile.</p>
+  item:
+    type: class
+    uuid: Compendium.hellpiercers.player-gear.HALO0Pilot0Class
+  attack:
+    range:
+      kind: targets
+      value: 1
+      name: Range
+      spaces:
+        - i: 0
+          j: 1
+      modifiers:
+        range: null
+        width: null
+        length: null
+        push: null
+        recoil: null
+        scale: null
+    damage:
+      formula: '1'
+      source: null
+      conditions: {}
+      qualities:
+        piercing: false
+        transference: false
+        breaker: false
+        overpenetrating: false
+      wrack: null
+      value: null
+    description: ''
+  uses: null
+  trigger: null
+  break_value: 10
+folder: m0b90AvndQoVAXRO
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390239072
+  modifiedTime: 1756177965561
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!HALO0Pilot0Clas1'

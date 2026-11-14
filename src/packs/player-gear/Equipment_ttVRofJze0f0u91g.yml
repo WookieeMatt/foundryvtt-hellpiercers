@@ -1,0 +1,20 @@
+type: Item
+folder: null
+name: Equipment
+color: null
+sorting: a
+_id: ttVRofJze0f0u91g
+description: ''
+sort: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.346'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754146806669
+  modifiedTime: 1754146806669
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!folders!ttVRofJze0f0u91g'

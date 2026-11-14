@@ -1,0 +1,20 @@
+type: Item
+folder: null
+name: Class
+color: null
+sorting: a
+_id: 5Ix3A6rTBlcSLL0h
+description: ''
+sort: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.346'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753136676463
+  modifiedTime: 1753136676463
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!folders!5Ix3A6rTBlcSLL0h'

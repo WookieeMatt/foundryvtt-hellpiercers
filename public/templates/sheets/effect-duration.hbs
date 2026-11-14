@@ -1,0 +1,12 @@
+<section
+  class="tab {{tab.cssClass}}"
+  data-group="{{tab.group}}"
+  data-tab="{{tab.id}}"
+>
+  <fieldset>
+    {{
+      formGroup systemFields.decay value=system.decay rootId=rootId localize=true
+    }}
+    {{formGroup systemFields.stacks value=system.stacks rootId=rootId}}
+  </fieldset>
+</section>

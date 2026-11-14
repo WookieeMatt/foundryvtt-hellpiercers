@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci --ignore-scripts
+
+      - name: Stamp the manifest version from the tag
+        run: node -e "const fs=require('fs');const p='src/system.json';const m=JSON.parse(fs.readFileSync(p));m.version=process.env.GITHUB_REF_NAME.replace(/^v/,'');fs.writeFileSync(p,JSON.stringify(m,null,2)+'\n')"
+
+      - name: Build
+        run: npm run build
+        env:
+          CI: "true"
+          MANIFEST_URL: https://github.com/${{ github.repository }}/releases/latest/download/system.json
+          ARCHIVE_URL: https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/system.zip
+
+      - name: Package
+        run: cd dist && zip -r ../system.zip .
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            system.zip
+            dist/system.json

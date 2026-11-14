@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "build:bundle": "FVTT_BUILD_PACKS=0 vite build",
+    "build:packs": "./scripts/pack.mjs",
+    "build:serve": "vite",
+    "build:watch": "vite build --watch",
+    "format": "dprint fmt",
+    "generate:symlink": "./scripts/symlink.mjs",
+    "generate:yml": "./scripts/unpack.mjs",
+    "lint": "biome check",
+    "postinstall": "./scripts/symlink.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.7",
+    "@foundryvtt/foundryvtt-cli": "^3.0.3",
+    "dprint": "^0.52.0",
+    "lefthook": "^2.1.2",
+    "sass": "^1.94.2",
+    "vite": "^8.0.3",
+    "vite-plugin-foundryvtt": "^3.0.0"
+  }
+}

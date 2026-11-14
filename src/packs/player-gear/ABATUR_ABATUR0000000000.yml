@@ -1,0 +1,31 @@
+_id: ABATUR0000000000
+name: ABATUR
+img: icons/skills/social/trading-justice-scale-gold.webp
+type: armor
+system:
+  description: >-
+    <p><em>“In the Bythos we found him. The last of them, by his word. The
+    oldest of them by ours. He judged us unworthy, and barred our way to the
+    Demiurge's chambers.”</em></p>
+  speed: 4
+  ability: Compendium.hellpiercers.player-abilities.Item.ABATUR0000000002
+  movement: Compendium.hellpiercers.player-abilities.Item.ABATUR0000000001
+  reversal: Compendium.hellpiercers.player-abilities.Item.ABATUR0000000003
+folder: plav4DgytmDlKEnT
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753390304211
+  modifiedTime: 1756177979595
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!ABATUR0000000000'

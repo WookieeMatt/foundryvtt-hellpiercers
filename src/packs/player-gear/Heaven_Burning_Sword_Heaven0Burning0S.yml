@@ -1,0 +1,210 @@
+_id: Heaven0Burning0S
+name: Heaven Burning Sword
+img: icons/magic/light/beam-rays-red-large.webp
+type: weapon
+system:
+  description: >-
+    <p><em>Zubana ascended first among the stars, and her rage claimed a million
+    barren planets before it was quelled. Awakening the heavens to the brutality
+    inflicted in their false name can only lead to righteous fury and immolating
+    flame. Now her fury, and that of her three sisters, is set to a task worthy
+    of its nuclear flame.</em></p>
+  attacks:
+    - name: Level 1
+      damage:
+        formula: '6'
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: bespoke
+        value: 1
+        spaces:
+          - i: -1
+            j: 1
+          - i: 0
+            j: 1
+          - i: 0
+            j: 2
+          - i: 0
+            j: 3
+          - i: 1
+            j: 1
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+    - name: Level 2
+      range:
+        name: Range
+        kind: bespoke
+        value: 1
+        spaces:
+          - i: -1
+            j: 6
+          - i: 0
+            j: 1
+          - i: 0
+            j: 2
+          - i: 0
+            j: 3
+          - i: 0
+            j: 4
+          - i: 0
+            j: 5
+          - i: 0
+            j: 6
+          - i: 0
+            j: 7
+          - i: 1
+            j: 6
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      damage:
+        formula: '15'
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      description: ''
+    - name: Level 3
+      range:
+        name: Range
+        kind: bespoke
+        value: 8
+        spaces:
+          - i: -2
+            j: 3
+          - i: -2
+            j: 4
+          - i: -2
+            j: 5
+          - i: -2
+            j: 6
+          - i: -2
+            j: 7
+          - i: -2
+            j: 8
+          - i: -1
+            j: 2
+          - i: -1
+            j: 3
+          - i: -1
+            j: 4
+          - i: -1
+            j: 5
+          - i: -1
+            j: 6
+          - i: -1
+            j: 7
+          - i: -1
+            j: 8
+          - i: 0
+            j: 1
+          - i: 0
+            j: 2
+          - i: 0
+            j: 3
+          - i: 0
+            j: 4
+          - i: 0
+            j: 5
+          - i: 0
+            j: 6
+          - i: 0
+            j: 7
+          - i: 0
+            j: 8
+          - i: 1
+            j: 2
+          - i: 1
+            j: 3
+          - i: 1
+            j: 4
+          - i: 1
+            j: 5
+          - i: 1
+            j: 6
+          - i: 1
+            j: 7
+          - i: 1
+            j: 8
+          - i: 2
+            j: 3
+          - i: 2
+            j: 4
+          - i: 2
+            j: 5
+          - i: 2
+            j: 6
+          - i: 2
+            j: 7
+          - i: 2
+            j: 8
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      damage:
+        formula: '25'
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      description: ''
+  active:
+    name: Unfolding
+    description: >-
+      <p>As an <strong>Aux Action</strong>, charge the Heaven Burning Sword. Its
+      level increases by 1 to a maximum of 3.</p>
+  passive:
+    name: Allogenetic Tactics
+    description: <p>The Heaven Burning Sword resets to Level 1 after every attack.</p>
+  selected_attack: 0
+folder: GTdAaocCUUI6rY5Z
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753146263584
+  modifiedTime: 1756177979601
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Heaven0Burning0S'

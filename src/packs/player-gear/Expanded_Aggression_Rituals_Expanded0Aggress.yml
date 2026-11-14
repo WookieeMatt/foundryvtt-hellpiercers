@@ -1,0 +1,32 @@
+_id: Expanded0Aggress
+name: Expanded Aggression Rituals
+img: icons/magic/symbols/rune-sigil-red-orange.webp
+type: gear
+system:
+  description: >-
+    <p><em>The spirits of long forgotten hunter-gods can be harnessed via
+    epigenetic memory extraction to turn one into a maelstrom of primeval
+    violence.</em></p>
+  kind: armor
+  effect: >-
+    <p>Use your Support Action to extend your Provoke range to Range:2 until the
+    end of your next turn.</p>
+  target: ''
+folder: 1upYVLWgpnHioybI
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754176962056
+  modifiedTime: 1756177979600
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Expanded0Aggress'

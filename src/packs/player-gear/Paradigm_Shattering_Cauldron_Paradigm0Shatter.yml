@@ -1,0 +1,75 @@
+_id: Paradigm0Shatter
+name: Paradigm-Shattering Cauldron
+img: icons/tools/laboratory/cauldron-filled-gold.webp
+type: weapon
+system:
+  description: >-
+    <p><em>A monadic implement, its true purpose long since forgotten. Once it
+    swirled with kamarupa, fizzy with premature individualism. The heavenly
+    ceramics are grooved with these threadlings of burgeoning
+    consciousness.</em></p>
+  attacks:
+    - name: Attack
+      damage:
+        formula: 3 + 2D6
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: true
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: bespoke
+        value: 1
+        spaces:
+          - i: -1
+            j: 2
+          - i: 0
+            j: 1
+          - i: 0
+            j: 2
+          - i: 0
+            j: 3
+          - i: 1
+            j: 2
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+  active:
+    name: Alchemy For A New Age
+    description: >-
+      <p>After defeating a non-minion enemy, a minion currently
+      <strong>Swarmed</strong>, or a Minion <strong>Broken</strong> from a Swarm
+      using the Cauldron, you may spend a <strong>Support Action</strong> to
+      convert that space into Void terrain.</p>
+  passive:
+    name: Outpace The Torrent
+    description: <p>This weapon has the <strong>Breaker</strong> tag.</p>
+  selected_attack: 0
+folder: GTdAaocCUUI6rY5Z
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753146263584
+  modifiedTime: 1756177979604
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Paradigm0Shatter'

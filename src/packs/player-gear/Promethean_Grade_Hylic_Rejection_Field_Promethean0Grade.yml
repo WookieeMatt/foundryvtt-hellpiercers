@@ -1,0 +1,31 @@
+_id: Promethean0Grade
+name: Promethean-Grade Hylic Rejection Field
+img: icons/magic/light/explosion-star-glow-blue-purple.webp
+type: equipment
+system:
+  description: >-
+    <p><em>Light plucked from distant stars, trapped and writhing within a cage.
+    Released into this lightless realm, it briefly burns away the miasma around
+    you.</em></p>
+  effect: >-
+    <p>Create three Cover tiles in three connected spaces within Range:6. These
+    tiles remain until the end of battle.</p>
+  available: true
+folder: ttVRofJze0f0u91g
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1754147092644
+  modifiedTime: 1756177979605
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Promethean0Grade'

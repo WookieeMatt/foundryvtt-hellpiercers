@@ -1,0 +1,22 @@
+<section
+  class="tab details scrollable flexcol {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="details"
+>
+  {{#if editable}}
+    {{
+      formGroup effect.field value=effect.value enriched=effect.enriched classes="item-block" compact=true rootId=rootId
+    }}
+  {{else}}
+    <div class="form-group item-block">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.effect.label"}}</label>
+      <div class="editor-content">{{{effect.enriched}}}</div>
+    </div>
+  {{/if}}
+  {{
+    formGroup systemFields.available
+    value=system.available
+    classes="item-block"
+    rootId=rootId disabled=(not actor)
+  }}
+</section>

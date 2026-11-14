@@ -1,0 +1,75 @@
+_id: Love0Without0Con
+name: Love Without Consideration
+img: icons/magic/fire/flame-burning-hand-white.webp
+type: weapon
+system:
+  description: >-
+    <p><em>"First, we ascended ourselves. Second, we etched the patterns of
+    awakening on the coils of flame, so that our oldest ally might join us in
+    eternity"</em></p>
+  attacks:
+    - name: Attack
+      damage:
+        formula: '2'
+        source: null
+        conditions: {}
+        qualities:
+          piercing: false
+          transference: false
+          breaker: false
+          overpenetrating: false
+        wrack: null
+        value: null
+      range:
+        name: Range
+        kind: bespoke
+        value: 1
+        spaces:
+          - i: -2
+            j: 0
+          - i: -1
+            j: 1
+          - i: 0
+            j: 2
+          - i: 1
+            j: 1
+          - i: 2
+            j: 0
+        modifiers:
+          range: null
+          width: null
+          length: null
+          push: null
+          recoil: null
+          scale: null
+      description: ''
+  active:
+    name: Hungry Flame
+    description: >-
+      <p>Target one enemy within <strong>Range:4</strong>. Deal damage and
+      inflict <strong>Blazing:2</strong> on that target and any adjacent
+      enemies.</p>
+  passive:
+    name: Persistent Will
+    description: >-
+      <p>Every time you fire this weapon, select exactly three tiles of its
+      attack pattern. They gain <strong>Lingering:1</strong>.</p>
+  selected_attack: 0
+folder: GTdAaocCUUI6rY5Z
+effects: []
+sort: 0
+ownership:
+  default: 0
+  JIYn39iJgV1tMnlB: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.347'
+  systemId: hellpiercers
+  systemVersion: 0.alpha4
+  createdTime: 1753146263584
+  modifiedTime: 1756177979603
+  lastModifiedBy: JIYn39iJgV1tMnlB
+_key: '!items!Love0Without0Con'

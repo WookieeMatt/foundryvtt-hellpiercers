@@ -1,0 +1,25 @@
+<section
+  class="tab details scrollable flexcol {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="details"
+>
+  {{#if editable}}
+    {{
+      formGroup systemFields.kind value=systemSource.kind localize=true classes="item-block"
+    }}
+    {{
+      formGroup effect.field value=effect.value enriched=effect.enriched classes="item-block" compact=true
+    }}
+  {{else}}
+    <div class="form-group item-block">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.kind.label"}}</label>
+      <div class="form-fields">
+        <div class="value">{{localize (concat "TYPES.Item." system.kind)}}</div>
+      </div>
+    </div>
+    <div class="form-group item-block">
+      <label>{{localize "HELLPIERCERS.ITEM.FIELDS.effect.label"}}</label>
+      <div class="editor-content">{{{effect.enriched}}}</div>
+    </div>
+  {{/if}}
+</section>

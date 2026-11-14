@@ -1,0 +1,71 @@
+<section
+  class="tab profiles scrollable flexcol {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="profiles"
+>
+  {{#if editable}}
+    {{
+      formGroup systemFields.counter.fields.enabled
+    value=systemSource.counter.enabled
+    classes="item-block" rootId=rootId
+    }}
+  {{/if}}
+  {{#each system.attacks}}
+    <div class="item-block attack" data-index="{{@index}}">
+      <label class="flexrow">
+        <span>{{name}}</span>
+        {{#if @root.editable}}
+          <a
+            role="button"
+            class="context-menu control"
+            data-context="profile"
+            data-index="{{@index}}"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        {{/if}}
+      </label>
+      <div class="damage">
+        <label>{{localize "HELLPIERCERS.DAMAGE.FIELDS.formula.label"}}</label>
+        <div class="value flexrow">
+          <span>{{damage.short_text}}</span>
+          {{#if @root.editable}}
+            <button
+              class="icon fa-solid fa-cog"
+              type="button"
+              data-action="editDamage"
+            >
+            </button>
+          {{/if}}
+        </div>
+      </div>
+      <div class="range">
+        <label>{{localize "HELLPIERCERS.ATTACK.FIELDS.range.label"}}</label>
+        <div class="value flexrow">
+          <span>
+            {{#if (eq range.kind "bespoke")}}
+              <img src="{{range.svg_uri}}" class="range-preview">
+            {{else}}
+              {{range.short_text}}
+            {{/if}}
+          </span>
+          {{#if @root.editable}}
+            <button
+              class="icon fa-solid fa-cog"
+              type="button"
+              data-action="editRange"
+            >
+            </button>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  {{/each}}
+  {{#if editable}}
+    <button type="button" data-action="addProfile">
+      <i class="fa-solid fa-plus"></i>{{
+        localize "HELLPIERCERS.ITEM.SHEET.profiles.add"
+      }}
+    </button>
+  {{/if}}
+</section>
