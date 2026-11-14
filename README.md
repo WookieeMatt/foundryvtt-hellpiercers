@@ -21,6 +21,7 @@ The sheets follow the book's look. *Settings > Sheet Theme* switches between **P
 | [`docs/GUIDE.md`](docs/GUIDE.md) | User guide for GMs and players (also the in-Foundry **Manual & Notes** journal) |
 | [`docs/API.md`](docs/API.md) | Macro and module API, hooks, settings |
 | [`docs/THEMING.md`](docs/THEMING.md) | How the Parchment and Night themes are built |
+| [`docs/HANDOFF.md`](docs/HANDOFF.md) | Handoff for the next engineer: state, environment, workflow, gaps and ideas |
 | [`CHANGELOG.md`](CHANGELOG.md) | What changed in each version |
 | [`ROADMAP.md`](ROADMAP.md) | Progress and what is left |
 
