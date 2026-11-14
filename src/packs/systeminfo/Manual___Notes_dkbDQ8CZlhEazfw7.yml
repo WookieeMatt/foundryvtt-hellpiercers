@@ -31,9 +31,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.sc25ZAOrEltKH3uL'
   - sort: 200000
@@ -48,7 +48,7 @@ pages:
     text:
       format: 1
       content: >-
-        <p>HELLPIERCERS for Foundry VTT <strong>0.8.0</strong>, for Foundry v14.370. Source: <a
+        <p>HELLPIERCERS for Foundry VTT <strong>0.9.0</strong>, for Foundry v14.370. Source: <a
         href="https://github.com/WookieeMatt/foundryvtt-hellpiercers">https://github.com/WookieeMatt/foundryvtt-hellpiercers</a></p>
     video:
       controls: true
@@ -60,9 +60,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.oHcYMiPXxp2se1TC'
   - sort: 300000
@@ -99,9 +99,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.JpTqVd7ZgoDadZWh'
   - sort: 400000
@@ -154,12 +154,64 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.6aOhXXkmva1ymTM7'
   - sort: 500000
+    name: Terrain
+    type: text
+    _id: C1jSsdFtKBlzYZHZ
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Terrain lives on Scene Regions and is painted with the <strong>Terrain Painter</strong>: the mountain button
+        in the Regions toolbar, or <code>hellpiercers.terrain.openPainter()</code>. Pick a type, then left-click or drag
+        on the map to paint cells; right-click erases one. <strong>Standard</strong> erases special terrain (changed
+        terrain stays changed), and a tile holds at most two special effects — the oldest is replaced, and the Void
+        replaces everything. The automation is advisory: it rolls, offers and reports, but never blocks a move.
+        <em>Automate Terrain</em> switches the automation off; the painting always
+        works.</p><ul><li><strong>Uneasy</strong> costs +1 Speed; the ruler shows the real cost while you
+        drag.</li><li><strong>Cover</strong> grants -1 damage while a unit stands in it; the damage card shows the
+        modifier.</li><li><strong>Advantageous</strong> is inert until an ability uses
+        it.</li><li><strong>Impassable</strong> and <strong>Obstacle</strong> warn when a token enters them. Obstacles
+        carry HP (leave the HP field empty for the book's "breaks in one hit");
+        <code>hellpiercers.terrain.damageObstacle(region, n)</code> damages one, and it crumbles at
+        0.</li><li><strong>Void</strong> posts the instant-death card when a token is forced in; the GM presses the
+        button, or not.</li><li><strong>Linked</strong> tiles offer the free step: landing on one asks the mover whether
+        to step to any other Linked tile, at no Speed cost.</li><li><strong>Trapped</strong> tiles are painted in secret
+        (players cannot see them), roll their damage on entry (2D6 by default), then become Standard;
+        <strong>Ravaging</strong> tiles fire on every entry and stay. Every trap card has an Undo
+        button.</li><li><strong>Attractor</strong> (SHARUR's Back Up) covers its Range:2 zone: entering it, or ending a
+        turn in it, posts a Pull:1 card whose button pulls the token one space toward the
+        Attractor.</li></ul><p><strong>JEHOEL</strong> is understood: its wearer never Provokes when moving into or out
+        of special terrain, and treats Void, Obstacle and Impassable as Uneasy, ruler cost included.</p><p><strong>Grid
+        Manipulation suites.</strong> Select a suite on the Party sheet and press <strong>Place suite</strong>: the
+        painter opens with the suite's tile list and each click places the next tile — the Orphite suite's "3 Cover, 2
+        Advantageous, 2 Obstacle:2" becomes seven clicks. Suites without a tile list (the Sanctuary's whole structure)
+        post their description to chat instead.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.C1jSsdFtKBlzYZHZ'
+  - sort: 600000
     name: STRATCOM
     type: text
     _id: iHHEtCIFAieEH9al
@@ -207,12 +259,12 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.iHHEtCIFAieEH9al'
-  - sort: 600000
+  - sort: 700000
     name: RECON
     type: text
     _id: 5BKCrH5s3w3FSL3e
@@ -240,12 +292,12 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.5BKCrH5s3w3FSL3e'
-  - sort: 700000
+  - sort: 800000
     name: Compendiums
     type: text
     _id: QWxbXJKXtEAOxdkV
@@ -274,12 +326,12 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.QWxbXJKXtEAOxdkV'
-  - sort: 800000
+  - sort: 900000
     name: Macros and API
     type: text
     _id: F2HNUsZMmBAZjAtN
@@ -305,12 +357,12 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.F2HNUsZMmBAZjAtN'
-  - sort: 900000
+  - sort: 1000000
     name: Modules and Settings
     type: text
     _id: pPhKOMuVN3FqDdRv
@@ -352,12 +404,12 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.pPhKOMuVN3FqDdRv'
-  - sort: 1000000
+  - sort: 1100000
     name: Building Items
     type: text
     _id: P0xuprZA0GWTJkBe
@@ -387,12 +439,12 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.P0xuprZA0GWTJkBe'
-  - sort: 1100000
+  - sort: 1200000
     name: Troubleshooting
     type: text
     _id: dGDqveNr0ClZOSnZ
@@ -422,12 +474,12 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.dGDqveNr0ClZOSnZ'
-  - sort: 1200000
+  - sort: 1300000
     name: Change Log
     type: text
     _id: D27PLHuAiR2jbP4q
@@ -439,12 +491,25 @@ pages:
     text:
       format: 1
       content: >-
-        <h2>0.8.0</h2><ul><li>Night theme audited on every sheet, tab, dialog, chat card and journal; contrast
-        checked.</li><li>Rules Reference and Manual journals styled like the book: ribbon headings, inked tables, a
-        black page list.</li><li>Dialogs (including the ones sheets open) wear the same look as the sheets.</li><li>The
-        Manual &amp; Notes journal rewritten for the current system; generated from
-        <code>docs/GUIDE.md</code>.</li><li>New documentation: user guide, theming guide, this changelog.</li><li>Fixed
-        a stray character in the faction Actions tab and a heading that wrapped its
+        <h2>0.9.0</h2><ul><li>Terrain on Scene Regions: every type of the Core Rules (Uneasy, Cover, Advantageous,
+        Impassable, Void, Obstacle, Linked, Trapped, Attractor) as a <code>terrain</code> RegionBehavior, painted cell
+        by cell.</li><li>The Terrain Painter: a palette on the Regions toolbar; left-click or drag paints, right-click
+        erases, Standard erases specials. Tile rules enforced: two special effects per tile at most (oldest replaced),
+        the Void replaces everything.</li><li>Advisory automation behind the new <em>Automate Terrain</em> setting:
+        Trapped rolls its damage (with Undo) and becomes Standard, Ravaging tiles persist and reveal themselves, Linked
+        tiles offer the free step and teleport, Attractor zones post Pull:1 with a one-click pull, the Void posts the
+        instant-death card on forced entry, Cover adds -1 in the damage engine, Uneasy shows +1 Speed in the
+        ruler.</li><li>Grid Manipulation suites placed from the Party sheet: <strong>Place suite</strong> walks the
+        suite's tile list click by click.</li><li>JEHOEL automated: no Provoke when moving into or out of special
+        terrain; Void, Obstacle and Impassable as Uneasy.</li><li>API: <code>hellpiercers.terrain</code> (paint, erase,
+        clearAll, regions, at, damageObstacle, pullTowards, openPainter, placeSuite) and the hooks
+        <code>hellpiercers.terrainChanged</code>,
+        <code>hellpiercers.terrainTriggered</code>.</li></ul><h2>0.8.0</h2><ul><li>Night theme audited on every sheet,
+        tab, dialog, chat card and journal; contrast checked.</li><li>Rules Reference and Manual journals styled like
+        the book: ribbon headings, inked tables, a black page list.</li><li>Dialogs (including the ones sheets open)
+        wear the same look as the sheets.</li><li>The Manual &amp; Notes journal rewritten for the current system;
+        generated from <code>docs/GUIDE.md</code>.</li><li>New documentation: user guide, theming guide, this
+        changelog.</li><li>Fixed a stray character in the faction Actions tab and a heading that wrapped its
         button.</li></ul><h2>0.7.0</h2><ul><li>The book's look: aged parchment, thick black ink, gold ribbon labels,
         crimson paint edge, blackletter titles.</li><li>Two palettes with a per-user Sheet Theme setting: Parchment and
         Night.</li><li>Restyled every actor and item sheet, chat card, the attack dialog, action pips, status chips and
@@ -477,12 +542,12 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.D27PLHuAiR2jbP4q'
-  - sort: 1300000
+  - sort: 1400000
     name: Credits and Licence
     type: text
     _id: eKG3nD2AFEuRiJ9M
@@ -509,9 +574,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.8.0
-      createdTime: 1794659513781
-      modifiedTime: 1794659513781
+      systemVersion: 0.9.0
+      createdTime: 1794678517868
+      modifiedTime: 1794678517868
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.eKG3nD2AFEuRiJ9M'
 folder: null
@@ -524,8 +589,8 @@ flags:
 _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
-  systemVersion: 0.8.0
-  createdTime: 1794659513781
-  modifiedTime: 1794659513781
+  systemVersion: 0.9.0
+  createdTime: 1794678517868
+  modifiedTime: 1794678517868
 _id: dkbDQ8CZlhEazfw7
 _key: '!journal!dkbDQ8CZlhEazfw7'

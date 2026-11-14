@@ -10,3 +10,4 @@ export * from "./halo-upgrade-model.mjs";
 export * as Item from "./item.mjs";
 export * as Party from "./party.mjs";
 export * from "./range-model.mjs";
+export * from "./region-behavior.mjs";

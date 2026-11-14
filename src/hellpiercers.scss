@@ -81,6 +81,9 @@
   &.attack-dialog {
     @include dialogs.attack-dialog;
   }
+  &.terrain-painter {
+    @include dialogs.terrain-painter;
+  }
 }
 
 @include chat.cards;

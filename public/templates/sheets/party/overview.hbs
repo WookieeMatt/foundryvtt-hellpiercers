@@ -178,6 +178,12 @@
           </option>
         {{/each}}
       </select>
+      {{#if isGM}}
+        <button type="button" data-action="placeSuite">
+          <i class="fa-solid fa-chess-board"></i>
+          {{localize 'HELLPIERCERS.UI.party_overview.place_suite'}}
+        </button>
+      {{/if}}
     </div>
   {{/if}}
 

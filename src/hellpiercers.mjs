@@ -6,6 +6,7 @@ import * as applications from "./applications/index.mjs";
 import * as placeables from "./canvas/placeables/index.mjs";
 import { placeTemplate } from "./canvas/range-template.mjs";
 import { setTargets } from "./canvas/targeting.mjs";
+import * as terrain from "./canvas/terrain.mjs";
 import * as data from "./data/index.mjs";
 import * as documents from "./documents/index.mjs";
 import { extendActorDirectory } from "./hooks/directory.mjs";
@@ -32,6 +33,18 @@ globalThis.hellpiercers = Object.freeze({
   animations: Object.freeze({
     ...animations,
     tint,
+  }),
+  terrain: Object.freeze({
+    TYPES: terrain.TERRAIN_TYPES,
+    paint: terrain.paint,
+    erase: terrain.erase,
+    clearAll: terrain.clearAll,
+    regions: terrain.terrainRegions,
+    at: terrain.terrainAtToken,
+    damageObstacle: terrain.damageObstacle,
+    pullTowards: terrain.pullTowards,
+    openPainter: options => applications.TerrainPainter.open(options),
+    placeSuite: applications.placeSuite,
   }),
   taccom: Object.freeze({
     engine: TurnEngine,
@@ -204,6 +217,11 @@ Hooks.once("init", () => {
   CONFIG.Combatant.dataModels.base = data.Combatant.HellpiercersCombatantModel;
   CONFIG.CombatantGroup.dataModels.swarm = data.CombatantGroup.SwarmModel;
   CONFIG.ui.combat = applications.sidebar.tabs.HellpiercersCombatTracker;
+
+  // Regions: the HELLPIERCERS terrain behavior (Terrain Painter, Grid Manipulation suites).
+  CONFIG.RegionBehavior.dataModels.terrain = data.TerrainBehaviorModel;
+  CONFIG.RegionBehavior.typeIcons.terrain = "fa-solid fa-mountain-sun";
+  terrain.activateTerrain();
 
   // Tokens
   CONFIG.Token.documentClass = documents.HellpiercersTokenDocument;

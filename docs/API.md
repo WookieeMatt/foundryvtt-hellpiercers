@@ -106,6 +106,43 @@ Hooks: `hellpiercers.stratcomPhase (phase, {built, arrived})`, `hellpiercers.mis
   4 vs Scale 1, 12 vs Scale 2), each with +1 damage per adjacent tile, and tells you how many tiles
   to expend. `hellpiercers.taccom.swarmAttackPlan(attackerActor, targetTokenDoc)`.
 
+## Terrain
+
+Terrain is Scene Regions carrying the system's `terrain` RegionBehavior (`src/data/region-behavior.mjs`;
+the rules live in `src/canvas/terrain.mjs`). Cell-merged types (Uneasy, Cover, Advantageous,
+Impassable, Void) share one region per scene and type; per-tile types (Obstacle, Linked, Trapped,
+Attractor) get one region per tile because each tile has its own state. The *Automate Terrain*
+setting (`automateTerrain`) gates the automation, never the painting.
+
+```js
+const T = hellpiercers.terrain;
+T.TYPES;                                   // every terrain type with its colour and grouping
+await T.paint(scene, "uneasy", [{i, j}]);  // paint cells ("standard" erases)
+await T.paint(scene, "trapped", [{i, j}], { formula: "2d6", ravaging: false });
+await T.paint(scene, "obstacle", [{i, j}], { hp: 2 });
+await T.erase(scene, [{i, j}]);            // erase cells ({ types: ["cover"] } to filter)
+await T.clearAll(scene);                   // remove every terrain region
+T.regions(scene, "linked");                // terrain regions, optionally of one type
+T.at(tokenDoc);                            // Set of terrain types under a token
+await T.damageObstacle(region, n);         // true if it broke (empty HP = breaks in one hit)
+await T.pullTowards(tokenDoc, {i, j});     // one space toward a cell (API move: never Provokes)
+T.openPainter();                           // the Terrain Painter (GM)
+await T.placeSuite("orphite");             // painter preloaded with a Grid Manipulation suite
+```
+
+Rules automated on top (all advisory, all behind *Automate Terrain*): Trapped rolls and applies its
+damage with an Undo button, then becomes Standard (Ravaging tiles persist and are revealed);
+Linked offers the free step via dialog and teleports; Attractor zones (the tile grown by Range:2)
+post Pull:1 cards on entry and turn end, with a button that pulls one space; the Void posts an
+instant-death card on forced entry; Cover adds a -1 modifier in `Damage#resolveFor` when the target
+token stands in it; Uneasy returns movement difficulty 2 so the native ruler shows the cost. JEHOEL
+wearers are exempt from Provoke when a step enters or leaves special terrain and treat blocking
+terrain as Uneasy. Painting enforces the tile rules: at most two special effects per tile (oldest
+replaced), Void replaces everything, repainting a type replaces it.
+
+Hooks: `hellpiercers.terrainChanged (scene, type, cells)`,
+`hellpiercers.terrainTriggered (type, tokenDoc, region)`.
+
 ## STRATCOM extras
 
 - **Roles:** `party.system.useRoleAction(role, actionId, { option, resource })` pays the cost and

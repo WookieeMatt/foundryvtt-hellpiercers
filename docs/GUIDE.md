@@ -51,6 +51,38 @@ The system is a private fan tool and contains no official art. HELLPIERCERS is b
 
 **Limit Breaks, AGNOSIA and Reversal.** Every enemy a HELLPIERCER defeats adds to their Limit Break (each Swarm tile counts). Bosses and Minibosses announce their AGNOSIA once, when they first reach the threshold. Reversal charges and Equipment uses are spent when the ability is used.
 
+## Terrain
+
+Terrain lives on Scene Regions and is painted with the **Terrain Painter**: the mountain button in
+the Regions toolbar, or `hellpiercers.terrain.openPainter()`. Pick a type, then left-click or drag
+on the map to paint cells; right-click erases one. **Standard** erases special terrain (changed
+terrain stays changed), and a tile holds at most two special effects — the oldest is replaced, and
+the Void replaces everything. The automation is advisory: it rolls, offers and reports, but never
+blocks a move. *Automate Terrain* switches the automation off; the painting always works.
+
+- **Uneasy** costs +1 Speed; the ruler shows the real cost while you drag.
+- **Cover** grants -1 damage while a unit stands in it; the damage card shows the modifier.
+- **Advantageous** is inert until an ability uses it.
+- **Impassable** and **Obstacle** warn when a token enters them. Obstacles carry HP (leave the HP
+  field empty for the book's "breaks in one hit"); `hellpiercers.terrain.damageObstacle(region, n)`
+  damages one, and it crumbles at 0.
+- **Void** posts the instant-death card when a token is forced in; the GM presses the button, or not.
+- **Linked** tiles offer the free step: landing on one asks the mover whether to step to any other
+  Linked tile, at no Speed cost.
+- **Trapped** tiles are painted in secret (players cannot see them), roll their damage on entry (2D6
+  by default), then become Standard; **Ravaging** tiles fire on every entry and stay. Every trap card
+  has an Undo button.
+- **Attractor** (SHARUR's Back Up) covers its Range:2 zone: entering it, or ending a turn in it,
+  posts a Pull:1 card whose button pulls the token one space toward the Attractor.
+
+**JEHOEL** is understood: its wearer never Provokes when moving into or out of special terrain, and
+treats Void, Obstacle and Impassable as Uneasy, ruler cost included.
+
+**Grid Manipulation suites.** Select a suite on the Party sheet and press **Place suite**: the
+painter opens with the suite's tile list and each click places the next tile — the Orphite suite's
+"3 Cover, 2 Advantageous, 2 Obstacle:2" becomes seven clicks. Suites without a tile list (the
+Sanctuary's whole structure) post their description to chat instead.
+
 ## STRATCOM
 
 **The Party.** The Party sheet holds the division's Hellsteel, Soulfire and Brimstone, its buildings, the active mission, the vehicle, Roles, Triumphs, Off-Grid Munitions, Grid Manipulation suites, Legendary Arms (and their Aion) and Class Mastery.

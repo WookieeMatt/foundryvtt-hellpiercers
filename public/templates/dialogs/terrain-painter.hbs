@@ -1,0 +1,98 @@
+<div class="terrain-painter-body">
+  {{#if queue}}
+    <div class="panel suite-queue">
+      <h3>{{queueLabel}}</h3>
+      <ul>
+        {{#each queue}}
+          <li class="{{#if done}}done{{/if}} {{#if current}}current{{/if}}">
+            <span class="count">{{left}}</span>
+            <span>{{label}}{{#if detail}} ({{detail}}){{/if}}</span>
+          </li>
+        {{/each}}
+      </ul>
+      <p class="hint">{{localize 'HELLPIERCERS.TERRAIN.queueHint'}}</p>
+    </div>
+  {{/if}}
+
+  <div class="type-grid">
+    {{#each types}}
+      <button
+        type="button"
+        class="type {{#if active}}active{{/if}}"
+        data-action="pickType"
+        data-type="{{key}}"
+        data-tooltip="{{#if secret}}{{localize 'HELLPIERCERS.TERRAIN.secretHint'}}{{/if}}"
+      >
+        <span class="swatch" style="background: {{color}}"></span>
+        <i class="fa-solid {{icon}}"></i>
+        <span class="label">{{label}}</span>
+      </button>
+    {{/each}}
+    <button
+      type="button"
+      class="type {{#if standardActive}}active{{/if}}"
+      data-action="pickType"
+      data-type="standard"
+    >
+      <span class="swatch standard"></span>
+      <i class="fa-solid fa-border-none"></i>
+      <span class="label">{{localize 'HELLPIERCERS.TERRAIN.standard'}}</span>
+    </button>
+    <button
+      type="button"
+      class="type {{#if eraseActive}}active{{/if}}"
+      data-action="pickType"
+      data-type="erase"
+    >
+      <span class="swatch erase"></span>
+      <i class="fa-solid fa-eraser"></i>
+      <span class="label">{{localize 'HELLPIERCERS.TERRAIN.erase'}}</span>
+    </button>
+  </div>
+
+  {{#if isObstacle}}
+    <div class="form-group">
+      <label>{{localize 'HELLPIERCERS.TERRAIN.obstacleHP'}}</label>
+      <div class="form-fields">
+        <input
+          type="number"
+          name="obstacleHP"
+          min="0"
+          step="1"
+          value="{{obstacleHP}}"
+          placeholder="—"
+        >
+      </div>
+      <p class="hint">{{localize 'HELLPIERCERS.TERRAIN.obstacleHPHint'}}</p>
+    </div>
+  {{/if}}
+
+  {{#if isTrapped}}
+    <div class="form-group">
+      <label>{{localize 'HELLPIERCERS.TERRAIN.trapFormula'}}</label>
+      <div class="form-fields">
+        <input type="text" name="trapFormula" value="{{trapFormula}}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>{{localize 'HELLPIERCERS.TERRAIN.ravaging'}}</label>
+      <div class="form-fields">
+        <input
+          type="checkbox"
+          name="trapRavaging"
+          {{#if trapRavaging}}checked{{/if}}
+        >
+      </div>
+      <p class="hint">{{localize 'HELLPIERCERS.TERRAIN.ravagingHint'}}</p>
+    </div>
+  {{/if}}
+
+  <p class="hint">{{localize 'HELLPIERCERS.TERRAIN.paintHint'}}</p>
+
+  <footer>
+    <button type="button" data-action="clearScene">
+      <i class="fa-solid fa-trash"></i>
+      {{localize 'HELLPIERCERS.TERRAIN.clearScene'}}
+    </button>
+  </footer>
+</div>

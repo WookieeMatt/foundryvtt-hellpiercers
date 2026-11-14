@@ -167,9 +167,10 @@ Key design facts:
 
 ## 7. Known gaps and debt
 
-- **No terrain system.** The party sheet lists Grid Manipulation suites, but nothing places or automates Standard,
-  Uneasy, Cover, Advantageous, Void, Obstacle, Impassable, Linked, Trapped or Attractor tiles, and Interactables
-  are manual. JEHOEL's special-terrain Provoke exemption is handled by the Provoke card's Undo button only.
+- **Terrain system shipped in v0.9.0** (idea A below): every terrain type as a `terrain` RegionBehavior, the
+  Terrain Painter, suite placement from the Party sheet, advisory automation, JEHOEL. Still manual:
+  Interactables, and attacking an Obstacle goes through `hellpiercers.terrain.damageObstacle` rather than
+  the attack dialog.
 - **Amdusias' Slumber/Thrashing phases** and similar boss phase mechanics are text on the sheet, not automated.
 - **Unit extraction is approximate** for the multi-attack minibosses: damage and range are parsed from the text
   with a regex, some hyphenation artifacts remain, and a few units carry free text only.

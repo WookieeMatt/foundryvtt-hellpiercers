@@ -1,5 +1,6 @@
 /** import { HellpiercersTokenDocument } from "../documents/token.mjs"; */
 
+import { terrainAtToken } from "../canvas/terrain.mjs";
 import { getSetting } from "../settings.mjs";
 
 const fields = foundry.data.fields;
@@ -130,9 +131,12 @@ export class Damage extends foundry.abstract.DataModel {
    * Work out how much damage a particular target takes once its Effects are accounted for.
    * This does not change anything: see {@link Damage#apply}.
    * @param {foundry.documents.Actor} actor
+   * @param {object} [options]
+   * @param {foundry.documents.TokenDocument} [options.token]   The target token, for positional
+   *   modifiers (Cover terrain, p. 100)
    * @returns {ResolvedDamage}
    */
-  resolveFor(actor) {
+  resolveFor(actor, { token = null } = {}) {
     const stacks = id => actor?.getStatusStacks?.(id) ?? 0;
     /** @type {DamageModifier[]} */
     const modifiers = [];
@@ -179,6 +183,11 @@ export class Damage extends foundry.abstract.DataModel {
       modifiers.push({ id: "constrict", delta: constrict });
       total += constrict;
     }
+    // Cover terrain: -1 damage while the target stands in Cover (p. 100).
+    if (token && getSetting("automateTerrain") && terrainAtToken(token).has("cover")) {
+      modifiers.push({ id: "cover", delta: -1 });
+      total -= 1;
+    }
     total = Math.max(0, total);
 
     // Glassflesh doubles the damage of the next attack.
@@ -209,7 +218,9 @@ export class Damage extends foundry.abstract.DataModel {
 
     // Accepts a TokenDocument, or an Actor directly.
     const actor = target.documentName === "Actor" ? target : target.actor;
-    const resolved = this.resolveFor(actor);
+    const resolved = this.resolveFor(actor, {
+      token: target.documentName === "Token" ? target : null,
+    });
     const result = await actor.takeDamage(resolved.total);
     await this.#consume(actor, resolved.consume);
     await this.#applyTransference(result.dealt);

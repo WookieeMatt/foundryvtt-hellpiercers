@@ -8,6 +8,7 @@
  * flying units (Aegis) don't Provoke.
  */
 
+import { rectTouchesSpecial, specialCells, wearsJehoel } from "../canvas/terrain.mjs";
 import { Damage } from "../data/damage.mjs";
 import { tint } from "../integrations/dice.mjs";
 import { getSetting } from "../settings.mjs";
@@ -102,9 +103,12 @@ function isDefeated(token) {
  * Work out which enemy units are provoked by a movement.
  * @param {foundry.documents.TokenDocument} mover
  * @param {CellRect[]} path   Positions along the movement, in order
+ * @param {object} [options]
+ * @param {(from: CellRect, to: CellRect) => boolean} [options.exemptStep]   Steps that never
+ *   Provoke (JEHOEL's Quark-Gluon-Celestium Form: moving into or out of special terrain)
  * @returns {foundry.documents.TokenDocument[]} One token per provoked unit
  */
-export function findProvokers(mover, path) {
+export function findProvokers(mover, path, { exemptStep } = {}) {
   const enemies = mover.parent.tokens.filter(
     t =>
       t.id !== mover.id && t.actor && !isDefeated(t) && areEnemies(mover.disposition, t.disposition)
@@ -114,6 +118,7 @@ export function findProvokers(mover, path) {
   for (let i = 0; i < path.length - 1; i++) {
     const from = path[i];
     const to = path[i + 1];
+    if (exemptStep?.(from, to)) continue;
     for (const enemy of enemies) {
       const key = unitKey(enemy);
       if (provoked.has(key)) continue;
@@ -185,7 +190,17 @@ async function onMoveToken(doc, movement) {
   }
   if (path.length < 2) return;
 
-  let provokers = findProvokers(doc, path);
+  // JEHOEL (Quark-Gluon-Celestium Form): moving into or out of special terrain never Provokes.
+  let exemptStep;
+  if (wearsJehoel(actor)) {
+    const special = specialCells(doc.parent);
+    if (special.size) {
+      exemptStep = (from, to) =>
+        rectTouchesSpecial(special, from) || rectTouchesSpecial(special, to);
+    }
+  }
+
+  let provokers = findProvokers(doc, path, { exemptStep });
 
   // MURIEL (Nous-Agnostic Deployment): no Provoke from enemies moved through this turn.
   if (actor.items.some(i => i.type === "ability" && /nous.agnostic/i.test(i.name))) {
@@ -255,7 +270,7 @@ export async function undoProvoke(message) {
   await message.update({
     content: message.content.replace(
       /<footer>.*<\/footer>/s,
-      "<footer><em>Provoke undone.</em></footer>"
+      `<footer><em>${game.i18n.localize("HELLPIERCERS.TACCOM.undone")}</em></footer>`
     ),
     [`flags.${game.system.id}.undo`]: [],
   });

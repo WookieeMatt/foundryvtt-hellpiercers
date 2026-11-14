@@ -391,19 +391,39 @@ export const GRID_SUITES = Object.freeze({
   orphite: {
     name: "Orphite Protective Ritual Suite",
     tiles: "3 Cover, 2 Advantageous, 2 Obstacle:2",
+    cells: [
+      { type: "cover", count: 3 },
+      { type: "advantageous", count: 2 },
+      { type: "obstacle", count: 2, hp: 2 },
+    ],
   },
   ogdoad: {
     name: "Ogdoad-Mantling Surefooted Ritual Suite",
     tiles: "4 Standard, 2 Uneasy, 1 Void",
+    cells: [
+      { type: "standard", count: 4 },
+      { type: "uneasy", count: 2 },
+      { type: "void", count: 1 },
+    ],
   },
-  apocalypse: { name: "Unmitigated Apocalypse Emulation Suite", tiles: "4 Void" },
+  apocalypse: {
+    name: "Unmitigated Apocalypse Emulation Suite",
+    tiles: "4 Void",
+    cells: [{ type: "void", count: 4 }],
+  },
   hylic: {
     name: "Hylic-Tunneling Enabled Resonance Suite",
     tiles: "2 Linked Tiles, 3 Cover, 3 Advantageous",
+    cells: [
+      { type: "linked", count: 2 },
+      { type: "cover", count: 3 },
+      { type: "advantageous", count: 3 },
+    ],
   },
   projected: {
     name: "Projected Reality Materialization Suite",
     tiles: "8 Standard, anywhere, including over walls and outside the map",
+    cells: [{ type: "standard", count: 8 }],
   },
   sanctuary: {
     name: "Siloed Agape-Infused Sanctuary Ritual Suite",
@@ -412,6 +432,11 @@ export const GRID_SUITES = Object.freeze({
   vicious: {
     name: "Vicious Emerald-Staffed Aggression Suite",
     tiles: "1 Void, 3 Trapped (2D6), 2 Ravaging Trapped (1D6 each entry)",
+    cells: [
+      { type: "void", count: 1 },
+      { type: "trapped", count: 3, formula: "2d6" },
+      { type: "trapped", count: 2, formula: "1d6", ravaging: true },
+    ],
   },
 });
 

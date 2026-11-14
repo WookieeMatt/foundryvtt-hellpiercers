@@ -3,6 +3,15 @@
 All notable changes to the HELLPIERCERS system for Foundry VTT. Versions follow the git tags. The in-Foundry
 **Change Log** page is generated from this file by `scripts/generate-manual.mjs`.
 
+## 0.9.0
+
+- Terrain on Scene Regions: every type of the Core Rules (Uneasy, Cover, Advantageous, Impassable, Void, Obstacle, Linked, Trapped, Attractor) as a `terrain` RegionBehavior, painted cell by cell.
+- The Terrain Painter: a palette on the Regions toolbar; left-click or drag paints, right-click erases, Standard erases specials. Tile rules enforced: two special effects per tile at most (oldest replaced), the Void replaces everything.
+- Advisory automation behind the new *Automate Terrain* setting: Trapped rolls its damage (with Undo) and becomes Standard, Ravaging tiles persist and reveal themselves, Linked tiles offer the free step and teleport, Attractor zones post Pull:1 with a one-click pull, the Void posts the instant-death card on forced entry, Cover adds -1 in the damage engine, Uneasy shows +1 Speed in the ruler.
+- Grid Manipulation suites placed from the Party sheet: **Place suite** walks the suite's tile list click by click.
+- JEHOEL automated: no Provoke when moving into or out of special terrain; Void, Obstacle and Impassable as Uneasy.
+- API: `hellpiercers.terrain` (paint, erase, clearAll, regions, at, damageObstacle, pullTowards, openPainter, placeSuite) and the hooks `hellpiercers.terrainChanged`, `hellpiercers.terrainTriggered`.
+
 ## 0.8.0
 
 - Night theme audited on every sheet, tab, dialog, chat card and journal; contrast checked.

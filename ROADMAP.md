@@ -43,6 +43,7 @@ Targets Foundry VTT **v14.370**. See `docs/API.md` for the scripting API.
   - [x] RECON Tables compendium (Chambers, Corridors, Vaults, Legendary Arms, Scavenge, Scout, Travel, NPC, Item D66, Location generator) and a Rules Reference journal
   - [x] Per-faction STRATCOM actions (Actions tab), staged map hazards (Devolve, Eyerot), Create Map Hazard
   - [x] Boss variable-action stat shown and recalculable
+- [x] Terrain system: all terrain types as Regions, the Terrain Painter, Grid Manipulation suites, JEHOEL
 - [ ] Include items - pending a public license for HELLPIERCERS
 
 ## Release

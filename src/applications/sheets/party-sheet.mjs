@@ -17,6 +17,7 @@ import {
   phase,
 } from "../../stratcom/engine.mjs";
 import { ROLE_ACTIONS } from "../../stratcom/roles.mjs";
+import { placeSuite } from "../dialogs/terrain-painter.mjs";
 import { HellpiercersActorSheetMixin } from "./mixins.mjs";
 
 const ActorSheet = foundry.applications.sheets.ActorSheet;
@@ -53,6 +54,7 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
       buyVehicleOption: PartySheet.#buyVehicleOption,
       toggleVehicleOption: PartySheet.#toggleVehicleOption,
       useRoleAction: PartySheet.#useRoleAction,
+      placeSuite: PartySheet.#placeSuite,
     },
   };
 
@@ -397,6 +399,16 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
   }
 
   /** @this {PartySheet} @param {Event} _ev @param {HTMLElement} target */
+  /** Open the Terrain Painter loaded with the selected Grid Manipulation suite. @this {PartySheet} */
+  static async #placeSuite() {
+    const key = this.actor.system.gridSuite;
+    if (!key) {
+      ui.notifications?.warn(game.i18n.localize("HELLPIERCERS.TERRAIN.noSuite"));
+      return;
+    }
+    await placeSuite(key);
+  }
+
   static async #useRoleAction(_ev, target) {
     const role = target.dataset.role;
     const actionId = target.dataset.roleAction;

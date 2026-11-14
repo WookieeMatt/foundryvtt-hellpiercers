@@ -18,6 +18,9 @@
       "halo_system": "HALO System",
       "halo_weapon": "HALO Weapon",
       "weapon": "Weapon"
+    },
+    "RegionBehavior": {
+      "terrain": "HELLPIERCERS Terrain"
     }
   },
   "HELLPIERCERS": {
@@ -611,6 +614,10 @@
         "name": "Automate Provoke",
         "hint": "When a token is dragged away from an adjacent enemy during combat, the GM client rolls the 1D6 Provoke attack automatically. Flying (Aegis) units and forced movement never Provoke."
       },
+      "automateTerrain": {
+        "name": "Automate Terrain",
+        "hint": "Terrain painted with the Terrain Painter resolves itself: Trapped tiles roll their damage, Linked tiles offer the step, Attractor zones offer their Pull, Cover grants -1 damage, and the Void offers instant death on forced entry. Movement is never blocked: the automation advises, the table decides."
+      },
       "activeParty": {
         "name": "Active Party",
         "hint": "The party whose buildings unlock items for the whole table.",
@@ -670,7 +677,71 @@
       "limitBreak": "{name} unleashes their Limit Break!",
       "limitReady": "{name}'s Limit Break is ready.",
       "reversalSpent": "{name} spends a Reversal charge ({left} left).",
-      "rez": "{name} is back on their feet."
+      "rez": "{name} is back on their feet.",
+      "undone": "Undone."
+    },
+    "TERRAIN": {
+      "title": "Terrain",
+      "painter": "Terrain Painter",
+      "uneasy": "Uneasy",
+      "cover": "Cover",
+      "advantageous": "Advantageous",
+      "impassable": "Impassable",
+      "void": "Void",
+      "obstacle": "Obstacle",
+      "linked": "Linked",
+      "trapped": "Trapped",
+      "attractor": "Attractor",
+      "standard": "Standard",
+      "erase": "Erase",
+      "undo": "Undo",
+      "ravaging": "Ravaging",
+      "ravagingHint": "A Ravaging tile fires on every entry and never becomes Standard.",
+      "secretHint": "Trapped tiles are marked in secret: players cannot see them until they trigger.",
+      "paintHint": "Left-click or drag on the map to paint. Right-click erases a cell. A tile holds at most two special effects; the Void replaces everything.",
+      "queueHint": "Each click places the next tile of the suite.",
+      "obstacleHP": "Obstacle HP",
+      "obstacleHPHint": "Leave empty for the book's default: the Obstacle breaks in one hit.",
+      "trapFormula": "Trap damage",
+      "clearScene": "Clear scene terrain",
+      "clearSceneConfirm": "Remove every terrain region from this scene?",
+      "gmOnly": "Only the GM can paint terrain.",
+      "noSuite": "Select a Grid Manipulation suite first.",
+      "replacedOldest": "A tile already held two special effects: the oldest was replaced.",
+      "step": "Step through",
+      "stay": "Stay",
+      "pull": "Pull 1 toward the Attractor",
+      "voidDeath": "Instant death",
+      "BEHAVIOR": {
+        "FIELDS": {
+          "terrain": {
+            "label": "Terrain type"
+          },
+          "hp": {
+            "label": "Obstacle HP",
+            "hint": "Empty: the Obstacle breaks in one hit."
+          },
+          "formula": {
+            "label": "Trap damage"
+          },
+          "ravaging": {
+            "label": "Ravaging",
+            "hint": "Fires on every entry and never becomes Standard."
+          }
+        }
+      },
+      "MSG": {
+        "trap": "A Trapped tile springs under {name}: {value} damage. The tile becomes Standard.",
+        "ravagingTrap": "A Ravaging tile burns {name}: {value} damage.",
+        "blocked": "{name} entered {terrain} terrain. The book treats it as impassable.",
+        "void": "{name} entered the Void. Entering it voluntarily is impossible; if this movement was forced, it is instant death.",
+        "voidForced": "{name} was forced into the Void: instant death (p. 100).",
+        "linked": "{name} stepped onto a Linked tile. Step onto any other Linked tile at no Speed cost?",
+        "attractorEnter": "{name} entered an Attractor zone: Pull:1 toward the Attractor.",
+        "attractorTurn": "{name} ends their turn in an Attractor zone: Pull:1 toward the Attractor.",
+        "obstacleBroken": "{name} breaks apart.",
+        "suitePlaced": "{name} is in place."
+      }
     },
     "STATUSES": {
       "aggression": {
@@ -860,6 +931,7 @@
         "none_selected": "None selected",
         "used_this_expedition": "Used this expedition",
         "pre_battle_grid_manipulation": "Pre-Battle Grid Manipulation",
+        "place_suite": "Place suite",
         "legendary_arms": "Legendary Arms",
         "add": "Add",
         "end_session_aion_1": "End session (Aion -1)",

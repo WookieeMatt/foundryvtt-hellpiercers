@@ -7,6 +7,7 @@ export const SETTINGS = Object.freeze({
   trackActions: "trackActions",
   chatCards: "chatCards",
   automateProvoke: "automateProvoke",
+  automateTerrain: "automateTerrain",
   ichor: "ichor",
   stratcomPhase: "stratcomPhase",
   activeParty: "activeParty",
@@ -106,6 +107,14 @@ export function registerSettings() {
     config: true,
     name: "HELLPIERCERS.SETTINGS.automateProvoke.name",
     hint: "HELLPIERCERS.SETTINGS.automateProvoke.hint",
+    type: new fields.BooleanField({ initial: true }),
+  });
+
+  game.settings.register(id, "automateTerrain", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.automateTerrain.name",
+    hint: "HELLPIERCERS.SETTINGS.automateTerrain.hint",
     type: new fields.BooleanField({ initial: true }),
   });
 
