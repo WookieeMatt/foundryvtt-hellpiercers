@@ -14,7 +14,15 @@ system detects which and falls back to the best animation each library has). See
 
 The sheets follow the book's look. *Settings > Sheet Theme* switches between **Parchment** (the book's pages) and **Night** (the cover's slate and violet), per user. Fonts (Big Shoulders, EB Garamond, Pirata One) are SIL OFL; licences are in `public/fonts/hp`.
 
-See [`docs/API.md`](docs/API.md) for the macro API and [`ROADMAP.md`](ROADMAP.md) for progress.
+## Documentation
+
+| | |
+| --- | --- |
+| [`docs/GUIDE.md`](docs/GUIDE.md) | User guide for GMs and players (also the in-Foundry **Manual & Notes** journal) |
+| [`docs/API.md`](docs/API.md) | Macro and module API, hooks, settings |
+| [`docs/THEMING.md`](docs/THEMING.md) | How the Parchment and Night themes are built |
+| [`CHANGELOG.md`](CHANGELOG.md) | What changed in each version |
+| [`ROADMAP.md`](ROADMAP.md) | Progress and what is left |
 
 ## Install
 

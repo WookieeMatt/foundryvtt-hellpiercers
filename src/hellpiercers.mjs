@@ -247,6 +247,14 @@ Hooks.once("ready", () => {
 });
 
 // Hooks
+// Dialogs and the system's own journals wear the same look as the sheets.
+Hooks.on("renderDialogV2", (_app, element) => element.classList.add("hellpiercers", "hp-dialog"));
+Hooks.on("renderJournalEntrySheet", (app, element) => {
+  const doc = app.document;
+  if (doc.getFlag(game.system.id, "themed") || doc.pack?.startsWith(`${game.system.id}.`)) {
+    element.classList.add("hellpiercers", "hp-journal");
+  }
+});
 Hooks.on("hotbarDrop", onHotbarDrop);
 Hooks.on("renderActorDirectory", extendActorDirectory);
 Hooks.on("renderTokenConfig", extendTokenConfig);

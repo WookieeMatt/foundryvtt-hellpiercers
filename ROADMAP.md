@@ -48,6 +48,8 @@ Targets Foundry VTT **v14.370**. See `docs/API.md` for the scripting API.
 ## Release
 
 - [x] Styling: the book's look (parchment and night themes, ribbons, ink panels, blackletter) across every sheet, chat card, dialog and the combat tracker
+- [x] Night theme audited everywhere; Rules Reference and Manual journals styled
+- [x] User guide, theming guide and changelog (`docs/`, `CHANGELOG.md`), the in-Foundry manual is generated from them
 - [x] i18n of the STRATCOM sheets and system messages (`HELLPIERCERS.UI`, `HELLPIERCERS.MSG`)
 - [ ] Custom ActiveEffects
 - [ ] Art - pending a public license for HELLPIERCERS

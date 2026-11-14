@@ -1,0 +1,211 @@
+@use "mixins" as *;
+
+// The system's own journals (Rules Reference, Manual): rules pages with ribbon headings and inked tables.
+
+@mixin journal {
+  .journal-sidebar,
+  .pages-list,
+  nav.pages-list {
+    background: var(--hp-chrome);
+    color: var(--hp-chrome-text);
+    border-right: 3px solid var(--hp-border);
+    --color-text-primary: #efe4cb;
+    --color-text-secondary: #b9a98a;
+    a,
+    .page-heading,
+    .heading-link {
+      color: #efe4cb;
+      font-family: var(--hp-font-label);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      &:hover {
+        color: var(--hp-gold);
+      }
+    }
+    li.active > a,
+    li.active .page-heading,
+    .active > .page-title {
+      color: #1b1410;
+      background: linear-gradient(180deg, #f8c53a, #e2a216);
+    }
+  }
+
+  .journal-entry-pages,
+  .journal-entry-content {
+    background: transparent;
+  }
+
+  .journal-header input.title,
+  .journal-header input {
+    font-family: var(--hp-font-black);
+    font-weight: 400;
+    font-size: 2.1rem;
+    line-height: 1.1;
+    height: auto;
+    padding: 0 0.3rem 0.1rem;
+    color: var(--hp-text);
+    background: none;
+    border: none;
+    border-bottom: 3px solid var(--hp-border);
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: 2px 2px 0 rgb(165 36 27 / 30%);
+    &:disabled {
+      opacity: 1;
+      color: var(--hp-text);
+    }
+  }
+  .journal-page-header h1,
+  .journal-page-header {
+    h1 {
+      font-family: var(--hp-font-label);
+      font-weight: 800;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      border: none;
+      color: var(--hp-accent);
+    }
+  }
+
+  .journal-page-content,
+  .journal-entry-page .journal-page-content {
+    font-family: var(--hp-font-body);
+    font-size: 1.1rem;
+    line-height: 1.35;
+    color: var(--hp-text);
+    overflow-x: auto;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--hp-font-label);
+      text-transform: uppercase;
+      border: none;
+    }
+    h1 {
+      font-family: var(--hp-font-black);
+      text-transform: none;
+      font-weight: 400;
+      font-size: 2.4rem;
+      line-height: 1.05;
+      margin: 0 0 0.4rem;
+      border-bottom: 3px solid var(--hp-border);
+      text-shadow: 2px 2px 0 rgb(165 36 27 / 30%);
+    }
+    h2 {
+      @include ribbon(1.7rem);
+      width: fit-content;
+      margin: 1rem 0 0.4rem -0.6rem;
+      padding-right: 1.6rem;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #1b1410;
+    }
+    h3 {
+      color: var(--hp-accent);
+      font-size: 1.15rem;
+      letter-spacing: 0.04em;
+      margin: 0.9rem 0 0.2rem;
+      border-bottom: 1px solid var(--hp-line);
+    }
+    p,
+    li {
+      margin: 0.3rem 0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0.3rem;
+      li {
+        position: relative;
+        padding-left: 1.1rem;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0.15rem;
+          top: 0.55em;
+          width: 0.45rem;
+          height: 0.45rem;
+          background: var(--hp-accent);
+          transform: rotate(45deg);
+        }
+      }
+    }
+    ol {
+      padding-left: 1.4rem;
+      li::marker {
+        font-family: var(--hp-font-stencil);
+        color: var(--hp-hero);
+      }
+    }
+    blockquote {
+      margin: 0.6rem 0;
+      padding: 0.2rem 0.8rem;
+      border: none;
+      border-left: 4px solid var(--hp-accent);
+      background: var(--hp-surface-3);
+      font-style: italic;
+    }
+    code {
+      font-family: var(--font-mono, monospace);
+      font-size: 0.9em;
+      padding: 0 0.25rem;
+      background: var(--hp-surface-3);
+      border: 1px solid var(--hp-border-soft);
+      border-radius: 2px;
+      color: var(--hp-text);
+    }
+    hr {
+      border: none;
+      border-top: 1px solid var(--hp-line);
+    }
+    strong {
+      font-weight: 700;
+    }
+    small {
+      color: var(--hp-text-dim);
+    }
+
+    table {
+      width: 100%;
+      margin: 0.6rem 0 0.9rem;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: var(--hp-surface-2);
+      border: 3px solid var(--hp-border);
+      border-radius: 3px 7px 4px 8px / 8px 3px 7px 4px;
+      box-shadow: 3px 3px 0 rgb(0 0 0 / 28%);
+      font-size: 1rem;
+      thead th {
+        font-family: var(--hp-font-label);
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: left;
+        color: var(--hp-chrome-text);
+        background: var(--hp-chrome);
+        border: none;
+        padding: 0.25rem 0.6rem;
+      }
+      td,
+      th {
+        padding: 0.3rem 0.6rem;
+        vertical-align: top;
+        border: none;
+        border-bottom: 1px solid var(--hp-line);
+      }
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+      tbody tr:nth-child(even) {
+        background: var(--hp-surface-3);
+      }
+      td:first-child {
+        font-family: var(--hp-font-label);
+        font-weight: 600;
+        font-size: 1.05rem;
+      }
+    }
+  }
+}

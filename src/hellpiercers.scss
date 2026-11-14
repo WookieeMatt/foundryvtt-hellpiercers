@@ -1,6 +1,7 @@
 @use "styles/fonts";
 @use "styles/theme";
 @use "styles/chat";
+@use "styles/journal";
 @use "styles/dialogs";
 @use "styles/overrides";
 @use "styles/sheets/actor";
@@ -64,6 +65,9 @@
     &.weapon {
       @include item.weapon;
     }
+  }
+  &.hp-journal {
+    @include journal.journal;
   }
   &.damage-editor {
     @include dialogs.damage-editor;

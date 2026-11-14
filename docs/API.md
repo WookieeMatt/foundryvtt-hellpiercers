@@ -183,6 +183,12 @@ per use at the chosen location). `addHazard`, `advanceHazard(id, delta)`, `clear
 `src/stratcom/data/faction-actions.json` (extracted by `scripts/data/parse_actions.py`); the faction
 sheet has an Actions tab (GM only).
 
+## Theme
+
+The client setting `game.settings.get("hellpiercers", "sheetTheme")` is `"parchment"` or `"night"`; `applySheetTheme()` in
+`src/settings.mjs` applies it. Journals can opt into the rules-page look with the flag `hellpiercers.themed`.
+See `docs/THEMING.md`.
+
 ## Boss actions
 
 A Boss's Actions stat is `actions/players` (1/2 is one action for every two players, rounded down,
@@ -212,6 +218,7 @@ npx vite build                         # builds dist/ (system, styles, lang, tem
 node scripts/pack.mjs [macros ...]     # compile YAML packs (close the world first)
 node scripts/generate-macros.mjs       # regenerate the macro pack sources
 node scripts/generate-units.mjs && node scripts/generate-tables.mjs && node scripts/generate-journals.mjs
+node scripts/generate-manual.mjs        # the Manual & Notes journal, from docs/GUIDE.md and CHANGELOG.md
 npx biome check src scripts && npx dprint check
 ```
 

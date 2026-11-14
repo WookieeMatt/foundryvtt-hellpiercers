@@ -240,6 +240,19 @@ body.system-hellpiercers.hp-theme-night {
     }
   }
 
+  // The primary action of a dialog is the crimson one.
+  button.default,
+  .form-footer button[type="submit"],
+  button[data-action="ok"],
+  button[data-action="yes"] {
+    color: var(--hp-gold);
+    background: var(--hp-crimson);
+    &:hover:not(:disabled) {
+      color: #fff;
+      background: #c43a2d;
+    }
+  }
+
   hr {
     border: none;
     border-top: 1px solid var(--hp-line);

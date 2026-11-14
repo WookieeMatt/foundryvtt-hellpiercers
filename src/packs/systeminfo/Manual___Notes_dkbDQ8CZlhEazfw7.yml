@@ -1,10 +1,9 @@
 name: Manual & Notes
-_id: dkbDQ8CZlhEazfw7
 pages:
   - sort: 100000
-    name: Notice of Beta Jank
+    name: Welcome
     type: text
-    _id: NIdeFGfuO32ubmCd
+    _id: sc25ZAOrEltKH3uL
     system: {}
     title:
       show: true
@@ -13,40 +12,355 @@ pages:
     text:
       format: 1
       content: >-
-        <p>This system is still in the alpha phase. Not all features are
-        implemented.</p><p>Notable missing features:</p><ol><li><p>STRATCOM base
-        building and unlocks.</p></li><li><p>Recon</p></li></ol><p>Your patience
-        is appreciated.</p><h2>Reporting Issues</h2><p>Open issues can be seen
-        here: <a
-        href="https://todo.sr.ht/~bolts/foundryvtt-hellpiercers">https://todo.sr.ht/~bolts/foundryvtt-hellpiercers</a></p><p>Bug
-        reports can be submitted to the ticket system via email at the page
-        above.</p><h1>Be aware that until the system hits 1.0, breaking changes
-        may occur on updates.</h1><p>I will try to warn in advance in the
-        patchnotes on the repository, but I'm only human.</p>
+        <p>HELLPIERCERS for Foundry VTT automates the three layers of the tabletop game for <strong>Foundry
+        v14.370</strong>:</p><ul><li><strong>TACCOM</strong>, the grid combat: turn order, action tracking, damage,
+        Effects, Provoke, Swarms, Limit Breaks and AGNOSIA.</li><li><strong>STRATCOM</strong>, the campaign: the
+        division's base and tech tree, missions and rewards, the GM's factions, convoys, research, map hazards and
+        Ichor.</li><li><strong>RECON</strong>, exploration: 2D6 + tags rolls, the Tone Die and every roll table in the
+        Core Rules.</li></ul><p>Everything is optional. The system never takes a decision away from the table:
+        automation can be switched off in the settings, and every automatic result is posted to chat so it can be
+        corrected.</p><p>The system is a private fan tool and contains no official art. HELLPIERCERS is by Sandy Pug
+        Games.</p>
     video:
       controls: true
       volume: 0.5
     src: null
     ownership:
       default: -1
-      0uq1NcpEgiMQWXgA: 3
     flags: {}
     _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.alpha1
-      createdTime: 1736288127008
-      modifiedTime: 1756173413876
-      lastModifiedBy: JIYn39iJgV1tMnlB
-      exportSource: null
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
     category: null
-    _key: '!journal.pages!dkbDQ8CZlhEazfw7.NIdeFGfuO32ubmCd'
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.sc25ZAOrEltKH3uL'
   - sort: 200000
+    name: Version
+    type: text
+    _id: oHcYMiPXxp2se1TC
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>HELLPIERCERS for Foundry VTT <strong>0.8.0</strong>, for Foundry v14.370. Source: <a
+        href="https://github.com/WookieeMatt/foundryvtt-hellpiercers">https://github.com/WookieeMatt/foundryvtt-hellpiercers</a></p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.oHcYMiPXxp2se1TC'
+  - sort: 300000
+    name: Quick Start
+    type: text
+    _id: JpTqVd7ZgoDadZWh
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><strong>Game Master</strong></p><ol><li>Create a world with the HELLPIERCERS system. Enable <strong>Dice So
+        Nice</strong>, <strong>Automated Animations</strong> (with Sequencer and socketlib) and a <strong>JB2A</strong>
+        library if you want them; none are required.</li><li>Open the Actors tab. The <strong>Faction / Party</strong>
+        button in its header creates the squad's Party and the Factions.</li><li>Create one Party for the squad and
+        three Factions for the campaign. Factions are built from the book: Crown, Qualities, starting locations and
+        upgrades are already filled in.</li><li>Import the units you need from the <strong>Faction Units</strong>
+        compendium and place them on a scene.</li><li>Start a combat, add the squad and the enemies, and press
+        play.</li></ol><p><strong>Players</strong></p><ol><li>Create a <strong>HELLPIERCER</strong> actor. Drag a class,
+        an armor and weapons from the <strong>Player Gear</strong> compendium onto the sheet; their abilities come with
+        them.</li><li>Sheets open locked. Flip the switch in the header to edit stats and items, then flip it back to
+        play.</li><li>In combat use the <strong>Main / Support / Aux / Move</strong> pips under the name, the bolt on an
+        ability to use it, and the dice icon on a weapon to attack.</li></ol>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.JpTqVd7ZgoDadZWh'
+  - sort: 400000
+    name: TACCOM
+    type: text
+    _id: 6aOhXXkmva1ymTM7
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><strong>Turns.</strong> Players act in any order, then the GM activates each enemy. Click a combatant in the
+        tracker to start its turn. Bosses use the Variable Action System: the Actions stat is
+        <code>actions/players</code>, so <code>1/2</code> is one action for every two players, rounded down, minimum 1.
+        The boss sheet shows the result and a button to recalculate it when players join or
+        leave.</p><p><strong>Actions.</strong> Each unit has Main, Support, Aux and Move pips. Spending a spent action
+        uses a stack of Haste. Shock makes every action count one tier higher, Frozen blocks Aux and Pin blocks
+        Move.</p><p><strong>Turn effects.</strong> At the start and end of a turn the system resolves Poison, Healing,
+        Blazing (and its spread), Pain Aura, Countdown, Brand and the Spawner's charge, then decays Effects. Each result
+        is posted to chat. <em>Automate Turn Effects</em> switches this off.</p><p><strong>Attacks.</strong> Click the
+        dice icon on a weapon, strike or boss attack. The attack dialog shows the damage and range; area attacks have a
+        range button that places a template and targets everything inside it. Confirm and the system rolls and posts one
+        damage card per target. A button on each card applies the damage with Armor, Bleed, Broken, Wrack, Snakeskin,
+        Glassflesh, Compel and Constrict taken into account, plus Transference and Bound on the attacker and Temporary
+        HP on the target.</p><p><strong>Effects.</strong> Chips under the name show each Effect and its stacks; click to
+        add or remove a stack, or use the plus chip to add a new one. A unit at 0 HP is defeated and offers a Rez button
+        (Main Action).</p><p><strong>Provoke.</strong> When a token is dragged away from an adjacent enemy the GM client
+        rolls the 1D6 Provoke attack, per enemy unit and along the whole path. Flying (Aegis) units, forced movement and
+        anything flagged <code>hellpiercers.noProvoke</code> are exempt; MURIEL ignores enemies she moved through this
+        turn; KOPIS's Offhand Pistol fires back automatically. Every Provoke card has an <strong>Undo</strong> button
+        for the GM, for terrain exemptions such as JEHOEL's or any table ruling. <em>Expanded Aggression Rituals</em>
+        applies Aggression, which makes the user Provoke out to Range:2.</p><p><strong>Swarms.</strong> The token HUD
+        has a Swarm palette: <strong>New Swarm</strong>, <strong>Join adjacent</strong> (units of the same type that
+        touch), <strong>Merge selected</strong> and <strong>Delete</strong>. A Swarm has 10 HP per tile and breaks into
+        smaller Swarms when tiles stop touching. When a Swarm attacks, the dialog makes one attack per adjacent tile (at
+        most 4 against Scale 1, 12 against Scale 2), each with +1 damage per adjacent tile, then asks which tiles to
+        expend.</p><p><strong>Limit Breaks, AGNOSIA and Reversal.</strong> Every enemy a HELLPIERCER defeats adds to
+        their Limit Break (each Swarm tile counts). Bosses and Minibosses announce their AGNOSIA once, when they first
+        reach the threshold. Reversal charges and Equipment uses are spent when the ability is used.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.6aOhXXkmva1ymTM7'
+  - sort: 500000
+    name: STRATCOM
+    type: text
+    _id: iHHEtCIFAieEH9al
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><strong>The Party.</strong> The Party sheet holds the division's Hellsteel, Soulfire and Brimstone, its
+        buildings, the active mission, the vehicle, Roles, Triumphs, Off-Grid Munitions, Grid Manipulation suites,
+        Legendary Arms (and their Aion) and Class Mastery.</p><ul><li><strong>Buildings</strong> follow the drawn tech
+        tree. Buildings unlock gear, weapons, armor and classes; items that are still locked cannot be dropped on a
+        sheet. Cross Class Development, Limit Breaks, Reversals and weapon slots follow the Party's buildings (setting
+        <em>Unlocks From Party Buildings</em>).</li><li><strong>Missions.</strong> Pick the objectives and the target
+        faction, then <strong>Leave DIS</strong>. When the squad comes back, <strong>Return to DIS</strong> pays the
+        rewards, rearms and heals the squad, advances Class Mastery and gives the GM Ichor (1 per mission, 2 per hero
+        defeated).</li><li><strong>Roles and Triumphs</strong> list their STRATCOM and RECON actions; using one pays the
+        cost and posts it. Bleeding, Reckless, No Gear and Echo are automatic.</li></ul><p><strong>Factions.</strong> A
+        Faction's four Qualities are the sum of its active locations, and its Crown falls by one for every two Quality
+        points lost. The dice icon next to a Quality rolls it (1D6 per dot, a 6 is a Success; shift-click rolls
+        publicly). Tabs:</p><ul><li><strong>Locations</strong> with build time, status (active, under construction,
+        lost) and what players know.</li><li><strong>Convoys</strong> arrive at the start of the second phase after they
+        are deployed.</li><li><strong>Research</strong> projects: pay Ichor, fill Research Time boxes, at most two at a
+        time.</li><li><strong>Actions</strong> (GM only): the faction's STRATCOM actions, with their Crown gates. Using
+        one posts it to the GM. Some create a <strong>map hazard</strong>: Devolve advances a stage every STRATCOM
+        phase, Eyerot grows one stage each time the action is used at a location. Create Map Hazard adds a custom
+        one.</li><li><strong>Upgrades</strong> unlocked with Ichor, and <strong>Notes</strong> with the War
+        Journal.</li></ul><p><strong>Ichor and the phase.</strong> The GM's Ichor and the STRATCOM phase are shown in
+        the header of the Party and Faction sheets. <strong>Advance phase</strong> (a button there, or the <em>Advance
+        STRATCOM Phase</em> macro) builds locations, moves convoys and grows hazards, and whispers a summary to the GM.
+        <em>Gain Ichor</em> and <em>Gain Resources</em> are macros too.</p><p><strong>Campaign map.</strong> The
+        <em>Create Campaign Map</em> macro builds a gridless scene from the three faction map segments. Put one 1:1.8
+        image per faction at <code>assets/hellpiercers/maps/&lt;faction id&gt;.webp</code>; the book's art is not
+        included.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.iHHEtCIFAieEH9al'
+  - sort: 600000
+    name: RECON
+    type: text
+    _id: 5BKCrH5s3w3FSL3e
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <ul><li><strong>RECON Roll</strong> (macro): 2D6 plus one for each relevant Tag. 7 or less fails, 8 to 9
+        succeeds with a major drawback, 10 or more succeeds beyond expectations.</li><li><strong>Tone Die</strong>
+        (macro): a D10 for how heated a scene is. 1 is de-escalated, 10 is TACCOM.</li><li>The <strong>RECON
+        Tables</strong> compendium holds every table in the Core Rules as a RollTable: Chambers of Forbidden Truths,
+        Corridors, Vaults, Legendary Arms, Scavenge, Scout, Travel, the NPC generator (Name, Traits, Desires), the Item
+        Table (a D66) and the Location Generator (six columns).</li></ul>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.5BKCrH5s3w3FSL3e'
+  - sort: 700000
+    name: Compendiums
+    type: text
+    _id: QWxbXJKXtEAOxdkV
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <table><thead><tr><th>Compendium</th><th>Contents</th></tr></thead><tbody><tr><td>Player Gear</td><td>Classes,
+        armor, weapons, gear, equipment and HALO items</td></tr><tr><td>Player Abilities</td><td>The abilities that
+        belong to them</td></tr><tr><td>Faction Units</td><td>95 bosses, minibosses, minions, spawners and
+        fortifications, one folder per faction</td></tr><tr><td>RECON Tables</td><td>17 roll
+        tables</td></tr><tr><td>Rules Reference</td><td>Effects, buildings, missions, Triumphs, Roles, vehicle, research
+        and every faction</td></tr><tr><td>HELLPIERCERS Macros</td><td>18 ready-made macros</td></tr><tr><td>System
+        Information</td><td>This manual</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.QWxbXJKXtEAOxdkV'
+  - sort: 800000
+    name: Macros and API
+    type: text
+    _id: F2HNUsZMmBAZjAtN
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>The macro compendium covers damage, healing, Effects, Rez, Temporary HP, End Turn, Refresh Actions, RECON,
+        the Tone Die, Faction Rolls, Ichor, resources, the STRATCOM phase, Return to DIS and the campaign map.
+        Everything is also available to your own macros and modules as <code>hellpiercers</code>; see
+        <code>docs/API.md</code> in the repository for every call and hook.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.F2HNUsZMmBAZjAtN'
+  - sort: 900000
+    name: Modules and Settings
+    type: text
+    _id: pPhKOMuVN3FqDdRv
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p><strong>Dice So Nice.</strong> With <em>Themed Dice</em> on, damage, healing, RECON, the Tone Die, Provoke
+        and each faction's Quality dice roll in their own colours.</p><p><strong>Animations.</strong>
+        <em>Animations</em> picks the provider: <em>Automatic</em> tries Automated Animations first and falls back to
+        the built-in effects; the other choices use one provider or none. Automated Animations matches on the attack's
+        name, or on rules you write named <code>HELLPIERCERS Melee</code>, <code>HELLPIERCERS Ranged</code>,
+        <code>HELLPIERCERS Burst Fire</code> and so on. The built-in effects need Sequencer and a JB2A library. The
+        system detects whether the <strong>Free</strong> or the <strong>Premium (Patreon)</strong> library is active,
+        uses Premium when both are, and every effect falls back to the best animation the installed library has.
+        <em>JB2A Library</em> can force Free.</p><p><strong>Sheet Theme.</strong> <em>Parchment</em> is the book's
+        pages; <em>Night</em> is the cover's slate and violet. It is a per-user
+        setting.</p><table><thead><tr><th>Setting</th><th>What it does</th></tr></thead><tbody><tr><td>Player Count
+        Override</td><td>Number of players for boss actions; blank detects them</td></tr><tr><td>Automate Turn
+        Effects</td><td>The GM client resolves turn effects and decay</td></tr><tr><td>Armor / Bleed Stack
+        Rule</td><td>Flat as written, or per stack</td></tr><tr><td>Track Actions</td><td>Action pips in the combat
+        tracker</td></tr><tr><td>Post Ability Cards</td><td>Using an ability posts a card and spends its
+        action</td></tr><tr><td>Automate Provoke</td><td>Roll Provoke when a token leaves an
+        enemy</td></tr><tr><td>Active Party</td><td>The Party whose buildings unlock items</td></tr><tr><td>Unlocks From
+        Party Buildings</td><td>Derive unlocks from the Party</td></tr><tr><td>Sheet Theme</td><td>Parchment or Night,
+        per user</td></tr><tr><td>Themed Dice</td><td>Dice So Nice colours</td></tr><tr><td>Animations, JB2A Library,
+        Animate Attacks, Animate Effects</td><td>Animation provider and what is animated</td></tr></tbody></table>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.pPhKOMuVN3FqDdRv'
+  - sort: 1000000
     name: Building Items
     type: text
-    _id: ffis5fdmv3EmuexX
+    _id: P0xuprZA0GWTJkBe
     system: {}
     title:
       show: true
@@ -55,54 +369,33 @@ pages:
     text:
       format: 1
       content: >-
-        <p>In the current version, due to the possibility of underlying data
-        changes, I'm not shipping compendiums quite yet.</p><p>For most items,
-        it's pretty straightforward. Bosses have a button on their sheets to add
-        abilities and minions don't need items.</p><p>For player abilities, it's
-        a bit more complicated (but not ridiculously so!). Weapons can be built
-        on their own and dropped onto the HELLPIERCER sheet. For classes, you'll
-        need to make the ability items separate from the class
-        item.</p><ol><li><p>Create an item of type Class and fill in the name,
-        description and health value.</p></li><li><p>Create an item of type
-        Ability and fill in the name and effect specifying it as an Active. Then
-        drag the corresponding class item from the sidebar to the "Enter UUID or
-        Drop Document" area at the bottom of the sheet. Then close the sheet and
-        drag the Active item to Active section on the
-        class.</p></li><li><p>Repeat step 2 except choosing the Passive subtype
-        and dragging it to the Passive input.</p></li><li><p>Repeat step 2 this
-        time choosing the Limit Break subtype and filling in the break value and
-        dragging it to the Limit Break section.</p></li></ol><p>Creating an
-        Armor item is similar, except using the Movement, Active and Reversal
-        subtypes for each ability.</p><p>When creating a weapon, clicking on the
-        cog button for the range will open an editor for the range. You can
-        select from the different range types or build a bespoke range pattern.
-        Ranges are built and displayed with the origin facing east.  Clicking
-        the cog button near the damage will open an advanced editor for the
-        damage.</p>
+        <p>Most items come from the Player Gear compendium. To build your own:</p><ol><li><strong>Weapons</strong> have
+        one or more attack profiles. The cog next to the range opens the range editor (a standard shape or a bespoke
+        pattern, drawn facing east); the cog next to the damage opens the damage editor for Effects and
+        qualities.</li><li><strong>Classes and armor</strong> list their abilities by link. Create the ability items
+        first, then drop the class or armor on each ability's UUID field and drop the abilities back onto the class
+        slots (Active, Passive, Limit Break; or Movement, Active, Reversal for armor).</li><li><strong>Bosses</strong>
+        have a button on the sheet to add attacks and a special; <strong>minions</strong> carry a strike and a special
+        and need no items, and Minibosses add extra attacks as items.</li></ol>
     video:
       controls: true
       volume: 0.5
     src: null
     ownership:
       default: -1
-      0uq1NcpEgiMQWXgA: 3
     flags: {}
     _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.346'
+      coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.alpha1
-      createdTime: 1736288652740
-      modifiedTime: 1741241052822
-      lastModifiedBy: JIYn39iJgV1tMnlB
-      exportSource: null
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
     category: null
-    _key: '!journal.pages!dkbDQ8CZlhEazfw7.ffis5fdmv3EmuexX'
-  - sort: 300000
-    name: Attacks
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.P0xuprZA0GWTJkBe'
+  - sort: 1100000
+    name: Troubleshooting
     type: text
-    _id: woBcekCLT8xp6Cni
+    _id: dGDqveNr0ClZOSnZ
     system: {}
     title:
       show: true
@@ -111,128 +404,33 @@ pages:
     text:
       format: 1
       content: >-
-        <p>On the sheets, click on the dice icon near a weapon, attack or strike
-        to open the targeting dialog.</p><p>If the attack is an area of effect
-        attack, there will be a range button in the dialog. Click the button to
-        hide the dialog and put a template down. Generally you'll be clicking
-        the space where the attacking unit it for placement. While placing the
-        scroll wheel will rotate the template between the 4 cardinal
-        directions.</p><p>Once the template is placed, any affected units will
-        be targeted. If the attack is not an aoe, or if you want to fine tune
-        targets, the normal foundry targeting tools can be used. The T and
-        Shift+T hotkeys are easy to use.</p><p>Confirm the dialog and dice will
-        be rolled and cards printed for each target. Users that can modify the
-        target will be shown an apply damage button to automatically apply the
-        damage. When applying, a confirmation will be shown.</p>
+        <ul><li><strong>A compendium is missing or empty.</strong> After updating the system, restart Foundry or reload
+        the world so the packs are re-read.</li><li><strong>No animations.</strong> Check that Sequencer and a JB2A
+        library (or Automated Animations) are enabled in the world, and that <em>Animations</em> is not set to none. The
+        provider and the JB2A library in use are shown by
+        <code>hellpiercers.animations.describe()</code>.</li><li><strong>Provoke does not trigger.</strong> It needs a
+        started combat on a square grid, a manual move (drag, keyboard or HUD) and the <em>Automate Provoke</em>
+        setting.</li><li><strong>Sheets look unstyled.</strong> Hard-refresh the page (Ctrl+F5) after updating; make
+        sure the world runs Foundry v14.370.</li></ul>
     video:
       controls: true
       volume: 0.5
     src: null
     ownership:
       default: -1
-      0uq1NcpEgiMQWXgA: 3
     flags: {}
     _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.346'
+      coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.alpha1
-      createdTime: 1736290188294
-      modifiedTime: 1736290670155
-      lastModifiedBy: 0uq1NcpEgiMQWXgA
-      exportSource: null
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
     category: null
-    _key: '!journal.pages!dkbDQ8CZlhEazfw7.woBcekCLT8xp6Cni'
-  - sort: 400000
-    name: Credits
-    type: text
-    _id: k6zghMJZcTUWAiII
-    system: {}
-    title:
-      show: true
-      level: 1
-    image: {}
-    text:
-      format: 1
-      content: >-
-        <p><a
-        href="https://sandypuggames.itch.io/hellpiercers-preview-edition">HELLPIERCERS</a>
-        is by <a href="https://spg.crd.co/">Sandy Pug Games</a>. Included
-        artwork is used with permission.</p><p>This project uses icons from <a
-        href="https://game-icons.net/" rel="nofollow
-        noopener">https://game-icons.net/</a> under <a
-        href="http://creativecommons.org/licenses/by/3.0/" rel="nofollow
-        noopener">CC BY 3.0</a></p><p><a
-        href="https://fonts.google.com/specimen/MedievalSharp" rel="nofollow
-        noopener">Medieval Sharp</a> font by Wojciech Kalinowski used under the
-        <a
-        href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=OFL"
-        rel="nofollow noopener">Open Font License</a></p><p>This system is
-        programmed by Bolts. Support me on <a
-        href="https://ko-fi.com/bolts">https://ko-fi.com/bolts</a>. Donations
-        are not required, but are much appreciated.</p><a
-        href="https://ko-fi.com/G2G6VL7NN" target="_blank"><img
-        src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee
-        at ko-fi.com" height="36" /></a>
-    video:
-      controls: true
-      volume: 0.5
-    src: null
-    ownership:
-      default: -1
-      0uq1NcpEgiMQWXgA: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.347'
-      systemId: hellpiercers
-      systemVersion: 0.alpha1
-      createdTime: 1736290689558
-      modifiedTime: 1756176342203
-      lastModifiedBy: JIYn39iJgV1tMnlB
-      exportSource: null
-    category: null
-    _key: '!journal.pages!dkbDQ8CZlhEazfw7.k6zghMJZcTUWAiII'
-  - sort: 350000
-    name: Cool Modules
-    type: text
-    _id: xdprHt5khVQnCuaZ
-    system: {}
-    title:
-      show: true
-      level: 1
-    image: {}
-    text:
-      format: 1
-      content: >-
-        <p>Nothing yet, though feel free to test and report any
-        incompatibilities.</p>
-    video:
-      controls: true
-      volume: 0.5
-    src: null
-    ownership:
-      default: -1
-      0uq1NcpEgiMQWXgA: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.346'
-      systemId: hellpiercers
-      systemVersion: 0.alpha1
-      createdTime: 1736291058286
-      modifiedTime: 1736291135621
-      lastModifiedBy: 0uq1NcpEgiMQWXgA
-      exportSource: null
-    category: null
-    _key: '!journal.pages!dkbDQ8CZlhEazfw7.xdprHt5khVQnCuaZ'
-  - sort: 150000
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.dGDqveNr0ClZOSnZ'
+  - sort: 1200000
     name: Change Log
     type: text
-    _id: MauFU7m4EmDZ7Frx
+    _id: D27PLHuAiR2jbP4q
     system: {}
     title:
       show: true
@@ -241,92 +439,93 @@ pages:
     text:
       format: 1
       content: >-
-        <h2>Beta 1 (0.beta1)</h2><ol><li><p>Add compendium of player build
-        options and compendium of class and armor
-        abilities.</p></li><li><p>Overhaul of sheets. All sheets are now
-        toggled. By default sheets open in locked mod which limits the ability
-        to edit their stats and items. Unlocking the sheet using the switch in
-        the header bar allows adding deleting and moving items, editing stats
-        (where they aren't derived), and generally setting up the actor. Putting
-        it in locked/play mode prevents unintended edits. When creating a new
-        actor or item, the sheet will open in edit mode
-        automatically.</p></li><li><p>Add a configuration menu to HELLPIERCER
-        and HALO sheets to enable unlocks.</p></li><li><p>Add automation for
-        status decay and augment the Active Effect sheet with the system
-        duration handling.</p></li><li><p>Add profile switching to HELLPIERCER
-        and HALO weapons.</p></li><li><p>Add Equipment item type and
-        sheet</p></li><li><p>Improve combat tracker styling</p></li><li><p>Add
-        spawner actor type and sheets.</p></li></ol><p><span class="notification
-        warning">Due to data changes to HALO Weapons, you may need to redo the
-        damage and range for any existing weapons.</span></p><h2>Alpha 4
-        (0.alpha4)</h2><p>Hotfix for alpha 3</p><ol><li><p>Fix an issue in
-        datamodels that was causing attack data to be cleared when editing
-        weapons.</p></li><li><p>Partial rework of the attack dialog. Improves
-        attack dialog styling and appearance. Fixes positioning when changing
-        the sidebar collapse state. Add opening animation. Reworks the dialog as
-        a ui hud element. <br /><span class="notification info">Existing macros
-        for attacks need to be recreated to account for these
-        changes.</span></p></li><li><p>Add descriptions to status effects and
-        re-sort the effects in the token hud to be alphabetically sorted in
-        accordance with the core rulebook.</p></li></ol><h2>Alpha 3
-        (0.alpha3)</h2><ol><li><p>Added swarm functionality. Minion units that
-        are in combat can be group selected and added to a swarm if they have
-        the Horde tag and are backed by the same actor by right clicking and
-        selecting the New swarm option from the token hud.</p></li><li><p>Combat
-        tracker is now built in. You should disable Lancer Initiative if you
-        still have it. Multiple activations isn't handled yet and the styling
-        isn't great, but it exists.</p></li><li><p>Revamped damage rolling and
-        application. Should now be much closer to the rules, especially with
-        respect to swarms. The chat cards are improved and now handle multiple
-        targets with a single card.</p></li><li><p>New actors now have better
-        defaults for disposition and actor link. These settings can still be
-        overridden by prototype token overrides, but now HELLPIERCER and HALO
-        actors are friendly by default and Minions have unlinked tokens by
-        default.</p></li><li><p>Token sizing is now automatic. There's a toggle
-        in the token config if you need to override without changing scale,
-        otherwise token size will follow the scale stat (with live updates
-        even)</p></li><li><p>A lot of under the hood stuff that doesn't really
-        need description here, but rest assured, it makes <em>my</em> life
-        easier.</p></li></ol><h2>Alpha 2 (0.alpha2)</h2><ol><li><p>Add HALO
-        units and item types for their gear</p></li><li><p>Rework attack data.
-        This may require redoing some items.</p></li><li><p>Move many sheet
-        functions to context menus</p></li></ol><h2>Alpha 1
-        (0.alpha1)</h2><p>Initial Release</p>
+        <h2>0.8.0</h2><ul><li>Night theme audited on every sheet, tab, dialog, chat card and journal; contrast
+        checked.</li><li>Rules Reference and Manual journals styled like the book: ribbon headings, inked tables, a
+        black page list.</li><li>Dialogs (including the ones sheets open) wear the same look as the sheets.</li><li>The
+        Manual &amp; Notes journal rewritten for the current system; generated from
+        <code>docs/GUIDE.md</code>.</li><li>New documentation: user guide, theming guide, this changelog.</li><li>Fixed
+        a stray character in the faction Actions tab and a heading that wrapped its
+        button.</li></ul><h2>0.7.0</h2><ul><li>The book's look: aged parchment, thick black ink, gold ribbon labels,
+        crimson paint edge, blackletter titles.</li><li>Two palettes with a per-user Sheet Theme setting: Parchment and
+        Night.</li><li>Restyled every actor and item sheet, chat card, the attack dialog, action pips, status chips and
+        the combat tracker.</li><li>Bundled Big Shoulders, EB Garamond and Pirata One (SIL OFL).</li><li>STRATCOM sheets
+        and system messages localized.</li></ul><h2>0.6.0</h2><ul><li>Dice So Nice: themed dice for damage, healing,
+        RECON, the Tone Die, Provoke and every faction.</li><li>Animations: Automated Animations bridge plus built-in
+        Sequencer effects using JB2A Free or Premium, detected automatically.</li><li>Faction STRATCOM actions for every
+        faction, staged map hazards (Devolve, Eyerot) and Create Map Hazard.</li><li>Boss Variable Action System:
+        actions per players, rounded in the players' favour, with a recalculate button.</li><li>Minibosses' extra
+        attacks as items, with damage and range read from the book.</li></ul><h2>0.5.0</h2><ul><li>Faction Units
+        compendium: 95 bosses, minibosses, minions, spawners and fortifications.</li><li>RECON Tables compendium: every
+        roll table in the Core Rules, the NPC and Location generators and the Item D66.</li><li>Rules Reference journal
+        built from the same catalogs the engine uses.</li><li>Swarms: join adjacent units, merge Swarms, expend tiles
+        after an attack.</li><li>Provoke: Aggression and Range:2, MURIEL's pass-through, an Undo button on every Provoke
+        card.</li></ul><h2>0.4.0</h2><ul><li>Limit Break credit from kills, AGNOSIA for bosses and Minibosses, Provoke,
+        the Swarm attack plan.</li><li>Role actions and Triumph effects, the campaign map
+        helper.</li></ul><h2>0.3.0</h2><ul><li>STRATCOM: the Party (resources, tech tree, item unlocks, missions,
+        vehicle, Roles, Class Mastery, Legendary Arms) and the Faction (Crown, Qualities, locations, convoys, research,
+        upgrades, War Journal).</li><li>Ichor and the STRATCOM phase, faction rolls, 17
+        macros.</li></ul><h2>0.2.0</h2><ul><li>TACCOM: the turn engine, action economy, damage engine, ability cards,
+        Effects with stacks and the scripting API.</li></ul><h2>0.1.0</h2><ul><li>Upgrade of the community HELLPIERCERS
+        system to Foundry v14.370, kept as a separate private build.</li></ul>
     video:
       controls: true
       volume: 0.5
     src: null
-    category: null
     ownership:
       default: -1
-      JIYn39iJgV1tMnlB: 3
     flags: {}
     _stats:
-      compendiumSource: null
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.alpha1
-      createdTime: 1741209659146
-      modifiedTime: 1756219728217
-      lastModifiedBy: JIYn39iJgV1tMnlB
-    _key: '!journal.pages!dkbDQ8CZlhEazfw7.MauFU7m4EmDZ7Frx'
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.D27PLHuAiR2jbP4q'
+  - sort: 1300000
+    name: Credits and Licence
+    type: text
+    _id: eKG3nD2AFEuRiJ9M
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>HELLPIERCERS is by Sandy Pug Games. This system began as the open-source HELLPIERCERS system by Bolts (Joe
+        Nosie), <a
+        href="https://codeberg.org/Bolts/foundryvtt-hellpiercers">https://codeberg.org/Bolts/foundryvtt-hellpiercers</a>,
+        and keeps its GPL-3.0 licence. Icons are from game-icons.net (CC BY 3.0). The fonts Big Shoulders, EB Garamond
+        and Pirata One are used under the SIL Open Font License.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      coreVersion: '14.370'
+      systemId: hellpiercers
+      systemVersion: 0.8.0
+      createdTime: 1794659513781
+      modifiedTime: 1794659513781
+    category: null
+    _key: '!journal.pages!dkbDQ8CZlhEazfw7.eKG3nD2AFEuRiJ9M'
 folder: null
 sort: 0
 ownership:
   default: 0
-  0uq1NcpEgiMQWXgA: 3
-flags: {}
+flags:
+  hellpiercers:
+    themed: true
 _stats:
-  compendiumSource: null
-  duplicateSource: null
-  coreVersion: '13.346'
+  coreVersion: '14.370'
   systemId: hellpiercers
-  systemVersion: 0.alpha1
-  createdTime: 1736288118947
-  modifiedTime: 1736288118947
-  lastModifiedBy: 0uq1NcpEgiMQWXgA
-  exportSource: null
-categories: []
+  systemVersion: 0.8.0
+  createdTime: 1794659513781
+  modifiedTime: 1794659513781
+_id: dkbDQ8CZlhEazfw7
 _key: '!journal!dkbDQ8CZlhEazfw7'

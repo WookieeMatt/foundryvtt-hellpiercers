@@ -64,14 +64,14 @@
     </ul>
   {{/if}}
 
-  <h3>
-    \1{{localize 'HELLPIERCERS.UI.faction_actions.map_hazards'}}
+  <div class="row hazards-head">
+    <h3>{{localize 'HELLPIERCERS.UI.faction_actions.map_hazards'}}</h3>
     {{#if @root.isGM}}<button type="button" data-action="addHazard">
         <i class="fa-solid fa-plus"></i> {{
           localize 'HELLPIERCERS.UI.faction_actions.create_map_hazard'
         }}
       </button>{{/if}}
-  </h3>
+  </div>
   {{#unless hazards.length}}<p class="hint">
       {{localize 'HELLPIERCERS.UI.faction_actions.no_active_map_hazards'}}
     </p>{{/unless}}
