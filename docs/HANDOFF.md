@@ -138,8 +138,10 @@ Key design facts:
    Enemy actions round **down** (the book's rounding rule). The "Geographical Rot" upgrade is undefined in the
    book and shipped as a flagged placeholder. Autophyes' printed Subterfuge (2) disagrees with its starting
    locations (3): handled by `qualityAdjust`.
-4. Book art (maps, page art) is **not** in the repo and must not be committed. The seven faction maps live at
-   `D:\FoundryVTT14\Data\assets\hellpiercers\maps\<faction>.webp` (converted from the PDFs/PNGs).
+4. **Book art may be used and committed** (the user confirmed this) because the repo stays **private**. The seven
+   faction maps currently live outside the repo at `D:\FoundryVTT14\Data\assets\hellpiercers\maps\<faction>.webp`
+   (converted from the PNGs/PDFs in `D:\Random RPG\Hellpiercers\`). Moving them into `public/assets` so they ship
+   with the system is a sensible first step (WebP, a few MB each at most).
 
 ## 6. Working agreements
 
@@ -159,8 +161,9 @@ Key design facts:
 - **Tooling quirks:** Bash heredocs with many quotes fail (write a script file instead); `rm -rf dist/*` is blocked
   (rebuild over the existing `dist`); `dprint` rewrites templates, so patch with read-then-edit, not exact-match
   scripts; macro IDs are exactly 16 characters.
-- **Do not** add upstream-facing changes, rename the system id, vendor book art, or make the repo public without
-  asking: the copyright of the book's text/art is the user's call.
+- **Do not** add upstream-facing changes, rename the system id, or make the repo public. The decision is made: **the
+  repo stays private for now**, and book art and text may be included. If that ever changes, the book's text and
+  art become a copyright question, so ask first.
 
 ## 7. Known gaps and debt
 
@@ -202,8 +205,9 @@ A GM and player view of the campaign: the three faction map segments (the images
 locations as pins from `faction.system.locations` (revealed only if `revealed`), convoys drawn as dashed routes
 moving each phase, hazards as stage-tinted regions, the party's position and vehicle, and a phase scrubber.
 Build on `src/stratcom/map.mjs` (it already makes the scene) and `hellpiercers.stratcomPhase`. Click a pin to open
-the location, drag the party token to travel (RECON Travel table roll). Risk: art licensing (keep images
-user-supplied); keep it a scene, not a new canvas layer, unless you have a strong reason.
+the location, drag the party token to travel (RECON Travel table roll). The book's
+map art may be used (private repo): ship it under `public/assets`. Keep it a scene, not a new canvas layer,
+unless you have a strong reason.
 
 ### C. The Director: encounter builder for the GM
 
@@ -261,12 +265,13 @@ first, then A.
 2. Lint, format and build are clean; every new `localize` key exists.
 3. Docs updated: `docs/GUIDE.md` (user-facing), `docs/API.md` (hooks/API), `CHANGELOG.md`, `ROADMAP.md`; manual
    regenerated and packed if `GUIDE.md` or `CHANGELOG.md` changed.
-4. No book art, no secrets, no upstream changes; contrast checked for any new colours.
+4. No secrets, no upstream changes, the repo stays private; shipped images are web-sized; contrast checked for any new colours.
 5. Committed, tagged, pushed; the user has confirmed CI.
 
 ## 10. Open questions for the user
 
-- Make the repo public so Foundry can install from the manifest URL? (Book text in the compendiums is the issue.)
+- *(Decided)* The repo stays **private**; book art and text are fine to include. Foundry therefore installs from the
+  local junction, not the manifest URL.
 - Which of section 8 do they want? Do they want terrain automation to be strict or advisory?
 - Any table (their group) pain points from actual play? Real play feedback beats every idea above.
 
