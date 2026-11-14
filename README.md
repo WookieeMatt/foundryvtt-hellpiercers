@@ -12,6 +12,8 @@ Optional modules (all recommended in the manifest): **Dice So Nice** (themed dic
 **Automated Animations** with **Sequencer** and **socketlib**, and **JB2A** (Free or Premium; the
 system detects which and falls back to the best animation each library has). See *Settings*.
 
+The sheets follow the book's look. *Settings > Sheet Theme* switches between **Parchment** (the book's pages) and **Night** (the cover's slate and violet), per user. Fonts (Big Shoulders, EB Garamond, Pirata One) are SIL OFL; licences are in `public/fonts/hp`.
+
 See [`docs/API.md`](docs/API.md) for the macro API and [`ROADMAP.md`](ROADMAP.md) for progress.
 
 ## Install

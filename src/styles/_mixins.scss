@@ -1,0 +1,92 @@
+// Shapes from the book: ribbons, tags, ink panels, paint edges.
+
+/** A gold ribbon label with the book's notched left end. */
+@mixin ribbon($height: 1.45rem) {
+  position: relative;
+  display: inline-block;
+  min-height: $height;
+  line-height: $height;
+  padding: 0 0.9rem 0 1.15rem;
+  font-family: var(--hp-font-label);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: #1b1410;
+  background: linear-gradient(180deg, #f8c53a, #e2a216);
+  clip-path: polygon(0.6rem 0, 100% 0, 100% 100%, 0.6rem 100%, 0 50%);
+  box-shadow: inset 0 -2px 0 rgb(120 70 0 / 35%);
+}
+
+/** The black blackletter tag the character sheet uses for its section labels. */
+@mixin tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.05rem 0.9rem 0.1rem;
+  font-family: var(--hp-font-black);
+  font-size: 1.15rem;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: #0e0b0a;
+  clip-path: polygon(
+    0.5rem 0,
+    calc(100% - 0.5rem) 0,
+    100% 50%,
+    calc(100% - 0.5rem) 100%,
+    0.5rem 100%,
+    0 50%
+  );
+}
+
+/** A thick-inked panel: slightly off-square corners, a hard printed shadow. */
+@mixin ink-panel($fill: var(--hp-surface-2)) {
+  background: $fill;
+  border: 3px solid var(--hp-border);
+  border-radius: 3px 7px 4px 8px / 8px 3px 7px 4px;
+  box-shadow: 3px 3px 0 rgb(0 0 0 / 28%);
+}
+
+/** Thin gold rule, as under the stat lines on the book's unit pages. */
+@mixin gold-rule($side: bottom) {
+  border-#{$side}: 1px solid var(--hp-line);
+}
+
+/** A crimson paint edge down one side of a page. */
+@mixin paint-edge($side: left) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    #{$side}: 0;
+    width: 14px;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(
+        circle at 0 12%,
+        var(--hp-crimson) 0 11px,
+        transparent 12px
+      ),
+      radial-gradient(
+      circle at 0 38%,
+      var(--hp-crimson) 0 7px,
+      transparent 8px
+    ),
+      radial-gradient(
+      circle at 0 61%,
+      var(--hp-crimson) 0 13px,
+      transparent 14px
+    ),
+      radial-gradient(
+      circle at 0 84%,
+      var(--hp-crimson) 0 8px,
+      transparent 9px
+    ),
+      linear-gradient(90deg, var(--hp-crimson) 0 4px, transparent 4px);
+    @if $side == right {
+      transform: scaleX(-1);
+    }
+  }
+}

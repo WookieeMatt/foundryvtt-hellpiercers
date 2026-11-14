@@ -320,7 +320,8 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
     const objectives = [...form.querySelectorAll("input[name='objective']:checked")].map(
       i => i.value
     );
-    if (!objectives.length) return ui.notifications.warn("Choose at least one objective.");
+    if (!objectives.length)
+      return ui.notifications.warn(game.i18n.localize("HELLPIERCERS.MSG.chooseObjective"));
     const faction = form.querySelector("select[name='faction']")?.value ?? "";
     await this.actor.system.startMission({ objectives, faction, phase: phase.get() });
   }
@@ -334,7 +335,11 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
   static async #finishMission(_ev, target) {
     const success = target.dataset.success !== "false";
     const proceed = await Dialog().confirm({
-      window: { title: success ? "Return to DIS" : "Mission Failed" },
+      window: {
+        title: success
+          ? game.i18n.localize("HELLPIERCERS.MSG.returnToDis")
+          : game.i18n.localize("HELLPIERCERS.MSG.missionFailed"),
+      },
       content: success
         ? "<p>Return to DIS? Rewards are paid out, the squad is rearmed and healed, and the GM earns Ichor.</p>"
         : "<p>Abandon the mission and return to DIS without rewards?</p>",
@@ -359,7 +364,10 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
   /** @this {PartySheet} */
   static async #addArm() {
     const result = await Dialog().input({
-      window: { title: "Add Legendary Arm", icon: "fa-solid fa-gem" },
+      window: {
+        title: game.i18n.localize("HELLPIERCERS.MSG.addLegendaryArm"),
+        icon: "fa-solid fa-gem",
+      },
       content: `<div class="form-group"><label>Name</label><div class="form-fields"><input type="text" name="name" autofocus></div></div>
         <div class="form-group"><label>Aion (sessions)</label><div class="form-fields"><input type="number" name="aion" value="3" min="1"></div></div>`,
     });
@@ -383,8 +391,8 @@ export class PartySheet extends HellpiercersActorSheetMixin(ActorSheet) {
     const expired = await this.actor.system.endSession();
     ui.notifications.info(
       expired.length
-        ? `Legendary Arms expired: ${expired.join(", ")}`
-        : "Session ended. Aion reduced."
+        ? game.i18n.format("HELLPIERCERS.MSG.armsExpired", { arms: expired.join(", ") })
+        : game.i18n.localize("HELLPIERCERS.MSG.sessionEnded")
     );
   }
 

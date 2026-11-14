@@ -234,7 +234,7 @@ export async function toneDie(label = "") {
  */
 export async function reconDialog(ref) {
   const actor = resolve(ref)[0];
-  if (!actor) return ui.notifications.warn("Select a token or assign a character first.");
+  if (!actor) return ui.notifications.warn(game.i18n.localize("HELLPIERCERS.MSG.selectToken"));
   const names = new Set(actor.system.tags ?? []);
   for (const type of ["class", "armor", "weapon", "equipment"]) {
     for (const item of actor.itemTypes[type] ?? []) names.add(item.name);

@@ -1,0 +1,312 @@
+@use "mixins" as *;
+
+// Chat cards: every HELLPIERCERS message is a small parchment slip with a black header bar.
+
+@mixin cards {
+  .chat-message.message:has(.hellpiercers),
+  .chat-message.message.hellpiercers {
+    padding: 0;
+    overflow: hidden;
+    color: var(--hp-text);
+    background: var(--hp-paper);
+    border: 3px solid var(--hp-border);
+    border-radius: 3px 7px 4px 8px / 8px 3px 7px 4px;
+    box-shadow: 3px 3px 0 rgb(0 0 0 / 30%);
+    font-family: var(--hp-font-body);
+    --color-text-primary: var(--hp-text);
+    --color-text-secondary: var(--hp-text-dim);
+    --color-border-light-primary: var(--hp-border-soft);
+
+    > .message-header {
+      padding: 0.15rem 0.55rem;
+      margin: 0;
+      background: var(--hp-chrome);
+      color: var(--hp-chrome-text);
+      border-bottom: 2px solid var(--hp-line);
+      .message-sender {
+        font-family: var(--hp-font-black);
+        font-size: 1.15rem;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        color: var(--hp-chrome-text);
+      }
+      .message-metadata,
+      .message-timestamp,
+      a {
+        color: rgb(255 255 255 / 55%);
+      }
+    }
+    > .message-content {
+      padding: 0.4rem 0.65rem 0.55rem;
+      font-size: 1.05rem;
+      line-height: 1.3;
+    }
+    .message-content a.content-link,
+    .message-content a {
+      color: var(--hp-accent);
+    }
+  }
+
+  // Ribbon headings of the small system cards.
+  .hellpiercers.turn-note > header,
+  .hellpiercers.stratcom-note > header,
+  .hellpiercers.faction-roll > header,
+  .hellpiercers.recon-roll > header,
+  .hellpiercers.tone-die > header {
+    @include ribbon(1.35rem);
+    margin: 0.1rem 0 0.4rem -0.95rem;
+    padding-right: 1.4rem;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    color: #1b1410;
+  }
+  .hellpiercers.turn-note.agnosia > header {
+    background: linear-gradient(180deg, #e0455a, #a5241b);
+    color: #fff;
+  }
+
+  .hellpiercers.turn-note,
+  .hellpiercers.stratcom-note {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: flex;
+        gap: 0.5rem;
+        align-items: baseline;
+        padding: 0.1rem 0;
+        border-bottom: 1px solid var(--hp-line);
+        &:last-child {
+          border-bottom: none;
+        }
+        i {
+          width: 1rem;
+          text-align: center;
+          color: var(--hp-accent);
+        }
+      }
+    }
+    footer {
+      margin-top: 0.4rem;
+      button {
+        width: auto;
+        padding: 0 0.7rem;
+      }
+    }
+  }
+
+  .hellpiercers.faction-roll,
+  .hellpiercers.recon-roll,
+  .hellpiercers.tone-die {
+    .result {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      strong {
+        font-family: var(--hp-font-stencil);
+        font-weight: 800;
+        font-size: 2.1rem;
+        line-height: 1;
+        color: var(--hp-hero);
+      }
+      span {
+        font-family: var(--hp-font-label);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--hp-text-dim);
+      }
+    }
+    p {
+      margin: 0.15rem 0 0;
+      font-style: italic;
+      color: var(--hp-text-dim);
+    }
+  }
+  .hellpiercers.recon-roll.fail .result strong,
+  .hellpiercers.faction-roll.fail .result strong {
+    color: var(--hp-bad);
+  }
+  .hellpiercers.recon-roll.success .result strong,
+  .hellpiercers.faction-roll.success .result strong {
+    color: var(--hp-good);
+  }
+
+  .hellpiercers.ability-card {
+    header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 2px solid var(--hp-border);
+      img {
+        width: 2.8rem;
+        height: 2.8rem;
+        object-fit: cover;
+        padding: 2px;
+        background: var(--hp-chrome);
+        border: none;
+        clip-path: polygon(
+          14% 0,
+          86% 0,
+          100% 14%,
+          100% 86%,
+          86% 100%,
+          14% 100%,
+          0 86%,
+          0 14%
+        );
+      }
+      h3 {
+        margin: 0;
+        border: none;
+        font-family: var(--hp-font-black);
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.05;
+        text-transform: none;
+        color: var(--hp-text);
+      }
+      .meta {
+        font-family: var(--hp-font-label);
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--hp-accent);
+      }
+    }
+    .body {
+      margin-top: 0.4rem;
+      p:first-child {
+        margin-top: 0;
+      }
+      ul {
+        padding-left: 1.2rem;
+      }
+    }
+  }
+
+  // Damage cards.
+  .chat-message.hellpiercers .message-content.damage {
+    > h4.actor {
+      margin: 0;
+      font-family: var(--hp-font-black);
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1.05;
+      text-transform: none;
+      color: var(--hp-text);
+    }
+    > div.item {
+      font-family: var(--hp-font-label);
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--hp-accent);
+    }
+    ol.plain {
+      list-style: none;
+      padding: 0;
+      margin: 0.2rem 0;
+      .label {
+        font-family: var(--hp-font-label);
+        font-weight: 600;
+        font-size: 0.8rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--hp-text-dim);
+      }
+    }
+    .condition {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.3rem;
+      img {
+        width: 20px;
+        height: 20px;
+        border: none;
+        filter: invert(1);
+        @at-root .hp-theme-night & img {
+          filter: none;
+        }
+      }
+    }
+    .dice-roll {
+      margin: 0.3rem 0;
+    }
+    .dice-result {
+      display: grid;
+      grid-template:
+        "roll total" 1fr
+        "tooltip tooltip" min-content / 1fr min-content;
+      gap: 0 0.5rem;
+      .dice-formula {
+        grid-area: roll;
+        margin-bottom: unset;
+        font-family: var(--hp-font-label);
+        letter-spacing: 0.04em;
+        background: var(--hp-surface-3);
+        border: 1px solid var(--hp-border-soft);
+        border-radius: 0;
+      }
+      .dice-total {
+        grid-area: total;
+        break-inside: avoid;
+        text-wrap-mode: nowrap;
+        padding: 0 0.7rem;
+        margin-bottom: unset;
+        font-family: var(--hp-font-stencil);
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 1.25;
+        color: var(--hp-gold);
+        background: var(--hp-chrome);
+        border: none;
+        border-radius: 0;
+        clip-path: polygon(0.45rem 0, 100% 0, 100% 100%, 0.45rem 100%, 0 50%);
+      }
+      .dice-tooltip {
+        grid-area: tooltip;
+      }
+    }
+    ol.button-row {
+      list-style: none;
+      padding-left: 0;
+      margin: 0.3rem 0 0;
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.1rem 0;
+        border-bottom: 1px solid var(--hp-line);
+        img {
+          width: 2.6rem;
+          height: 2.6rem;
+          object-fit: cover;
+          object-position: 50% 0;
+          border: 2px solid var(--hp-border);
+        }
+        span.name {
+          flex: 1;
+          font-family: var(--hp-font-label);
+          font-weight: 800;
+          font-size: 1.15rem;
+          letter-spacing: 0.02em;
+          padding: 4px;
+        }
+        button {
+          width: auto;
+          flex: 0 0 2.2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+}

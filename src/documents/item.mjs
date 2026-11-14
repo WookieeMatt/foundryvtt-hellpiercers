@@ -74,20 +74,26 @@ export class HellpiercersItem extends Item {
     // Pay resources.
     if (!force) {
       if (this.type === "equipment" && this.system.available === false) {
-        ui.notifications.warn(`${this.name} has already been used.`);
+        ui.notifications.warn(
+          game.i18n.format("HELLPIERCERS.MSG.alreadyUsed", { name: this.name })
+        );
         return false;
       }
       if (this.type === "ability" && this.system.action === "reversal") {
         const left = actor.system.reversal_charges?.value ?? 0;
         if (left <= 0) {
-          ui.notifications.warn(`${actor.name} has no Reversal charges left.`);
+          ui.notifications.warn(
+            game.i18n.format("HELLPIERCERS.MSG.noReversal", { name: actor.name })
+          );
           return false;
         }
       }
       if (this.type === "ability" && this.system.action === "limit") {
         const { value, max } = actor.system.limit ?? {};
         if (max != null && value < max) {
-          ui.notifications.warn(`${actor.name}'s Limit Break isn't ready (${value}/${max}).`);
+          ui.notifications.warn(
+            game.i18n.format("HELLPIERCERS.MSG.limitNotReady", { name: actor.name, value, max })
+          );
           return false;
         }
       }

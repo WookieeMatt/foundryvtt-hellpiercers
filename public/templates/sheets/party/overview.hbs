@@ -5,7 +5,7 @@
 >
   {{!-- Mission --}}
   <div class="panel mission">
-    <h3>Mission</h3>
+    <h3>{{localize 'HELLPIERCERS.UI.party_overview.mission'}}</h3>
     {{#if mission.active}}
       <ul class="objectives">
         {{#each mission.objectives}}
@@ -21,17 +21,27 @@
         {{/each}}
       </ul>
       <p>
-        {{#if mission.factionName}}Target: <b>{{mission.factionName}}</b>
+        {{#if mission.factionName}}{{
+            localize 'HELLPIERCERS.UI.party_overview.target'
+          }} <b>{{mission.factionName}}</b>
           &middot;
-        {{/if}}Defeated: <b>{{mission.defeats}}</b> &middot; Rewards so far:
+        {{/if}}
+        {{localize 'HELLPIERCERS.UI.party_overview.defeated'}}
+        <b>{{mission.defeats}}</b> &middot; {{
+          localize 'HELLPIERCERS.UI.party_overview.rewards_so_far'
+        }}
         <b>{{mission.rewards}}</b>
       </p>
       <div class="buttons">
         <button type="button" data-action="finishMission" data-success="true">
-          <i class="fa-solid fa-flag-checkered"></i> Return to DIS
+          <i class="fa-solid fa-flag-checkered"></i> {{
+            localize 'HELLPIERCERS.UI.party_overview.return_to_dis'
+          }}
         </button>
         <button type="button" data-action="finishMission" data-success="false">
-          <i class="fa-solid fa-flag"></i> Abandon
+          <i class="fa-solid fa-flag"></i> {{
+            localize 'HELLPIERCERS.UI.party_overview.abandon'
+          }}
         </button>
       </div>
     {{else}}
@@ -42,16 +52,22 @@
               <label>
                 <input type="checkbox" name="objective" value="{{key}}">
                 {{label}}{{#if special}}
-                  <em>(special)</em>{{/if}}
+                  <em>{{
+                      localize 'HELLPIERCERS.UI.party_overview.special'
+                    }}</em>{{/if}}
               </label>
               <span class="reward">{{reward}}</span>
             </li>
           {{/each}}
         </ul>
         <div class="form-group">
-          <label>Target faction</label>
+          <label>{{
+              localize 'HELLPIERCERS.UI.party_overview.target_faction'
+            }}</label>
           <select name="faction">
-            <option value="">None</option>
+            <option value="">
+              {{localize 'HELLPIERCERS.UI.party_overview.none'}}
+            </option>
             {{#each mission.factions}}
               <option value="{{id}}" {{#if selected}}selected{{/if}}>
                 {{name}}
@@ -60,7 +76,9 @@
           </select>
         </div>
         <button type="button" data-action="startMission">
-          <i class="fa-solid fa-person-walking-arrow-right"></i> Leave DIS
+          <i class="fa-solid fa-person-walking-arrow-right"></i> {{
+            localize 'HELLPIERCERS.UI.party_overview.leave_dis'
+          }}
         </button>
       </div>
     {{/if}}
@@ -68,7 +86,10 @@
 
   {{!-- Squad --}}
   <div class="panel squad">
-    <h3>Squad <small>(drop a HELLPIERCER here)</small></h3>
+    <h3>
+      {{localize 'HELLPIERCERS.UI.party_overview.squad'}} <small>(drop a
+        HELLPIERCER here)</small>
+    </h3>
     {{#if members.length}}
       <ul class="members">
         {{#each members}}
@@ -78,8 +99,13 @@
             <span>{{className}}{{#if armorName}}
                 &middot; {{armorName}}{{/if}}</span>
             {{#if @root.hasTriumph}}
-              <select data-triumph-for="{{id}}" data-tooltip="Triumph">
-                <option value="">No Triumph</option>
+              <select
+                data-triumph-for="{{id}}"
+                data-tooltip="{{localize 'HELLPIERCERS.UI.party_overview.triumph'}}"
+              >
+                <option value="">
+                  {{localize 'HELLPIERCERS.UI.party_overview.no_triumph'}}
+                </option>
                 {{#each @root.triumphs}}
                   <option
                     value="{{key}}"
@@ -91,22 +117,29 @@
               </select>
             {{/if}}
             <span class="hp">{{hp}}/{{hpMax}}</span>
-            <a data-action="removeMember" data-tooltip="Remove"><i
-                class="fa-solid fa-xmark"
-              ></i></a>
+            <a
+              data-action="removeMember"
+              data-tooltip="{{localize 'HELLPIERCERS.UI.party_overview.remove'}}"
+            ><i class="fa-solid fa-xmark"></i></a>
           </li>
         {{/each}}
       </ul>
     {{else}}
-      <p class="hint">No squad members yet.</p>
+      <p class="hint">
+        {{localize 'HELLPIERCERS.UI.party_overview.no_squad_members_yet'}}
+      </p>
     {{/if}}
   </div>
 
   {{#if hasOffGrid}}
     <div class="panel off-grid">
-      <h3>Off-Grid Munitions Support</h3>
+      <h3>
+        {{localize 'HELLPIERCERS.UI.party_overview.off_grid_munitions_support'}}
+      </h3>
       <select name="system.offGrid">
-        <option value="">None selected</option>
+        <option value="">
+          {{localize 'HELLPIERCERS.UI.party_overview.none_selected'}}
+        </option>
         {{#each offGrid}}
           <option value="{{name}}" {{#if selected}}selected{{/if}}>
             {{name}}
@@ -119,18 +152,26 @@
           name="system.offGridUsed"
           {{#if system.offGridUsed}}checked{{/if}}
         >
-        Used this expedition
+        {{localize 'HELLPIERCERS.UI.party_overview.used_this_expedition'}}
       </label>
-      {{#if offGridExtra}}<span class="hint"
-        >+{{offGridExtra}} extra use (Triumph)</span>{{/if}}
+      {{#if offGridExtra}}<span class="hint">+{{offGridExtra}}
+          {{
+            localize 'HELLPIERCERS.UI.party_overview.extra_use_triumph'
+          }}</span>{{/if}}
     </div>
   {{/if}}
 
   {{#if hasGrid}}
     <div class="panel grid-suite">
-      <h3>Pre-Battle Grid Manipulation</h3>
+      <h3>
+        {{
+          localize 'HELLPIERCERS.UI.party_overview.pre_battle_grid_manipulation'
+        }}
+      </h3>
       <select name="system.gridSuite">
-        <option value="">None selected</option>
+        <option value="">
+          {{localize 'HELLPIERCERS.UI.party_overview.none_selected'}}
+        </option>
         {{#each gridSuites}}
           <option value="{{key}}" {{#if selected}}selected{{/if}}>
             {{name}} - {{tiles}}
@@ -143,13 +184,15 @@
   {{#if hasLegendary}}
     <div class="panel legendary">
       <h3>
-        Legendary Arms
-        <a data-action="addArm" data-tooltip="Add"><i
-            class="fa-solid fa-plus"
-          ></i></a>
-        <a data-action="endSession" data-tooltip="End session (Aion -1)"><i
-            class="fa-solid fa-hourglass-half"
-          ></i></a>
+        {{localize 'HELLPIERCERS.UI.party_overview.legendary_arms'}}
+        <a
+          data-action="addArm"
+          data-tooltip="{{localize 'HELLPIERCERS.UI.party_overview.add'}}"
+        ><i class="fa-solid fa-plus"></i></a>
+        <a
+          data-action="endSession"
+          data-tooltip="{{localize 'HELLPIERCERS.UI.party_overview.end_session_aion_1'}}"
+        ><i class="fa-solid fa-hourglass-half"></i></a>
       </h3>
       <ul>
         {{#each arms}}
@@ -163,7 +206,7 @@
               value="{{aion}}"
               min="0"
             >
-            Aion
+            {{localize 'HELLPIERCERS.UI.party_overview.aion'}}
             <a data-action="removeArm"><i class="fa-solid fa-trash"></i></a>
           </li>
         {{/each}}
@@ -173,12 +216,14 @@
 
   {{#if hasRoles}}
     <div class="panel roles">
-      <h3>Roles</h3>
+      <h3>{{localize 'HELLPIERCERS.UI.party_overview.roles'}}</h3>
       {{#each roles}}
         <div class="form-group">
           <label>{{label}}</label>
           <select name="system.roles.{{key}}">
-            <option value="">Unassigned</option>
+            <option value="">
+              {{localize 'HELLPIERCERS.UI.party_overview.unassigned'}}
+            </option>
             {{#each members}}
               <option value="{{id}}" {{#if selected}}selected{{/if}}>
                 {{name}}
@@ -206,12 +251,16 @@
 
   {{#if hasMastery}}
     <div class="panel mastery">
-      <h3>Class Mastery</h3>
+      <h3>{{localize 'HELLPIERCERS.UI.party_overview.class_mastery'}}</h3>
       <ul>
         {{#each mastery}}
           <li>
-            <b>{{name}}</b>: {{missions}} / 5 missions
-            {{#if mastered}}<i class="fa-solid fa-star"></i> Mastered{{/if}}
+            <b>{{name}}</b>: {{
+              localize 'HELLPIERCERS.UI.party_overview.missions_progress' missions=missions
+            }}
+            {{#if mastered}}<i class="fa-solid fa-star"></i> {{
+                localize 'HELLPIERCERS.UI.party_overview.mastered'
+              }}{{/if}}
           </li>
         {{/each}}
       </ul>

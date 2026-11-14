@@ -16,6 +16,7 @@ export const SETTINGS = Object.freeze({
   jb2aTier: "jb2aTier",
   animateAttacks: "animateAttacks",
   animateEffects: "animateEffects",
+  sheetTheme: "sheetTheme",
 });
 
 /**
@@ -24,6 +25,13 @@ export const SETTINGS = Object.freeze({
  */
 export function getSetting(key) {
   return game.settings.get(game.system.id, SETTINGS[key]);
+}
+
+/** Put the chosen palette on the page; the stylesheet does the rest. */
+export function applySheetTheme() {
+  const theme = game.settings.get(game.system.id, "sheetTheme");
+  document.body.classList.toggle("hp-theme-night", theme === "night");
+  document.body.classList.toggle("hp-theme-parchment", theme !== "night");
 }
 
 export function registerSettings() {
@@ -99,6 +107,23 @@ export function registerSettings() {
     name: "HELLPIERCERS.SETTINGS.automateProvoke.name",
     hint: "HELLPIERCERS.SETTINGS.automateProvoke.hint",
     type: new fields.BooleanField({ initial: true }),
+  });
+
+  game.settings.register(id, "sheetTheme", {
+    scope: "client",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.sheetTheme.name",
+    hint: "HELLPIERCERS.SETTINGS.sheetTheme.hint",
+    type: new fields.StringField({
+      required: true,
+      blank: false,
+      initial: "parchment",
+      choices: {
+        parchment: "HELLPIERCERS.SETTINGS.sheetTheme.parchment",
+        night: "HELLPIERCERS.SETTINGS.sheetTheme.night",
+      },
+    }),
+    onChange: applySheetTheme,
   });
 
   // Module integrations: Dice So Nice, Automated Animations, Sequencer and JB2A.

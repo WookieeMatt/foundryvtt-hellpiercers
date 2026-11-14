@@ -7,7 +7,9 @@
     <select name="project">
       {{#each projectChoices}}
         <option value="{{key}}" {{#if disabled}}disabled{{/if}}>
-          {{name}} ({{cost}} Ichor, {{time}} time)
+          {{
+            localize 'HELLPIERCERS.UI.faction_research.name_cost_ichor_time_time' name=name cost=cost time=time
+          }}
         </option>
       {{/each}}
     </select>
@@ -16,10 +18,13 @@
       data-action="startProject"
       {{#if atLimit}}disabled{{/if}}
     >
-      <i class="fa-solid fa-flask"></i> Start project
+      <i class="fa-solid fa-flask"></i> {{
+        localize 'HELLPIERCERS.UI.faction_research.start_project'
+      }}
     </button>
-    {{#if atLimit}}<span class="hint"
-      >Two projects are already in development.</span>{{/if}}
+    {{#if atLimit}}<span class="hint">{{
+          localize 'HELLPIERCERS.UI.faction_research.two_projects_are_already_in_development'
+        }}</span>{{/if}}
   </div>
   <ul class="projects">
     {{#each projects}}
@@ -30,19 +35,22 @@
         <div class="row">
           <b>{{name}}</b>
           {{#if complete}}<span class="state"><i class="fa-solid fa-check"></i>
-              Complete</span>{{/if}}
+              {{
+                localize 'HELLPIERCERS.UI.faction_research.complete'
+              }}</span>{{/if}}
         </div>
         <p>{{effect}}</p>
         {{#unless complete}}
           <div class="row">
-            Ichor <b>{{paid}}</b> / {{cost}}
+            {{localize 'HELLPIERCERS.UI.faction_research.ichor'}}
+            <b>{{paid}}</b> / {{cost}}
             <button type="button" data-action="payProject" data-amount="1">
               +1
             </button>
             <button type="button" data-action="payProject" data-amount="all">
-              Pay all
+              {{localize 'HELLPIERCERS.UI.faction_research.pay_all'}}
             </button>
-            &nbsp; Research time
+            &nbsp; {{localize 'HELLPIERCERS.UI.faction_research.research_time'}}
             {{#each boxes}}<i
                 class="fa-solid fa-square {{#if filled}}filled{{else}}empty{{/if}}"
               ></i>{{/each}}
@@ -51,11 +59,11 @@
               data-action="tickProject"
               {{#unless canTick}}disabled{{/unless}}
             >
-              Fill box
+              {{localize 'HELLPIERCERS.UI.faction_research.fill_box'}}
             </button>
             <a
               data-action="scrapProject"
-              data-tooltip="Scrap (refund half of the Ichor paid)"
+              data-tooltip="{{localize 'HELLPIERCERS.UI.faction_research.scrap_refund_half_of_the_ichor_paid'}}"
             >
               <i class="fa-solid fa-trash"></i>
             </a>

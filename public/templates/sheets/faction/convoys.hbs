@@ -5,11 +5,13 @@
 >
   <div class="toolbar">
     <button type="button" data-action="deployConvoy">
-      <i class="fa-solid fa-truck-fast"></i> Deploy convoy
+      <i class="fa-solid fa-truck-fast"></i> {{
+        localize 'HELLPIERCERS.UI.faction_convoys.deploy_convoy'
+      }}
     </button>
-    <span class="hint"
-    >Convoys arrive at the start of the second phase after deployment (now:
-      phase {{currentPhase}}).</span>
+    <span class="hint">{{
+        localize 'HELLPIERCERS.UI.faction_convoys.convoys_arrive_at_the_start_of_the_second' currentPhase=currentPhase
+      }}</span>
   </div>
   <ul class="convoys">
     {{#each convoys}}
@@ -22,11 +24,13 @@
             data-id="{{id}}"
             data-field="name"
             value="{{name}}"
-            placeholder="Name"
+            placeholder="{{localize 'HELLPIERCERS.UI.faction_convoys.name'}}"
           >
           <span>{{from}} &rarr; {{to}}</span>
           <span class="status">{{statusLabel}}{{#if traveling}}
-              (arrives phase {{arrivesPhase}}){{/if}}</span>
+              {{
+                localize 'HELLPIERCERS.UI.faction_convoys.arrives_phase_n' phase=arrivesPhase
+              }}{{/if}}</span>
         </div>
         <div class="row">
           <input
@@ -35,7 +39,7 @@
             data-id="{{id}}"
             data-field="outcome"
             value="{{outcome}}"
-            placeholder="Outcome on arrival"
+            placeholder="{{localize 'HELLPIERCERS.UI.faction_convoys.outcome_on_arrival'}}"
             list="outcomes-{{id}}"
           >
           <datalist id="outcomes-{{id}}">
@@ -49,7 +53,7 @@
               data-field="revealed"
               {{#if revealed}}checked{{/if}}
             >
-            Revealed
+            {{localize 'HELLPIERCERS.UI.faction_convoys.revealed'}}
           </label>
           {{#if arrived}}
             <button
@@ -57,7 +61,7 @@
               data-action="resolveConvoy"
               data-status="resolved"
             >
-              Resolve
+              {{localize 'HELLPIERCERS.UI.faction_convoys.resolve'}}
             </button>
           {{/if}}
           {{#if traveling}}
@@ -66,12 +70,13 @@
               data-action="resolveConvoy"
               data-status="intercepted"
             >
-              Intercepted
+              {{localize 'HELLPIERCERS.UI.faction_convoys.intercepted'}}
             </button>
           {{/if}}
-          <a data-action="removeConvoy" data-tooltip="Delete"><i
-              class="fa-solid fa-trash"
-            ></i></a>
+          <a
+            data-action="removeConvoy"
+            data-tooltip="{{localize 'HELLPIERCERS.UI.faction_convoys.delete'}}"
+          ><i class="fa-solid fa-trash"></i></a>
         </div>
       </li>
     {{/each}}

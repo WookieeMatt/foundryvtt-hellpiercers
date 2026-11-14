@@ -5,7 +5,9 @@
 >
   <div class="toolbar">
     <button type="button" data-action="addLocation">
-      <i class="fa-solid fa-plus"></i> Add location
+      <i class="fa-solid fa-plus"></i> {{
+        localize 'HELLPIERCERS.UI.faction_locations.add_location'
+      }}
     </button>
   </div>
   <ul class="locations">
@@ -35,12 +37,13 @@
                 {{label}}
               </option>{{/each}}
           </select>
-          <a data-action="removeLocation" data-tooltip="Delete"><i
-              class="fa-solid fa-trash"
-            ></i></a>
+          <a
+            data-action="removeLocation"
+            data-tooltip="{{localize 'HELLPIERCERS.UI.faction_locations.delete'}}"
+          ><i class="fa-solid fa-trash"></i></a>
         </div>
         <div class="row quality">
-          <span>Quality:</span>
+          <span>{{localize 'HELLPIERCERS.UI.faction_locations.quality'}}</span>
           {{#each quality}}
             <label>
               {{@key}}
@@ -62,16 +65,23 @@
               data-field="revealed"
               {{#if revealed}}checked{{/if}}
             >
-            Known to players
+            {{localize 'HELLPIERCERS.UI.faction_locations.known_to_players'}}
           </label>
         </div>
         {{#if building}}
           <div class="row build">
-            Construction: <b>{{buildValue}}</b> / {{buildMax}}
-            <button type="button" data-action="buildStep">+1 phase</button>
+            {{localize 'HELLPIERCERS.UI.faction_locations.construction'}}
+            <b>{{buildValue}}</b> / {{buildMax}}
+            <button type="button" data-action="buildStep">
+              {{localize 'HELLPIERCERS.UI.faction_locations.plus_one_phase'}}
+            </button>
           </div>
         {{/if}}
-        {{#if requires}}<p class="requires">Requires: {{requires}}</p>{{/if}}
+        {{#if requires}}<p class="requires">
+            {{
+              localize 'HELLPIERCERS.UI.faction_locations.requires_requires' requires=requires
+            }}
+          </p>{{/if}}
       </li>
     {{/each}}
   </ul>

@@ -110,6 +110,9 @@
 }
 
 @mixin attack-dialog {
+  background: var(--hp-paper);
+  color: var(--hp-text);
+  border-bottom-width: 9px;
   position: absolute;
   bottom: 0.5rem;
   width: var(--sidebar-width);
@@ -128,8 +131,19 @@
     h4.source {
       margin-bottom: 0px;
     }
+    h4 {
+      font-family: var(--hp-font-black);
+      font-weight: 400;
+      font-size: 1.5rem;
+      text-transform: none;
+      line-height: 1.05;
+    }
     span.attacker {
-      font-family: var(--font-h1);
+      font-family: var(--hp-font-label);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--hp-accent);
     }
     .profile {
       display: grid;

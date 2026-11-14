@@ -15,7 +15,7 @@ import { extendTokenConfig } from "./hooks/tokenconfig.mjs";
 import * as animations from "./integrations/animations.mjs";
 import { activateDice, tint } from "./integrations/dice.mjs";
 import { checkMigration } from "./migration.mjs";
-import { registerSettings } from "./settings.mjs";
+import { applySheetTheme, registerSettings } from "./settings.mjs";
 import { activateStratcom } from "./stratcom/engine.mjs";
 import { findCombatant, spendAction, trySpendAction } from "./taccom/actions.mjs";
 import { TurnEngine } from "./taccom/engine.mjs";
@@ -238,6 +238,7 @@ Hooks.once("i18nInit", () => {
 });
 
 Hooks.once("ready", () => {
+  applySheetTheme();
   activateSocket();
   activateStratcom();
   activateProvoke();

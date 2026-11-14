@@ -3,10 +3,12 @@
   data-tab="{{tab.id}}"
   data-group="primary"
 >
-  <h3>STRATCOM actions</h3>
+  <h3>{{localize 'HELLPIERCERS.UI.faction_actions.stratcom_actions'}}</h3>
   {{#unless actions.length}}
     <p class="hint">
-      This faction prints no STRATCOM actions. Upgrades may grant some.
+      {{
+        localize 'HELLPIERCERS.UI.faction_actions.this_faction_prints_no_stratcom_actions_up'
+      }}
     </p>
   {{/unless}}
   <ul class="stratcom-actions">
@@ -28,22 +30,29 @@
           {{/if}}
           {{#if @root.isGM}}
             <button type="button" data-action="useAction">
-              <i class="fa-solid fa-bolt"></i> Use
+              <i class="fa-solid fa-bolt"></i> {{
+                localize 'HELLPIERCERS.UI.faction_actions.use'
+              }}
             </button>
           {{/if}}
         </div>
         {{#if flavor}}<p class="flavor"><em>{{flavor}}</em></p>{{/if}}
         <div class="body">{{{body}}}</div>
         {{#if hazard}}<p class="hint">
-            Creates the {{hazard.name}} map hazard ({{hazard.stages}}
-            stages{{#if hazard.auto}}, advances every STRATCOM phase{{/if}}).
+            {{
+              localize 'HELLPIERCERS.UI.faction_actions.creates_hazard' name=hazard.name stages=hazard.stages
+            }}
+            {{#if hazard.auto}}
+              {{
+                localize 'HELLPIERCERS.UI.faction_actions.advances_each_phase'
+              }}{{/if}}
           </p>{{/if}}
       </li>
     {{/each}}
   </ul>
 
   {{#if mechanics.length}}
-    <h3>Unique mechanics</h3>
+    <h3>{{localize 'HELLPIERCERS.UI.faction_actions.unique_mechanics'}}</h3>
     <ul class="stratcom-actions">
       {{#each mechanics}}
         <li class="action" data-action-name="{{name}}">
@@ -56,13 +65,15 @@
   {{/if}}
 
   <h3>
-    Map hazards
+    \1{{localize 'HELLPIERCERS.UI.faction_actions.map_hazards'}}
     {{#if @root.isGM}}<button type="button" data-action="addHazard">
-        <i class="fa-solid fa-plus"></i> Create Map Hazard
+        <i class="fa-solid fa-plus"></i> {{
+          localize 'HELLPIERCERS.UI.faction_actions.create_map_hazard'
+        }}
       </button>{{/if}}
   </h3>
   {{#unless hazards.length}}<p class="hint">
-      No active map hazards.
+      {{localize 'HELLPIERCERS.UI.faction_actions.no_active_map_hazards'}}
     </p>{{/unless}}
   <ul class="hazards">
     {{#each hazards}}
@@ -79,8 +90,10 @@
                 >
                   <i class="fa-solid fa-minus"></i>
                 </button>{{/if}}
-              Stage {{stage}} / {{maxStage}}{{#if auto}}
-                (auto){{/if}}
+              {{
+                localize 'HELLPIERCERS.UI.faction_actions.stage_of' stage=stage max=maxStage
+              }}{{#if auto}}
+                {{localize 'HELLPIERCERS.UI.faction_actions.auto'}}{{/if}}
               {{#if @root.isGM}}<button
                   type="button"
                   data-action="stepHazard"
@@ -92,7 +105,9 @@
           {{/if}}
           {{#if @root.isGM}}
             <button type="button" data-action="clearHazard">
-              <i class="fa-solid fa-broom"></i> Clear
+              <i class="fa-solid fa-broom"></i> {{
+                localize 'HELLPIERCERS.UI.faction_actions.clear'
+              }}
             </button>
             <button type="button" data-action="removeHazard">
               <i class="fa-solid fa-trash"></i>
@@ -107,7 +122,8 @@
   </ul>
   {{#if clearedHazards.length}}
     <p class="hint">
-      Cleared: {{#each clearedHazards}}{{this}}{{#unless @last}},
+      {{localize 'HELLPIERCERS.UI.faction_actions.cleared'}}
+      {{#each clearedHazards}}{{this}}{{#unless @last}},
         {{/unless}}{{/each}}
     </p>
   {{/if}}

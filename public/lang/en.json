@@ -23,58 +23,125 @@
   "HELLPIERCERS": {
     "ACTOR": {
       "FIELDS": {
-        "actions": { "label": "Actions" },
+        "actions": {
+          "label": "Actions"
+        },
         "agnosia": {
           "label": "Agnosia",
-          "description": { "label": "Effect" },
-          "value": { "label": "Value" }
+          "description": {
+            "label": "Effect"
+          },
+          "value": {
+            "label": "Value"
+          }
         },
-        "armor": { "label": "Armor" },
-        "attacks": { "label": "Attacks" },
-        "biography": { "label": "Biography" },
-        "callsign": { "label": "Callsign" },
-        "class": { "label": "Class" },
-        "faction": { "label": "Faction" },
-        "health": { "label": "HP" },
-        "limit": { "label": "Break Value" },
-        "max_weapons": { "label": "Max Weapons" },
+        "armor": {
+          "label": "Armor"
+        },
+        "attacks": {
+          "label": "Attacks"
+        },
+        "biography": {
+          "label": "Biography"
+        },
+        "callsign": {
+          "label": "Callsign"
+        },
+        "class": {
+          "label": "Class"
+        },
+        "faction": {
+          "label": "Faction"
+        },
+        "health": {
+          "label": "HP"
+        },
+        "limit": {
+          "label": "Break Value"
+        },
+        "max_weapons": {
+          "label": "Max Weapons"
+        },
         "meta": {
           "label": "Progression",
-          "limit_break": { "label": "Limit Break Unlocked" },
-          "multi_system": { "label": "Multi-System Unlocked" },
-          "reversal": { "label": "Reversal Unlocked" },
-          "weapon_slots": { "label": "Weapon Slots" }
+          "limit_break": {
+            "label": "Limit Break Unlocked"
+          },
+          "multi_system": {
+            "label": "Multi-System Unlocked"
+          },
+          "reversal": {
+            "label": "Reversal Unlocked"
+          },
+          "weapon_slots": {
+            "label": "Weapon Slots"
+          }
         },
-        "pilot": { "label": "Pilot" },
-        "pronouns": { "label": "Pronouns", "placeholder": "any/all" },
-        "reversal_charges": { "label": "Charges" },
-        "scale": { "label": "Scale" },
+        "pilot": {
+          "label": "Pilot"
+        },
+        "pronouns": {
+          "label": "Pronouns",
+          "placeholder": "any/all"
+        },
+        "reversal_charges": {
+          "label": "Charges"
+        },
+        "scale": {
+          "label": "Scale"
+        },
         "spawn": {
           "label": "Spawn",
-          "charge": { "label": "Charges" },
-          "name": { "label": "Name" },
+          "charge": {
+            "label": "Charges"
+          },
+          "name": {
+            "label": "Name"
+          },
           "spawn": {
             "label": "Spawning",
             "initial": "At the end of the round, this unit gains a <strong>Charge</strong>. On the GM’s turn, they may spend 1 Charge to spawn a minion from this faction, or 5 Charges to spawn a miniboss."
           },
-          "special": { "label": "Special" }
+          "special": {
+            "label": "Special"
+          }
         },
         "special": {
           "label": "Special",
-          "description": { "label": "Effect" },
-          "name": { "label": "Name" }
+          "description": {
+            "label": "Effect"
+          },
+          "name": {
+            "label": "Name"
+          }
         },
-        "speed": { "label": "Speed" },
+        "speed": {
+          "label": "Speed"
+        },
         "strike": {
           "label": "Strike",
-          "damage": { "label": "Damage" },
-          "description": { "label": "Effect" },
-          "name": { "label": "Name" },
-          "range": { "label": "Range" }
+          "damage": {
+            "label": "Damage"
+          },
+          "description": {
+            "label": "Effect"
+          },
+          "name": {
+            "label": "Name"
+          },
+          "range": {
+            "label": "Range"
+          }
         },
-        "standard_armament": { "label": "Standard Armament" },
-        "tags": { "label": "Tags" },
-        "weapon": { "label": "Weapon" }
+        "standard_armament": {
+          "label": "Standard Armament"
+        },
+        "tags": {
+          "label": "Tags"
+        },
+        "weapon": {
+          "label": "Weapon"
+        }
       },
       "SHEET": {
         "actions": {
@@ -144,51 +211,116 @@
           "never": "Manual",
           "special": "Special"
         },
-        "stacks": { "label": "Stacks" }
+        "stacks": {
+          "label": "Stacks"
+        }
       }
     },
     "ITEM": {
       "FIELDS": {
-        "ability": { "label": "Armor Ability" },
-        "action": { "label": "Action Type" },
-        "active": { "label": "Active", "name": { "label": "Active" } },
+        "ability": {
+          "label": "Armor Ability"
+        },
+        "action": {
+          "label": "Action Type"
+        },
+        "active": {
+          "label": "Active",
+          "name": {
+            "label": "Active"
+          }
+        },
         "attack": {
           "label": "Attack",
-          "damage": { "label": "Damage" },
-          "range": { "label": "Range" }
+          "damage": {
+            "label": "Damage"
+          },
+          "range": {
+            "label": "Range"
+          }
         },
-        "available": { "label": "Use Available" },
-        "break_value": { "label": "Break Value" },
-        "counter": { "label": "Counter", "enabled": { "label": "Use Counter" } },
-        "damage": { "label": "Damage" },
-        "description": { "label": "Description" },
-        "effect": { "label": "Effect" },
-        "health": { "label": "Health" },
-        "kind": { "label": "Type" },
-        "limit": { "label": "Limit Break" },
-        "movement": { "label": "Movement" },
-        "passive": { "label": "Passive", "name": { "label": "Passive" } },
-        "range": { "label": "Range" },
-        "reversal": { "label": "Reversal" },
+        "available": {
+          "label": "Use Available"
+        },
+        "break_value": {
+          "label": "Break Value"
+        },
+        "counter": {
+          "label": "Counter",
+          "enabled": {
+            "label": "Use Counter"
+          }
+        },
+        "damage": {
+          "label": "Damage"
+        },
+        "description": {
+          "label": "Description"
+        },
+        "effect": {
+          "label": "Effect"
+        },
+        "health": {
+          "label": "Health"
+        },
+        "kind": {
+          "label": "Type"
+        },
+        "limit": {
+          "label": "Limit Break"
+        },
+        "movement": {
+          "label": "Movement"
+        },
+        "passive": {
+          "label": "Passive",
+          "name": {
+            "label": "Passive"
+          }
+        },
+        "range": {
+          "label": "Range"
+        },
+        "reversal": {
+          "label": "Reversal"
+        },
         "secondary": {
           "label": "Secondary Mode",
-          "action": { "label": "Action" },
-          "effect": { "label": "Effect" }
+          "action": {
+            "label": "Action"
+          },
+          "effect": {
+            "label": "Effect"
+          }
         },
-        "speed": { "label": "Speed" },
-        "tags": { "label": "Tags" },
-        "trigger": { "label": "Trigger" },
-        "upgrades": { "label": "Upgrades" },
-        "uses": { "label": "Charges" }
+        "speed": {
+          "label": "Speed"
+        },
+        "tags": {
+          "label": "Tags"
+        },
+        "trigger": {
+          "label": "Trigger"
+        },
+        "upgrades": {
+          "label": "Upgrades"
+        },
+        "uses": {
+          "label": "Charges"
+        }
       },
       "SHEET": {
-        "missing": { "effects": "No Active Effects" },
+        "missing": {
+          "effects": "No Active Effects"
+        },
         "profiles": {
           "add": "Add New Profile",
           "remove": "Remove",
           "rename": "Rename"
         },
-        "upgrades": { "add": "Add New Upgrade" }
+        "upgrades": {
+          "add": "Add New Upgrade"
+        }
       },
       "TABS": {
         "details": "Details",
@@ -213,38 +345,74 @@
     },
     "ATTACK": {
       "FIELDS": {
-        "damage": { "label": "Damage" },
-        "description": { "label": "Description" },
-        "name": { "label": "Name" },
-        "range": { "label": "Range" }
+        "damage": {
+          "label": "Damage"
+        },
+        "description": {
+          "label": "Description"
+        },
+        "name": {
+          "label": "Name"
+        },
+        "range": {
+          "label": "Range"
+        }
       }
     },
     "DAMAGE": {
       "FIELDS": {
-        "formula": { "label": "Damage Formula" },
-        "conditions": { "label": "Conditions" },
+        "formula": {
+          "label": "Damage Formula"
+        },
+        "conditions": {
+          "label": "Conditions"
+        },
         "qualities": {
           "label": "Qualities",
-          "piercing": { "label": "Piercing" },
-          "transference": { "label": "Transference" },
-          "breaker": { "label": "Breaker" },
-          "overpenetrating": { "label": "Overpenetrating" }
+          "piercing": {
+            "label": "Piercing"
+          },
+          "transference": {
+            "label": "Transference"
+          },
+          "breaker": {
+            "label": "Breaker"
+          },
+          "overpenetrating": {
+            "label": "Overpenetrating"
+          }
         }
       }
     },
     "RANGE": {
       "FIELDS": {
-        "kind": { "label": "Range Type" },
+        "kind": {
+          "label": "Range Type"
+        },
         "modifiers": {
           "label": "Modifiers",
-          "length": { "label": "Length" },
-          "push": { "label": "Push" },
-          "range": { "label": "Range" },
-          "recoil": { "label": "Recoil" },
-          "width": { "label": "Width" }
+          "length": {
+            "label": "Length"
+          },
+          "push": {
+            "label": "Push"
+          },
+          "range": {
+            "label": "Range"
+          },
+          "recoil": {
+            "label": "Recoil"
+          },
+          "width": {
+            "label": "Width"
+          }
         },
-        "name": { "label": "Name" },
-        "value": { "label": "Value" }
+        "name": {
+          "label": "Name"
+        },
+        "value": {
+          "label": "Value"
+        }
       },
       "type": {
         "bespoke": "Bespoke",
@@ -274,7 +442,11 @@
         "notes": "Notes"
       },
       "vehicle": {
-        "readiness": { "ready": "Ready", "capable": "Capable", "ruin": "Ruin" }
+        "readiness": {
+          "ready": "Ready",
+          "capable": "Capable",
+          "ruin": "Ruin"
+        }
       }
     },
     "FACTION": {
@@ -292,7 +464,10 @@
       "recalc": "Recalculate for the current number of players"
     },
     "HAZARD": {
-      "status": { "active": "Active", "cleared": "Cleared" }
+      "status": {
+        "active": "Active",
+        "cleared": "Cleared"
+      }
     },
     "LOCATION": {
       "type": {
@@ -303,7 +478,11 @@
         "logistical": "Logistical",
         "legendary": "Legendary"
       },
-      "status": { "active": "Active", "building": "Under construction", "lost": "Lost" }
+      "status": {
+        "active": "Active",
+        "building": "Under construction",
+        "lost": "Lost"
+      }
     },
     "CONVOY": {
       "status": {
@@ -313,9 +492,16 @@
         "intercepted": "Intercepted"
       }
     },
-    "PROJECT": { "status": { "active": "In development", "complete": "Complete" } },
+    "PROJECT": {
+      "status": {
+        "active": "In development",
+        "complete": "Complete"
+      }
+    },
     "SHEETS": {
-      "ActiveEffect": { "base": "HELLPIERCERS Active Effect Sheet" },
+      "ActiveEffect": {
+        "base": "HELLPIERCERS Active Effect Sheet"
+      },
       "Actor": {
         "boss": "Boss Sheet",
         "faction": "Faction Sheet",
@@ -324,22 +510,38 @@
         "human": "HELLPIERCER Sheet",
         "minion": "Minion Sheet"
       },
-      "Item": { "weapon": "Weapon Sheet" }
+      "Item": {
+        "weapon": "Weapon Sheet"
+      }
     },
     "UPGRADE": {
       "FIELDS": {
         "cost": {
           "label": "Cost",
-          "brimstone": { "label": "Brimstone" },
-          "hellsteel": { "label": "Hellsteel" },
-          "soulfire": { "label": "Soulfire" }
+          "brimstone": {
+            "label": "Brimstone"
+          },
+          "hellsteel": {
+            "label": "Hellsteel"
+          },
+          "soulfire": {
+            "label": "Soulfire"
+          }
         }
       }
     },
     "DIALOG": {
-      "new_ability": { "title": "New Ability", "content": "Add a new Ability?" },
-      "HaloUpgradeEditor": { "title": "Upgrade Editor", "cost": "Cost" },
-      "RangeEditor": { "title": "Edit Range" },
+      "new_ability": {
+        "title": "New Ability",
+        "content": "Add a new Ability?"
+      },
+      "HaloUpgradeEditor": {
+        "title": "Upgrade Editor",
+        "cost": "Cost"
+      },
+      "RangeEditor": {
+        "title": "Edit Range"
+      },
       "replaceItem": {
         "content": "<p>Replace <strong>{old}</strong> with <strong>{new}</strong>?</p>"
       },
@@ -351,6 +553,12 @@
       "playerCountOverride": {
         "name": "Player Count Override",
         "hint": "Sets the number of players for boss action calculation.  Leave blank to autodetect"
+      },
+      "sheetTheme": {
+        "name": "Sheet Theme",
+        "hint": "Parchment is the book's pages: aged paper, black ink, gold ribbons. Night is the cover's slate and violet. This is a per-user setting.",
+        "parchment": "Parchment",
+        "night": "Night"
       },
       "themedDice": {
         "name": "Themed Dice (Dice So Nice)",
@@ -418,10 +626,22 @@
       }
     },
     "ACTIONS": {
-      "main": { "label": "Main", "hint": "Attack, Rez, or Weapon Ability" },
-      "support": { "label": "Support", "hint": "Use, Class Active, Armor Action, or Equipment" },
-      "aux": { "label": "Aux", "hint": "Shove, Weapon Swap, or Sprint" },
-      "move": { "label": "Move", "hint": "Move up to your Speed" },
+      "main": {
+        "label": "Main",
+        "hint": "Attack, Rez, or Weapon Ability"
+      },
+      "support": {
+        "label": "Support",
+        "hint": "Use, Class Active, Armor Action, or Equipment"
+      },
+      "aux": {
+        "label": "Aux",
+        "hint": "Shove, Weapon Swap, or Sprint"
+      },
+      "move": {
+        "label": "Move",
+        "hint": "Move up to your Speed"
+      },
       "haste": "Haste: extra action",
       "shock": "Shock: this action is one tier higher",
       "frozen": "Frozen: Aux Actions are unavailable",
@@ -583,7 +803,9 @@
       }
     },
     "TokenConfig": {
-      "manual_token_size": { "tooltip": "Unlock token size from actor scale stat" }
+      "manual_token_size": {
+        "tooltip": "Unlock token size from actor scale stat"
+      }
     },
     "TokenHUD": {
       "swarmActions": {
@@ -605,6 +827,161 @@
       "recon-tables": "RECON Tables",
       "reference": "Rules Reference",
       "systeminfo": "System Information"
+    },
+    "UI": {
+      "party_base": {
+        "built": "Built",
+        "refund": "Refund",
+        "build": "Build",
+        "requires": "Requires:"
+      },
+      "party_header": {
+        "division_name": "Division name",
+        "tagline": "Tagline",
+        "stratcom_phase": "STRATCOM phase",
+        "ichor": "Ichor",
+        "ichor_2": "{ichor}",
+        "advance_phase": "Advance phase"
+      },
+      "party_notes": {},
+      "party_overview": {
+        "mission": "Mission",
+        "return_to_dis": "Return to DIS",
+        "abandon": "Abandon",
+        "target_faction": "Target faction",
+        "none": "None",
+        "leave_dis": "Leave DIS",
+        "squad": "Squad",
+        "triumph": "Triumph",
+        "no_triumph": "No Triumph",
+        "remove": "Remove",
+        "no_squad_members_yet": "No squad members yet.",
+        "off_grid_munitions_support": "Off-Grid Munitions Support",
+        "none_selected": "None selected",
+        "used_this_expedition": "Used this expedition",
+        "pre_battle_grid_manipulation": "Pre-Battle Grid Manipulation",
+        "legendary_arms": "Legendary Arms",
+        "add": "Add",
+        "end_session_aion_1": "End session (Aion -1)",
+        "aion": "Aion",
+        "roles": "Roles",
+        "unassigned": "Unassigned",
+        "class_mastery": "Class Mastery",
+        "rewards_so_far": "Rewards so far:",
+        "missions_progress": "{missions} / 5 missions",
+        "target": "Target:",
+        "defeated": "Defeated:",
+        "special": "(special)",
+        "extra_use_triumph": "extra use (Triumph)",
+        "mastered": "Mastered"
+      },
+      "party_vehicle": {
+        "name_your_vehicle": "Name your vehicle",
+        "upgrades": "Upgrades",
+        "and_personalization": "and Personalization",
+        "buy": "Buy",
+        "vehicle_notes": "Vehicle notes",
+        "build_the_synthetic_spinther_manufacturing": "Build the Synthetic Spinther Manufacturing Lab to gain a vehicle.",
+        "remove": "Remove",
+        "install": "Install"
+      },
+      "faction_actions": {
+        "stratcom_actions": "STRATCOM actions",
+        "this_faction_prints_no_stratcom_actions_up": "This faction prints no STRATCOM actions. Upgrades may grant some.",
+        "use": "Use",
+        "unique_mechanics": "Unique mechanics",
+        "create_map_hazard": "Create Map Hazard",
+        "no_active_map_hazards": "No active map hazards.",
+        "clear": "Clear",
+        "creates_hazard": "Creates the {name} map hazard ({stages} stages).",
+        "advances_each_phase": "It advances every STRATCOM phase.",
+        "stage_of": "Stage {stage} / {max}",
+        "map_hazards": "Map hazards",
+        "auto": "(auto)",
+        "cleared": "Cleared:"
+      },
+      "faction_convoys": {
+        "deploy_convoy": "Deploy convoy",
+        "convoys_arrive_at_the_start_of_the_second": "Convoys arrive at the start of the second phase after deployment (now: phase {currentPhase}).",
+        "name": "Name",
+        "outcome_on_arrival": "Outcome on arrival",
+        "revealed": "Revealed",
+        "resolve": "Resolve",
+        "intercepted": "Intercepted",
+        "delete": "Delete",
+        "arrives_phase_n": "(arrives phase {phase})"
+      },
+      "faction_header": {
+        "faction": "Faction",
+        "crown": "Crown",
+        "boss": "Boss",
+        "final_assault_available_zero_at_0": "Final Assault available: {zero} at 0",
+        "phase": "Phase",
+        "ichor": "Ichor",
+        "ichor_2": "{ichor}"
+      },
+      "faction_locations": {
+        "add_location": "Add location",
+        "delete": "Delete",
+        "quality": "Quality:",
+        "known_to_players": "Known to players",
+        "construction": "Construction:",
+        "requires_requires": "Requires: {requires}",
+        "plus_one_phase": "+1 phase"
+      },
+      "faction_notes": {
+        "quality_adjustments": "Quality adjustments",
+        "qualities_are_the_sum_of_active_locations": "Qualities are the sum of active locations plus these adjustments. The Crown falls 1 for every 2 points below the starting total ({startTotal}).",
+        "starting_total": "Starting total",
+        "crown_override": "Crown override"
+      },
+      "faction_research": {
+        "name_cost_ichor_time_time": "{name} ({cost} Ichor, {time} time)",
+        "start_project": "Start project",
+        "two_projects_are_already_in_development": "Two projects are already in development.",
+        "complete": "Complete",
+        "ichor": "Ichor",
+        "pay_all": "Pay all",
+        "fill_box": "Fill box",
+        "scrap_refund_half_of_the_ichor_paid": "Scrap (refund half of the Ichor paid)",
+        "research_time": "Research time"
+      },
+      "faction_upgrades": {
+        "gm_ichor": "GM Ichor:",
+        "cost_ichor": "{cost} Ichor",
+        "unlocked": "Unlocked",
+        "unlock": "Unlock",
+        "requires_requires": "Requires: {requires}",
+        "this_faction_has_no_catalog_upgrades_track": "This faction has no catalog upgrades. Track custom upgrades in the War Journal."
+      }
+    },
+    "MSG": {
+      "addLocation": "Add Location",
+      "deployConvoy": "Deploy Convoy",
+      "createMapHazard": "Create Map Hazard",
+      "projectLimit": "Only 2 projects may be in development.",
+      "projectDuplicate": "That project already exists.",
+      "projectSamePhase": "A project can't progress in the phase it was started.",
+      "crownGate": "{name} needs the faction's Crown to have fallen. Shift-click to ignore.",
+      "chooseObjective": "Choose at least one objective.",
+      "returnToDis": "Return to DIS",
+      "addLegendaryArm": "Add Legendary Arm",
+      "sessionEnded": "Session ended. Aion reduced.",
+      "armsExpired": "Legendary Arms expired: {arms}",
+      "gmIchorOnly": "Only the GM manages Ichor.",
+      "notEnoughIchor": "Not enough Ichor ({have} of {need}).",
+      "gmPhaseOnly": "Only the GM advances the STRATCOM phase.",
+      "triumphReward": "Triumph reward: {count} resources",
+      "expendTitle": "Expend Swarm Tiles",
+      "expend": "Expend",
+      "swarmOnly": "Only Swarm units in combat can join a Swarm.",
+      "noSwarmNeighbour": "{name} has no adjacent {unit} to join.",
+      "alreadyUsed": "{name} has already been used.",
+      "noReversal": "{name} has no Reversal charges left.",
+      "limitNotReady": "{name}'s Limit Break isn't ready ({value}/{max}).",
+      "selectToken": "Select a token or assign a character first.",
+      "gmOnline": "A GM must be online to do that.",
+      "missionFailed": "Mission Failed"
     }
   }
 }

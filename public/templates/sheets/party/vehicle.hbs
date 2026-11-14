@@ -9,7 +9,7 @@
         type="text"
         name="system.vehicle.name"
         value="{{system.vehicle.name}}"
-        placeholder="Name your vehicle"
+        placeholder="{{localize 'HELLPIERCERS.UI.party_vehicle.name_your_vehicle'}}"
       >
       <div class="readiness">
         {{#each readiness}}
@@ -26,7 +26,9 @@
     </div>
     <div class="panel">
       <h3>
-        Upgrades <small>(two active at a time)</small> and Personalization
+        {{localize 'HELLPIERCERS.UI.party_vehicle.upgrades'}}
+        <small>(two active at a time)</small>
+        {{localize 'HELLPIERCERS.UI.party_vehicle.and_personalization'}}
       </h3>
       <ul class="vehicle-options">
         {{#each vehicleOptions}}
@@ -39,7 +41,11 @@
             <span class="cost">{{cost}}</span>
             {{#if owned}}
               <button type="button" data-action="toggleVehicleOption">
-                {{#if installed}}Remove{{else}}Install{{/if}}
+                {{#if installed}}{{
+                    localize 'HELLPIERCERS.UI.party_vehicle.remove'
+                  }}{{else}}{{
+                    localize 'HELLPIERCERS.UI.party_vehicle.install'
+                  }}{{/if}}
               </button>
             {{else}}
               <button
@@ -47,7 +53,7 @@
                 data-action="buyVehicleOption"
                 {{#if locked}}disabled{{/if}}
               >
-                Buy
+                {{localize 'HELLPIERCERS.UI.party_vehicle.buy'}}
               </button>
             {{/if}}
           </li>
@@ -55,12 +61,16 @@
       </ul>
     </div>
     <div class="panel">
-      <textarea name="system.vehicle.notes" placeholder="Vehicle notes"
+      <textarea
+        name="system.vehicle.notes"
+        placeholder="{{localize 'HELLPIERCERS.UI.party_vehicle.vehicle_notes'}}"
       >{{system.vehicle.notes}}</textarea>
     </div>
   {{else}}
     <p class="hint">
-      Build the Synthetic Spinther Manufacturing Lab to gain a vehicle.
+      {{
+        localize 'HELLPIERCERS.UI.party_vehicle.build_the_synthetic_spinther_manufacturing'
+      }}
     </p>
   {{/if}}
 </section>

@@ -1,0 +1,335 @@
+// The HELLPIERCERS look: aged parchment, thick black ink, gold ribbon labels and the crimson, teal and
+// magenta of the book's art. Two palettes: parchment (the book's pages, default) and night (the cover's
+// slate and violet). Pick one with the Sheet Theme setting; both use the same shapes.
+
+@use "mixins" as *;
+
+$noise: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .32  0 0 0 0 .18  0 0 0 0 .05  0 0 0 .28 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+$fibers: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='f'><feTurbulence type='turbulence' baseFrequency='.012 .35' numOctaves='2' seed='4'/><feColorMatrix values='0 0 0 0 .4  0 0 0 0 .22  0 0 0 0 .06  0 0 0 .16 0'/></filter><rect width='100%' height='100%' filter='url(%23f)'/></svg>");
+
+/* -------------------------------------------- */
+/*  Tokens                                      */
+/* -------------------------------------------- */
+
+@mixin palette-parchment {
+  --hp-surface: #ecd29c;
+  --hp-surface-2: #f6e7c2;
+  --hp-surface-3: rgb(60 30 5 / 8%);
+  --hp-text: #1b1410;
+  --hp-text-dim: #5a4631;
+  --hp-border: #0e0b0a;
+  --hp-border-soft: rgb(14 11 10 / 45%);
+  --hp-line: #d9a21d;
+  --hp-accent: #a5241b;
+  --hp-hero: #e8601c;
+  --hp-good: #1e7d4a;
+  --hp-bad: #a5241b;
+  --hp-chrome: #0e0b0a;
+  --hp-chrome-text: #f2b82c;
+  --hp-paper:
+    radial-gradient(ellipse at 15% 8%, rgb(255 244 210 / 65%), transparent 55%),
+    radial-gradient(ellipse at 90% 95%, rgb(150 70 15 / 30%), transparent 50%),
+    #{$fibers},
+    #{$noise},
+    linear-gradient(180deg, #efd6a0, #dcae66);
+  --hp-input: rgb(255 248 225 / 55%);
+  color-scheme: light;
+}
+
+@mixin palette-night {
+  --hp-surface: #1d1a2e;
+  --hp-surface-2: #2a2540;
+  --hp-surface-3: rgb(255 255 255 / 6%);
+  --hp-text: #efe4cb;
+  --hp-text-dim: #a99bbd;
+  --hp-border: #07050c;
+  --hp-border-soft: rgb(242 184 44 / 35%);
+  --hp-line: #f2b82c;
+  --hp-accent: #d43a74;
+  --hp-hero: #f2b82c;
+  --hp-good: #3fc28a;
+  --hp-bad: #ff6a7a;
+  --hp-chrome: #07050c;
+  --hp-chrome-text: #f2b82c;
+  --hp-paper:
+    radial-gradient(ellipse at 15% 8%, rgb(120 80 200 / 22%), transparent 55%),
+    radial-gradient(ellipse at 90% 95%, rgb(212 58 116 / 14%), transparent 50%),
+    #{$noise},
+    linear-gradient(180deg, #24203a, #17142a);
+  --hp-input: rgb(255 255 255 / 7%);
+  color-scheme: dark;
+}
+
+body.system-hellpiercers {
+  --hp-gold: #f2b82c;
+  --hp-gold-deep: #b97d0a;
+  --hp-crimson: #a5241b;
+  --hp-crimson-deep: #5e120d;
+  --hp-orange: #e8601c;
+  --hp-teal: #169c92;
+  --hp-magenta: #d43a74;
+  --hp-violet: #3a2d52;
+  --hp-font-body: "EB Garamond", Georgia, serif;
+  --hp-font-label: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --hp-font-stencil:
+    "Big Shoulders Stencil Display",
+    "Big Shoulders Display",
+    sans-serif;
+  --hp-font-black: "Pirata One", "MedievalSharp", serif;
+  // Existing sheet CSS reads these two.
+  --font-h1: var(--hp-font-black);
+  --hellpiercers-sheet-box-border: var(--hp-border);
+  --hellpiercers-sheet-box-divider: var(--hp-border-soft);
+  --hellpiercers-range-button-background: var(--hp-text-dim);
+}
+
+body.system-hellpiercers,
+body.system-hellpiercers.hp-theme-parchment {
+  @include palette-parchment;
+}
+
+body.system-hellpiercers.hp-theme-night {
+  @include palette-night;
+}
+
+/* -------------------------------------------- */
+/*  Shapes                                      */
+/* -------------------------------------------- */
+
+/* -------------------------------------------- */
+/*  Windows                                     */
+/* -------------------------------------------- */
+
+.hellpiercers.application {
+  // Foundry's own variables, re-pointed so every control inside picks up the palette.
+  --color-text-primary: var(--hp-text);
+  --color-text-secondary: var(--hp-text-dim);
+  --color-text-emphatic: var(--hp-text);
+  --color-text-subtle: var(--hp-text-dim);
+  --color-form-label: var(--hp-text-dim);
+  --color-form-label-hover: var(--hp-text);
+  --color-form-hint: var(--hp-text-dim);
+  --color-border: var(--hp-border-soft);
+  --color-border-light-primary: var(--hp-border-soft);
+  --color-border-light-tertiary: var(--hp-border-soft);
+  --color-underline-header: var(--hp-line);
+  --color-header-background: var(--hp-chrome);
+  --color-text-selection-bg: var(--hp-crimson);
+  --color-text-selection: #fff;
+  --input-background-color: var(--hp-input);
+  --input-text-color: var(--hp-text);
+  --input-border-color: var(--hp-border-soft);
+  --input-focus-outline-color: var(--hp-line);
+  --input-placeholder-color: var(--hp-text-dim);
+  --button-background-color: var(--hp-chrome);
+  --button-text-color: var(--hp-chrome-text);
+  --button-border-color: var(--hp-border);
+  --button-hover-background-color: var(--hp-crimson);
+  --button-hover-text-color: #fff;
+  --button-hover-border-color: var(--hp-border);
+  --button-focus-outline-color: var(--hp-line);
+  --color-scrollbar: var(--hp-crimson);
+  --color-scrollbar-track: transparent;
+  --font-body: var(--hp-font-body);
+  --font-size-14: 0.95rem;
+  --font-size-16: 1.05rem;
+  --font-size-18: 1.15rem;
+
+  font-family: var(--hp-font-body);
+  color: var(--hp-text);
+  background: var(--hp-chrome);
+  border: 3px solid var(--hp-border);
+  border-radius: 4px;
+  box-shadow: 0 12px 34px rgb(0 0 0 / 60%), 5px 5px 0 rgb(0 0 0 / 40%);
+  // Foundry paints the application background with its own theme; ours replaces it.
+  --background: var(--hp-chrome);
+
+  > .window-header {
+    background: var(--hp-chrome);
+    color: var(--hp-chrome-text);
+    border-bottom: 2px solid var(--hp-line);
+    --button-text-color: var(--hp-chrome-text);
+    .window-title {
+      font-family: var(--hp-font-black);
+      font-size: 1.2rem;
+      letter-spacing: 0.04em;
+      color: var(--hp-chrome-text);
+      text-shadow: 0 0 6px rgb(242 184 44 / 35%);
+    }
+    .header-control,
+    button {
+      color: var(--hp-chrome-text);
+      &:hover {
+        color: #fff;
+        text-shadow: 0 0 6px var(--hp-gold);
+      }
+    }
+  }
+
+  > .window-content {
+    position: relative;
+    background: var(--hp-paper);
+    color: var(--hp-text);
+    padding: 0.6rem 0.75rem 0.9rem 1.2rem;
+    gap: 0.4rem;
+    // The black footer bar with a hint of the cover's teal.
+    border-bottom: 9px solid var(--hp-border);
+    box-shadow: inset 0 -2px 0 #14465a;
+    @include paint-edge(left);
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .window-resize-handle {
+    color: var(--hp-chrome-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--hp-font-label);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--hp-text);
+    border: none;
+  }
+
+  label,
+  .form-group > label {
+    font-family: var(--hp-font-label);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: var(--hp-text-dim);
+  }
+
+  a,
+  a.content-link {
+    color: var(--hp-accent);
+  }
+
+  input,
+  select,
+  textarea {
+    font-family: var(--hp-font-body);
+    background: var(--hp-input);
+    color: var(--hp-text);
+    border: 1px solid var(--hp-border-soft);
+    border-radius: 2px;
+    &:focus {
+      outline: 2px solid var(--hp-line);
+      box-shadow: none;
+    }
+  }
+
+  button:not(.icon, [class*="fa-"]) {
+    font-family: var(--hp-font-label);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 2px solid var(--hp-border);
+    border-radius: 2px;
+    box-shadow: 2px 2px 0 rgb(0 0 0 / 30%);
+    &:hover:not(:disabled) {
+      box-shadow: 2px 2px 0 rgb(0 0 0 / 30%), 0 0 8px rgb(242 184 44 / 50%);
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--hp-line);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 8%);
+  }
+
+  // Tabs: the active one is a crimson ribbon, the rest are ink on paper.
+  nav.tabs,
+  nav.sheet-tabs {
+    border: none;
+    border-bottom: 3px solid var(--hp-border);
+    padding: 0 0.5rem;
+    margin: 0.2rem 0 0.1rem;
+    gap: 0.15rem;
+    a,
+    button {
+      flex: 1;
+      font-family: var(--hp-font-label);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 1rem;
+      color: var(--hp-text-dim);
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 0.2rem 0.5rem;
+      clip-path: polygon(0.5rem 0, 100% 0, calc(100% - 0.5rem) 100%, 0 100%);
+      text-shadow: none;
+      &:hover {
+        color: var(--hp-text);
+        background: var(--hp-surface-3);
+        text-shadow: none;
+      }
+      &.active {
+        color: var(--hp-gold);
+        background: var(--hp-crimson);
+        box-shadow: inset 0 -3px 0 var(--hp-gold);
+      }
+    }
+  }
+
+  // Item and effect rows.
+  .item-list,
+  ol.items {
+    li:hover {
+      background: var(--hp-surface-3);
+    }
+  }
+
+  prose-mirror,
+  .editor-content {
+    font-family: var(--hp-font-body);
+    font-size: 1.05rem;
+    line-height: 1.3;
+    color: var(--hp-text);
+    strong {
+      font-weight: 700;
+    }
+    em {
+      color: var(--hp-text-dim);
+    }
+    h1,
+    h2,
+    h3 {
+      font-family: var(--hp-font-label);
+      color: var(--hp-accent);
+    }
+  }
+
+  .hint,
+  .notes {
+    color: var(--hp-text-dim);
+    font-style: italic;
+  }
+}
+
+/* -------------------------------------------- */
+/*  Reusable pieces                             */
+/* -------------------------------------------- */
+
+.hellpiercers {
+  .hp-ribbon {
+    @include ribbon;
+  }
+  .hp-tag {
+    @include tag;
+  }
+  .hp-panel {
+    @include ink-panel;
+  }
+}

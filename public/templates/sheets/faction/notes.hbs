@@ -15,12 +15,11 @@
   {{/each}}
   {{#if isGM}}
     <div class="panel adjustments">
-      <h3>Quality adjustments</h3>
+      <h3>{{localize 'HELLPIERCERS.UI.faction_notes.quality_adjustments'}}</h3>
       <p class="hint">
-        Qualities are the sum of active locations plus these adjustments. The
-        Crown falls 1 for every 2 points below the starting total ({{
-          startTotal
-        }}).
+        {{
+          localize 'HELLPIERCERS.UI.faction_notes.qualities_are_the_sum_of_active_locations' startTotal=startTotal
+        }}
       </p>
       <div class="row">
         {{#each adjust}}
@@ -30,13 +29,15 @@
               value="{{value}}"
             ></label>
         {{/each}}
-        <label>Starting total <input
+        <label>{{localize 'HELLPIERCERS.UI.faction_notes.starting_total'}}
+          <input
             type="number"
             name="system.startTotal"
             value="{{startTotal}}"
             min="0"
           ></label>
-        <label>Crown override <input
+        <label>{{localize 'HELLPIERCERS.UI.faction_notes.crown_override'}}
+          <input
             type="number"
             name="system.crown.override"
             value="{{crownOverride}}"

@@ -1,0 +1,41 @@
+// Fonts used by the book: Big Shoulders (Display and Stencil) for stat lines and headings, EB Garamond
+// for rules text, Pirata One for the blackletter labels. All SIL OFL (licences in public/fonts/hp).
+$font-path: "/systems/hellpiercers/fonts/hp";
+
+@mixin face($family, $file, $weight: 400, $style: normal) {
+  @font-face {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+    src: url("#{$font-path}/#{$file}.woff2") format("woff2");
+  }
+}
+
+@include face(
+  "Big Shoulders Display",
+  "big-shoulders-display-latin-400-normal",
+  400
+);
+@include face(
+  "Big Shoulders Display",
+  "big-shoulders-display-latin-600-normal",
+  600
+);
+@include face(
+  "Big Shoulders Display",
+  "big-shoulders-display-latin-800-normal",
+  800
+);
+@include face(
+  "Big Shoulders Stencil Display",
+  "big-shoulders-stencil-display-latin-800-normal",
+  800
+);
+@include face("EB Garamond", "eb-garamond-latin-400-normal", 400);
+@include face("EB Garamond", "eb-garamond-latin-600-normal", 600);
+@include face("EB Garamond", "eb-garamond-latin-700-normal", 700);
+@include face("EB Garamond", "eb-garamond-latin-400-italic", 400, italic);
+@include face("EB Garamond", "eb-garamond-latin-600-italic", 600, italic);
+@include face("EB Garamond", "eb-garamond-latin-700-italic", 700, italic);
+@include face("Pirata One", "pirata-one-latin-400-normal", 400);

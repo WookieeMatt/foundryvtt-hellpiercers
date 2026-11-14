@@ -334,7 +334,10 @@ export class FactionSheet extends HellpiercersActorSheetMixin(ActorSheet) {
       ),
     ].join("");
     const result = await Dialog().input({
-      window: { title: "Add Location", icon: "fa-solid fa-location-dot" },
+      window: {
+        title: game.i18n.localize("HELLPIERCERS.MSG.addLocation"),
+        icon: "fa-solid fa-location-dot",
+      },
       content: `<div class="form-group"><label>From catalog</label><div class="form-fields"><select name="preset">${options}</select></div></div>
         <div class="form-group"><label>Custom name</label><div class="form-fields"><input type="text" name="name"></div></div>
         <div class="form-group"><label>Custom type</label><div class="form-fields"><select name="type">${LOCATION_TYPES.map(t => `<option value="${t}">${t}</option>`).join("")}</select></div></div>
@@ -371,7 +374,10 @@ export class FactionSheet extends HellpiercersActorSheetMixin(ActorSheet) {
     const names = f.locations.map(l => l.name);
     const datalist = `<datalist id="hp-locations">${names.map(n => `<option value="${foundry.utils.escapeHTML(n)}">`).join("")}</datalist>`;
     const result = await Dialog().input({
-      window: { title: "Deploy Convoy", icon: "fa-solid fa-truck-fast" },
+      window: {
+        title: game.i18n.localize("HELLPIERCERS.MSG.deployConvoy"),
+        icon: "fa-solid fa-truck-fast",
+      },
       content: `${datalist}<div class="form-group"><label>Kind</label><div class="form-fields"><select name="kind">${Object.entries(
         CONVOY_KINDS
       )
@@ -402,8 +408,8 @@ export class FactionSheet extends HellpiercersActorSheetMixin(ActorSheet) {
     const result = await this.actor.system.startProject(key, phase.get());
     if (!result.ok) {
       const why = {
-        limit: "Only 2 projects may be in development.",
-        duplicate: "That project already exists.",
+        limit: game.i18n.localize("HELLPIERCERS.MSG.projectLimit"),
+        duplicate: game.i18n.localize("HELLPIERCERS.MSG.projectDuplicate"),
       };
       ui.notifications.warn(why[result.reason] ?? result.reason);
     }
@@ -423,7 +429,7 @@ export class FactionSheet extends HellpiercersActorSheetMixin(ActorSheet) {
     const id = target.closest("[data-project-id]").dataset.projectId;
     const r = await this.actor.system.advanceProject(id, { tick: true }, phase.get(), stratcom);
     if (r.tickedBlocked)
-      ui.notifications.warn("A project can't progress in the phase it was started.");
+      ui.notifications.warn(game.i18n.localize("HELLPIERCERS.MSG.projectSamePhase"));
   }
 
   /** @this {FactionSheet} @param {Event} _ev @param {HTMLElement} target */
@@ -450,16 +456,14 @@ export class FactionSheet extends HellpiercersActorSheetMixin(ActorSheet) {
     }
     const result = await this.actor.system.useAction(name, { location, force: ev.shiftKey });
     if (result.reason === "crown") {
-      ui.notifications.warn(
-        `${name} needs the faction's Crown to have fallen. Shift-click to ignore.`
-      );
+      ui.notifications.warn(game.i18n.format("HELLPIERCERS.MSG.crownGate", { name }));
     }
   }
 
   /** A custom hazard, for the "Create Map Hazard" STRATCOM action. */
   static async #addHazard() {
     const input = await Dialog().input({
-      window: { title: "Create Map Hazard" },
+      window: { title: game.i18n.localize("HELLPIERCERS.MSG.createMapHazard") },
       content: `<div class="form-group"><label>Name</label><div class="form-fields"><input type="text" name="name" autofocus></div></div><div class="form-group"><label>Between</label><div class="form-fields"><input type="text" name="location" placeholder="Two locations"></div></div>`,
     });
     if (!input?.name) return;

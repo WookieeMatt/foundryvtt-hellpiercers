@@ -11,13 +11,13 @@
       type="text"
       name="name"
       value="{{actor.name}}"
-      placeholder="Division name"
+      placeholder="{{localize 'HELLPIERCERS.UI.party_header.division_name'}}"
     >
     <input
       type="text"
       name="system.tagline"
       value="{{system.tagline}}"
-      placeholder="Tagline"
+      placeholder="{{localize 'HELLPIERCERS.UI.party_header.tagline'}}"
     >
   </div>
   <div class="resources">
@@ -34,13 +34,19 @@
     {{/each}}
   </div>
   <div class="campaign-state">
-    <span class="phase">STRATCOM phase <b>{{phase}}</b></span>
+    <span class="phase">{{
+        localize 'HELLPIERCERS.UI.party_header.stratcom_phase'
+      }} <b>{{phase}}</b></span>
     {{#if isGM}}
-      <span class="ichor"><i class="fa-solid fa-droplet"></i> Ichor <b>{{
-            ichor
+      <span class="ichor"><i class="fa-solid fa-droplet"></i> {{
+          localize 'HELLPIERCERS.UI.party_header.ichor'
+        }} <b>{{
+            localize 'HELLPIERCERS.UI.party_header.ichor_2' ichor=ichor
           }}</b></span>
       <button type="button" data-action="advancePhase">
-        <i class="fa-solid fa-forward-step"></i> Advance phase
+        <i class="fa-solid fa-forward-step"></i> {{
+          localize 'HELLPIERCERS.UI.party_header.advance_phase'
+        }}
       </button>
     {{/if}}
   </div>

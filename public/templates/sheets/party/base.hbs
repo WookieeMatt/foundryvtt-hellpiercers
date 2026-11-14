@@ -13,11 +13,14 @@
           <b>{{name}}</b>
           <span class="cost">{{cost}}</span>
           {{#if built}}
-            <span class="state"><i class="fa-solid fa-check"></i> Built</span>
+            <span class="state"><i class="fa-solid fa-check"></i> {{
+                localize 'HELLPIERCERS.UI.party_base.built'
+              }}</span>
             {{#if refundable}}
-              <a data-action="refundBuilding" data-tooltip="Refund"><i
-                  class="fa-solid fa-rotate-left"
-                ></i></a>
+              <a
+                data-action="refundBuilding"
+                data-tooltip="{{localize 'HELLPIERCERS.UI.party_base.refund'}}"
+              ><i class="fa-solid fa-rotate-left"></i></a>
             {{/if}}
           {{else}}
             <button
@@ -25,13 +28,14 @@
               data-action="buildBuilding"
               {{#unless buildable}}disabled{{/unless}}
             >
-              Build
+              {{localize 'HELLPIERCERS.UI.party_base.build'}}
             </button>
           {{/if}}
         </div>
         {{#if missing.length}}
           <p class="requires">
-            Requires: {{#each missing}}{{this}}{{#unless @last}},
+            {{localize 'HELLPIERCERS.UI.party_base.requires'}}
+            {{#each missing}}{{this}}{{#unless @last}},
               {{/unless}}{{/each}}
           </p>
         {{/if}}

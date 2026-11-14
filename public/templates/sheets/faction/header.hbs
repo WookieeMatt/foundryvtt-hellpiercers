@@ -7,25 +7,32 @@
     title="{{actor.name}}"
   >
   <div class="titles">
-    <input type="text" name="name" value="{{actor.name}}" placeholder="Faction">
+    <input
+      type="text"
+      name="name"
+      value="{{actor.name}}"
+      placeholder="{{localize 'HELLPIERCERS.UI.faction_header.faction'}}"
+    >
     <input
       type="text"
       name="system.crown.description"
       value="{{system.crown.description}}"
-      placeholder="Crown"
+      placeholder="{{localize 'HELLPIERCERS.UI.faction_header.crown'}}"
     >
     <input
       type="text"
       name="system.boss"
       value="{{system.boss}}"
-      placeholder="Boss"
+      placeholder="{{localize 'HELLPIERCERS.UI.faction_header.boss'}}"
     >
   </div>
   <div
     class="crown"
     data-tooltip="Crown {{system.crown.value}} of {{system.crown.max}}"
   >
-    <span class="label">Crown</span>
+    <span class="label">{{
+        localize 'HELLPIERCERS.UI.faction_header.crown'
+      }}</span>
     {{#each crownPips}}
       <i class="fa-solid fa-crown {{#if filled}}filled{{else}}empty{{/if}}"></i>
     {{/each}}
@@ -51,13 +58,20 @@
     {{/each}}
   </div>
   {{#if finalAssaultReady}}
-    <div class="banner">Final Assault available: {{zero}} at 0</div>
+    <div class="banner">
+      {{
+        localize 'HELLPIERCERS.UI.faction_header.final_assault_available_zero_at_0' zero=zero
+      }}
+    </div>
   {{/if}}
   {{#if isGM}}
     <div class="campaign-state">
-      <span class="phase">Phase <b>{{phase}}</b></span>
-      <span class="ichor"><i class="fa-solid fa-droplet"></i> Ichor <b>{{
-            ichor
+      <span class="phase">{{localize 'HELLPIERCERS.UI.faction_header.phase'}} <b
+        >{{phase}}</b></span>
+      <span class="ichor"><i class="fa-solid fa-droplet"></i> {{
+          localize 'HELLPIERCERS.UI.faction_header.ichor'
+        }} <b>{{
+            localize 'HELLPIERCERS.UI.faction_header.ichor_2' ichor=ichor
           }}</b></span>
     </div>
   {{/if}}

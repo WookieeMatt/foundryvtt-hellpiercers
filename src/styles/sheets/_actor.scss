@@ -1,7 +1,8 @@
 @use "components";
+@use "../mixins" as *;
 $borderColor: var(--hellpiercers-sheet-box-border);
 $dividerColor: var(--hellpiercers-sheet-box-divider);
-$labelBg: color(from $dividerColor srgb r g b / 0.25);
+$labelBg: var(--hp-surface-3);
 
 @mixin base {
   header.window-header {
@@ -49,7 +50,7 @@ $labelBg: color(from $dividerColor srgb r g b / 0.25);
     grid-template:
       "portrait charname charname charname charname" min-content
       "portrait hp speed scale tags" min-content /
-      auto 5rem 3.25rem 3.25rem 1fr;
+      auto 6.2rem 4.2rem 4.2rem 1fr;
     gap: 0.25rem;
     @include components.header-boxes-v2;
   }
@@ -143,7 +144,7 @@ $labelBg: color(from $dividerColor srgb r g b / 0.25);
     grid-template:
       "portrait charname charname charname charname" min-content
       "portrait hp       speed    pronouns tags" min-content /
-      auto 5rem 3.25rem 6rem 1fr;
+      auto 6.2rem 4.2rem 7rem 1fr;
     gap: 0.25rem;
     @include components.header-boxes-v2;
   }
@@ -165,7 +166,7 @@ $labelBg: color(from $dividerColor srgb r g b / 0.25);
       "special special" min-content / 1fr 1fr;
     gap: 0.25rem;
     .weapon_pri, .weapon_sec {
-      border: 3px double $borderColor;
+      @include ink-panel;
       display: flex;
       flex-direction: column;
       cursor: var(--cursor-default);
@@ -173,8 +174,9 @@ $labelBg: color(from $dividerColor srgb r g b / 0.25);
         padding: 0.25rem;
       }
       .selection {
-        border-bottom: 1px solid $dividerColor;
-        background-color: $labelBg;
+        border-bottom: 2px solid $borderColor;
+        background: linear-gradient(180deg, #f8c53a, #e2a216);
+        color: #1b1410;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -187,7 +189,12 @@ $labelBg: color(from $dividerColor srgb r g b / 0.25);
           margin-right: 0.25rem;
         }
         label {
-          font-family: var(--font-h1);
+          font-family: var(--hp-font-label);
+          font-weight: 800;
+          font-size: 1.1rem;
+          text-transform: none;
+          letter-spacing: 0.02em;
+          color: #1b1410;
           flex: 1;
         }
       }
@@ -226,8 +233,8 @@ $labelBg: color(from $dividerColor srgb r g b / 0.25);
       grid-area: special;
     }
     .armor, .class, .special {
+      @include ink-panel;
       display: grid;
-      border: 3px double $borderColor;
       height: 10rem;
       grid-template:
         "head head" min-content
@@ -240,13 +247,19 @@ $labelBg: color(from $dividerColor srgb r g b / 0.25);
       }
       .selection {
         grid-area: head;
-        border-bottom: 1px solid $dividerColor;
-        background-color: $labelBg;
+        border-bottom: 2px solid $borderColor;
+        background: linear-gradient(180deg, #f8c53a, #e2a216);
+        color: #1b1410;
         display: flex;
         flex-direction: row;
         align-items: center;
         label {
-          font-family: var(--font-h1);
+          font-family: var(--hp-font-label);
+          font-weight: 800;
+          font-size: 1.1rem;
+          text-transform: none;
+          letter-spacing: 0.02em;
+          color: #1b1410;
           flex: 1;
         }
       }
@@ -309,12 +322,29 @@ $labelBg: color(from $dividerColor srgb r g b / 0.25);
 }
 
 @mixin boss {
+  .actions-note {
+    grid-column: 1 / -1;
+    margin: 0;
+    text-align: right;
+    font-family: var(--hp-font-label);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--hp-text-dim);
+    strong {
+      color: var(--hp-hero);
+      font-size: 1.1rem;
+    }
+    a {
+      margin-left: 0.4rem;
+    }
+  }
   header.sheet-header {
     display: grid;
     grid-template:
       "portrait charname charname charname charname charname" min-content
       "portrait hp       speed    scale    actions  tags" min-content /
-      auto 6.25rem 3.25rem 3.25rem 3.5rem 1fr;
+      auto 6.8rem 4.2rem 4.2rem 5rem 1fr;
     gap: 0.25rem;
     @include components.header-boxes-v2;
   }
@@ -372,7 +402,7 @@ $labelBg: color(from $dividerColor srgb r g b / 0.25);
     grid-template:
       "portrait charname charname charname charname" min-content
       "portrait hp       speed    scale    tags" min-content /
-      auto 5rem 3.25rem 3.25rem 1fr;
+      auto 6.2rem 4.2rem 4.2rem 1fr;
     gap: 0.25rem;
     @include components.header-boxes-v2;
   }
@@ -453,7 +483,7 @@ $labelBg: color(from $dividerColor srgb r g b / 0.25);
     grid-template:
       "portrait charname charname charname charname" min-content
       "portrait hp       speed    scale    tags" min-content /
-      auto 6.25rem 3.25rem 3.25rem 1fr;
+      auto 6.8rem 4.2rem 4.2rem 1fr;
     gap: 0.25rem;
     @include components.header-boxes-v2;
   }

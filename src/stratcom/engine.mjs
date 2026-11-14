@@ -46,7 +46,8 @@ export const ichor = Object.freeze({
   },
   /** Set Ichor directly (GM only). */
   async set(value) {
-    if (!game.user.isGM) return ui.notifications.warn("Only the GM manages Ichor.");
+    if (!game.user.isGM)
+      return ui.notifications.warn(game.i18n.localize("HELLPIERCERS.MSG.gmIchorOnly"));
     return game.settings.set(SYSTEM(), "ichor", Math.max(0, Math.floor(value)));
   },
   /**
@@ -72,7 +73,9 @@ export const ichor = Object.freeze({
   async spend(amount, reason = "") {
     if (amount <= 0) return true;
     if (ichor.get() < amount) {
-      ui.notifications.warn(`Not enough Ichor (${ichor.get()} of ${amount}).`);
+      ui.notifications.warn(
+        game.i18n.format("HELLPIERCERS.MSG.notEnoughIchor", { have: ichor.get(), need: amount })
+      );
       return false;
     }
     await ichor.add(-amount, reason);
@@ -160,7 +163,7 @@ export function checkUnlocked(item, party = getParty()) {
  */
 export async function advancePhase() {
   if (!game.user.isGM) {
-    ui.notifications.warn("Only the GM advances the STRATCOM phase.");
+    ui.notifications.warn(game.i18n.localize("HELLPIERCERS.MSG.gmPhaseOnly"));
     return { phase: phase.get(), built: [], arrived: [], grown: [] };
   }
   const next = phase.get() + 1;
@@ -246,7 +249,7 @@ export async function completeMission({ success = true } = {}) {
       )
       .join("");
     const choice = await foundry.applications.api.Dialog.input({
-      window: { title: `Triumph reward: ${bonusAny} resources` },
+      window: { title: game.i18n.format("HELLPIERCERS.MSG.triumphReward", { count: bonusAny }) },
       content: `<div class="form-group"><label>Resource</label><div class="form-fields"><select name="resource">${options}</select></div></div>`,
     });
     const resource = choice?.resource ?? "hellsteel";

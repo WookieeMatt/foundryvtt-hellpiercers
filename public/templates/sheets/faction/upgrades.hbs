@@ -4,29 +4,42 @@
   data-group="primary"
 >
   {{#if hasCatalog}}
-    {{#if ichor}}<p class="hint">GM Ichor: <b>{{ichor}}</b></p>{{/if}}
+    {{#if ichor}}<p class="hint">
+        {{localize 'HELLPIERCERS.UI.faction_upgrades.gm_ichor'}} <b>{{
+            ichor
+          }}</b>
+      </p>{{/if}}
     <ul class="upgrades">
       {{#each upgrades}}
         <li class="upgrade {{#if owned}}owned{{/if}}" data-upgrade="{{name}}">
           <div class="row">
             <b>{{name}}</b>
-            <span class="cost">{{cost}} Ichor</span>
+            <span class="cost">{{
+                localize 'HELLPIERCERS.UI.faction_upgrades.cost_ichor' cost=cost
+              }}</span>
             {{#if owned}}
               <span class="state"><i class="fa-solid fa-check"></i>
-                Unlocked</span>
+                {{localize 'HELLPIERCERS.UI.faction_upgrades.unlocked'}}</span>
             {{else}}
-              <button type="button" data-action="buyUpgrade">Unlock</button>
+              <button type="button" data-action="buyUpgrade">
+                {{localize 'HELLPIERCERS.UI.faction_upgrades.unlock'}}
+              </button>
             {{/if}}
           </div>
           {{#if effect}}<p>{{effect}}</p>{{/if}}
-          {{#if requires}}<p class="requires">Requires: {{requires}}</p>{{/if}}
+          {{#if requires}}<p class="requires">
+              {{
+                localize 'HELLPIERCERS.UI.faction_upgrades.requires_requires' requires=requires
+              }}
+            </p>{{/if}}
         </li>
       {{/each}}
     </ul>
   {{else}}
     <p class="hint">
-      This faction has no catalog upgrades. Track custom upgrades in the War
-      Journal.
+      {{
+        localize 'HELLPIERCERS.UI.faction_upgrades.this_faction_has_no_catalog_upgrades_track'
+      }}
     </p>
   {{/if}}
 </section>

@@ -28,7 +28,7 @@ export async function gmDo(operation, payload) {
   if (!operations.has(operation)) throw new Error(`Unknown GM operation "${operation}"`);
   if (game.user.isActiveGM) return operations.get(operation)(payload, game.user);
   if (!game.users.activeGM) {
-    ui.notifications.warn("A GM must be online to do that.");
+    ui.notifications.warn(game.i18n.localize("HELLPIERCERS.MSG.gmOnline"));
     return null;
   }
   game.socket.emit(EVENT(), { operation, payload, userId: game.user.id });

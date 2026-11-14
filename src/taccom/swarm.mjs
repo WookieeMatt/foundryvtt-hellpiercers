@@ -72,7 +72,10 @@ export async function expendTiles(plan, attacker) {
     )
     .join("");
   const picked = await foundry.applications.api.DialogV2.prompt({
-    window: { title: "Expend Swarm Tiles", icon: "fa-solid fa-people-group" },
+    window: {
+      title: game.i18n.localize("HELLPIERCERS.MSG.expendTitle"),
+      icon: "fa-solid fa-people-group",
+    },
     content: `<p>The Swarm makes ${plan.attacks} attacks and must expend <strong>${plan.expended}</strong> of the ${candidates.length} other adjacent tiles. Hover a row to find the tile.</p><div class="swarm-expend" style="display:grid;gap:4px">${rows}</div>`,
     render: (_event, dialog) => {
       for (const row of dialog.element.querySelectorAll("[data-token-id]")) {
@@ -82,7 +85,7 @@ export async function expendTiles(plan, attacker) {
       }
     },
     ok: {
-      label: "Expend",
+      label: game.i18n.localize("HELLPIERCERS.MSG.expend"),
       callback: (_event, button) =>
         [...button.form.querySelectorAll("input[name=expend]:checked")].map(i => i.value),
     },
@@ -110,7 +113,7 @@ export async function joinSwarm(token) {
   const actor = token?.actor;
   const combat = token?.combatant?.combat;
   if (!isSwarmUnit(actor) || !combat) {
-    ui.notifications.warn("Only Swarm units in combat can join a Swarm.");
+    ui.notifications.warn(game.i18n.localize("HELLPIERCERS.MSG.swarmOnly"));
     return null;
   }
   const { sizeX, sizeY } = canvas.grid;
@@ -126,7 +129,10 @@ export async function joinSwarm(token) {
   );
   if (!neighbours.length) {
     ui.notifications.warn(
-      `${token.name} has no adjacent ${token.baseActor?.name ?? actor.name} to join.`
+      game.i18n.format("HELLPIERCERS.MSG.noSwarmNeighbour", {
+        name: token.name,
+        unit: token.baseActor?.name ?? actor.name,
+      })
     );
     return null;
   }
