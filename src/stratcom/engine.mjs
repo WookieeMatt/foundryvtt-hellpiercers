@@ -9,6 +9,7 @@ import { registerGmOperation } from "../api/socket.mjs";
 import { ICHOR_PER_DEFEAT, ICHOR_PER_MISSION } from "./catalog.mjs";
 import { FACTIONS_BY_ID } from "./faction-catalog.mjs";
 import { availableMaps, createCampaignMap } from "./map.mjs";
+import { syncWarTable, warTableScenes } from "./war-table.mjs";
 
 const SYSTEM = () => game.system.id;
 
@@ -323,4 +324,6 @@ export const stratcom = Object.freeze({
   completeMission,
   createCampaignMap,
   availableMaps,
+  syncWarTable,
+  warTableScenes,
 });

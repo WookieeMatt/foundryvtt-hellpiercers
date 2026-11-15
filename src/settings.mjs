@@ -8,6 +8,7 @@ export const SETTINGS = Object.freeze({
   chatCards: "chatCards",
   automateProvoke: "automateProvoke",
   automateTerrain: "automateTerrain",
+  warTableSync: "warTableSync",
   ichor: "ichor",
   stratcomPhase: "stratcomPhase",
   activeParty: "activeParty",
@@ -115,6 +116,14 @@ export function registerSettings() {
     config: true,
     name: "HELLPIERCERS.SETTINGS.automateTerrain.name",
     hint: "HELLPIERCERS.SETTINGS.automateTerrain.hint",
+    type: new fields.BooleanField({ initial: true }),
+  });
+
+  game.settings.register(id, "warTableSync", {
+    scope: "world",
+    config: true,
+    name: "HELLPIERCERS.SETTINGS.warTableSync.name",
+    hint: "HELLPIERCERS.SETTINGS.warTableSync.hint",
     type: new fields.BooleanField({ initial: true }),
   });
 

@@ -3,6 +3,15 @@
 All notable changes to the HELLPIERCERS system for Foundry VTT. Versions follow the git tags. The in-Foundry
 **Change Log** page is generated from this file by `scripts/generate-manual.mjs`.
 
+## 0.10.0
+
+- The War Table: the campaign map is now alive. Location pins per faction segment (revealed ones open War Table journal pages, hidden ones are GM-only), stage-tinted hazard circles, convoy routes (GM-only until spied out), and the party's token on the map.
+- The War Table bar while a campaign scene is viewed: STRATCOM phase, Ichor, every faction's Crown, advance-phase and resync buttons; click a faction to open its sheet, double-click a GM pin for the faction's Locations tab.
+- Auto-sync behind the new *War Table Auto-Sync* setting: the map updates when faction data changes and when the phase advances. Pins keep the positions the GM dragged them to.
+- Dragging the party token posts the travel card with a RECON Travel table roll button.
+- The seven faction map segments ship with the system (private repo); a world image at `assets/hellpiercers/maps/<id>.webp` still overrides them.
+- Fixed the campaign map tiles rendering at half position: Foundry v14 anchors tiles at their centre.
+
 ## 0.9.0
 
 - Terrain on Scene Regions: every type of the Core Rules (Uneasy, Cover, Advantageous, Impassable, Void, Obstacle, Linked, Trapped, Attractor) as a `terrain` RegionBehavior, painted cell by cell.

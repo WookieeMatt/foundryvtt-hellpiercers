@@ -1,0 +1,56 @@
+<div class="war-table-bar-body">
+  <span class="phase">
+    <i class="fa-solid fa-chess-board"></i>
+    {{localize 'HELLPIERCERS.WARTABLE.phase'}}
+    {{phase}}
+  </span>
+  {{#if isGM}}
+    <span
+      class="ichor"
+      data-tooltip="{{localize 'HELLPIERCERS.WARTABLE.ichor'}}"
+    >
+      <i class="fa-solid fa-droplet"></i> {{ichor}}
+    </span>
+  {{/if}}
+  <span class="divider"></span>
+  {{#each factions}}
+    <button
+      type="button"
+      class="faction"
+      data-action="openFaction"
+      data-id="{{id}}"
+    >
+      <span class="name">{{name}}</span>
+      <span class="crown">
+        {{#each crown}}<i
+            class="fa-{{#if this}}solid{{else}}regular{{/if}} fa-chess-queen"
+          ></i>{{/each}}
+      </span>
+      {{#if finalAssault}}
+        <i
+          class="fa-solid fa-burst final"
+          data-tooltip="{{localize 'HELLPIERCERS.WARTABLE.finalAssault'}}"
+        ></i>
+      {{/if}}
+    </button>
+  {{/each}}
+  {{#if isGM}}
+    <span class="divider"></span>
+    <button
+      type="button"
+      class="icon"
+      data-action="advancePhase"
+      data-tooltip="{{localize 'HELLPIERCERS.WARTABLE.advance'}}"
+    >
+      <i class="fa-solid fa-forward-step"></i>
+    </button>
+    <button
+      type="button"
+      class="icon"
+      data-action="syncMap"
+      data-tooltip="{{localize 'HELLPIERCERS.WARTABLE.sync'}}"
+    >
+      <i class="fa-solid fa-rotate"></i>
+    </button>
+  {{/if}}
+</div>

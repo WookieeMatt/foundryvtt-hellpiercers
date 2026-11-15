@@ -31,9 +31,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.sc25ZAOrEltKH3uL'
   - sort: 200000
@@ -48,7 +48,7 @@ pages:
     text:
       format: 1
       content: >-
-        <p>HELLPIERCERS for Foundry VTT <strong>0.9.0</strong>, for Foundry v14.370. Source: <a
+        <p>HELLPIERCERS for Foundry VTT <strong>0.10.0</strong>, for Foundry v14.370. Source: <a
         href="https://github.com/WookieeMatt/foundryvtt-hellpiercers">https://github.com/WookieeMatt/foundryvtt-hellpiercers</a></p>
     video:
       controls: true
@@ -60,9 +60,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.oHcYMiPXxp2se1TC'
   - sort: 300000
@@ -99,9 +99,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.JpTqVd7ZgoDadZWh'
   - sort: 400000
@@ -154,9 +154,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.6aOhXXkmva1ymTM7'
   - sort: 500000
@@ -206,9 +206,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.C1jSsdFtKBlzYZHZ'
   - sort: 600000
@@ -245,10 +245,22 @@ pages:
         Journal.</li></ul><p><strong>Ichor and the phase.</strong> The GM's Ichor and the STRATCOM phase are shown in
         the header of the Party and Faction sheets. <strong>Advance phase</strong> (a button there, or the <em>Advance
         STRATCOM Phase</em> macro) builds locations, moves convoys and grows hazards, and whispers a summary to the GM.
-        <em>Gain Ichor</em> and <em>Gain Resources</em> are macros too.</p><p><strong>Campaign map.</strong> The
-        <em>Create Campaign Map</em> macro builds a gridless scene from the three faction map segments. Put one 1:1.8
-        image per faction at <code>assets/hellpiercers/maps/&lt;faction id&gt;.webp</code>; the book's art is not
-        included.</p>
+        <em>Gain Ichor</em> and <em>Gain Resources</em> are macros too.</p><p><strong>The War Table.</strong> The
+        <em>Create Campaign Map</em> macro builds a gridless scene from up to three faction map segments (the book's art
+        ships with the system; a world image at <code>assets/hellpiercers/maps/&lt;faction id&gt;.webp</code> overrides
+        it) and keeps it in sync with the factions:</p><ul><li>Every location is a <strong>pin</strong> on its faction's
+        segment. Revealed locations are pages of a <em>War Table</em> journal the players can open from the pin;
+        unrevealed and under-construction locations are pins only the GM sees. New pins appear in a column on the
+        segment's left edge: drag each one to its true place, and it stays there through every resync.</li><li>Active
+        <strong>map hazards</strong> are circles tinted by stage (yellow to red), and <strong>convoys</strong> on the
+        move are routes between their endpoints, visible only to the GM until the players spy them out.</li><li>The
+        <strong>party token</strong> stands on the map. Dragging it posts the travel card, with a button that rolls on
+        the RECON Travel table.</li><li>While a campaign map is viewed, the <strong>War Table bar</strong> at the top
+        shows the STRATCOM phase, the GM's Ichor and every faction with its Crown (click a name to open the sheet); the
+        GM can advance the phase and resync the map from the bar. Double-clicking a GM-only pin opens the faction
+        sheet.</li><li>The map resyncs itself when faction data changes and when the phase advances (<em>War Table
+        Auto-Sync</em>), or by hand with the bar's sync button /
+        <code>hellpiercers.stratcom.syncWarTable(scene)</code>.</li></ul>
     video:
       controls: true
       volume: 0.5
@@ -259,9 +271,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.iHHEtCIFAieEH9al'
   - sort: 700000
@@ -292,9 +304,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.5BKCrH5s3w3FSL3e'
   - sort: 800000
@@ -326,9 +338,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.QWxbXJKXtEAOxdkV'
   - sort: 900000
@@ -357,9 +369,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.F2HNUsZMmBAZjAtN'
   - sort: 1000000
@@ -404,9 +416,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.pPhKOMuVN3FqDdRv'
   - sort: 1100000
@@ -439,9 +451,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.P0xuprZA0GWTJkBe'
   - sort: 1200000
@@ -474,9 +486,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.dGDqveNr0ClZOSnZ'
   - sort: 1300000
@@ -491,19 +503,28 @@ pages:
     text:
       format: 1
       content: >-
-        <h2>0.9.0</h2><ul><li>Terrain on Scene Regions: every type of the Core Rules (Uneasy, Cover, Advantageous,
-        Impassable, Void, Obstacle, Linked, Trapped, Attractor) as a <code>terrain</code> RegionBehavior, painted cell
-        by cell.</li><li>The Terrain Painter: a palette on the Regions toolbar; left-click or drag paints, right-click
-        erases, Standard erases specials. Tile rules enforced: two special effects per tile at most (oldest replaced),
-        the Void replaces everything.</li><li>Advisory automation behind the new <em>Automate Terrain</em> setting:
-        Trapped rolls its damage (with Undo) and becomes Standard, Ravaging tiles persist and reveal themselves, Linked
-        tiles offer the free step and teleport, Attractor zones post Pull:1 with a one-click pull, the Void posts the
-        instant-death card on forced entry, Cover adds -1 in the damage engine, Uneasy shows +1 Speed in the
-        ruler.</li><li>Grid Manipulation suites placed from the Party sheet: <strong>Place suite</strong> walks the
-        suite's tile list click by click.</li><li>JEHOEL automated: no Provoke when moving into or out of special
-        terrain; Void, Obstacle and Impassable as Uneasy.</li><li>API: <code>hellpiercers.terrain</code> (paint, erase,
-        clearAll, regions, at, damageObstacle, pullTowards, openPainter, placeSuite) and the hooks
-        <code>hellpiercers.terrainChanged</code>,
+        <h2>0.10.0</h2><ul><li>The War Table: the campaign map is now alive. Location pins per faction segment (revealed
+        ones open War Table journal pages, hidden ones are GM-only), stage-tinted hazard circles, convoy routes (GM-only
+        until spied out), and the party's token on the map.</li><li>The War Table bar while a campaign scene is viewed:
+        STRATCOM phase, Ichor, every faction's Crown, advance-phase and resync buttons; click a faction to open its
+        sheet, double-click a GM pin for the faction's Locations tab.</li><li>Auto-sync behind the new <em>War Table
+        Auto-Sync</em> setting: the map updates when faction data changes and when the phase advances. Pins keep the
+        positions the GM dragged them to.</li><li>Dragging the party token posts the travel card with a RECON Travel
+        table roll button.</li><li>The seven faction map segments ship with the system (private repo); a world image at
+        <code>assets/hellpiercers/maps/&lt;id&gt;.webp</code> still overrides them.</li><li>Fixed the campaign map tiles
+        rendering at half position: Foundry v14 anchors tiles at their centre.</li></ul><h2>0.9.0</h2><ul><li>Terrain on
+        Scene Regions: every type of the Core Rules (Uneasy, Cover, Advantageous, Impassable, Void, Obstacle, Linked,
+        Trapped, Attractor) as a <code>terrain</code> RegionBehavior, painted cell by cell.</li><li>The Terrain Painter:
+        a palette on the Regions toolbar; left-click or drag paints, right-click erases, Standard erases specials. Tile
+        rules enforced: two special effects per tile at most (oldest replaced), the Void replaces
+        everything.</li><li>Advisory automation behind the new <em>Automate Terrain</em> setting: Trapped rolls its
+        damage (with Undo) and becomes Standard, Ravaging tiles persist and reveal themselves, Linked tiles offer the
+        free step and teleport, Attractor zones post Pull:1 with a one-click pull, the Void posts the instant-death card
+        on forced entry, Cover adds -1 in the damage engine, Uneasy shows +1 Speed in the ruler.</li><li>Grid
+        Manipulation suites placed from the Party sheet: <strong>Place suite</strong> walks the suite's tile list click
+        by click.</li><li>JEHOEL automated: no Provoke when moving into or out of special terrain; Void, Obstacle and
+        Impassable as Uneasy.</li><li>API: <code>hellpiercers.terrain</code> (paint, erase, clearAll, regions, at,
+        damageObstacle, pullTowards, openPainter, placeSuite) and the hooks <code>hellpiercers.terrainChanged</code>,
         <code>hellpiercers.terrainTriggered</code>.</li></ul><h2>0.8.0</h2><ul><li>Night theme audited on every sheet,
         tab, dialog, chat card and journal; contrast checked.</li><li>Rules Reference and Manual journals styled like
         the book: ribbon headings, inked tables, a black page list.</li><li>Dialogs (including the ones sheets open)
@@ -542,9 +563,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.D27PLHuAiR2jbP4q'
   - sort: 1400000
@@ -574,9 +595,9 @@ pages:
     _stats:
       coreVersion: '14.370'
       systemId: hellpiercers
-      systemVersion: 0.9.0
-      createdTime: 1794678517868
-      modifiedTime: 1794678517868
+      systemVersion: 0.10.0
+      createdTime: 1794702551257
+      modifiedTime: 1794702551257
     category: null
     _key: '!journal.pages!dkbDQ8CZlhEazfw7.eKG3nD2AFEuRiJ9M'
 folder: null
@@ -589,8 +610,8 @@ flags:
 _stats:
   coreVersion: '14.370'
   systemId: hellpiercers
-  systemVersion: 0.9.0
-  createdTime: 1794678517868
-  modifiedTime: 1794678517868
+  systemVersion: 0.10.0
+  createdTime: 1794702551257
+  modifiedTime: 1794702551257
 _id: dkbDQ8CZlhEazfw7
 _key: '!journal!dkbDQ8CZlhEazfw7'

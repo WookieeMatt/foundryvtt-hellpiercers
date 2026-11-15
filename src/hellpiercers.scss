@@ -84,6 +84,9 @@
   &.terrain-painter {
     @include dialogs.terrain-painter;
   }
+  &.war-table-bar {
+    @include dialogs.war-table-bar;
+  }
 }
 
 @include chat.cards;

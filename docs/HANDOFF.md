@@ -200,7 +200,7 @@ leaving special terrain can be exempted automatically for JEHOEL. Regions give y
 (`regionEvent`) for free. Risk: movement-cost rules interact with Foundry's v14 movement system; read
 `client/canvas/placeables/token.mjs` and the region docs first. Verify by dragging tokens across each type.
 
-### B. The War Table: an interactive STRATCOM map
+### B. The War Table: an interactive STRATCOM map *(shipped in v0.10.0)*
 
 A GM and player view of the campaign: the three faction map segments (the images are user-provided) with
 locations as pins from `faction.system.locations` (revealed only if `revealed`), convoys drawn as dashed routes

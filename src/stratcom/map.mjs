@@ -3,37 +3,44 @@
  * side by side make the campaign map. DIS is at the bottom of every segment and the faction's
  * final redoubt is at the top.
  *
- * The map art is not part of the system (it is the book's artwork). Put one image per faction at
- * `assets/hellpiercers/maps/<faction id>.webp`, for example `syncrasis.webp`. All segments share
- * a 1:1.8 aspect ratio.
+ * The seven map segments ship with the system under `systems/hellpiercers/assets/maps/` (the repo
+ * is private, so the book's art may be included). A world can override a segment by putting its own
+ * `assets/hellpiercers/maps/<faction id>.webp` in the user data folder. All segments share a 1:1.8
+ * aspect ratio.
  */
 
 import { FACTIONS_BY_ID } from "./faction-catalog.mjs";
+import { syncWarTable } from "./war-table.mjs";
 
 export const MAP_DIR = "assets/hellpiercers/maps";
-const SEGMENT_WIDTH = 2000;
-const SEGMENT_HEIGHT = 3600;
+export const SYSTEM_MAP_DIR = "systems/hellpiercers/assets/maps";
+export const SEGMENT_WIDTH = 2000;
+export const SEGMENT_HEIGHT = 3600;
 
 /**
- * Which map images exist in the maps folder.
- * @returns {Promise<Set<string>>} Faction ids that have an image
+ * Which map images exist: faction id -> image path. World images in `assets/hellpiercers/maps`
+ * win over the ones the system ships.
+ * @returns {Promise<Map<string, string>>}
  */
 export async function availableMaps() {
   const FilePicker = foundry.applications.apps.FilePicker.implementation;
-  try {
-    const result = await FilePicker.browse("data", MAP_DIR);
-    return new Set(
-      result.files.map(f =>
-        f
+  const found = new Map();
+  for (const dir of [SYSTEM_MAP_DIR, MAP_DIR]) {
+    try {
+      const result = await FilePicker.browse("data", dir);
+      for (const f of result.files) {
+        const id = f
           .split("/")
           .pop()
           .replace(/\.[a-z]+$/i, "")
-          .toLowerCase()
-      )
-    );
-  } catch {
-    return new Set();
+          .toLowerCase();
+        found.set(id, f);
+      }
+    } catch {
+      // Directory does not exist: fine.
+    }
   }
+  return found;
 }
 
 /**
@@ -59,6 +66,7 @@ export async function createCampaignMap(factionIds, { name, activate = false } =
     );
     return null;
   }
+  const sources = new Map(defs.map(d => [d.id, available.get(d.id)]));
 
   const Scene = getDocumentClass("Scene");
   const scene = await Scene.create({
@@ -71,17 +79,19 @@ export async function createCampaignMap(factionIds, { name, activate = false } =
     fog: { exploration: false },
     flags: { [game.system.id]: { campaignMap: defs.map(d => d.id) } },
   });
+  // Foundry v14 anchors tiles at their centre (texture.anchorX/Y default 0.5).
   await scene.createEmbeddedDocuments(
     "Tile",
     defs.map((d, i) => ({
-      texture: { src: `${MAP_DIR}/${d.id}.webp` },
-      x: i * SEGMENT_WIDTH,
-      y: 0,
+      texture: { src: sources.get(d.id) },
+      x: i * SEGMENT_WIDTH + SEGMENT_WIDTH / 2,
+      y: SEGMENT_HEIGHT / 2,
       width: SEGMENT_WIDTH,
       height: SEGMENT_HEIGHT,
       locked: true,
     }))
   );
+  await syncWarTable(scene);
   if (activate) await scene.activate();
   return scene;
 }

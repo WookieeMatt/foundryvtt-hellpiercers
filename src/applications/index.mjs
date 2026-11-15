@@ -5,3 +5,4 @@ export * from "./dialogs/terrain-painter.mjs";
 export * as hud from "./hud/index.mjs";
 export * as sheets from "./sheets/index.mjs";
 export * as sidebar from "./sidebar/index.mjs";
+export * from "./war-table-bar.mjs";

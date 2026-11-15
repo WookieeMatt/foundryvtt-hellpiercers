@@ -152,9 +152,20 @@ Hooks: `hellpiercers.terrainChanged (scene, type, cells)`,
   automatic (permanent Bleed:1, Rush:2, an extra Off-Grid use, 2 resources of any type at the end);
   the rest are posted as a reminder when the mission starts. Permanent effects last until you return
   to DIS: `actor.applyStatus(id, n, { permanent: true })`.
-- **Campaign map:** `await hellpiercers.stratcom.createCampaignMap(["syncrasis", "henosis", "autophyes"])`
-  builds a gridless scene with the three map segments side by side. Put one 1:1.8 image per
-  faction at `assets/hellpiercers/maps/<faction id>.webp` (not shipped: it is the book's art).
+- **The War Table:** `await hellpiercers.stratcom.createCampaignMap(["syncrasis", "henosis", "autophyes"])`
+  builds a gridless scene with the map segments side by side (the art ships with the system;
+  a world image at `assets/hellpiercers/maps/<id>.webp` overrides it) and syncs it at once.
+  `hellpiercers.stratcom.syncWarTable(scene)` brings a campaign scene up to date: revealed
+  locations become pages of the scene's *War Table* journal pinned on their segment (a pin keeps
+  its position through resyncs), unrevealed ones become GM-only notes, active hazards become
+  stage-tinted circles, traveling convoys whose `from`/`to` match pinned location names become
+  routes (hidden until `revealed`), and the active party gets a token. The sync runs automatically
+  on faction changes and phase advances while the *War Table Auto-Sync* setting is on.
+  `hellpiercers.stratcom.warTableScenes()` lists the campaign scenes. Dragging the party token
+  posts the RECON Travel card; double-clicking a GM-only pin opens the faction sheet. The War
+  Table bar (`src/applications/war-table-bar.mjs`) renders while a campaign scene is viewed.
+  Hook: `hellpiercers.warTableSynced (scene)`. Foundry v14 note: tile `x`/`y` anchor at the tile's
+  centre (`texture.anchorX/Y` default 0.5).
 
 ## RECON
 

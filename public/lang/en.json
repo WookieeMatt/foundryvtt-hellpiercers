@@ -614,6 +614,10 @@
         "name": "Automate Provoke",
         "hint": "When a token is dragged away from an adjacent enemy during combat, the GM client rolls the 1D6 Provoke attack automatically. Flying (Aegis) units and forced movement never Provoke."
       },
+      "warTableSync": {
+        "name": "War Table Auto-Sync",
+        "hint": "Keep campaign-map scenes in step with the factions: location pins, hazard circles and convoy routes update when faction data changes and when the STRATCOM phase advances."
+      },
       "automateTerrain": {
         "name": "Automate Terrain",
         "hint": "Terrain painted with the Terrain Painter resolves itself: Trapped tiles roll their damage, Linked tiles offer the step, Attractor zones offer their Pull, Cover grants -1 damage, and the Void offers instant death on forced entry. Movement is never blocked: the automation advises, the table decides."
@@ -679,6 +683,25 @@
       "reversalSpent": "{name} spends a Reversal charge ({left} left).",
       "rez": "{name} is back on their feet.",
       "undone": "Undone."
+    },
+    "WARTABLE": {
+      "title": "War Table",
+      "journal": "War Table: {name}",
+      "phase": "STRATCOM Phase",
+      "ichor": "Ichor",
+      "advance": "Advance STRATCOM phase",
+      "sync": "Sync the map with the factions",
+      "synced": "War Table synced.",
+      "finalAssault": "Two Qualities at 0: the Final Assault is ready",
+      "faction": "Faction",
+      "purpose": "Purpose",
+      "terrain": "Terrain",
+      "defenses": "Defenses",
+      "unknown": "unknown",
+      "convoy": "Convoy",
+      "travel": "{name} travels across the war table. Roll on the RECON Travel table?",
+      "travelRoll": "Roll Travel",
+      "noTravelTable": "No Travel table found in the RECON Tables compendium."
     },
     "TERRAIN": {
       "title": "Terrain",

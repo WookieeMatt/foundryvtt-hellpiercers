@@ -101,7 +101,23 @@ Sanctuary's whole structure) post their description to chat instead.
 
 **Ichor and the phase.** The GM's Ichor and the STRATCOM phase are shown in the header of the Party and Faction sheets. **Advance phase** (a button there, or the *Advance STRATCOM Phase* macro) builds locations, moves convoys and grows hazards, and whispers a summary to the GM. *Gain Ichor* and *Gain Resources* are macros too.
 
-**Campaign map.** The *Create Campaign Map* macro builds a gridless scene from the three faction map segments. Put one 1:1.8 image per faction at `assets/hellpiercers/maps/<faction id>.webp`; the book's art is not included.
+**The War Table.** The *Create Campaign Map* macro builds a gridless scene from up to three faction
+map segments (the book's art ships with the system; a world image at
+`assets/hellpiercers/maps/<faction id>.webp` overrides it) and keeps it in sync with the factions:
+
+- Every location is a **pin** on its faction's segment. Revealed locations are pages of a *War
+  Table* journal the players can open from the pin; unrevealed and under-construction locations are
+  pins only the GM sees. New pins appear in a column on the segment's left edge: drag each one to
+  its true place, and it stays there through every resync.
+- Active **map hazards** are circles tinted by stage (yellow to red), and **convoys** on the move
+  are routes between their endpoints, visible only to the GM until the players spy them out.
+- The **party token** stands on the map. Dragging it posts the travel card, with a button that
+  rolls on the RECON Travel table.
+- While a campaign map is viewed, the **War Table bar** at the top shows the STRATCOM phase, the
+  GM's Ichor and every faction with its Crown (click a name to open the sheet); the GM can advance
+  the phase and resync the map from the bar. Double-clicking a GM-only pin opens the faction sheet.
+- The map resyncs itself when faction data changes and when the phase advances (*War Table
+  Auto-Sync*), or by hand with the bar's sync button / `hellpiercers.stratcom.syncWarTable(scene)`.
 
 ## RECON
 
